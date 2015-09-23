@@ -1,27 +1,29 @@
 Numbers refer to the card number used as refrence by the game, names are given only for clarification purposes. 
-Space Race lists are given for each era and may be condensed in the future.  
+Space Race lists are given for each era and may be condensed in the future. Names are not given here to reduce redundancy.
+Cards marked with an asterisk are removed from the game when played as an event. (This will not be marked on 
+the Space Race lists) 
 
 USSR Early War:
-	31 -
-	16 -
-	28 -
-	07 -
-	17 -
-	14 -
-	09 -
-	30 -
-	24 -
-	11 -
-	13 -
-	10 -
-	15 -
-	12 -
-	08 -
-	33 -
-	20 -
-	34 -
-	18 -
-	32 -
+	31 - Red Scare/Purge
+	16 - *Warsaw Pact Formed
+	28 - *Suez Crisis
+	07 - Socialist Governments
+	17 - *De Gaulle Leads France
+	14 - *COMECON
+	09 - *Vietnam Revolts
+	30 - Decolonization
+	24 - Indo-Pakistani War
+	11 - *Korean War
+	13 - Arab-Israeli War
+	10 - *Blockade
+	15 - *Nassar
+	12 - *Romanian Abdication
+	08 - *Fidel
+	33 - *De-Stalinization
+	20 - Olympic Games
+	34 - Nuclear Test Ban
+        18 - *Captured Nazi Scientist
+	32 - UN Intervention
 
 US Early War:
 
