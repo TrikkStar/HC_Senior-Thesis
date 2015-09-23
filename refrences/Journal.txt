@@ -1,0 +1,16 @@
+9/22/2015:
+	Initial journal entry, horray! In all seriousness I may end up changing how I store this file, since this may become very bloated very quickly. 
+	After reading the AI book loaned to me by Dr. Wilson, I have came to the conclusion that I will be using a decision tree to modle my Agent. 
+	This doens't suprise me too much, as that type of logical structure has been how I've been thinking about this project from the begining, since 
+	the full decision making higharchy will be hardcoded. Though it is nice to see how such a system would be implimented, and formalizing things 
+	is always nice. 
+
+	This folder will contain all reference material I use in the creation of my project, but will not hold any of the actual assets used by my project. 
+	The first amongst these is "Card play priority.pdf", which currently contains a high level breakdown of the logic flow used by the agent when 
+	selecting a card to play at any given point in the game. The boxes describing various conditions implicitly mean that a check will be made to see 
+	if any cards fit the given conditions for that paticular play choice. If they do then that event is executed, with dotted lines going to additional 
+	logic subtrees as needed. This list is not complete though and will be supplimented and changed as necessary, the biggest supplement being the 
+	hiearchy of card events, which will be its own file. 
+
+	I'm not sure what else to add at the moment, but will keep maintaining this with random jottings and ideas I have to help document the developement 
+	process. I'm going to create the file for the card hiearchys and possible add to what I already have decided later tonight. 
