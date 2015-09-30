@@ -17,7 +17,14 @@
 
 
 9/24/2015:
-        Done some research into creating an executable and it is pretty much as straightforward as I thought. Just need to compile the file in a specific way.
-        As for making a GUI, that's going to be a lot more complicated. Since I'm aiming for a Windows audience the best thing to use looks like the 
-        Windows API, which will require coding my project in C++, which I had planned on doing anyways. Yay for convince making my decisions for me.
-        I don't know entirely how difficult it will be to use the API, need to read more on how I would use it. 
+    Done some research into creating an executable and it is pretty much as straightforward as I thought. Just need to compile the file in a specific way.
+    As for making a GUI, that's going to be a lot more complicated. Since I'm aiming for a Windows audience the best thing to use looks like the Windows 
+    API, which will require coding my project in C++, which I had planned on doing anyways. Yay for convince making my decisions for me.
+    I don't know entirely how difficult it will be to use the API, need to read more on how I would use it. 
+
+9/29/2015:
+	After doing further reserch into the Windows API, I believe the type of program I will be creating is a Win32 application. Reading up on this, it is a
+	decently meaty subject to learn about. Enough so that I am wondering wheather or not this project will be as feasable as I first thought. Though it is 
+	suppost to be challenging, I feel like some prior knowledge in this feild would be greatly useful. As of now I am following along a serise of tutorials 
+	walking through the process of how Win32 apps work, they can be found at: http://www.relisoft.com/win32/index.html. I'm still trying to process though 
+	everything so more will follow later. Though I am certain this is the correct direction to be going in terms of what kind of program I will make. 
