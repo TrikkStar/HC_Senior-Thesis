@@ -28,3 +28,23 @@
 	suppost to be challenging, I feel like some prior knowledge in this feild would be greatly useful. As of now I am following along a serise of tutorials 
 	walking through the process of how Win32 apps work, they can be found at: http://www.relisoft.com/win32/index.html. I'm still trying to process though 
 	everything so more will follow later. Though I am certain this is the correct direction to be going in terms of what kind of program I will make. 
+
+10/13/2015:
+	Added some resources that will be used as reference material. Have also decided that card dealing will be handeled by the program ant the user will simply
+	be told which cards they have been delat. They will need a way to refrence them however, for only the names will be given. 
+	Additionally I have came up with a list of use cases that my project will be using. For now they will be listed here.
+
+	Start a game
+		-Select Side
+		-Optinal Rules/Varients
+		-Place Starting Influence
+
+	Deal Cards
+		-Aknolege Recevial of Cards
+
+	Play a Card
+		-Select Card
+		-Event/Value/Scoring
+		-if Value: 
+			-Influence/Coup/Realingment/Space Race
+			-Target(s)
