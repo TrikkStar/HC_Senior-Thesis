@@ -48,3 +48,10 @@
 		-if Value: 
 			-Influence/Coup/Realingment/Space Race
 			-Target(s)
+
+11/8/2015:
+	Proposal and presentation have gone well thus far. More frequent updates will probably follow this entry because weekly progress updates are a required part of 
+	the remainder of the semester. As far as a goal for the end of the semester, I intend to have completed the serise of tutorials that I am currently following 
+	to learn the in's and out's of Win32 applications. With the possibility of creating the most basic shell on whith which my program will be built on. For my weekely
+	goal I intend to have completed most of the "Generic" tutorial on the website. This being the second tutorial in the serise, but I am not sure if I will need 
+	to complete all of them to learn what I need to know. 
