@@ -26,7 +26,7 @@
 	After doing further reserch into the Windows API, I believe the type of program I will be creating is a Win32 application. Reading up on this, it is a
 	decently meaty subject to learn about. Enough so that I am wondering wheather or not this project will be as feasable as I first thought. Though it is 
 	suppost to be challenging, I feel like some prior knowledge in this feild would be greatly useful. As of now I am following along a serise of tutorials 
-	walking through the process of how Win32 apps work, they can be found at: http://www.relisoft.com/win32/index.html. I'm still trying to process though 
+	walking through the process of how Win32 apps work, they can be found at: http://www.relisoft.com/win32/. I'm still trying to process though 
 	everything so more will follow later. Though I am certain this is the correct direction to be going in terms of what kind of program I will make. 
 
 10/13/2015:
@@ -55,3 +55,8 @@
 	to learn the in's and out's of Win32 applications. With the possibility of creating the most basic shell on whith which my program will be built on. For my weekely
 	goal I intend to have completed most of the "Generic" tutorial on the website. This being the second tutorial in the serise, but I am not sure if I will need 
 	to complete all of them to learn what I need to know. 
+
+11/17/2015:
+	Been busier with other school woork than anticipated. Currrent gaol still stands to continue working though the tutorials to get a firmer grasp of how Win32 
+	applications work. Semester goal has definatly been revised to include at least a running window with minimal functionality. This goal may be revised again.
+	Will be updating with a breakdown of basic information contained in said tutorials later today.
