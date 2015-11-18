@@ -60,3 +60,6 @@
 	Been busier with other school woork than anticipated. Currrent gaol still stands to continue working though the tutorials to get a firmer grasp of how Win32 
 	applications work. Semester goal has definatly been revised to include at least a running window with minimal functionality. This goal may be revised again.
 	Will be updating with a breakdown of basic information contained in said tutorials later today.
+
+	Update: After attempting to follow the tutorials I had selected, I have found a much better resource at http://www.winprog.org/tutorial/. This seems to be 
+	much more step by step and explains things in greater detail than the other one. Will be working from these from now on. 
