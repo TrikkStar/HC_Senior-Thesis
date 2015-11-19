@@ -131,7 +131,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		HINSTANCE hInstance = GetModuleHandle(NULL);
 
 		GetModuleFileName(hInstance, szFileName, MAX_PATH);
-		MessageBox(hWnd, szFileName, L"This program is:", MB_OK | MB_ICONINFORMATION);
+		MessageBox(hWnd, szFileName, _T("This program is:"), MB_OK | MB_ICONINFORMATION);
 		}
 		break;
 
