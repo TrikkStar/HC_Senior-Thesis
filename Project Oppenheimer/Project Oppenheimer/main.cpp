@@ -6,7 +6,7 @@
 // Global variables
 
 // The main window class name.
-static TCHAR szWindowClass[] = _T("win32app");
+static TCHAR szWindowClass[] = _T("ProjectOppenheimerapp");
 
 // The string that appears in the application's title bar.
 static TCHAR szTitle[] = _T("Project Oppenheimer");
@@ -40,7 +40,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 	{
 		MessageBox(NULL,
 			_T("Call to RegisterClassEx failed!"),
-			_T("Win32 Guided Tour"),
+			_T("ProjectOppenheimerapp"),
 			NULL);
 
 		return 1;
@@ -74,7 +74,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 	{
 		MessageBox(NULL,
 			_T("Call to CreateWindow failed!"),
-			_T("Win32 Guided Tour"),
+			_T("ProjectOppenheimerapp"),
 			NULL);
 
 		return 1;
@@ -111,7 +111,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
 	PAINTSTRUCT ps;
 	HDC hdc;
-	TCHAR greeting[] = _T("Hello, World!");
+	TCHAR greeting[] = _T("Now I am become Death, the destroyer of worlds.");
 
 	switch (message)
 	{
