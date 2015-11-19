@@ -22,7 +22,7 @@ USSR Early War:
 	33 - *De-Stalinization
 	20 - Olympic Games
 	34 - Nuclear Test Ban
-        18 - *Captured Nazi Scientist
+	18 - *Captured Nazi Scientist
 	32 - UN Intervention
 
 US Early War:

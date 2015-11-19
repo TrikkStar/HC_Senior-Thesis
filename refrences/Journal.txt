@@ -63,3 +63,9 @@
 
 	Update: After attempting to follow the tutorials I had selected, I have found a much better resource at http://www.winprog.org/tutorial/. This seems to be 
 	much more step by step and explains things in greater detail than the other one. Will be working from these from now on. 
+
+11/19/2015:
+	New serise of tutorials is much more helpful than the old ones, explanations are much more clear and concise and I feel like I'm finally making actual progress on
+	the Win32 part of my project. I now believe that making an application shell with basic functionality for my project shouldn't be a problem at all. A very generous 
+	estimate would have me being 50% done with the GUI and gamestate by the end of the semester. I intend to keep as much of the files that I currently have created as 
+	possible. Presenting progress tomorrow shouldn't be an issue. 
