@@ -118,19 +118,27 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 	case WM_PAINT:
 		hdc = BeginPaint(hWnd, &ps);
 
-		// Here your application is laid out.
-		// For this introduction, we just print out "Hello, World!"
-		// in the top left corner.
 		TextOut(hdc,
 			5, 5,
 			greeting, _tcslen(greeting));
-		// End application-specific layout section.
 
 		EndPaint(hWnd, &ps);
 		break;
+
+	case WM_RBUTTONDOWN:
+		{
+		TCHAR szFileName[MAX_PATH];
+		HINSTANCE hInstance = GetModuleHandle(NULL);
+
+		GetModuleFileName(hInstance, szFileName, MAX_PATH);
+		MessageBox(hWnd, szFileName, L"This program is:", MB_OK | MB_ICONINFORMATION);
+		}
+		break;
+
 	case WM_DESTROY:
 		PostQuitMessage(0);
 		break;
+
 	default:
 		return DefWindowProc(hWnd, message, wParam, lParam);
 		break;
