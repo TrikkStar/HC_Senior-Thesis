@@ -109,20 +109,22 @@ int WINAPI WinMain(HINSTANCE hInstance,
 //
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
-	PAINTSTRUCT ps;
-	HDC hdc;
-	TCHAR greeting[] = _T("Now I am become Death, the destroyer of worlds.");
 
 	switch (message)
 	{
 	case WM_PAINT:
-		hdc = BeginPaint(hWnd, &ps);
+		{
+		PAINTSTRUCT ps;
+		HDC hdc;
+		TCHAR greeting[] = _T("Now I am become Death, the destroyer of worlds.");
 
+		hdc = BeginPaint(hWnd, &ps);
 		TextOut(hdc,
 			5, 5,
 			greeting, _tcslen(greeting));
 
 		EndPaint(hWnd, &ps);
+		}
 		break;
 
 	case WM_RBUTTONDOWN:
