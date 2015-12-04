@@ -73,3 +73,8 @@
 11/29/2015:
 	Due to unforseen family visitation over Thanksgiving I was unable to make progress over break as planned. That being said my goals still remain the same to continue 
 	to work through the tutorials I have found, adding to my working project as I go. 
+
+12/3/2015:
+	Quick update on progress made thusfar. I've added in a menue bar with a single non-functional entry as well as icon displayed on the desktop and upper left of the 
+	application window. This menue bar will be used for accesing "developer functions" (e.g. manually changing variables in the gamestate). Progress is continueing 
+	allong and new updates will be made as progress advances. 
