@@ -85,4 +85,14 @@ more specific information about changes I recomend looking through the comit his
 12/10/2015:
 	I've added several new buttons to the menu bar which will be used to start new games and edit game information for debugging pourposes. After I actually impliment
 	the gamestate I will add functuanality to these buttons. I will be continuing to work on the tutorials hoping to show dynamic content in the application itself 
-	fairly soon. More developement fun to come in further entries.  
+	fairly soon. More developement fun to come in further entries.
+
+12/15/2016:
+	Objectives for Christmas break:
+		• Content dynamically displayed on main screen
+			o Individual entries for country influence for each side and an additional indicator for control
+			o Entries for turn and other related board information
+		• Game state mostly implemented 
+			o objects and variables implemented to track various game state related data
+				 countries, turns, defcon, etc.
+			o menu buttons created and working to manually edit game state variables
