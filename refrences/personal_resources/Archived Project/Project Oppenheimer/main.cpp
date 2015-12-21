@@ -128,11 +128,11 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		}
 		break;
 
-	case WM_RBUTTONDOWN:
+	/*case WM_RBUTTONDOWN:
 		{
 			
 		}
-		break;
+		break;*/
 
 	case WM_COMMAND:
 		switch (LOWORD(wParam))

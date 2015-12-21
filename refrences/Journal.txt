@@ -89,10 +89,20 @@ more specific information about changes I recomend looking through the comit his
 
 12/15/2016:
 	Objectives for Christmas break:
-		• Content dynamically displayed on main screen
-			o Individual entries for country influence for each side and an additional indicator for control
-			o Entries for turn and other related board information
-		• Game state mostly implemented 
-			o objects and variables implemented to track various game state related data
-				 countries, turns, defcon, etc.
-			o menu buttons created and working to manually edit game state variables
+	• Content dynamically displayed on main screen
+		o Individual entries for country influence for each side and an additional indicator for control
+		o Entries for turn and other related board information
+	• Game state mostly implemented 
+		o objects and variables implemented to track various game state related data
+			 countries, turns, defcon, etc.
+		o menu buttons created and working to manually edit game state variables
+
+12/20/2016:
+	After extensively scouring the internet I have determined that using a Win32 type application is not the way to go for this project. Using the free version 
+	of Visual Studio does not provide the necessary tools for visually creating the GUI, an essential reason that I pursued Win32 as an application type.
+	After some reserch I have found that a Visual C++ CLR project will provide the necessary framework for what I am doing. While this does mean I will
+	essentially be discarding everything I have created up to this point, having followed a brief tutorial found here:
+	http://www.bogotobogo.com/cplusplus/application_visual_studio_2013.php I am confident I can get back to where I was before within a matter of hours. This will
+	also mean that I will not be spending extensive time trying to learn the Windows API, which I believe was unnecessairly low level for my project. While some aaspects
+	may change(unsure if I can impliment menu bars) I still will be coding in C++. I am glad I finally realised this at the beginning of break, as this will not be a 
+	serious setback and I do believe that I will be able to acchieve my goal for break. 
