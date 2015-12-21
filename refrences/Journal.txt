@@ -106,3 +106,5 @@ more specific information about changes I recomend looking through the comit his
 	also mean that I will not be spending extensive time trying to learn the Windows API, which I believe was unnecessairly low level for my project. While some aaspects
 	may change(unsure if I can impliment menu bars) I still will be coding in C++. I am glad I finally realised this at the beginning of break, as this will not be a 
 	serious setback and I do believe that I will be able to acchieve my goal for break. 
+
+	Edit: Took about an hour to catch up to where I was in the new project type. 
