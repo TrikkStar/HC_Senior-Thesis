@@ -130,11 +130,20 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 	case WM_RBUTTONDOWN:
 		{
-		TCHAR szFileName[MAX_PATH];
-		HINSTANCE hInstance = GetModuleHandle(NULL);
+			
+		}
+		break;
 
-		GetModuleFileName(hInstance, szFileName, MAX_PATH);
-		MessageBox(hWnd, szFileName, _T("This program is:"), MB_OK | MB_ICONINFORMATION);
+	case WM_COMMAND:
+		switch (LOWORD(wParam))
+		{
+			case ID_DEVELOPERTOOLS_TEST:
+				TCHAR szFileName[MAX_PATH];
+				HINSTANCE hInstance = GetModuleHandle(NULL);
+
+				GetModuleFileName(hInstance, szFileName, MAX_PATH);
+				MessageBox(hWnd, szFileName, _T("This program is:"), MB_OK | MB_ICONINFORMATION);
+			break;
 		}
 		break;
 
