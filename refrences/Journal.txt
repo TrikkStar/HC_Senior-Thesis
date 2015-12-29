@@ -116,3 +116,6 @@ more specific information about changes I recomend looking through the comit his
 	problem stems from the fact that I apparently haven't learned about strings correctly, as I cannot seem to declair them in any method that I have been able to lookup thusfar.
 	I will be looking into this more but as it stands I am getting the current error: "a member of a managed class cannot be of a non-managed class type". I'm doing my best to figure
 	out exactly what this means but for now I'm pretty stuck. Going to open uo an issue regarding this on github. 
+
+	Update: fixed the issue, turns out I was using something called a managed class wich is a fetur of C++/CLI, which I didn't know I was using. -_- Anyways I came to a solution by 
+	following advice here: http://stackoverflow.com/questions/9283383/mixed-management-in-c (saved for reference).
