@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 
-ref class Country
+class Country
 {
 public:
 	Country();
