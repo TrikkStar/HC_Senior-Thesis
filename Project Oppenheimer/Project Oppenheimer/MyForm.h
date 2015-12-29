@@ -1,4 +1,8 @@
+#include "Gamestate.cpp"
+#include <string>
 #pragma once
+
+Gamestate game;
 
 namespace ProjectOppenheimer {
 
@@ -1353,22 +1357,22 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 			this->Argentina_USA = (gcnew System::Windows::Forms::Label());
 			this->Argentina_USSR = (gcnew System::Windows::Forms::Label());
 			this->groupBox7 = (gcnew System::Windows::Forms::GroupBox());
-			this->Turn_lbl = (gcnew System::Windows::Forms::Label());
-			this->label251 = (gcnew System::Windows::Forms::Label());
-			this->label252 = (gcnew System::Windows::Forms::Label());
-			this->Round_lbl = (gcnew System::Windows::Forms::Label());
-			this->label254 = (gcnew System::Windows::Forms::Label());
-			this->Score_lbl = (gcnew System::Windows::Forms::Label());
-			this->label256 = (gcnew System::Windows::Forms::Label());
-			this->Defcon_lbl = (gcnew System::Windows::Forms::Label());
-			this->label258 = (gcnew System::Windows::Forms::Label());
-			this->tableLayoutPanel84 = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->MilitaryOps_USA = (gcnew System::Windows::Forms::Label());
-			this->MilitaryOps_USSR = (gcnew System::Windows::Forms::Label());
 			this->label261 = (gcnew System::Windows::Forms::Label());
 			this->tableLayoutPanel85 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->SpaceRace_USA = (gcnew System::Windows::Forms::Label());
 			this->SpaceRace_USSR = (gcnew System::Windows::Forms::Label());
+			this->label258 = (gcnew System::Windows::Forms::Label());
+			this->label256 = (gcnew System::Windows::Forms::Label());
+			this->tableLayoutPanel84 = (gcnew System::Windows::Forms::TableLayoutPanel());
+			this->MilitaryOps_USA = (gcnew System::Windows::Forms::Label());
+			this->MilitaryOps_USSR = (gcnew System::Windows::Forms::Label());
+			this->Defcon_lbl = (gcnew System::Windows::Forms::Label());
+			this->label254 = (gcnew System::Windows::Forms::Label());
+			this->Score_lbl = (gcnew System::Windows::Forms::Label());
+			this->label252 = (gcnew System::Windows::Forms::Label());
+			this->Round_lbl = (gcnew System::Windows::Forms::Label());
+			this->label251 = (gcnew System::Windows::Forms::Label());
+			this->Turn_lbl = (gcnew System::Windows::Forms::Label());
 			this->menuStrip1->SuspendLayout();
 			this->groupBox1->SuspendLayout();
 			this->tableLayoutPanel17->SuspendLayout();
@@ -1460,8 +1464,8 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 			this->tableLayoutPanel82->SuspendLayout();
 			this->tableLayoutPanel83->SuspendLayout();
 			this->groupBox7->SuspendLayout();
-			this->tableLayoutPanel84->SuspendLayout();
 			this->tableLayoutPanel85->SuspendLayout();
+			this->tableLayoutPanel84->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// menuStrip1
@@ -1524,7 +1528,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 					this->southAmericaToolStripMenuItem
 			});
 			this->countryToolStripMenuItem->Name = L"countryToolStripMenuItem";
-			this->countryToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->countryToolStripMenuItem->Size = System::Drawing::Size(135, 26);
 			this->countryToolStripMenuItem->Text = L"Country";
 			// 
 			// africaToolStripMenuItem
@@ -1972,61 +1976,61 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 			// egyptToolStripMenuItem
 			// 
 			this->egyptToolStripMenuItem->Name = L"egyptToolStripMenuItem";
-			this->egyptToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->egyptToolStripMenuItem->Size = System::Drawing::Size(169, 26);
 			this->egyptToolStripMenuItem->Text = L"Egypt";
 			// 
 			// gulfStatesToolStripMenuItem
 			// 
 			this->gulfStatesToolStripMenuItem->Name = L"gulfStatesToolStripMenuItem";
-			this->gulfStatesToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->gulfStatesToolStripMenuItem->Size = System::Drawing::Size(169, 26);
 			this->gulfStatesToolStripMenuItem->Text = L"Gulf States";
 			// 
 			// iranToolStripMenuItem
 			// 
 			this->iranToolStripMenuItem->Name = L"iranToolStripMenuItem";
-			this->iranToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->iranToolStripMenuItem->Size = System::Drawing::Size(169, 26);
 			this->iranToolStripMenuItem->Text = L"Iran";
 			// 
 			// iraqToolStripMenuItem
 			// 
 			this->iraqToolStripMenuItem->Name = L"iraqToolStripMenuItem";
-			this->iraqToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->iraqToolStripMenuItem->Size = System::Drawing::Size(169, 26);
 			this->iraqToolStripMenuItem->Text = L"Iraq";
 			// 
 			// israelToolStripMenuItem
 			// 
 			this->israelToolStripMenuItem->Name = L"israelToolStripMenuItem";
-			this->israelToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->israelToolStripMenuItem->Size = System::Drawing::Size(169, 26);
 			this->israelToolStripMenuItem->Text = L"Israel";
 			// 
 			// jordanToolStripMenuItem
 			// 
 			this->jordanToolStripMenuItem->Name = L"jordanToolStripMenuItem";
-			this->jordanToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->jordanToolStripMenuItem->Size = System::Drawing::Size(169, 26);
 			this->jordanToolStripMenuItem->Text = L"Jordan";
 			// 
 			// lebanonToolStripMenuItem
 			// 
 			this->lebanonToolStripMenuItem->Name = L"lebanonToolStripMenuItem";
-			this->lebanonToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->lebanonToolStripMenuItem->Size = System::Drawing::Size(169, 26);
 			this->lebanonToolStripMenuItem->Text = L"Lebanon";
 			// 
 			// libyaToolStripMenuItem
 			// 
 			this->libyaToolStripMenuItem->Name = L"libyaToolStripMenuItem";
-			this->libyaToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->libyaToolStripMenuItem->Size = System::Drawing::Size(169, 26);
 			this->libyaToolStripMenuItem->Text = L"Libya";
 			// 
 			// saudiArabiaToolStripMenuItem
 			// 
 			this->saudiArabiaToolStripMenuItem->Name = L"saudiArabiaToolStripMenuItem";
-			this->saudiArabiaToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->saudiArabiaToolStripMenuItem->Size = System::Drawing::Size(169, 26);
 			this->saudiArabiaToolStripMenuItem->Text = L"Saudi Arabia";
 			// 
 			// syriaToolStripMenuItem
 			// 
 			this->syriaToolStripMenuItem->Name = L"syriaToolStripMenuItem";
-			this->syriaToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->syriaToolStripMenuItem->Size = System::Drawing::Size(169, 26);
 			this->syriaToolStripMenuItem->Text = L"Syria";
 			// 
 			// southAmericaToolStripMenuItem
@@ -2044,61 +2048,61 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 			// argentinaToolStripMenuItem
 			// 
 			this->argentinaToolStripMenuItem->Name = L"argentinaToolStripMenuItem";
-			this->argentinaToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->argentinaToolStripMenuItem->Size = System::Drawing::Size(152, 26);
 			this->argentinaToolStripMenuItem->Text = L"Argentina";
 			// 
 			// brazilToolStripMenuItem
 			// 
 			this->brazilToolStripMenuItem->Name = L"brazilToolStripMenuItem";
-			this->brazilToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->brazilToolStripMenuItem->Size = System::Drawing::Size(152, 26);
 			this->brazilToolStripMenuItem->Text = L"Brazil";
 			// 
 			// boliviaToolStripMenuItem
 			// 
 			this->boliviaToolStripMenuItem->Name = L"boliviaToolStripMenuItem";
-			this->boliviaToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->boliviaToolStripMenuItem->Size = System::Drawing::Size(152, 26);
 			this->boliviaToolStripMenuItem->Text = L"Bolivia";
 			// 
 			// chileToolStripMenuItem
 			// 
 			this->chileToolStripMenuItem->Name = L"chileToolStripMenuItem";
-			this->chileToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->chileToolStripMenuItem->Size = System::Drawing::Size(152, 26);
 			this->chileToolStripMenuItem->Text = L"Chile";
 			// 
 			// colombiaToolStripMenuItem
 			// 
 			this->colombiaToolStripMenuItem->Name = L"colombiaToolStripMenuItem";
-			this->colombiaToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->colombiaToolStripMenuItem->Size = System::Drawing::Size(152, 26);
 			this->colombiaToolStripMenuItem->Text = L"Colombia";
 			// 
 			// ecuadorToolStripMenuItem
 			// 
 			this->ecuadorToolStripMenuItem->Name = L"ecuadorToolStripMenuItem";
-			this->ecuadorToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->ecuadorToolStripMenuItem->Size = System::Drawing::Size(152, 26);
 			this->ecuadorToolStripMenuItem->Text = L"Ecuador";
 			// 
 			// paraguayToolStripMenuItem
 			// 
 			this->paraguayToolStripMenuItem->Name = L"paraguayToolStripMenuItem";
-			this->paraguayToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->paraguayToolStripMenuItem->Size = System::Drawing::Size(152, 26);
 			this->paraguayToolStripMenuItem->Text = L"Paraguay";
 			// 
 			// peruToolStripMenuItem
 			// 
 			this->peruToolStripMenuItem->Name = L"peruToolStripMenuItem";
-			this->peruToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->peruToolStripMenuItem->Size = System::Drawing::Size(152, 26);
 			this->peruToolStripMenuItem->Text = L"Peru";
 			// 
 			// uruguayToolStripMenuItem
 			// 
 			this->uruguayToolStripMenuItem->Name = L"uruguayToolStripMenuItem";
-			this->uruguayToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->uruguayToolStripMenuItem->Size = System::Drawing::Size(152, 26);
 			this->uruguayToolStripMenuItem->Text = L"Uruguay";
 			// 
 			// venezuelaToolStripMenuItem
 			// 
 			this->venezuelaToolStripMenuItem->Name = L"venezuelaToolStripMenuItem";
-			this->venezuelaToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->venezuelaToolStripMenuItem->Size = System::Drawing::Size(152, 26);
 			this->venezuelaToolStripMenuItem->Text = L"Venezuela";
 			// 
 			// gameToolStripMenuItem
@@ -2109,7 +2113,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 					this->spaceRaceToolStripMenuItem, this->eventToolStripMenuItem, this->resetToolStripMenuItem
 			});
 			this->gameToolStripMenuItem->Name = L"gameToolStripMenuItem";
-			this->gameToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->gameToolStripMenuItem->Size = System::Drawing::Size(135, 26);
 			this->gameToolStripMenuItem->Text = L"Game";
 			// 
 			// turnToolStripMenuItem
@@ -2120,7 +2124,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 					this->toolStripMenuItem8, this->toolStripMenuItem9, this->toolStripMenuItem10, this->toolStripMenuItem11
 			});
 			this->turnToolStripMenuItem->Name = L"turnToolStripMenuItem";
-			this->turnToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->turnToolStripMenuItem->Size = System::Drawing::Size(164, 26);
 			this->turnToolStripMenuItem->Text = L"Turn";
 			// 
 			// toolStripMenuItem2
@@ -2191,7 +2195,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 					this->toolStripMenuItem17, this->toolStripMenuItem18, this->toolStripMenuItem19
 			});
 			this->roundToolStripMenuItem->Name = L"roundToolStripMenuItem";
-			this->roundToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->roundToolStripMenuItem->Size = System::Drawing::Size(164, 26);
 			this->roundToolStripMenuItem->Text = L"Round";
 			// 
 			// headlinePhaseToolStripMenuItem
@@ -2255,7 +2259,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 					this->uSAToolStripMenuItem2, this->uSSRToolStripMenuItem2
 			});
 			this->scoreToolStripMenuItem->Name = L"scoreToolStripMenuItem";
-			this->scoreToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->scoreToolStripMenuItem->Size = System::Drawing::Size(164, 26);
 			this->scoreToolStripMenuItem->Text = L"Score";
 			// 
 			// toolStripMenuItem20
@@ -2525,7 +2529,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 					this->toolStripMenuItem60, this->toolStripMenuItem61, this->toolStripMenuItem62
 			});
 			this->defconToolStripMenuItem->Name = L"defconToolStripMenuItem";
-			this->defconToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->defconToolStripMenuItem->Size = System::Drawing::Size(164, 26);
 			this->defconToolStripMenuItem->Text = L"Defcon";
 			// 
 			// toolStripMenuItem59
@@ -2559,7 +2563,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 					this->uSSRToolStripMenuItem3
 			});
 			this->militaryOpsToolStripMenuItem->Name = L"militaryOpsToolStripMenuItem";
-			this->militaryOpsToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->militaryOpsToolStripMenuItem->Size = System::Drawing::Size(164, 26);
 			this->militaryOpsToolStripMenuItem->Text = L"Military Ops";
 			// 
 			// uSAToolStripMenuItem3
@@ -2569,7 +2573,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 					this->toolStripMenuItem64, this->toolStripMenuItem65, this->toolStripMenuItem66, this->toolStripMenuItem67, this->toolStripMenuItem68
 			});
 			this->uSAToolStripMenuItem3->Name = L"uSAToolStripMenuItem3";
-			this->uSAToolStripMenuItem3->Size = System::Drawing::Size(181, 26);
+			this->uSAToolStripMenuItem3->Size = System::Drawing::Size(119, 26);
 			this->uSAToolStripMenuItem3->Text = L"USA";
 			// 
 			// toolStripMenuItem63
@@ -2615,7 +2619,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 					this->toolStripMenuItem70, this->toolStripMenuItem71, this->toolStripMenuItem72, this->toolStripMenuItem73, this->toolStripMenuItem74
 			});
 			this->uSSRToolStripMenuItem3->Name = L"uSSRToolStripMenuItem3";
-			this->uSSRToolStripMenuItem3->Size = System::Drawing::Size(181, 26);
+			this->uSSRToolStripMenuItem3->Size = System::Drawing::Size(119, 26);
 			this->uSSRToolStripMenuItem3->Text = L"USSR";
 			// 
 			// toolStripMenuItem69
@@ -2661,7 +2665,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 					this->uSSRToolStripMenuItem4
 			});
 			this->spaceRaceToolStripMenuItem->Name = L"spaceRaceToolStripMenuItem";
-			this->spaceRaceToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->spaceRaceToolStripMenuItem->Size = System::Drawing::Size(164, 26);
 			this->spaceRaceToolStripMenuItem->Text = L"Space Race";
 			// 
 			// uSAToolStripMenuItem4
@@ -2797,13 +2801,13 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 			// eventToolStripMenuItem
 			// 
 			this->eventToolStripMenuItem->Name = L"eventToolStripMenuItem";
-			this->eventToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->eventToolStripMenuItem->Size = System::Drawing::Size(164, 26);
 			this->eventToolStripMenuItem->Text = L"Event";
 			// 
 			// resetToolStripMenuItem
 			// 
 			this->resetToolStripMenuItem->Name = L"resetToolStripMenuItem";
-			this->resetToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->resetToolStripMenuItem->Size = System::Drawing::Size(164, 26);
 			this->resetToolStripMenuItem->Text = L"Reset";
 			// 
 			// handsToolStripMenuItem
@@ -2813,7 +2817,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 					this->uSSRToolStripMenuItem1
 			});
 			this->handsToolStripMenuItem->Name = L"handsToolStripMenuItem";
-			this->handsToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->handsToolStripMenuItem->Size = System::Drawing::Size(135, 26);
 			this->handsToolStripMenuItem->Text = L"Hands";
 			// 
 			// uSAToolStripMenuItem1
@@ -7565,152 +7569,6 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 			this->groupBox7->TabStop = false;
 			this->groupBox7->Text = L"Board State";
 			// 
-			// Turn_lbl
-			// 
-			this->Turn_lbl->AutoSize = true;
-			this->Turn_lbl->BackColor = System::Drawing::Color::White;
-			this->Turn_lbl->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->Turn_lbl->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->Turn_lbl->Location = System::Drawing::Point(16, 42);
-			this->Turn_lbl->Name = L"Turn_lbl";
-			this->Turn_lbl->Size = System::Drawing::Size(32, 17);
-			this->Turn_lbl->TabIndex = 11;
-			this->Turn_lbl->Text = L"-10";
-			this->Turn_lbl->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// label251
-			// 
-			this->label251->AutoSize = true;
-			this->label251->Location = System::Drawing::Point(16, 19);
-			this->label251->Name = L"label251";
-			this->label251->Size = System::Drawing::Size(38, 17);
-			this->label251->TabIndex = 12;
-			this->label251->Text = L"Turn";
-			// 
-			// label252
-			// 
-			this->label252->AutoSize = true;
-			this->label252->Location = System::Drawing::Point(16, 64);
-			this->label252->Name = L"label252";
-			this->label252->Size = System::Drawing::Size(50, 17);
-			this->label252->TabIndex = 14;
-			this->label252->Text = L"Round";
-			// 
-			// Round_lbl
-			// 
-			this->Round_lbl->AutoSize = true;
-			this->Round_lbl->BackColor = System::Drawing::Color::White;
-			this->Round_lbl->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->Round_lbl->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->Round_lbl->Location = System::Drawing::Point(16, 87);
-			this->Round_lbl->Name = L"Round_lbl";
-			this->Round_lbl->Size = System::Drawing::Size(32, 17);
-			this->Round_lbl->TabIndex = 13;
-			this->Round_lbl->Text = L"-10";
-			this->Round_lbl->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// label254
-			// 
-			this->label254->AutoSize = true;
-			this->label254->Location = System::Drawing::Point(16, 107);
-			this->label254->Name = L"label254";
-			this->label254->Size = System::Drawing::Size(45, 17);
-			this->label254->TabIndex = 16;
-			this->label254->Text = L"Score";
-			// 
-			// Score_lbl
-			// 
-			this->Score_lbl->AutoSize = true;
-			this->Score_lbl->BackColor = System::Drawing::Color::White;
-			this->Score_lbl->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->Score_lbl->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->Score_lbl->Location = System::Drawing::Point(16, 130);
-			this->Score_lbl->Name = L"Score_lbl";
-			this->Score_lbl->Size = System::Drawing::Size(32, 17);
-			this->Score_lbl->TabIndex = 15;
-			this->Score_lbl->Text = L"-10";
-			this->Score_lbl->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// label256
-			// 
-			this->label256->AutoSize = true;
-			this->label256->Location = System::Drawing::Point(16, 150);
-			this->label256->Name = L"label256";
-			this->label256->Size = System::Drawing::Size(53, 17);
-			this->label256->TabIndex = 18;
-			this->label256->Text = L"Defcon";
-			// 
-			// Defcon_lbl
-			// 
-			this->Defcon_lbl->AutoSize = true;
-			this->Defcon_lbl->BackColor = System::Drawing::Color::White;
-			this->Defcon_lbl->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->Defcon_lbl->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->Defcon_lbl->Location = System::Drawing::Point(16, 173);
-			this->Defcon_lbl->Name = L"Defcon_lbl";
-			this->Defcon_lbl->Size = System::Drawing::Size(32, 17);
-			this->Defcon_lbl->TabIndex = 17;
-			this->Defcon_lbl->Text = L"-10";
-			this->Defcon_lbl->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// label258
-			// 
-			this->label258->AutoSize = true;
-			this->label258->Location = System::Drawing::Point(99, 22);
-			this->label258->Name = L"label258";
-			this->label258->Size = System::Drawing::Size(82, 17);
-			this->label258->TabIndex = 43;
-			this->label258->Text = L"Military Ops";
-			// 
-			// tableLayoutPanel84
-			// 
-			this->tableLayoutPanel84->CellBorderStyle = System::Windows::Forms::TableLayoutPanelCellBorderStyle::Single;
-			this->tableLayoutPanel84->ColumnCount = 2;
-			this->tableLayoutPanel84->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				50)));
-			this->tableLayoutPanel84->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				50)));
-			this->tableLayoutPanel84->Controls->Add(this->MilitaryOps_USA, 0, 0);
-			this->tableLayoutPanel84->Controls->Add(this->MilitaryOps_USSR, 1, 0);
-			this->tableLayoutPanel84->Location = System::Drawing::Point(102, 42);
-			this->tableLayoutPanel84->Name = L"tableLayoutPanel84";
-			this->tableLayoutPanel84->RowCount = 1;
-			this->tableLayoutPanel84->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel84->Size = System::Drawing::Size(68, 20);
-			this->tableLayoutPanel84->TabIndex = 42;
-			// 
-			// MilitaryOps_USA
-			// 
-			this->MilitaryOps_USA->AutoSize = true;
-			this->MilitaryOps_USA->BackColor = System::Drawing::Color::White;
-			this->MilitaryOps_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->MilitaryOps_USA->ForeColor = System::Drawing::Color::Blue;
-			this->MilitaryOps_USA->Location = System::Drawing::Point(4, 1);
-			this->MilitaryOps_USA->Name = L"MilitaryOps_USA";
-			this->MilitaryOps_USA->Size = System::Drawing::Size(26, 17);
-			this->MilitaryOps_USA->TabIndex = 0;
-			this->MilitaryOps_USA->Text = L"10";
-			this->MilitaryOps_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// MilitaryOps_USSR
-			// 
-			this->MilitaryOps_USSR->AutoSize = true;
-			this->MilitaryOps_USSR->BackColor = System::Drawing::Color::White;
-			this->MilitaryOps_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->MilitaryOps_USSR->ForeColor = System::Drawing::Color::Red;
-			this->MilitaryOps_USSR->Location = System::Drawing::Point(37, 1);
-			this->MilitaryOps_USSR->Name = L"MilitaryOps_USSR";
-			this->MilitaryOps_USSR->Size = System::Drawing::Size(26, 17);
-			this->MilitaryOps_USSR->TabIndex = 5;
-			this->MilitaryOps_USSR->Text = L"10";
-			this->MilitaryOps_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
 			// label261
 			// 
 			this->label261->AutoSize = true;
@@ -7764,6 +7622,152 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 			this->SpaceRace_USSR->TabIndex = 5;
 			this->SpaceRace_USSR->Text = L"10";
 			this->SpaceRace_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// label258
+			// 
+			this->label258->AutoSize = true;
+			this->label258->Location = System::Drawing::Point(99, 22);
+			this->label258->Name = L"label258";
+			this->label258->Size = System::Drawing::Size(82, 17);
+			this->label258->TabIndex = 43;
+			this->label258->Text = L"Military Ops";
+			// 
+			// label256
+			// 
+			this->label256->AutoSize = true;
+			this->label256->Location = System::Drawing::Point(16, 150);
+			this->label256->Name = L"label256";
+			this->label256->Size = System::Drawing::Size(53, 17);
+			this->label256->TabIndex = 18;
+			this->label256->Text = L"Defcon";
+			// 
+			// tableLayoutPanel84
+			// 
+			this->tableLayoutPanel84->CellBorderStyle = System::Windows::Forms::TableLayoutPanelCellBorderStyle::Single;
+			this->tableLayoutPanel84->ColumnCount = 2;
+			this->tableLayoutPanel84->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				50)));
+			this->tableLayoutPanel84->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				50)));
+			this->tableLayoutPanel84->Controls->Add(this->MilitaryOps_USA, 0, 0);
+			this->tableLayoutPanel84->Controls->Add(this->MilitaryOps_USSR, 1, 0);
+			this->tableLayoutPanel84->Location = System::Drawing::Point(102, 42);
+			this->tableLayoutPanel84->Name = L"tableLayoutPanel84";
+			this->tableLayoutPanel84->RowCount = 1;
+			this->tableLayoutPanel84->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
+			this->tableLayoutPanel84->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel84->TabIndex = 42;
+			// 
+			// MilitaryOps_USA
+			// 
+			this->MilitaryOps_USA->AutoSize = true;
+			this->MilitaryOps_USA->BackColor = System::Drawing::Color::White;
+			this->MilitaryOps_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->MilitaryOps_USA->ForeColor = System::Drawing::Color::Blue;
+			this->MilitaryOps_USA->Location = System::Drawing::Point(4, 1);
+			this->MilitaryOps_USA->Name = L"MilitaryOps_USA";
+			this->MilitaryOps_USA->Size = System::Drawing::Size(26, 17);
+			this->MilitaryOps_USA->TabIndex = 0;
+			this->MilitaryOps_USA->Text = L"10";
+			this->MilitaryOps_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// MilitaryOps_USSR
+			// 
+			this->MilitaryOps_USSR->AutoSize = true;
+			this->MilitaryOps_USSR->BackColor = System::Drawing::Color::White;
+			this->MilitaryOps_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->MilitaryOps_USSR->ForeColor = System::Drawing::Color::Red;
+			this->MilitaryOps_USSR->Location = System::Drawing::Point(37, 1);
+			this->MilitaryOps_USSR->Name = L"MilitaryOps_USSR";
+			this->MilitaryOps_USSR->Size = System::Drawing::Size(26, 17);
+			this->MilitaryOps_USSR->TabIndex = 5;
+			this->MilitaryOps_USSR->Text = L"10";
+			this->MilitaryOps_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// Defcon_lbl
+			// 
+			this->Defcon_lbl->AutoSize = true;
+			this->Defcon_lbl->BackColor = System::Drawing::Color::White;
+			this->Defcon_lbl->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->Defcon_lbl->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->Defcon_lbl->Location = System::Drawing::Point(16, 173);
+			this->Defcon_lbl->Name = L"Defcon_lbl";
+			this->Defcon_lbl->Size = System::Drawing::Size(32, 17);
+			this->Defcon_lbl->TabIndex = 17;
+			this->Defcon_lbl->Text = L"-10";
+			this->Defcon_lbl->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// label254
+			// 
+			this->label254->AutoSize = true;
+			this->label254->Location = System::Drawing::Point(16, 107);
+			this->label254->Name = L"label254";
+			this->label254->Size = System::Drawing::Size(45, 17);
+			this->label254->TabIndex = 16;
+			this->label254->Text = L"Score";
+			// 
+			// Score_lbl
+			// 
+			this->Score_lbl->AutoSize = true;
+			this->Score_lbl->BackColor = System::Drawing::Color::White;
+			this->Score_lbl->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->Score_lbl->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->Score_lbl->Location = System::Drawing::Point(16, 130);
+			this->Score_lbl->Name = L"Score_lbl";
+			this->Score_lbl->Size = System::Drawing::Size(32, 17);
+			this->Score_lbl->TabIndex = 15;
+			this->Score_lbl->Text = L"-10";
+			this->Score_lbl->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// label252
+			// 
+			this->label252->AutoSize = true;
+			this->label252->Location = System::Drawing::Point(16, 64);
+			this->label252->Name = L"label252";
+			this->label252->Size = System::Drawing::Size(50, 17);
+			this->label252->TabIndex = 14;
+			this->label252->Text = L"Round";
+			// 
+			// Round_lbl
+			// 
+			this->Round_lbl->AutoSize = true;
+			this->Round_lbl->BackColor = System::Drawing::Color::White;
+			this->Round_lbl->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->Round_lbl->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->Round_lbl->Location = System::Drawing::Point(16, 87);
+			this->Round_lbl->Name = L"Round_lbl";
+			this->Round_lbl->Size = System::Drawing::Size(32, 17);
+			this->Round_lbl->TabIndex = 13;
+			this->Round_lbl->Text = L"-10";
+			this->Round_lbl->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// label251
+			// 
+			this->label251->AutoSize = true;
+			this->label251->Location = System::Drawing::Point(16, 19);
+			this->label251->Name = L"label251";
+			this->label251->Size = System::Drawing::Size(38, 17);
+			this->label251->TabIndex = 12;
+			this->label251->Text = L"Turn";
+			// 
+			// Turn_lbl
+			// 
+			this->Turn_lbl->AutoSize = true;
+			this->Turn_lbl->BackColor = System::Drawing::Color::White;
+			this->Turn_lbl->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->Turn_lbl->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->Turn_lbl->Location = System::Drawing::Point(16, 42);
+			this->Turn_lbl->Name = L"Turn_lbl";
+			this->Turn_lbl->Size = System::Drawing::Size(32, 17);
+			this->Turn_lbl->TabIndex = 11;
+			this->Turn_lbl->Text = L"-10";
+			this->Turn_lbl->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// MyForm
 			// 
@@ -7964,10 +7968,10 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 			this->tableLayoutPanel83->PerformLayout();
 			this->groupBox7->ResumeLayout(false);
 			this->groupBox7->PerformLayout();
-			this->tableLayoutPanel84->ResumeLayout(false);
-			this->tableLayoutPanel84->PerformLayout();
 			this->tableLayoutPanel85->ResumeLayout(false);
 			this->tableLayoutPanel85->PerformLayout();
+			this->tableLayoutPanel84->ResumeLayout(false);
+			this->tableLayoutPanel84->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
