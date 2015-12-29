@@ -108,3 +108,11 @@ more specific information about changes I recomend looking through the comit his
 	serious setback and I do believe that I will be able to acchieve my goal for break. 
 
 	Edit: Took about an hour to catch up to where I was in the new project type. 
+
+12/29/2016:
+	New program type is not wthout its flaws. I am unsure how to dynamically change displayed content after it's initilazation. This should not be too much of an issue to solve 
+	since it simply requires changing the appropriate variable. However, to do this the way I had planed to requires including a .cpp file in a .h file, which is something you 
+	can't do apparently. I then realised that in my time at Hanover I can't remember really learing much about linking files together, which is a bit of a problem. My current 
+	problem stems from the fact that I apparently haven't learned about strings correctly, as I cannot seem to declair them in any method that I have been able to lookup thusfar.
+	I will be looking into this more but as it stands I am getting the current error: "a member of a managed class cannot be of a non-managed class type". I'm doing my best to figure
+	out exactly what this means but for now I'm pretty stuck. Going to open uo an issue regarding this on github. 
