@@ -1,8 +1,5 @@
-#include "Gamestate.cpp"
-#include <string>
 #pragma once
 
-Gamestate game;
 
 namespace ProjectOppenheimer {
 
