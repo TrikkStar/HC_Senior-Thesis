@@ -24,6 +24,9 @@
     <ClCompile Include="Country.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CountryList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyForm.h">
@@ -36,6 +39,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Country.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CountryList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

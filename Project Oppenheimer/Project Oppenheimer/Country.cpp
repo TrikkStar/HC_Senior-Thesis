@@ -17,56 +17,77 @@ Country::Country(std::string n, int s, int i, std::vector<int> vect)
 
 int Country::get_stability()
 {
-	return 0;
+	return this->stability;
 }
 
 
 std::string Country::get_name()
 {
-	return std::string();
+	return this->name;
 }
 
 
 int Country::get_id()
 {
-	return 0;
+	return this->id;
 }
 
 
 std::vector<int> Country::get_adjacent()
 {
-	return std::vector<int>();
+	return this->adjacent;
 }
 
 
 std::vector<int> Country::get_influence()
 {
-	return std::vector<int>();
+	std::vector<int> vect = {this->influenceUSA, this->influenceUSSR};
+	return vect;
 }
 
 
 bool Country::is_controlled()
 {
-	return false;
+	return this->controlled;
 }
 
 
 std::string Country::get_controller()
 {
-	return std::string();
+	return this->controller;
 }
 
 
 void Country::set_infUSA(int x)
 {
+	this->influenceUSA = x;
+	this->updateControl();
 }
 
 
 void Country::set_infUSSR(int x)
 {
+	this->influenceUSSR = x;
+	this->updateControl();
 }
 
-
+//checks to see if a country is controlled by either player
 void Country::updateControl()
 {
+	if (this->influenceUSA != this->influenceUSSR) {
+		//if USA influence is higher and the difference is at least as high as the stability value
+		if ((this->influenceUSA > this->influenceUSSR) && ((this->influenceUSA - this->influenceUSSR) >= this->stability)) {
+			this->controlled = true;
+			this->controller = "USA";
+			return;
+		}
+		//same as above but with USSR
+		else if ((this->influenceUSSR > this->influenceUSA) && ((this->influenceUSSR - this->influenceUSA) >= this->stability)) {
+			this->controlled = true;
+			this->controller = "USSR";
+			return;
+		}
+	}
+	this->controlled = false;
+	this->controller = "NONE";
 }

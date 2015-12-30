@@ -133,11 +133,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Country.cpp" />
+    <ClCompile Include="CountryList.cpp" />
     <ClCompile Include="Gamestate.cpp" />
     <ClCompile Include="MyForm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Country.h" />
+    <ClInclude Include="CountryList.h" />
     <ClInclude Include="Gamestate.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>

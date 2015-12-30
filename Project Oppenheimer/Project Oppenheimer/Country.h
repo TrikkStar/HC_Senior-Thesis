@@ -5,7 +5,7 @@
 class Country
 {
 public:
-	Country(std::string str, int x, int i, std::vector<int> vect);
+	Country(std::string name, int stability, int id, std::vector<int> countries);
 private:
 	int influenceUSA;
 	int influenceUSSR;
@@ -28,4 +28,6 @@ public:
 private:
 	void updateControl();
 };
+
+
 
