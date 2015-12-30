@@ -157,4 +157,100 @@ CountryList::CountryList()
 
 	Country Nicaragua("Nicaragua", 51, 1, false, std::vector<int>{2, 3, 4, 5});
 	this->countries.push_back(Nicaragua);
+
+	Country Nigeria("Nigeria", 52, 1, true, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(Nigeria);
+
+	Country NorthKorea("North Korea", 53, 3, true, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(NorthKorea);
+
+	Country Norway("Norway", 54, 4, false, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(Norway);
+
+	Country Pakistan("Pakistan", 55, 2, true, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(Pakistan);
+
+	Country Panama("Panama", 56, 2, true, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(Panama);
+
+	Country Paraguay("Paraguay", 57, 2, false, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(Paraguay);
+
+	Country Peru("Peru", 58, 2, false, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(Peru);
+
+	Country Philippians("Philippians", 59, 2, false, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(Philippians);
+
+	Country Poland("Poland", 60, 3, true, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(Poland);
+
+	Country Romania("Romania", 61, 3, false, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(Romania);
+
+	Country SEAfricanStates("South-East African States", 62, 1, false, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(SEAfricanStates);
+
+	Country SaharanStates("Saharan States", 63, 1, false, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(SaharanStates);
+
+	Country SaudiArabia("Saudi Arabia", 64, 3, true, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(SaudiArabia);
+
+	Country Somalia("Somalia", 65, 2, false, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(Somalia);
+
+	Country SouthAfrica("South Africa", 66, 3, true, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(SouthAfrica);
+
+	Country SouthKorea("South Korea", 67, 3, true, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(SouthKorea);
+
+	Country Sudan("Sudan", 68, 1, false, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(Sudan);
+
+	Country Sweden("Sweden", 69, 4, false, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(Sweden);
+
+	Country Syria("Syria", 70, 2, false, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(Syria);
+
+	Country Taiwan("Taiwan", 71, 3, false, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(Taiwan);
+
+	Country Thailand("Thailand", 72, 2, true, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(Thailand);
+
+	Country Tunisia("Tunisia", 73, 2, false, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(Tunisia);
+
+	Country Turkey("Turkey", 74, 2, false, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(Turkey);
+
+	Country UK("United Kingdom", 75, 5, false, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(UK);
+
+	Country Uruguay("Uruguay", 76, 2, false, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(Uruguay);
+
+	Country Venezuela("Venezuela", 77, 2, true, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(Venezuela);
+
+	Country Vietnam("Vietnam", 78, 1, false, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(Vietnam);
+
+	Country WGermany("West Germany", 79, 4, true, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(WGermany);
+
+	Country WAfricanStates("West African States", 80, 2, false, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(WAfricanStates);
+
+	Country Yugoslavia("Yugoslavia", 81, 3, false, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(Yugoslavia);
+
+	Country Zaire("Zaire", 82, 1, true, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(Zaire);
+
+	Country Zimbabwe("Zimbabwe", 83, 1, false, std::vector<int>{2, 3, 4, 5});
+	this->countries.push_back(Zimbabwe);
 }
