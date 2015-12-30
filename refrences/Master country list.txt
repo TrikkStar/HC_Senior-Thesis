@@ -1,0 +1,84 @@
+Countries appear in alphebetical order, which is the order that they will be indexed into CountryList
+Afghanistan
+Algeria
+Angola
+Argentina
+Australia
+Austria
+Benlux
+Bolivia
+Botswana
+Brazil
+Bulgaria
+Burma
+Cameroon
+Canada
+Chile
+Colombia
+Costa Rica
+Cuba
+Czechoslovakia
+Denmark
+Dominican Rep.
+E. Germany
+Ecuador
+Egypt
+El Salvador
+Ethiopia
+Finland
+France
+Greece
+Guatemala
+Gulf States
+Haiti
+Honduras
+Hungary
+India
+Indonesia
+Iran
+Iraq
+Israel
+Italy
+Ivory Coast
+Japan
+Jordan
+Kenya
+Laos/Cambodia
+Lebanon
+Libya
+Malaysia
+Mexico
+Morocco
+Nicaragua
+Nigeria
+North Korea
+Norway
+Pakistan
+Panama
+Paraguay
+Peru
+Philippians
+Poland
+Romania
+SE African States
+Saharan States
+Saudi Arabia
+Somalia
+South Africa
+South Korea
+Sudan
+Sweden
+Syria
+Taiwan
+Thailand
+Tunisia
+Turkey
+U.K.
+Uruguay
+Venezuela
+Vietnam
+W. Germany
+West African States
+Yugoslavia
+Zaire
+Zimbabwe
