@@ -5,7 +5,7 @@
 class Country
 {
 public:
-	Country(std::string name, int stability, int id, std::vector<int> countries);
+	Country(std::string name, int id, int stability, bool battleground, std::vector<int> countries);
 private:
 	int influenceUSA;
 	int influenceUSSR;
@@ -27,6 +27,9 @@ public:
 	void set_infUSSR(int x);
 private:
 	void updateControl();
+public:
+	bool battleground;
+	bool is_battleground();
 };
 
 

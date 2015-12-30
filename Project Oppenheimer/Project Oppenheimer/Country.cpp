@@ -2,11 +2,12 @@
 
 
 
-Country::Country(std::string n, int s, int i, std::vector<int> vect)
+Country::Country(std::string n, int i, int s, bool b, std::vector<int> vect)
 {
 	stability = s;
 	std::string name = n;
 	id = i;
+	battleground = b;
 	std::vector<int> adjacent = vect;
 	influenceUSA = 0;
 	influenceUSSR = 0;
@@ -90,4 +91,10 @@ void Country::updateControl()
 	}
 	this->controlled = false;
 	this->controller = "NONE";
+}
+
+
+bool Country::is_battleground()
+{
+	return this->battleground;
 }
