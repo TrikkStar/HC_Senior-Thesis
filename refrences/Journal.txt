@@ -124,3 +124,8 @@ more specific information about changes I recomend looking through the comit his
 	Been a while since I wrote here. Unfortunatly this semester hit me harder than I anticipated and I haven't made any progress this year. But Now that things have calmed down a bit
 	I intend to redouble my efforts and get down to buisness. I do still believe that I will be able to get everything done in the remaining time. Though it will probably not be fun.
 	Off to work I go.
+
+	Edit: An issue I had been having is deciding how to represent country adjacency to a super-power since they would not be included in the normal country list. To get around this I'm assing
+	the USA an id of -5 and USSR -10, this will give me an easy way to check since all the other countries have an id of theire index in the country list.
+
+	Edit2: I forgot Spain. -_-
