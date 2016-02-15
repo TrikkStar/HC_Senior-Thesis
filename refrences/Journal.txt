@@ -1,40 +1,40 @@
 This Journal's purpose is to record the developement process of my Senior Thesis. I will mostly be outlining broad-ish progress reports here. For
-more specific information about changes I recomend looking through the comit history. 
+more specific information about changes I recomend looking through the comit history.
 
 9/22/2015:
-	Initial journal entry, horray! In all seriousness I may end up changing how I store this file, since this may become very bloated very quickly. 
-	After reading the AI book loaned to me by Dr. Wilson, I have came to the conclusion that I will be using a decision tree to modle my Agent. 
-	This doens't suprise me too much, as that type of logical structure has been how I've been thinking about this project from the begining, since 
-	the full decision making higharchy will be hardcoded. Though it is nice to see how such a system would be implimented, and formalizing things 
-	is always nice. 
+	Initial journal entry, horray! In all seriousness I may end up changing how I store this file, since this may become very bloated very quickly.
+	After reading the AI book loaned to me by Dr. Wilson, I have came to the conclusion that I will be using a decision tree to modle my Agent.
+	This doens't suprise me too much, as that type of logical structure has been how I've been thinking about this project from the begining, since
+	the full decision making higharchy will be hardcoded. Though it is nice to see how such a system would be implimented, and formalizing things
+	is always nice.
 
-	This folder will contain all reference material I use in the creation of my project, but will not hold any of the actual assets used by my project. 
-	The first amongst these is "Card play priority.pdf", which currently contains a high level breakdown of the logic flow used by the agent when 
-	selecting a card to play at any given point in the game. The boxes describing various conditions implicitly mean that a check will be made to see 
-	if any cards fit the given conditions for that paticular play choice. If they do then that event is executed, with dotted lines going to additional 
-	logic subtrees as needed. This list is not complete though and will be supplimented and changed as necessary, the biggest supplement being the 
-	hiearchy of card events, which will be its own file. 
+	This folder will contain all reference material I use in the creation of my project, but will not hold any of the actual assets used by my project.
+	The first amongst these is "Card play priority.pdf", which currently contains a high level breakdown of the logic flow used by the agent when
+	selecting a card to play at any given point in the game. The boxes describing various conditions implicitly mean that a check will be made to see
+	if any cards fit the given conditions for that paticular play choice. If they do then that event is executed, with dotted lines going to additional
+	logic subtrees as needed. This list is not complete though and will be supplimented and changed as necessary, the biggest supplement being the
+	hiearchy of card events, which will be its own file.
 
-	I'm not sure what else to add at the moment, but will keep maintaining this with random jottings and ideas I have to help document the developement 
-	process. I'm going to create the file for the card hiearchys and possible add to what I already have decided later tonight. 
+	I'm not sure what else to add at the moment, but will keep maintaining this with random jottings and ideas I have to help document the developement
+	process. I'm going to create the file for the card hiearchys and possible add to what I already have decided later tonight.
 
 
 9/24/2015:
     Done some research into creating an executable and it is pretty much as straightforward as I thought. Just need to compile the file in a specific way.
-    As for making a GUI, that's going to be a lot more complicated. Since I'm aiming for a Windows audience the best thing to use looks like the Windows 
+    As for making a GUI, that's going to be a lot more complicated. Since I'm aiming for a Windows audience the best thing to use looks like the Windows
     API, which will require coding my project in C++, which I had planned on doing anyways. Yay for convince making my decisions for me.
-    I don't know entirely how difficult it will be to use the API, need to read more on how I would use it. 
+    I don't know entirely how difficult it will be to use the API, need to read more on how I would use it.
 
 9/29/2015:
 	After doing further reserch into the Windows API, I believe the type of program I will be creating is a Win32 application. Reading up on this, it is a
-	decently meaty subject to learn about. Enough so that I am wondering wheather or not this project will be as feasable as I first thought. Though it is 
-	suppost to be challenging, I feel like some prior knowledge in this feild would be greatly useful. As of now I am following along a serise of tutorials 
-	walking through the process of how Win32 apps work, they can be found at: http://www.relisoft.com/win32/. I'm still trying to process though 
-	everything so more will follow later. Though I am certain this is the correct direction to be going in terms of what kind of program I will make. 
+	decently meaty subject to learn about. Enough so that I am wondering wheather or not this project will be as feasable as I first thought. Though it is
+	suppost to be challenging, I feel like some prior knowledge in this feild would be greatly useful. As of now I am following along a serise of tutorials
+	walking through the process of how Win32 apps work, they can be found at: http://www.relisoft.com/win32/. I'm still trying to process though
+	everything so more will follow later. Though I am certain this is the correct direction to be going in terms of what kind of program I will make.
 
 10/13/2015:
 	Added some resources that will be used as reference material. Have also decided that card dealing will be handeled by the program ant the user will simply
-	be told which cards they have been delat. They will need a way to refrence them however, for only the names will be given. 
+	be told which cards they have been delat. They will need a way to refrence them however, for only the names will be given.
 	Additionally I have came up with a list of use cases that my project will be using. For now they will be listed here.
 
 	Start a game
@@ -48,74 +48,79 @@ more specific information about changes I recomend looking through the comit his
 	Play a Card
 		-Select Card
 		-Event/Value/Scoring
-		-if Value: 
+		-if Value:
 			-Influence/Coup/Realingment/Space Race
 			-Target(s)
 
 11/8/2015:
-	Proposal and presentation have gone well thus far. More frequent updates will probably follow this entry because weekly progress updates are a required part of 
-	the remainder of the semester. As far as a goal for the end of the semester, I intend to have completed the serise of tutorials that I am currently following 
+	Proposal and presentation have gone well thus far. More frequent updates will probably follow this entry because weekly progress updates are a required part of
+	the remainder of the semester. As far as a goal for the end of the semester, I intend to have completed the serise of tutorials that I am currently following
 	to learn the in's and out's of Win32 applications. With the possibility of creating the most basic shell on whith which my program will be built on. For my weekely
-	goal I intend to have completed most of the "Generic" tutorial on the website. This being the second tutorial in the serise, but I am not sure if I will need 
-	to complete all of them to learn what I need to know. 
+	goal I intend to have completed most of the "Generic" tutorial on the website. This being the second tutorial in the serise, but I am not sure if I will need
+	to complete all of them to learn what I need to know.
 
 11/17/2015:
-	Been busier with other school woork than anticipated. Currrent gaol still stands to continue working though the tutorials to get a firmer grasp of how Win32 
+	Been busier with other school woork than anticipated. Currrent gaol still stands to continue working though the tutorials to get a firmer grasp of how Win32
 	applications work. Semester goal has definatly been revised to include at least a running window with minimal functionality. This goal may be revised again.
 	Will be updating with a breakdown of basic information contained in said tutorials later today.
 
-	Update: After attempting to follow the tutorials I had selected, I have found a much better resource at http://www.winprog.org/tutorial/. This seems to be 
-	much more step by step and explains things in greater detail than the other one. Will be working from these from now on. 
+	Update: After attempting to follow the tutorials I had selected, I have found a much better resource at http://www.winprog.org/tutorial/. This seems to be
+	much more step by step and explains things in greater detail than the other one. Will be working from these from now on.
 
 11/19/2015:
 	New serise of tutorials is much more helpful than the old ones, explanations are much more clear and concise and I feel like I'm finally making actual progress on
-	the Win32 part of my project. I now believe that making an application shell with basic functionality for my project shouldn't be a problem at all. A very generous 
-	estimate would have me being 50% done with the GUI and gamestate by the end of the semester. I intend to keep as much of the files that I currently have created as 
-	possible. Presenting progress tomorrow shouldn't be an issue. 
+	the Win32 part of my project. I now believe that making an application shell with basic functionality for my project shouldn't be a problem at all. A very generous
+	estimate would have me being 50% done with the GUI and gamestate by the end of the semester. I intend to keep as much of the files that I currently have created as
+	possible. Presenting progress tomorrow shouldn't be an issue.
 
 11/29/2015:
-	Due to unforseen family visitation over Thanksgiving I was unable to make progress over break as planned. That being said my goals still remain the same to continue 
-	to work through the tutorials I have found, adding to my working project as I go. 
+	Due to unforseen family visitation over Thanksgiving I was unable to make progress over break as planned. That being said my goals still remain the same to continue
+	to work through the tutorials I have found, adding to my working project as I go.
 
 12/3/2015:
-	Quick update on progress made thusfar. I've added in a menu bar with a single non-functional entry as well as icon displayed on the desktop and upper left of the 
-	application window. This menue bar will be used for accesing "developer functions" (e.g. manually changing variables in the gamestate). Progress is continueing 
-	allong and new updates will be made as progress advances. 
+	Quick update on progress made thusfar. I've added in a menu bar with a single non-functional entry as well as icon displayed on the desktop and upper left of the
+	application window. This menue bar will be used for accesing "developer functions" (e.g. manually changing variables in the gamestate). Progress is continueing
+	allong and new updates will be made as progress advances.
 
 12/10/2015:
 	I've added several new buttons to the menu bar which will be used to start new games and edit game information for debugging pourposes. After I actually impliment
-	the gamestate I will add functuanality to these buttons. I will be continuing to work on the tutorials hoping to show dynamic content in the application itself 
+	the gamestate I will add functuanality to these buttons. I will be continuing to work on the tutorials hoping to show dynamic content in the application itself
 	fairly soon. More developement fun to come in further entries.
 
-12/15/2016:
+12/15/2015:
 	Objectives for Christmas break:
 	• Content dynamically displayed on main screen
 		o Individual entries for country influence for each side and an additional indicator for control
 		o Entries for turn and other related board information
-	• Game state mostly implemented 
+	• Game state mostly implemented
 		o objects and variables implemented to track various game state related data
 			 countries, turns, defcon, etc.
 		o menu buttons created and working to manually edit game state variables
 
-12/20/2016:
-	After extensively scouring the internet I have determined that using a Win32 type application is not the way to go for this project. Using the free version 
+12/20/2015:
+	After extensively scouring the internet I have determined that using a Win32 type application is not the way to go for this project. Using the free version
 	of Visual Studio does not provide the necessary tools for visually creating the GUI, an essential reason that I pursued Win32 as an application type.
 	After some reserch I have found that a Visual C++ CLR project will provide the necessary framework for what I am doing. While this does mean I will
 	essentially be discarding everything I have created up to this point, having followed a brief tutorial found here:
 	http://www.bogotobogo.com/cplusplus/application_visual_studio_2013.php I am confident I can get back to where I was before within a matter of hours. This will
 	also mean that I will not be spending extensive time trying to learn the Windows API, which I believe was unnecessairly low level for my project. While some aaspects
-	may change(unsure if I can impliment menu bars) I still will be coding in C++. I am glad I finally realised this at the beginning of break, as this will not be a 
-	serious setback and I do believe that I will be able to acchieve my goal for break. 
+	may change(unsure if I can impliment menu bars) I still will be coding in C++. I am glad I finally realised this at the beginning of break, as this will not be a
+	serious setback and I do believe that I will be able to acchieve my goal for break.
 
-	Edit: Took about an hour to catch up to where I was in the new project type. 
+	Edit: Took about an hour to catch up to where I was in the new project type.
 
-12/29/2016:
-	New program type is not wthout its flaws. I am unsure how to dynamically change displayed content after it's initilazation. This should not be too much of an issue to solve 
-	since it simply requires changing the appropriate variable. However, to do this the way I had planed to requires including a .cpp file in a .h file, which is something you 
-	can't do apparently. I then realised that in my time at Hanover I can't remember really learing much about linking files together, which is a bit of a problem. My current 
+12/29/2015:
+	New program type is not wthout its flaws. I am unsure how to dynamically change displayed content after it's initilazation. This should not be too much of an issue to solve
+	since it simply requires changing the appropriate variable. However, to do this the way I had planed to requires including a .cpp file in a .h file, which is something you
+	can't do apparently. I then realised that in my time at Hanover I can't remember really learing much about linking files together, which is a bit of a problem. My current
 	problem stems from the fact that I apparently haven't learned about strings correctly, as I cannot seem to declair them in any method that I have been able to lookup thusfar.
 	I will be looking into this more but as it stands I am getting the current error: "a member of a managed class cannot be of a non-managed class type". I'm doing my best to figure
-	out exactly what this means but for now I'm pretty stuck. Going to open uo an issue regarding this on github. 
+	out exactly what this means but for now I'm pretty stuck. Going to open uo an issue regarding this on github.
 
-	Update: fixed the issue, turns out I was using something called a managed class wich is a fetur of C++/CLI, which I didn't know I was using. -_- Anyways I came to a solution by 
+	Update: fixed the issue, turns out I was using something called a managed class wich is a fetur of C++/CLI, which I didn't know I was using. -_- Anyways I came to a solution by
 	following advice here: http://stackoverflow.com/questions/9283383/mixed-management-in-c (saved for reference).
+
+2/14/2016:
+	Been a while since I wrote here. Unfortunatly this semester hit me harder than I anticipated and I haven't made any progress this year. But Now that things have calmed down a bit
+	I intend to redouble my efforts and get down to buisness. I do still believe that I will be able to get everything done in the remaining time. Though it will probably not be fun.
+	Off to work I go.
