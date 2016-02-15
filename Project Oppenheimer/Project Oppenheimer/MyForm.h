@@ -786,6 +786,11 @@ private: System::Windows::Forms::Label^  Round_lbl;
 
 private: System::Windows::Forms::Label^  label251;
 private: System::Windows::Forms::Label^  Turn_lbl;
+private: System::Windows::Forms::ToolStripMenuItem^  spainPortugulToolStripMenuItem;
+private: System::Windows::Forms::Label^  label4;
+private: System::Windows::Forms::TableLayoutPanel^  tableLayoutPanel31;
+private: System::Windows::Forms::Label^  SpainPortugul_USA;
+private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 
 
 
@@ -1378,6 +1383,11 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 			this->Round_lbl = (gcnew System::Windows::Forms::Label());
 			this->label251 = (gcnew System::Windows::Forms::Label());
 			this->Turn_lbl = (gcnew System::Windows::Forms::Label());
+			this->spainPortugulToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->tableLayoutPanel31 = (gcnew System::Windows::Forms::TableLayoutPanel());
+			this->SpainPortugul_USA = (gcnew System::Windows::Forms::Label());
+			this->SpainPortugul_USSR = (gcnew System::Windows::Forms::Label());
 			this->menuStrip1->SuspendLayout();
 			this->groupBox1->SuspendLayout();
 			this->tableLayoutPanel17->SuspendLayout();
@@ -1471,6 +1481,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 			this->groupBox7->SuspendLayout();
 			this->tableLayoutPanel85->SuspendLayout();
 			this->tableLayoutPanel84->SuspendLayout();
+			this->tableLayoutPanel31->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// menuStrip1
@@ -1482,7 +1493,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 			});
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(1301, 28);
+			this->menuStrip1->Size = System::Drawing::Size(1302, 28);
 			this->menuStrip1->TabIndex = 0;
 			this->menuStrip1->Text = L"menuStrip1";
 			// 
@@ -1835,13 +1846,13 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 			// 
 			// europeToolStripMenuItem
 			// 
-			this->europeToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(20) {
+			this->europeToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(21) {
 				this->austriaToolStripMenuItem,
 					this->benluxToolStripMenuItem, this->bulgariaToolStripMenuItem, this->canadaToolStripMenuItem, this->czechoslovakiaToolStripMenuItem,
 					this->denmarkToolStripMenuItem, this->eGermanyToolStripMenuItem, this->finlandToolStripMenuItem, this->franceToolStripMenuItem,
 					this->greeceToolStripMenuItem, this->hungaryToolStripMenuItem, this->italyToolStripMenuItem, this->norwayToolStripMenuItem, this->polandToolStripMenuItem,
-					this->romaniaToolStripMenuItem, this->sweedenToolStripMenuItem, this->turkeyToolStripMenuItem, this->uKToolStripMenuItem, this->wGermanyToolStripMenuItem,
-					this->yugoslaviaToolStripMenuItem
+					this->romaniaToolStripMenuItem, this->spainPortugulToolStripMenuItem, this->sweedenToolStripMenuItem, this->turkeyToolStripMenuItem,
+					this->uKToolStripMenuItem, this->wGermanyToolStripMenuItem, this->yugoslaviaToolStripMenuItem
 			});
 			this->europeToolStripMenuItem->Name = L"europeToolStripMenuItem";
 			this->europeToolStripMenuItem->Size = System::Drawing::Size(190, 26);
@@ -5288,6 +5299,8 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 			// 
 			// groupBox4
 			// 
+			this->groupBox4->Controls->Add(this->label4);
+			this->groupBox4->Controls->Add(this->tableLayoutPanel31);
 			this->groupBox4->Controls->Add(this->label184);
 			this->groupBox4->Controls->Add(this->label185);
 			this->groupBox4->Controls->Add(this->tableLayoutPanel62);
@@ -5330,7 +5343,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 			this->groupBox4->Controls->Add(this->tableLayoutPanel61);
 			this->groupBox4->Location = System::Drawing::Point(680, 31);
 			this->groupBox4->Name = L"groupBox4";
-			this->groupBox4->Size = System::Drawing::Size(215, 470);
+			this->groupBox4->Size = System::Drawing::Size(225, 515);
 			this->groupBox4->TabIndex = 7;
 			this->groupBox4->TabStop = false;
 			this->groupBox4->Text = L"Europe";
@@ -5878,7 +5891,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 			// label154
 			// 
 			this->label154->AutoSize = true;
-			this->label154->Location = System::Drawing::Point(124, 196);
+			this->label154->Location = System::Drawing::Point(124, 152);
 			this->label154->Name = L"label154";
 			this->label154->Size = System::Drawing::Size(64, 17);
 			this->label154->TabIndex = 29;
@@ -5903,7 +5916,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 				50)));
 			this->tableLayoutPanel52->Controls->Add(this->Romania_USA, 0, 0);
 			this->tableLayoutPanel52->Controls->Add(this->Romania_USSR, 1, 0);
-			this->tableLayoutPanel52->Location = System::Drawing::Point(127, 216);
+			this->tableLayoutPanel52->Location = System::Drawing::Point(127, 172);
 			this->tableLayoutPanel52->Name = L"tableLayoutPanel52";
 			this->tableLayoutPanel52->RowCount = 1;
 			this->tableLayoutPanel52->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
@@ -5986,7 +5999,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 			// label160
 			// 
 			this->label160->AutoSize = true;
-			this->label160->Location = System::Drawing::Point(124, 152);
+			this->label160->Location = System::Drawing::Point(124, 110);
 			this->label160->Name = L"label160";
 			this->label160->Size = System::Drawing::Size(52, 17);
 			this->label160->TabIndex = 24;
@@ -6011,7 +6024,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 				50)));
 			this->tableLayoutPanel54->Controls->Add(this->Poland_USA, 0, 0);
 			this->tableLayoutPanel54->Controls->Add(this->Poland_USSR, 1, 0);
-			this->tableLayoutPanel54->Location = System::Drawing::Point(127, 172);
+			this->tableLayoutPanel54->Location = System::Drawing::Point(127, 130);
 			this->tableLayoutPanel54->Name = L"tableLayoutPanel54";
 			this->tableLayoutPanel54->RowCount = 1;
 			this->tableLayoutPanel54->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
@@ -6094,7 +6107,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 			// label166
 			// 
 			this->label166->AutoSize = true;
-			this->label166->Location = System::Drawing::Point(124, 109);
+			this->label166->Location = System::Drawing::Point(124, 66);
 			this->label166->Name = L"label166";
 			this->label166->Size = System::Drawing::Size(55, 17);
 			this->label166->TabIndex = 27;
@@ -6119,7 +6132,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 				50)));
 			this->tableLayoutPanel56->Controls->Add(this->Norway_USA, 0, 0);
 			this->tableLayoutPanel56->Controls->Add(this->Norway_USSR, 1, 0);
-			this->tableLayoutPanel56->Location = System::Drawing::Point(127, 129);
+			this->tableLayoutPanel56->Location = System::Drawing::Point(127, 86);
 			this->tableLayoutPanel56->Name = L"tableLayoutPanel56";
 			this->tableLayoutPanel56->RowCount = 1;
 			this->tableLayoutPanel56->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
@@ -6157,7 +6170,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 			// label170
 			// 
 			this->label170->AutoSize = true;
-			this->label170->Location = System::Drawing::Point(124, 66);
+			this->label170->Location = System::Drawing::Point(124, 23);
 			this->label170->Name = L"label170";
 			this->label170->Size = System::Drawing::Size(33, 17);
 			this->label170->TabIndex = 25;
@@ -6211,7 +6224,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 			// label173
 			// 
 			this->label173->AutoSize = true;
-			this->label173->Location = System::Drawing::Point(124, 23);
+			this->label173->Location = System::Drawing::Point(17, 460);
 			this->label173->Name = L"label173";
 			this->label173->Size = System::Drawing::Size(62, 17);
 			this->label173->TabIndex = 21;
@@ -6236,7 +6249,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 				50)));
 			this->tableLayoutPanel58->Controls->Add(this->Italy_USA, 0, 0);
 			this->tableLayoutPanel58->Controls->Add(this->Italy_USSR, 1, 0);
-			this->tableLayoutPanel58->Location = System::Drawing::Point(127, 86);
+			this->tableLayoutPanel58->Location = System::Drawing::Point(127, 43);
 			this->tableLayoutPanel58->Name = L"tableLayoutPanel58";
 			this->tableLayoutPanel58->RowCount = 1;
 			this->tableLayoutPanel58->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
@@ -6290,7 +6303,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 				50)));
 			this->tableLayoutPanel59->Controls->Add(this->Hungary_USA, 0, 0);
 			this->tableLayoutPanel59->Controls->Add(this->Hungary_USSR, 1, 0);
-			this->tableLayoutPanel59->Location = System::Drawing::Point(127, 43);
+			this->tableLayoutPanel59->Location = System::Drawing::Point(20, 480);
 			this->tableLayoutPanel59->Name = L"tableLayoutPanel59";
 			this->tableLayoutPanel59->RowCount = 1;
 			this->tableLayoutPanel59->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
@@ -6437,7 +6450,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 			this->groupBox5->Controls->Add(this->tableLayoutPanel71);
 			this->groupBox5->Controls->Add(this->tableLayoutPanel72);
 			this->groupBox5->Controls->Add(this->tableLayoutPanel73);
-			this->groupBox5->Location = System::Drawing::Point(901, 31);
+			this->groupBox5->Location = System::Drawing::Point(911, 31);
 			this->groupBox5->Name = L"groupBox5";
 			this->groupBox5->Size = System::Drawing::Size(191, 258);
 			this->groupBox5->TabIndex = 8;
@@ -7006,7 +7019,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 			this->groupBox6->Controls->Add(this->tableLayoutPanel81);
 			this->groupBox6->Controls->Add(this->tableLayoutPanel82);
 			this->groupBox6->Controls->Add(this->tableLayoutPanel83);
-			this->groupBox6->Location = System::Drawing::Point(1098, 31);
+			this->groupBox6->Location = System::Drawing::Point(1108, 31);
 			this->groupBox6->Name = L"groupBox6";
 			this->groupBox6->Size = System::Drawing::Size(191, 258);
 			this->groupBox6->TabIndex = 9;
@@ -7567,7 +7580,7 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 			this->groupBox7->Controls->Add(this->Round_lbl);
 			this->groupBox7->Controls->Add(this->label251);
 			this->groupBox7->Controls->Add(this->Turn_lbl);
-			this->groupBox7->Location = System::Drawing::Point(902, 296);
+			this->groupBox7->Location = System::Drawing::Point(910, 295);
 			this->groupBox7->Name = L"groupBox7";
 			this->groupBox7->Size = System::Drawing::Size(190, 205);
 			this->groupBox7->TabIndex = 10;
@@ -7774,11 +7787,71 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 			this->Turn_lbl->Text = L"-10";
 			this->Turn_lbl->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
+			// spainPortugulToolStripMenuItem
+			// 
+			this->spainPortugulToolStripMenuItem->Name = L"spainPortugulToolStripMenuItem";
+			this->spainPortugulToolStripMenuItem->Size = System::Drawing::Size(185, 26);
+			this->spainPortugulToolStripMenuItem->Text = L"Spain/Portugul";
+			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->Location = System::Drawing::Point(124, 197);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(101, 17);
+			this->label4->TabIndex = 37;
+			this->label4->Text = L"Spain/Portugul";
+			// 
+			// tableLayoutPanel31
+			// 
+			this->tableLayoutPanel31->CellBorderStyle = System::Windows::Forms::TableLayoutPanelCellBorderStyle::Single;
+			this->tableLayoutPanel31->ColumnCount = 2;
+			this->tableLayoutPanel31->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				50)));
+			this->tableLayoutPanel31->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				50)));
+			this->tableLayoutPanel31->Controls->Add(this->SpainPortugul_USA, 0, 0);
+			this->tableLayoutPanel31->Controls->Add(this->SpainPortugul_USSR, 1, 0);
+			this->tableLayoutPanel31->Location = System::Drawing::Point(127, 217);
+			this->tableLayoutPanel31->Name = L"tableLayoutPanel31";
+			this->tableLayoutPanel31->RowCount = 1;
+			this->tableLayoutPanel31->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
+			this->tableLayoutPanel31->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel31->TabIndex = 36;
+			// 
+			// SpainPortugul_USA
+			// 
+			this->SpainPortugul_USA->AutoSize = true;
+			this->SpainPortugul_USA->BackColor = System::Drawing::Color::White;
+			this->SpainPortugul_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->SpainPortugul_USA->ForeColor = System::Drawing::Color::Blue;
+			this->SpainPortugul_USA->Location = System::Drawing::Point(4, 1);
+			this->SpainPortugul_USA->Name = L"SpainPortugul_USA";
+			this->SpainPortugul_USA->Size = System::Drawing::Size(26, 17);
+			this->SpainPortugul_USA->TabIndex = 0;
+			this->SpainPortugul_USA->Text = L"10";
+			this->SpainPortugul_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// SpainPortugul_USSR
+			// 
+			this->SpainPortugul_USSR->AutoSize = true;
+			this->SpainPortugul_USSR->BackColor = System::Drawing::Color::White;
+			this->SpainPortugul_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->SpainPortugul_USSR->ForeColor = System::Drawing::Color::Red;
+			this->SpainPortugul_USSR->Location = System::Drawing::Point(37, 1);
+			this->SpainPortugul_USSR->Name = L"SpainPortugul_USSR";
+			this->SpainPortugul_USSR->Size = System::Drawing::Size(26, 17);
+			this->SpainPortugul_USSR->TabIndex = 5;
+			this->SpainPortugul_USSR->Text = L"10";
+			this->SpainPortugul_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1301, 523);
+			this->ClientSize = System::Drawing::Size(1302, 555);
 			this->Controls->Add(this->groupBox7);
 			this->Controls->Add(this->groupBox6);
 			this->Controls->Add(this->groupBox5);
@@ -7977,6 +8050,8 @@ private: System::Windows::Forms::Label^  Turn_lbl;
 			this->tableLayoutPanel85->PerformLayout();
 			this->tableLayoutPanel84->ResumeLayout(false);
 			this->tableLayoutPanel84->PerformLayout();
+			this->tableLayoutPanel31->ResumeLayout(false);
+			this->tableLayoutPanel31->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
