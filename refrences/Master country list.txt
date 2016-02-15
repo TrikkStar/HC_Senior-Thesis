@@ -1,4 +1,4 @@
-Countries appear in alphebetical order, which is the order that they will be indexed into CountryList
+Countries appear in alphebetical order, which is the order that they will be indexed into CountryList:
 Afghanistan
 Algeria
 Angola
@@ -66,6 +66,7 @@ Saudi Arabia
 Somalia
 South Africa
 South Korea
+Spain/Portugul
 Sudan
 Sweden
 Syria
