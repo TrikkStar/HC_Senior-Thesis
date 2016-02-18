@@ -99,7 +99,6 @@ void Country::updateControl()
 	}
 }
 
-
 bool Country::is_battleground()
 {
 	return this->battleground;

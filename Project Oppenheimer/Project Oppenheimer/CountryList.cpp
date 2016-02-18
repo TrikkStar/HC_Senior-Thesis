@@ -257,4 +257,14 @@ CountryList::CountryList()
 
 	Country Zimbabwe("Zimbabwe", 83, 1, false, std::vector<int>{8, 61, 82});
 	this->countries.push_back(Zimbabwe);
+
+	Europe = {};
+	WesternEurope = {};
+	EasternEurope = {};
+	CentralAmerica = {48, 17, 29, 31, 20, 24, 32, 50, 16, 55};
+	SouthAmerica = {};
+	Africa = {};
+	MiddleEast = {};
+	Asia = {};
+	SoutheastAsia = {};
 }
