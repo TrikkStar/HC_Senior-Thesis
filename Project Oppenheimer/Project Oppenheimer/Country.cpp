@@ -75,25 +75,30 @@ void Country::set_infUSSR(int x)
 //checks to see if a country is controlled by either player
 void Country::updateControl()
 {
-	if (this->influenceUSA != this->influenceUSSR) {
+	if (this->influenceUSA != this->influenceUSSR) 
+	{
 		//if USA influence is higher and the difference is at least as high as the stability value
-		if ((this->influenceUSA > this->influenceUSSR) && ((this->influenceUSA - this->influenceUSSR) >= this->stability)) {
+		if ((this->influenceUSA > this->influenceUSSR) && ((this->influenceUSA - this->influenceUSSR) >= this->stability)) 
+		{
 			this->controlled = true;
 			this->controller = "USA";
 			return;
 		}
 		//same as above but with USSR
-		else if ((this->influenceUSSR > this->influenceUSA) && ((this->influenceUSSR - this->influenceUSA) >= this->stability)) {
+		else if ((this->influenceUSSR > this->influenceUSA) && ((this->influenceUSSR - this->influenceUSA) >= this->stability)) 
+		{
 			this->controlled = true;
 			this->controller = "USSR";
 			return;
 		}
-		else {
+		else 
+		{
 			this->controlled = false;
 			this->controller = "NONE";
 		}
 	}
-	else {
+	else 
+	{
 		this->controlled = false;
 		this->controller = "NONE";
 	}
@@ -102,4 +107,17 @@ void Country::updateControl()
 bool Country::is_battleground()
 {
 	return this->battleground;
+}
+
+
+bool Country::is_adjacent(int x)
+{
+	for (int i = 0; i < this->adjacent.size(); i++)
+	{
+		if (x == this->adjacent[i])
+		{
+			return true;
+		}
+	}
+	return false;
 }

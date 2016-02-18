@@ -30,6 +30,7 @@ private:
 public:
 	bool battleground;
 	bool is_battleground();
+	bool is_adjacent(int x);
 };
 
 
