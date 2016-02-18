@@ -88,9 +88,15 @@ void Country::updateControl()
 			this->controller = "USSR";
 			return;
 		}
+		else {
+			this->controlled = false;
+			this->controller = "NONE";
+		}
 	}
-	this->controlled = false;
-	this->controller = "NONE";
+	else {
+		this->controlled = false;
+		this->controller = "NONE";
+	}
 }
 
 
