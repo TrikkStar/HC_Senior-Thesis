@@ -268,3 +268,9 @@ CountryList::CountryList()
 	Asia = { 11, 44, 72, 78, 47, 35, 58, 0, 54, 34, 4, 41, 71, 66, 52};
 	SoutheastAsia = {11, 44, 72, 78, 47, 35, 58};
 }
+
+
+Country CountryList::get_country(int x)
+{
+	return this->countries[x];
+}
