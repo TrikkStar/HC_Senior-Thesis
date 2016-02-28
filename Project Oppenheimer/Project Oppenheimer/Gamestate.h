@@ -17,4 +17,5 @@ public:
 	int get_round();
 	void set_turn(int x);
 	void set_round(int x);
+	CountryList countries;
 };
