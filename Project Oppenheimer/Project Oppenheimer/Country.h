@@ -32,5 +32,3 @@ public:
 	bool is_battleground();
 };
 
-
-

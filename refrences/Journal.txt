@@ -133,3 +133,6 @@ more specific information about changes I recomend looking through the comit his
 2/27/2016:
 	Discovered a strange error today. When I try to include my CountryList.h file in my Gamestate.cpp file my program will fail to compile, citing errors in the countryList file.
 	But without this include statement everything compiles fine. Since I need these files to cooperate with one another I need to figure out what's specifically causing the issue.
+
+	Edit: I'm also having issues integrating my custom made classes with the WinForm. This issue has to do with aconflict between managed and unmanaged classes. Need to learn more
+	as to what this actually means, since I've never had to deal with this before. 
