@@ -5,10 +5,10 @@
 Country::Country(std::string n, int i, int s, bool b, std::vector<int> vect)
 {
 	stability = s;
-	std::string name = n;
+	name = n;
 	id = i;
 	battleground = b;
-	std::vector<int> adjacent = vect;
+	adjacent = vect;
 	influenceUSA = 0;
 	influenceUSSR = 0;
 	controlled = false;
