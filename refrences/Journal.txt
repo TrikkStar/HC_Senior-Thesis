@@ -129,3 +129,7 @@ more specific information about changes I recomend looking through the comit his
 	the USA an id of -5 and USSR -10, this will give me an easy way to check since all the other countries have an id of theire index in the country list.
 
 	Edit2: I forgot Spain. -_-
+
+2/27/2016:
+	Discovered a strange error today. When I try to include my CountryList.h file in my Gamestate.cpp file my program will fail to compile, citing errors in the countryList file.
+	But without this include statement everything compiles fine. Since I need these files to cooperate with one another I need to figure out what's specifically causing the issue.
