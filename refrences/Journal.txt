@@ -136,3 +136,7 @@ more specific information about changes I recomend looking through the comit his
 
 	Edit: I'm also having issues integrating my custom made classes with the WinForm. This issue has to do with aconflict between managed and unmanaged classes. Need to learn more
 	as to what this actually means, since I've never had to deal with this before. 
+
+2/28/2016:
+	So I was able to solve the problem I was having linking my files together. I need to include both the country and countryList .h files in my gamestate.cpp. I alose needed to 
+	initilize my CountryList object in the .cpp file and not the .h file. Not quite sure why this is, but that's ok. it works. 

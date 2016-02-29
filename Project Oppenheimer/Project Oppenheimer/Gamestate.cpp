@@ -1,6 +1,6 @@
+#include "Country.h"
+#include "CountryList.h"
 #include "Gamestate.h"
-
-
 
 Gamestate::Gamestate()
 {
@@ -8,6 +8,7 @@ Gamestate::Gamestate()
 	defcon = 0;
 	turn = 0;
 	round = 0;
+	CountryList countryLst;
 }
 
 
