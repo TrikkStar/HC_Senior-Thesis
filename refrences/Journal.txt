@@ -150,3 +150,5 @@ more specific information about changes I recomend looking through the comit his
 
 	-So to get my content to be displayed dynamically, I need to create a function in my form that will refresh all of the relavent attributes on the screen. Will be testing this with
 	a single country to start. The updated definitoion will look something like this: this->Algeria_USA->Text = System::Convert::ToString(this->game->countryLst->countries[1].get_infUSA());
+
+	-To get my gui to refresh itself I need to add appropriate event handelers to the form. In order to do this I'm following the official microsoft guide about WinForms. 
