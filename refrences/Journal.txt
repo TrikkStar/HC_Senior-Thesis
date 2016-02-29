@@ -147,3 +147,6 @@ more specific information about changes I recomend looking through the comit his
 	So I have truely and finally fixed the errorI was having linking my custom classes together. What I needed to do was include the .h files in the .h files of the classes that used the 
 	earlier classes that I had made. Then I had to create a pointer to my countryList class inside of my gamestate object. Now I just need to figure out how to link my gamestate into
 	my WinForm and then I should have my GUI working. 
+
+	-So to get my content to be displayed dynamically, I need to create a function in my form that will refresh all of the relavent attributes on the screen. Will be testing this with
+	a single country to start. The updated definitoion will look something like this: this->Algeria_USA->Text = System::Convert::ToString(this->game->countryLst->countries[1].get_infUSA());
