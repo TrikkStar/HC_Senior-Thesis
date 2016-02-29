@@ -1,7 +1,5 @@
 #include "Country.h"
 
-
-
 Country::Country(std::string n, int i, int s, bool b, std::vector<int> vect)
 {
 	stability = s;
