@@ -4,9 +4,10 @@
 
 class CountryList
 {
+private:
+	std::vector<Country*> countries;
 public:
 	CountryList();
-	std::vector<Country> countries;
 	std::vector<int> Europe;
 	std::vector<int> WesternEurope;
 	std::vector<int> EasternEurope;
