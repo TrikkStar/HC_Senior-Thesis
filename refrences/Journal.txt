@@ -152,3 +152,6 @@ more specific information about changes I recomend looking through the comit his
 	a single country to start. The updated definitoion will look something like this: this->Algeria_USA->Text = System::Convert::ToString(this->game->countryLst->countries[1].get_infUSA());
 
 	-To get my gui to refresh itself I need to add appropriate event handelers to the form. In order to do this I'm following the official microsoft guide about WinForms. 
+
+	-I'm getting a problem in my refresh event that I'm reading/writing to protected memory when I'm refreshing my display.This error is coming from my countryList, may have to make it a list of pointers to my ountries instead of actual country objects. 
+	

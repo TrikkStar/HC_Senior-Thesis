@@ -270,7 +270,7 @@ CountryList::CountryList()
 }
 
 
-Country CountryList::get_country(int x)
+Country* CountryList::get_country(int x)
 {
-	return this->countries[x];
+	return &this->countries[x];
 }
