@@ -142,3 +142,8 @@ more specific information about changes I recomend looking through the comit his
 	initilize my CountryList object in the .cpp file and not the .h file. Not quite sure why this is, but that's ok. it works. 
 
 	Edit: Didn't work like I first thought.
+
+2/29/2016:
+	So I have truely and finally fixed the errorI was having linking my custom classes together. What I needed to do was include the .h files in the .h files of the classes that used the 
+	earlier classes that I had made. Then I had to create a pointer to my countryList class inside of my gamestate object. Now I just need to figure out how to link my gamestate into
+	my WinForm and then I should have my GUI working. 

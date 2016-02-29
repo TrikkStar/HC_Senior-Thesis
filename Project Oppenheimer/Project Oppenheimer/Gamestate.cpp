@@ -8,7 +8,7 @@ Gamestate::Gamestate()
 	defcon = 0;
 	turn = 0;
 	round = 0;
-	CountryList countryLst;
+	CountryList* countryLst = new CountryList();
 }
 
 

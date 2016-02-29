@@ -1,5 +1,7 @@
 #pragma once
 #include <vector>
+#include "Country.h"
+
 class CountryList
 {
 public:
