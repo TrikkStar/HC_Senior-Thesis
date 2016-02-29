@@ -1,5 +1,5 @@
 #pragma once
-
+#include "Gamestate.h"
 
 namespace ProjectOppenheimer {
 
@@ -35,6 +35,7 @@ namespace ProjectOppenheimer {
 				delete components;
 			}
 		}
+	private: Gamestate* game = new Gamestate();
 	private: System::Windows::Forms::MenuStrip^  menuStrip1;
 	protected:
 	private: System::Windows::Forms::ToolStripMenuItem^  menuToolStripMenuItem;
@@ -8057,6 +8058,5 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 
 		}
 #pragma endregion
-
 };
 }
