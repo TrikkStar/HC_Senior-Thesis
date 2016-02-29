@@ -30,5 +30,7 @@ private:
 public:
 	bool battleground;
 	bool is_battleground();
+	int get_infUSA();
+	int get_infUSSR();
 };
 

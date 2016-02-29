@@ -101,3 +101,15 @@ bool Country::is_battleground()
 {
 	return this->battleground;
 }
+
+
+int Country::get_infUSA()
+{
+	return this->influenceUSA;
+}
+
+
+int Country::get_infUSSR()
+{
+	return this->influenceUSSR;
+}
