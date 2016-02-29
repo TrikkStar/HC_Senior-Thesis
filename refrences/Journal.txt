@@ -154,4 +154,6 @@ more specific information about changes I recomend looking through the comit his
 	-To get my gui to refresh itself I need to add appropriate event handelers to the form. In order to do this I'm following the official microsoft guide about WinForms. 
 
 	-I'm getting a problem in my refresh event that I'm reading/writing to protected memory when I'm refreshing my display.This error is coming from my countryList, may have to make it a list of pointers to my ountries instead of actual country objects. 
+
+	-It looks like I haven't corectly used vectors, zi will need to determine what I've done wrong. 
 	
