@@ -3,7 +3,7 @@
 
 CountryList::CountryList()
 {
-	std::vector<Country*> countries(84);
+	countries.reserve(84);
 
 	//Adjacency to USA -5, USSR -10
 	Country* Afghanistan = new Country("Afghanistan", 0, 2, false, std::vector<int>{-10, 36, 54});
