@@ -1,12 +1,13 @@
 #pragma once
-#include <vector>
 #include "Country.h"
+using namespace System;
+using namespace System::Collections::Generic;
 
-class CountryList
+ref class CountryList
 {
 public:
 	CountryList();
-	Country* get_country(int x);
+	Country^ get_country(int x);
 private:
-	std::vector<Country> countries;
+	List<Country^>^ countries = gcnew List<Country^>;
 };

@@ -2,19 +2,18 @@
 
 CountryList::CountryList()
 {
-	countries.reserve(3);
 
-	Country a(1);
-	this->countries.push_back(a);
+	Country^ a = gcnew Country(1);
+	this->countries->Add(a);
 
-	Country b(2);
-	this->countries.push_back(b);
+	Country^ b = gcnew Country(2);
+	this->countries->Add(b);
 
-	Country c(3);
-	this->countries.push_back(c);
+	Country^ c = gcnew Country(3);
+	this->countries->Add(c);
 }
 
-Country* CountryList::get_country(int x)
+Country^ CountryList::get_country(int x)
 {
-	return &this->countries.at(x);
+	return this->countries[x];
 }

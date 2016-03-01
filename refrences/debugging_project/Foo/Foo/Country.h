@@ -1,5 +1,5 @@
 #pragma once
-class Country
+ref class Country
 {
 public:
 	Country(int x);

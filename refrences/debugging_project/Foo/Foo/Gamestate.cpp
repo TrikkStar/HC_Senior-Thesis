@@ -2,5 +2,5 @@
 
 Gamestate::Gamestate()
 {
-	CountryList* countryLst = new CountryList();
+	CountryList^ countryLst = gcnew CountryList();
 }

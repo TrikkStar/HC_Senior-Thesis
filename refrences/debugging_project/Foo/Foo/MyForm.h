@@ -26,7 +26,7 @@ namespace Foo {
 				delete components;
 			}
 		}
-	private: Gamestate* game = new Gamestate();
+	private: Gamestate^ game = gcnew Gamestate();
 	private: System::Windows::Forms::Label^  label1;
 	private: System::Windows::Forms::Button^  button1;
 	protected:
