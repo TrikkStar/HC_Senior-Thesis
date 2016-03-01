@@ -156,4 +156,10 @@ more specific information about changes I recomend looking through the comit his
 	-I'm getting a problem in my refresh event that I'm reading/writing to protected memory when I'm refreshing my display.This error is coming from my countryList, may have to make it a list of pointers to my ountries instead of actual country objects. 
 
 	-It looks like I haven't corectly used vectors, zi will need to determine what I've done wrong. 
+
+3/1/2016:
+	So I'm still stuck on my access error problem. I'm kinda hitting a brick wall here and even opened up a question on stackoverflow looking to figure out what is going wrong.
+	Doing so has taught me that making a mini version of your project to isolate the erroe is a good idea, I made a second file that has the bare minimum necessary to replicate
+	what's going wrong with my project. I can then use this as an easy way for testing potential solutions on a smaller, less time consuming scale. Whether or not I get any meaningful
+	feedback is another thing, but the issue can be found here: http://stackoverflow.com/questions/35713726/access-violation-exception-when-using-vectors-in-visual-c
 	
