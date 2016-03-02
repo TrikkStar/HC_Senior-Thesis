@@ -163,3 +163,8 @@ more specific information about changes I recomend looking through the comit his
 	what's going wrong with my project. I can then use this as an easy way for testing potential solutions on a smaller, less time consuming scale. Whether or not I get any meaningful
 	feedback is another thing, but the issue can be found here: http://stackoverflow.com/questions/35713726/access-violation-exception-when-using-vectors-in-visual-c
 	
+	-In my debuging project I changed all the classes to managed classes. This changed the error to a NullReference Exception, which makes me suspect that I'm not initilising 
+	my objects before I try and call them. Will need to look into this. 
+	
+	-So far I'm striking out on getting any advice online. The one thing I have gotten is to use the debugger built into VisualStudio to try and isolate the problem. 
+	I am now in the process of learining how to use said debugger. 
