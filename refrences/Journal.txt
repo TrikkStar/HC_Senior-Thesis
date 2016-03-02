@@ -172,3 +172,7 @@ more specific information about changes I recomend looking through the comit his
 	- Done some digging with the debugger and feel like I have an Idea what the problem is. The problem appears to be that mu chustom classes are being created only during the 
 	initialization and construction of the form, and after that point those objects are discarded. What I need to do is figure out how to make sure my data classes stay
 	active untill my form is closed. At least that's my working theory on the issue anyway. 
+
+3/2/2016:
+	Doing some more reserch on Windoes Forms, I think I need to initialise my custom data members in a background thread so that they are accessable during runtime.
+	I am unsure if this will actually solve the problem but it's the best lead I have to go on right now. 
