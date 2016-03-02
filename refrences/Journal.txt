@@ -176,3 +176,5 @@ more specific information about changes I recomend looking through the comit his
 3/2/2016:
 	Doing some more reserch on Windoes Forms, I think I need to initialise my custom data members in a background thread so that they are accessable during runtime.
 	I am unsure if this will actually solve the problem but it's the best lead I have to go on right now. 
+
+	-Reading more on threading makes me think it's not the way to go after all. 
