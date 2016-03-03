@@ -177,4 +177,7 @@ more specific information about changes I recomend looking through the comit his
 	Doing some more reserch on Windoes Forms, I think I need to initialise my custom data members in a background thread so that they are accessable during runtime.
 	I am unsure if this will actually solve the problem but it's the best lead I have to go on right now. 
 
-	-Reading more on threading makes me think it's not the way to go after all. 
+	- Reading more on threading makes me think it's not the way to go after all. 
+
+	- After doing even more reserch I believe I need to use databinding to get my custom made classes to talk to my gui. The problem is that the instructions for doing so are incorrect
+	or at least not specific enouth for me to follow them. I'm unsure if I can even add a custom datasource to my project. 
