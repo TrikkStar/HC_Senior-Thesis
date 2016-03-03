@@ -26,7 +26,8 @@ namespace Foo {
 				delete components;
 			}
 		}
-	private: Gamestate^ game;
+
+	private: Gamestate* game;
 	private: System::Windows::Forms::Label^  label1;
 	private: System::Windows::Forms::Button^  button1;
 	private: System::ComponentModel::Container ^components;
@@ -34,6 +35,7 @@ namespace Foo {
 #pragma region Windows Form Designer generated code
 		void InitializeComponent(void)
 		{
+			game = new Gamestate();
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
@@ -76,7 +78,7 @@ namespace Foo {
 		this->button1->Text = System::Convert::ToString(this->game->countryLst->get_country(1)->get_bar());
 	}
 	private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e) {
-		this->game = gcnew Gamestate();
+		//this->game = new Gamestate();
 	}
 	};
 }

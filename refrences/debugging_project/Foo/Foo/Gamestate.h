@@ -1,10 +1,10 @@
 #pragma once
 #include "CountryList.h"
 
-ref class Gamestate
+class Gamestate
 {
 public:
 	Gamestate();
-	CountryList^ countryLst;
+	CountryList* countryLst;
 };
 
