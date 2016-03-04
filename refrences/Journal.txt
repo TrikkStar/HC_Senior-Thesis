@@ -185,3 +185,6 @@ more specific information about changes I recomend looking through the comit his
 3/3/2016:
 	Made another query on stackoverflow based on a few days of reserch and headscratching: http://stackoverflow.com/questions/35788311/using-custom-data-classes-with-windows-forms
 	Hopefully I can get a definitive answer to my problem. 
+
+	- Discovered that the software archetechture pattern I have been wanting to use is called Modle-View-Controller. I honestly didn't know it had a formal name, this would
+	have been useful information to know a while ago.
