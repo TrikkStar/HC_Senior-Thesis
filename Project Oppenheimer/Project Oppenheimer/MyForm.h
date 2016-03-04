@@ -8440,7 +8440,7 @@ private: System::Windows::Forms::Button^  button1;
 		}
 #pragma endregion
 private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-	this->Algeria_USA->Text = System::Convert::ToString(this->game->countryLst->get_country(1)->get_infUSA());
+//	this->Algeria_USA->Text = System::Convert::ToString(this->game->countryLst->get_country(1)->get_infUSA());
 }
 };
 }

@@ -11,7 +11,7 @@ private:
 	int turn;
 	int round;
 public:
-	CountryList* countryLst;
+	CountryList countryLst;
 	int get_score();
 	void set_score(int x);
 	int get_defcon();

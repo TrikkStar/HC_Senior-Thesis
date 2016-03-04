@@ -17,5 +17,5 @@ public:
 	std::vector<int> MiddleEast;
 	std::vector<int> Asia;
 	std::vector<int> SoutheastAsia;
-	Country* get_country(int x);
+	Country get_country(int x);
 };
