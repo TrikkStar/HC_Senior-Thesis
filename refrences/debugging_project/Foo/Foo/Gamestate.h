@@ -7,4 +7,3 @@ public:
 	Gamestate();
 	CountryList* countryLst;
 };
-
