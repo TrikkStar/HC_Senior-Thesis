@@ -1,5 +1,6 @@
 #pragma once
 #include "CountryList.h"
+#include "CardList.h"
 
 class Gamestate
 {
