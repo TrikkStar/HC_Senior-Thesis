@@ -188,3 +188,6 @@ more specific information about changes I recomend looking through the comit his
 
 	- Discovered that the software archetechture pattern I have been wanting to use is called Modle-View-Controller. I honestly didn't know it had a formal name, this would
 	have been useful information to know a while ago.
+
+3/4/2016: 
+	Decided that I need to work on other areas of the project. I'll start on the backbone of the AI today. Hopefully I can get it sorted out rather quickly. 
