@@ -181,3 +181,7 @@ more specific information about changes I recomend looking through the comit his
 
 	- After doing even more reserch I believe I need to use databinding to get my custom made classes to talk to my gui. The problem is that the instructions for doing so are incorrect
 	or at least not specific enouth for me to follow them. I'm unsure if I can even add a custom datasource to my project. 
+
+3/3/2016:
+	Made another query on stackoverflow based on a few days of reserch and headscratching: http://stackoverflow.com/questions/35788311/using-custom-data-classes-with-windows-forms
+	Hopefully I can get a definitive answer to my problem. 
