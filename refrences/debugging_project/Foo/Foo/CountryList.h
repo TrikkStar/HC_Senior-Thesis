@@ -7,6 +7,6 @@ class CountryList
 public:
 	CountryList();
 	Country* get_country(int x);
-private:
 	std::vector<Country> countries;
+	Country cntry;
 };

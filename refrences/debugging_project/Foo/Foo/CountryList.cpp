@@ -12,6 +12,8 @@ CountryList::CountryList()
 
 	Country c(3);
 	this->countries.push_back(c);
+
+	cntry = Country(7);
 }
 
 Country* CountryList::get_country(int x)

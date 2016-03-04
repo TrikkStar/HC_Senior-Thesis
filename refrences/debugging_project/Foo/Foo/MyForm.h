@@ -75,6 +75,7 @@ namespace Foo {
 		}
 #pragma endregion
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+		System::Diagnostics::Debug::WriteLine(this->game->countryLst->cntry.get_bar());
 		this->button1->Text = System::Convert::ToString(this->game->countryLst->get_country(1)->get_bar());
 	}
 	private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e) {
