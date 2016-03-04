@@ -132,12 +132,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Card.cpp" />
     <ClCompile Include="Country.cpp" />
     <ClCompile Include="CountryList.cpp" />
     <ClCompile Include="Gamestate.cpp" />
     <ClCompile Include="MyForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Card.h" />
     <ClInclude Include="Country.h" />
     <ClInclude Include="CountryList.h" />
     <ClInclude Include="Gamestate.h" />
