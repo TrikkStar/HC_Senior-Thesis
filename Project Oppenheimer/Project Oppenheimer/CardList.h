@@ -16,12 +16,17 @@ private:
 	std::vector<Card> midWar;
 	std::vector<Card> lateWar;
 public:
-	void deal_cards();
+	void deal_cards(int x);
 	void shuffel_cards();
 	void discard_card(int x);
 	void remove_card(int x);
 	void add_EW();
 	void add_MW();
 	void add_LW();
+private:
+	Card find_card(int x);
+public:
+	std::vector<Card> get_usHand();
+	std::vector<Card> get_ussrHand();
 };
 
