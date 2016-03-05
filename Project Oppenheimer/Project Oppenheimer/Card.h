@@ -3,7 +3,7 @@
 class Card
 {
 public:
-	Card(int i, int o, int a);
+	Card(int id, int ops, int affiliation);
 private:
 	int id;
 	int opsValue;

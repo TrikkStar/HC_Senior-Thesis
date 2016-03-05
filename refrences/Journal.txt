@@ -191,3 +191,7 @@ more specific information about changes I recomend looking through the comit his
 
 3/4/2016: 
 	Decided that I need to work on other areas of the project. I'll start on the backbone of the AI today. Hopefully I can get it sorted out rather quickly. 
+
+	- been doing some thinking and realised I need a class above gamestate that will actually run the game, seperating the data storage and logic sections feels like a
+	smart move. It should also make it easier to get the gamestate and Ai to interact with one another. 
+	I have also decided to name the AI agent Robert.
