@@ -7,6 +7,7 @@ Gamestate::Gamestate()
 	turn = 0;
 	round = 0;
 	CountryList countryLSt;
+	CardList cards;
 }
 
 
