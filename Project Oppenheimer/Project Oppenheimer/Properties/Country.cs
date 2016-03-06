@@ -30,5 +30,44 @@ namespace Project_Oppenheimer.Properties
             controlled = false;
             controller = 0;
         }
+
+        public void set_infUSA(int x)
+        {
+            influenceUSA = x;
+            updateControl();
+        }
+
+        public void set_infUSSR(int x)
+        {
+            influenceUSSR = x;
+            updateControl();
+        }
+
+        private void updateControl()
+        {
+            if (influenceUSA != influenceUSSR)
+            {
+                if ((influenceUSA > influenceUSSR) && ((influenceUSA - influenceUSSR) >= stability))
+                {
+                    controlled = true;
+                    controller = 1;
+                }
+                else if ((influenceUSSR > influenceUSA) && ((influenceUSSR - influenceUSA) >= stability))
+                {
+                    controlled = true;
+                    controller = -1;
+                }
+                else
+                {
+                    controlled = false;
+                    controller = 0;
+                }
+            }
+            else
+            {
+                controlled = false;
+                controller = 0;
+            }
+        }
     }
 }
