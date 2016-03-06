@@ -32,7 +32,45 @@ namespace Project_Oppenheimer.Properties
 
         public void deal(int x)
         {
+            if (x < 4)
+            {
+                dealX(8);
+            }
+            else if (x == 4)
+            {
+                deck.AddRange(midWar.Take(midWar.Count));
+                dealX(9);
+            }
+            else if (x == 8)
+            {
+                deck.AddRange(lateWar.Take(lateWar.Count));
+                dealX(9);
+            }
+            else
+            {
+                dealX(9);
+            }
+        }
 
+        private void dealX(int x)
+        {
+            for (int i = 0; i < x; i++)
+            {
+                if (deck.Count == 0)
+                {
+                    shuffel();
+                }
+                var tmp1 = deck[0];
+                ussrHand.Add(tmp1);
+                deck.Remove(tmp1);
+                if (deck.Count == 0)
+                {
+                    shuffel();
+                }
+                tmp1 = deck[0];
+                usHand.Add(tmp1);
+                deck.Remove(tmp1);
+            }
         }
 
         public void shuffel()
@@ -64,17 +102,7 @@ namespace Project_Oppenheimer.Properties
         {
 
         }
-
-        private void add_MW()
-        {
-            deck.AddRange(midWar.Take(midWar.Count));
-        }
-
-        private void add_LW()
-        {
-            deck.AddRange(lateWar.Take(lateWar.Count));
-        }
-
+        
         private void init_EW()
         {
             earlyWar = new List<Card>();
