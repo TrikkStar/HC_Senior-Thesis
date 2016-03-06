@@ -1,3 +1,6 @@
+#pragma once
+#include "CountryList.h"
+#include "CardList.h"
 
 class Gamestate
 {
@@ -9,6 +12,8 @@ private:
 	int turn;
 	int round;
 public:
+	CountryList countryLst;
+	CardList cards;
 	int get_score();
 	void set_score(int x);
 	int get_defcon();

@@ -1,5 +1,5 @@
 #pragma once
-
+#include "Gamestate.h"
 
 namespace ProjectOppenheimer {
 
@@ -35,6 +35,7 @@ namespace ProjectOppenheimer {
 				delete components;
 			}
 		}
+	private: Gamestate* game = new Gamestate();
 	private: System::Windows::Forms::MenuStrip^  menuStrip1;
 	protected:
 	private: System::Windows::Forms::ToolStripMenuItem^  menuToolStripMenuItem;
@@ -791,6 +792,7 @@ private: System::Windows::Forms::Label^  label4;
 private: System::Windows::Forms::TableLayoutPanel^  tableLayoutPanel31;
 private: System::Windows::Forms::Label^  SpainPortugul_USA;
 private: System::Windows::Forms::Label^  SpainPortugul_USSR;
+private: System::Windows::Forms::Button^  button1;
 
 
 
@@ -889,6 +891,7 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->norwayToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->polandToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->romaniaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->spainPortugulToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->sweedenToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->turkeyToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->uKToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -1204,6 +1207,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->CostaRica_USA = (gcnew System::Windows::Forms::Label());
 			this->CostaRica_USSR = (gcnew System::Windows::Forms::Label());
 			this->groupBox4 = (gcnew System::Windows::Forms::GroupBox());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->tableLayoutPanel31 = (gcnew System::Windows::Forms::TableLayoutPanel());
+			this->SpainPortugul_USA = (gcnew System::Windows::Forms::Label());
+			this->SpainPortugul_USSR = (gcnew System::Windows::Forms::Label());
 			this->label184 = (gcnew System::Windows::Forms::Label());
 			this->label185 = (gcnew System::Windows::Forms::Label());
 			this->tableLayoutPanel62 = (gcnew System::Windows::Forms::TableLayoutPanel());
@@ -1383,11 +1390,7 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Round_lbl = (gcnew System::Windows::Forms::Label());
 			this->label251 = (gcnew System::Windows::Forms::Label());
 			this->Turn_lbl = (gcnew System::Windows::Forms::Label());
-			this->spainPortugulToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->label4 = (gcnew System::Windows::Forms::Label());
-			this->tableLayoutPanel31 = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->SpainPortugul_USA = (gcnew System::Windows::Forms::Label());
-			this->SpainPortugul_USSR = (gcnew System::Windows::Forms::Label());
+			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->menuStrip1->SuspendLayout();
 			this->groupBox1->SuspendLayout();
 			this->tableLayoutPanel17->SuspendLayout();
@@ -1436,6 +1439,7 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->tableLayoutPanel47->SuspendLayout();
 			this->tableLayoutPanel48->SuspendLayout();
 			this->groupBox4->SuspendLayout();
+			this->tableLayoutPanel31->SuspendLayout();
 			this->tableLayoutPanel62->SuspendLayout();
 			this->tableLayoutPanel63->SuspendLayout();
 			this->tableLayoutPanel19->SuspendLayout();
@@ -1481,7 +1485,6 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->groupBox7->SuspendLayout();
 			this->tableLayoutPanel85->SuspendLayout();
 			this->tableLayoutPanel84->SuspendLayout();
-			this->tableLayoutPanel31->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// menuStrip1
@@ -1493,7 +1496,8 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			});
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(1302, 28);
+			this->menuStrip1->Padding = System::Windows::Forms::Padding(4, 2, 0, 2);
+			this->menuStrip1->Size = System::Drawing::Size(976, 24);
 			this->menuStrip1->TabIndex = 0;
 			this->menuStrip1->Text = L"menuStrip1";
 			// 
@@ -1501,7 +1505,7 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// 
 			this->menuToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->newGameToolStripMenuItem });
 			this->menuToolStripMenuItem->Name = L"menuToolStripMenuItem";
-			this->menuToolStripMenuItem->Size = System::Drawing::Size(58, 24);
+			this->menuToolStripMenuItem->Size = System::Drawing::Size(50, 20);
 			this->menuToolStripMenuItem->Text = L"Menu";
 			// 
 			// newGameToolStripMenuItem
@@ -1511,19 +1515,19 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 					this->uSSRToolStripMenuItem
 			});
 			this->newGameToolStripMenuItem->Name = L"newGameToolStripMenuItem";
-			this->newGameToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->newGameToolStripMenuItem->Size = System::Drawing::Size(131, 22);
 			this->newGameToolStripMenuItem->Text = L"New game";
 			// 
 			// uSAToolStripMenuItem
 			// 
 			this->uSAToolStripMenuItem->Name = L"uSAToolStripMenuItem";
-			this->uSAToolStripMenuItem->Size = System::Drawing::Size(119, 26);
+			this->uSAToolStripMenuItem->Size = System::Drawing::Size(101, 22);
 			this->uSAToolStripMenuItem->Text = L"USA";
 			// 
 			// uSSRToolStripMenuItem
 			// 
 			this->uSSRToolStripMenuItem->Name = L"uSSRToolStripMenuItem";
-			this->uSSRToolStripMenuItem->Size = System::Drawing::Size(119, 26);
+			this->uSSRToolStripMenuItem->Size = System::Drawing::Size(101, 22);
 			this->uSSRToolStripMenuItem->Text = L"USSR";
 			// 
 			// developerToolsToolStripMenuItem
@@ -1533,7 +1537,7 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 					this->gameToolStripMenuItem, this->handsToolStripMenuItem
 			});
 			this->developerToolsToolStripMenuItem->Name = L"developerToolsToolStripMenuItem";
-			this->developerToolsToolStripMenuItem->Size = System::Drawing::Size(130, 24);
+			this->developerToolsToolStripMenuItem->Size = System::Drawing::Size(103, 20);
 			this->developerToolsToolStripMenuItem->Text = L"Developer Tools";
 			// 
 			// countryToolStripMenuItem
@@ -1544,7 +1548,7 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 					this->southAmericaToolStripMenuItem
 			});
 			this->countryToolStripMenuItem->Name = L"countryToolStripMenuItem";
-			this->countryToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->countryToolStripMenuItem->Size = System::Drawing::Size(117, 22);
 			this->countryToolStripMenuItem->Text = L"Country";
 			// 
 			// africaToolStripMenuItem
@@ -1558,115 +1562,115 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 					this->zimbabweToolStripMenuItem
 			});
 			this->africaToolStripMenuItem->Name = L"africaToolStripMenuItem";
-			this->africaToolStripMenuItem->Size = System::Drawing::Size(190, 26);
+			this->africaToolStripMenuItem->Size = System::Drawing::Size(159, 22);
 			this->africaToolStripMenuItem->Text = L"Africa";
 			// 
 			// algeriaToolStripMenuItem
 			// 
 			this->algeriaToolStripMenuItem->Name = L"algeriaToolStripMenuItem";
-			this->algeriaToolStripMenuItem->Size = System::Drawing::Size(212, 26);
+			this->algeriaToolStripMenuItem->Size = System::Drawing::Size(175, 22);
 			this->algeriaToolStripMenuItem->Text = L"Algeria";
 			// 
 			// angolaToolStripMenuItem
 			// 
 			this->angolaToolStripMenuItem->Name = L"angolaToolStripMenuItem";
-			this->angolaToolStripMenuItem->Size = System::Drawing::Size(212, 26);
+			this->angolaToolStripMenuItem->Size = System::Drawing::Size(175, 22);
 			this->angolaToolStripMenuItem->Text = L"Angola";
 			// 
 			// botsawnaToolStripMenuItem
 			// 
 			this->botsawnaToolStripMenuItem->Name = L"botsawnaToolStripMenuItem";
-			this->botsawnaToolStripMenuItem->Size = System::Drawing::Size(212, 26);
+			this->botsawnaToolStripMenuItem->Size = System::Drawing::Size(175, 22);
 			this->botsawnaToolStripMenuItem->Text = L"Botsawna";
 			// 
 			// cameroonToolStripMenuItem
 			// 
 			this->cameroonToolStripMenuItem->Name = L"cameroonToolStripMenuItem";
-			this->cameroonToolStripMenuItem->Size = System::Drawing::Size(212, 26);
+			this->cameroonToolStripMenuItem->Size = System::Drawing::Size(175, 22);
 			this->cameroonToolStripMenuItem->Text = L"Cameroon";
 			// 
 			// ethiopiaToolStripMenuItem
 			// 
 			this->ethiopiaToolStripMenuItem->Name = L"ethiopiaToolStripMenuItem";
-			this->ethiopiaToolStripMenuItem->Size = System::Drawing::Size(212, 26);
+			this->ethiopiaToolStripMenuItem->Size = System::Drawing::Size(175, 22);
 			this->ethiopiaToolStripMenuItem->Text = L"Ethiopia";
 			// 
 			// ivoryCoastToolStripMenuItem
 			// 
 			this->ivoryCoastToolStripMenuItem->Name = L"ivoryCoastToolStripMenuItem";
-			this->ivoryCoastToolStripMenuItem->Size = System::Drawing::Size(212, 26);
+			this->ivoryCoastToolStripMenuItem->Size = System::Drawing::Size(175, 22);
 			this->ivoryCoastToolStripMenuItem->Text = L"Ivory Coast";
 			// 
 			// kenyaToolStripMenuItem
 			// 
 			this->kenyaToolStripMenuItem->Name = L"kenyaToolStripMenuItem";
-			this->kenyaToolStripMenuItem->Size = System::Drawing::Size(212, 26);
+			this->kenyaToolStripMenuItem->Size = System::Drawing::Size(175, 22);
 			this->kenyaToolStripMenuItem->Text = L"Kenya";
 			// 
 			// moroccoToolStripMenuItem
 			// 
 			this->moroccoToolStripMenuItem->Name = L"moroccoToolStripMenuItem";
-			this->moroccoToolStripMenuItem->Size = System::Drawing::Size(212, 26);
+			this->moroccoToolStripMenuItem->Size = System::Drawing::Size(175, 22);
 			this->moroccoToolStripMenuItem->Text = L"Morocco";
 			// 
 			// nigeriaToolStripMenuItem
 			// 
 			this->nigeriaToolStripMenuItem->Name = L"nigeriaToolStripMenuItem";
-			this->nigeriaToolStripMenuItem->Size = System::Drawing::Size(212, 26);
+			this->nigeriaToolStripMenuItem->Size = System::Drawing::Size(175, 22);
 			this->nigeriaToolStripMenuItem->Text = L"Nigeria";
 			// 
 			// saharanStatesToolStripMenuItem
 			// 
 			this->saharanStatesToolStripMenuItem->Name = L"saharanStatesToolStripMenuItem";
-			this->saharanStatesToolStripMenuItem->Size = System::Drawing::Size(212, 26);
+			this->saharanStatesToolStripMenuItem->Size = System::Drawing::Size(175, 22);
 			this->saharanStatesToolStripMenuItem->Text = L"Saharan States";
 			// 
 			// sEAfricanStatesToolStripMenuItem
 			// 
 			this->sEAfricanStatesToolStripMenuItem->Name = L"sEAfricanStatesToolStripMenuItem";
-			this->sEAfricanStatesToolStripMenuItem->Size = System::Drawing::Size(212, 26);
+			this->sEAfricanStatesToolStripMenuItem->Size = System::Drawing::Size(175, 22);
 			this->sEAfricanStatesToolStripMenuItem->Text = L"SE African States";
 			// 
 			// somaliaToolStripMenuItem
 			// 
 			this->somaliaToolStripMenuItem->Name = L"somaliaToolStripMenuItem";
-			this->somaliaToolStripMenuItem->Size = System::Drawing::Size(212, 26);
+			this->somaliaToolStripMenuItem->Size = System::Drawing::Size(175, 22);
 			this->somaliaToolStripMenuItem->Text = L"Somalia";
 			// 
 			// southAfricaToolStripMenuItem
 			// 
 			this->southAfricaToolStripMenuItem->Name = L"southAfricaToolStripMenuItem";
-			this->southAfricaToolStripMenuItem->Size = System::Drawing::Size(212, 26);
+			this->southAfricaToolStripMenuItem->Size = System::Drawing::Size(175, 22);
 			this->southAfricaToolStripMenuItem->Text = L"South Africa";
 			// 
 			// sudanToolStripMenuItem
 			// 
 			this->sudanToolStripMenuItem->Name = L"sudanToolStripMenuItem";
-			this->sudanToolStripMenuItem->Size = System::Drawing::Size(212, 26);
+			this->sudanToolStripMenuItem->Size = System::Drawing::Size(175, 22);
 			this->sudanToolStripMenuItem->Text = L"Sudan";
 			// 
 			// tunisiaToolStripMenuItem
 			// 
 			this->tunisiaToolStripMenuItem->Name = L"tunisiaToolStripMenuItem";
-			this->tunisiaToolStripMenuItem->Size = System::Drawing::Size(212, 26);
+			this->tunisiaToolStripMenuItem->Size = System::Drawing::Size(175, 22);
 			this->tunisiaToolStripMenuItem->Text = L"Tunisia";
 			// 
 			// westAfricanStatesToolStripMenuItem
 			// 
 			this->westAfricanStatesToolStripMenuItem->Name = L"westAfricanStatesToolStripMenuItem";
-			this->westAfricanStatesToolStripMenuItem->Size = System::Drawing::Size(212, 26);
+			this->westAfricanStatesToolStripMenuItem->Size = System::Drawing::Size(175, 22);
 			this->westAfricanStatesToolStripMenuItem->Text = L"West African States";
 			// 
 			// zaireToolStripMenuItem
 			// 
 			this->zaireToolStripMenuItem->Name = L"zaireToolStripMenuItem";
-			this->zaireToolStripMenuItem->Size = System::Drawing::Size(212, 26);
+			this->zaireToolStripMenuItem->Size = System::Drawing::Size(175, 22);
 			this->zaireToolStripMenuItem->Text = L"Zaire";
 			// 
 			// zimbabweToolStripMenuItem
 			// 
 			this->zimbabweToolStripMenuItem->Name = L"zimbabweToolStripMenuItem";
-			this->zimbabweToolStripMenuItem->Size = System::Drawing::Size(212, 26);
+			this->zimbabweToolStripMenuItem->Size = System::Drawing::Size(175, 22);
 			this->zimbabweToolStripMenuItem->Text = L"Zimbabwe";
 			// 
 			// asiaToolStripMenuItem
@@ -1679,97 +1683,97 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 					this->thailandToolStripMenuItem, this->vietnamToolStripMenuItem
 			});
 			this->asiaToolStripMenuItem->Name = L"asiaToolStripMenuItem";
-			this->asiaToolStripMenuItem->Size = System::Drawing::Size(190, 26);
+			this->asiaToolStripMenuItem->Size = System::Drawing::Size(159, 22);
 			this->asiaToolStripMenuItem->Text = L"Asia";
 			// 
 			// afghanistanToolStripMenuItem
 			// 
 			this->afghanistanToolStripMenuItem->Name = L"afghanistanToolStripMenuItem";
-			this->afghanistanToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->afghanistanToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->afghanistanToolStripMenuItem->Text = L"Afghanistan";
 			// 
 			// australiaToolStripMenuItem
 			// 
 			this->australiaToolStripMenuItem->Name = L"australiaToolStripMenuItem";
-			this->australiaToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->australiaToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->australiaToolStripMenuItem->Text = L"Australia";
 			// 
 			// burmaToolStripMenuItem
 			// 
 			this->burmaToolStripMenuItem->Name = L"burmaToolStripMenuItem";
-			this->burmaToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->burmaToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->burmaToolStripMenuItem->Text = L"Burma";
 			// 
 			// indiaToolStripMenuItem
 			// 
 			this->indiaToolStripMenuItem->Name = L"indiaToolStripMenuItem";
-			this->indiaToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->indiaToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->indiaToolStripMenuItem->Text = L"India";
 			// 
 			// indonesiaToolStripMenuItem
 			// 
 			this->indonesiaToolStripMenuItem->Name = L"indonesiaToolStripMenuItem";
-			this->indonesiaToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->indonesiaToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->indonesiaToolStripMenuItem->Text = L"Indonesia";
 			// 
 			// japanToolStripMenuItem
 			// 
 			this->japanToolStripMenuItem->Name = L"japanToolStripMenuItem";
-			this->japanToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->japanToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->japanToolStripMenuItem->Text = L"Japan";
 			// 
 			// laosCambodiaToolStripMenuItem
 			// 
 			this->laosCambodiaToolStripMenuItem->Name = L"laosCambodiaToolStripMenuItem";
-			this->laosCambodiaToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->laosCambodiaToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->laosCambodiaToolStripMenuItem->Text = L"Laos/Cambodia";
 			// 
 			// malaysiaToolStripMenuItem
 			// 
 			this->malaysiaToolStripMenuItem->Name = L"malaysiaToolStripMenuItem";
-			this->malaysiaToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->malaysiaToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->malaysiaToolStripMenuItem->Text = L"Malaysia";
 			// 
 			// northKoreaToolStripMenuItem
 			// 
 			this->northKoreaToolStripMenuItem->Name = L"northKoreaToolStripMenuItem";
-			this->northKoreaToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->northKoreaToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->northKoreaToolStripMenuItem->Text = L"North Korea";
 			// 
 			// pakistanToolStripMenuItem
 			// 
 			this->pakistanToolStripMenuItem->Name = L"pakistanToolStripMenuItem";
-			this->pakistanToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->pakistanToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->pakistanToolStripMenuItem->Text = L"Pakistan";
 			// 
 			// philippinesToolStripMenuItem
 			// 
 			this->philippinesToolStripMenuItem->Name = L"philippinesToolStripMenuItem";
-			this->philippinesToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->philippinesToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->philippinesToolStripMenuItem->Text = L"Philippians";
 			// 
 			// southKoreaToolStripMenuItem
 			// 
 			this->southKoreaToolStripMenuItem->Name = L"southKoreaToolStripMenuItem";
-			this->southKoreaToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->southKoreaToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->southKoreaToolStripMenuItem->Text = L"South Korea";
 			// 
 			// taiwanToolStripMenuItem
 			// 
 			this->taiwanToolStripMenuItem->Name = L"taiwanToolStripMenuItem";
-			this->taiwanToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->taiwanToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->taiwanToolStripMenuItem->Text = L"Taiwan";
 			// 
 			// thailandToolStripMenuItem
 			// 
 			this->thailandToolStripMenuItem->Name = L"thailandToolStripMenuItem";
-			this->thailandToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->thailandToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->thailandToolStripMenuItem->Text = L"Thailand";
 			// 
 			// vietnamToolStripMenuItem
 			// 
 			this->vietnamToolStripMenuItem->Name = L"vietnamToolStripMenuItem";
-			this->vietnamToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->vietnamToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->vietnamToolStripMenuItem->Text = L"Vietnam";
 			// 
 			// centralAmericaToolStripMenuItem
@@ -1781,67 +1785,67 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 					this->panamaToolStripMenuItem
 			});
 			this->centralAmericaToolStripMenuItem->Name = L"centralAmericaToolStripMenuItem";
-			this->centralAmericaToolStripMenuItem->Size = System::Drawing::Size(190, 26);
+			this->centralAmericaToolStripMenuItem->Size = System::Drawing::Size(159, 22);
 			this->centralAmericaToolStripMenuItem->Text = L"Central America";
 			// 
 			// costaRicaToolStripMenuItem
 			// 
 			this->costaRicaToolStripMenuItem->Name = L"costaRicaToolStripMenuItem";
-			this->costaRicaToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->costaRicaToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->costaRicaToolStripMenuItem->Text = L"Costa Rica";
 			// 
 			// cubaToolStripMenuItem
 			// 
 			this->cubaToolStripMenuItem->Name = L"cubaToolStripMenuItem";
-			this->cubaToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->cubaToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->cubaToolStripMenuItem->Text = L"Cuba";
 			// 
 			// dominicanRepToolStripMenuItem
 			// 
 			this->dominicanRepToolStripMenuItem->Name = L"dominicanRepToolStripMenuItem";
-			this->dominicanRepToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->dominicanRepToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->dominicanRepToolStripMenuItem->Text = L"Dominican Rep.";
 			// 
 			// elSalvadorToolStripMenuItem
 			// 
 			this->elSalvadorToolStripMenuItem->Name = L"elSalvadorToolStripMenuItem";
-			this->elSalvadorToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->elSalvadorToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->elSalvadorToolStripMenuItem->Text = L"El Salvador";
 			// 
 			// guatemalaToolStripMenuItem
 			// 
 			this->guatemalaToolStripMenuItem->Name = L"guatemalaToolStripMenuItem";
-			this->guatemalaToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->guatemalaToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->guatemalaToolStripMenuItem->Text = L"Guatemala";
 			// 
 			// hatiToolStripMenuItem
 			// 
 			this->hatiToolStripMenuItem->Name = L"hatiToolStripMenuItem";
-			this->hatiToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->hatiToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->hatiToolStripMenuItem->Text = L"Haiti";
 			// 
 			// hondurasToolStripMenuItem
 			// 
 			this->hondurasToolStripMenuItem->Name = L"hondurasToolStripMenuItem";
-			this->hondurasToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->hondurasToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->hondurasToolStripMenuItem->Text = L"Honduras";
 			// 
 			// mexicoToolStripMenuItem
 			// 
 			this->mexicoToolStripMenuItem->Name = L"mexicoToolStripMenuItem";
-			this->mexicoToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->mexicoToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->mexicoToolStripMenuItem->Text = L"Mexico";
 			// 
 			// nicaraguaToolStripMenuItem
 			// 
 			this->nicaraguaToolStripMenuItem->Name = L"nicaraguaToolStripMenuItem";
-			this->nicaraguaToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->nicaraguaToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->nicaraguaToolStripMenuItem->Text = L"Nicaragua";
 			// 
 			// panamaToolStripMenuItem
 			// 
 			this->panamaToolStripMenuItem->Name = L"panamaToolStripMenuItem";
-			this->panamaToolStripMenuItem->Size = System::Drawing::Size(189, 26);
+			this->panamaToolStripMenuItem->Size = System::Drawing::Size(158, 22);
 			this->panamaToolStripMenuItem->Text = L"Panama";
 			// 
 			// europeToolStripMenuItem
@@ -1855,127 +1859,133 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 					this->uKToolStripMenuItem, this->wGermanyToolStripMenuItem, this->yugoslaviaToolStripMenuItem
 			});
 			this->europeToolStripMenuItem->Name = L"europeToolStripMenuItem";
-			this->europeToolStripMenuItem->Size = System::Drawing::Size(190, 26);
+			this->europeToolStripMenuItem->Size = System::Drawing::Size(159, 22);
 			this->europeToolStripMenuItem->Text = L"Europe";
 			// 
 			// austriaToolStripMenuItem
 			// 
 			this->austriaToolStripMenuItem->Name = L"austriaToolStripMenuItem";
-			this->austriaToolStripMenuItem->Size = System::Drawing::Size(185, 26);
+			this->austriaToolStripMenuItem->Size = System::Drawing::Size(155, 22);
 			this->austriaToolStripMenuItem->Text = L"Austria";
 			// 
 			// benluxToolStripMenuItem
 			// 
 			this->benluxToolStripMenuItem->Name = L"benluxToolStripMenuItem";
-			this->benluxToolStripMenuItem->Size = System::Drawing::Size(185, 26);
+			this->benluxToolStripMenuItem->Size = System::Drawing::Size(155, 22);
 			this->benluxToolStripMenuItem->Text = L"Benlux";
 			// 
 			// bulgariaToolStripMenuItem
 			// 
 			this->bulgariaToolStripMenuItem->Name = L"bulgariaToolStripMenuItem";
-			this->bulgariaToolStripMenuItem->Size = System::Drawing::Size(185, 26);
+			this->bulgariaToolStripMenuItem->Size = System::Drawing::Size(155, 22);
 			this->bulgariaToolStripMenuItem->Text = L"Bulgaria";
 			// 
 			// canadaToolStripMenuItem
 			// 
 			this->canadaToolStripMenuItem->Name = L"canadaToolStripMenuItem";
-			this->canadaToolStripMenuItem->Size = System::Drawing::Size(185, 26);
+			this->canadaToolStripMenuItem->Size = System::Drawing::Size(155, 22);
 			this->canadaToolStripMenuItem->Text = L"Canada";
 			// 
 			// czechoslovakiaToolStripMenuItem
 			// 
 			this->czechoslovakiaToolStripMenuItem->Name = L"czechoslovakiaToolStripMenuItem";
-			this->czechoslovakiaToolStripMenuItem->Size = System::Drawing::Size(185, 26);
+			this->czechoslovakiaToolStripMenuItem->Size = System::Drawing::Size(155, 22);
 			this->czechoslovakiaToolStripMenuItem->Text = L"Czechoslovakia";
 			// 
 			// denmarkToolStripMenuItem
 			// 
 			this->denmarkToolStripMenuItem->Name = L"denmarkToolStripMenuItem";
-			this->denmarkToolStripMenuItem->Size = System::Drawing::Size(185, 26);
+			this->denmarkToolStripMenuItem->Size = System::Drawing::Size(155, 22);
 			this->denmarkToolStripMenuItem->Text = L"Denmark";
 			// 
 			// eGermanyToolStripMenuItem
 			// 
 			this->eGermanyToolStripMenuItem->Name = L"eGermanyToolStripMenuItem";
-			this->eGermanyToolStripMenuItem->Size = System::Drawing::Size(185, 26);
+			this->eGermanyToolStripMenuItem->Size = System::Drawing::Size(155, 22);
 			this->eGermanyToolStripMenuItem->Text = L"E. Germany";
 			// 
 			// finlandToolStripMenuItem
 			// 
 			this->finlandToolStripMenuItem->Name = L"finlandToolStripMenuItem";
-			this->finlandToolStripMenuItem->Size = System::Drawing::Size(185, 26);
+			this->finlandToolStripMenuItem->Size = System::Drawing::Size(155, 22);
 			this->finlandToolStripMenuItem->Text = L"Finland";
 			// 
 			// franceToolStripMenuItem
 			// 
 			this->franceToolStripMenuItem->Name = L"franceToolStripMenuItem";
-			this->franceToolStripMenuItem->Size = System::Drawing::Size(185, 26);
+			this->franceToolStripMenuItem->Size = System::Drawing::Size(155, 22);
 			this->franceToolStripMenuItem->Text = L"France";
 			// 
 			// greeceToolStripMenuItem
 			// 
 			this->greeceToolStripMenuItem->Name = L"greeceToolStripMenuItem";
-			this->greeceToolStripMenuItem->Size = System::Drawing::Size(185, 26);
+			this->greeceToolStripMenuItem->Size = System::Drawing::Size(155, 22);
 			this->greeceToolStripMenuItem->Text = L"Greece";
 			// 
 			// hungaryToolStripMenuItem
 			// 
 			this->hungaryToolStripMenuItem->Name = L"hungaryToolStripMenuItem";
-			this->hungaryToolStripMenuItem->Size = System::Drawing::Size(185, 26);
+			this->hungaryToolStripMenuItem->Size = System::Drawing::Size(155, 22);
 			this->hungaryToolStripMenuItem->Text = L"Hungary";
 			// 
 			// italyToolStripMenuItem
 			// 
 			this->italyToolStripMenuItem->Name = L"italyToolStripMenuItem";
-			this->italyToolStripMenuItem->Size = System::Drawing::Size(185, 26);
+			this->italyToolStripMenuItem->Size = System::Drawing::Size(155, 22);
 			this->italyToolStripMenuItem->Text = L"Italy";
 			// 
 			// norwayToolStripMenuItem
 			// 
 			this->norwayToolStripMenuItem->Name = L"norwayToolStripMenuItem";
-			this->norwayToolStripMenuItem->Size = System::Drawing::Size(185, 26);
+			this->norwayToolStripMenuItem->Size = System::Drawing::Size(155, 22);
 			this->norwayToolStripMenuItem->Text = L"Norway";
 			// 
 			// polandToolStripMenuItem
 			// 
 			this->polandToolStripMenuItem->Name = L"polandToolStripMenuItem";
-			this->polandToolStripMenuItem->Size = System::Drawing::Size(185, 26);
+			this->polandToolStripMenuItem->Size = System::Drawing::Size(155, 22);
 			this->polandToolStripMenuItem->Text = L"Poland";
 			// 
 			// romaniaToolStripMenuItem
 			// 
 			this->romaniaToolStripMenuItem->Name = L"romaniaToolStripMenuItem";
-			this->romaniaToolStripMenuItem->Size = System::Drawing::Size(185, 26);
+			this->romaniaToolStripMenuItem->Size = System::Drawing::Size(155, 22);
 			this->romaniaToolStripMenuItem->Text = L"Romania";
+			// 
+			// spainPortugulToolStripMenuItem
+			// 
+			this->spainPortugulToolStripMenuItem->Name = L"spainPortugulToolStripMenuItem";
+			this->spainPortugulToolStripMenuItem->Size = System::Drawing::Size(155, 22);
+			this->spainPortugulToolStripMenuItem->Text = L"Spain/Portugul";
 			// 
 			// sweedenToolStripMenuItem
 			// 
 			this->sweedenToolStripMenuItem->Name = L"sweedenToolStripMenuItem";
-			this->sweedenToolStripMenuItem->Size = System::Drawing::Size(185, 26);
+			this->sweedenToolStripMenuItem->Size = System::Drawing::Size(155, 22);
 			this->sweedenToolStripMenuItem->Text = L"Sweden";
 			// 
 			// turkeyToolStripMenuItem
 			// 
 			this->turkeyToolStripMenuItem->Name = L"turkeyToolStripMenuItem";
-			this->turkeyToolStripMenuItem->Size = System::Drawing::Size(185, 26);
+			this->turkeyToolStripMenuItem->Size = System::Drawing::Size(155, 22);
 			this->turkeyToolStripMenuItem->Text = L"Turkey";
 			// 
 			// uKToolStripMenuItem
 			// 
 			this->uKToolStripMenuItem->Name = L"uKToolStripMenuItem";
-			this->uKToolStripMenuItem->Size = System::Drawing::Size(185, 26);
+			this->uKToolStripMenuItem->Size = System::Drawing::Size(155, 22);
 			this->uKToolStripMenuItem->Text = L"U.K.";
 			// 
 			// wGermanyToolStripMenuItem
 			// 
 			this->wGermanyToolStripMenuItem->Name = L"wGermanyToolStripMenuItem";
-			this->wGermanyToolStripMenuItem->Size = System::Drawing::Size(185, 26);
+			this->wGermanyToolStripMenuItem->Size = System::Drawing::Size(155, 22);
 			this->wGermanyToolStripMenuItem->Text = L"W. Germany";
 			// 
 			// yugoslaviaToolStripMenuItem
 			// 
 			this->yugoslaviaToolStripMenuItem->Name = L"yugoslaviaToolStripMenuItem";
-			this->yugoslaviaToolStripMenuItem->Size = System::Drawing::Size(185, 26);
+			this->yugoslaviaToolStripMenuItem->Size = System::Drawing::Size(155, 22);
 			this->yugoslaviaToolStripMenuItem->Text = L"Yugoslavia";
 			// 
 			// middleEastToolStripMenuItem
@@ -1986,67 +1996,67 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 					this->lebanonToolStripMenuItem, this->libyaToolStripMenuItem, this->saudiArabiaToolStripMenuItem, this->syriaToolStripMenuItem
 			});
 			this->middleEastToolStripMenuItem->Name = L"middleEastToolStripMenuItem";
-			this->middleEastToolStripMenuItem->Size = System::Drawing::Size(190, 26);
+			this->middleEastToolStripMenuItem->Size = System::Drawing::Size(159, 22);
 			this->middleEastToolStripMenuItem->Text = L"Middle East";
 			// 
 			// egyptToolStripMenuItem
 			// 
 			this->egyptToolStripMenuItem->Name = L"egyptToolStripMenuItem";
-			this->egyptToolStripMenuItem->Size = System::Drawing::Size(169, 26);
+			this->egyptToolStripMenuItem->Size = System::Drawing::Size(140, 22);
 			this->egyptToolStripMenuItem->Text = L"Egypt";
 			// 
 			// gulfStatesToolStripMenuItem
 			// 
 			this->gulfStatesToolStripMenuItem->Name = L"gulfStatesToolStripMenuItem";
-			this->gulfStatesToolStripMenuItem->Size = System::Drawing::Size(169, 26);
+			this->gulfStatesToolStripMenuItem->Size = System::Drawing::Size(140, 22);
 			this->gulfStatesToolStripMenuItem->Text = L"Gulf States";
 			// 
 			// iranToolStripMenuItem
 			// 
 			this->iranToolStripMenuItem->Name = L"iranToolStripMenuItem";
-			this->iranToolStripMenuItem->Size = System::Drawing::Size(169, 26);
+			this->iranToolStripMenuItem->Size = System::Drawing::Size(140, 22);
 			this->iranToolStripMenuItem->Text = L"Iran";
 			// 
 			// iraqToolStripMenuItem
 			// 
 			this->iraqToolStripMenuItem->Name = L"iraqToolStripMenuItem";
-			this->iraqToolStripMenuItem->Size = System::Drawing::Size(169, 26);
+			this->iraqToolStripMenuItem->Size = System::Drawing::Size(140, 22);
 			this->iraqToolStripMenuItem->Text = L"Iraq";
 			// 
 			// israelToolStripMenuItem
 			// 
 			this->israelToolStripMenuItem->Name = L"israelToolStripMenuItem";
-			this->israelToolStripMenuItem->Size = System::Drawing::Size(169, 26);
+			this->israelToolStripMenuItem->Size = System::Drawing::Size(140, 22);
 			this->israelToolStripMenuItem->Text = L"Israel";
 			// 
 			// jordanToolStripMenuItem
 			// 
 			this->jordanToolStripMenuItem->Name = L"jordanToolStripMenuItem";
-			this->jordanToolStripMenuItem->Size = System::Drawing::Size(169, 26);
+			this->jordanToolStripMenuItem->Size = System::Drawing::Size(140, 22);
 			this->jordanToolStripMenuItem->Text = L"Jordan";
 			// 
 			// lebanonToolStripMenuItem
 			// 
 			this->lebanonToolStripMenuItem->Name = L"lebanonToolStripMenuItem";
-			this->lebanonToolStripMenuItem->Size = System::Drawing::Size(169, 26);
+			this->lebanonToolStripMenuItem->Size = System::Drawing::Size(140, 22);
 			this->lebanonToolStripMenuItem->Text = L"Lebanon";
 			// 
 			// libyaToolStripMenuItem
 			// 
 			this->libyaToolStripMenuItem->Name = L"libyaToolStripMenuItem";
-			this->libyaToolStripMenuItem->Size = System::Drawing::Size(169, 26);
+			this->libyaToolStripMenuItem->Size = System::Drawing::Size(140, 22);
 			this->libyaToolStripMenuItem->Text = L"Libya";
 			// 
 			// saudiArabiaToolStripMenuItem
 			// 
 			this->saudiArabiaToolStripMenuItem->Name = L"saudiArabiaToolStripMenuItem";
-			this->saudiArabiaToolStripMenuItem->Size = System::Drawing::Size(169, 26);
+			this->saudiArabiaToolStripMenuItem->Size = System::Drawing::Size(140, 22);
 			this->saudiArabiaToolStripMenuItem->Text = L"Saudi Arabia";
 			// 
 			// syriaToolStripMenuItem
 			// 
 			this->syriaToolStripMenuItem->Name = L"syriaToolStripMenuItem";
-			this->syriaToolStripMenuItem->Size = System::Drawing::Size(169, 26);
+			this->syriaToolStripMenuItem->Size = System::Drawing::Size(140, 22);
 			this->syriaToolStripMenuItem->Text = L"Syria";
 			// 
 			// southAmericaToolStripMenuItem
@@ -2058,67 +2068,67 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 					this->venezuelaToolStripMenuItem
 			});
 			this->southAmericaToolStripMenuItem->Name = L"southAmericaToolStripMenuItem";
-			this->southAmericaToolStripMenuItem->Size = System::Drawing::Size(190, 26);
+			this->southAmericaToolStripMenuItem->Size = System::Drawing::Size(159, 22);
 			this->southAmericaToolStripMenuItem->Text = L"South America";
 			// 
 			// argentinaToolStripMenuItem
 			// 
 			this->argentinaToolStripMenuItem->Name = L"argentinaToolStripMenuItem";
-			this->argentinaToolStripMenuItem->Size = System::Drawing::Size(152, 26);
+			this->argentinaToolStripMenuItem->Size = System::Drawing::Size(126, 22);
 			this->argentinaToolStripMenuItem->Text = L"Argentina";
 			// 
 			// brazilToolStripMenuItem
 			// 
 			this->brazilToolStripMenuItem->Name = L"brazilToolStripMenuItem";
-			this->brazilToolStripMenuItem->Size = System::Drawing::Size(152, 26);
+			this->brazilToolStripMenuItem->Size = System::Drawing::Size(126, 22);
 			this->brazilToolStripMenuItem->Text = L"Brazil";
 			// 
 			// boliviaToolStripMenuItem
 			// 
 			this->boliviaToolStripMenuItem->Name = L"boliviaToolStripMenuItem";
-			this->boliviaToolStripMenuItem->Size = System::Drawing::Size(152, 26);
+			this->boliviaToolStripMenuItem->Size = System::Drawing::Size(126, 22);
 			this->boliviaToolStripMenuItem->Text = L"Bolivia";
 			// 
 			// chileToolStripMenuItem
 			// 
 			this->chileToolStripMenuItem->Name = L"chileToolStripMenuItem";
-			this->chileToolStripMenuItem->Size = System::Drawing::Size(152, 26);
+			this->chileToolStripMenuItem->Size = System::Drawing::Size(126, 22);
 			this->chileToolStripMenuItem->Text = L"Chile";
 			// 
 			// colombiaToolStripMenuItem
 			// 
 			this->colombiaToolStripMenuItem->Name = L"colombiaToolStripMenuItem";
-			this->colombiaToolStripMenuItem->Size = System::Drawing::Size(152, 26);
+			this->colombiaToolStripMenuItem->Size = System::Drawing::Size(126, 22);
 			this->colombiaToolStripMenuItem->Text = L"Colombia";
 			// 
 			// ecuadorToolStripMenuItem
 			// 
 			this->ecuadorToolStripMenuItem->Name = L"ecuadorToolStripMenuItem";
-			this->ecuadorToolStripMenuItem->Size = System::Drawing::Size(152, 26);
+			this->ecuadorToolStripMenuItem->Size = System::Drawing::Size(126, 22);
 			this->ecuadorToolStripMenuItem->Text = L"Ecuador";
 			// 
 			// paraguayToolStripMenuItem
 			// 
 			this->paraguayToolStripMenuItem->Name = L"paraguayToolStripMenuItem";
-			this->paraguayToolStripMenuItem->Size = System::Drawing::Size(152, 26);
+			this->paraguayToolStripMenuItem->Size = System::Drawing::Size(126, 22);
 			this->paraguayToolStripMenuItem->Text = L"Paraguay";
 			// 
 			// peruToolStripMenuItem
 			// 
 			this->peruToolStripMenuItem->Name = L"peruToolStripMenuItem";
-			this->peruToolStripMenuItem->Size = System::Drawing::Size(152, 26);
+			this->peruToolStripMenuItem->Size = System::Drawing::Size(126, 22);
 			this->peruToolStripMenuItem->Text = L"Peru";
 			// 
 			// uruguayToolStripMenuItem
 			// 
 			this->uruguayToolStripMenuItem->Name = L"uruguayToolStripMenuItem";
-			this->uruguayToolStripMenuItem->Size = System::Drawing::Size(152, 26);
+			this->uruguayToolStripMenuItem->Size = System::Drawing::Size(126, 22);
 			this->uruguayToolStripMenuItem->Text = L"Uruguay";
 			// 
 			// venezuelaToolStripMenuItem
 			// 
 			this->venezuelaToolStripMenuItem->Name = L"venezuelaToolStripMenuItem";
-			this->venezuelaToolStripMenuItem->Size = System::Drawing::Size(152, 26);
+			this->venezuelaToolStripMenuItem->Size = System::Drawing::Size(126, 22);
 			this->venezuelaToolStripMenuItem->Text = L"Venezuela";
 			// 
 			// gameToolStripMenuItem
@@ -2129,7 +2139,7 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 					this->spaceRaceToolStripMenuItem, this->eventToolStripMenuItem, this->resetToolStripMenuItem
 			});
 			this->gameToolStripMenuItem->Name = L"gameToolStripMenuItem";
-			this->gameToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->gameToolStripMenuItem->Size = System::Drawing::Size(117, 22);
 			this->gameToolStripMenuItem->Text = L"Game";
 			// 
 			// turnToolStripMenuItem
@@ -2140,67 +2150,67 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 					this->toolStripMenuItem8, this->toolStripMenuItem9, this->toolStripMenuItem10, this->toolStripMenuItem11
 			});
 			this->turnToolStripMenuItem->Name = L"turnToolStripMenuItem";
-			this->turnToolStripMenuItem->Size = System::Drawing::Size(164, 26);
+			this->turnToolStripMenuItem->Size = System::Drawing::Size(138, 22);
 			this->turnToolStripMenuItem->Text = L"Turn";
 			// 
 			// toolStripMenuItem2
 			// 
 			this->toolStripMenuItem2->Name = L"toolStripMenuItem2";
-			this->toolStripMenuItem2->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem2->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem2->Text = L"1";
 			// 
 			// toolStripMenuItem3
 			// 
 			this->toolStripMenuItem3->Name = L"toolStripMenuItem3";
-			this->toolStripMenuItem3->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem3->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem3->Text = L"2";
 			// 
 			// toolStripMenuItem4
 			// 
 			this->toolStripMenuItem4->Name = L"toolStripMenuItem4";
-			this->toolStripMenuItem4->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem4->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem4->Text = L"3";
 			// 
 			// toolStripMenuItem5
 			// 
 			this->toolStripMenuItem5->Name = L"toolStripMenuItem5";
-			this->toolStripMenuItem5->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem5->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem5->Text = L"4";
 			// 
 			// toolStripMenuItem6
 			// 
 			this->toolStripMenuItem6->Name = L"toolStripMenuItem6";
-			this->toolStripMenuItem6->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem6->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem6->Text = L"5";
 			// 
 			// toolStripMenuItem7
 			// 
 			this->toolStripMenuItem7->Name = L"toolStripMenuItem7";
-			this->toolStripMenuItem7->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem7->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem7->Text = L"6";
 			// 
 			// toolStripMenuItem8
 			// 
 			this->toolStripMenuItem8->Name = L"toolStripMenuItem8";
-			this->toolStripMenuItem8->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem8->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem8->Text = L"7";
 			// 
 			// toolStripMenuItem9
 			// 
 			this->toolStripMenuItem9->Name = L"toolStripMenuItem9";
-			this->toolStripMenuItem9->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem9->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem9->Text = L"8";
 			// 
 			// toolStripMenuItem10
 			// 
 			this->toolStripMenuItem10->Name = L"toolStripMenuItem10";
-			this->toolStripMenuItem10->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem10->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem10->Text = L"9";
 			// 
 			// toolStripMenuItem11
 			// 
 			this->toolStripMenuItem11->Name = L"toolStripMenuItem11";
-			this->toolStripMenuItem11->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem11->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem11->Text = L"10";
 			// 
 			// roundToolStripMenuItem
@@ -2211,61 +2221,61 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 					this->toolStripMenuItem17, this->toolStripMenuItem18, this->toolStripMenuItem19
 			});
 			this->roundToolStripMenuItem->Name = L"roundToolStripMenuItem";
-			this->roundToolStripMenuItem->Size = System::Drawing::Size(164, 26);
+			this->roundToolStripMenuItem->Size = System::Drawing::Size(138, 22);
 			this->roundToolStripMenuItem->Text = L"Round";
 			// 
 			// headlinePhaseToolStripMenuItem
 			// 
 			this->headlinePhaseToolStripMenuItem->Name = L"headlinePhaseToolStripMenuItem";
-			this->headlinePhaseToolStripMenuItem->Size = System::Drawing::Size(186, 26);
+			this->headlinePhaseToolStripMenuItem->Size = System::Drawing::Size(155, 22);
 			this->headlinePhaseToolStripMenuItem->Text = L"Headline Phase";
 			// 
 			// toolStripMenuItem12
 			// 
 			this->toolStripMenuItem12->Name = L"toolStripMenuItem12";
-			this->toolStripMenuItem12->Size = System::Drawing::Size(186, 26);
+			this->toolStripMenuItem12->Size = System::Drawing::Size(155, 22);
 			this->toolStripMenuItem12->Text = L"1";
 			// 
 			// toolStripMenuItem13
 			// 
 			this->toolStripMenuItem13->Name = L"toolStripMenuItem13";
-			this->toolStripMenuItem13->Size = System::Drawing::Size(186, 26);
+			this->toolStripMenuItem13->Size = System::Drawing::Size(155, 22);
 			this->toolStripMenuItem13->Text = L"2";
 			// 
 			// toolStripMenuItem14
 			// 
 			this->toolStripMenuItem14->Name = L"toolStripMenuItem14";
-			this->toolStripMenuItem14->Size = System::Drawing::Size(186, 26);
+			this->toolStripMenuItem14->Size = System::Drawing::Size(155, 22);
 			this->toolStripMenuItem14->Text = L"3";
 			// 
 			// toolStripMenuItem15
 			// 
 			this->toolStripMenuItem15->Name = L"toolStripMenuItem15";
-			this->toolStripMenuItem15->Size = System::Drawing::Size(186, 26);
+			this->toolStripMenuItem15->Size = System::Drawing::Size(155, 22);
 			this->toolStripMenuItem15->Text = L"4";
 			// 
 			// toolStripMenuItem16
 			// 
 			this->toolStripMenuItem16->Name = L"toolStripMenuItem16";
-			this->toolStripMenuItem16->Size = System::Drawing::Size(186, 26);
+			this->toolStripMenuItem16->Size = System::Drawing::Size(155, 22);
 			this->toolStripMenuItem16->Text = L"5";
 			// 
 			// toolStripMenuItem17
 			// 
 			this->toolStripMenuItem17->Name = L"toolStripMenuItem17";
-			this->toolStripMenuItem17->Size = System::Drawing::Size(186, 26);
+			this->toolStripMenuItem17->Size = System::Drawing::Size(155, 22);
 			this->toolStripMenuItem17->Text = L"6";
 			// 
 			// toolStripMenuItem18
 			// 
 			this->toolStripMenuItem18->Name = L"toolStripMenuItem18";
-			this->toolStripMenuItem18->Size = System::Drawing::Size(186, 26);
+			this->toolStripMenuItem18->Size = System::Drawing::Size(155, 22);
 			this->toolStripMenuItem18->Text = L"7";
 			// 
 			// toolStripMenuItem19
 			// 
 			this->toolStripMenuItem19->Name = L"toolStripMenuItem19";
-			this->toolStripMenuItem19->Size = System::Drawing::Size(186, 26);
+			this->toolStripMenuItem19->Size = System::Drawing::Size(155, 22);
 			this->toolStripMenuItem19->Text = L"8";
 			// 
 			// scoreToolStripMenuItem
@@ -2275,13 +2285,13 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 					this->uSAToolStripMenuItem2, this->uSSRToolStripMenuItem2
 			});
 			this->scoreToolStripMenuItem->Name = L"scoreToolStripMenuItem";
-			this->scoreToolStripMenuItem->Size = System::Drawing::Size(164, 26);
+			this->scoreToolStripMenuItem->Size = System::Drawing::Size(138, 22);
 			this->scoreToolStripMenuItem->Text = L"Score";
 			// 
 			// toolStripMenuItem20
 			// 
 			this->toolStripMenuItem20->Name = L"toolStripMenuItem20";
-			this->toolStripMenuItem20->Size = System::Drawing::Size(119, 26);
+			this->toolStripMenuItem20->Size = System::Drawing::Size(101, 22);
 			this->toolStripMenuItem20->Text = L"0";
 			// 
 			// uSAToolStripMenuItem2
@@ -2294,121 +2304,121 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 					this->toolStripMenuItem37, this->toolStripMenuItem38, this->toolStripMenuItem39
 			});
 			this->uSAToolStripMenuItem2->Name = L"uSAToolStripMenuItem2";
-			this->uSAToolStripMenuItem2->Size = System::Drawing::Size(119, 26);
+			this->uSAToolStripMenuItem2->Size = System::Drawing::Size(101, 22);
 			this->uSAToolStripMenuItem2->Text = L"USA";
 			// 
 			// toolStripMenuItem21
 			// 
 			this->toolStripMenuItem21->Name = L"toolStripMenuItem21";
-			this->toolStripMenuItem21->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem21->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem21->Text = L"1";
 			// 
 			// toolStripMenuItem22
 			// 
 			this->toolStripMenuItem22->Name = L"toolStripMenuItem22";
-			this->toolStripMenuItem22->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem22->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem22->Text = L"2";
 			// 
 			// toolStripMenuItem23
 			// 
 			this->toolStripMenuItem23->Name = L"toolStripMenuItem23";
-			this->toolStripMenuItem23->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem23->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem23->Text = L"3";
 			// 
 			// toolStripMenuItem24
 			// 
 			this->toolStripMenuItem24->Name = L"toolStripMenuItem24";
-			this->toolStripMenuItem24->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem24->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem24->Text = L"4";
 			// 
 			// toolStripMenuItem25
 			// 
 			this->toolStripMenuItem25->Name = L"toolStripMenuItem25";
-			this->toolStripMenuItem25->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem25->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem25->Text = L"5";
 			// 
 			// toolStripMenuItem26
 			// 
 			this->toolStripMenuItem26->Name = L"toolStripMenuItem26";
-			this->toolStripMenuItem26->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem26->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem26->Text = L"6";
 			// 
 			// toolStripMenuItem27
 			// 
 			this->toolStripMenuItem27->Name = L"toolStripMenuItem27";
-			this->toolStripMenuItem27->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem27->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem27->Text = L"7";
 			// 
 			// toolStripMenuItem28
 			// 
 			this->toolStripMenuItem28->Name = L"toolStripMenuItem28";
-			this->toolStripMenuItem28->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem28->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem28->Text = L"8";
 			// 
 			// toolStripMenuItem29
 			// 
 			this->toolStripMenuItem29->Name = L"toolStripMenuItem29";
-			this->toolStripMenuItem29->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem29->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem29->Text = L"9";
 			// 
 			// toolStripMenuItem30
 			// 
 			this->toolStripMenuItem30->Name = L"toolStripMenuItem30";
-			this->toolStripMenuItem30->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem30->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem30->Text = L"10";
 			// 
 			// toolStripMenuItem31
 			// 
 			this->toolStripMenuItem31->Name = L"toolStripMenuItem31";
-			this->toolStripMenuItem31->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem31->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem31->Text = L"11";
 			// 
 			// toolStripMenuItem32
 			// 
 			this->toolStripMenuItem32->Name = L"toolStripMenuItem32";
-			this->toolStripMenuItem32->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem32->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem32->Text = L"12";
 			// 
 			// toolStripMenuItem33
 			// 
 			this->toolStripMenuItem33->Name = L"toolStripMenuItem33";
-			this->toolStripMenuItem33->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem33->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem33->Text = L"13";
 			// 
 			// toolStripMenuItem34
 			// 
 			this->toolStripMenuItem34->Name = L"toolStripMenuItem34";
-			this->toolStripMenuItem34->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem34->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem34->Text = L"14";
 			// 
 			// toolStripMenuItem35
 			// 
 			this->toolStripMenuItem35->Name = L"toolStripMenuItem35";
-			this->toolStripMenuItem35->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem35->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem35->Text = L"15";
 			// 
 			// toolStripMenuItem36
 			// 
 			this->toolStripMenuItem36->Name = L"toolStripMenuItem36";
-			this->toolStripMenuItem36->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem36->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem36->Text = L"16";
 			// 
 			// toolStripMenuItem37
 			// 
 			this->toolStripMenuItem37->Name = L"toolStripMenuItem37";
-			this->toolStripMenuItem37->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem37->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem37->Text = L"17";
 			// 
 			// toolStripMenuItem38
 			// 
 			this->toolStripMenuItem38->Name = L"toolStripMenuItem38";
-			this->toolStripMenuItem38->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem38->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem38->Text = L"18";
 			// 
 			// toolStripMenuItem39
 			// 
 			this->toolStripMenuItem39->Name = L"toolStripMenuItem39";
-			this->toolStripMenuItem39->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem39->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem39->Text = L"19";
 			// 
 			// uSSRToolStripMenuItem2
@@ -2421,121 +2431,121 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 					this->toolStripMenuItem56, this->toolStripMenuItem57, this->toolStripMenuItem58
 			});
 			this->uSSRToolStripMenuItem2->Name = L"uSSRToolStripMenuItem2";
-			this->uSSRToolStripMenuItem2->Size = System::Drawing::Size(119, 26);
+			this->uSSRToolStripMenuItem2->Size = System::Drawing::Size(101, 22);
 			this->uSSRToolStripMenuItem2->Text = L"USSR";
 			// 
 			// toolStripMenuItem40
 			// 
 			this->toolStripMenuItem40->Name = L"toolStripMenuItem40";
-			this->toolStripMenuItem40->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem40->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem40->Text = L"1";
 			// 
 			// toolStripMenuItem41
 			// 
 			this->toolStripMenuItem41->Name = L"toolStripMenuItem41";
-			this->toolStripMenuItem41->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem41->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem41->Text = L"2";
 			// 
 			// toolStripMenuItem42
 			// 
 			this->toolStripMenuItem42->Name = L"toolStripMenuItem42";
-			this->toolStripMenuItem42->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem42->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem42->Text = L"3";
 			// 
 			// toolStripMenuItem43
 			// 
 			this->toolStripMenuItem43->Name = L"toolStripMenuItem43";
-			this->toolStripMenuItem43->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem43->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem43->Text = L"4";
 			// 
 			// toolStripMenuItem44
 			// 
 			this->toolStripMenuItem44->Name = L"toolStripMenuItem44";
-			this->toolStripMenuItem44->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem44->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem44->Text = L"5";
 			// 
 			// toolStripMenuItem45
 			// 
 			this->toolStripMenuItem45->Name = L"toolStripMenuItem45";
-			this->toolStripMenuItem45->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem45->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem45->Text = L"6";
 			// 
 			// toolStripMenuItem46
 			// 
 			this->toolStripMenuItem46->Name = L"toolStripMenuItem46";
-			this->toolStripMenuItem46->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem46->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem46->Text = L"7";
 			// 
 			// toolStripMenuItem47
 			// 
 			this->toolStripMenuItem47->Name = L"toolStripMenuItem47";
-			this->toolStripMenuItem47->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem47->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem47->Text = L"8";
 			// 
 			// toolStripMenuItem48
 			// 
 			this->toolStripMenuItem48->Name = L"toolStripMenuItem48";
-			this->toolStripMenuItem48->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem48->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem48->Text = L"9";
 			// 
 			// toolStripMenuItem49
 			// 
 			this->toolStripMenuItem49->Name = L"toolStripMenuItem49";
-			this->toolStripMenuItem49->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem49->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem49->Text = L"10";
 			// 
 			// toolStripMenuItem50
 			// 
 			this->toolStripMenuItem50->Name = L"toolStripMenuItem50";
-			this->toolStripMenuItem50->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem50->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem50->Text = L"11";
 			// 
 			// toolStripMenuItem51
 			// 
 			this->toolStripMenuItem51->Name = L"toolStripMenuItem51";
-			this->toolStripMenuItem51->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem51->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem51->Text = L"12";
 			// 
 			// toolStripMenuItem52
 			// 
 			this->toolStripMenuItem52->Name = L"toolStripMenuItem52";
-			this->toolStripMenuItem52->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem52->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem52->Text = L"13";
 			// 
 			// toolStripMenuItem53
 			// 
 			this->toolStripMenuItem53->Name = L"toolStripMenuItem53";
-			this->toolStripMenuItem53->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem53->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem53->Text = L"14";
 			// 
 			// toolStripMenuItem54
 			// 
 			this->toolStripMenuItem54->Name = L"toolStripMenuItem54";
-			this->toolStripMenuItem54->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem54->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem54->Text = L"15";
 			// 
 			// toolStripMenuItem55
 			// 
 			this->toolStripMenuItem55->Name = L"toolStripMenuItem55";
-			this->toolStripMenuItem55->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem55->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem55->Text = L"16";
 			// 
 			// toolStripMenuItem56
 			// 
 			this->toolStripMenuItem56->Name = L"toolStripMenuItem56";
-			this->toolStripMenuItem56->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem56->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem56->Text = L"17";
 			// 
 			// toolStripMenuItem57
 			// 
 			this->toolStripMenuItem57->Name = L"toolStripMenuItem57";
-			this->toolStripMenuItem57->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem57->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem57->Text = L"18";
 			// 
 			// toolStripMenuItem58
 			// 
 			this->toolStripMenuItem58->Name = L"toolStripMenuItem58";
-			this->toolStripMenuItem58->Size = System::Drawing::Size(100, 26);
+			this->toolStripMenuItem58->Size = System::Drawing::Size(86, 22);
 			this->toolStripMenuItem58->Text = L"19";
 			// 
 			// defconToolStripMenuItem
@@ -2545,31 +2555,31 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 					this->toolStripMenuItem60, this->toolStripMenuItem61, this->toolStripMenuItem62
 			});
 			this->defconToolStripMenuItem->Name = L"defconToolStripMenuItem";
-			this->defconToolStripMenuItem->Size = System::Drawing::Size(164, 26);
+			this->defconToolStripMenuItem->Size = System::Drawing::Size(138, 22);
 			this->defconToolStripMenuItem->Text = L"Defcon";
 			// 
 			// toolStripMenuItem59
 			// 
 			this->toolStripMenuItem59->Name = L"toolStripMenuItem59";
-			this->toolStripMenuItem59->Size = System::Drawing::Size(92, 26);
+			this->toolStripMenuItem59->Size = System::Drawing::Size(80, 22);
 			this->toolStripMenuItem59->Text = L"5";
 			// 
 			// toolStripMenuItem60
 			// 
 			this->toolStripMenuItem60->Name = L"toolStripMenuItem60";
-			this->toolStripMenuItem60->Size = System::Drawing::Size(92, 26);
+			this->toolStripMenuItem60->Size = System::Drawing::Size(80, 22);
 			this->toolStripMenuItem60->Text = L"4";
 			// 
 			// toolStripMenuItem61
 			// 
 			this->toolStripMenuItem61->Name = L"toolStripMenuItem61";
-			this->toolStripMenuItem61->Size = System::Drawing::Size(92, 26);
+			this->toolStripMenuItem61->Size = System::Drawing::Size(80, 22);
 			this->toolStripMenuItem61->Text = L"3";
 			// 
 			// toolStripMenuItem62
 			// 
 			this->toolStripMenuItem62->Name = L"toolStripMenuItem62";
-			this->toolStripMenuItem62->Size = System::Drawing::Size(92, 26);
+			this->toolStripMenuItem62->Size = System::Drawing::Size(80, 22);
 			this->toolStripMenuItem62->Text = L"2";
 			// 
 			// militaryOpsToolStripMenuItem
@@ -2579,7 +2589,7 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 					this->uSSRToolStripMenuItem3
 			});
 			this->militaryOpsToolStripMenuItem->Name = L"militaryOpsToolStripMenuItem";
-			this->militaryOpsToolStripMenuItem->Size = System::Drawing::Size(164, 26);
+			this->militaryOpsToolStripMenuItem->Size = System::Drawing::Size(138, 22);
 			this->militaryOpsToolStripMenuItem->Text = L"Military Ops";
 			// 
 			// uSAToolStripMenuItem3
@@ -2589,43 +2599,43 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 					this->toolStripMenuItem64, this->toolStripMenuItem65, this->toolStripMenuItem66, this->toolStripMenuItem67, this->toolStripMenuItem68
 			});
 			this->uSAToolStripMenuItem3->Name = L"uSAToolStripMenuItem3";
-			this->uSAToolStripMenuItem3->Size = System::Drawing::Size(119, 26);
+			this->uSAToolStripMenuItem3->Size = System::Drawing::Size(101, 22);
 			this->uSAToolStripMenuItem3->Text = L"USA";
 			// 
 			// toolStripMenuItem63
 			// 
 			this->toolStripMenuItem63->Name = L"toolStripMenuItem63";
-			this->toolStripMenuItem63->Size = System::Drawing::Size(92, 26);
+			this->toolStripMenuItem63->Size = System::Drawing::Size(80, 22);
 			this->toolStripMenuItem63->Text = L"0";
 			// 
 			// toolStripMenuItem64
 			// 
 			this->toolStripMenuItem64->Name = L"toolStripMenuItem64";
-			this->toolStripMenuItem64->Size = System::Drawing::Size(92, 26);
+			this->toolStripMenuItem64->Size = System::Drawing::Size(80, 22);
 			this->toolStripMenuItem64->Text = L"1";
 			// 
 			// toolStripMenuItem65
 			// 
 			this->toolStripMenuItem65->Name = L"toolStripMenuItem65";
-			this->toolStripMenuItem65->Size = System::Drawing::Size(92, 26);
+			this->toolStripMenuItem65->Size = System::Drawing::Size(80, 22);
 			this->toolStripMenuItem65->Text = L"2";
 			// 
 			// toolStripMenuItem66
 			// 
 			this->toolStripMenuItem66->Name = L"toolStripMenuItem66";
-			this->toolStripMenuItem66->Size = System::Drawing::Size(92, 26);
+			this->toolStripMenuItem66->Size = System::Drawing::Size(80, 22);
 			this->toolStripMenuItem66->Text = L"3";
 			// 
 			// toolStripMenuItem67
 			// 
 			this->toolStripMenuItem67->Name = L"toolStripMenuItem67";
-			this->toolStripMenuItem67->Size = System::Drawing::Size(92, 26);
+			this->toolStripMenuItem67->Size = System::Drawing::Size(80, 22);
 			this->toolStripMenuItem67->Text = L"4";
 			// 
 			// toolStripMenuItem68
 			// 
 			this->toolStripMenuItem68->Name = L"toolStripMenuItem68";
-			this->toolStripMenuItem68->Size = System::Drawing::Size(92, 26);
+			this->toolStripMenuItem68->Size = System::Drawing::Size(80, 22);
 			this->toolStripMenuItem68->Text = L"5";
 			// 
 			// uSSRToolStripMenuItem3
@@ -2635,43 +2645,43 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 					this->toolStripMenuItem70, this->toolStripMenuItem71, this->toolStripMenuItem72, this->toolStripMenuItem73, this->toolStripMenuItem74
 			});
 			this->uSSRToolStripMenuItem3->Name = L"uSSRToolStripMenuItem3";
-			this->uSSRToolStripMenuItem3->Size = System::Drawing::Size(119, 26);
+			this->uSSRToolStripMenuItem3->Size = System::Drawing::Size(101, 22);
 			this->uSSRToolStripMenuItem3->Text = L"USSR";
 			// 
 			// toolStripMenuItem69
 			// 
 			this->toolStripMenuItem69->Name = L"toolStripMenuItem69";
-			this->toolStripMenuItem69->Size = System::Drawing::Size(92, 26);
+			this->toolStripMenuItem69->Size = System::Drawing::Size(80, 22);
 			this->toolStripMenuItem69->Text = L"0";
 			// 
 			// toolStripMenuItem70
 			// 
 			this->toolStripMenuItem70->Name = L"toolStripMenuItem70";
-			this->toolStripMenuItem70->Size = System::Drawing::Size(92, 26);
+			this->toolStripMenuItem70->Size = System::Drawing::Size(80, 22);
 			this->toolStripMenuItem70->Text = L"1";
 			// 
 			// toolStripMenuItem71
 			// 
 			this->toolStripMenuItem71->Name = L"toolStripMenuItem71";
-			this->toolStripMenuItem71->Size = System::Drawing::Size(92, 26);
+			this->toolStripMenuItem71->Size = System::Drawing::Size(80, 22);
 			this->toolStripMenuItem71->Text = L"2";
 			// 
 			// toolStripMenuItem72
 			// 
 			this->toolStripMenuItem72->Name = L"toolStripMenuItem72";
-			this->toolStripMenuItem72->Size = System::Drawing::Size(92, 26);
+			this->toolStripMenuItem72->Size = System::Drawing::Size(80, 22);
 			this->toolStripMenuItem72->Text = L"3";
 			// 
 			// toolStripMenuItem73
 			// 
 			this->toolStripMenuItem73->Name = L"toolStripMenuItem73";
-			this->toolStripMenuItem73->Size = System::Drawing::Size(92, 26);
+			this->toolStripMenuItem73->Size = System::Drawing::Size(80, 22);
 			this->toolStripMenuItem73->Text = L"4";
 			// 
 			// toolStripMenuItem74
 			// 
 			this->toolStripMenuItem74->Name = L"toolStripMenuItem74";
-			this->toolStripMenuItem74->Size = System::Drawing::Size(92, 26);
+			this->toolStripMenuItem74->Size = System::Drawing::Size(80, 22);
 			this->toolStripMenuItem74->Text = L"5";
 			// 
 			// spaceRaceToolStripMenuItem
@@ -2681,7 +2691,7 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 					this->uSSRToolStripMenuItem4
 			});
 			this->spaceRaceToolStripMenuItem->Name = L"spaceRaceToolStripMenuItem";
-			this->spaceRaceToolStripMenuItem->Size = System::Drawing::Size(164, 26);
+			this->spaceRaceToolStripMenuItem->Size = System::Drawing::Size(138, 22);
 			this->spaceRaceToolStripMenuItem->Text = L"Space Race";
 			// 
 			// uSAToolStripMenuItem4
@@ -2692,61 +2702,61 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 					this->toolStripMenuItem80, this->toolStripMenuItem81, this->toolStripMenuItem82
 			});
 			this->uSAToolStripMenuItem4->Name = L"uSAToolStripMenuItem4";
-			this->uSAToolStripMenuItem4->Size = System::Drawing::Size(119, 26);
+			this->uSAToolStripMenuItem4->Size = System::Drawing::Size(101, 22);
 			this->uSAToolStripMenuItem4->Text = L"USA";
 			// 
 			// startToolStripMenuItem
 			// 
 			this->startToolStripMenuItem->Name = L"startToolStripMenuItem";
-			this->startToolStripMenuItem->Size = System::Drawing::Size(115, 26);
+			this->startToolStripMenuItem->Size = System::Drawing::Size(98, 22);
 			this->startToolStripMenuItem->Text = L"Start";
 			// 
 			// toolStripMenuItem75
 			// 
 			this->toolStripMenuItem75->Name = L"toolStripMenuItem75";
-			this->toolStripMenuItem75->Size = System::Drawing::Size(115, 26);
+			this->toolStripMenuItem75->Size = System::Drawing::Size(98, 22);
 			this->toolStripMenuItem75->Text = L"1";
 			// 
 			// toolStripMenuItem76
 			// 
 			this->toolStripMenuItem76->Name = L"toolStripMenuItem76";
-			this->toolStripMenuItem76->Size = System::Drawing::Size(115, 26);
+			this->toolStripMenuItem76->Size = System::Drawing::Size(98, 22);
 			this->toolStripMenuItem76->Text = L"2";
 			// 
 			// toolStripMenuItem77
 			// 
 			this->toolStripMenuItem77->Name = L"toolStripMenuItem77";
-			this->toolStripMenuItem77->Size = System::Drawing::Size(115, 26);
+			this->toolStripMenuItem77->Size = System::Drawing::Size(98, 22);
 			this->toolStripMenuItem77->Text = L"3";
 			// 
 			// toolStripMenuItem78
 			// 
 			this->toolStripMenuItem78->Name = L"toolStripMenuItem78";
-			this->toolStripMenuItem78->Size = System::Drawing::Size(115, 26);
+			this->toolStripMenuItem78->Size = System::Drawing::Size(98, 22);
 			this->toolStripMenuItem78->Text = L"4";
 			// 
 			// toolStripMenuItem79
 			// 
 			this->toolStripMenuItem79->Name = L"toolStripMenuItem79";
-			this->toolStripMenuItem79->Size = System::Drawing::Size(115, 26);
+			this->toolStripMenuItem79->Size = System::Drawing::Size(98, 22);
 			this->toolStripMenuItem79->Text = L"5";
 			// 
 			// toolStripMenuItem80
 			// 
 			this->toolStripMenuItem80->Name = L"toolStripMenuItem80";
-			this->toolStripMenuItem80->Size = System::Drawing::Size(115, 26);
+			this->toolStripMenuItem80->Size = System::Drawing::Size(98, 22);
 			this->toolStripMenuItem80->Text = L"6";
 			// 
 			// toolStripMenuItem81
 			// 
 			this->toolStripMenuItem81->Name = L"toolStripMenuItem81";
-			this->toolStripMenuItem81->Size = System::Drawing::Size(115, 26);
+			this->toolStripMenuItem81->Size = System::Drawing::Size(98, 22);
 			this->toolStripMenuItem81->Text = L"7";
 			// 
 			// toolStripMenuItem82
 			// 
 			this->toolStripMenuItem82->Name = L"toolStripMenuItem82";
-			this->toolStripMenuItem82->Size = System::Drawing::Size(115, 26);
+			this->toolStripMenuItem82->Size = System::Drawing::Size(98, 22);
 			this->toolStripMenuItem82->Text = L"8";
 			// 
 			// uSSRToolStripMenuItem4
@@ -2757,73 +2767,73 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 					this->toolStripMenuItem88, this->toolStripMenuItem89, this->toolStripMenuItem90
 			});
 			this->uSSRToolStripMenuItem4->Name = L"uSSRToolStripMenuItem4";
-			this->uSSRToolStripMenuItem4->Size = System::Drawing::Size(119, 26);
+			this->uSSRToolStripMenuItem4->Size = System::Drawing::Size(101, 22);
 			this->uSSRToolStripMenuItem4->Text = L"USSR";
 			// 
 			// startToolStripMenuItem1
 			// 
 			this->startToolStripMenuItem1->Name = L"startToolStripMenuItem1";
-			this->startToolStripMenuItem1->Size = System::Drawing::Size(115, 26);
+			this->startToolStripMenuItem1->Size = System::Drawing::Size(98, 22);
 			this->startToolStripMenuItem1->Text = L"Start";
 			// 
 			// toolStripMenuItem83
 			// 
 			this->toolStripMenuItem83->Name = L"toolStripMenuItem83";
-			this->toolStripMenuItem83->Size = System::Drawing::Size(115, 26);
+			this->toolStripMenuItem83->Size = System::Drawing::Size(98, 22);
 			this->toolStripMenuItem83->Text = L"1";
 			// 
 			// toolStripMenuItem84
 			// 
 			this->toolStripMenuItem84->Name = L"toolStripMenuItem84";
-			this->toolStripMenuItem84->Size = System::Drawing::Size(115, 26);
+			this->toolStripMenuItem84->Size = System::Drawing::Size(98, 22);
 			this->toolStripMenuItem84->Text = L"2";
 			// 
 			// toolStripMenuItem85
 			// 
 			this->toolStripMenuItem85->Name = L"toolStripMenuItem85";
-			this->toolStripMenuItem85->Size = System::Drawing::Size(115, 26);
+			this->toolStripMenuItem85->Size = System::Drawing::Size(98, 22);
 			this->toolStripMenuItem85->Text = L"3";
 			// 
 			// toolStripMenuItem86
 			// 
 			this->toolStripMenuItem86->Name = L"toolStripMenuItem86";
-			this->toolStripMenuItem86->Size = System::Drawing::Size(115, 26);
+			this->toolStripMenuItem86->Size = System::Drawing::Size(98, 22);
 			this->toolStripMenuItem86->Text = L"4";
 			// 
 			// toolStripMenuItem87
 			// 
 			this->toolStripMenuItem87->Name = L"toolStripMenuItem87";
-			this->toolStripMenuItem87->Size = System::Drawing::Size(115, 26);
+			this->toolStripMenuItem87->Size = System::Drawing::Size(98, 22);
 			this->toolStripMenuItem87->Text = L"5";
 			// 
 			// toolStripMenuItem88
 			// 
 			this->toolStripMenuItem88->Name = L"toolStripMenuItem88";
-			this->toolStripMenuItem88->Size = System::Drawing::Size(115, 26);
+			this->toolStripMenuItem88->Size = System::Drawing::Size(98, 22);
 			this->toolStripMenuItem88->Text = L"6";
 			// 
 			// toolStripMenuItem89
 			// 
 			this->toolStripMenuItem89->Name = L"toolStripMenuItem89";
-			this->toolStripMenuItem89->Size = System::Drawing::Size(115, 26);
+			this->toolStripMenuItem89->Size = System::Drawing::Size(98, 22);
 			this->toolStripMenuItem89->Text = L"7";
 			// 
 			// toolStripMenuItem90
 			// 
 			this->toolStripMenuItem90->Name = L"toolStripMenuItem90";
-			this->toolStripMenuItem90->Size = System::Drawing::Size(115, 26);
+			this->toolStripMenuItem90->Size = System::Drawing::Size(98, 22);
 			this->toolStripMenuItem90->Text = L"8";
 			// 
 			// eventToolStripMenuItem
 			// 
 			this->eventToolStripMenuItem->Name = L"eventToolStripMenuItem";
-			this->eventToolStripMenuItem->Size = System::Drawing::Size(164, 26);
+			this->eventToolStripMenuItem->Size = System::Drawing::Size(138, 22);
 			this->eventToolStripMenuItem->Text = L"Event";
 			// 
 			// resetToolStripMenuItem
 			// 
 			this->resetToolStripMenuItem->Name = L"resetToolStripMenuItem";
-			this->resetToolStripMenuItem->Size = System::Drawing::Size(164, 26);
+			this->resetToolStripMenuItem->Size = System::Drawing::Size(138, 22);
 			this->resetToolStripMenuItem->Text = L"Reset";
 			// 
 			// handsToolStripMenuItem
@@ -2833,33 +2843,33 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 					this->uSSRToolStripMenuItem1
 			});
 			this->handsToolStripMenuItem->Name = L"handsToolStripMenuItem";
-			this->handsToolStripMenuItem->Size = System::Drawing::Size(181, 26);
+			this->handsToolStripMenuItem->Size = System::Drawing::Size(117, 22);
 			this->handsToolStripMenuItem->Text = L"Hands";
 			// 
 			// uSAToolStripMenuItem1
 			// 
 			this->uSAToolStripMenuItem1->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->revealToolStripMenuItem });
 			this->uSAToolStripMenuItem1->Name = L"uSAToolStripMenuItem1";
-			this->uSAToolStripMenuItem1->Size = System::Drawing::Size(119, 26);
+			this->uSAToolStripMenuItem1->Size = System::Drawing::Size(101, 22);
 			this->uSAToolStripMenuItem1->Text = L"USA";
 			// 
 			// revealToolStripMenuItem
 			// 
 			this->revealToolStripMenuItem->Name = L"revealToolStripMenuItem";
-			this->revealToolStripMenuItem->Size = System::Drawing::Size(128, 26);
+			this->revealToolStripMenuItem->Size = System::Drawing::Size(108, 22);
 			this->revealToolStripMenuItem->Text = L"Reveal";
 			// 
 			// uSSRToolStripMenuItem1
 			// 
 			this->uSSRToolStripMenuItem1->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->revealToolStripMenuItem1 });
 			this->uSSRToolStripMenuItem1->Name = L"uSSRToolStripMenuItem1";
-			this->uSSRToolStripMenuItem1->Size = System::Drawing::Size(119, 26);
+			this->uSSRToolStripMenuItem1->Size = System::Drawing::Size(101, 22);
 			this->uSSRToolStripMenuItem1->Text = L"USSR";
 			// 
 			// revealToolStripMenuItem1
 			// 
 			this->revealToolStripMenuItem1->Name = L"revealToolStripMenuItem1";
-			this->revealToolStripMenuItem1->Size = System::Drawing::Size(128, 26);
+			this->revealToolStripMenuItem1->Size = System::Drawing::Size(108, 22);
 			this->revealToolStripMenuItem1->Text = L"Reveal";
 			// 
 			// Algeria_USA
@@ -2869,9 +2879,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Algeria_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Algeria_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Algeria_USA->Location = System::Drawing::Point(4, 1);
+			this->Algeria_USA->Location = System::Drawing::Point(3, 1);
+			this->Algeria_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Algeria_USA->Name = L"Algeria_USA";
-			this->Algeria_USA->Size = System::Drawing::Size(26, 17);
+			this->Algeria_USA->Size = System::Drawing::Size(14, 14);
 			this->Algeria_USA->TabIndex = 0;
 			this->Algeria_USA->Text = L"10";
 			this->Algeria_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -2914,9 +2925,11 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->groupBox1->Controls->Add(this->tableLayoutPanel16);
 			this->groupBox1->Controls->Add(this->tableLayoutPanel2);
 			this->groupBox1->Controls->Add(this->tableLayoutPanel1);
-			this->groupBox1->Location = System::Drawing::Point(12, 31);
+			this->groupBox1->Location = System::Drawing::Point(9, 25);
+			this->groupBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->groupBox1->Name = L"groupBox1";
-			this->groupBox1->Size = System::Drawing::Size(236, 438);
+			this->groupBox1->Padding = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->groupBox1->Size = System::Drawing::Size(177, 356);
 			this->groupBox1->TabIndex = 4;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Africa";
@@ -2924,18 +2937,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label49
 			// 
 			this->label49->AutoSize = true;
-			this->label49->Location = System::Drawing::Point(102, 372);
+			this->label49->Location = System::Drawing::Point(76, 302);
+			this->label49->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label49->Name = L"label49";
-			this->label49->Size = System::Drawing::Size(72, 17);
+			this->label49->Size = System::Drawing::Size(56, 13);
 			this->label49->TabIndex = 39;
 			this->label49->Text = L"Zimbabwe";
 			// 
 			// label50
 			// 
 			this->label50->AutoSize = true;
-			this->label50->Location = System::Drawing::Point(17, 371);
+			this->label50->Location = System::Drawing::Point(13, 301);
+			this->label50->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label50->Name = L"label50";
-			this->label50->Size = System::Drawing::Size(53, 17);
+			this->label50->Size = System::Drawing::Size(40, 13);
 			this->label50->TabIndex = 37;
 			this->label50->Text = L"Nigeria";
 			// 
@@ -2949,11 +2964,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel17->Controls->Add(this->Zimbabwe_USA, 0, 0);
 			this->tableLayoutPanel17->Controls->Add(this->Zimbabwe_USSR, 1, 0);
-			this->tableLayoutPanel17->Location = System::Drawing::Point(105, 392);
+			this->tableLayoutPanel17->Location = System::Drawing::Point(79, 318);
+			this->tableLayoutPanel17->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel17->Name = L"tableLayoutPanel17";
 			this->tableLayoutPanel17->RowCount = 1;
 			this->tableLayoutPanel17->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel17->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel17->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel17->TabIndex = 38;
 			// 
 			// Zimbabwe_USA
@@ -2963,9 +2979,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Zimbabwe_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Zimbabwe_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Zimbabwe_USA->Location = System::Drawing::Point(4, 1);
+			this->Zimbabwe_USA->Location = System::Drawing::Point(3, 1);
+			this->Zimbabwe_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Zimbabwe_USA->Name = L"Zimbabwe_USA";
-			this->Zimbabwe_USA->Size = System::Drawing::Size(26, 17);
+			this->Zimbabwe_USA->Size = System::Drawing::Size(14, 14);
 			this->Zimbabwe_USA->TabIndex = 0;
 			this->Zimbabwe_USA->Text = L"10";
 			this->Zimbabwe_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -2977,9 +2994,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Zimbabwe_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Zimbabwe_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Zimbabwe_USSR->Location = System::Drawing::Point(37, 1);
+			this->Zimbabwe_USSR->Location = System::Drawing::Point(28, 1);
+			this->Zimbabwe_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Zimbabwe_USSR->Name = L"Zimbabwe_USSR";
-			this->Zimbabwe_USSR->Size = System::Drawing::Size(26, 17);
+			this->Zimbabwe_USSR->Size = System::Drawing::Size(14, 14);
 			this->Zimbabwe_USSR->TabIndex = 5;
 			this->Zimbabwe_USSR->Text = L"10";
 			this->Zimbabwe_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -2994,11 +3012,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel18->Controls->Add(this->Nigeria_USA, 0, 0);
 			this->tableLayoutPanel18->Controls->Add(this->Nigeria_USSR, 1, 0);
-			this->tableLayoutPanel18->Location = System::Drawing::Point(20, 391);
+			this->tableLayoutPanel18->Location = System::Drawing::Point(15, 318);
+			this->tableLayoutPanel18->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel18->Name = L"tableLayoutPanel18";
 			this->tableLayoutPanel18->RowCount = 1;
 			this->tableLayoutPanel18->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel18->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel18->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel18->TabIndex = 36;
 			// 
 			// Nigeria_USA
@@ -3008,9 +3027,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Nigeria_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Nigeria_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Nigeria_USA->Location = System::Drawing::Point(4, 1);
+			this->Nigeria_USA->Location = System::Drawing::Point(3, 1);
+			this->Nigeria_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Nigeria_USA->Name = L"Nigeria_USA";
-			this->Nigeria_USA->Size = System::Drawing::Size(26, 17);
+			this->Nigeria_USA->Size = System::Drawing::Size(14, 14);
 			this->Nigeria_USA->TabIndex = 0;
 			this->Nigeria_USA->Text = L"10";
 			this->Nigeria_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3022,9 +3042,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Nigeria_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Nigeria_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Nigeria_USSR->Location = System::Drawing::Point(37, 1);
+			this->Nigeria_USSR->Location = System::Drawing::Point(28, 1);
+			this->Nigeria_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Nigeria_USSR->Name = L"Nigeria_USSR";
-			this->Nigeria_USSR->Size = System::Drawing::Size(26, 17);
+			this->Nigeria_USSR->Size = System::Drawing::Size(14, 14);
 			this->Nigeria_USSR->TabIndex = 5;
 			this->Nigeria_USSR->Text = L"10";
 			this->Nigeria_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3032,18 +3053,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label25
 			// 
 			this->label25->AutoSize = true;
-			this->label25->Location = System::Drawing::Point(102, 329);
+			this->label25->Location = System::Drawing::Point(76, 267);
+			this->label25->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label25->Name = L"label25";
-			this->label25->Size = System::Drawing::Size(41, 17);
+			this->label25->Size = System::Drawing::Size(31, 13);
 			this->label25->TabIndex = 35;
 			this->label25->Text = L"Zaire";
 			// 
 			// label22
 			// 
 			this->label22->AutoSize = true;
-			this->label22->Location = System::Drawing::Point(17, 328);
+			this->label22->Location = System::Drawing::Point(13, 266);
+			this->label22->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label22->Name = L"label22";
-			this->label22->Size = System::Drawing::Size(62, 17);
+			this->label22->Size = System::Drawing::Size(49, 13);
 			this->label22->TabIndex = 19;
 			this->label22->Text = L"Morocco";
 			// 
@@ -3057,11 +3080,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel9->Controls->Add(this->Zaire_USA, 0, 0);
 			this->tableLayoutPanel9->Controls->Add(this->Zaire_USSR, 1, 0);
-			this->tableLayoutPanel9->Location = System::Drawing::Point(105, 349);
+			this->tableLayoutPanel9->Location = System::Drawing::Point(79, 284);
+			this->tableLayoutPanel9->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel9->Name = L"tableLayoutPanel9";
 			this->tableLayoutPanel9->RowCount = 1;
 			this->tableLayoutPanel9->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel9->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel9->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel9->TabIndex = 34;
 			// 
 			// Zaire_USA
@@ -3071,9 +3095,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Zaire_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Zaire_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Zaire_USA->Location = System::Drawing::Point(4, 1);
+			this->Zaire_USA->Location = System::Drawing::Point(3, 1);
+			this->Zaire_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Zaire_USA->Name = L"Zaire_USA";
-			this->Zaire_USA->Size = System::Drawing::Size(26, 17);
+			this->Zaire_USA->Size = System::Drawing::Size(14, 14);
 			this->Zaire_USA->TabIndex = 0;
 			this->Zaire_USA->Text = L"10";
 			this->Zaire_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3085,9 +3110,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Zaire_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Zaire_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Zaire_USSR->Location = System::Drawing::Point(37, 1);
+			this->Zaire_USSR->Location = System::Drawing::Point(28, 1);
+			this->Zaire_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Zaire_USSR->Name = L"Zaire_USSR";
-			this->Zaire_USSR->Size = System::Drawing::Size(26, 17);
+			this->Zaire_USSR->Size = System::Drawing::Size(14, 14);
 			this->Zaire_USSR->TabIndex = 5;
 			this->Zaire_USSR->Text = L"10";
 			this->Zaire_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3102,11 +3128,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel8->Controls->Add(this->Morocco_USA, 0, 0);
 			this->tableLayoutPanel8->Controls->Add(this->Morocco_USSR, 1, 0);
-			this->tableLayoutPanel8->Location = System::Drawing::Point(20, 348);
+			this->tableLayoutPanel8->Location = System::Drawing::Point(15, 283);
+			this->tableLayoutPanel8->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel8->Name = L"tableLayoutPanel8";
 			this->tableLayoutPanel8->RowCount = 1;
 			this->tableLayoutPanel8->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel8->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel8->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel8->TabIndex = 18;
 			// 
 			// Morocco_USA
@@ -3116,9 +3143,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Morocco_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Morocco_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Morocco_USA->Location = System::Drawing::Point(4, 1);
+			this->Morocco_USA->Location = System::Drawing::Point(3, 1);
+			this->Morocco_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Morocco_USA->Name = L"Morocco_USA";
-			this->Morocco_USA->Size = System::Drawing::Size(26, 17);
+			this->Morocco_USA->Size = System::Drawing::Size(14, 14);
 			this->Morocco_USA->TabIndex = 0;
 			this->Morocco_USA->Text = L"10";
 			this->Morocco_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3130,9 +3158,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Morocco_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Morocco_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Morocco_USSR->Location = System::Drawing::Point(37, 1);
+			this->Morocco_USSR->Location = System::Drawing::Point(28, 1);
+			this->Morocco_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Morocco_USSR->Name = L"Morocco_USSR";
-			this->Morocco_USSR->Size = System::Drawing::Size(26, 17);
+			this->Morocco_USSR->Size = System::Drawing::Size(14, 14);
 			this->Morocco_USSR->TabIndex = 5;
 			this->Morocco_USSR->Text = L"10";
 			this->Morocco_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3140,18 +3169,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label28
 			// 
 			this->label28->AutoSize = true;
-			this->label28->Location = System::Drawing::Point(102, 284);
+			this->label28->Location = System::Drawing::Point(76, 231);
+			this->label28->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label28->Name = L"label28";
-			this->label28->Size = System::Drawing::Size(132, 17);
+			this->label28->Size = System::Drawing::Size(101, 13);
 			this->label28->TabIndex = 33;
 			this->label28->Text = L"West African States";
 			// 
 			// label19
 			// 
 			this->label19->AutoSize = true;
-			this->label19->Location = System::Drawing::Point(17, 283);
+			this->label19->Location = System::Drawing::Point(13, 230);
+			this->label19->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label19->Name = L"label19";
-			this->label19->Size = System::Drawing::Size(48, 17);
+			this->label19->Size = System::Drawing::Size(37, 13);
 			this->label19->TabIndex = 17;
 			this->label19->Text = L"Kenya";
 			// 
@@ -3165,11 +3196,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel10->Controls->Add(this->WestAfricanStates_USA, 0, 0);
 			this->tableLayoutPanel10->Controls->Add(this->WestAfricanStates_USSR, 1, 0);
-			this->tableLayoutPanel10->Location = System::Drawing::Point(105, 304);
+			this->tableLayoutPanel10->Location = System::Drawing::Point(79, 247);
+			this->tableLayoutPanel10->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel10->Name = L"tableLayoutPanel10";
 			this->tableLayoutPanel10->RowCount = 1;
 			this->tableLayoutPanel10->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel10->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel10->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel10->TabIndex = 32;
 			// 
 			// WestAfricanStates_USA
@@ -3179,9 +3211,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->WestAfricanStates_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->WestAfricanStates_USA->ForeColor = System::Drawing::Color::Blue;
-			this->WestAfricanStates_USA->Location = System::Drawing::Point(4, 1);
+			this->WestAfricanStates_USA->Location = System::Drawing::Point(3, 1);
+			this->WestAfricanStates_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->WestAfricanStates_USA->Name = L"WestAfricanStates_USA";
-			this->WestAfricanStates_USA->Size = System::Drawing::Size(26, 17);
+			this->WestAfricanStates_USA->Size = System::Drawing::Size(14, 14);
 			this->WestAfricanStates_USA->TabIndex = 0;
 			this->WestAfricanStates_USA->Text = L"10";
 			this->WestAfricanStates_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3193,9 +3226,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->WestAfricanStates_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->WestAfricanStates_USSR->ForeColor = System::Drawing::Color::Red;
-			this->WestAfricanStates_USSR->Location = System::Drawing::Point(37, 1);
+			this->WestAfricanStates_USSR->Location = System::Drawing::Point(28, 1);
+			this->WestAfricanStates_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->WestAfricanStates_USSR->Name = L"WestAfricanStates_USSR";
-			this->WestAfricanStates_USSR->Size = System::Drawing::Size(26, 17);
+			this->WestAfricanStates_USSR->Size = System::Drawing::Size(14, 14);
 			this->WestAfricanStates_USSR->TabIndex = 5;
 			this->WestAfricanStates_USSR->Text = L"10";
 			this->WestAfricanStates_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3210,11 +3244,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel7->Controls->Add(this->Kenya_USA, 0, 0);
 			this->tableLayoutPanel7->Controls->Add(this->Kenya_USSR, 1, 0);
-			this->tableLayoutPanel7->Location = System::Drawing::Point(20, 303);
+			this->tableLayoutPanel7->Location = System::Drawing::Point(15, 246);
+			this->tableLayoutPanel7->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel7->Name = L"tableLayoutPanel7";
 			this->tableLayoutPanel7->RowCount = 1;
 			this->tableLayoutPanel7->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel7->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel7->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel7->TabIndex = 16;
 			// 
 			// Kenya_USA
@@ -3224,9 +3259,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Kenya_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Kenya_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Kenya_USA->Location = System::Drawing::Point(4, 1);
+			this->Kenya_USA->Location = System::Drawing::Point(3, 1);
+			this->Kenya_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Kenya_USA->Name = L"Kenya_USA";
-			this->Kenya_USA->Size = System::Drawing::Size(26, 17);
+			this->Kenya_USA->Size = System::Drawing::Size(14, 14);
 			this->Kenya_USA->TabIndex = 0;
 			this->Kenya_USA->Text = L"10";
 			this->Kenya_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3238,9 +3274,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Kenya_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Kenya_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Kenya_USSR->Location = System::Drawing::Point(37, 1);
+			this->Kenya_USSR->Location = System::Drawing::Point(28, 1);
+			this->Kenya_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Kenya_USSR->Name = L"Kenya_USSR";
-			this->Kenya_USSR->Size = System::Drawing::Size(26, 17);
+			this->Kenya_USSR->Size = System::Drawing::Size(14, 14);
 			this->Kenya_USSR->TabIndex = 5;
 			this->Kenya_USSR->Text = L"10";
 			this->Kenya_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3248,18 +3285,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label31
 			// 
 			this->label31->AutoSize = true;
-			this->label31->Location = System::Drawing::Point(102, 241);
+			this->label31->Location = System::Drawing::Point(76, 196);
+			this->label31->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label31->Name = L"label31";
-			this->label31->Size = System::Drawing::Size(54, 17);
+			this->label31->Size = System::Drawing::Size(41, 13);
 			this->label31->TabIndex = 31;
 			this->label31->Text = L"Tunisia";
 			// 
 			// label16
 			// 
 			this->label16->AutoSize = true;
-			this->label16->Location = System::Drawing::Point(17, 240);
+			this->label16->Location = System::Drawing::Point(13, 195);
+			this->label16->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label16->Name = L"label16";
-			this->label16->Size = System::Drawing::Size(78, 17);
+			this->label16->Size = System::Drawing::Size(60, 13);
 			this->label16->TabIndex = 15;
 			this->label16->Text = L"Ivory Coast";
 			// 
@@ -3273,11 +3312,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel11->Controls->Add(this->Tunisia_USA, 0, 0);
 			this->tableLayoutPanel11->Controls->Add(this->Tunisia_USSR, 1, 0);
-			this->tableLayoutPanel11->Location = System::Drawing::Point(105, 261);
+			this->tableLayoutPanel11->Location = System::Drawing::Point(79, 212);
+			this->tableLayoutPanel11->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel11->Name = L"tableLayoutPanel11";
 			this->tableLayoutPanel11->RowCount = 1;
 			this->tableLayoutPanel11->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel11->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel11->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel11->TabIndex = 30;
 			// 
 			// Tunisia_USA
@@ -3287,9 +3327,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Tunisia_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Tunisia_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Tunisia_USA->Location = System::Drawing::Point(4, 1);
+			this->Tunisia_USA->Location = System::Drawing::Point(3, 1);
+			this->Tunisia_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Tunisia_USA->Name = L"Tunisia_USA";
-			this->Tunisia_USA->Size = System::Drawing::Size(26, 17);
+			this->Tunisia_USA->Size = System::Drawing::Size(14, 14);
 			this->Tunisia_USA->TabIndex = 0;
 			this->Tunisia_USA->Text = L"10";
 			this->Tunisia_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3301,9 +3342,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Tunisia_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Tunisia_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Tunisia_USSR->Location = System::Drawing::Point(37, 1);
+			this->Tunisia_USSR->Location = System::Drawing::Point(28, 1);
+			this->Tunisia_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Tunisia_USSR->Name = L"Tunisia_USSR";
-			this->Tunisia_USSR->Size = System::Drawing::Size(26, 17);
+			this->Tunisia_USSR->Size = System::Drawing::Size(14, 14);
 			this->Tunisia_USSR->TabIndex = 5;
 			this->Tunisia_USSR->Text = L"10";
 			this->Tunisia_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3318,11 +3360,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel6->Controls->Add(this->IvoryCoast_USA, 0, 0);
 			this->tableLayoutPanel6->Controls->Add(this->IvoryCoast_USSR, 1, 0);
-			this->tableLayoutPanel6->Location = System::Drawing::Point(20, 260);
+			this->tableLayoutPanel6->Location = System::Drawing::Point(15, 211);
+			this->tableLayoutPanel6->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel6->Name = L"tableLayoutPanel6";
 			this->tableLayoutPanel6->RowCount = 1;
 			this->tableLayoutPanel6->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel6->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel6->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel6->TabIndex = 14;
 			// 
 			// IvoryCoast_USA
@@ -3332,9 +3375,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->IvoryCoast_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->IvoryCoast_USA->ForeColor = System::Drawing::Color::Blue;
-			this->IvoryCoast_USA->Location = System::Drawing::Point(4, 1);
+			this->IvoryCoast_USA->Location = System::Drawing::Point(3, 1);
+			this->IvoryCoast_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->IvoryCoast_USA->Name = L"IvoryCoast_USA";
-			this->IvoryCoast_USA->Size = System::Drawing::Size(26, 17);
+			this->IvoryCoast_USA->Size = System::Drawing::Size(14, 14);
 			this->IvoryCoast_USA->TabIndex = 0;
 			this->IvoryCoast_USA->Text = L"10";
 			this->IvoryCoast_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3346,9 +3390,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->IvoryCoast_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->IvoryCoast_USSR->ForeColor = System::Drawing::Color::Red;
-			this->IvoryCoast_USSR->Location = System::Drawing::Point(37, 1);
+			this->IvoryCoast_USSR->Location = System::Drawing::Point(28, 1);
+			this->IvoryCoast_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->IvoryCoast_USSR->Name = L"IvoryCoast_USSR";
-			this->IvoryCoast_USSR->Size = System::Drawing::Size(26, 17);
+			this->IvoryCoast_USSR->Size = System::Drawing::Size(14, 14);
 			this->IvoryCoast_USSR->TabIndex = 5;
 			this->IvoryCoast_USSR->Text = L"10";
 			this->IvoryCoast_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3356,18 +3401,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label34
 			// 
 			this->label34->AutoSize = true;
-			this->label34->Location = System::Drawing::Point(102, 197);
+			this->label34->Location = System::Drawing::Point(76, 160);
+			this->label34->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label34->Name = L"label34";
-			this->label34->Size = System::Drawing::Size(49, 17);
+			this->label34->Size = System::Drawing::Size(38, 13);
 			this->label34->TabIndex = 29;
 			this->label34->Text = L"Sudan";
 			// 
 			// label13
 			// 
 			this->label13->AutoSize = true;
-			this->label13->Location = System::Drawing::Point(17, 196);
+			this->label13->Location = System::Drawing::Point(13, 159);
+			this->label13->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label13->Name = L"label13";
-			this->label13->Size = System::Drawing::Size(59, 17);
+			this->label13->Size = System::Drawing::Size(45, 13);
 			this->label13->TabIndex = 13;
 			this->label13->Text = L"Ethiopia";
 			// 
@@ -3381,11 +3428,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel12->Controls->Add(this->Sudan_USA, 0, 0);
 			this->tableLayoutPanel12->Controls->Add(this->Sudan_USSR, 1, 0);
-			this->tableLayoutPanel12->Location = System::Drawing::Point(105, 217);
+			this->tableLayoutPanel12->Location = System::Drawing::Point(79, 176);
+			this->tableLayoutPanel12->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel12->Name = L"tableLayoutPanel12";
 			this->tableLayoutPanel12->RowCount = 1;
 			this->tableLayoutPanel12->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel12->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel12->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel12->TabIndex = 28;
 			// 
 			// Sudan_USA
@@ -3395,9 +3443,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Sudan_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Sudan_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Sudan_USA->Location = System::Drawing::Point(4, 1);
+			this->Sudan_USA->Location = System::Drawing::Point(3, 1);
+			this->Sudan_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Sudan_USA->Name = L"Sudan_USA";
-			this->Sudan_USA->Size = System::Drawing::Size(26, 17);
+			this->Sudan_USA->Size = System::Drawing::Size(14, 14);
 			this->Sudan_USA->TabIndex = 0;
 			this->Sudan_USA->Text = L"10";
 			this->Sudan_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3409,9 +3458,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Sudan_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Sudan_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Sudan_USSR->Location = System::Drawing::Point(37, 1);
+			this->Sudan_USSR->Location = System::Drawing::Point(28, 1);
+			this->Sudan_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Sudan_USSR->Name = L"Sudan_USSR";
-			this->Sudan_USSR->Size = System::Drawing::Size(26, 17);
+			this->Sudan_USSR->Size = System::Drawing::Size(14, 14);
 			this->Sudan_USSR->TabIndex = 5;
 			this->Sudan_USSR->Text = L"10";
 			this->Sudan_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3426,11 +3476,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel5->Controls->Add(this->Ethiopia_USA, 0, 0);
 			this->tableLayoutPanel5->Controls->Add(this->Ethiopia_USSR, 1, 0);
-			this->tableLayoutPanel5->Location = System::Drawing::Point(20, 216);
+			this->tableLayoutPanel5->Location = System::Drawing::Point(15, 176);
+			this->tableLayoutPanel5->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel5->Name = L"tableLayoutPanel5";
 			this->tableLayoutPanel5->RowCount = 1;
 			this->tableLayoutPanel5->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel5->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel5->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel5->TabIndex = 12;
 			// 
 			// Ethiopia_USA
@@ -3440,9 +3491,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Ethiopia_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Ethiopia_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Ethiopia_USA->Location = System::Drawing::Point(4, 1);
+			this->Ethiopia_USA->Location = System::Drawing::Point(3, 1);
+			this->Ethiopia_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Ethiopia_USA->Name = L"Ethiopia_USA";
-			this->Ethiopia_USA->Size = System::Drawing::Size(26, 17);
+			this->Ethiopia_USA->Size = System::Drawing::Size(14, 14);
 			this->Ethiopia_USA->TabIndex = 0;
 			this->Ethiopia_USA->Text = L"10";
 			this->Ethiopia_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3454,9 +3506,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Ethiopia_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Ethiopia_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Ethiopia_USSR->Location = System::Drawing::Point(37, 1);
+			this->Ethiopia_USSR->Location = System::Drawing::Point(28, 1);
+			this->Ethiopia_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Ethiopia_USSR->Name = L"Ethiopia_USSR";
-			this->Ethiopia_USSR->Size = System::Drawing::Size(26, 17);
+			this->Ethiopia_USSR->Size = System::Drawing::Size(14, 14);
 			this->Ethiopia_USSR->TabIndex = 5;
 			this->Ethiopia_USSR->Text = L"10";
 			this->Ethiopia_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3464,18 +3517,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label37
 			// 
 			this->label37->AutoSize = true;
-			this->label37->Location = System::Drawing::Point(102, 153);
+			this->label37->Location = System::Drawing::Point(76, 124);
+			this->label37->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label37->Name = L"label37";
-			this->label37->Size = System::Drawing::Size(85, 17);
+			this->label37->Size = System::Drawing::Size(65, 13);
 			this->label37->TabIndex = 24;
 			this->label37->Text = L"South Africa";
 			// 
 			// label10
 			// 
 			this->label10->AutoSize = true;
-			this->label10->Location = System::Drawing::Point(17, 152);
+			this->label10->Location = System::Drawing::Point(13, 124);
+			this->label10->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(73, 17);
+			this->label10->Size = System::Drawing::Size(55, 13);
 			this->label10->TabIndex = 9;
 			this->label10->Text = L"Cameroon";
 			// 
@@ -3489,11 +3544,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel13->Controls->Add(this->SouthAfrica_USA, 0, 0);
 			this->tableLayoutPanel13->Controls->Add(this->SouthAfrica_USSR, 1, 0);
-			this->tableLayoutPanel13->Location = System::Drawing::Point(105, 173);
+			this->tableLayoutPanel13->Location = System::Drawing::Point(79, 141);
+			this->tableLayoutPanel13->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel13->Name = L"tableLayoutPanel13";
 			this->tableLayoutPanel13->RowCount = 1;
 			this->tableLayoutPanel13->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel13->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel13->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel13->TabIndex = 22;
 			// 
 			// SouthAfrica_USA
@@ -3503,9 +3559,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->SouthAfrica_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->SouthAfrica_USA->ForeColor = System::Drawing::Color::Blue;
-			this->SouthAfrica_USA->Location = System::Drawing::Point(4, 1);
+			this->SouthAfrica_USA->Location = System::Drawing::Point(3, 1);
+			this->SouthAfrica_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->SouthAfrica_USA->Name = L"SouthAfrica_USA";
-			this->SouthAfrica_USA->Size = System::Drawing::Size(26, 17);
+			this->SouthAfrica_USA->Size = System::Drawing::Size(14, 14);
 			this->SouthAfrica_USA->TabIndex = 0;
 			this->SouthAfrica_USA->Text = L"10";
 			this->SouthAfrica_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3517,9 +3574,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->SouthAfrica_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->SouthAfrica_USSR->ForeColor = System::Drawing::Color::Red;
-			this->SouthAfrica_USSR->Location = System::Drawing::Point(37, 1);
+			this->SouthAfrica_USSR->Location = System::Drawing::Point(28, 1);
+			this->SouthAfrica_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->SouthAfrica_USSR->Name = L"SouthAfrica_USSR";
-			this->SouthAfrica_USSR->Size = System::Drawing::Size(26, 17);
+			this->SouthAfrica_USSR->Size = System::Drawing::Size(14, 14);
 			this->SouthAfrica_USSR->TabIndex = 5;
 			this->SouthAfrica_USSR->Text = L"10";
 			this->SouthAfrica_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3534,11 +3592,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel4->Controls->Add(this->Cameroon_USA, 0, 0);
 			this->tableLayoutPanel4->Controls->Add(this->Cameroon_USSR, 1, 0);
-			this->tableLayoutPanel4->Location = System::Drawing::Point(20, 172);
+			this->tableLayoutPanel4->Location = System::Drawing::Point(15, 140);
+			this->tableLayoutPanel4->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel4->Name = L"tableLayoutPanel4";
 			this->tableLayoutPanel4->RowCount = 1;
 			this->tableLayoutPanel4->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel4->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel4->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel4->TabIndex = 8;
 			// 
 			// Cameroon_USA
@@ -3548,9 +3607,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Cameroon_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Cameroon_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Cameroon_USA->Location = System::Drawing::Point(4, 1);
+			this->Cameroon_USA->Location = System::Drawing::Point(3, 1);
+			this->Cameroon_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Cameroon_USA->Name = L"Cameroon_USA";
-			this->Cameroon_USA->Size = System::Drawing::Size(26, 17);
+			this->Cameroon_USA->Size = System::Drawing::Size(14, 14);
 			this->Cameroon_USA->TabIndex = 0;
 			this->Cameroon_USA->Text = L"10";
 			this->Cameroon_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3562,9 +3622,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Cameroon_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Cameroon_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Cameroon_USSR->Location = System::Drawing::Point(37, 1);
+			this->Cameroon_USSR->Location = System::Drawing::Point(28, 1);
+			this->Cameroon_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Cameroon_USSR->Name = L"Cameroon_USSR";
-			this->Cameroon_USSR->Size = System::Drawing::Size(26, 17);
+			this->Cameroon_USSR->Size = System::Drawing::Size(14, 14);
 			this->Cameroon_USSR->TabIndex = 5;
 			this->Cameroon_USSR->Text = L"10";
 			this->Cameroon_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3572,18 +3633,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label40
 			// 
 			this->label40->AutoSize = true;
-			this->label40->Location = System::Drawing::Point(102, 110);
+			this->label40->Location = System::Drawing::Point(76, 89);
+			this->label40->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label40->Name = L"label40";
-			this->label40->Size = System::Drawing::Size(58, 17);
+			this->label40->Size = System::Drawing::Size(44, 13);
 			this->label40->TabIndex = 27;
 			this->label40->Text = L"Somalia";
 			// 
 			// label7
 			// 
 			this->label7->AutoSize = true;
-			this->label7->Location = System::Drawing::Point(17, 109);
+			this->label7->Location = System::Drawing::Point(13, 89);
+			this->label7->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(69, 17);
+			this->label7->Size = System::Drawing::Size(54, 13);
 			this->label7->TabIndex = 11;
 			this->label7->Text = L"Botswana";
 			// 
@@ -3597,11 +3660,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel14->Controls->Add(this->Somalia_USA, 0, 0);
 			this->tableLayoutPanel14->Controls->Add(this->Somalia_USSR, 1, 0);
-			this->tableLayoutPanel14->Location = System::Drawing::Point(105, 130);
+			this->tableLayoutPanel14->Location = System::Drawing::Point(79, 106);
+			this->tableLayoutPanel14->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel14->Name = L"tableLayoutPanel14";
 			this->tableLayoutPanel14->RowCount = 1;
 			this->tableLayoutPanel14->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel14->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel14->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel14->TabIndex = 26;
 			// 
 			// Somalia_USA
@@ -3611,9 +3675,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Somalia_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Somalia_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Somalia_USA->Location = System::Drawing::Point(4, 1);
+			this->Somalia_USA->Location = System::Drawing::Point(3, 1);
+			this->Somalia_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Somalia_USA->Name = L"Somalia_USA";
-			this->Somalia_USA->Size = System::Drawing::Size(26, 17);
+			this->Somalia_USA->Size = System::Drawing::Size(14, 14);
 			this->Somalia_USA->TabIndex = 0;
 			this->Somalia_USA->Text = L"10";
 			this->Somalia_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3625,9 +3690,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Somalia_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Somalia_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Somalia_USSR->Location = System::Drawing::Point(37, 1);
+			this->Somalia_USSR->Location = System::Drawing::Point(28, 1);
+			this->Somalia_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Somalia_USSR->Name = L"Somalia_USSR";
-			this->Somalia_USSR->Size = System::Drawing::Size(26, 17);
+			this->Somalia_USSR->Size = System::Drawing::Size(14, 14);
 			this->Somalia_USSR->TabIndex = 5;
 			this->Somalia_USSR->Text = L"10";
 			this->Somalia_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3635,9 +3701,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label43
 			// 
 			this->label43->AutoSize = true;
-			this->label43->Location = System::Drawing::Point(102, 67);
+			this->label43->Location = System::Drawing::Point(76, 54);
+			this->label43->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label43->Name = L"label43";
-			this->label43->Size = System::Drawing::Size(118, 17);
+			this->label43->Size = System::Drawing::Size(90, 13);
 			this->label43->TabIndex = 25;
 			this->label43->Text = L"SE African States";
 			// 
@@ -3651,11 +3718,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel3->Controls->Add(this->Botswana_USA, 0, 0);
 			this->tableLayoutPanel3->Controls->Add(this->Botswana_USSR, 1, 0);
-			this->tableLayoutPanel3->Location = System::Drawing::Point(20, 129);
+			this->tableLayoutPanel3->Location = System::Drawing::Point(15, 105);
+			this->tableLayoutPanel3->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel3->Name = L"tableLayoutPanel3";
 			this->tableLayoutPanel3->RowCount = 1;
 			this->tableLayoutPanel3->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel3->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel3->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel3->TabIndex = 10;
 			// 
 			// Botswana_USA
@@ -3665,9 +3733,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Botswana_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Botswana_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Botswana_USA->Location = System::Drawing::Point(4, 1);
+			this->Botswana_USA->Location = System::Drawing::Point(3, 1);
+			this->Botswana_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Botswana_USA->Name = L"Botswana_USA";
-			this->Botswana_USA->Size = System::Drawing::Size(26, 17);
+			this->Botswana_USA->Size = System::Drawing::Size(14, 14);
 			this->Botswana_USA->TabIndex = 0;
 			this->Botswana_USA->Text = L"10";
 			this->Botswana_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3679,9 +3748,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Botswana_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Botswana_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Botswana_USSR->Location = System::Drawing::Point(37, 1);
+			this->Botswana_USSR->Location = System::Drawing::Point(28, 1);
+			this->Botswana_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Botswana_USSR->Name = L"Botswana_USSR";
-			this->Botswana_USSR->Size = System::Drawing::Size(26, 17);
+			this->Botswana_USSR->Size = System::Drawing::Size(14, 14);
 			this->Botswana_USSR->TabIndex = 5;
 			this->Botswana_USSR->Text = L"10";
 			this->Botswana_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3689,18 +3759,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label44
 			// 
 			this->label44->AutoSize = true;
-			this->label44->Location = System::Drawing::Point(102, 24);
+			this->label44->Location = System::Drawing::Point(76, 20);
+			this->label44->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label44->Name = L"label44";
-			this->label44->Size = System::Drawing::Size(106, 17);
+			this->label44->Size = System::Drawing::Size(80, 13);
 			this->label44->TabIndex = 21;
 			this->label44->Text = L"Saharan States";
 			// 
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(17, 66);
+			this->label3->Location = System::Drawing::Point(13, 54);
+			this->label3->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(52, 17);
+			this->label3->Size = System::Drawing::Size(40, 13);
 			this->label3->TabIndex = 9;
 			this->label3->Text = L"Angola";
 			// 
@@ -3714,11 +3786,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel15->Controls->Add(this->SEAfricanStates_USA, 0, 0);
 			this->tableLayoutPanel15->Controls->Add(this->SEAfricanStates_USSR, 1, 0);
-			this->tableLayoutPanel15->Location = System::Drawing::Point(105, 87);
+			this->tableLayoutPanel15->Location = System::Drawing::Point(79, 71);
+			this->tableLayoutPanel15->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel15->Name = L"tableLayoutPanel15";
 			this->tableLayoutPanel15->RowCount = 1;
 			this->tableLayoutPanel15->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel15->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel15->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel15->TabIndex = 23;
 			// 
 			// SEAfricanStates_USA
@@ -3728,9 +3801,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->SEAfricanStates_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->SEAfricanStates_USA->ForeColor = System::Drawing::Color::Blue;
-			this->SEAfricanStates_USA->Location = System::Drawing::Point(4, 1);
+			this->SEAfricanStates_USA->Location = System::Drawing::Point(3, 1);
+			this->SEAfricanStates_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->SEAfricanStates_USA->Name = L"SEAfricanStates_USA";
-			this->SEAfricanStates_USA->Size = System::Drawing::Size(26, 17);
+			this->SEAfricanStates_USA->Size = System::Drawing::Size(14, 14);
 			this->SEAfricanStates_USA->TabIndex = 0;
 			this->SEAfricanStates_USA->Text = L"10";
 			this->SEAfricanStates_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3742,9 +3816,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->SEAfricanStates_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->SEAfricanStates_USSR->ForeColor = System::Drawing::Color::Red;
-			this->SEAfricanStates_USSR->Location = System::Drawing::Point(37, 1);
+			this->SEAfricanStates_USSR->Location = System::Drawing::Point(28, 1);
+			this->SEAfricanStates_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->SEAfricanStates_USSR->Name = L"SEAfricanStates_USSR";
-			this->SEAfricanStates_USSR->Size = System::Drawing::Size(26, 17);
+			this->SEAfricanStates_USSR->Size = System::Drawing::Size(14, 14);
 			this->SEAfricanStates_USSR->TabIndex = 5;
 			this->SEAfricanStates_USSR->Text = L"10";
 			this->SEAfricanStates_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3752,9 +3827,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(17, 23);
+			this->label2->Location = System::Drawing::Point(13, 19);
+			this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(52, 17);
+			this->label2->Size = System::Drawing::Size(39, 13);
 			this->label2->TabIndex = 7;
 			this->label2->Text = L"Algeria";
 			// 
@@ -3768,11 +3844,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel16->Controls->Add(this->SaharanStates_USA, 0, 0);
 			this->tableLayoutPanel16->Controls->Add(this->SaharanStates_USSR, 1, 0);
-			this->tableLayoutPanel16->Location = System::Drawing::Point(105, 44);
+			this->tableLayoutPanel16->Location = System::Drawing::Point(79, 36);
+			this->tableLayoutPanel16->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel16->Name = L"tableLayoutPanel16";
 			this->tableLayoutPanel16->RowCount = 1;
 			this->tableLayoutPanel16->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel16->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel16->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel16->TabIndex = 20;
 			// 
 			// SaharanStates_USA
@@ -3782,9 +3859,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->SaharanStates_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->SaharanStates_USA->ForeColor = System::Drawing::Color::Blue;
-			this->SaharanStates_USA->Location = System::Drawing::Point(4, 1);
+			this->SaharanStates_USA->Location = System::Drawing::Point(3, 1);
+			this->SaharanStates_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->SaharanStates_USA->Name = L"SaharanStates_USA";
-			this->SaharanStates_USA->Size = System::Drawing::Size(26, 17);
+			this->SaharanStates_USA->Size = System::Drawing::Size(14, 14);
 			this->SaharanStates_USA->TabIndex = 0;
 			this->SaharanStates_USA->Text = L"10";
 			this->SaharanStates_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3796,9 +3874,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->SaharanStates_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->SaharanStates_USSR->ForeColor = System::Drawing::Color::Red;
-			this->SaharanStates_USSR->Location = System::Drawing::Point(37, 1);
+			this->SaharanStates_USSR->Location = System::Drawing::Point(28, 1);
+			this->SaharanStates_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->SaharanStates_USSR->Name = L"SaharanStates_USSR";
-			this->SaharanStates_USSR->Size = System::Drawing::Size(26, 17);
+			this->SaharanStates_USSR->Size = System::Drawing::Size(14, 14);
 			this->SaharanStates_USSR->TabIndex = 5;
 			this->SaharanStates_USSR->Text = L"10";
 			this->SaharanStates_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3813,11 +3892,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel2->Controls->Add(this->Angola_USA, 0, 0);
 			this->tableLayoutPanel2->Controls->Add(this->Angola_USSR, 1, 0);
-			this->tableLayoutPanel2->Location = System::Drawing::Point(20, 86);
+			this->tableLayoutPanel2->Location = System::Drawing::Point(15, 70);
+			this->tableLayoutPanel2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel2->Name = L"tableLayoutPanel2";
 			this->tableLayoutPanel2->RowCount = 1;
 			this->tableLayoutPanel2->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel2->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel2->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel2->TabIndex = 8;
 			// 
 			// Angola_USA
@@ -3827,9 +3907,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Angola_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Angola_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Angola_USA->Location = System::Drawing::Point(4, 1);
+			this->Angola_USA->Location = System::Drawing::Point(3, 1);
+			this->Angola_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Angola_USA->Name = L"Angola_USA";
-			this->Angola_USA->Size = System::Drawing::Size(26, 17);
+			this->Angola_USA->Size = System::Drawing::Size(14, 14);
 			this->Angola_USA->TabIndex = 0;
 			this->Angola_USA->Text = L"10";
 			this->Angola_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3841,9 +3922,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Angola_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Angola_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Angola_USSR->Location = System::Drawing::Point(37, 1);
+			this->Angola_USSR->Location = System::Drawing::Point(28, 1);
+			this->Angola_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Angola_USSR->Name = L"Angola_USSR";
-			this->Angola_USSR->Size = System::Drawing::Size(26, 17);
+			this->Angola_USSR->Size = System::Drawing::Size(14, 14);
 			this->Angola_USSR->TabIndex = 5;
 			this->Angola_USSR->Text = L"10";
 			this->Angola_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3858,11 +3940,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel1->Controls->Add(this->Algeria_USA, 0, 0);
 			this->tableLayoutPanel1->Controls->Add(this->Algeria_USSR, 1, 0);
-			this->tableLayoutPanel1->Location = System::Drawing::Point(20, 43);
+			this->tableLayoutPanel1->Location = System::Drawing::Point(15, 35);
+			this->tableLayoutPanel1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
 			this->tableLayoutPanel1->RowCount = 1;
 			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel1->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel1->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel1->TabIndex = 6;
 			// 
 			// Algeria_USSR
@@ -3872,9 +3955,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Algeria_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Algeria_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Algeria_USSR->Location = System::Drawing::Point(37, 1);
+			this->Algeria_USSR->Location = System::Drawing::Point(28, 1);
+			this->Algeria_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Algeria_USSR->Name = L"Algeria_USSR";
-			this->Algeria_USSR->Size = System::Drawing::Size(26, 17);
+			this->Algeria_USSR->Size = System::Drawing::Size(14, 14);
 			this->Algeria_USSR->TabIndex = 5;
 			this->Algeria_USSR->Text = L"10";
 			this->Algeria_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3911,9 +3995,11 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->groupBox2->Controls->Add(this->tableLayoutPanel34);
 			this->groupBox2->Controls->Add(this->tableLayoutPanel35);
 			this->groupBox2->Controls->Add(this->tableLayoutPanel36);
-			this->groupBox2->Location = System::Drawing::Point(254, 31);
+			this->groupBox2->Location = System::Drawing::Point(190, 25);
+			this->groupBox2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->groupBox2->Name = L"groupBox2";
-			this->groupBox2->Size = System::Drawing::Size(208, 388);
+			this->groupBox2->Padding = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->groupBox2->Size = System::Drawing::Size(156, 315);
 			this->groupBox2->TabIndex = 5;
 			this->groupBox2->TabStop = false;
 			this->groupBox2->Text = L"Asia";
@@ -3921,9 +4007,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label62
 			// 
 			this->label62->AutoSize = true;
-			this->label62->Location = System::Drawing::Point(17, 328);
+			this->label62->Location = System::Drawing::Point(13, 266);
+			this->label62->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label62->Name = L"label62";
-			this->label62->Size = System::Drawing::Size(63, 17);
+			this->label62->Size = System::Drawing::Size(48, 13);
 			this->label62->TabIndex = 19;
 			this->label62->Text = L"Malaysia";
 			// 
@@ -3937,11 +4024,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel22->Controls->Add(this->Malaysia_USA, 0, 0);
 			this->tableLayoutPanel22->Controls->Add(this->Malaysia_USSR, 1, 0);
-			this->tableLayoutPanel22->Location = System::Drawing::Point(20, 348);
+			this->tableLayoutPanel22->Location = System::Drawing::Point(15, 283);
+			this->tableLayoutPanel22->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel22->Name = L"tableLayoutPanel22";
 			this->tableLayoutPanel22->RowCount = 1;
 			this->tableLayoutPanel22->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel22->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel22->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel22->TabIndex = 18;
 			// 
 			// Malaysia_USA
@@ -3951,9 +4039,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Malaysia_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Malaysia_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Malaysia_USA->Location = System::Drawing::Point(4, 1);
+			this->Malaysia_USA->Location = System::Drawing::Point(3, 1);
+			this->Malaysia_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Malaysia_USA->Name = L"Malaysia_USA";
-			this->Malaysia_USA->Size = System::Drawing::Size(26, 17);
+			this->Malaysia_USA->Size = System::Drawing::Size(14, 14);
 			this->Malaysia_USA->TabIndex = 0;
 			this->Malaysia_USA->Text = L"10";
 			this->Malaysia_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3965,9 +4054,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Malaysia_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Malaysia_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Malaysia_USSR->Location = System::Drawing::Point(37, 1);
+			this->Malaysia_USSR->Location = System::Drawing::Point(28, 1);
+			this->Malaysia_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Malaysia_USSR->Name = L"Malaysia_USSR";
-			this->Malaysia_USSR->Size = System::Drawing::Size(26, 17);
+			this->Malaysia_USSR->Size = System::Drawing::Size(14, 14);
 			this->Malaysia_USSR->TabIndex = 5;
 			this->Malaysia_USSR->Text = L"10";
 			this->Malaysia_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -3975,18 +4065,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label67
 			// 
 			this->label67->AutoSize = true;
-			this->label67->Location = System::Drawing::Point(122, 284);
+			this->label67->Location = System::Drawing::Point(92, 231);
+			this->label67->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label67->Name = L"label67";
-			this->label67->Size = System::Drawing::Size(59, 17);
+			this->label67->Size = System::Drawing::Size(45, 13);
 			this->label67->TabIndex = 33;
 			this->label67->Text = L"Vietnam";
 			// 
 			// label68
 			// 
 			this->label68->AutoSize = true;
-			this->label68->Location = System::Drawing::Point(17, 283);
+			this->label68->Location = System::Drawing::Point(13, 230);
+			this->label68->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label68->Name = L"label68";
-			this->label68->Size = System::Drawing::Size(106, 17);
+			this->label68->Size = System::Drawing::Size(82, 13);
 			this->label68->TabIndex = 17;
 			this->label68->Text = L"Laos/Cambodia";
 			// 
@@ -4000,11 +4092,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel23->Controls->Add(this->Vietnam_USA, 0, 0);
 			this->tableLayoutPanel23->Controls->Add(this->Vietnam_USSR, 1, 0);
-			this->tableLayoutPanel23->Location = System::Drawing::Point(125, 304);
+			this->tableLayoutPanel23->Location = System::Drawing::Point(94, 247);
+			this->tableLayoutPanel23->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel23->Name = L"tableLayoutPanel23";
 			this->tableLayoutPanel23->RowCount = 1;
 			this->tableLayoutPanel23->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel23->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel23->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel23->TabIndex = 32;
 			// 
 			// Vietnam_USA
@@ -4014,9 +4107,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Vietnam_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Vietnam_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Vietnam_USA->Location = System::Drawing::Point(4, 1);
+			this->Vietnam_USA->Location = System::Drawing::Point(3, 1);
+			this->Vietnam_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Vietnam_USA->Name = L"Vietnam_USA";
-			this->Vietnam_USA->Size = System::Drawing::Size(26, 17);
+			this->Vietnam_USA->Size = System::Drawing::Size(14, 14);
 			this->Vietnam_USA->TabIndex = 0;
 			this->Vietnam_USA->Text = L"10";
 			this->Vietnam_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4028,9 +4122,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Vietnam_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Vietnam_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Vietnam_USSR->Location = System::Drawing::Point(37, 1);
+			this->Vietnam_USSR->Location = System::Drawing::Point(28, 1);
+			this->Vietnam_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Vietnam_USSR->Name = L"Vietnam_USSR";
-			this->Vietnam_USSR->Size = System::Drawing::Size(26, 17);
+			this->Vietnam_USSR->Size = System::Drawing::Size(14, 14);
 			this->Vietnam_USSR->TabIndex = 5;
 			this->Vietnam_USSR->Text = L"10";
 			this->Vietnam_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4045,11 +4140,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel24->Controls->Add(this->LaosCambodia_USA, 0, 0);
 			this->tableLayoutPanel24->Controls->Add(this->LaosCambodia_USSR, 1, 0);
-			this->tableLayoutPanel24->Location = System::Drawing::Point(20, 303);
+			this->tableLayoutPanel24->Location = System::Drawing::Point(15, 246);
+			this->tableLayoutPanel24->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel24->Name = L"tableLayoutPanel24";
 			this->tableLayoutPanel24->RowCount = 1;
 			this->tableLayoutPanel24->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel24->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel24->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel24->TabIndex = 16;
 			// 
 			// LaosCambodia_USA
@@ -4059,9 +4155,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->LaosCambodia_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->LaosCambodia_USA->ForeColor = System::Drawing::Color::Blue;
-			this->LaosCambodia_USA->Location = System::Drawing::Point(4, 1);
+			this->LaosCambodia_USA->Location = System::Drawing::Point(3, 1);
+			this->LaosCambodia_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->LaosCambodia_USA->Name = L"LaosCambodia_USA";
-			this->LaosCambodia_USA->Size = System::Drawing::Size(26, 17);
+			this->LaosCambodia_USA->Size = System::Drawing::Size(14, 14);
 			this->LaosCambodia_USA->TabIndex = 0;
 			this->LaosCambodia_USA->Text = L"10";
 			this->LaosCambodia_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4073,9 +4170,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->LaosCambodia_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->LaosCambodia_USSR->ForeColor = System::Drawing::Color::Red;
-			this->LaosCambodia_USSR->Location = System::Drawing::Point(37, 1);
+			this->LaosCambodia_USSR->Location = System::Drawing::Point(28, 1);
+			this->LaosCambodia_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->LaosCambodia_USSR->Name = L"LaosCambodia_USSR";
-			this->LaosCambodia_USSR->Size = System::Drawing::Size(26, 17);
+			this->LaosCambodia_USSR->Size = System::Drawing::Size(14, 14);
 			this->LaosCambodia_USSR->TabIndex = 5;
 			this->LaosCambodia_USSR->Text = L"10";
 			this->LaosCambodia_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4083,18 +4181,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label73
 			// 
 			this->label73->AutoSize = true;
-			this->label73->Location = System::Drawing::Point(122, 241);
+			this->label73->Location = System::Drawing::Point(92, 196);
+			this->label73->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label73->Name = L"label73";
-			this->label73->Size = System::Drawing::Size(63, 17);
+			this->label73->Size = System::Drawing::Size(48, 13);
 			this->label73->TabIndex = 31;
 			this->label73->Text = L"Thailand";
 			// 
 			// label74
 			// 
 			this->label74->AutoSize = true;
-			this->label74->Location = System::Drawing::Point(17, 240);
+			this->label74->Location = System::Drawing::Point(13, 195);
+			this->label74->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label74->Name = L"label74";
-			this->label74->Size = System::Drawing::Size(47, 17);
+			this->label74->Size = System::Drawing::Size(36, 13);
 			this->label74->TabIndex = 15;
 			this->label74->Text = L"Japan";
 			// 
@@ -4108,11 +4208,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel25->Controls->Add(this->Thailand_USA, 0, 0);
 			this->tableLayoutPanel25->Controls->Add(this->Thailand_USSR, 1, 0);
-			this->tableLayoutPanel25->Location = System::Drawing::Point(125, 261);
+			this->tableLayoutPanel25->Location = System::Drawing::Point(94, 212);
+			this->tableLayoutPanel25->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel25->Name = L"tableLayoutPanel25";
 			this->tableLayoutPanel25->RowCount = 1;
 			this->tableLayoutPanel25->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel25->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel25->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel25->TabIndex = 30;
 			// 
 			// Thailand_USA
@@ -4122,9 +4223,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Thailand_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Thailand_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Thailand_USA->Location = System::Drawing::Point(4, 1);
+			this->Thailand_USA->Location = System::Drawing::Point(3, 1);
+			this->Thailand_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Thailand_USA->Name = L"Thailand_USA";
-			this->Thailand_USA->Size = System::Drawing::Size(26, 17);
+			this->Thailand_USA->Size = System::Drawing::Size(14, 14);
 			this->Thailand_USA->TabIndex = 0;
 			this->Thailand_USA->Text = L"10";
 			this->Thailand_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4136,9 +4238,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Thailand_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Thailand_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Thailand_USSR->Location = System::Drawing::Point(37, 1);
+			this->Thailand_USSR->Location = System::Drawing::Point(28, 1);
+			this->Thailand_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Thailand_USSR->Name = L"Thailand_USSR";
-			this->Thailand_USSR->Size = System::Drawing::Size(26, 17);
+			this->Thailand_USSR->Size = System::Drawing::Size(14, 14);
 			this->Thailand_USSR->TabIndex = 5;
 			this->Thailand_USSR->Text = L"10";
 			this->Thailand_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4153,11 +4256,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel26->Controls->Add(this->Japan_USA, 0, 0);
 			this->tableLayoutPanel26->Controls->Add(this->Japan_USSR, 1, 0);
-			this->tableLayoutPanel26->Location = System::Drawing::Point(20, 260);
+			this->tableLayoutPanel26->Location = System::Drawing::Point(15, 211);
+			this->tableLayoutPanel26->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel26->Name = L"tableLayoutPanel26";
 			this->tableLayoutPanel26->RowCount = 1;
 			this->tableLayoutPanel26->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel26->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel26->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel26->TabIndex = 14;
 			// 
 			// Japan_USA
@@ -4167,9 +4271,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Japan_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Japan_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Japan_USA->Location = System::Drawing::Point(4, 1);
+			this->Japan_USA->Location = System::Drawing::Point(3, 1);
+			this->Japan_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Japan_USA->Name = L"Japan_USA";
-			this->Japan_USA->Size = System::Drawing::Size(26, 17);
+			this->Japan_USA->Size = System::Drawing::Size(14, 14);
 			this->Japan_USA->TabIndex = 0;
 			this->Japan_USA->Text = L"10";
 			this->Japan_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4181,9 +4286,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Japan_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Japan_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Japan_USSR->Location = System::Drawing::Point(37, 1);
+			this->Japan_USSR->Location = System::Drawing::Point(28, 1);
+			this->Japan_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Japan_USSR->Name = L"Japan_USSR";
-			this->Japan_USSR->Size = System::Drawing::Size(26, 17);
+			this->Japan_USSR->Size = System::Drawing::Size(14, 14);
 			this->Japan_USSR->TabIndex = 5;
 			this->Japan_USSR->Text = L"10";
 			this->Japan_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4191,18 +4297,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label79
 			// 
 			this->label79->AutoSize = true;
-			this->label79->Location = System::Drawing::Point(122, 197);
+			this->label79->Location = System::Drawing::Point(92, 160);
+			this->label79->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label79->Name = L"label79";
-			this->label79->Size = System::Drawing::Size(53, 17);
+			this->label79->Size = System::Drawing::Size(42, 13);
 			this->label79->TabIndex = 29;
 			this->label79->Text = L"Taiwan";
 			// 
 			// label80
 			// 
 			this->label80->AutoSize = true;
-			this->label80->Location = System::Drawing::Point(17, 196);
+			this->label80->Location = System::Drawing::Point(13, 159);
+			this->label80->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label80->Name = L"label80";
-			this->label80->Size = System::Drawing::Size(69, 17);
+			this->label80->Size = System::Drawing::Size(53, 13);
 			this->label80->TabIndex = 13;
 			this->label80->Text = L"Indonesia";
 			// 
@@ -4216,11 +4324,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel27->Controls->Add(this->Taiwan_USA, 0, 0);
 			this->tableLayoutPanel27->Controls->Add(this->Taiwan_USSR, 1, 0);
-			this->tableLayoutPanel27->Location = System::Drawing::Point(125, 217);
+			this->tableLayoutPanel27->Location = System::Drawing::Point(94, 176);
+			this->tableLayoutPanel27->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel27->Name = L"tableLayoutPanel27";
 			this->tableLayoutPanel27->RowCount = 1;
 			this->tableLayoutPanel27->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel27->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel27->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel27->TabIndex = 28;
 			// 
 			// Taiwan_USA
@@ -4230,9 +4339,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Taiwan_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Taiwan_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Taiwan_USA->Location = System::Drawing::Point(4, 1);
+			this->Taiwan_USA->Location = System::Drawing::Point(3, 1);
+			this->Taiwan_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Taiwan_USA->Name = L"Taiwan_USA";
-			this->Taiwan_USA->Size = System::Drawing::Size(26, 17);
+			this->Taiwan_USA->Size = System::Drawing::Size(14, 14);
 			this->Taiwan_USA->TabIndex = 0;
 			this->Taiwan_USA->Text = L"10";
 			this->Taiwan_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4244,9 +4354,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Taiwan_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Taiwan_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Taiwan_USSR->Location = System::Drawing::Point(37, 1);
+			this->Taiwan_USSR->Location = System::Drawing::Point(28, 1);
+			this->Taiwan_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Taiwan_USSR->Name = L"Taiwan_USSR";
-			this->Taiwan_USSR->Size = System::Drawing::Size(26, 17);
+			this->Taiwan_USSR->Size = System::Drawing::Size(14, 14);
 			this->Taiwan_USSR->TabIndex = 5;
 			this->Taiwan_USSR->Text = L"10";
 			this->Taiwan_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4261,11 +4372,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel28->Controls->Add(this->Indonesia_USA, 0, 0);
 			this->tableLayoutPanel28->Controls->Add(this->Indonesia_USSR, 1, 0);
-			this->tableLayoutPanel28->Location = System::Drawing::Point(20, 216);
+			this->tableLayoutPanel28->Location = System::Drawing::Point(15, 176);
+			this->tableLayoutPanel28->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel28->Name = L"tableLayoutPanel28";
 			this->tableLayoutPanel28->RowCount = 1;
 			this->tableLayoutPanel28->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel28->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel28->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel28->TabIndex = 12;
 			// 
 			// Indonesia_USA
@@ -4275,9 +4387,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Indonesia_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Indonesia_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Indonesia_USA->Location = System::Drawing::Point(4, 1);
+			this->Indonesia_USA->Location = System::Drawing::Point(3, 1);
+			this->Indonesia_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Indonesia_USA->Name = L"Indonesia_USA";
-			this->Indonesia_USA->Size = System::Drawing::Size(26, 17);
+			this->Indonesia_USA->Size = System::Drawing::Size(14, 14);
 			this->Indonesia_USA->TabIndex = 0;
 			this->Indonesia_USA->Text = L"10";
 			this->Indonesia_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4289,9 +4402,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Indonesia_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Indonesia_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Indonesia_USSR->Location = System::Drawing::Point(37, 1);
+			this->Indonesia_USSR->Location = System::Drawing::Point(28, 1);
+			this->Indonesia_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Indonesia_USSR->Name = L"Indonesia_USSR";
-			this->Indonesia_USSR->Size = System::Drawing::Size(26, 17);
+			this->Indonesia_USSR->Size = System::Drawing::Size(14, 14);
 			this->Indonesia_USSR->TabIndex = 5;
 			this->Indonesia_USSR->Text = L"10";
 			this->Indonesia_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4299,18 +4413,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label85
 			// 
 			this->label85->AutoSize = true;
-			this->label85->Location = System::Drawing::Point(122, 153);
+			this->label85->Location = System::Drawing::Point(92, 124);
+			this->label85->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label85->Name = L"label85";
-			this->label85->Size = System::Drawing::Size(87, 17);
+			this->label85->Size = System::Drawing::Size(66, 13);
 			this->label85->TabIndex = 24;
 			this->label85->Text = L"South Korea";
 			// 
 			// label86
 			// 
 			this->label86->AutoSize = true;
-			this->label86->Location = System::Drawing::Point(17, 152);
+			this->label86->Location = System::Drawing::Point(13, 124);
+			this->label86->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label86->Name = L"label86";
-			this->label86->Size = System::Drawing::Size(38, 17);
+			this->label86->Size = System::Drawing::Size(30, 13);
 			this->label86->TabIndex = 9;
 			this->label86->Text = L"India";
 			// 
@@ -4324,11 +4440,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel29->Controls->Add(this->SouthKorea_USA, 0, 0);
 			this->tableLayoutPanel29->Controls->Add(this->SouthKorea_USSR, 1, 0);
-			this->tableLayoutPanel29->Location = System::Drawing::Point(125, 173);
+			this->tableLayoutPanel29->Location = System::Drawing::Point(94, 141);
+			this->tableLayoutPanel29->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel29->Name = L"tableLayoutPanel29";
 			this->tableLayoutPanel29->RowCount = 1;
 			this->tableLayoutPanel29->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel29->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel29->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel29->TabIndex = 22;
 			// 
 			// SouthKorea_USA
@@ -4338,9 +4455,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->SouthKorea_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->SouthKorea_USA->ForeColor = System::Drawing::Color::Blue;
-			this->SouthKorea_USA->Location = System::Drawing::Point(4, 1);
+			this->SouthKorea_USA->Location = System::Drawing::Point(3, 1);
+			this->SouthKorea_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->SouthKorea_USA->Name = L"SouthKorea_USA";
-			this->SouthKorea_USA->Size = System::Drawing::Size(26, 17);
+			this->SouthKorea_USA->Size = System::Drawing::Size(14, 14);
 			this->SouthKorea_USA->TabIndex = 0;
 			this->SouthKorea_USA->Text = L"10";
 			this->SouthKorea_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4352,9 +4470,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->SouthKorea_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->SouthKorea_USSR->ForeColor = System::Drawing::Color::Red;
-			this->SouthKorea_USSR->Location = System::Drawing::Point(37, 1);
+			this->SouthKorea_USSR->Location = System::Drawing::Point(28, 1);
+			this->SouthKorea_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->SouthKorea_USSR->Name = L"SouthKorea_USSR";
-			this->SouthKorea_USSR->Size = System::Drawing::Size(26, 17);
+			this->SouthKorea_USSR->Size = System::Drawing::Size(14, 14);
 			this->SouthKorea_USSR->TabIndex = 5;
 			this->SouthKorea_USSR->Text = L"10";
 			this->SouthKorea_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4369,11 +4488,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel30->Controls->Add(this->India_USA, 0, 0);
 			this->tableLayoutPanel30->Controls->Add(this->India_USSR, 1, 0);
-			this->tableLayoutPanel30->Location = System::Drawing::Point(20, 172);
+			this->tableLayoutPanel30->Location = System::Drawing::Point(15, 140);
+			this->tableLayoutPanel30->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel30->Name = L"tableLayoutPanel30";
 			this->tableLayoutPanel30->RowCount = 1;
 			this->tableLayoutPanel30->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel30->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel30->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel30->TabIndex = 8;
 			// 
 			// India_USA
@@ -4383,9 +4503,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->India_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->India_USA->ForeColor = System::Drawing::Color::Blue;
-			this->India_USA->Location = System::Drawing::Point(4, 1);
+			this->India_USA->Location = System::Drawing::Point(3, 1);
+			this->India_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->India_USA->Name = L"India_USA";
-			this->India_USA->Size = System::Drawing::Size(26, 17);
+			this->India_USA->Size = System::Drawing::Size(14, 14);
 			this->India_USA->TabIndex = 0;
 			this->India_USA->Text = L"10";
 			this->India_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4397,9 +4518,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->India_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->India_USSR->ForeColor = System::Drawing::Color::Red;
-			this->India_USSR->Location = System::Drawing::Point(37, 1);
+			this->India_USSR->Location = System::Drawing::Point(28, 1);
+			this->India_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->India_USSR->Name = L"India_USSR";
-			this->India_USSR->Size = System::Drawing::Size(26, 17);
+			this->India_USSR->Size = System::Drawing::Size(14, 14);
 			this->India_USSR->TabIndex = 5;
 			this->India_USSR->Text = L"10";
 			this->India_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4407,18 +4529,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label91
 			// 
 			this->label91->AutoSize = true;
-			this->label91->Location = System::Drawing::Point(122, 110);
+			this->label91->Location = System::Drawing::Point(92, 89);
+			this->label91->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label91->Name = L"label91";
-			this->label91->Size = System::Drawing::Size(76, 17);
+			this->label91->Size = System::Drawing::Size(57, 13);
 			this->label91->TabIndex = 27;
 			this->label91->Text = L"Philippians";
 			// 
 			// label92
 			// 
 			this->label92->AutoSize = true;
-			this->label92->Location = System::Drawing::Point(17, 109);
+			this->label92->Location = System::Drawing::Point(13, 89);
+			this->label92->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label92->Name = L"label92";
-			this->label92->Size = System::Drawing::Size(49, 17);
+			this->label92->Size = System::Drawing::Size(37, 13);
 			this->label92->TabIndex = 11;
 			this->label92->Text = L"Burma";
 			// 
@@ -4432,11 +4556,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->Philippeans_USA->Controls->Add(this->Philippians_USA, 0, 0);
 			this->Philippeans_USA->Controls->Add(this->Philippians_USSR, 1, 0);
-			this->Philippeans_USA->Location = System::Drawing::Point(125, 130);
+			this->Philippeans_USA->Location = System::Drawing::Point(94, 106);
+			this->Philippeans_USA->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Philippeans_USA->Name = L"Philippeans_USA";
 			this->Philippeans_USA->RowCount = 1;
 			this->Philippeans_USA->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->Philippeans_USA->Size = System::Drawing::Size(68, 20);
+			this->Philippeans_USA->Size = System::Drawing::Size(51, 16);
 			this->Philippeans_USA->TabIndex = 26;
 			// 
 			// Philippians_USA
@@ -4446,9 +4571,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Philippians_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Philippians_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Philippians_USA->Location = System::Drawing::Point(4, 1);
+			this->Philippians_USA->Location = System::Drawing::Point(3, 1);
+			this->Philippians_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Philippians_USA->Name = L"Philippians_USA";
-			this->Philippians_USA->Size = System::Drawing::Size(26, 17);
+			this->Philippians_USA->Size = System::Drawing::Size(14, 14);
 			this->Philippians_USA->TabIndex = 0;
 			this->Philippians_USA->Text = L"10";
 			this->Philippians_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4460,9 +4586,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Philippians_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Philippians_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Philippians_USSR->Location = System::Drawing::Point(37, 1);
+			this->Philippians_USSR->Location = System::Drawing::Point(28, 1);
+			this->Philippians_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Philippians_USSR->Name = L"Philippians_USSR";
-			this->Philippians_USSR->Size = System::Drawing::Size(26, 17);
+			this->Philippians_USSR->Size = System::Drawing::Size(14, 14);
 			this->Philippians_USSR->TabIndex = 5;
 			this->Philippians_USSR->Text = L"10";
 			this->Philippians_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4470,9 +4597,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label95
 			// 
 			this->label95->AutoSize = true;
-			this->label95->Location = System::Drawing::Point(122, 67);
+			this->label95->Location = System::Drawing::Point(92, 54);
+			this->label95->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label95->Name = L"label95";
-			this->label95->Size = System::Drawing::Size(62, 17);
+			this->label95->Size = System::Drawing::Size(48, 13);
 			this->label95->TabIndex = 25;
 			this->label95->Text = L"Pakistan";
 			// 
@@ -4486,11 +4614,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel32->Controls->Add(this->Burma_USA, 0, 0);
 			this->tableLayoutPanel32->Controls->Add(this->Burma_USSR, 1, 0);
-			this->tableLayoutPanel32->Location = System::Drawing::Point(20, 129);
+			this->tableLayoutPanel32->Location = System::Drawing::Point(15, 105);
+			this->tableLayoutPanel32->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel32->Name = L"tableLayoutPanel32";
 			this->tableLayoutPanel32->RowCount = 1;
 			this->tableLayoutPanel32->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel32->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel32->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel32->TabIndex = 10;
 			// 
 			// Burma_USA
@@ -4500,9 +4629,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Burma_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Burma_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Burma_USA->Location = System::Drawing::Point(4, 1);
+			this->Burma_USA->Location = System::Drawing::Point(3, 1);
+			this->Burma_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Burma_USA->Name = L"Burma_USA";
-			this->Burma_USA->Size = System::Drawing::Size(26, 17);
+			this->Burma_USA->Size = System::Drawing::Size(14, 14);
 			this->Burma_USA->TabIndex = 0;
 			this->Burma_USA->Text = L"10";
 			this->Burma_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4514,9 +4644,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Burma_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Burma_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Burma_USSR->Location = System::Drawing::Point(37, 1);
+			this->Burma_USSR->Location = System::Drawing::Point(28, 1);
+			this->Burma_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Burma_USSR->Name = L"Burma_USSR";
-			this->Burma_USSR->Size = System::Drawing::Size(26, 17);
+			this->Burma_USSR->Size = System::Drawing::Size(14, 14);
 			this->Burma_USSR->TabIndex = 5;
 			this->Burma_USSR->Text = L"10";
 			this->Burma_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4524,18 +4655,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label98
 			// 
 			this->label98->AutoSize = true;
-			this->label98->Location = System::Drawing::Point(122, 24);
+			this->label98->Location = System::Drawing::Point(92, 20);
+			this->label98->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label98->Name = L"label98";
-			this->label98->Size = System::Drawing::Size(85, 17);
+			this->label98->Size = System::Drawing::Size(64, 13);
 			this->label98->TabIndex = 21;
 			this->label98->Text = L"North Korea";
 			// 
 			// label99
 			// 
 			this->label99->AutoSize = true;
-			this->label99->Location = System::Drawing::Point(17, 66);
+			this->label99->Location = System::Drawing::Point(13, 54);
+			this->label99->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label99->Name = L"label99";
-			this->label99->Size = System::Drawing::Size(63, 17);
+			this->label99->Size = System::Drawing::Size(47, 13);
 			this->label99->TabIndex = 9;
 			this->label99->Text = L"Australia";
 			// 
@@ -4549,11 +4682,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel33->Controls->Add(this->Pakistan_USA, 0, 0);
 			this->tableLayoutPanel33->Controls->Add(this->Pakistan_USSR, 1, 0);
-			this->tableLayoutPanel33->Location = System::Drawing::Point(125, 87);
+			this->tableLayoutPanel33->Location = System::Drawing::Point(94, 71);
+			this->tableLayoutPanel33->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel33->Name = L"tableLayoutPanel33";
 			this->tableLayoutPanel33->RowCount = 1;
 			this->tableLayoutPanel33->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel33->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel33->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel33->TabIndex = 23;
 			// 
 			// Pakistan_USA
@@ -4563,9 +4697,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Pakistan_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Pakistan_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Pakistan_USA->Location = System::Drawing::Point(4, 1);
+			this->Pakistan_USA->Location = System::Drawing::Point(3, 1);
+			this->Pakistan_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Pakistan_USA->Name = L"Pakistan_USA";
-			this->Pakistan_USA->Size = System::Drawing::Size(26, 17);
+			this->Pakistan_USA->Size = System::Drawing::Size(14, 14);
 			this->Pakistan_USA->TabIndex = 0;
 			this->Pakistan_USA->Text = L"10";
 			this->Pakistan_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4577,9 +4712,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Pakistan_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Pakistan_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Pakistan_USSR->Location = System::Drawing::Point(37, 1);
+			this->Pakistan_USSR->Location = System::Drawing::Point(28, 1);
+			this->Pakistan_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Pakistan_USSR->Name = L"Pakistan_USSR";
-			this->Pakistan_USSR->Size = System::Drawing::Size(26, 17);
+			this->Pakistan_USSR->Size = System::Drawing::Size(14, 14);
 			this->Pakistan_USSR->TabIndex = 5;
 			this->Pakistan_USSR->Text = L"10";
 			this->Pakistan_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4587,9 +4723,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label102
 			// 
 			this->label102->AutoSize = true;
-			this->label102->Location = System::Drawing::Point(17, 23);
+			this->label102->Location = System::Drawing::Point(13, 19);
+			this->label102->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label102->Name = L"label102";
-			this->label102->Size = System::Drawing::Size(83, 17);
+			this->label102->Size = System::Drawing::Size(63, 13);
 			this->label102->TabIndex = 7;
 			this->label102->Text = L"Afghanistan";
 			// 
@@ -4603,11 +4740,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel34->Controls->Add(this->NorthKorea_USA, 0, 0);
 			this->tableLayoutPanel34->Controls->Add(this->NorthKorea_USSR, 1, 0);
-			this->tableLayoutPanel34->Location = System::Drawing::Point(125, 44);
+			this->tableLayoutPanel34->Location = System::Drawing::Point(94, 36);
+			this->tableLayoutPanel34->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel34->Name = L"tableLayoutPanel34";
 			this->tableLayoutPanel34->RowCount = 1;
 			this->tableLayoutPanel34->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel34->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel34->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel34->TabIndex = 20;
 			// 
 			// NorthKorea_USA
@@ -4617,9 +4755,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->NorthKorea_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->NorthKorea_USA->ForeColor = System::Drawing::Color::Blue;
-			this->NorthKorea_USA->Location = System::Drawing::Point(4, 1);
+			this->NorthKorea_USA->Location = System::Drawing::Point(3, 1);
+			this->NorthKorea_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->NorthKorea_USA->Name = L"NorthKorea_USA";
-			this->NorthKorea_USA->Size = System::Drawing::Size(26, 17);
+			this->NorthKorea_USA->Size = System::Drawing::Size(14, 14);
 			this->NorthKorea_USA->TabIndex = 0;
 			this->NorthKorea_USA->Text = L"10";
 			this->NorthKorea_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4631,9 +4770,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->NorthKorea_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->NorthKorea_USSR->ForeColor = System::Drawing::Color::Red;
-			this->NorthKorea_USSR->Location = System::Drawing::Point(37, 1);
+			this->NorthKorea_USSR->Location = System::Drawing::Point(28, 1);
+			this->NorthKorea_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->NorthKorea_USSR->Name = L"NorthKorea_USSR";
-			this->NorthKorea_USSR->Size = System::Drawing::Size(26, 17);
+			this->NorthKorea_USSR->Size = System::Drawing::Size(14, 14);
 			this->NorthKorea_USSR->TabIndex = 5;
 			this->NorthKorea_USSR->Text = L"10";
 			this->NorthKorea_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4648,11 +4788,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel35->Controls->Add(this->Australia_USA, 0, 0);
 			this->tableLayoutPanel35->Controls->Add(this->Australia_USSR, 1, 0);
-			this->tableLayoutPanel35->Location = System::Drawing::Point(20, 86);
+			this->tableLayoutPanel35->Location = System::Drawing::Point(15, 70);
+			this->tableLayoutPanel35->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel35->Name = L"tableLayoutPanel35";
 			this->tableLayoutPanel35->RowCount = 1;
 			this->tableLayoutPanel35->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel35->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel35->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel35->TabIndex = 8;
 			// 
 			// Australia_USA
@@ -4662,9 +4803,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Australia_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Australia_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Australia_USA->Location = System::Drawing::Point(4, 1);
+			this->Australia_USA->Location = System::Drawing::Point(3, 1);
+			this->Australia_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Australia_USA->Name = L"Australia_USA";
-			this->Australia_USA->Size = System::Drawing::Size(26, 17);
+			this->Australia_USA->Size = System::Drawing::Size(14, 14);
 			this->Australia_USA->TabIndex = 0;
 			this->Australia_USA->Text = L"10";
 			this->Australia_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4676,9 +4818,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Australia_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Australia_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Australia_USSR->Location = System::Drawing::Point(37, 1);
+			this->Australia_USSR->Location = System::Drawing::Point(28, 1);
+			this->Australia_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Australia_USSR->Name = L"Australia_USSR";
-			this->Australia_USSR->Size = System::Drawing::Size(26, 17);
+			this->Australia_USSR->Size = System::Drawing::Size(14, 14);
 			this->Australia_USSR->TabIndex = 5;
 			this->Australia_USSR->Text = L"10";
 			this->Australia_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4693,11 +4836,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel36->Controls->Add(this->Afghanistan_USA, 0, 0);
 			this->tableLayoutPanel36->Controls->Add(this->Afghanistan_USSR, 1, 0);
-			this->tableLayoutPanel36->Location = System::Drawing::Point(20, 43);
+			this->tableLayoutPanel36->Location = System::Drawing::Point(15, 35);
+			this->tableLayoutPanel36->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel36->Name = L"tableLayoutPanel36";
 			this->tableLayoutPanel36->RowCount = 1;
 			this->tableLayoutPanel36->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel36->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel36->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel36->TabIndex = 6;
 			// 
 			// Afghanistan_USA
@@ -4707,9 +4851,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Afghanistan_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Afghanistan_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Afghanistan_USA->Location = System::Drawing::Point(4, 1);
+			this->Afghanistan_USA->Location = System::Drawing::Point(3, 1);
+			this->Afghanistan_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Afghanistan_USA->Name = L"Afghanistan_USA";
-			this->Afghanistan_USA->Size = System::Drawing::Size(26, 17);
+			this->Afghanistan_USA->Size = System::Drawing::Size(14, 14);
 			this->Afghanistan_USA->TabIndex = 0;
 			this->Afghanistan_USA->Text = L"10";
 			this->Afghanistan_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4721,9 +4866,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Afghanistan_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Afghanistan_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Afghanistan_USSR->Location = System::Drawing::Point(37, 1);
+			this->Afghanistan_USSR->Location = System::Drawing::Point(28, 1);
+			this->Afghanistan_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Afghanistan_USSR->Name = L"Afghanistan_USSR";
-			this->Afghanistan_USSR->Size = System::Drawing::Size(26, 17);
+			this->Afghanistan_USSR->Size = System::Drawing::Size(14, 14);
 			this->Afghanistan_USSR->TabIndex = 5;
 			this->Afghanistan_USSR->Text = L"10";
 			this->Afghanistan_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4750,9 +4896,11 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->groupBox3->Controls->Add(this->tableLayoutPanel46);
 			this->groupBox3->Controls->Add(this->tableLayoutPanel47);
 			this->groupBox3->Controls->Add(this->tableLayoutPanel48);
-			this->groupBox3->Location = System::Drawing::Point(469, 31);
+			this->groupBox3->Location = System::Drawing::Point(352, 25);
+			this->groupBox3->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->groupBox3->Name = L"groupBox3";
-			this->groupBox3->Size = System::Drawing::Size(205, 258);
+			this->groupBox3->Padding = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->groupBox3->Size = System::Drawing::Size(154, 210);
 			this->groupBox3->TabIndex = 6;
 			this->groupBox3->TabStop = false;
 			this->groupBox3->Text = L"Central America";
@@ -4760,18 +4908,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label115
 			// 
 			this->label115->AutoSize = true;
-			this->label115->Location = System::Drawing::Point(122, 197);
+			this->label115->Location = System::Drawing::Point(92, 160);
+			this->label115->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label115->Name = L"label115";
-			this->label115->Size = System::Drawing::Size(60, 17);
+			this->label115->Size = System::Drawing::Size(46, 13);
 			this->label115->TabIndex = 29;
 			this->label115->Text = L"Panama";
 			// 
 			// label116
 			// 
 			this->label116->AutoSize = true;
-			this->label116->Location = System::Drawing::Point(17, 196);
+			this->label116->Location = System::Drawing::Point(13, 159);
+			this->label116->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label116->Name = L"label116";
-			this->label116->Size = System::Drawing::Size(77, 17);
+			this->label116->Size = System::Drawing::Size(58, 13);
 			this->label116->TabIndex = 13;
 			this->label116->Text = L"Guatemala";
 			// 
@@ -4785,11 +4935,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel39->Controls->Add(this->Panama_USA, 0, 0);
 			this->tableLayoutPanel39->Controls->Add(this->Panama_USSR, 1, 0);
-			this->tableLayoutPanel39->Location = System::Drawing::Point(125, 217);
+			this->tableLayoutPanel39->Location = System::Drawing::Point(94, 176);
+			this->tableLayoutPanel39->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel39->Name = L"tableLayoutPanel39";
 			this->tableLayoutPanel39->RowCount = 1;
 			this->tableLayoutPanel39->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel39->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel39->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel39->TabIndex = 28;
 			// 
 			// Panama_USA
@@ -4799,9 +4950,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Panama_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Panama_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Panama_USA->Location = System::Drawing::Point(4, 1);
+			this->Panama_USA->Location = System::Drawing::Point(3, 1);
+			this->Panama_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Panama_USA->Name = L"Panama_USA";
-			this->Panama_USA->Size = System::Drawing::Size(26, 17);
+			this->Panama_USA->Size = System::Drawing::Size(14, 14);
 			this->Panama_USA->TabIndex = 0;
 			this->Panama_USA->Text = L"10";
 			this->Panama_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4813,9 +4965,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Panama_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Panama_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Panama_USSR->Location = System::Drawing::Point(37, 1);
+			this->Panama_USSR->Location = System::Drawing::Point(28, 1);
+			this->Panama_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Panama_USSR->Name = L"Panama_USSR";
-			this->Panama_USSR->Size = System::Drawing::Size(26, 17);
+			this->Panama_USSR->Size = System::Drawing::Size(14, 14);
 			this->Panama_USSR->TabIndex = 5;
 			this->Panama_USSR->Text = L"10";
 			this->Panama_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4830,11 +4983,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel40->Controls->Add(this->Guatemala_USA, 0, 0);
 			this->tableLayoutPanel40->Controls->Add(this->Guatemala_USSR, 1, 0);
-			this->tableLayoutPanel40->Location = System::Drawing::Point(20, 216);
+			this->tableLayoutPanel40->Location = System::Drawing::Point(15, 176);
+			this->tableLayoutPanel40->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel40->Name = L"tableLayoutPanel40";
 			this->tableLayoutPanel40->RowCount = 1;
 			this->tableLayoutPanel40->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel40->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel40->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel40->TabIndex = 12;
 			// 
 			// Guatemala_USA
@@ -4844,9 +4998,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Guatemala_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Guatemala_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Guatemala_USA->Location = System::Drawing::Point(4, 1);
+			this->Guatemala_USA->Location = System::Drawing::Point(3, 1);
+			this->Guatemala_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Guatemala_USA->Name = L"Guatemala_USA";
-			this->Guatemala_USA->Size = System::Drawing::Size(26, 17);
+			this->Guatemala_USA->Size = System::Drawing::Size(14, 14);
 			this->Guatemala_USA->TabIndex = 0;
 			this->Guatemala_USA->Text = L"10";
 			this->Guatemala_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4858,9 +5013,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Guatemala_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Guatemala_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Guatemala_USSR->Location = System::Drawing::Point(37, 1);
+			this->Guatemala_USSR->Location = System::Drawing::Point(28, 1);
+			this->Guatemala_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Guatemala_USSR->Name = L"Guatemala_USSR";
-			this->Guatemala_USSR->Size = System::Drawing::Size(26, 17);
+			this->Guatemala_USSR->Size = System::Drawing::Size(14, 14);
 			this->Guatemala_USSR->TabIndex = 5;
 			this->Guatemala_USSR->Text = L"10";
 			this->Guatemala_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4868,18 +5024,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label121
 			// 
 			this->label121->AutoSize = true;
-			this->label121->Location = System::Drawing::Point(122, 153);
+			this->label121->Location = System::Drawing::Point(92, 124);
+			this->label121->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label121->Name = L"label121";
-			this->label121->Size = System::Drawing::Size(73, 17);
+			this->label121->Size = System::Drawing::Size(56, 13);
 			this->label121->TabIndex = 24;
 			this->label121->Text = L"Nicaragua";
 			// 
 			// label122
 			// 
 			this->label122->AutoSize = true;
-			this->label122->Location = System::Drawing::Point(17, 152);
+			this->label122->Location = System::Drawing::Point(13, 124);
+			this->label122->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label122->Name = L"label122";
-			this->label122->Size = System::Drawing::Size(80, 17);
+			this->label122->Size = System::Drawing::Size(61, 13);
 			this->label122->TabIndex = 9;
 			this->label122->Text = L"El Salvador";
 			// 
@@ -4893,11 +5051,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel41->Controls->Add(this->Nicaragua_USA, 0, 0);
 			this->tableLayoutPanel41->Controls->Add(this->Nicaragua_USSR, 1, 0);
-			this->tableLayoutPanel41->Location = System::Drawing::Point(125, 173);
+			this->tableLayoutPanel41->Location = System::Drawing::Point(94, 141);
+			this->tableLayoutPanel41->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel41->Name = L"tableLayoutPanel41";
 			this->tableLayoutPanel41->RowCount = 1;
 			this->tableLayoutPanel41->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel41->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel41->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel41->TabIndex = 22;
 			// 
 			// Nicaragua_USA
@@ -4907,9 +5066,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Nicaragua_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Nicaragua_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Nicaragua_USA->Location = System::Drawing::Point(4, 1);
+			this->Nicaragua_USA->Location = System::Drawing::Point(3, 1);
+			this->Nicaragua_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Nicaragua_USA->Name = L"Nicaragua_USA";
-			this->Nicaragua_USA->Size = System::Drawing::Size(26, 17);
+			this->Nicaragua_USA->Size = System::Drawing::Size(14, 14);
 			this->Nicaragua_USA->TabIndex = 0;
 			this->Nicaragua_USA->Text = L"10";
 			this->Nicaragua_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4921,9 +5081,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Nicaragua_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Nicaragua_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Nicaragua_USSR->Location = System::Drawing::Point(37, 1);
+			this->Nicaragua_USSR->Location = System::Drawing::Point(28, 1);
+			this->Nicaragua_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Nicaragua_USSR->Name = L"Nicaragua_USSR";
-			this->Nicaragua_USSR->Size = System::Drawing::Size(26, 17);
+			this->Nicaragua_USSR->Size = System::Drawing::Size(14, 14);
 			this->Nicaragua_USSR->TabIndex = 5;
 			this->Nicaragua_USSR->Text = L"10";
 			this->Nicaragua_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4938,11 +5099,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel42->Controls->Add(this->ElSalvador_USA, 0, 0);
 			this->tableLayoutPanel42->Controls->Add(this->ElSalvador_USSR, 1, 0);
-			this->tableLayoutPanel42->Location = System::Drawing::Point(20, 172);
+			this->tableLayoutPanel42->Location = System::Drawing::Point(15, 140);
+			this->tableLayoutPanel42->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel42->Name = L"tableLayoutPanel42";
 			this->tableLayoutPanel42->RowCount = 1;
 			this->tableLayoutPanel42->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel42->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel42->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel42->TabIndex = 8;
 			// 
 			// ElSalvador_USA
@@ -4952,9 +5114,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->ElSalvador_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->ElSalvador_USA->ForeColor = System::Drawing::Color::Blue;
-			this->ElSalvador_USA->Location = System::Drawing::Point(4, 1);
+			this->ElSalvador_USA->Location = System::Drawing::Point(3, 1);
+			this->ElSalvador_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->ElSalvador_USA->Name = L"ElSalvador_USA";
-			this->ElSalvador_USA->Size = System::Drawing::Size(26, 17);
+			this->ElSalvador_USA->Size = System::Drawing::Size(14, 14);
 			this->ElSalvador_USA->TabIndex = 0;
 			this->ElSalvador_USA->Text = L"10";
 			this->ElSalvador_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4966,9 +5129,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->ElSalvador_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->ElSalvador_USSR->ForeColor = System::Drawing::Color::Red;
-			this->ElSalvador_USSR->Location = System::Drawing::Point(37, 1);
+			this->ElSalvador_USSR->Location = System::Drawing::Point(28, 1);
+			this->ElSalvador_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->ElSalvador_USSR->Name = L"ElSalvador_USSR";
-			this->ElSalvador_USSR->Size = System::Drawing::Size(26, 17);
+			this->ElSalvador_USSR->Size = System::Drawing::Size(14, 14);
 			this->ElSalvador_USSR->TabIndex = 5;
 			this->ElSalvador_USSR->Text = L"10";
 			this->ElSalvador_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -4976,18 +5140,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label127
 			// 
 			this->label127->AutoSize = true;
-			this->label127->Location = System::Drawing::Point(122, 110);
+			this->label127->Location = System::Drawing::Point(92, 89);
+			this->label127->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label127->Name = L"label127";
-			this->label127->Size = System::Drawing::Size(51, 17);
+			this->label127->Size = System::Drawing::Size(41, 13);
 			this->label127->TabIndex = 27;
 			this->label127->Text = L"Mexico";
 			// 
 			// label128
 			// 
 			this->label128->AutoSize = true;
-			this->label128->Location = System::Drawing::Point(17, 109);
+			this->label128->Location = System::Drawing::Point(13, 89);
+			this->label128->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label128->Name = L"label128";
-			this->label128->Size = System::Drawing::Size(108, 17);
+			this->label128->Size = System::Drawing::Size(83, 13);
 			this->label128->TabIndex = 11;
 			this->label128->Text = L"Dominican Rep.";
 			// 
@@ -5001,11 +5167,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel43->Controls->Add(this->Mexico_USA, 0, 0);
 			this->tableLayoutPanel43->Controls->Add(this->Mexico_USSR, 1, 0);
-			this->tableLayoutPanel43->Location = System::Drawing::Point(125, 130);
+			this->tableLayoutPanel43->Location = System::Drawing::Point(94, 106);
+			this->tableLayoutPanel43->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel43->Name = L"tableLayoutPanel43";
 			this->tableLayoutPanel43->RowCount = 1;
 			this->tableLayoutPanel43->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel43->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel43->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel43->TabIndex = 26;
 			// 
 			// Mexico_USA
@@ -5015,9 +5182,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Mexico_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Mexico_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Mexico_USA->Location = System::Drawing::Point(4, 1);
+			this->Mexico_USA->Location = System::Drawing::Point(3, 1);
+			this->Mexico_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Mexico_USA->Name = L"Mexico_USA";
-			this->Mexico_USA->Size = System::Drawing::Size(26, 17);
+			this->Mexico_USA->Size = System::Drawing::Size(14, 14);
 			this->Mexico_USA->TabIndex = 0;
 			this->Mexico_USA->Text = L"10";
 			this->Mexico_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5029,9 +5197,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Mexico_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Mexico_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Mexico_USSR->Location = System::Drawing::Point(37, 1);
+			this->Mexico_USSR->Location = System::Drawing::Point(28, 1);
+			this->Mexico_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Mexico_USSR->Name = L"Mexico_USSR";
-			this->Mexico_USSR->Size = System::Drawing::Size(26, 17);
+			this->Mexico_USSR->Size = System::Drawing::Size(14, 14);
 			this->Mexico_USSR->TabIndex = 5;
 			this->Mexico_USSR->Text = L"10";
 			this->Mexico_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5039,9 +5208,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label131
 			// 
 			this->label131->AutoSize = true;
-			this->label131->Location = System::Drawing::Point(122, 67);
+			this->label131->Location = System::Drawing::Point(92, 54);
+			this->label131->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label131->Name = L"label131";
-			this->label131->Size = System::Drawing::Size(70, 17);
+			this->label131->Size = System::Drawing::Size(53, 13);
 			this->label131->TabIndex = 25;
 			this->label131->Text = L"Honduras";
 			// 
@@ -5055,11 +5225,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel44->Controls->Add(this->DominicanRep_USA, 0, 0);
 			this->tableLayoutPanel44->Controls->Add(this->DominicanRep_USSR, 1, 0);
-			this->tableLayoutPanel44->Location = System::Drawing::Point(20, 129);
+			this->tableLayoutPanel44->Location = System::Drawing::Point(15, 105);
+			this->tableLayoutPanel44->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel44->Name = L"tableLayoutPanel44";
 			this->tableLayoutPanel44->RowCount = 1;
 			this->tableLayoutPanel44->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel44->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel44->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel44->TabIndex = 10;
 			// 
 			// DominicanRep_USA
@@ -5069,9 +5240,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->DominicanRep_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->DominicanRep_USA->ForeColor = System::Drawing::Color::Blue;
-			this->DominicanRep_USA->Location = System::Drawing::Point(4, 1);
+			this->DominicanRep_USA->Location = System::Drawing::Point(3, 1);
+			this->DominicanRep_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->DominicanRep_USA->Name = L"DominicanRep_USA";
-			this->DominicanRep_USA->Size = System::Drawing::Size(26, 17);
+			this->DominicanRep_USA->Size = System::Drawing::Size(14, 14);
 			this->DominicanRep_USA->TabIndex = 0;
 			this->DominicanRep_USA->Text = L"10";
 			this->DominicanRep_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5083,9 +5255,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->DominicanRep_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->DominicanRep_USSR->ForeColor = System::Drawing::Color::Red;
-			this->DominicanRep_USSR->Location = System::Drawing::Point(37, 1);
+			this->DominicanRep_USSR->Location = System::Drawing::Point(28, 1);
+			this->DominicanRep_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->DominicanRep_USSR->Name = L"DominicanRep_USSR";
-			this->DominicanRep_USSR->Size = System::Drawing::Size(26, 17);
+			this->DominicanRep_USSR->Size = System::Drawing::Size(14, 14);
 			this->DominicanRep_USSR->TabIndex = 5;
 			this->DominicanRep_USSR->Text = L"10";
 			this->DominicanRep_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5093,18 +5266,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label134
 			// 
 			this->label134->AutoSize = true;
-			this->label134->Location = System::Drawing::Point(122, 24);
+			this->label134->Location = System::Drawing::Point(92, 20);
+			this->label134->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label134->Name = L"label134";
-			this->label134->Size = System::Drawing::Size(36, 17);
+			this->label134->Size = System::Drawing::Size(28, 13);
 			this->label134->TabIndex = 21;
 			this->label134->Text = L"Haiti";
 			// 
 			// label135
 			// 
 			this->label135->AutoSize = true;
-			this->label135->Location = System::Drawing::Point(17, 66);
+			this->label135->Location = System::Drawing::Point(13, 54);
+			this->label135->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label135->Name = L"label135";
-			this->label135->Size = System::Drawing::Size(41, 17);
+			this->label135->Size = System::Drawing::Size(32, 13);
 			this->label135->TabIndex = 9;
 			this->label135->Text = L"Cuba";
 			// 
@@ -5118,11 +5293,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel45->Controls->Add(this->Honduras_USA, 0, 0);
 			this->tableLayoutPanel45->Controls->Add(this->Honduras_USSR, 1, 0);
-			this->tableLayoutPanel45->Location = System::Drawing::Point(125, 87);
+			this->tableLayoutPanel45->Location = System::Drawing::Point(94, 71);
+			this->tableLayoutPanel45->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel45->Name = L"tableLayoutPanel45";
 			this->tableLayoutPanel45->RowCount = 1;
 			this->tableLayoutPanel45->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel45->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel45->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel45->TabIndex = 23;
 			// 
 			// Honduras_USA
@@ -5132,9 +5308,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Honduras_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Honduras_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Honduras_USA->Location = System::Drawing::Point(4, 1);
+			this->Honduras_USA->Location = System::Drawing::Point(3, 1);
+			this->Honduras_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Honduras_USA->Name = L"Honduras_USA";
-			this->Honduras_USA->Size = System::Drawing::Size(26, 17);
+			this->Honduras_USA->Size = System::Drawing::Size(14, 14);
 			this->Honduras_USA->TabIndex = 0;
 			this->Honduras_USA->Text = L"10";
 			this->Honduras_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5146,9 +5323,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Honduras_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Honduras_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Honduras_USSR->Location = System::Drawing::Point(37, 1);
+			this->Honduras_USSR->Location = System::Drawing::Point(28, 1);
+			this->Honduras_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Honduras_USSR->Name = L"Honduras_USSR";
-			this->Honduras_USSR->Size = System::Drawing::Size(26, 17);
+			this->Honduras_USSR->Size = System::Drawing::Size(14, 14);
 			this->Honduras_USSR->TabIndex = 5;
 			this->Honduras_USSR->Text = L"10";
 			this->Honduras_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5156,9 +5334,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label138
 			// 
 			this->label138->AutoSize = true;
-			this->label138->Location = System::Drawing::Point(17, 23);
+			this->label138->Location = System::Drawing::Point(13, 19);
+			this->label138->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label138->Name = L"label138";
-			this->label138->Size = System::Drawing::Size(76, 17);
+			this->label138->Size = System::Drawing::Size(59, 13);
 			this->label138->TabIndex = 7;
 			this->label138->Text = L"Costa Rica";
 			// 
@@ -5172,11 +5351,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel46->Controls->Add(this->Haiti_USA, 0, 0);
 			this->tableLayoutPanel46->Controls->Add(this->Haiti_USSR, 1, 0);
-			this->tableLayoutPanel46->Location = System::Drawing::Point(125, 44);
+			this->tableLayoutPanel46->Location = System::Drawing::Point(94, 36);
+			this->tableLayoutPanel46->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel46->Name = L"tableLayoutPanel46";
 			this->tableLayoutPanel46->RowCount = 1;
 			this->tableLayoutPanel46->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel46->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel46->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel46->TabIndex = 20;
 			// 
 			// Haiti_USA
@@ -5186,9 +5366,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Haiti_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Haiti_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Haiti_USA->Location = System::Drawing::Point(4, 1);
+			this->Haiti_USA->Location = System::Drawing::Point(3, 1);
+			this->Haiti_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Haiti_USA->Name = L"Haiti_USA";
-			this->Haiti_USA->Size = System::Drawing::Size(26, 17);
+			this->Haiti_USA->Size = System::Drawing::Size(14, 14);
 			this->Haiti_USA->TabIndex = 0;
 			this->Haiti_USA->Text = L"10";
 			this->Haiti_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5200,9 +5381,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Haiti_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Haiti_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Haiti_USSR->Location = System::Drawing::Point(37, 1);
+			this->Haiti_USSR->Location = System::Drawing::Point(28, 1);
+			this->Haiti_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Haiti_USSR->Name = L"Haiti_USSR";
-			this->Haiti_USSR->Size = System::Drawing::Size(26, 17);
+			this->Haiti_USSR->Size = System::Drawing::Size(14, 14);
 			this->Haiti_USSR->TabIndex = 5;
 			this->Haiti_USSR->Text = L"10";
 			this->Haiti_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5217,11 +5399,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel47->Controls->Add(this->Cuba_USA, 0, 0);
 			this->tableLayoutPanel47->Controls->Add(this->Cuba_USSR, 1, 0);
-			this->tableLayoutPanel47->Location = System::Drawing::Point(20, 86);
+			this->tableLayoutPanel47->Location = System::Drawing::Point(15, 70);
+			this->tableLayoutPanel47->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel47->Name = L"tableLayoutPanel47";
 			this->tableLayoutPanel47->RowCount = 1;
 			this->tableLayoutPanel47->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel47->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel47->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel47->TabIndex = 8;
 			// 
 			// Cuba_USA
@@ -5231,9 +5414,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Cuba_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Cuba_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Cuba_USA->Location = System::Drawing::Point(4, 1);
+			this->Cuba_USA->Location = System::Drawing::Point(3, 1);
+			this->Cuba_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Cuba_USA->Name = L"Cuba_USA";
-			this->Cuba_USA->Size = System::Drawing::Size(26, 17);
+			this->Cuba_USA->Size = System::Drawing::Size(14, 14);
 			this->Cuba_USA->TabIndex = 0;
 			this->Cuba_USA->Text = L"10";
 			this->Cuba_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5245,9 +5429,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Cuba_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Cuba_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Cuba_USSR->Location = System::Drawing::Point(37, 1);
+			this->Cuba_USSR->Location = System::Drawing::Point(28, 1);
+			this->Cuba_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Cuba_USSR->Name = L"Cuba_USSR";
-			this->Cuba_USSR->Size = System::Drawing::Size(26, 17);
+			this->Cuba_USSR->Size = System::Drawing::Size(14, 14);
 			this->Cuba_USSR->TabIndex = 5;
 			this->Cuba_USSR->Text = L"10";
 			this->Cuba_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5262,11 +5447,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel48->Controls->Add(this->CostaRica_USA, 0, 0);
 			this->tableLayoutPanel48->Controls->Add(this->CostaRica_USSR, 1, 0);
-			this->tableLayoutPanel48->Location = System::Drawing::Point(20, 43);
+			this->tableLayoutPanel48->Location = System::Drawing::Point(15, 35);
+			this->tableLayoutPanel48->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel48->Name = L"tableLayoutPanel48";
 			this->tableLayoutPanel48->RowCount = 1;
 			this->tableLayoutPanel48->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel48->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel48->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel48->TabIndex = 6;
 			// 
 			// CostaRica_USA
@@ -5276,9 +5462,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->CostaRica_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->CostaRica_USA->ForeColor = System::Drawing::Color::Blue;
-			this->CostaRica_USA->Location = System::Drawing::Point(4, 1);
+			this->CostaRica_USA->Location = System::Drawing::Point(3, 1);
+			this->CostaRica_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->CostaRica_USA->Name = L"CostaRica_USA";
-			this->CostaRica_USA->Size = System::Drawing::Size(26, 17);
+			this->CostaRica_USA->Size = System::Drawing::Size(14, 14);
 			this->CostaRica_USA->TabIndex = 0;
 			this->CostaRica_USA->Text = L"10";
 			this->CostaRica_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5290,9 +5477,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->CostaRica_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->CostaRica_USSR->ForeColor = System::Drawing::Color::Red;
-			this->CostaRica_USSR->Location = System::Drawing::Point(37, 1);
+			this->CostaRica_USSR->Location = System::Drawing::Point(28, 1);
+			this->CostaRica_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->CostaRica_USSR->Name = L"CostaRica_USSR";
-			this->CostaRica_USSR->Size = System::Drawing::Size(26, 17);
+			this->CostaRica_USSR->Size = System::Drawing::Size(14, 14);
 			this->CostaRica_USSR->TabIndex = 5;
 			this->CostaRica_USSR->Text = L"10";
 			this->CostaRica_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5341,28 +5529,90 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->groupBox4->Controls->Add(this->tableLayoutPanel59);
 			this->groupBox4->Controls->Add(this->tableLayoutPanel60);
 			this->groupBox4->Controls->Add(this->tableLayoutPanel61);
-			this->groupBox4->Location = System::Drawing::Point(680, 31);
+			this->groupBox4->Location = System::Drawing::Point(510, 25);
+			this->groupBox4->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->groupBox4->Name = L"groupBox4";
-			this->groupBox4->Size = System::Drawing::Size(225, 515);
+			this->groupBox4->Padding = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->groupBox4->Size = System::Drawing::Size(169, 418);
 			this->groupBox4->TabIndex = 7;
 			this->groupBox4->TabStop = false;
 			this->groupBox4->Text = L"Europe";
 			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->Location = System::Drawing::Point(93, 160);
+			this->label4->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(78, 13);
+			this->label4->TabIndex = 37;
+			this->label4->Text = L"Spain/Portugul";
+			// 
+			// tableLayoutPanel31
+			// 
+			this->tableLayoutPanel31->CellBorderStyle = System::Windows::Forms::TableLayoutPanelCellBorderStyle::Single;
+			this->tableLayoutPanel31->ColumnCount = 2;
+			this->tableLayoutPanel31->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				50)));
+			this->tableLayoutPanel31->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				50)));
+			this->tableLayoutPanel31->Controls->Add(this->SpainPortugul_USA, 0, 0);
+			this->tableLayoutPanel31->Controls->Add(this->SpainPortugul_USSR, 1, 0);
+			this->tableLayoutPanel31->Location = System::Drawing::Point(95, 176);
+			this->tableLayoutPanel31->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->tableLayoutPanel31->Name = L"tableLayoutPanel31";
+			this->tableLayoutPanel31->RowCount = 1;
+			this->tableLayoutPanel31->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
+			this->tableLayoutPanel31->Size = System::Drawing::Size(51, 16);
+			this->tableLayoutPanel31->TabIndex = 36;
+			// 
+			// SpainPortugul_USA
+			// 
+			this->SpainPortugul_USA->AutoSize = true;
+			this->SpainPortugul_USA->BackColor = System::Drawing::Color::White;
+			this->SpainPortugul_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->SpainPortugul_USA->ForeColor = System::Drawing::Color::Blue;
+			this->SpainPortugul_USA->Location = System::Drawing::Point(3, 1);
+			this->SpainPortugul_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->SpainPortugul_USA->Name = L"SpainPortugul_USA";
+			this->SpainPortugul_USA->Size = System::Drawing::Size(14, 14);
+			this->SpainPortugul_USA->TabIndex = 0;
+			this->SpainPortugul_USA->Text = L"10";
+			this->SpainPortugul_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// SpainPortugul_USSR
+			// 
+			this->SpainPortugul_USSR->AutoSize = true;
+			this->SpainPortugul_USSR->BackColor = System::Drawing::Color::White;
+			this->SpainPortugul_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->SpainPortugul_USSR->ForeColor = System::Drawing::Color::Red;
+			this->SpainPortugul_USSR->Location = System::Drawing::Point(28, 1);
+			this->SpainPortugul_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->SpainPortugul_USSR->Name = L"SpainPortugul_USSR";
+			this->SpainPortugul_USSR->Size = System::Drawing::Size(14, 14);
+			this->SpainPortugul_USSR->TabIndex = 5;
+			this->SpainPortugul_USSR->Text = L"10";
+			this->SpainPortugul_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
 			// label184
 			// 
 			this->label184->AutoSize = true;
-			this->label184->Location = System::Drawing::Point(124, 415);
+			this->label184->Location = System::Drawing::Point(93, 337);
+			this->label184->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label184->Name = L"label184";
-			this->label184->Size = System::Drawing::Size(77, 17);
+			this->label184->Size = System::Drawing::Size(59, 13);
 			this->label184->TabIndex = 43;
 			this->label184->Text = L"Yugoslavia";
 			// 
 			// label185
 			// 
 			this->label185->AutoSize = true;
-			this->label185->Location = System::Drawing::Point(17, 415);
+			this->label185->Location = System::Drawing::Point(13, 337);
+			this->label185->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label185->Name = L"label185";
-			this->label185->Size = System::Drawing::Size(55, 17);
+			this->label185->Size = System::Drawing::Size(42, 13);
 			this->label185->TabIndex = 41;
 			this->label185->Text = L"Greece";
 			// 
@@ -5376,11 +5626,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel62->Controls->Add(this->Yugoslavia_USA, 0, 0);
 			this->tableLayoutPanel62->Controls->Add(this->Yugoslavia_USSR, 1, 0);
-			this->tableLayoutPanel62->Location = System::Drawing::Point(127, 435);
+			this->tableLayoutPanel62->Location = System::Drawing::Point(95, 353);
+			this->tableLayoutPanel62->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel62->Name = L"tableLayoutPanel62";
 			this->tableLayoutPanel62->RowCount = 1;
 			this->tableLayoutPanel62->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel62->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel62->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel62->TabIndex = 42;
 			// 
 			// Yugoslavia_USA
@@ -5390,9 +5641,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Yugoslavia_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Yugoslavia_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Yugoslavia_USA->Location = System::Drawing::Point(4, 1);
+			this->Yugoslavia_USA->Location = System::Drawing::Point(3, 1);
+			this->Yugoslavia_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Yugoslavia_USA->Name = L"Yugoslavia_USA";
-			this->Yugoslavia_USA->Size = System::Drawing::Size(26, 17);
+			this->Yugoslavia_USA->Size = System::Drawing::Size(14, 14);
 			this->Yugoslavia_USA->TabIndex = 0;
 			this->Yugoslavia_USA->Text = L"10";
 			this->Yugoslavia_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5404,9 +5656,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Yugoslavia_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Yugoslavia_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Yugoslavia_USSR->Location = System::Drawing::Point(37, 1);
+			this->Yugoslavia_USSR->Location = System::Drawing::Point(28, 1);
+			this->Yugoslavia_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Yugoslavia_USSR->Name = L"Yugoslavia_USSR";
-			this->Yugoslavia_USSR->Size = System::Drawing::Size(26, 17);
+			this->Yugoslavia_USSR->Size = System::Drawing::Size(14, 14);
 			this->Yugoslavia_USSR->TabIndex = 5;
 			this->Yugoslavia_USSR->Text = L"10";
 			this->Yugoslavia_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5421,11 +5674,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel63->Controls->Add(this->Greece_USA, 0, 0);
 			this->tableLayoutPanel63->Controls->Add(this->Greece_USSR, 1, 0);
-			this->tableLayoutPanel63->Location = System::Drawing::Point(20, 435);
+			this->tableLayoutPanel63->Location = System::Drawing::Point(15, 353);
+			this->tableLayoutPanel63->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel63->Name = L"tableLayoutPanel63";
 			this->tableLayoutPanel63->RowCount = 1;
 			this->tableLayoutPanel63->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel63->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel63->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel63->TabIndex = 40;
 			// 
 			// Greece_USA
@@ -5435,9 +5689,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Greece_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Greece_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Greece_USA->Location = System::Drawing::Point(4, 1);
+			this->Greece_USA->Location = System::Drawing::Point(3, 1);
+			this->Greece_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Greece_USA->Name = L"Greece_USA";
-			this->Greece_USA->Size = System::Drawing::Size(26, 17);
+			this->Greece_USA->Size = System::Drawing::Size(14, 14);
 			this->Greece_USA->TabIndex = 0;
 			this->Greece_USA->Text = L"10";
 			this->Greece_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5449,9 +5704,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Greece_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Greece_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Greece_USSR->Location = System::Drawing::Point(37, 1);
+			this->Greece_USSR->Location = System::Drawing::Point(28, 1);
+			this->Greece_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Greece_USSR->Name = L"Greece_USSR";
-			this->Greece_USSR->Size = System::Drawing::Size(26, 17);
+			this->Greece_USSR->Size = System::Drawing::Size(14, 14);
 			this->Greece_USSR->TabIndex = 5;
 			this->Greece_USSR->Text = L"10";
 			this->Greece_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5459,18 +5715,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label55
 			// 
 			this->label55->AutoSize = true;
-			this->label55->Location = System::Drawing::Point(124, 371);
+			this->label55->Location = System::Drawing::Point(93, 301);
+			this->label55->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label55->Name = L"label55";
-			this->label55->Size = System::Drawing::Size(87, 17);
+			this->label55->Size = System::Drawing::Size(66, 13);
 			this->label55->TabIndex = 39;
 			this->label55->Text = L"W. Germany";
 			// 
 			// label56
 			// 
 			this->label56->AutoSize = true;
-			this->label56->Location = System::Drawing::Point(17, 371);
+			this->label56->Location = System::Drawing::Point(13, 301);
+			this->label56->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label56->Name = L"label56";
-			this->label56->Size = System::Drawing::Size(52, 17);
+			this->label56->Size = System::Drawing::Size(40, 13);
 			this->label56->TabIndex = 37;
 			this->label56->Text = L"France";
 			// 
@@ -5484,11 +5742,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel19->Controls->Add(this->WGermany_USA, 0, 0);
 			this->tableLayoutPanel19->Controls->Add(this->WGermany_USSR, 1, 0);
-			this->tableLayoutPanel19->Location = System::Drawing::Point(127, 391);
+			this->tableLayoutPanel19->Location = System::Drawing::Point(95, 318);
+			this->tableLayoutPanel19->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel19->Name = L"tableLayoutPanel19";
 			this->tableLayoutPanel19->RowCount = 1;
 			this->tableLayoutPanel19->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel19->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel19->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel19->TabIndex = 38;
 			// 
 			// WGermany_USA
@@ -5498,9 +5757,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->WGermany_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->WGermany_USA->ForeColor = System::Drawing::Color::Blue;
-			this->WGermany_USA->Location = System::Drawing::Point(4, 1);
+			this->WGermany_USA->Location = System::Drawing::Point(3, 1);
+			this->WGermany_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->WGermany_USA->Name = L"WGermany_USA";
-			this->WGermany_USA->Size = System::Drawing::Size(26, 17);
+			this->WGermany_USA->Size = System::Drawing::Size(14, 14);
 			this->WGermany_USA->TabIndex = 0;
 			this->WGermany_USA->Text = L"10";
 			this->WGermany_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5512,9 +5772,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->WGermany_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->WGermany_USSR->ForeColor = System::Drawing::Color::Red;
-			this->WGermany_USSR->Location = System::Drawing::Point(37, 1);
+			this->WGermany_USSR->Location = System::Drawing::Point(28, 1);
+			this->WGermany_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->WGermany_USSR->Name = L"WGermany_USSR";
-			this->WGermany_USSR->Size = System::Drawing::Size(26, 17);
+			this->WGermany_USSR->Size = System::Drawing::Size(14, 14);
 			this->WGermany_USSR->TabIndex = 5;
 			this->WGermany_USSR->Text = L"10";
 			this->WGermany_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5529,11 +5790,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel20->Controls->Add(this->France_USA, 0, 0);
 			this->tableLayoutPanel20->Controls->Add(this->France_USSR, 1, 0);
-			this->tableLayoutPanel20->Location = System::Drawing::Point(20, 391);
+			this->tableLayoutPanel20->Location = System::Drawing::Point(15, 318);
+			this->tableLayoutPanel20->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel20->Name = L"tableLayoutPanel20";
 			this->tableLayoutPanel20->RowCount = 1;
 			this->tableLayoutPanel20->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel20->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel20->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel20->TabIndex = 36;
 			// 
 			// France_USA
@@ -5543,9 +5805,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->France_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->France_USA->ForeColor = System::Drawing::Color::Blue;
-			this->France_USA->Location = System::Drawing::Point(4, 1);
+			this->France_USA->Location = System::Drawing::Point(3, 1);
+			this->France_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->France_USA->Name = L"France_USA";
-			this->France_USA->Size = System::Drawing::Size(26, 17);
+			this->France_USA->Size = System::Drawing::Size(14, 14);
 			this->France_USA->TabIndex = 0;
 			this->France_USA->Text = L"10";
 			this->France_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5557,9 +5820,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->France_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->France_USSR->ForeColor = System::Drawing::Color::Red;
-			this->France_USSR->Location = System::Drawing::Point(37, 1);
+			this->France_USSR->Location = System::Drawing::Point(28, 1);
+			this->France_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->France_USSR->Name = L"France_USSR";
-			this->France_USSR->Size = System::Drawing::Size(26, 17);
+			this->France_USSR->Size = System::Drawing::Size(14, 14);
 			this->France_USSR->TabIndex = 5;
 			this->France_USSR->Text = L"10";
 			this->France_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5567,18 +5831,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label61
 			// 
 			this->label61->AutoSize = true;
-			this->label61->Location = System::Drawing::Point(124, 328);
+			this->label61->Location = System::Drawing::Point(93, 266);
+			this->label61->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label61->Name = L"label61";
-			this->label61->Size = System::Drawing::Size(35, 17);
+			this->label61->Size = System::Drawing::Size(28, 13);
 			this->label61->TabIndex = 35;
 			this->label61->Text = L"U.K.";
 			// 
 			// label63
 			// 
 			this->label63->AutoSize = true;
-			this->label63->Location = System::Drawing::Point(17, 328);
+			this->label63->Location = System::Drawing::Point(13, 266);
+			this->label63->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label63->Name = L"label63";
-			this->label63->Size = System::Drawing::Size(54, 17);
+			this->label63->Size = System::Drawing::Size(41, 13);
 			this->label63->TabIndex = 19;
 			this->label63->Text = L"Finland";
 			// 
@@ -5592,11 +5858,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel21->Controls->Add(this->UK_USA, 0, 0);
 			this->tableLayoutPanel21->Controls->Add(this->UK_USSR, 1, 0);
-			this->tableLayoutPanel21->Location = System::Drawing::Point(127, 348);
+			this->tableLayoutPanel21->Location = System::Drawing::Point(95, 283);
+			this->tableLayoutPanel21->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel21->Name = L"tableLayoutPanel21";
 			this->tableLayoutPanel21->RowCount = 1;
 			this->tableLayoutPanel21->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel21->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel21->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel21->TabIndex = 34;
 			// 
 			// UK_USA
@@ -5606,9 +5873,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->UK_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->UK_USA->ForeColor = System::Drawing::Color::Blue;
-			this->UK_USA->Location = System::Drawing::Point(4, 1);
+			this->UK_USA->Location = System::Drawing::Point(3, 1);
+			this->UK_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->UK_USA->Name = L"UK_USA";
-			this->UK_USA->Size = System::Drawing::Size(26, 17);
+			this->UK_USA->Size = System::Drawing::Size(14, 14);
 			this->UK_USA->TabIndex = 0;
 			this->UK_USA->Text = L"10";
 			this->UK_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5620,9 +5888,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->UK_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->UK_USSR->ForeColor = System::Drawing::Color::Red;
-			this->UK_USSR->Location = System::Drawing::Point(37, 1);
+			this->UK_USSR->Location = System::Drawing::Point(28, 1);
+			this->UK_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->UK_USSR->Name = L"UK_USSR";
-			this->UK_USSR->Size = System::Drawing::Size(26, 17);
+			this->UK_USSR->Size = System::Drawing::Size(14, 14);
 			this->UK_USSR->TabIndex = 5;
 			this->UK_USSR->Text = L"10";
 			this->UK_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5637,11 +5906,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel37->Controls->Add(this->Finland_USA, 0, 0);
 			this->tableLayoutPanel37->Controls->Add(this->Finland_USSR, 1, 0);
-			this->tableLayoutPanel37->Location = System::Drawing::Point(20, 348);
+			this->tableLayoutPanel37->Location = System::Drawing::Point(15, 283);
+			this->tableLayoutPanel37->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel37->Name = L"tableLayoutPanel37";
 			this->tableLayoutPanel37->RowCount = 1;
 			this->tableLayoutPanel37->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel37->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel37->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel37->TabIndex = 18;
 			// 
 			// Finland_USA
@@ -5651,9 +5921,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Finland_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Finland_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Finland_USA->Location = System::Drawing::Point(4, 1);
+			this->Finland_USA->Location = System::Drawing::Point(3, 1);
+			this->Finland_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Finland_USA->Name = L"Finland_USA";
-			this->Finland_USA->Size = System::Drawing::Size(26, 17);
+			this->Finland_USA->Size = System::Drawing::Size(14, 14);
 			this->Finland_USA->TabIndex = 0;
 			this->Finland_USA->Text = L"10";
 			this->Finland_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5665,9 +5936,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Finland_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Finland_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Finland_USSR->Location = System::Drawing::Point(37, 1);
+			this->Finland_USSR->Location = System::Drawing::Point(28, 1);
+			this->Finland_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Finland_USSR->Name = L"Finland_USSR";
-			this->Finland_USSR->Size = System::Drawing::Size(26, 17);
+			this->Finland_USSR->Size = System::Drawing::Size(14, 14);
 			this->Finland_USSR->TabIndex = 5;
 			this->Finland_USSR->Text = L"10";
 			this->Finland_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5675,18 +5947,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label112
 			// 
 			this->label112->AutoSize = true;
-			this->label112->Location = System::Drawing::Point(124, 283);
+			this->label112->Location = System::Drawing::Point(93, 230);
+			this->label112->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label112->Name = L"label112";
-			this->label112->Size = System::Drawing::Size(52, 17);
+			this->label112->Size = System::Drawing::Size(40, 13);
 			this->label112->TabIndex = 33;
 			this->label112->Text = L"Turkey";
 			// 
 			// label113
 			// 
 			this->label113->AutoSize = true;
-			this->label113->Location = System::Drawing::Point(17, 283);
+			this->label113->Location = System::Drawing::Point(13, 230);
+			this->label113->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label113->Name = L"label113";
-			this->label113->Size = System::Drawing::Size(83, 17);
+			this->label113->Size = System::Drawing::Size(62, 13);
 			this->label113->TabIndex = 17;
 			this->label113->Text = L"E. Germany";
 			// 
@@ -5700,11 +5974,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel38->Controls->Add(this->Turkey_USA, 0, 0);
 			this->tableLayoutPanel38->Controls->Add(this->Turkey_USSR, 1, 0);
-			this->tableLayoutPanel38->Location = System::Drawing::Point(127, 303);
+			this->tableLayoutPanel38->Location = System::Drawing::Point(95, 246);
+			this->tableLayoutPanel38->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel38->Name = L"tableLayoutPanel38";
 			this->tableLayoutPanel38->RowCount = 1;
 			this->tableLayoutPanel38->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel38->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel38->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel38->TabIndex = 32;
 			// 
 			// Turkey_USA
@@ -5714,9 +5989,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Turkey_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Turkey_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Turkey_USA->Location = System::Drawing::Point(4, 1);
+			this->Turkey_USA->Location = System::Drawing::Point(3, 1);
+			this->Turkey_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Turkey_USA->Name = L"Turkey_USA";
-			this->Turkey_USA->Size = System::Drawing::Size(26, 17);
+			this->Turkey_USA->Size = System::Drawing::Size(14, 14);
 			this->Turkey_USA->TabIndex = 0;
 			this->Turkey_USA->Text = L"10";
 			this->Turkey_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5728,9 +6004,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Turkey_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Turkey_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Turkey_USSR->Location = System::Drawing::Point(37, 1);
+			this->Turkey_USSR->Location = System::Drawing::Point(28, 1);
+			this->Turkey_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Turkey_USSR->Name = L"Turkey_USSR";
-			this->Turkey_USSR->Size = System::Drawing::Size(26, 17);
+			this->Turkey_USSR->Size = System::Drawing::Size(14, 14);
 			this->Turkey_USSR->TabIndex = 5;
 			this->Turkey_USSR->Text = L"10";
 			this->Turkey_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5745,11 +6022,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel49->Controls->Add(this->EGermany_USA, 0, 0);
 			this->tableLayoutPanel49->Controls->Add(this->EGermany_USSR, 1, 0);
-			this->tableLayoutPanel49->Location = System::Drawing::Point(20, 303);
+			this->tableLayoutPanel49->Location = System::Drawing::Point(15, 246);
+			this->tableLayoutPanel49->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel49->Name = L"tableLayoutPanel49";
 			this->tableLayoutPanel49->RowCount = 1;
 			this->tableLayoutPanel49->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel49->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel49->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel49->TabIndex = 16;
 			// 
 			// EGermany_USA
@@ -5759,9 +6037,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->EGermany_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->EGermany_USA->ForeColor = System::Drawing::Color::Blue;
-			this->EGermany_USA->Location = System::Drawing::Point(4, 1);
+			this->EGermany_USA->Location = System::Drawing::Point(3, 1);
+			this->EGermany_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->EGermany_USA->Name = L"EGermany_USA";
-			this->EGermany_USA->Size = System::Drawing::Size(26, 17);
+			this->EGermany_USA->Size = System::Drawing::Size(14, 14);
 			this->EGermany_USA->TabIndex = 0;
 			this->EGermany_USA->Text = L"10";
 			this->EGermany_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5773,9 +6052,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->EGermany_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->EGermany_USSR->ForeColor = System::Drawing::Color::Red;
-			this->EGermany_USSR->Location = System::Drawing::Point(37, 1);
+			this->EGermany_USSR->Location = System::Drawing::Point(28, 1);
+			this->EGermany_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->EGermany_USSR->Name = L"EGermany_USSR";
-			this->EGermany_USSR->Size = System::Drawing::Size(26, 17);
+			this->EGermany_USSR->Size = System::Drawing::Size(14, 14);
 			this->EGermany_USSR->TabIndex = 5;
 			this->EGermany_USSR->Text = L"10";
 			this->EGermany_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5783,18 +6063,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label148
 			// 
 			this->label148->AutoSize = true;
-			this->label148->Location = System::Drawing::Point(124, 240);
+			this->label148->Location = System::Drawing::Point(93, 195);
+			this->label148->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label148->Name = L"label148";
-			this->label148->Size = System::Drawing::Size(58, 17);
+			this->label148->Size = System::Drawing::Size(46, 13);
 			this->label148->TabIndex = 31;
 			this->label148->Text = L"Sweden";
 			// 
 			// label149
 			// 
 			this->label149->AutoSize = true;
-			this->label149->Location = System::Drawing::Point(17, 240);
+			this->label149->Location = System::Drawing::Point(13, 195);
+			this->label149->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label149->Name = L"label149";
-			this->label149->Size = System::Drawing::Size(65, 17);
+			this->label149->Size = System::Drawing::Size(50, 13);
 			this->label149->TabIndex = 15;
 			this->label149->Text = L"Denmark";
 			// 
@@ -5808,11 +6090,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel50->Controls->Add(this->Sweden_USA, 0, 0);
 			this->tableLayoutPanel50->Controls->Add(this->Sweden_USSR, 1, 0);
-			this->tableLayoutPanel50->Location = System::Drawing::Point(127, 260);
+			this->tableLayoutPanel50->Location = System::Drawing::Point(95, 211);
+			this->tableLayoutPanel50->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel50->Name = L"tableLayoutPanel50";
 			this->tableLayoutPanel50->RowCount = 1;
 			this->tableLayoutPanel50->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel50->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel50->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel50->TabIndex = 30;
 			// 
 			// Sweden_USA
@@ -5822,9 +6105,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Sweden_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Sweden_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Sweden_USA->Location = System::Drawing::Point(4, 1);
+			this->Sweden_USA->Location = System::Drawing::Point(3, 1);
+			this->Sweden_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Sweden_USA->Name = L"Sweden_USA";
-			this->Sweden_USA->Size = System::Drawing::Size(26, 17);
+			this->Sweden_USA->Size = System::Drawing::Size(14, 14);
 			this->Sweden_USA->TabIndex = 0;
 			this->Sweden_USA->Text = L"10";
 			this->Sweden_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5836,9 +6120,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Sweden_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Sweden_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Sweden_USSR->Location = System::Drawing::Point(37, 1);
+			this->Sweden_USSR->Location = System::Drawing::Point(28, 1);
+			this->Sweden_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Sweden_USSR->Name = L"Sweden_USSR";
-			this->Sweden_USSR->Size = System::Drawing::Size(26, 17);
+			this->Sweden_USSR->Size = System::Drawing::Size(14, 14);
 			this->Sweden_USSR->TabIndex = 5;
 			this->Sweden_USSR->Text = L"10";
 			this->Sweden_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5853,11 +6138,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel51->Controls->Add(this->Denmark_USA, 0, 0);
 			this->tableLayoutPanel51->Controls->Add(this->Denmark_USSR, 1, 0);
-			this->tableLayoutPanel51->Location = System::Drawing::Point(20, 260);
+			this->tableLayoutPanel51->Location = System::Drawing::Point(15, 211);
+			this->tableLayoutPanel51->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel51->Name = L"tableLayoutPanel51";
 			this->tableLayoutPanel51->RowCount = 1;
 			this->tableLayoutPanel51->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel51->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel51->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel51->TabIndex = 14;
 			// 
 			// Denmark_USA
@@ -5867,9 +6153,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Denmark_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Denmark_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Denmark_USA->Location = System::Drawing::Point(4, 1);
+			this->Denmark_USA->Location = System::Drawing::Point(3, 1);
+			this->Denmark_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Denmark_USA->Name = L"Denmark_USA";
-			this->Denmark_USA->Size = System::Drawing::Size(26, 17);
+			this->Denmark_USA->Size = System::Drawing::Size(14, 14);
 			this->Denmark_USA->TabIndex = 0;
 			this->Denmark_USA->Text = L"10";
 			this->Denmark_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5881,9 +6168,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Denmark_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Denmark_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Denmark_USSR->Location = System::Drawing::Point(37, 1);
+			this->Denmark_USSR->Location = System::Drawing::Point(28, 1);
+			this->Denmark_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Denmark_USSR->Name = L"Denmark_USSR";
-			this->Denmark_USSR->Size = System::Drawing::Size(26, 17);
+			this->Denmark_USSR->Size = System::Drawing::Size(14, 14);
 			this->Denmark_USSR->TabIndex = 5;
 			this->Denmark_USSR->Text = L"10";
 			this->Denmark_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5891,18 +6179,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label154
 			// 
 			this->label154->AutoSize = true;
-			this->label154->Location = System::Drawing::Point(124, 152);
+			this->label154->Location = System::Drawing::Point(93, 124);
+			this->label154->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label154->Name = L"label154";
-			this->label154->Size = System::Drawing::Size(64, 17);
+			this->label154->Size = System::Drawing::Size(49, 13);
 			this->label154->TabIndex = 29;
 			this->label154->Text = L"Romania";
 			// 
 			// label155
 			// 
 			this->label155->AutoSize = true;
-			this->label155->Location = System::Drawing::Point(17, 196);
+			this->label155->Location = System::Drawing::Point(13, 159);
+			this->label155->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label155->Name = L"label155";
-			this->label155->Size = System::Drawing::Size(106, 17);
+			this->label155->Size = System::Drawing::Size(82, 13);
 			this->label155->TabIndex = 13;
 			this->label155->Text = L"Czechoslovakia";
 			// 
@@ -5916,11 +6206,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel52->Controls->Add(this->Romania_USA, 0, 0);
 			this->tableLayoutPanel52->Controls->Add(this->Romania_USSR, 1, 0);
-			this->tableLayoutPanel52->Location = System::Drawing::Point(127, 172);
+			this->tableLayoutPanel52->Location = System::Drawing::Point(95, 140);
+			this->tableLayoutPanel52->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel52->Name = L"tableLayoutPanel52";
 			this->tableLayoutPanel52->RowCount = 1;
 			this->tableLayoutPanel52->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel52->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel52->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel52->TabIndex = 28;
 			// 
 			// Romania_USA
@@ -5930,9 +6221,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Romania_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Romania_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Romania_USA->Location = System::Drawing::Point(4, 1);
+			this->Romania_USA->Location = System::Drawing::Point(3, 1);
+			this->Romania_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Romania_USA->Name = L"Romania_USA";
-			this->Romania_USA->Size = System::Drawing::Size(26, 17);
+			this->Romania_USA->Size = System::Drawing::Size(14, 14);
 			this->Romania_USA->TabIndex = 0;
 			this->Romania_USA->Text = L"10";
 			this->Romania_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5944,9 +6236,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Romania_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Romania_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Romania_USSR->Location = System::Drawing::Point(37, 1);
+			this->Romania_USSR->Location = System::Drawing::Point(28, 1);
+			this->Romania_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Romania_USSR->Name = L"Romania_USSR";
-			this->Romania_USSR->Size = System::Drawing::Size(26, 17);
+			this->Romania_USSR->Size = System::Drawing::Size(14, 14);
 			this->Romania_USSR->TabIndex = 5;
 			this->Romania_USSR->Text = L"10";
 			this->Romania_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5961,11 +6254,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel53->Controls->Add(this->Czechoslovakia_USA, 0, 0);
 			this->tableLayoutPanel53->Controls->Add(this->Czechoslovakia_USSR, 1, 0);
-			this->tableLayoutPanel53->Location = System::Drawing::Point(20, 216);
+			this->tableLayoutPanel53->Location = System::Drawing::Point(15, 176);
+			this->tableLayoutPanel53->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel53->Name = L"tableLayoutPanel53";
 			this->tableLayoutPanel53->RowCount = 1;
 			this->tableLayoutPanel53->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel53->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel53->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel53->TabIndex = 12;
 			// 
 			// Czechoslovakia_USA
@@ -5975,9 +6269,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Czechoslovakia_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Czechoslovakia_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Czechoslovakia_USA->Location = System::Drawing::Point(4, 1);
+			this->Czechoslovakia_USA->Location = System::Drawing::Point(3, 1);
+			this->Czechoslovakia_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Czechoslovakia_USA->Name = L"Czechoslovakia_USA";
-			this->Czechoslovakia_USA->Size = System::Drawing::Size(26, 17);
+			this->Czechoslovakia_USA->Size = System::Drawing::Size(14, 14);
 			this->Czechoslovakia_USA->TabIndex = 0;
 			this->Czechoslovakia_USA->Text = L"10";
 			this->Czechoslovakia_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5989,9 +6284,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Czechoslovakia_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Czechoslovakia_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Czechoslovakia_USSR->Location = System::Drawing::Point(37, 1);
+			this->Czechoslovakia_USSR->Location = System::Drawing::Point(28, 1);
+			this->Czechoslovakia_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Czechoslovakia_USSR->Name = L"Czechoslovakia_USSR";
-			this->Czechoslovakia_USSR->Size = System::Drawing::Size(26, 17);
+			this->Czechoslovakia_USSR->Size = System::Drawing::Size(14, 14);
 			this->Czechoslovakia_USSR->TabIndex = 5;
 			this->Czechoslovakia_USSR->Text = L"10";
 			this->Czechoslovakia_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -5999,18 +6295,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label160
 			// 
 			this->label160->AutoSize = true;
-			this->label160->Location = System::Drawing::Point(124, 110);
+			this->label160->Location = System::Drawing::Point(93, 89);
+			this->label160->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label160->Name = L"label160";
-			this->label160->Size = System::Drawing::Size(52, 17);
+			this->label160->Size = System::Drawing::Size(40, 13);
 			this->label160->TabIndex = 24;
 			this->label160->Text = L"Poland";
 			// 
 			// label161
 			// 
 			this->label161->AutoSize = true;
-			this->label161->Location = System::Drawing::Point(17, 152);
+			this->label161->Location = System::Drawing::Point(13, 124);
+			this->label161->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label161->Name = L"label161";
-			this->label161->Size = System::Drawing::Size(57, 17);
+			this->label161->Size = System::Drawing::Size(44, 13);
 			this->label161->TabIndex = 9;
 			this->label161->Text = L"Canada";
 			// 
@@ -6024,11 +6322,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel54->Controls->Add(this->Poland_USA, 0, 0);
 			this->tableLayoutPanel54->Controls->Add(this->Poland_USSR, 1, 0);
-			this->tableLayoutPanel54->Location = System::Drawing::Point(127, 130);
+			this->tableLayoutPanel54->Location = System::Drawing::Point(95, 106);
+			this->tableLayoutPanel54->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel54->Name = L"tableLayoutPanel54";
 			this->tableLayoutPanel54->RowCount = 1;
 			this->tableLayoutPanel54->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel54->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel54->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel54->TabIndex = 22;
 			// 
 			// Poland_USA
@@ -6038,9 +6337,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Poland_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Poland_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Poland_USA->Location = System::Drawing::Point(4, 1);
+			this->Poland_USA->Location = System::Drawing::Point(3, 1);
+			this->Poland_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Poland_USA->Name = L"Poland_USA";
-			this->Poland_USA->Size = System::Drawing::Size(26, 17);
+			this->Poland_USA->Size = System::Drawing::Size(14, 14);
 			this->Poland_USA->TabIndex = 0;
 			this->Poland_USA->Text = L"10";
 			this->Poland_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6052,9 +6352,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Poland_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Poland_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Poland_USSR->Location = System::Drawing::Point(37, 1);
+			this->Poland_USSR->Location = System::Drawing::Point(28, 1);
+			this->Poland_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Poland_USSR->Name = L"Poland_USSR";
-			this->Poland_USSR->Size = System::Drawing::Size(26, 17);
+			this->Poland_USSR->Size = System::Drawing::Size(14, 14);
 			this->Poland_USSR->TabIndex = 5;
 			this->Poland_USSR->Text = L"10";
 			this->Poland_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6069,11 +6370,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel55->Controls->Add(this->Canada_USA, 0, 0);
 			this->tableLayoutPanel55->Controls->Add(this->Canada_USSR, 1, 0);
-			this->tableLayoutPanel55->Location = System::Drawing::Point(20, 172);
+			this->tableLayoutPanel55->Location = System::Drawing::Point(15, 140);
+			this->tableLayoutPanel55->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel55->Name = L"tableLayoutPanel55";
 			this->tableLayoutPanel55->RowCount = 1;
 			this->tableLayoutPanel55->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel55->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel55->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel55->TabIndex = 8;
 			// 
 			// Canada_USA
@@ -6083,9 +6385,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Canada_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Canada_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Canada_USA->Location = System::Drawing::Point(4, 1);
+			this->Canada_USA->Location = System::Drawing::Point(3, 1);
+			this->Canada_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Canada_USA->Name = L"Canada_USA";
-			this->Canada_USA->Size = System::Drawing::Size(26, 17);
+			this->Canada_USA->Size = System::Drawing::Size(14, 14);
 			this->Canada_USA->TabIndex = 0;
 			this->Canada_USA->Text = L"10";
 			this->Canada_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6097,9 +6400,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Canada_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Canada_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Canada_USSR->Location = System::Drawing::Point(37, 1);
+			this->Canada_USSR->Location = System::Drawing::Point(28, 1);
+			this->Canada_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Canada_USSR->Name = L"Canada_USSR";
-			this->Canada_USSR->Size = System::Drawing::Size(26, 17);
+			this->Canada_USSR->Size = System::Drawing::Size(14, 14);
 			this->Canada_USSR->TabIndex = 5;
 			this->Canada_USSR->Text = L"10";
 			this->Canada_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6107,18 +6411,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label166
 			// 
 			this->label166->AutoSize = true;
-			this->label166->Location = System::Drawing::Point(124, 66);
+			this->label166->Location = System::Drawing::Point(93, 54);
+			this->label166->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label166->Name = L"label166";
-			this->label166->Size = System::Drawing::Size(55, 17);
+			this->label166->Size = System::Drawing::Size(43, 13);
 			this->label166->TabIndex = 27;
 			this->label166->Text = L"Norway";
 			// 
 			// label167
 			// 
 			this->label167->AutoSize = true;
-			this->label167->Location = System::Drawing::Point(17, 109);
+			this->label167->Location = System::Drawing::Point(13, 89);
+			this->label167->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label167->Name = L"label167";
-			this->label167->Size = System::Drawing::Size(60, 17);
+			this->label167->Size = System::Drawing::Size(45, 13);
 			this->label167->TabIndex = 11;
 			this->label167->Text = L"Bulgaria";
 			// 
@@ -6132,11 +6438,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel56->Controls->Add(this->Norway_USA, 0, 0);
 			this->tableLayoutPanel56->Controls->Add(this->Norway_USSR, 1, 0);
-			this->tableLayoutPanel56->Location = System::Drawing::Point(127, 86);
+			this->tableLayoutPanel56->Location = System::Drawing::Point(95, 70);
+			this->tableLayoutPanel56->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel56->Name = L"tableLayoutPanel56";
 			this->tableLayoutPanel56->RowCount = 1;
 			this->tableLayoutPanel56->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel56->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel56->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel56->TabIndex = 26;
 			// 
 			// Norway_USA
@@ -6146,9 +6453,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Norway_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Norway_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Norway_USA->Location = System::Drawing::Point(4, 1);
+			this->Norway_USA->Location = System::Drawing::Point(3, 1);
+			this->Norway_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Norway_USA->Name = L"Norway_USA";
-			this->Norway_USA->Size = System::Drawing::Size(26, 17);
+			this->Norway_USA->Size = System::Drawing::Size(14, 14);
 			this->Norway_USA->TabIndex = 0;
 			this->Norway_USA->Text = L"10";
 			this->Norway_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6160,9 +6468,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Norway_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Norway_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Norway_USSR->Location = System::Drawing::Point(37, 1);
+			this->Norway_USSR->Location = System::Drawing::Point(28, 1);
+			this->Norway_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Norway_USSR->Name = L"Norway_USSR";
-			this->Norway_USSR->Size = System::Drawing::Size(26, 17);
+			this->Norway_USSR->Size = System::Drawing::Size(14, 14);
 			this->Norway_USSR->TabIndex = 5;
 			this->Norway_USSR->Text = L"10";
 			this->Norway_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6170,9 +6479,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label170
 			// 
 			this->label170->AutoSize = true;
-			this->label170->Location = System::Drawing::Point(124, 23);
+			this->label170->Location = System::Drawing::Point(93, 19);
+			this->label170->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label170->Name = L"label170";
-			this->label170->Size = System::Drawing::Size(33, 17);
+			this->label170->Size = System::Drawing::Size(26, 13);
 			this->label170->TabIndex = 25;
 			this->label170->Text = L"Italy";
 			// 
@@ -6186,11 +6496,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel57->Controls->Add(this->Bulgaria_USA, 0, 0);
 			this->tableLayoutPanel57->Controls->Add(this->Bulgaria_USSR, 1, 0);
-			this->tableLayoutPanel57->Location = System::Drawing::Point(20, 129);
+			this->tableLayoutPanel57->Location = System::Drawing::Point(15, 105);
+			this->tableLayoutPanel57->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel57->Name = L"tableLayoutPanel57";
 			this->tableLayoutPanel57->RowCount = 1;
 			this->tableLayoutPanel57->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel57->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel57->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel57->TabIndex = 10;
 			// 
 			// Bulgaria_USA
@@ -6200,9 +6511,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Bulgaria_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Bulgaria_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Bulgaria_USA->Location = System::Drawing::Point(4, 1);
+			this->Bulgaria_USA->Location = System::Drawing::Point(3, 1);
+			this->Bulgaria_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Bulgaria_USA->Name = L"Bulgaria_USA";
-			this->Bulgaria_USA->Size = System::Drawing::Size(26, 17);
+			this->Bulgaria_USA->Size = System::Drawing::Size(14, 14);
 			this->Bulgaria_USA->TabIndex = 0;
 			this->Bulgaria_USA->Text = L"10";
 			this->Bulgaria_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6214,9 +6526,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Bulgaria_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Bulgaria_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Bulgaria_USSR->Location = System::Drawing::Point(37, 1);
+			this->Bulgaria_USSR->Location = System::Drawing::Point(28, 1);
+			this->Bulgaria_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Bulgaria_USSR->Name = L"Bulgaria_USSR";
-			this->Bulgaria_USSR->Size = System::Drawing::Size(26, 17);
+			this->Bulgaria_USSR->Size = System::Drawing::Size(14, 14);
 			this->Bulgaria_USSR->TabIndex = 5;
 			this->Bulgaria_USSR->Text = L"10";
 			this->Bulgaria_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6224,18 +6537,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label173
 			// 
 			this->label173->AutoSize = true;
-			this->label173->Location = System::Drawing::Point(17, 460);
+			this->label173->Location = System::Drawing::Point(13, 374);
+			this->label173->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label173->Name = L"label173";
-			this->label173->Size = System::Drawing::Size(62, 17);
+			this->label173->Size = System::Drawing::Size(47, 13);
 			this->label173->TabIndex = 21;
 			this->label173->Text = L"Hungary";
 			// 
 			// label174
 			// 
 			this->label174->AutoSize = true;
-			this->label174->Location = System::Drawing::Point(17, 66);
+			this->label174->Location = System::Drawing::Point(13, 54);
+			this->label174->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label174->Name = L"label174";
-			this->label174->Size = System::Drawing::Size(50, 17);
+			this->label174->Size = System::Drawing::Size(39, 13);
 			this->label174->TabIndex = 9;
 			this->label174->Text = L"Benlux";
 			// 
@@ -6249,11 +6564,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel58->Controls->Add(this->Italy_USA, 0, 0);
 			this->tableLayoutPanel58->Controls->Add(this->Italy_USSR, 1, 0);
-			this->tableLayoutPanel58->Location = System::Drawing::Point(127, 43);
+			this->tableLayoutPanel58->Location = System::Drawing::Point(95, 35);
+			this->tableLayoutPanel58->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel58->Name = L"tableLayoutPanel58";
 			this->tableLayoutPanel58->RowCount = 1;
 			this->tableLayoutPanel58->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel58->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel58->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel58->TabIndex = 23;
 			// 
 			// Italy_USA
@@ -6263,9 +6579,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Italy_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Italy_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Italy_USA->Location = System::Drawing::Point(4, 1);
+			this->Italy_USA->Location = System::Drawing::Point(3, 1);
+			this->Italy_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Italy_USA->Name = L"Italy_USA";
-			this->Italy_USA->Size = System::Drawing::Size(26, 17);
+			this->Italy_USA->Size = System::Drawing::Size(14, 14);
 			this->Italy_USA->TabIndex = 0;
 			this->Italy_USA->Text = L"10";
 			this->Italy_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6277,9 +6594,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Italy_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Italy_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Italy_USSR->Location = System::Drawing::Point(37, 1);
+			this->Italy_USSR->Location = System::Drawing::Point(28, 1);
+			this->Italy_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Italy_USSR->Name = L"Italy_USSR";
-			this->Italy_USSR->Size = System::Drawing::Size(26, 17);
+			this->Italy_USSR->Size = System::Drawing::Size(14, 14);
 			this->Italy_USSR->TabIndex = 5;
 			this->Italy_USSR->Text = L"10";
 			this->Italy_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6287,9 +6605,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label177
 			// 
 			this->label177->AutoSize = true;
-			this->label177->Location = System::Drawing::Point(17, 23);
+			this->label177->Location = System::Drawing::Point(13, 19);
+			this->label177->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label177->Name = L"label177";
-			this->label177->Size = System::Drawing::Size(52, 17);
+			this->label177->Size = System::Drawing::Size(39, 13);
 			this->label177->TabIndex = 7;
 			this->label177->Text = L"Austria";
 			// 
@@ -6303,11 +6622,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel59->Controls->Add(this->Hungary_USA, 0, 0);
 			this->tableLayoutPanel59->Controls->Add(this->Hungary_USSR, 1, 0);
-			this->tableLayoutPanel59->Location = System::Drawing::Point(20, 480);
+			this->tableLayoutPanel59->Location = System::Drawing::Point(15, 390);
+			this->tableLayoutPanel59->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel59->Name = L"tableLayoutPanel59";
 			this->tableLayoutPanel59->RowCount = 1;
 			this->tableLayoutPanel59->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel59->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel59->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel59->TabIndex = 20;
 			// 
 			// Hungary_USA
@@ -6317,9 +6637,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Hungary_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Hungary_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Hungary_USA->Location = System::Drawing::Point(4, 1);
+			this->Hungary_USA->Location = System::Drawing::Point(3, 1);
+			this->Hungary_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Hungary_USA->Name = L"Hungary_USA";
-			this->Hungary_USA->Size = System::Drawing::Size(26, 17);
+			this->Hungary_USA->Size = System::Drawing::Size(14, 14);
 			this->Hungary_USA->TabIndex = 0;
 			this->Hungary_USA->Text = L"10";
 			this->Hungary_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6331,9 +6652,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Hungary_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Hungary_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Hungary_USSR->Location = System::Drawing::Point(37, 1);
+			this->Hungary_USSR->Location = System::Drawing::Point(28, 1);
+			this->Hungary_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Hungary_USSR->Name = L"Hungary_USSR";
-			this->Hungary_USSR->Size = System::Drawing::Size(26, 17);
+			this->Hungary_USSR->Size = System::Drawing::Size(14, 14);
 			this->Hungary_USSR->TabIndex = 5;
 			this->Hungary_USSR->Text = L"10";
 			this->Hungary_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6348,11 +6670,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel60->Controls->Add(this->Benlux_USA, 0, 0);
 			this->tableLayoutPanel60->Controls->Add(this->Benlux_USSR, 1, 0);
-			this->tableLayoutPanel60->Location = System::Drawing::Point(20, 86);
+			this->tableLayoutPanel60->Location = System::Drawing::Point(15, 70);
+			this->tableLayoutPanel60->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel60->Name = L"tableLayoutPanel60";
 			this->tableLayoutPanel60->RowCount = 1;
 			this->tableLayoutPanel60->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel60->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel60->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel60->TabIndex = 8;
 			// 
 			// Benlux_USA
@@ -6362,9 +6685,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Benlux_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Benlux_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Benlux_USA->Location = System::Drawing::Point(4, 1);
+			this->Benlux_USA->Location = System::Drawing::Point(3, 1);
+			this->Benlux_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Benlux_USA->Name = L"Benlux_USA";
-			this->Benlux_USA->Size = System::Drawing::Size(26, 17);
+			this->Benlux_USA->Size = System::Drawing::Size(14, 14);
 			this->Benlux_USA->TabIndex = 0;
 			this->Benlux_USA->Text = L"10";
 			this->Benlux_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6376,9 +6700,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Benlux_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Benlux_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Benlux_USSR->Location = System::Drawing::Point(37, 1);
+			this->Benlux_USSR->Location = System::Drawing::Point(28, 1);
+			this->Benlux_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Benlux_USSR->Name = L"Benlux_USSR";
-			this->Benlux_USSR->Size = System::Drawing::Size(26, 17);
+			this->Benlux_USSR->Size = System::Drawing::Size(14, 14);
 			this->Benlux_USSR->TabIndex = 5;
 			this->Benlux_USSR->Text = L"10";
 			this->Benlux_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6393,11 +6718,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel61->Controls->Add(this->Austria_USA, 0, 0);
 			this->tableLayoutPanel61->Controls->Add(this->Austria_USSR, 1, 0);
-			this->tableLayoutPanel61->Location = System::Drawing::Point(20, 43);
+			this->tableLayoutPanel61->Location = System::Drawing::Point(15, 35);
+			this->tableLayoutPanel61->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel61->Name = L"tableLayoutPanel61";
 			this->tableLayoutPanel61->RowCount = 1;
 			this->tableLayoutPanel61->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel61->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel61->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel61->TabIndex = 6;
 			// 
 			// Austria_USA
@@ -6407,9 +6733,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Austria_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Austria_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Austria_USA->Location = System::Drawing::Point(4, 1);
+			this->Austria_USA->Location = System::Drawing::Point(3, 1);
+			this->Austria_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Austria_USA->Name = L"Austria_USA";
-			this->Austria_USA->Size = System::Drawing::Size(26, 17);
+			this->Austria_USA->Size = System::Drawing::Size(14, 14);
 			this->Austria_USA->TabIndex = 0;
 			this->Austria_USA->Text = L"10";
 			this->Austria_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6421,9 +6748,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Austria_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Austria_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Austria_USSR->Location = System::Drawing::Point(37, 1);
+			this->Austria_USSR->Location = System::Drawing::Point(28, 1);
+			this->Austria_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Austria_USSR->Name = L"Austria_USSR";
-			this->Austria_USSR->Size = System::Drawing::Size(26, 17);
+			this->Austria_USSR->Size = System::Drawing::Size(14, 14);
 			this->Austria_USSR->TabIndex = 5;
 			this->Austria_USSR->Text = L"10";
 			this->Austria_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6450,9 +6778,11 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->groupBox5->Controls->Add(this->tableLayoutPanel71);
 			this->groupBox5->Controls->Add(this->tableLayoutPanel72);
 			this->groupBox5->Controls->Add(this->tableLayoutPanel73);
-			this->groupBox5->Location = System::Drawing::Point(911, 31);
+			this->groupBox5->Location = System::Drawing::Point(683, 25);
+			this->groupBox5->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->groupBox5->Name = L"groupBox5";
-			this->groupBox5->Size = System::Drawing::Size(191, 258);
+			this->groupBox5->Padding = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->groupBox5->Size = System::Drawing::Size(143, 210);
 			this->groupBox5->TabIndex = 8;
 			this->groupBox5->TabStop = false;
 			this->groupBox5->Text = L"Middle East";
@@ -6460,18 +6790,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label190
 			// 
 			this->label190->AutoSize = true;
-			this->label190->Location = System::Drawing::Point(100, 196);
+			this->label190->Location = System::Drawing::Point(75, 159);
+			this->label190->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label190->Name = L"label190";
-			this->label190->Size = System::Drawing::Size(40, 17);
+			this->label190->Size = System::Drawing::Size(30, 13);
 			this->label190->TabIndex = 29;
 			this->label190->Text = L"Syria";
 			// 
 			// label191
 			// 
 			this->label191->AutoSize = true;
-			this->label191->Location = System::Drawing::Point(17, 196);
+			this->label191->Location = System::Drawing::Point(13, 159);
+			this->label191->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label191->Name = L"label191";
-			this->label191->Size = System::Drawing::Size(42, 17);
+			this->label191->Size = System::Drawing::Size(32, 13);
 			this->label191->TabIndex = 13;
 			this->label191->Text = L"Israel";
 			// 
@@ -6485,11 +6817,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel64->Controls->Add(this->Syria_USA, 0, 0);
 			this->tableLayoutPanel64->Controls->Add(this->Syria_USSR, 1, 0);
-			this->tableLayoutPanel64->Location = System::Drawing::Point(103, 216);
+			this->tableLayoutPanel64->Location = System::Drawing::Point(77, 176);
+			this->tableLayoutPanel64->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel64->Name = L"tableLayoutPanel64";
 			this->tableLayoutPanel64->RowCount = 1;
 			this->tableLayoutPanel64->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel64->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel64->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel64->TabIndex = 28;
 			// 
 			// Syria_USA
@@ -6499,9 +6832,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Syria_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Syria_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Syria_USA->Location = System::Drawing::Point(4, 1);
+			this->Syria_USA->Location = System::Drawing::Point(3, 1);
+			this->Syria_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Syria_USA->Name = L"Syria_USA";
-			this->Syria_USA->Size = System::Drawing::Size(26, 17);
+			this->Syria_USA->Size = System::Drawing::Size(14, 14);
 			this->Syria_USA->TabIndex = 0;
 			this->Syria_USA->Text = L"10";
 			this->Syria_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6513,9 +6847,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Syria_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Syria_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Syria_USSR->Location = System::Drawing::Point(37, 1);
+			this->Syria_USSR->Location = System::Drawing::Point(28, 1);
+			this->Syria_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Syria_USSR->Name = L"Syria_USSR";
-			this->Syria_USSR->Size = System::Drawing::Size(26, 17);
+			this->Syria_USSR->Size = System::Drawing::Size(14, 14);
 			this->Syria_USSR->TabIndex = 5;
 			this->Syria_USSR->Text = L"10";
 			this->Syria_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6530,11 +6865,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel65->Controls->Add(this->Israel_USA, 0, 0);
 			this->tableLayoutPanel65->Controls->Add(this->Israel_USSR, 1, 0);
-			this->tableLayoutPanel65->Location = System::Drawing::Point(20, 216);
+			this->tableLayoutPanel65->Location = System::Drawing::Point(15, 176);
+			this->tableLayoutPanel65->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel65->Name = L"tableLayoutPanel65";
 			this->tableLayoutPanel65->RowCount = 1;
 			this->tableLayoutPanel65->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel65->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel65->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel65->TabIndex = 12;
 			// 
 			// Israel_USA
@@ -6544,9 +6880,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Israel_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Israel_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Israel_USA->Location = System::Drawing::Point(4, 1);
+			this->Israel_USA->Location = System::Drawing::Point(3, 1);
+			this->Israel_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Israel_USA->Name = L"Israel_USA";
-			this->Israel_USA->Size = System::Drawing::Size(26, 17);
+			this->Israel_USA->Size = System::Drawing::Size(14, 14);
 			this->Israel_USA->TabIndex = 0;
 			this->Israel_USA->Text = L"10";
 			this->Israel_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6558,9 +6895,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Israel_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Israel_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Israel_USSR->Location = System::Drawing::Point(37, 1);
+			this->Israel_USSR->Location = System::Drawing::Point(28, 1);
+			this->Israel_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Israel_USSR->Name = L"Israel_USSR";
-			this->Israel_USSR->Size = System::Drawing::Size(26, 17);
+			this->Israel_USSR->Size = System::Drawing::Size(14, 14);
 			this->Israel_USSR->TabIndex = 5;
 			this->Israel_USSR->Text = L"10";
 			this->Israel_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6568,18 +6906,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label196
 			// 
 			this->label196->AutoSize = true;
-			this->label196->Location = System::Drawing::Point(100, 152);
+			this->label196->Location = System::Drawing::Point(75, 124);
+			this->label196->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label196->Name = L"label196";
-			this->label196->Size = System::Drawing::Size(89, 17);
+			this->label196->Size = System::Drawing::Size(67, 13);
 			this->label196->TabIndex = 24;
 			this->label196->Text = L"Saudi Arabia";
 			// 
 			// label197
 			// 
 			this->label197->AutoSize = true;
-			this->label197->Location = System::Drawing::Point(17, 152);
+			this->label197->Location = System::Drawing::Point(13, 124);
+			this->label197->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label197->Name = L"label197";
-			this->label197->Size = System::Drawing::Size(32, 17);
+			this->label197->Size = System::Drawing::Size(25, 13);
 			this->label197->TabIndex = 9;
 			this->label197->Text = L"Iraq";
 			// 
@@ -6593,11 +6933,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel66->Controls->Add(this->SaudiArabia_USA, 0, 0);
 			this->tableLayoutPanel66->Controls->Add(this->SaudiArabia_USSR, 1, 0);
-			this->tableLayoutPanel66->Location = System::Drawing::Point(103, 172);
+			this->tableLayoutPanel66->Location = System::Drawing::Point(77, 140);
+			this->tableLayoutPanel66->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel66->Name = L"tableLayoutPanel66";
 			this->tableLayoutPanel66->RowCount = 1;
 			this->tableLayoutPanel66->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel66->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel66->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel66->TabIndex = 22;
 			// 
 			// SaudiArabia_USA
@@ -6607,9 +6948,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->SaudiArabia_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->SaudiArabia_USA->ForeColor = System::Drawing::Color::Blue;
-			this->SaudiArabia_USA->Location = System::Drawing::Point(4, 1);
+			this->SaudiArabia_USA->Location = System::Drawing::Point(3, 1);
+			this->SaudiArabia_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->SaudiArabia_USA->Name = L"SaudiArabia_USA";
-			this->SaudiArabia_USA->Size = System::Drawing::Size(26, 17);
+			this->SaudiArabia_USA->Size = System::Drawing::Size(14, 14);
 			this->SaudiArabia_USA->TabIndex = 0;
 			this->SaudiArabia_USA->Text = L"10";
 			this->SaudiArabia_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6621,9 +6963,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->SaudiArabia_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->SaudiArabia_USSR->ForeColor = System::Drawing::Color::Red;
-			this->SaudiArabia_USSR->Location = System::Drawing::Point(37, 1);
+			this->SaudiArabia_USSR->Location = System::Drawing::Point(28, 1);
+			this->SaudiArabia_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->SaudiArabia_USSR->Name = L"SaudiArabia_USSR";
-			this->SaudiArabia_USSR->Size = System::Drawing::Size(26, 17);
+			this->SaudiArabia_USSR->Size = System::Drawing::Size(14, 14);
 			this->SaudiArabia_USSR->TabIndex = 5;
 			this->SaudiArabia_USSR->Text = L"10";
 			this->SaudiArabia_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6638,11 +6981,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel67->Controls->Add(this->Iraq_USA, 0, 0);
 			this->tableLayoutPanel67->Controls->Add(this->Iraq_USSR, 1, 0);
-			this->tableLayoutPanel67->Location = System::Drawing::Point(20, 172);
+			this->tableLayoutPanel67->Location = System::Drawing::Point(15, 140);
+			this->tableLayoutPanel67->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel67->Name = L"tableLayoutPanel67";
 			this->tableLayoutPanel67->RowCount = 1;
 			this->tableLayoutPanel67->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel67->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel67->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel67->TabIndex = 8;
 			// 
 			// Iraq_USA
@@ -6652,9 +6996,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Iraq_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Iraq_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Iraq_USA->Location = System::Drawing::Point(4, 1);
+			this->Iraq_USA->Location = System::Drawing::Point(3, 1);
+			this->Iraq_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Iraq_USA->Name = L"Iraq_USA";
-			this->Iraq_USA->Size = System::Drawing::Size(26, 17);
+			this->Iraq_USA->Size = System::Drawing::Size(14, 14);
 			this->Iraq_USA->TabIndex = 0;
 			this->Iraq_USA->Text = L"10";
 			this->Iraq_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6666,9 +7011,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Iraq_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Iraq_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Iraq_USSR->Location = System::Drawing::Point(37, 1);
+			this->Iraq_USSR->Location = System::Drawing::Point(28, 1);
+			this->Iraq_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Iraq_USSR->Name = L"Iraq_USSR";
-			this->Iraq_USSR->Size = System::Drawing::Size(26, 17);
+			this->Iraq_USSR->Size = System::Drawing::Size(14, 14);
 			this->Iraq_USSR->TabIndex = 5;
 			this->Iraq_USSR->Text = L"10";
 			this->Iraq_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6676,18 +7022,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label202
 			// 
 			this->label202->AutoSize = true;
-			this->label202->Location = System::Drawing::Point(100, 109);
+			this->label202->Location = System::Drawing::Point(75, 89);
+			this->label202->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label202->Name = L"label202";
-			this->label202->Size = System::Drawing::Size(42, 17);
+			this->label202->Size = System::Drawing::Size(32, 13);
 			this->label202->TabIndex = 27;
 			this->label202->Text = L"Libya";
 			// 
 			// label203
 			// 
 			this->label203->AutoSize = true;
-			this->label203->Location = System::Drawing::Point(17, 109);
+			this->label203->Location = System::Drawing::Point(13, 89);
+			this->label203->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label203->Name = L"label203";
-			this->label203->Size = System::Drawing::Size(32, 17);
+			this->label203->Size = System::Drawing::Size(25, 13);
 			this->label203->TabIndex = 11;
 			this->label203->Text = L"Iran";
 			// 
@@ -6701,11 +7049,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel68->Controls->Add(this->Libya_USA, 0, 0);
 			this->tableLayoutPanel68->Controls->Add(this->Libya_USSR, 1, 0);
-			this->tableLayoutPanel68->Location = System::Drawing::Point(103, 129);
+			this->tableLayoutPanel68->Location = System::Drawing::Point(77, 105);
+			this->tableLayoutPanel68->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel68->Name = L"tableLayoutPanel68";
 			this->tableLayoutPanel68->RowCount = 1;
 			this->tableLayoutPanel68->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel68->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel68->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel68->TabIndex = 26;
 			// 
 			// Libya_USA
@@ -6715,9 +7064,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Libya_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Libya_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Libya_USA->Location = System::Drawing::Point(4, 1);
+			this->Libya_USA->Location = System::Drawing::Point(3, 1);
+			this->Libya_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Libya_USA->Name = L"Libya_USA";
-			this->Libya_USA->Size = System::Drawing::Size(26, 17);
+			this->Libya_USA->Size = System::Drawing::Size(14, 14);
 			this->Libya_USA->TabIndex = 0;
 			this->Libya_USA->Text = L"10";
 			this->Libya_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6729,9 +7079,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Libya_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Libya_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Libya_USSR->Location = System::Drawing::Point(37, 1);
+			this->Libya_USSR->Location = System::Drawing::Point(28, 1);
+			this->Libya_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Libya_USSR->Name = L"Libya_USSR";
-			this->Libya_USSR->Size = System::Drawing::Size(26, 17);
+			this->Libya_USSR->Size = System::Drawing::Size(14, 14);
 			this->Libya_USSR->TabIndex = 5;
 			this->Libya_USSR->Text = L"10";
 			this->Libya_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6739,9 +7090,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label206
 			// 
 			this->label206->AutoSize = true;
-			this->label206->Location = System::Drawing::Point(100, 66);
+			this->label206->Location = System::Drawing::Point(75, 54);
+			this->label206->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label206->Name = L"label206";
-			this->label206->Size = System::Drawing::Size(64, 17);
+			this->label206->Size = System::Drawing::Size(49, 13);
 			this->label206->TabIndex = 25;
 			this->label206->Text = L"Lebanon";
 			// 
@@ -6755,11 +7107,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel69->Controls->Add(this->Iran_USA, 0, 0);
 			this->tableLayoutPanel69->Controls->Add(this->Iran_USSR, 1, 0);
-			this->tableLayoutPanel69->Location = System::Drawing::Point(20, 129);
+			this->tableLayoutPanel69->Location = System::Drawing::Point(15, 105);
+			this->tableLayoutPanel69->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel69->Name = L"tableLayoutPanel69";
 			this->tableLayoutPanel69->RowCount = 1;
 			this->tableLayoutPanel69->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel69->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel69->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel69->TabIndex = 10;
 			// 
 			// Iran_USA
@@ -6769,9 +7122,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Iran_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Iran_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Iran_USA->Location = System::Drawing::Point(4, 1);
+			this->Iran_USA->Location = System::Drawing::Point(3, 1);
+			this->Iran_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Iran_USA->Name = L"Iran_USA";
-			this->Iran_USA->Size = System::Drawing::Size(26, 17);
+			this->Iran_USA->Size = System::Drawing::Size(14, 14);
 			this->Iran_USA->TabIndex = 0;
 			this->Iran_USA->Text = L"10";
 			this->Iran_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6783,9 +7137,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Iran_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Iran_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Iran_USSR->Location = System::Drawing::Point(37, 1);
+			this->Iran_USSR->Location = System::Drawing::Point(28, 1);
+			this->Iran_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Iran_USSR->Name = L"Iran_USSR";
-			this->Iran_USSR->Size = System::Drawing::Size(26, 17);
+			this->Iran_USSR->Size = System::Drawing::Size(14, 14);
 			this->Iran_USSR->TabIndex = 5;
 			this->Iran_USSR->Text = L"10";
 			this->Iran_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6793,18 +7148,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label209
 			// 
 			this->label209->AutoSize = true;
-			this->label209->Location = System::Drawing::Point(100, 23);
+			this->label209->Location = System::Drawing::Point(75, 19);
+			this->label209->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label209->Name = L"label209";
-			this->label209->Size = System::Drawing::Size(52, 17);
+			this->label209->Size = System::Drawing::Size(39, 13);
 			this->label209->TabIndex = 21;
 			this->label209->Text = L"Jordan";
 			// 
 			// label210
 			// 
 			this->label210->AutoSize = true;
-			this->label210->Location = System::Drawing::Point(17, 66);
+			this->label210->Location = System::Drawing::Point(13, 54);
+			this->label210->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label210->Name = L"label210";
-			this->label210->Size = System::Drawing::Size(78, 17);
+			this->label210->Size = System::Drawing::Size(59, 13);
 			this->label210->TabIndex = 9;
 			this->label210->Text = L"Gulf States";
 			// 
@@ -6818,11 +7175,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel70->Controls->Add(this->Lebanon_USA, 0, 0);
 			this->tableLayoutPanel70->Controls->Add(this->Lebanon_USSR, 1, 0);
-			this->tableLayoutPanel70->Location = System::Drawing::Point(103, 86);
+			this->tableLayoutPanel70->Location = System::Drawing::Point(77, 70);
+			this->tableLayoutPanel70->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel70->Name = L"tableLayoutPanel70";
 			this->tableLayoutPanel70->RowCount = 1;
 			this->tableLayoutPanel70->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel70->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel70->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel70->TabIndex = 23;
 			// 
 			// Lebanon_USA
@@ -6832,9 +7190,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Lebanon_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Lebanon_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Lebanon_USA->Location = System::Drawing::Point(4, 1);
+			this->Lebanon_USA->Location = System::Drawing::Point(3, 1);
+			this->Lebanon_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Lebanon_USA->Name = L"Lebanon_USA";
-			this->Lebanon_USA->Size = System::Drawing::Size(26, 17);
+			this->Lebanon_USA->Size = System::Drawing::Size(14, 14);
 			this->Lebanon_USA->TabIndex = 0;
 			this->Lebanon_USA->Text = L"10";
 			this->Lebanon_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6846,9 +7205,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Lebanon_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Lebanon_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Lebanon_USSR->Location = System::Drawing::Point(37, 1);
+			this->Lebanon_USSR->Location = System::Drawing::Point(28, 1);
+			this->Lebanon_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Lebanon_USSR->Name = L"Lebanon_USSR";
-			this->Lebanon_USSR->Size = System::Drawing::Size(26, 17);
+			this->Lebanon_USSR->Size = System::Drawing::Size(14, 14);
 			this->Lebanon_USSR->TabIndex = 5;
 			this->Lebanon_USSR->Text = L"10";
 			this->Lebanon_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6856,9 +7216,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label213
 			// 
 			this->label213->AutoSize = true;
-			this->label213->Location = System::Drawing::Point(17, 23);
+			this->label213->Location = System::Drawing::Point(13, 19);
+			this->label213->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label213->Name = L"label213";
-			this->label213->Size = System::Drawing::Size(44, 17);
+			this->label213->Size = System::Drawing::Size(34, 13);
 			this->label213->TabIndex = 7;
 			this->label213->Text = L"Egypt";
 			// 
@@ -6872,11 +7233,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel71->Controls->Add(this->Jordan_USA, 0, 0);
 			this->tableLayoutPanel71->Controls->Add(this->Jordan_USSR, 1, 0);
-			this->tableLayoutPanel71->Location = System::Drawing::Point(103, 43);
+			this->tableLayoutPanel71->Location = System::Drawing::Point(77, 35);
+			this->tableLayoutPanel71->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel71->Name = L"tableLayoutPanel71";
 			this->tableLayoutPanel71->RowCount = 1;
 			this->tableLayoutPanel71->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel71->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel71->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel71->TabIndex = 20;
 			// 
 			// Jordan_USA
@@ -6886,9 +7248,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Jordan_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Jordan_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Jordan_USA->Location = System::Drawing::Point(4, 1);
+			this->Jordan_USA->Location = System::Drawing::Point(3, 1);
+			this->Jordan_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Jordan_USA->Name = L"Jordan_USA";
-			this->Jordan_USA->Size = System::Drawing::Size(26, 17);
+			this->Jordan_USA->Size = System::Drawing::Size(14, 14);
 			this->Jordan_USA->TabIndex = 0;
 			this->Jordan_USA->Text = L"10";
 			this->Jordan_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6900,9 +7263,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Jordan_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Jordan_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Jordan_USSR->Location = System::Drawing::Point(37, 1);
+			this->Jordan_USSR->Location = System::Drawing::Point(28, 1);
+			this->Jordan_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Jordan_USSR->Name = L"Jordan_USSR";
-			this->Jordan_USSR->Size = System::Drawing::Size(26, 17);
+			this->Jordan_USSR->Size = System::Drawing::Size(14, 14);
 			this->Jordan_USSR->TabIndex = 5;
 			this->Jordan_USSR->Text = L"10";
 			this->Jordan_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6917,11 +7281,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel72->Controls->Add(this->GulfStates_USA, 0, 0);
 			this->tableLayoutPanel72->Controls->Add(this->GulfStates_USSR, 1, 0);
-			this->tableLayoutPanel72->Location = System::Drawing::Point(20, 86);
+			this->tableLayoutPanel72->Location = System::Drawing::Point(15, 70);
+			this->tableLayoutPanel72->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel72->Name = L"tableLayoutPanel72";
 			this->tableLayoutPanel72->RowCount = 1;
 			this->tableLayoutPanel72->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel72->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel72->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel72->TabIndex = 8;
 			// 
 			// GulfStates_USA
@@ -6931,9 +7296,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->GulfStates_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->GulfStates_USA->ForeColor = System::Drawing::Color::Blue;
-			this->GulfStates_USA->Location = System::Drawing::Point(4, 1);
+			this->GulfStates_USA->Location = System::Drawing::Point(3, 1);
+			this->GulfStates_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->GulfStates_USA->Name = L"GulfStates_USA";
-			this->GulfStates_USA->Size = System::Drawing::Size(26, 17);
+			this->GulfStates_USA->Size = System::Drawing::Size(14, 14);
 			this->GulfStates_USA->TabIndex = 0;
 			this->GulfStates_USA->Text = L"10";
 			this->GulfStates_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6945,9 +7311,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->GulfStates_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->GulfStates_USSR->ForeColor = System::Drawing::Color::Red;
-			this->GulfStates_USSR->Location = System::Drawing::Point(37, 1);
+			this->GulfStates_USSR->Location = System::Drawing::Point(28, 1);
+			this->GulfStates_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->GulfStates_USSR->Name = L"GulfStates_USSR";
-			this->GulfStates_USSR->Size = System::Drawing::Size(26, 17);
+			this->GulfStates_USSR->Size = System::Drawing::Size(14, 14);
 			this->GulfStates_USSR->TabIndex = 5;
 			this->GulfStates_USSR->Text = L"10";
 			this->GulfStates_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6962,11 +7329,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel73->Controls->Add(this->Egypt_USA, 0, 0);
 			this->tableLayoutPanel73->Controls->Add(this->Egypt_USSR, 1, 0);
-			this->tableLayoutPanel73->Location = System::Drawing::Point(20, 43);
+			this->tableLayoutPanel73->Location = System::Drawing::Point(15, 35);
+			this->tableLayoutPanel73->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel73->Name = L"tableLayoutPanel73";
 			this->tableLayoutPanel73->RowCount = 1;
 			this->tableLayoutPanel73->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel73->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel73->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel73->TabIndex = 6;
 			// 
 			// Egypt_USA
@@ -6976,9 +7344,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Egypt_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Egypt_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Egypt_USA->Location = System::Drawing::Point(4, 1);
+			this->Egypt_USA->Location = System::Drawing::Point(3, 1);
+			this->Egypt_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Egypt_USA->Name = L"Egypt_USA";
-			this->Egypt_USA->Size = System::Drawing::Size(26, 17);
+			this->Egypt_USA->Size = System::Drawing::Size(14, 14);
 			this->Egypt_USA->TabIndex = 0;
 			this->Egypt_USA->Text = L"10";
 			this->Egypt_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -6990,9 +7359,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Egypt_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Egypt_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Egypt_USSR->Location = System::Drawing::Point(37, 1);
+			this->Egypt_USSR->Location = System::Drawing::Point(28, 1);
+			this->Egypt_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Egypt_USSR->Name = L"Egypt_USSR";
-			this->Egypt_USSR->Size = System::Drawing::Size(26, 17);
+			this->Egypt_USSR->Size = System::Drawing::Size(14, 14);
 			this->Egypt_USSR->TabIndex = 5;
 			this->Egypt_USSR->Text = L"10";
 			this->Egypt_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7019,9 +7389,11 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->groupBox6->Controls->Add(this->tableLayoutPanel81);
 			this->groupBox6->Controls->Add(this->tableLayoutPanel82);
 			this->groupBox6->Controls->Add(this->tableLayoutPanel83);
-			this->groupBox6->Location = System::Drawing::Point(1108, 31);
+			this->groupBox6->Location = System::Drawing::Point(831, 25);
+			this->groupBox6->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->groupBox6->Name = L"groupBox6";
-			this->groupBox6->Size = System::Drawing::Size(191, 258);
+			this->groupBox6->Padding = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->groupBox6->Size = System::Drawing::Size(143, 210);
 			this->groupBox6->TabIndex = 9;
 			this->groupBox6->TabStop = false;
 			this->groupBox6->Text = L"South America";
@@ -7029,18 +7401,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label220
 			// 
 			this->label220->AutoSize = true;
-			this->label220->Location = System::Drawing::Point(100, 196);
+			this->label220->Location = System::Drawing::Point(75, 159);
+			this->label220->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label220->Name = L"label220";
-			this->label220->Size = System::Drawing::Size(75, 17);
+			this->label220->Size = System::Drawing::Size(57, 13);
 			this->label220->TabIndex = 29;
 			this->label220->Text = L"Venezuela";
 			// 
 			// label221
 			// 
 			this->label221->AutoSize = true;
-			this->label221->Location = System::Drawing::Point(17, 196);
+			this->label221->Location = System::Drawing::Point(13, 159);
+			this->label221->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label221->Name = L"label221";
-			this->label221->Size = System::Drawing::Size(66, 17);
+			this->label221->Size = System::Drawing::Size(50, 13);
 			this->label221->TabIndex = 13;
 			this->label221->Text = L"Colombia";
 			// 
@@ -7054,11 +7428,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel74->Controls->Add(this->Venezuela_USA, 0, 0);
 			this->tableLayoutPanel74->Controls->Add(this->Venezuela_USSR, 1, 0);
-			this->tableLayoutPanel74->Location = System::Drawing::Point(103, 216);
+			this->tableLayoutPanel74->Location = System::Drawing::Point(77, 176);
+			this->tableLayoutPanel74->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel74->Name = L"tableLayoutPanel74";
 			this->tableLayoutPanel74->RowCount = 1;
 			this->tableLayoutPanel74->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel74->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel74->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel74->TabIndex = 28;
 			// 
 			// Venezuela_USA
@@ -7068,9 +7443,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Venezuela_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Venezuela_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Venezuela_USA->Location = System::Drawing::Point(4, 1);
+			this->Venezuela_USA->Location = System::Drawing::Point(3, 1);
+			this->Venezuela_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Venezuela_USA->Name = L"Venezuela_USA";
-			this->Venezuela_USA->Size = System::Drawing::Size(26, 17);
+			this->Venezuela_USA->Size = System::Drawing::Size(14, 14);
 			this->Venezuela_USA->TabIndex = 0;
 			this->Venezuela_USA->Text = L"10";
 			this->Venezuela_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7082,9 +7458,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Venezuela_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Venezuela_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Venezuela_USSR->Location = System::Drawing::Point(37, 1);
+			this->Venezuela_USSR->Location = System::Drawing::Point(28, 1);
+			this->Venezuela_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Venezuela_USSR->Name = L"Venezuela_USSR";
-			this->Venezuela_USSR->Size = System::Drawing::Size(26, 17);
+			this->Venezuela_USSR->Size = System::Drawing::Size(14, 14);
 			this->Venezuela_USSR->TabIndex = 5;
 			this->Venezuela_USSR->Text = L"10";
 			this->Venezuela_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7099,11 +7476,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel75->Controls->Add(this->Colombia_USA, 0, 0);
 			this->tableLayoutPanel75->Controls->Add(this->Colombia_USSR, 1, 0);
-			this->tableLayoutPanel75->Location = System::Drawing::Point(20, 216);
+			this->tableLayoutPanel75->Location = System::Drawing::Point(15, 176);
+			this->tableLayoutPanel75->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel75->Name = L"tableLayoutPanel75";
 			this->tableLayoutPanel75->RowCount = 1;
 			this->tableLayoutPanel75->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel75->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel75->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel75->TabIndex = 12;
 			// 
 			// Colombia_USA
@@ -7113,9 +7491,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Colombia_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Colombia_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Colombia_USA->Location = System::Drawing::Point(4, 1);
+			this->Colombia_USA->Location = System::Drawing::Point(3, 1);
+			this->Colombia_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Colombia_USA->Name = L"Colombia_USA";
-			this->Colombia_USA->Size = System::Drawing::Size(26, 17);
+			this->Colombia_USA->Size = System::Drawing::Size(14, 14);
 			this->Colombia_USA->TabIndex = 0;
 			this->Colombia_USA->Text = L"10";
 			this->Colombia_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7127,9 +7506,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Colombia_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Colombia_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Colombia_USSR->Location = System::Drawing::Point(37, 1);
+			this->Colombia_USSR->Location = System::Drawing::Point(28, 1);
+			this->Colombia_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Colombia_USSR->Name = L"Colombia_USSR";
-			this->Colombia_USSR->Size = System::Drawing::Size(26, 17);
+			this->Colombia_USSR->Size = System::Drawing::Size(14, 14);
 			this->Colombia_USSR->TabIndex = 5;
 			this->Colombia_USSR->Text = L"10";
 			this->Colombia_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7137,18 +7517,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label226
 			// 
 			this->label226->AutoSize = true;
-			this->label226->Location = System::Drawing::Point(100, 152);
+			this->label226->Location = System::Drawing::Point(75, 124);
+			this->label226->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label226->Name = L"label226";
-			this->label226->Size = System::Drawing::Size(62, 17);
+			this->label226->Size = System::Drawing::Size(47, 13);
 			this->label226->TabIndex = 24;
 			this->label226->Text = L"Uruguay";
 			// 
 			// label227
 			// 
 			this->label227->AutoSize = true;
-			this->label227->Location = System::Drawing::Point(17, 152);
+			this->label227->Location = System::Drawing::Point(13, 124);
+			this->label227->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label227->Name = L"label227";
-			this->label227->Size = System::Drawing::Size(39, 17);
+			this->label227->Size = System::Drawing::Size(30, 13);
 			this->label227->TabIndex = 9;
 			this->label227->Text = L"Chile";
 			// 
@@ -7162,11 +7544,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel76->Controls->Add(this->Uruguay_USA, 0, 0);
 			this->tableLayoutPanel76->Controls->Add(this->Uruguay_USSR, 1, 0);
-			this->tableLayoutPanel76->Location = System::Drawing::Point(103, 172);
+			this->tableLayoutPanel76->Location = System::Drawing::Point(77, 140);
+			this->tableLayoutPanel76->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel76->Name = L"tableLayoutPanel76";
 			this->tableLayoutPanel76->RowCount = 1;
 			this->tableLayoutPanel76->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel76->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel76->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel76->TabIndex = 22;
 			// 
 			// Uruguay_USA
@@ -7176,9 +7559,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Uruguay_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Uruguay_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Uruguay_USA->Location = System::Drawing::Point(4, 1);
+			this->Uruguay_USA->Location = System::Drawing::Point(3, 1);
+			this->Uruguay_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Uruguay_USA->Name = L"Uruguay_USA";
-			this->Uruguay_USA->Size = System::Drawing::Size(26, 17);
+			this->Uruguay_USA->Size = System::Drawing::Size(14, 14);
 			this->Uruguay_USA->TabIndex = 0;
 			this->Uruguay_USA->Text = L"10";
 			this->Uruguay_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7190,9 +7574,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Uruguay_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Uruguay_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Uruguay_USSR->Location = System::Drawing::Point(37, 1);
+			this->Uruguay_USSR->Location = System::Drawing::Point(28, 1);
+			this->Uruguay_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Uruguay_USSR->Name = L"Uruguay_USSR";
-			this->Uruguay_USSR->Size = System::Drawing::Size(26, 17);
+			this->Uruguay_USSR->Size = System::Drawing::Size(14, 14);
 			this->Uruguay_USSR->TabIndex = 5;
 			this->Uruguay_USSR->Text = L"10";
 			this->Uruguay_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7207,11 +7592,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel77->Controls->Add(this->Chile_USA, 0, 0);
 			this->tableLayoutPanel77->Controls->Add(this->Chile_USSR, 1, 0);
-			this->tableLayoutPanel77->Location = System::Drawing::Point(20, 172);
+			this->tableLayoutPanel77->Location = System::Drawing::Point(15, 140);
+			this->tableLayoutPanel77->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel77->Name = L"tableLayoutPanel77";
 			this->tableLayoutPanel77->RowCount = 1;
 			this->tableLayoutPanel77->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel77->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel77->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel77->TabIndex = 8;
 			// 
 			// Chile_USA
@@ -7221,9 +7607,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Chile_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Chile_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Chile_USA->Location = System::Drawing::Point(4, 1);
+			this->Chile_USA->Location = System::Drawing::Point(3, 1);
+			this->Chile_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Chile_USA->Name = L"Chile_USA";
-			this->Chile_USA->Size = System::Drawing::Size(26, 17);
+			this->Chile_USA->Size = System::Drawing::Size(14, 14);
 			this->Chile_USA->TabIndex = 0;
 			this->Chile_USA->Text = L"10";
 			this->Chile_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7235,9 +7622,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Chile_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Chile_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Chile_USSR->Location = System::Drawing::Point(37, 1);
+			this->Chile_USSR->Location = System::Drawing::Point(28, 1);
+			this->Chile_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Chile_USSR->Name = L"Chile_USSR";
-			this->Chile_USSR->Size = System::Drawing::Size(26, 17);
+			this->Chile_USSR->Size = System::Drawing::Size(14, 14);
 			this->Chile_USSR->TabIndex = 5;
 			this->Chile_USSR->Text = L"10";
 			this->Chile_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7245,18 +7633,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label232
 			// 
 			this->label232->AutoSize = true;
-			this->label232->Location = System::Drawing::Point(100, 109);
+			this->label232->Location = System::Drawing::Point(75, 89);
+			this->label232->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label232->Name = L"label232";
-			this->label232->Size = System::Drawing::Size(38, 17);
+			this->label232->Size = System::Drawing::Size(29, 13);
 			this->label232->TabIndex = 27;
 			this->label232->Text = L"Peru";
 			// 
 			// label233
 			// 
 			this->label233->AutoSize = true;
-			this->label233->Location = System::Drawing::Point(17, 109);
+			this->label233->Location = System::Drawing::Point(13, 89);
+			this->label233->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label233->Name = L"label233";
-			this->label233->Size = System::Drawing::Size(49, 17);
+			this->label233->Size = System::Drawing::Size(38, 13);
 			this->label233->TabIndex = 11;
 			this->label233->Text = L"Bolivia";
 			// 
@@ -7270,11 +7660,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel78->Controls->Add(this->Peru_USA, 0, 0);
 			this->tableLayoutPanel78->Controls->Add(this->Peru_USSR, 1, 0);
-			this->tableLayoutPanel78->Location = System::Drawing::Point(103, 129);
+			this->tableLayoutPanel78->Location = System::Drawing::Point(77, 105);
+			this->tableLayoutPanel78->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel78->Name = L"tableLayoutPanel78";
 			this->tableLayoutPanel78->RowCount = 1;
 			this->tableLayoutPanel78->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel78->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel78->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel78->TabIndex = 26;
 			// 
 			// Peru_USA
@@ -7284,9 +7675,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Peru_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Peru_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Peru_USA->Location = System::Drawing::Point(4, 1);
+			this->Peru_USA->Location = System::Drawing::Point(3, 1);
+			this->Peru_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Peru_USA->Name = L"Peru_USA";
-			this->Peru_USA->Size = System::Drawing::Size(26, 17);
+			this->Peru_USA->Size = System::Drawing::Size(14, 14);
 			this->Peru_USA->TabIndex = 0;
 			this->Peru_USA->Text = L"10";
 			this->Peru_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7298,9 +7690,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Peru_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Peru_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Peru_USSR->Location = System::Drawing::Point(37, 1);
+			this->Peru_USSR->Location = System::Drawing::Point(28, 1);
+			this->Peru_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Peru_USSR->Name = L"Peru_USSR";
-			this->Peru_USSR->Size = System::Drawing::Size(26, 17);
+			this->Peru_USSR->Size = System::Drawing::Size(14, 14);
 			this->Peru_USSR->TabIndex = 5;
 			this->Peru_USSR->Text = L"10";
 			this->Peru_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7308,9 +7701,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label236
 			// 
 			this->label236->AutoSize = true;
-			this->label236->Location = System::Drawing::Point(100, 66);
+			this->label236->Location = System::Drawing::Point(75, 54);
+			this->label236->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label236->Name = L"label236";
-			this->label236->Size = System::Drawing::Size(69, 17);
+			this->label236->Size = System::Drawing::Size(52, 13);
 			this->label236->TabIndex = 25;
 			this->label236->Text = L"Paraguay";
 			// 
@@ -7324,11 +7718,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel79->Controls->Add(this->Bolivia_USA, 0, 0);
 			this->tableLayoutPanel79->Controls->Add(this->Bolivia_USSR, 1, 0);
-			this->tableLayoutPanel79->Location = System::Drawing::Point(20, 129);
+			this->tableLayoutPanel79->Location = System::Drawing::Point(15, 105);
+			this->tableLayoutPanel79->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel79->Name = L"tableLayoutPanel79";
 			this->tableLayoutPanel79->RowCount = 1;
 			this->tableLayoutPanel79->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel79->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel79->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel79->TabIndex = 10;
 			// 
 			// Bolivia_USA
@@ -7338,9 +7733,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Bolivia_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Bolivia_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Bolivia_USA->Location = System::Drawing::Point(4, 1);
+			this->Bolivia_USA->Location = System::Drawing::Point(3, 1);
+			this->Bolivia_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Bolivia_USA->Name = L"Bolivia_USA";
-			this->Bolivia_USA->Size = System::Drawing::Size(26, 17);
+			this->Bolivia_USA->Size = System::Drawing::Size(14, 14);
 			this->Bolivia_USA->TabIndex = 0;
 			this->Bolivia_USA->Text = L"10";
 			this->Bolivia_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7352,9 +7748,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Bolivia_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Bolivia_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Bolivia_USSR->Location = System::Drawing::Point(37, 1);
+			this->Bolivia_USSR->Location = System::Drawing::Point(28, 1);
+			this->Bolivia_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Bolivia_USSR->Name = L"Bolivia_USSR";
-			this->Bolivia_USSR->Size = System::Drawing::Size(26, 17);
+			this->Bolivia_USSR->Size = System::Drawing::Size(14, 14);
 			this->Bolivia_USSR->TabIndex = 5;
 			this->Bolivia_USSR->Text = L"10";
 			this->Bolivia_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7362,18 +7759,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label239
 			// 
 			this->label239->AutoSize = true;
-			this->label239->Location = System::Drawing::Point(100, 23);
+			this->label239->Location = System::Drawing::Point(75, 19);
+			this->label239->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label239->Name = L"label239";
-			this->label239->Size = System::Drawing::Size(61, 17);
+			this->label239->Size = System::Drawing::Size(47, 13);
 			this->label239->TabIndex = 21;
 			this->label239->Text = L"Ecuador";
 			// 
 			// label240
 			// 
 			this->label240->AutoSize = true;
-			this->label240->Location = System::Drawing::Point(17, 66);
+			this->label240->Location = System::Drawing::Point(13, 54);
+			this->label240->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label240->Name = L"label240";
-			this->label240->Size = System::Drawing::Size(43, 17);
+			this->label240->Size = System::Drawing::Size(32, 13);
 			this->label240->TabIndex = 9;
 			this->label240->Text = L"Brazil";
 			// 
@@ -7387,11 +7786,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel80->Controls->Add(this->Paraguay_USA, 0, 0);
 			this->tableLayoutPanel80->Controls->Add(this->Paraguay_USSR, 1, 0);
-			this->tableLayoutPanel80->Location = System::Drawing::Point(103, 86);
+			this->tableLayoutPanel80->Location = System::Drawing::Point(77, 70);
+			this->tableLayoutPanel80->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel80->Name = L"tableLayoutPanel80";
 			this->tableLayoutPanel80->RowCount = 1;
 			this->tableLayoutPanel80->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel80->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel80->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel80->TabIndex = 23;
 			// 
 			// Paraguay_USA
@@ -7401,9 +7801,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Paraguay_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Paraguay_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Paraguay_USA->Location = System::Drawing::Point(4, 1);
+			this->Paraguay_USA->Location = System::Drawing::Point(3, 1);
+			this->Paraguay_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Paraguay_USA->Name = L"Paraguay_USA";
-			this->Paraguay_USA->Size = System::Drawing::Size(26, 17);
+			this->Paraguay_USA->Size = System::Drawing::Size(14, 14);
 			this->Paraguay_USA->TabIndex = 0;
 			this->Paraguay_USA->Text = L"10";
 			this->Paraguay_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7415,9 +7816,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Paraguay_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Paraguay_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Paraguay_USSR->Location = System::Drawing::Point(37, 1);
+			this->Paraguay_USSR->Location = System::Drawing::Point(28, 1);
+			this->Paraguay_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Paraguay_USSR->Name = L"Paraguay_USSR";
-			this->Paraguay_USSR->Size = System::Drawing::Size(26, 17);
+			this->Paraguay_USSR->Size = System::Drawing::Size(14, 14);
 			this->Paraguay_USSR->TabIndex = 5;
 			this->Paraguay_USSR->Text = L"10";
 			this->Paraguay_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7425,9 +7827,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label243
 			// 
 			this->label243->AutoSize = true;
-			this->label243->Location = System::Drawing::Point(17, 23);
+			this->label243->Location = System::Drawing::Point(13, 19);
+			this->label243->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label243->Name = L"label243";
-			this->label243->Size = System::Drawing::Size(69, 17);
+			this->label243->Size = System::Drawing::Size(52, 13);
 			this->label243->TabIndex = 7;
 			this->label243->Text = L"Argentina";
 			// 
@@ -7441,11 +7844,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel81->Controls->Add(this->Ecuador_USA, 0, 0);
 			this->tableLayoutPanel81->Controls->Add(this->Ecuador_USSR, 1, 0);
-			this->tableLayoutPanel81->Location = System::Drawing::Point(103, 43);
+			this->tableLayoutPanel81->Location = System::Drawing::Point(77, 35);
+			this->tableLayoutPanel81->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel81->Name = L"tableLayoutPanel81";
 			this->tableLayoutPanel81->RowCount = 1;
 			this->tableLayoutPanel81->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel81->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel81->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel81->TabIndex = 20;
 			// 
 			// Ecuador_USA
@@ -7455,9 +7859,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Ecuador_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Ecuador_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Ecuador_USA->Location = System::Drawing::Point(4, 1);
+			this->Ecuador_USA->Location = System::Drawing::Point(3, 1);
+			this->Ecuador_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Ecuador_USA->Name = L"Ecuador_USA";
-			this->Ecuador_USA->Size = System::Drawing::Size(26, 17);
+			this->Ecuador_USA->Size = System::Drawing::Size(14, 14);
 			this->Ecuador_USA->TabIndex = 0;
 			this->Ecuador_USA->Text = L"10";
 			this->Ecuador_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7469,9 +7874,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Ecuador_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Ecuador_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Ecuador_USSR->Location = System::Drawing::Point(37, 1);
+			this->Ecuador_USSR->Location = System::Drawing::Point(28, 1);
+			this->Ecuador_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Ecuador_USSR->Name = L"Ecuador_USSR";
-			this->Ecuador_USSR->Size = System::Drawing::Size(26, 17);
+			this->Ecuador_USSR->Size = System::Drawing::Size(14, 14);
 			this->Ecuador_USSR->TabIndex = 5;
 			this->Ecuador_USSR->Text = L"10";
 			this->Ecuador_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7486,11 +7892,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel82->Controls->Add(this->Brazil_USA, 0, 0);
 			this->tableLayoutPanel82->Controls->Add(this->Brazil_USSR, 1, 0);
-			this->tableLayoutPanel82->Location = System::Drawing::Point(20, 86);
+			this->tableLayoutPanel82->Location = System::Drawing::Point(15, 70);
+			this->tableLayoutPanel82->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel82->Name = L"tableLayoutPanel82";
 			this->tableLayoutPanel82->RowCount = 1;
 			this->tableLayoutPanel82->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel82->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel82->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel82->TabIndex = 8;
 			// 
 			// Brazil_USA
@@ -7500,9 +7907,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Brazil_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Brazil_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Brazil_USA->Location = System::Drawing::Point(4, 1);
+			this->Brazil_USA->Location = System::Drawing::Point(3, 1);
+			this->Brazil_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Brazil_USA->Name = L"Brazil_USA";
-			this->Brazil_USA->Size = System::Drawing::Size(26, 17);
+			this->Brazil_USA->Size = System::Drawing::Size(14, 14);
 			this->Brazil_USA->TabIndex = 0;
 			this->Brazil_USA->Text = L"10";
 			this->Brazil_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7514,9 +7922,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Brazil_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Brazil_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Brazil_USSR->Location = System::Drawing::Point(37, 1);
+			this->Brazil_USSR->Location = System::Drawing::Point(28, 1);
+			this->Brazil_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Brazil_USSR->Name = L"Brazil_USSR";
-			this->Brazil_USSR->Size = System::Drawing::Size(26, 17);
+			this->Brazil_USSR->Size = System::Drawing::Size(14, 14);
 			this->Brazil_USSR->TabIndex = 5;
 			this->Brazil_USSR->Text = L"10";
 			this->Brazil_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7531,11 +7940,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel83->Controls->Add(this->Argentina_USA, 0, 0);
 			this->tableLayoutPanel83->Controls->Add(this->Argentina_USSR, 1, 0);
-			this->tableLayoutPanel83->Location = System::Drawing::Point(20, 43);
+			this->tableLayoutPanel83->Location = System::Drawing::Point(15, 35);
+			this->tableLayoutPanel83->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel83->Name = L"tableLayoutPanel83";
 			this->tableLayoutPanel83->RowCount = 1;
 			this->tableLayoutPanel83->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel83->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel83->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel83->TabIndex = 6;
 			// 
 			// Argentina_USA
@@ -7545,9 +7955,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Argentina_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Argentina_USA->ForeColor = System::Drawing::Color::Blue;
-			this->Argentina_USA->Location = System::Drawing::Point(4, 1);
+			this->Argentina_USA->Location = System::Drawing::Point(3, 1);
+			this->Argentina_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Argentina_USA->Name = L"Argentina_USA";
-			this->Argentina_USA->Size = System::Drawing::Size(26, 17);
+			this->Argentina_USA->Size = System::Drawing::Size(14, 14);
 			this->Argentina_USA->TabIndex = 0;
 			this->Argentina_USA->Text = L"10";
 			this->Argentina_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7559,9 +7970,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Argentina_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Argentina_USSR->ForeColor = System::Drawing::Color::Red;
-			this->Argentina_USSR->Location = System::Drawing::Point(37, 1);
+			this->Argentina_USSR->Location = System::Drawing::Point(28, 1);
+			this->Argentina_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Argentina_USSR->Name = L"Argentina_USSR";
-			this->Argentina_USSR->Size = System::Drawing::Size(26, 17);
+			this->Argentina_USSR->Size = System::Drawing::Size(14, 14);
 			this->Argentina_USSR->TabIndex = 5;
 			this->Argentina_USSR->Text = L"10";
 			this->Argentina_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7580,9 +7992,11 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->groupBox7->Controls->Add(this->Round_lbl);
 			this->groupBox7->Controls->Add(this->label251);
 			this->groupBox7->Controls->Add(this->Turn_lbl);
-			this->groupBox7->Location = System::Drawing::Point(910, 295);
+			this->groupBox7->Location = System::Drawing::Point(682, 240);
+			this->groupBox7->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->groupBox7->Name = L"groupBox7";
-			this->groupBox7->Size = System::Drawing::Size(190, 205);
+			this->groupBox7->Padding = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->groupBox7->Size = System::Drawing::Size(142, 167);
 			this->groupBox7->TabIndex = 10;
 			this->groupBox7->TabStop = false;
 			this->groupBox7->Text = L"Board State";
@@ -7590,9 +8004,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label261
 			// 
 			this->label261->AutoSize = true;
-			this->label261->Location = System::Drawing::Point(99, 110);
+			this->label261->Location = System::Drawing::Point(74, 89);
+			this->label261->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label261->Name = L"label261";
-			this->label261->Size = System::Drawing::Size(85, 17);
+			this->label261->Size = System::Drawing::Size(67, 13);
 			this->label261->TabIndex = 45;
 			this->label261->Text = L"Space Race";
 			// 
@@ -7606,11 +8021,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel85->Controls->Add(this->SpaceRace_USA, 0, 0);
 			this->tableLayoutPanel85->Controls->Add(this->SpaceRace_USSR, 1, 0);
-			this->tableLayoutPanel85->Location = System::Drawing::Point(102, 130);
+			this->tableLayoutPanel85->Location = System::Drawing::Point(76, 106);
+			this->tableLayoutPanel85->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel85->Name = L"tableLayoutPanel85";
 			this->tableLayoutPanel85->RowCount = 1;
 			this->tableLayoutPanel85->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel85->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel85->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel85->TabIndex = 44;
 			// 
 			// SpaceRace_USA
@@ -7620,9 +8036,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->SpaceRace_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->SpaceRace_USA->ForeColor = System::Drawing::Color::Blue;
-			this->SpaceRace_USA->Location = System::Drawing::Point(4, 1);
+			this->SpaceRace_USA->Location = System::Drawing::Point(3, 1);
+			this->SpaceRace_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->SpaceRace_USA->Name = L"SpaceRace_USA";
-			this->SpaceRace_USA->Size = System::Drawing::Size(26, 17);
+			this->SpaceRace_USA->Size = System::Drawing::Size(14, 14);
 			this->SpaceRace_USA->TabIndex = 0;
 			this->SpaceRace_USA->Text = L"10";
 			this->SpaceRace_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7634,9 +8051,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->SpaceRace_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->SpaceRace_USSR->ForeColor = System::Drawing::Color::Red;
-			this->SpaceRace_USSR->Location = System::Drawing::Point(37, 1);
+			this->SpaceRace_USSR->Location = System::Drawing::Point(28, 1);
+			this->SpaceRace_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->SpaceRace_USSR->Name = L"SpaceRace_USSR";
-			this->SpaceRace_USSR->Size = System::Drawing::Size(26, 17);
+			this->SpaceRace_USSR->Size = System::Drawing::Size(14, 14);
 			this->SpaceRace_USSR->TabIndex = 5;
 			this->SpaceRace_USSR->Text = L"10";
 			this->SpaceRace_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7644,18 +8062,20 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label258
 			// 
 			this->label258->AutoSize = true;
-			this->label258->Location = System::Drawing::Point(99, 22);
+			this->label258->Location = System::Drawing::Point(74, 18);
+			this->label258->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label258->Name = L"label258";
-			this->label258->Size = System::Drawing::Size(82, 17);
+			this->label258->Size = System::Drawing::Size(61, 13);
 			this->label258->TabIndex = 43;
 			this->label258->Text = L"Military Ops";
 			// 
 			// label256
 			// 
 			this->label256->AutoSize = true;
-			this->label256->Location = System::Drawing::Point(16, 150);
+			this->label256->Location = System::Drawing::Point(12, 122);
+			this->label256->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label256->Name = L"label256";
-			this->label256->Size = System::Drawing::Size(53, 17);
+			this->label256->Size = System::Drawing::Size(42, 13);
 			this->label256->TabIndex = 18;
 			this->label256->Text = L"Defcon";
 			// 
@@ -7669,11 +8089,12 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 				50)));
 			this->tableLayoutPanel84->Controls->Add(this->MilitaryOps_USA, 0, 0);
 			this->tableLayoutPanel84->Controls->Add(this->MilitaryOps_USSR, 1, 0);
-			this->tableLayoutPanel84->Location = System::Drawing::Point(102, 42);
+			this->tableLayoutPanel84->Location = System::Drawing::Point(76, 34);
+			this->tableLayoutPanel84->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->tableLayoutPanel84->Name = L"tableLayoutPanel84";
 			this->tableLayoutPanel84->RowCount = 1;
 			this->tableLayoutPanel84->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel84->Size = System::Drawing::Size(68, 20);
+			this->tableLayoutPanel84->Size = System::Drawing::Size(51, 16);
 			this->tableLayoutPanel84->TabIndex = 42;
 			// 
 			// MilitaryOps_USA
@@ -7683,9 +8104,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->MilitaryOps_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->MilitaryOps_USA->ForeColor = System::Drawing::Color::Blue;
-			this->MilitaryOps_USA->Location = System::Drawing::Point(4, 1);
+			this->MilitaryOps_USA->Location = System::Drawing::Point(3, 1);
+			this->MilitaryOps_USA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->MilitaryOps_USA->Name = L"MilitaryOps_USA";
-			this->MilitaryOps_USA->Size = System::Drawing::Size(26, 17);
+			this->MilitaryOps_USA->Size = System::Drawing::Size(14, 14);
 			this->MilitaryOps_USA->TabIndex = 0;
 			this->MilitaryOps_USA->Text = L"10";
 			this->MilitaryOps_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7697,9 +8119,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->MilitaryOps_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->MilitaryOps_USSR->ForeColor = System::Drawing::Color::Red;
-			this->MilitaryOps_USSR->Location = System::Drawing::Point(37, 1);
+			this->MilitaryOps_USSR->Location = System::Drawing::Point(28, 1);
+			this->MilitaryOps_USSR->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->MilitaryOps_USSR->Name = L"MilitaryOps_USSR";
-			this->MilitaryOps_USSR->Size = System::Drawing::Size(26, 17);
+			this->MilitaryOps_USSR->Size = System::Drawing::Size(14, 14);
 			this->MilitaryOps_USSR->TabIndex = 5;
 			this->MilitaryOps_USSR->Text = L"10";
 			this->MilitaryOps_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7711,9 +8134,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Defcon_lbl->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Defcon_lbl->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->Defcon_lbl->Location = System::Drawing::Point(16, 173);
+			this->Defcon_lbl->Location = System::Drawing::Point(12, 141);
+			this->Defcon_lbl->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Defcon_lbl->Name = L"Defcon_lbl";
-			this->Defcon_lbl->Size = System::Drawing::Size(32, 17);
+			this->Defcon_lbl->Size = System::Drawing::Size(25, 13);
 			this->Defcon_lbl->TabIndex = 17;
 			this->Defcon_lbl->Text = L"-10";
 			this->Defcon_lbl->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7721,9 +8145,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label254
 			// 
 			this->label254->AutoSize = true;
-			this->label254->Location = System::Drawing::Point(16, 107);
+			this->label254->Location = System::Drawing::Point(12, 87);
+			this->label254->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label254->Name = L"label254";
-			this->label254->Size = System::Drawing::Size(45, 17);
+			this->label254->Size = System::Drawing::Size(35, 13);
 			this->label254->TabIndex = 16;
 			this->label254->Text = L"Score";
 			// 
@@ -7734,9 +8159,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Score_lbl->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Score_lbl->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->Score_lbl->Location = System::Drawing::Point(16, 130);
+			this->Score_lbl->Location = System::Drawing::Point(12, 106);
+			this->Score_lbl->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Score_lbl->Name = L"Score_lbl";
-			this->Score_lbl->Size = System::Drawing::Size(32, 17);
+			this->Score_lbl->Size = System::Drawing::Size(25, 13);
 			this->Score_lbl->TabIndex = 15;
 			this->Score_lbl->Text = L"-10";
 			this->Score_lbl->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7744,9 +8170,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label252
 			// 
 			this->label252->AutoSize = true;
-			this->label252->Location = System::Drawing::Point(16, 64);
+			this->label252->Location = System::Drawing::Point(12, 52);
+			this->label252->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label252->Name = L"label252";
-			this->label252->Size = System::Drawing::Size(50, 17);
+			this->label252->Size = System::Drawing::Size(39, 13);
 			this->label252->TabIndex = 14;
 			this->label252->Text = L"Round";
 			// 
@@ -7757,9 +8184,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Round_lbl->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Round_lbl->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->Round_lbl->Location = System::Drawing::Point(16, 87);
+			this->Round_lbl->Location = System::Drawing::Point(12, 71);
+			this->Round_lbl->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Round_lbl->Name = L"Round_lbl";
-			this->Round_lbl->Size = System::Drawing::Size(32, 17);
+			this->Round_lbl->Size = System::Drawing::Size(25, 13);
 			this->Round_lbl->TabIndex = 13;
 			this->Round_lbl->Text = L"-10";
 			this->Round_lbl->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -7767,9 +8195,10 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			// label251
 			// 
 			this->label251->AutoSize = true;
-			this->label251->Location = System::Drawing::Point(16, 19);
+			this->label251->Location = System::Drawing::Point(12, 15);
+			this->label251->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label251->Name = L"label251";
-			this->label251->Size = System::Drawing::Size(38, 17);
+			this->label251->Size = System::Drawing::Size(29, 13);
 			this->label251->TabIndex = 12;
 			this->label251->Text = L"Turn";
 			// 
@@ -7780,78 +8209,30 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Turn_lbl->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Turn_lbl->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->Turn_lbl->Location = System::Drawing::Point(16, 42);
+			this->Turn_lbl->Location = System::Drawing::Point(12, 34);
+			this->Turn_lbl->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->Turn_lbl->Name = L"Turn_lbl";
-			this->Turn_lbl->Size = System::Drawing::Size(32, 17);
+			this->Turn_lbl->Size = System::Drawing::Size(25, 13);
 			this->Turn_lbl->TabIndex = 11;
 			this->Turn_lbl->Text = L"-10";
 			this->Turn_lbl->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
-			// spainPortugulToolStripMenuItem
+			// button1
 			// 
-			this->spainPortugulToolStripMenuItem->Name = L"spainPortugulToolStripMenuItem";
-			this->spainPortugulToolStripMenuItem->Size = System::Drawing::Size(185, 26);
-			this->spainPortugulToolStripMenuItem->Text = L"Spain/Portugul";
-			// 
-			// label4
-			// 
-			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(124, 197);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(101, 17);
-			this->label4->TabIndex = 37;
-			this->label4->Text = L"Spain/Portugul";
-			// 
-			// tableLayoutPanel31
-			// 
-			this->tableLayoutPanel31->CellBorderStyle = System::Windows::Forms::TableLayoutPanelCellBorderStyle::Single;
-			this->tableLayoutPanel31->ColumnCount = 2;
-			this->tableLayoutPanel31->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				50)));
-			this->tableLayoutPanel31->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				50)));
-			this->tableLayoutPanel31->Controls->Add(this->SpainPortugul_USA, 0, 0);
-			this->tableLayoutPanel31->Controls->Add(this->SpainPortugul_USSR, 1, 0);
-			this->tableLayoutPanel31->Location = System::Drawing::Point(127, 217);
-			this->tableLayoutPanel31->Name = L"tableLayoutPanel31";
-			this->tableLayoutPanel31->RowCount = 1;
-			this->tableLayoutPanel31->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel31->Size = System::Drawing::Size(68, 20);
-			this->tableLayoutPanel31->TabIndex = 36;
-			// 
-			// SpainPortugul_USA
-			// 
-			this->SpainPortugul_USA->AutoSize = true;
-			this->SpainPortugul_USA->BackColor = System::Drawing::Color::White;
-			this->SpainPortugul_USA->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->SpainPortugul_USA->ForeColor = System::Drawing::Color::Blue;
-			this->SpainPortugul_USA->Location = System::Drawing::Point(4, 1);
-			this->SpainPortugul_USA->Name = L"SpainPortugul_USA";
-			this->SpainPortugul_USA->Size = System::Drawing::Size(26, 17);
-			this->SpainPortugul_USA->TabIndex = 0;
-			this->SpainPortugul_USA->Text = L"10";
-			this->SpainPortugul_USA->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// SpainPortugul_USSR
-			// 
-			this->SpainPortugul_USSR->AutoSize = true;
-			this->SpainPortugul_USSR->BackColor = System::Drawing::Color::White;
-			this->SpainPortugul_USSR->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->SpainPortugul_USSR->ForeColor = System::Drawing::Color::Red;
-			this->SpainPortugul_USSR->Location = System::Drawing::Point(37, 1);
-			this->SpainPortugul_USSR->Name = L"SpainPortugul_USSR";
-			this->SpainPortugul_USSR->Size = System::Drawing::Size(26, 17);
-			this->SpainPortugul_USSR->TabIndex = 5;
-			this->SpainPortugul_USSR->Text = L"10";
-			this->SpainPortugul_USSR->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->button1->Location = System::Drawing::Point(883, 384);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(75, 23);
+			this->button1->TabIndex = 11;
+			this->button1->Text = L"Refresh";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1302, 555);
+			this->ClientSize = System::Drawing::Size(976, 451);
+			this->Controls->Add(this->button1);
 			this->Controls->Add(this->groupBox7);
 			this->Controls->Add(this->groupBox6);
 			this->Controls->Add(this->groupBox5);
@@ -7862,6 +8243,7 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->Controls->Add(this->menuStrip1);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->MainMenuStrip = this->menuStrip1;
+			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Name = L"MyForm";
 			this->Text = L"Project Oppenheimer";
 			this->menuStrip1->ResumeLayout(false);
@@ -7960,6 +8342,8 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->tableLayoutPanel48->PerformLayout();
 			this->groupBox4->ResumeLayout(false);
 			this->groupBox4->PerformLayout();
+			this->tableLayoutPanel31->ResumeLayout(false);
+			this->tableLayoutPanel31->PerformLayout();
 			this->tableLayoutPanel62->ResumeLayout(false);
 			this->tableLayoutPanel62->PerformLayout();
 			this->tableLayoutPanel63->ResumeLayout(false);
@@ -8050,13 +8434,13 @@ private: System::Windows::Forms::Label^  SpainPortugul_USSR;
 			this->tableLayoutPanel85->PerformLayout();
 			this->tableLayoutPanel84->ResumeLayout(false);
 			this->tableLayoutPanel84->PerformLayout();
-			this->tableLayoutPanel31->ResumeLayout(false);
-			this->tableLayoutPanel31->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
 		}
 #pragma endregion
-
+private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+//	this->Algeria_USA->Text = System::Convert::ToString(this->game->countryLst->get_country(1)->get_infUSA());
+}
 };
 }

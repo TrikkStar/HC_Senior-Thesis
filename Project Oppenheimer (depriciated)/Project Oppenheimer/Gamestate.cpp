@@ -1,13 +1,13 @@
 #include "Gamestate.h"
 
-
-
 Gamestate::Gamestate()
 {
 	score = 0;
 	defcon = 0;
 	turn = 0;
 	round = 0;
+	CountryList countryLSt;
+	CardList cards;
 }
 
 

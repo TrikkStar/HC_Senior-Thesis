@@ -1,10 +1,9 @@
-#include "Country.h"
 #include "CountryList.h"
 
 CountryList::CountryList()
 {
 	countries.reserve(84);
-	
+
 	//Adjacency to USA -5, USSR -10
 	Country Afghanistan("Afghanistan", 0, 2, false, std::vector<int>{-10, 36, 54});
 	this->countries.push_back(Afghanistan);
@@ -267,4 +266,10 @@ CountryList::CountryList()
 	MiddleEast = {45, 70, 38, 37, 36, 46, 23, 42, 30, 63};
 	Asia = { 11, 44, 72, 78, 47, 35, 58, 0, 54, 34, 4, 41, 71, 66, 52};
 	SoutheastAsia = {11, 44, 72, 78, 47, 35, 58};
+}
+
+
+Country CountryList::get_country(int x)
+{
+	return this->countries.at(x);
 }

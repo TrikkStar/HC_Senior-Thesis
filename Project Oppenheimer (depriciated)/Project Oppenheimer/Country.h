@@ -30,8 +30,11 @@ private:
 public:
 	bool battleground;
 	bool is_battleground();
+<<<<<<< HEAD:Project Oppenheimer/Project Oppenheimer/Country.h
 	bool is_adjacent(int x);
+=======
+	int get_infUSA();
+	int get_infUSSR();
+>>>>>>> origin/master:Project Oppenheimer (depriciated)/Project Oppenheimer/Country.h
 };
-
-
 

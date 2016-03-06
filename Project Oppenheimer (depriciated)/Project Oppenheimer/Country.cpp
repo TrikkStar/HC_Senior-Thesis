@@ -1,14 +1,12 @@
 #include "Country.h"
 
-
-
 Country::Country(std::string n, int i, int s, bool b, std::vector<int> vect)
 {
 	stability = s;
-	std::string name = n;
+	name = n;
 	id = i;
 	battleground = b;
-	std::vector<int> adjacent = vect;
+	adjacent = vect;
 	influenceUSA = 0;
 	influenceUSSR = 0;
 	controlled = false;
@@ -110,6 +108,7 @@ bool Country::is_battleground()
 }
 
 
+<<<<<<< HEAD:Project Oppenheimer/Project Oppenheimer/Country.cpp
 bool Country::is_adjacent(int x)
 {
 	for (int i = 0; i < this->adjacent.size(); i++)
@@ -120,4 +119,15 @@ bool Country::is_adjacent(int x)
 		}
 	}
 	return false;
+=======
+int Country::get_infUSA()
+{
+	return this->influenceUSA;
+}
+
+
+int Country::get_infUSSR()
+{
+	return this->influenceUSSR;
+>>>>>>> origin/master:Project Oppenheimer (depriciated)/Project Oppenheimer/Country.cpp
 }
