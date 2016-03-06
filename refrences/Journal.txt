@@ -195,3 +195,7 @@ more specific information about changes I recomend looking through the comit his
 	- been doing some thinking and realised I need a class above gamestate that will actually run the game, seperating the data storage and logic sections feels like a
 	smart move. It should also make it easier to get the gamestate and Ai to interact with one another. 
 	I have also decided to name the AI agent Robert.
+
+3/5/2016:
+	Ive started my project over, (again), since it seems I needed to make my project in C#. Thankfully it only took a minute to remake the GUI. Now I need to figure out
+	how to data bind my classes. Hopefully theyll be able to stay as C++ but I'm not holding any hope for that. 
