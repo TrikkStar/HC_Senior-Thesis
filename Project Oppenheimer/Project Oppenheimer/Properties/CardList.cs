@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Security.Cryptography;
 
 namespace Project_Oppenheimer.Properties
 {
@@ -23,6 +24,7 @@ namespace Project_Oppenheimer.Properties
             discarded = new List<Card>();
             removed = new List<Card>();
             usHand = new List<Card>();
+            ussrHand = new List<Card>();
             init_EW();
             init_MW();
             init_LW();
@@ -35,7 +37,22 @@ namespace Project_Oppenheimer.Properties
 
         public void shuffel()
         {
+            deck.AddRange(discarded.Take(discarded.Count));
+            discarded.Clear();
 
+            RNGCryptoServiceProvider provider = new RNGCryptoServiceProvider();
+            int n = deck.Count;
+            while (n > 1)
+            {
+                byte[] box = new byte[1];
+                do provider.GetBytes(box);
+                while (!(box[0] < n * (Byte.MaxValue / n)));
+                int k = (box[0] % n);
+                n--;
+                var value = deck[k];
+                deck[k] = deck[n];
+                deck[n] = value;
+            }
         }
 
         public void discard(int x)
@@ -48,10 +65,15 @@ namespace Project_Oppenheimer.Properties
 
         }
 
-        /*private Card find(int x)
+        private void add_MW()
         {
-            return null;
-        }*/
+            deck.AddRange(midWar.Take(midWar.Count));
+        }
+
+        private void add_LW()
+        {
+            deck.AddRange(lateWar.Take(lateWar.Count));
+        }
 
         private void init_EW()
         {

@@ -13,7 +13,8 @@ namespace Project_Oppenheimer.Properties
 
         public Supervisor()
         {
-
+            game = new Gamestate();
+            ai = new Robert();
         }
     }
 }
