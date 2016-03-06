@@ -212,3 +212,4 @@ _Pvt_Extensions/
 ModelManifest.xml
 Project Oppenheimer/Project Oppenheimer.VC.opendb
 refrences/debugging_project/Foo/Foo.VC.opendb
+*.opendb
