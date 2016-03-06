@@ -19,7 +19,13 @@ namespace Project_Oppenheimer.Properties
 
         public CardList()
         {
-
+            deck = new List<Card>();
+            discarded = new List<Card>();
+            removed = new List<Card>();
+            usHand = new List<Card>();
+            init_EW();
+            init_MW();
+            init_LW();
         }
 
         public void deal(int x)
@@ -42,24 +48,27 @@ namespace Project_Oppenheimer.Properties
 
         }
 
-        private Card find(int x)
+        /*private Card find(int x)
         {
             return null;
-        }
+        }*/
 
         private void init_EW()
         {
-
+            earlyWar = new List<Card>();
+            //add cards
         }
 
         private void init_MW()
         {
-
+            midWar = new List<Card>();
+            //add cards
         }
 
         public void init_LW()
         {
-
+            lateWar = new List<Card>();
+            //add cards
         }
     }
 }
