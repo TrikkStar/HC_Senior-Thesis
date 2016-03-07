@@ -32,7 +32,9 @@ namespace Project_Oppenheimer.Properties
             init_EW();
             init_MW();
             init_LW();
-            //add china to facedown USSR
+            
+            Card china = new Card("China", 6, 4, 0, false);
+            facedownChinaUssr.Add(china);
         }
 
         public void deal(int x)
@@ -123,21 +125,37 @@ namespace Project_Oppenheimer.Properties
 
         public void discard(Card c)
         {
-           if (ussrHand.Contains(c))
+            if (c.id == 6)
             {
-                discarded.Add(c);
-                ussrHand.Remove(c);
+                discardChina(c);
             }
-           else if ((usHand.Contains(c)))
+            else
             {
-                discarded.Add(c);
-                usHand.Remove(c);
+                if (ussrHand.Contains(c))
+                {
+                    discarded.Add(c);
+                    ussrHand.Remove(c);
+                }
+                else if ((usHand.Contains(c)))
+                {
+                    discarded.Add(c);
+                    usHand.Remove(c);
+                }
             }
         }
 
         private void discardChina(Card c)
         {
-
+            if (ussrHand.Contains(c))
+            {
+                facedownChinaUs.Add(c);
+                ussrHand.Remove(c);
+            }
+            else if ((usHand.Contains(c)))
+            {
+                facedownChinaUssr.Add(c);
+                usHand.Remove(c);
+            }
         }
 
         public void remove(Card c)
