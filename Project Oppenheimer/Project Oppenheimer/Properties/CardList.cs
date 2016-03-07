@@ -296,10 +296,154 @@ namespace Project_Oppenheimer.Properties
         private void init_MW()
         {
             midWar = new List<Card>();
-            //add cards
+
+            Card card044 = new Card("Bear Trap", 44, 3, 1, false);
+            midWar.Add(card044);
+
+            Card card038 = new Card("Southeast Asia Scoring", 38, 0, 0, true);
+            midWar.Add(card038);
+
+            Card card078 = new Card("Alliance for Progress", 78, 3, 1, false);
+            midWar.Add(card078);
+
+            Card card058 = new Card("Cultural Revolution", 58, 3, -1, false);
+            midWar.Add(card058);
+
+            Card card041 = new Card("Nuclear Subs", 41, 2, 1, false);
+            midWar.Add(card041);
+
+            Card card062 = new Card("Lone Gunman", 62, 1, -1, false);
+            midWar.Add(card041);
+
+            Card card072 = new Card("Sadat Expels Soviets", 72, 1, 1, false);
+            midWar.Add(card072);
+
+            Card card064 = new Card("Panama Canal Returned", 64, 1, 1, false);
+            midWar.Add(card064);
+
+            Card card066 = new Card("Puppet Governments", 66, 2, 1, false);
+            midWar.Add(card066);
+
+            Card card060 = new Card("U2 Incident", 60, 3, -1, false);
+            midWar.Add(card060);
+
+            Card card048 = new Card("Kitchen Debates", 48, 1, 1, false);
+            midWar.Add(card048);
+
+            Card card077 = new Card("Ask Not What Your Country Can Do for You...", 77, 3, 1, false);
+            midWar.Add(card077);
+
+            Card card046 = new Card("How I Learned to Stop Worrying", 46, 2, 0, false);
+            midWar.Add(card046);
+
+            Card card040 = new Card("Cuban Missile Crisis", 40, 3, 0, false);
+            midWar.Add(card040);
+
+            Card card055 = new Card("Willy Brandt", 55, 2, -1, false);
+            midWar.Add(card055);
+
+            Card card065 = new Card("Camp David Accords", 65, 2, 1, false);
+            midWar.Add(card065);
+
+            Card card054 = new Card("Allende", 54, 1, -1, false);
+            midWar.Add(card054);
+
+            Card card070 = new Card("OAS Founded", 70, 1, 1, false);
+            midWar.Add(card070);
+
+            Card card049 = new Card("Missile Envy", 49, 2, 0, false);
+            midWar.Add(card049);
+
+            Card card069 = new Card("Latin American Death Squads", 69, 2, 0, false);
+            midWar.Add(card069);
+
+            Card card108 = new Card("Our Man in Tehran", 108, 2, 1, false);
+            midWar.Add(card108);
+
+            Card card063 = new Card("Colonial Rear Guards", 63, 2, 1, false);
+            midWar.Add(card063);
+
+            Card card075 = new Card("Liberation Theology", 75, 2, -1, false);
+            midWar.Add(card075);
+
+            Card card074 = new Card("The Voice of America", 74, 2, 1, false);
+            midWar.Add(card074);
+
+            Card card073 = new Card("Shuttle Diplomacy", 73, 3, 1, false);
+            midWar.Add(card073);
+
+            Card card059 = new Card("Flower Power", 59, 4, -1, false);
+            midWar.Add(card059);
+
+            Card card107 = new Card("Che", 107, 3, -1, false);
+            midWar.Add(card107);
+
+            Card card045 = new Card("Summit", 45, 1, 0, false);
+            midWar.Add(card045);
+
+            Card card053 = new Card("South African Unrest", 53, 2, -1, false);
+            midWar.Add(card053);
+
+            Card card042 = new Card("Quagmire", 42, 3, -1, false);
+            midWar.Add(card042);
+
+            Card card056 = new Card("Muslim Revolution", 56, 4, -1, false);
+            midWar.Add(card056);
+
+            Card card043 = new Card("SALT Negotiations", 43, 3, 0, false);
+            midWar.Add(card043);
+
+            Card card057 = new Card("ABM Treaty", 57, 4, 0, false);
+            midWar.Add(card057);
+
+            Card card039 = new Card("Arms Race", 39, 3, 0, false);
+            midWar.Add(card039);
+
+            Card card080 = new Card("One Small Step...", 80, 2, 0, false);
+            midWar.Add(card080);
+
+            Card card068 = new Card("John Paul II Elected Pope", 68, 2, 1, false);
+            midWar.Add(card068);
+
+            Card card047 = new Card("Junta", 47, 2, 0, false);
+            midWar.Add(card047);
+
+            Card card036 = new Card("Brush War", 36, 3, 0, false);
+            midWar.Add(card036);
+
+            Card card079 = new Card("Africa Scoring", 79, 0, 0, true);
+            midWar.Add(card079);
+
+            Card card081 = new Card("South America Scoring", 81, 0, 0, true);
+            midWar.Add(card081);
+
+            Card card050 = new Card("We Will Bury You", 50, 4, -1, false);
+            midWar.Add(card050);
+
+            Card card067 = new Card("Grain Sales to Soviets", 67, 2, 1, false);
+            midWar.Add(card067);
+
+            Card card051 = new Card("Brezhnev Doctrine", 51, 3, -1, false);
+            midWar.Add(card051);
+
+            Card card037 = new Card("Central America Scoring", 37, 0, 0, true);
+            midWar.Add(card037);
+
+            Card card076 = new Card("Ussuri River Skirmish", 76, 3, 1, false);
+            midWar.Add(card076);
+
+            Card card071 = new Card("Nixon Plays the China Card", 71, 2, 1, false);
+            midWar.Add(card071);
+
+            Card card052 = new Card("Portuguese Empire Crumbles", 52, 2, -1, false);
+            midWar.Add(card052);
+
+            Card card061 = new Card("OPEC", 61, 3, -1, false);
+            midWar.Add(card061);
+
         }
 
-        public void init_LW()
+        private void init_LW()
         {
             lateWar = new List<Card>();
 
