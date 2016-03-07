@@ -33,7 +33,7 @@ namespace Project_Oppenheimer.Properties
             init_MW();
             init_LW();
             
-            Card china = new Card("China", 6, 4, 0, false);
+            Card china = new Card("The China Card", 6, 4, 0, false);
             facedownChinaUssr.Add(china);
         }
 
@@ -175,7 +175,122 @@ namespace Project_Oppenheimer.Properties
         private void init_EW()
         {
             earlyWar = new List<Card>();
-            //add cards
+            
+            Card card005 = new Card("Five-Year Plan", 5, 3, 1, false);
+            earlyWar.Add(card005);
+
+            Card card019 = new Card("Truman Doctrine", 19, 1, 1, false);
+            earlyWar.Add(card019);
+
+            Card card021 = new Card("NATO", 21, 4, 1, false);
+            earlyWar.Add(card021);
+
+            Card card022 = new Card("Independent Reds", 22, 2, 1, false);
+            earlyWar.Add(card022);
+
+            Card card023 = new Card("Mershal Plan", 23, 4, 1, false);
+            earlyWar.Add(card023);
+
+            Card card026 = new Card("CIA Created", 26, 1, 1, false);
+            earlyWar.Add(card026);
+
+            Card card025 = new Card("Containment", 25, 3, 1, false);
+            earlyWar.Add(card025);
+
+            Card card029 = new Card("East European Unrest", 29, 3, 1, false);
+            earlyWar.Add(card029);
+
+            Card card035 = new Card("Formosan Resolution", 35, 2, 1, false);
+            earlyWar.Add(card035);
+
+            Card card103 = new Card("Defectors", 103, 2, 1, false);
+            earlyWar.Add(card103);
+
+            Card card105 = new Card("Special Relationship", 105, 2, 1, false);
+            earlyWar.Add(card105);
+
+            Card card106 = new Card("NORAD", 106, 3, 1, false);
+            earlyWar.Add(card106);
+
+            Card card004 = new Card("Duck and Cover", 4, 3, 1, false);
+            earlyWar.Add(card004);
+
+            Card card027 = new Card("US/Japan Mutual Defense Pact", 27, 4, 1, false);
+            earlyWar.Add(card027);
+
+            Card card002 = new Card("Europe Scorinr", 2, 0, 0, true);
+            earlyWar.Add(card002);
+
+            Card card001 = new Card("Asia Scoring", 1, 0, 0, true);
+            earlyWar.Add(card001);
+
+            Card card003 = new Card("Middle East Scoring", 3, 0, 0, true);
+            earlyWar.Add(card003);
+
+            Card card031 = new Card("Red Scare/Purge", 31, 4, 0, false);
+            earlyWar.Add(card031);
+
+            Card card016 = new Card("Warsaw Pact Formed", 16, 3, -1, false);
+            earlyWar.Add(card016);
+
+            Card card028 = new Card("Suez Crisis", 28, 3, -1, false);
+            earlyWar.Add(card028);
+
+            Card card007 = new Card("Socialist Governments", 7, 3, -1, false);
+            earlyWar.Add(card007);
+
+            Card card018 = new Card("Captured Nazi Scientist", 18, 1, 0, false);
+            earlyWar.Add(card018);
+
+            Card card032 = new Card("UN Intervention", 32, 1, 0, false);
+            earlyWar.Add(card032);
+
+            Card card034 = new Card("Nuclear Test Ban", 34, 4, 0, false);
+            earlyWar.Add(card034);
+
+            Card card020 = new Card("Olympic Games", 20, 2, 0, false);
+            earlyWar.Add(card020);
+
+            Card card033 = new Card("De-Stalinization", 33, 3, -1, false);
+            earlyWar.Add(card033);
+
+            Card card008 = new Card("Fidel", 8, 2, -1, false);
+            earlyWar.Add(card008);
+
+            Card card012 = new Card("Romanian Abdication", 12, 1, -1, false);
+            earlyWar.Add(card012);
+
+            Card card015 = new Card("Nassir", 15, 1, -1, false);
+            earlyWar.Add(card015);
+
+            Card card104 = new Card("The Cambridge Five", 104, 2, -1, false);
+            earlyWar.Add(card104);
+
+            Card card010 = new Card("Blockade", 10, 1, -1, false);
+            earlyWar.Add(card010);
+
+            Card card013 = new Card("Arab-Israeli War", 13, 2, -1, false);
+            earlyWar.Add(card013);
+
+            Card card011 = new Card("Korean War", 11, 2, -1, false);
+            earlyWar.Add(card011);
+
+            Card card024 = new Card("Indo-Pakistani War", 24, 2, 0, false);
+            earlyWar.Add(card024);
+
+            Card card030 = new Card("Decolinization", 30, 2, -1, false);
+            earlyWar.Add(card030);
+
+            Card card009 = new Card("Vietnam Revolts", 9, 2, -1, false);
+            earlyWar.Add(card009);
+
+            Card card017 = new Card("De Gaulle Leads France", 17, 3, -1, false);
+            earlyWar.Add(card017);
+
+            Card card014 = new Card("COMECON", 14, 3, -1, false);
+            earlyWar.Add(card014);
+
+            deck.AddRange(earlyWar.Take(earlyWar.Count));
         }
 
         private void init_MW()

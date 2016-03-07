@@ -14,13 +14,13 @@ namespace Project_Oppenheimer.Properties
         public int affiliation;
         public bool scoring;
 
-        public Card(string n, int i, int o, int a, bool s)
+        public Card(string _name, int _id, int ops, int _affiliation, bool _scoring)
         {
-            name = n;
-            id = i;
-            opsValue = o;
-            affiliation = a;
-            scoring = s;
+            name = _name;
+            id = _id;
+            opsValue = ops;
+            affiliation = _affiliation;
+            scoring = _scoring;
         }
     }
 }
