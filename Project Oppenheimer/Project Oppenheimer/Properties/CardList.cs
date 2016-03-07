@@ -302,7 +302,75 @@ namespace Project_Oppenheimer.Properties
         public void init_LW()
         {
             lateWar = new List<Card>();
-            //add cards
+
+            Card card087 = new Card("The Reformer", 87, 3, -1, false);
+            lateWar.Add(card087);
+
+            Card card102 = new Card("Iran-Iraq War", 102, 2, 0, false);
+            lateWar.Add(card102);
+
+            Card card086 = new Card("North Sea Oil", 86, 3, 1, false);
+            lateWar.Add(card086);
+
+            Card card084 = new Card("Reagan Bombs Libya", 84, 2, 1, false);
+            lateWar.Add(card084);
+
+            Card card083 = new Card("The Iron Lady", 83, 3, 1, false);
+            lateWar.Add(card083);
+
+            Card card096 = new Card("Tear Down This Wall", 96, 3, 1, false);
+            lateWar.Add(card096);
+
+            Card card110 = new Card("AWACS Sale to Saudis", 110, 3, 1, false);
+            lateWar.Add(card110);
+
+            Card card097 = new Card("An Evil Empire", 97, 3, 1, false);
+            lateWar.Add(card097);
+
+            Card card095 = new Card("Latin American Debt Crisis", 95, 2, -1, false);
+            lateWar.Add(card095);
+
+            Card card109 = new Card("Yuri and Samantha", 109, 2, -1, false);
+            lateWar.Add(card109);
+
+            Card card085 = new Card("Star Wars", 85, 2, 1, false);
+            lateWar.Add(card085);
+
+            Card card082 = new Card("Iranian Hostage Crisis", 82, 3, -1, false);
+            lateWar.Add(card082);
+
+            Card card094 = new Card("Chernobyl", 94, 3, -1, false);
+            lateWar.Add(card094);
+
+            Card card093 = new Card("Iran-Contra Scandal", 93, 2, -1, false);
+            lateWar.Add(card093);
+
+            Card card088 = new Card("Marine Baracks Bombing", 88, 2, -1, false);
+            lateWar.Add(card088);
+
+            Card card089 = new Card("Soviets Shoot Down KAL-007", 89, 4, 1, false);
+            lateWar.Add(card089);
+
+            Card card090 = new Card("Glasnost", 90, 4, -1, false);
+            lateWar.Add(card090);
+
+            Card card091 = new Card("Ortega Elected in Nicaragua", 91, 2, -1, false);
+            lateWar.Add(card091);
+
+            Card card092 = new Card("Terrorism", 92, 2, 0, false);
+            lateWar.Add(card092);
+
+            Card card098 = new Card("Aldrich AMES Remix", 98, 3, -1, false);
+            lateWar.Add(card098);
+
+            Card card099 = new Card("Pershing II Deployed", 99, 3, -1, false);
+            lateWar.Add(card099);
+
+            Card card101 = new Card("Solidarity", 101, 2, 1, false);
+            lateWar.Add(card101);
+
+            Card card100 = new Card("Wargames", 100, 4, 0, false);
+            lateWar.Add(card100);
         }
     }
 }
