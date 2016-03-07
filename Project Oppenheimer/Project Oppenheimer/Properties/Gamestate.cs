@@ -24,5 +24,24 @@ namespace Project_Oppenheimer.Properties
             countryLst = new CountryList();
             cards = new CardList();
         }
+
+        public void scoreUSSR (int x)
+        {
+            score = score - x;
+        }
+
+        public void scoreUSA (int x)
+        {
+            score = score + x;
+        }
+
+        public void advanceTurn()
+        {
+
+        }
+        public void advanceRound()
+        {
+
+        }
     }
 }
