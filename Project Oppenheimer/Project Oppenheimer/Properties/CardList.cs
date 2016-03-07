@@ -17,6 +17,8 @@ namespace Project_Oppenheimer.Properties
         public List<Card> earlyWar;
         public List<Card> midWar;
         public List<Card> lateWar;
+        private List<Card> facedownChinaUs;
+        private List<Card> facedownChinaUssr;
 
         public CardList()
         {
@@ -25,9 +27,12 @@ namespace Project_Oppenheimer.Properties
             removed = new List<Card>();
             usHand = new List<Card>();
             ussrHand = new List<Card>();
+            facedownChinaUs = new List<Card>();
+            facedownChinaUssr = new List<Card>();
             init_EW();
             init_MW();
             init_LW();
+            //add china to facedown USSR
         }
 
         public void deal(int x)
@@ -51,7 +56,7 @@ namespace Project_Oppenheimer.Properties
                 dealX(9);
             }
         }
-        //change to deal up to X to each player (excluding china card)
+
         private void dealX(int x)
         {
             for (int i = 0; i < x; i++)
@@ -60,16 +65,39 @@ namespace Project_Oppenheimer.Properties
                 {
                     shuffel();
                 }
-                var tmp = deck[0];
-                ussrHand.Add(tmp);
-                deck.Remove(tmp);
+                if (ussrHand.Count < x)
+                {
+                    var tmp = deck[0];
+                    ussrHand.Add(tmp);
+                    deck.Remove(tmp);
+                }
                 if (deck.Count == 0)
                 {
                     shuffel();
                 }
-                tmp = deck[0];
-                usHand.Add(tmp);
-                deck.Remove(tmp);
+                if (usHand.Count < x)
+                {
+                    var tmp = deck[0];
+                    usHand.Add(tmp);
+                    deck.Remove(tmp);
+                }
+            }
+            dealChina();
+        }
+
+        private void dealChina()
+        {
+            if (facedownChinaUssr.Count != 0)
+            {
+                var temp = facedownChinaUssr[0];
+                facedownChinaUssr.Remove(temp);
+                ussrHand.Add(temp);
+            }
+            else if (facedownChinaUs.Count != 0)
+            {
+                var temp = facedownChinaUs[0];
+                facedownChinaUs.Remove(temp);
+                usHand.Add(temp);
             }
         }
 
@@ -105,6 +133,11 @@ namespace Project_Oppenheimer.Properties
                 discarded.Add(c);
                 usHand.Remove(c);
             }
+        }
+
+        private void discardChina(Card c)
+        {
+
         }
 
         public void remove(Card c)
