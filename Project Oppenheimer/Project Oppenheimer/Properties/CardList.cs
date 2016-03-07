@@ -51,7 +51,7 @@ namespace Project_Oppenheimer.Properties
                 dealX(9);
             }
         }
-
+        //change to deal up to X to each player (excluding china card)
         private void dealX(int x)
         {
             for (int i = 0; i < x; i++)
@@ -60,16 +60,16 @@ namespace Project_Oppenheimer.Properties
                 {
                     shuffel();
                 }
-                var tmp1 = deck[0];
-                ussrHand.Add(tmp1);
-                deck.Remove(tmp1);
+                var tmp = deck[0];
+                ussrHand.Add(tmp);
+                deck.Remove(tmp);
                 if (deck.Count == 0)
                 {
                     shuffel();
                 }
-                tmp1 = deck[0];
-                usHand.Add(tmp1);
-                deck.Remove(tmp1);
+                tmp = deck[0];
+                usHand.Add(tmp);
+                deck.Remove(tmp);
             }
         }
 
@@ -93,14 +93,32 @@ namespace Project_Oppenheimer.Properties
             }
         }
 
-        public void discard(int x)
+        public void discard(Card c)
         {
-
+           if (ussrHand.Contains(c))
+            {
+                discarded.Add(c);
+                ussrHand.Remove(c);
+            }
+           else if ((usHand.Contains(c)))
+            {
+                discarded.Add(c);
+                usHand.Remove(c);
+            }
         }
 
-        public void remove(int x)
+        public void remove(Card c)
         {
-
+            if (ussrHand.Contains(c))
+            {
+                removed.Add(c);
+                ussrHand.Remove(c);
+            }
+            else if ((usHand.Contains(c)))
+            {
+                removed.Add(c);
+                usHand.Remove(c);
+            }
         }
         
         private void init_EW()
