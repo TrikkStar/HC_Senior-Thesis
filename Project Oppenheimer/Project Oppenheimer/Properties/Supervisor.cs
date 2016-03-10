@@ -16,5 +16,10 @@ namespace Project_Oppenheimer.Properties
             game = new Gamestate();
             ai = new Robert();
         }
+
+        public void playCard(int x)
+        {
+
+        }
     }
 }

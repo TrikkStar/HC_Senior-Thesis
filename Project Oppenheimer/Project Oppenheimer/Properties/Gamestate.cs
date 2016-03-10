@@ -20,6 +20,7 @@ namespace Project_Oppenheimer.Properties
             score = 0;
             defcon = 5;
             turn = 0;
+            //round 0 = headline phase
             round = 0;
             countryLst = new CountryList();
             cards = new CardList();
@@ -35,11 +36,43 @@ namespace Project_Oppenheimer.Properties
             score = score + x;
         }
 
-        public void advanceTurn()
+        public void endTurn()
         {
 
         }
+
+        public void advanceTurn()
+        {
+            if (turn == 10)
+            {
+                finalScoring();
+            }
+            else
+            {
+                turn = turn + 1;
+                round = 0;
+                cards.deal(turn);
+            }
+        }
+
         public void advanceRound()
+        {
+            if (turn < 4)
+            {
+
+            }
+            else
+            {
+
+            }
+        }
+
+        public void scoreRegion(int x)
+        {
+
+        }
+
+        public void finalScoring()
         {
 
         }
