@@ -14,14 +14,17 @@ namespace Project_Oppenheimer.Properties
         public int defcon;
         public int turn;
         public int round;
+        public int usMilOps;
+        public int ussrMilOps;
 
         public Gamestate()
         {
             score = 0;
             defcon = 5;
             turn = 0;
-            //round 0 = headline phase
-            round = 0;
+            round = 0; //headline phase
+            usMilOps = 0;
+            ussrMilOps = 0;
             countryLst = new CountryList();
             cards = new CardList();
         }
@@ -38,12 +41,30 @@ namespace Project_Oppenheimer.Properties
 
         public void endTurn()
         {
+            scoreUSSR(ussrMilOps);
+            scoreUSA(usMilOps);
+            checkVictory();
+            improveDefcon();
+            advanceTurn();
+        }
 
+        private void improveDefcon()
+        {
+            if (defcon < 5)
+            {
+                defcon = defcon - 1;
+            }
         }
 
         public string Victory(int x)
         {
-            return "you win";
+            if (x == -1)
+            {
+                return "Soviet Victory!";
+            } else
+            {
+                return "American Victory!";
+            }
         }
 
         public void advanceTurn()
@@ -56,6 +77,8 @@ namespace Project_Oppenheimer.Properties
             {
                 turn = turn + 1;
                 round = 0;
+                usMilOps = 0;
+                ussrMilOps = 0;
                 cards.deal(turn);
             }
         }
@@ -127,7 +150,13 @@ namespace Project_Oppenheimer.Properties
 
         public void checkVictory()
         {
-
+            if (score <= -20)
+            {
+                Victory(-1);
+            } else if (score >= 20)
+            {
+                Victory(1);
+            }
         }
 
         private void scoreEurope()
