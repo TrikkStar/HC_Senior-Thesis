@@ -29,6 +29,17 @@ namespace Project_Oppenheimer.Properties
             cards = new CardList();
         }
 
+        public void militaryOp(int x)
+        {
+            if ((x == -1) && (ussrMilOps <= 5))
+            {
+                ussrMilOps++;
+            } else if ((x == 1) && (usMilOps <= 5))
+            {
+                usMilOps++;
+            }
+        }
+
         public void scoreUSSR (int x)
         {
             score = score - x;

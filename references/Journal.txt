@@ -211,3 +211,5 @@ more specific information about changes I recommend looking through the commit h
 3/15/2016:
 	Been a few days since I wrote an entry, was busy with other classes. Currently my goal is to just get all the back-end stuff implemented and get the AI working.
 	The GUI has takes a second priority since I just need to et the actual project done and am feeling crunched for time.
+	- Project currently runs on .Net 4.5.2, I would like to change this to 4.6 to include native Windows 10 compatibility but want to make sue that doing so doesn't break
+	anything I currently have. So that will wait a bit.
