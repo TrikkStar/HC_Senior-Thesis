@@ -172,7 +172,7 @@ namespace Project_Oppenheimer.Properties
 
         private void scoreEurope()
         {
-            //need to figure out a way to generalise
+            //need to figure out a way to generalise out into a seperate function
             int usPresence = 0;
             int ussrPresence = 0;
             int usBattlegrounds = 0;
@@ -224,7 +224,27 @@ namespace Project_Oppenheimer.Properties
             }
             scoreUSA(usBattlegrounds);
             scoreUSSR(ussrBattlegrounds);
-            //need to add special cases for adjacent country scoring
+            //special cases for adjacentcy
+            //Finland
+            if (countryLst.countries[26].controller == 1)
+            {
+                scoreUSA(1);
+            }
+            //Poland
+            if (countryLst.countries[59].controller == 1)
+            {
+                scoreUSA(1);
+            }
+            //Romania
+            if (countryLst.countries[60].controller == 1)
+            {
+                scoreUSA(1);
+            }
+            //Canada
+            if (countryLst.countries[13].controller == -1)
+            {
+                scoreUSSR(1);
+            }
             checkVictory();
         }
 
@@ -283,7 +303,16 @@ namespace Project_Oppenheimer.Properties
             }
             scoreUSA(usBattlegrounds);
             scoreUSSR(ussrBattlegrounds);
-            //need to add special cases for adjacent country scoring
+            //Cuba
+            if (countryLst.countries[17].controller == -1)
+            {
+                scoreUSSR(1);
+            }
+            //Mexico
+            if (countryLst.countries[48].controller == -1)
+            {
+                scoreUSSR(1);
+            }
             checkVictory();
         }
 
@@ -516,7 +545,21 @@ namespace Project_Oppenheimer.Properties
             }
             scoreUSA(usBattlegrounds);
             scoreUSSR(ussrBattlegrounds);
-            //need special cases for adjacent countries
+            //Afghanistan
+            if (countryLst.countries[0].controller == 1)
+            {
+                scoreUSA(1);
+            }
+            //North Korea
+            if (countryLst.countries[52].controller == 1)
+            {
+                scoreUSA(1);
+            }
+            //Japan
+            if (countryLst.countries[41].controller == -1)
+            {
+                scoreUSSR(1);
+            }
             checkVictory();
         }
 
