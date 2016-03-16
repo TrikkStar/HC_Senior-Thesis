@@ -189,7 +189,7 @@ namespace Project_Oppenheimer.Properties
                         {
                             ussrBattlegrounds++;
                         }
-                    } else if (temp.controller == 1)
+                    } else
                     {
                         usPresence++;
                         if (temp.battleground)
@@ -247,7 +247,7 @@ namespace Project_Oppenheimer.Properties
                             ussrBattlegrounds++;
                         }
                     }
-                    else if (temp.controller == 1)
+                    else
                     {
                         usPresence++;
                         if (temp.battleground)
@@ -306,7 +306,7 @@ namespace Project_Oppenheimer.Properties
                             ussrBattlegrounds++;
                         }
                     }
-                    else if (temp.controller == 1)
+                    else
                     {
                         usPresence++;
                         if (temp.battleground)
@@ -364,7 +364,7 @@ namespace Project_Oppenheimer.Properties
                             ussrBattlegrounds++;
                         }
                     }
-                    else if (temp.controller == 1)
+                    else
                     {
                         usPresence++;
                         if (temp.battleground)
@@ -405,12 +405,119 @@ namespace Project_Oppenheimer.Properties
 
         private void scoreMiddleEast()
         {
-
+            int usPresence = 0;
+            int ussrPresence = 0;
+            int usBattlegrounds = 0;
+            int ussrBattlegrounds = 0;
+            foreach (int element in countryLst.MiddleEast)
+            {
+                var temp = countryLst.countries[element];
+                if (temp.controlled)
+                {
+                    if (temp.controller == -1)
+                    {
+                        ussrPresence++;
+                        if (temp.battleground)
+                        {
+                            ussrBattlegrounds++;
+                        }
+                    }
+                    else
+                    {
+                        usPresence++;
+                        if (temp.battleground)
+                        {
+                            usBattlegrounds++;
+                        }
+                    }
+                }
+            }
+            if ((usBattlegrounds == 6) && (usPresence > ussrPresence) && (usPresence >= 7))
+            {
+                scoreUSA(7);
+            }
+            else if ((usBattlegrounds > ussrBattlegrounds) && (usPresence > ussrPresence) && (usPresence >= 2) && (usBattlegrounds >= 1))
+            {
+                scoreUSA(5);
+            }
+            else if (usPresence >= 1)
+            {
+                scoreUSA(3);
+            }
+            if ((ussrBattlegrounds == 6) && (usPresence < ussrPresence) && (ussrPresence >= 7))
+            {
+                scoreUSSR(7);
+            }
+            else if ((usBattlegrounds < ussrBattlegrounds) && (usPresence < ussrPresence) && (ussrPresence >= 2) && (ussrBattlegrounds >= 1))
+            {
+                scoreUSSR(5);
+            }
+            else if (usPresence >= 1)
+            {
+                scoreUSSR(3);
+            }
+            scoreUSA(usBattlegrounds);
+            scoreUSSR(ussrBattlegrounds);
+            checkVictory();
         }
 
         private void scoreAsia()
         {
-
+            int usPresence = 0;
+            int ussrPresence = 0;
+            int usBattlegrounds = 0;
+            int ussrBattlegrounds = 0;
+            foreach (int element in countryLst.Asia)
+            {
+                var temp = countryLst.countries[element];
+                if (temp.controlled)
+                {
+                    if (temp.controller == -1)
+                    {
+                        ussrPresence++;
+                        if (temp.battleground)
+                        {
+                            ussrBattlegrounds++;
+                        }
+                    }
+                    else
+                    {
+                        usPresence++;
+                        if (temp.battleground)
+                        {
+                            usBattlegrounds++;
+                        }
+                    }
+                }
+            }
+            if ((usBattlegrounds == 6) && (usPresence > ussrPresence) && (usPresence >= 7))
+            {
+                scoreUSA(9);
+            }
+            else if ((usBattlegrounds > ussrBattlegrounds) && (usPresence > ussrPresence) && (usPresence >= 2) && (usBattlegrounds >= 1))
+            {
+                scoreUSA(7);
+            }
+            else if (usPresence >= 1)
+            {
+                scoreUSA(3);
+            }
+            if ((ussrBattlegrounds == 6) && (usPresence < ussrPresence) && (ussrPresence >= 7))
+            {
+                scoreUSSR(9);
+            }
+            else if ((usBattlegrounds < ussrBattlegrounds) && (usPresence < ussrPresence) && (ussrPresence >= 2) && (ussrBattlegrounds >= 1))
+            {
+                scoreUSSR(7);
+            }
+            else if (usPresence >= 1)
+            {
+                scoreUSSR(3);
+            }
+            scoreUSA(usBattlegrounds);
+            scoreUSSR(ussrBattlegrounds);
+            //need special cases for adjacent countries
+            checkVictory();
         }
 
         private void scoreSoutheastAsia()
