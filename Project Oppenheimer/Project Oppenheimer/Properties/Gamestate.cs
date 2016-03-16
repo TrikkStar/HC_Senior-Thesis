@@ -172,7 +172,60 @@ namespace Project_Oppenheimer.Properties
 
         private void scoreEurope()
         {
-
+            //need to figure out a way to generalise
+            int usPresence = 0;
+            int ussrPresence = 0;
+            int usBattlegrounds = 0;
+            int ussrBattlegrounds = 0;
+            foreach (int element in countryLst.Europe)
+            {
+                var temp = countryLst.countries[element];
+                if (temp.controlled)
+                {
+                    if (temp.controller == -1)
+                    {
+                        ussrPresence++;
+                        if (temp.battleground)
+                        {
+                            ussrBattlegrounds++;
+                        }
+                    } else if (temp.controller == 1)
+                    {
+                        usPresence++;
+                        if (temp.battleground)
+                        {
+                            usBattlegrounds++;
+                        }
+                    }
+                }
+            }
+            //end need generalise
+            if ((usBattlegrounds == 5) && (usPresence > ussrPresence) && (usPresence >= 6))
+            {
+                Victory(1);
+            } else if ((usBattlegrounds > ussrBattlegrounds) && (usPresence > ussrPresence) && (usPresence >= 2) && (usBattlegrounds >= 1))
+            {
+                scoreUSA(7);
+            } else if (usPresence >= 1)
+            {
+                scoreUSA(3);
+            }
+            if ((ussrBattlegrounds == 5) && (usPresence < ussrPresence) && (ussrPresence >= 6))
+            {
+                Victory(-1);
+            }
+            else if ((usBattlegrounds < ussrBattlegrounds) && (usPresence < ussrPresence) && (ussrPresence >= 2) && (ussrBattlegrounds >= 1))
+            {
+                scoreUSSR(7);
+            }
+            else if (usPresence >= 1)
+            {
+                scoreUSSR(3);
+            }
+            scoreUSA(usBattlegrounds);
+            scoreUSSR(ussrBattlegrounds);
+            //need to add special cases for adjacent country scoring
+            checkVictory();
         }
 
         private void scoreCentralAmerica()
