@@ -522,7 +522,36 @@ namespace Project_Oppenheimer.Properties
 
         private void scoreSoutheastAsia()
         {
-
+            foreach (int element in countryLst.SoutheastAsia)
+            {
+                var temp = countryLst.countries[element];
+                if (temp.controlled)
+                {
+                    if (temp.id == 72)
+                    {
+                        if (temp.controller == 1)
+                        {
+                            scoreUSA(2);
+                        }
+                        else
+                        {
+                            scoreUSSR(2);
+                        }
+                    }
+                    else
+                    {
+                        if (temp.controller == 1)
+                        {
+                            scoreUSA(1);
+                        }
+                        else
+                        {
+                            scoreUSSR(1);
+                        }
+                    }
+                }
+            }
+            checkVictory();
         }
     }
 }
