@@ -8,7 +8,7 @@ namespace Project_Oppenheimer.Properties
 {
     class Robert
     {
-        public Robert()
+        public Robert(Gamestate gme)
         {
 
         }

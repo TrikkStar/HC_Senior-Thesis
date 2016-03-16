@@ -9,12 +9,10 @@ namespace Project_Oppenheimer.Properties
     class Supervisor
     {
         public Gamestate game;
-        public Robert ai;
 
         public Supervisor()
         {
             game = new Gamestate();
-            ai = new Robert();
         }
 
         public void playCard(int x)

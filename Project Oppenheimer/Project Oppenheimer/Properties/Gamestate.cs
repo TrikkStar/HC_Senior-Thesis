@@ -16,6 +16,12 @@ namespace Project_Oppenheimer.Properties
         public int round;
         public int usMilOps;
         public int ussrMilOps;
+        public int usSpaceRace;
+        public int ussrSpaceRace;
+        public bool usSrPlayed;
+        public bool ussrSrPlayed;
+        public bool usSrSecond;
+        public bool ussrSrSecond;
 
         public Gamestate()
         {
@@ -25,18 +31,31 @@ namespace Project_Oppenheimer.Properties
             round = 0; //headline phase
             usMilOps = 0;
             ussrMilOps = 0;
+            usSpaceRace = 0;
+            ussrSpaceRace = 0;
+            usSrPlayed = false;
+            ussrSrPlayed = false;
+            usSrSecond = false;
+            ussrSrSecond = false;
             countryLst = new CountryList();
             cards = new CardList();
         }
 
-        public void militaryOp(int x)
+        public void ussrMillOp(int x)
         {
-            if ((x == -1) && (ussrMilOps <= 5))
+            ussrMilOps = ussrMilOps + x;
+            if (ussrMilOps > 5)
             {
-                ussrMilOps++;
-            } else if ((x == 1) && (usMilOps <= 5))
+                ussrMilOps = 5;
+            }
+        }
+
+        public void usMillOp(int x)
+        {
+            usMilOps = usMilOps + x;
+            if (usMilOps > 5)
             {
-                usMilOps++;
+                usMilOps = 5;
             }
         }
 
@@ -55,16 +74,7 @@ namespace Project_Oppenheimer.Properties
             scoreUSSR(ussrMilOps);
             scoreUSA(usMilOps);
             checkVictory();
-            improveDefcon();
             advanceTurn();
-        }
-
-        private void improveDefcon()
-        {
-            if (defcon < 5)
-            {
-                defcon = defcon - 1;
-            }
         }
 
         public string Victory(int x)
@@ -86,16 +96,25 @@ namespace Project_Oppenheimer.Properties
             }
             else
             {
-                turn = turn + 1;
+                if (defcon < 5)
+                {
+                    defcon = defcon - 1;
+                }
+                turn++;
                 round = 0;
                 usMilOps = 0;
                 ussrMilOps = 0;
+                ussrSrPlayed = false;
+                usSrPlayed = false;
+                ussrSrSecond = false;
+                usSrSecond = false;
                 cards.deal(turn);
             }
         }
 
         public void advanceRound()
         {
+            //need to add special case for spacerace
             if (turn < 4)
             {
                 if (round < 14)
@@ -157,6 +176,7 @@ namespace Project_Oppenheimer.Properties
             scoreAfrica();
             scoreSouthAmerica();
             checkVictory();
+            //return "Draw"
         }
 
         public void checkVictory()
@@ -167,6 +187,14 @@ namespace Project_Oppenheimer.Properties
             } else if (score >= 20)
             {
                 Victory(1);
+            }
+        }
+
+        public void checkDefcon(int x)
+        {
+            if (defcon == 1)
+            {
+                Victory(-x);
             }
         }
 
