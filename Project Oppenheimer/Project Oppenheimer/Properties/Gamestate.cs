@@ -22,6 +22,8 @@ namespace Project_Oppenheimer.Properties
         public bool ussrSrPlayed;
         public bool usSrSecond;
         public bool ussrSrSecond;
+        public bool gameOver;
+        public string victor;
 
         public Gamestate()
         {
@@ -37,8 +39,11 @@ namespace Project_Oppenheimer.Properties
             ussrSrPlayed = false;
             usSrSecond = false;
             ussrSrSecond = false;
+            gameOver = false;
+            victor = "N/A";
             countryLst = new CountryList();
             cards = new CardList();
+            //permanent status markers
         }
 
         public void ussrMillOp(int x)
@@ -77,14 +82,17 @@ namespace Project_Oppenheimer.Properties
             advanceTurn();
         }
 
-        public string Victory(int x)
+        public void Victory(int x)
         {
             if (x == -1)
             {
-                return "Soviet Victory!";
-            } else
+                victor = "Soviet Victory!";
+                gameOver = true;
+            }
+            else
             {
-                return "American Victory!";
+                victor = "American Victory!";
+                gameOver = true;
             }
         }
 
@@ -176,7 +184,11 @@ namespace Project_Oppenheimer.Properties
             scoreAfrica();
             scoreSouthAmerica();
             checkVictory();
-            //return "Draw"
+            if (!gameOver)
+            {
+                gameOver = true;
+                victor = "Draw";
+            }
         }
 
         public void checkVictory()
