@@ -24,6 +24,7 @@ namespace Project_Oppenheimer.Properties
         public bool ussrSrSecond;
         public bool gameOver;
         public string victor;
+        //EW
 
         public Gamestate()
         {
@@ -44,6 +45,140 @@ namespace Project_Oppenheimer.Properties
             countryLst = new CountryList();
             cards = new CardList();
             //permanent status markers
+        }
+
+        public void advanceSpaceRace(int x)
+        {
+            //special space race functions taken care of by supervisor
+            if (x == -1)
+            {
+                advanceUssrSR();
+            }
+            else
+            {
+                advanceUsSR();
+            }
+            checkVictory();
+        }
+
+        private void advanceUssrSR()
+        {
+            if (ussrSpaceRace == 0)
+            {
+                if (usSpaceRace <= ussrSpaceRace)
+                {
+                    scoreUSSR(2);
+                }
+                else
+                {
+                    scoreUSSR(1);
+                }
+                ussrSpaceRace++;
+            }
+            else if (ussrSpaceRace == 2)
+            {
+                if (usSpaceRace <= ussrSpaceRace)
+                {
+                    scoreUSSR(2);
+                }
+                ussrSpaceRace++;
+            }
+            else if (ussrSpaceRace == 4)
+            {
+                if (usSpaceRace <= ussrSpaceRace)
+                {
+                    scoreUSSR(3);
+                }
+                else
+                {
+                    scoreUSSR(1);
+                }
+                ussrSpaceRace++;
+            }
+            else if (ussrSpaceRace == 6)
+            {
+                if (usSpaceRace <= ussrSpaceRace)
+                {
+                    scoreUSSR(4);
+                }
+                else
+                {
+                    scoreUSSR(2);
+                }
+                ussrSpaceRace++;
+            }
+            else if (ussrSpaceRace == 7)
+            {
+                if (usSpaceRace <= ussrSpaceRace)
+                {
+                    scoreUSSR(2);
+                }
+                ussrSpaceRace++;
+            }
+            else if (ussrSpaceRace < 8)
+            {
+                ussrSpaceRace++;
+            }
+        }
+
+        private void advanceUsSR()
+        {
+            if (usSpaceRace == 0)
+            {
+                if (usSpaceRace >= ussrSpaceRace)
+                {
+                    scoreUSA(2);
+                }
+                else
+                {
+                    scoreUSA(1);
+                }
+                usSpaceRace++;
+            }
+            else if (usSpaceRace == 2)
+            {
+                if (usSpaceRace >= ussrSpaceRace)
+                {
+                    scoreUSA(2);
+                }
+                usSpaceRace++;
+            }
+            else if (usSpaceRace == 4)
+            {
+                if (usSpaceRace >= ussrSpaceRace)
+                {
+                    scoreUSA(3);
+                }
+                else
+                {
+                    scoreUSA(1);
+                }
+                usSpaceRace++;
+            }
+            else if (usSpaceRace == 6)
+            {
+                if (usSpaceRace >= ussrSpaceRace)
+                {
+                    scoreUSA(4);
+                }
+                else
+                {
+                    scoreUSA(2);
+                }
+                usSpaceRace++;
+            }
+            else if (usSpaceRace == 7)
+            {
+                if (usSpaceRace >= ussrSpaceRace)
+                {
+                    scoreUSA(2);
+                }
+                usSpaceRace++;
+            }
+            else if (usSpaceRace < 8)
+            {
+                usSpaceRace++;
+            }
         }
 
         public void ussrMillOp(int x)
