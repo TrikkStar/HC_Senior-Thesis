@@ -27,6 +27,26 @@ USSR Early War:
 	32 - UN Intervention
 
 US Early War:
+	25 - *Containment
+	31 - Red Scare/Purge
+	21 - NATO
+	23 - *Marshall Plan
+	27 - *US/Japan Mutual Defense Pact
+	106 - *NORAD
+	105 - Special Relationship
+	24 - Indo-Pakistani War
+	29 - East European Unrest
+	22 - *Independent Reds
+	04 - Duck and Cover
+	34 - Nuclear Test Ban
+	20 - Olympic Games
+	35 - *Formosan Resolution
+	19 - *Truman Doctrine
+	05 - Five-Year Plan
+	103 - Defectors
+	18 - *Captured Nazi Scientist
+	26 - *CIA Created
+	32 - UN Intervention
 
 USSR Space Race(EW):
 
