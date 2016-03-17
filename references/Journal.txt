@@ -238,3 +238,4 @@ specific information about changes, I recommend looking through the commit histo
 	sure if this is the most intelligent way to go about doing it, but it makes the most sense to me. Especially since there are at least three
 	different bits of data that the Supervisor will need to have access to. The AI will go through a series of function calls to assemble the appropriate
 	call state. This will be interesting.
+	- Just learned about switch statements in C#, these are analogous to OCaml match statements and this makes me very happy.

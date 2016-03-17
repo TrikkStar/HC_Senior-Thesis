@@ -1,7 +1,7 @@
-Numbers refer to the card number used as refrence by the game, names are given only for clarification purposes. 
+Numbers refer to the card number used as refrence by the game, names are given only for clarification purposes.
 Space Race lists are given for each era and may be condensed in the future. Names are not given here to reduce redundancy.
-Cards marked with an asterisk are removed from the game when played as an event. (This will not be marked on 
-the Space Race lists) 
+Cards marked with an asterisk are removed from the game when played as an event. (This will not be marked on
+the Space Race lists)
 
 USSR Early War:
 	31 - Red Scare/Purge
@@ -20,6 +20,7 @@ USSR Early War:
 	12 - *Romanian Abdication
 	08 - *Fidel
 	33 - *De-Stalinization
+	104 - The Cambridge Five
 	20 - Olympic Games
 	34 - Nuclear Test Ban
 	18 - *Captured Nazi Scientist

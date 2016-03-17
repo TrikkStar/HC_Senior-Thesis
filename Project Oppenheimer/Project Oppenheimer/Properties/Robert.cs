@@ -29,6 +29,10 @@ namespace Project_Oppenheimer.Properties
                 hand = game.cards.ussrHand;
             }
             playScoringCard();
+            if (!completed)
+            {
+                playEventCard();
+            }
         }
 
         private int playScoringCard()
@@ -151,6 +155,66 @@ namespace Project_Oppenheimer.Properties
                     return true;
                 }
             }
+            return false;
+        }
+
+        private int playEventCard()
+        {
+            List<int> cardLst;
+            if (game.turn < 4)
+            {
+                //earlyWar priority lists
+                if (side == -1)
+                {
+                    cardLst = new List<int> {31, 16, 28, 7, 17, 14, 9, 30, 24, 11, 13, 10, 15, 12, 8, 33, 104, 20, 34, 18, 32};
+                }
+                else
+                {
+                    cardLst = new List<int> {25, 31, 21, 23, 27, 106, 105, 24, 29, 22, 4, 34, 20, 35, 19, 5, 103, 18, 26, 32};
+                }
+            }
+            else if (game.turn < 8)
+            {
+                //midWar priority list-need to make priority
+                if (side == -1)
+                {
+                    cardLst = new List<int> { };
+                }
+                else
+                {
+                    cardLst = new List<int> { };
+                }
+            }
+            else
+            {
+                //lateWar priority list-need to make priority
+                if (side == -1)
+                {
+                    cardLst = new List<int> { };
+                }
+                else
+                {
+                    cardLst = new List<int> { };
+                }
+            }
+            foreach (int cardId in cardLst)
+            {
+                foreach (Card card in hand)
+                {
+                    if ((cardId == card.id) && (checkEventCondition(cardId)))
+                    {
+                        cardToPlay = cardId;
+                        actionType = "Event";
+                        completed = true;
+                        return 0;
+                    }
+                }
+            }
+            return 0;
+        }
+
+        private bool checkEventCondition (int x)
+        {
             return false;
         }
     }
