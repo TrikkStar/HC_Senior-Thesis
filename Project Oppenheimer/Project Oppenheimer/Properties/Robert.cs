@@ -219,22 +219,31 @@ namespace Project_Oppenheimer.Properties
             switch (x)
             {
                 case 25:
+                    returnValue = (game.turn == 2);
                     break;
                 case 31:
+                    returnValue = ((game.turn == 1) || (game.turn == 2));
                     break;
                 case 21:
+                    returnValue = ((game.MarshallPlan) || (game.WarsawPactFormed));
                     break;
                 case 23:
+                    returnValue = ((!game.NATO) || (!checkRegionCondition(2)));
                     break;
                 case 27:
+                    returnValue = (game.countryLst.countries[41].influenceUSA < 3);
                     break;
                 case 106:
+                    returnValue = (game.countryLst.countries[13].controller == 1);
                     break;
                 case 105:
+                    returnValue = ((game.NATO) && (game.countryLst.countries[75].controller == 1));
                     break;
                 case 24:
+                    returnValue = IndoPakistaniWarCondidtion();
                     break;
                 case 29:
+
                     break;
                 case 22:
                     break;
@@ -290,6 +299,57 @@ namespace Project_Oppenheimer.Properties
                     break;
             }
             return returnValue;
+        }
+
+        private bool IndoPakistaniWarCondidtion()
+        {
+            var india = game.countryLst.countries[34];
+            var pakistan = game.countryLst.countries[54];
+            if (side == 1)
+            {
+                if (game.usMilOps <= 3)
+                {
+                    if (india.influenceUSA < india.influenceUSSR)
+                    {
+                        if ((pakistan.controller != -1) && (game.countryLst.countries[75].controller != -1))
+                        {
+                            targets.Add(34);
+                            return true;
+                        }
+                    }
+                    if (pakistan.influenceUSA < pakistan.influenceUSSR)
+                    {
+                        if ((india.controller != -1) && (game.countryLst.countries[0].controller != -1) && (game.countryLst.countries[36].controller != -1))
+                        {
+                            targets.Add(54);
+                            return true;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                if (game.ussrMilOps <= 3)
+                {
+                    if (india.influenceUSA > india.influenceUSSR)
+                    {
+                        if ((pakistan.controller != 1) && (game.countryLst.countries[75].controller != 1))
+                        {
+                            targets.Add(34);
+                            return true;
+                        }
+                    }
+                    if (pakistan.influenceUSA > pakistan.influenceUSSR)
+                    {
+                        if ((india.controller != 1) && (game.countryLst.countries[0].controller != 1) && (game.countryLst.countries[36].controller != 1))
+                        {
+                            targets.Add(54);
+                            return true;
+                        }
+                    }
+                }
+            }
+            return false;
         }
     }
 }
