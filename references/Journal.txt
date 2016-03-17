@@ -58,7 +58,7 @@ specific information about changes, I recommend looking through the commit histo
 	that I am currently following to learn the in's and out's of Win32 applications, with the possibility of creating the most basic shell on which my
 	program will be built. For my weekly goal, I intend to have completed most of the "Generic" tutorial on the website. This is the second tutorial
 	in the series, but I am not sure if I will need to complete all of them to learn what I need to know.
-	
+
 11/17/2015:
 	Been busier with other school work than anticipated. Current goal still stands to continue working though the tutorials to get a firmer grasp of
 	how Win32 applications work. Semester goal has definitely been revised to include at least a running window with minimal functionality. This goal
@@ -72,7 +72,7 @@ specific information about changes, I recommend looking through the commit histo
 	actual progress on the Win32 part of my project. I now believe that making an application shell with basic functionality for my project shouldn't
 	be a problem at all. A very generous estimate would have me being 50% done with the GUI and gamestate by the end of the semester. I intend to keep
 	as much of the files that I currently have created as possible. Presenting progress tomorrow shouldn't be an issue.
-	
+
 11/29/2015:
 	Due to unforeseen family visitation over Thanksgiving, I was unable to make progress over break as planned. That being said, my goals still remain
 	the same: to continue to work through the tutorials I have found, adding to my working project as I go.
@@ -113,8 +113,8 @@ specific information about changes, I recommend looking through the commit histo
 	New program type is not without its flaws. I am unsure how to dynamically change displayed content after its initialization. This should not be too
 	much of an issue to solve since it simply requires changing the appropriate variable. However, to do this the way I had planned to requires including
 	a .cpp file in a .h file, which is something you can't do, apparently. I then realized that in my time at Hanover I can't remember really learning
-	much about linking files together, which is a bit of a problem. My current problem stems from the fact that I apparently haven't learned about strings 
-	correctly, as I cannot seem to declare them in any method that I have been able to look up thus far. I will be looking into this more, but as it 
+	much about linking files together, which is a bit of a problem. My current problem stems from the fact that I apparently haven't learned about strings
+	correctly, as I cannot seem to declare them in any method that I have been able to look up thus far. I will be looking into this more, but as it
 	stands I am getting the current error: "a member of a managed class cannot be of a non-managed class type". I'm doing my best to figure out exactly
 	what this means, but for now I'm pretty stuck. Going to open up an issue regarding this on GitHub.
 
@@ -125,7 +125,7 @@ specific information about changes, I recommend looking through the commit histo
 	Been a while since I wrote here. Unfortunately this semester hit me harder than I anticipated, and I haven't made any progress this year. But now
 	that things have calmed down a bit, I intend to redouble my efforts and get down to business. I do still believe that I will be able to get everything
 	done in the remaining time, though it will probably not be fun.
-	
+
 	Off to work I go.
 
 	Edit: An issue I had been having is deciding how to represent country adjacency to a superpower, since they would not be included in the normal
@@ -155,7 +155,7 @@ specific information about changes, I recommend looking through the commit histo
 	object. Now I just need to figure out how to link my gamestate into my WinForm, and then I should have my GUI working.
 
 	- So to get my content to be displayed dynamically, I need to create a function in my form that will refresh all of the relevant attributes on the
-	screen. Will be testing this with a single country to start. The updated definition will look something like this: 
+	screen. Will be testing this with a single country to start. The updated definition will look something like this:
 	this->Algeria_USA->Text = System::Convert::ToString(this->game->countryLst->countries[1].get_infUSA());
 
 	- To get my GUI to refresh itself, I need to add appropriate event handlers to the form. In order to do this I'm following the official Microsoft
@@ -194,7 +194,7 @@ specific information about changes, I recommend looking through the commit histo
 	to my project.
 
 3/3/2016:
-	Made another query on StackOverflow based on a few days of research and head-scratching: 
+	Made another query on StackOverflow based on a few days of research and head-scratching:
 	http://stackoverflow.com/questions/35788311/using-custom-data-classes-with-windows-forms
 	Hopefully I can get a definitive answer to my problem.
 
@@ -231,3 +231,10 @@ specific information about changes, I recommend looking through the commit histo
 	doing so doesn't break anything I currently have. So that will wait a bit.
 
 	- Appears it worked without a hitch.
+
+3/16/2016:
+	Determined that my supervisor will make a new AI instance each time that a decision has to be made. That AI instance will have certain attributes
+	that are dynamically created by following the AI logic that will be used by the Supervisor class to take the appropriate action in the game. Not
+	sure if this is the most intelligent way to go about doing it, but it makes the most sense to me. Especially since there are at least three
+	different bits of data that the Supervisor will need to have access to. The AI will go through a series of function calls to assemble the appropriate
+	call state. This will be interesting.

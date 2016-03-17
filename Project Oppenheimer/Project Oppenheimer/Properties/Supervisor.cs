@@ -10,14 +10,23 @@ namespace Project_Oppenheimer.Properties
     {
         public Gamestate game;
         public Random rng;
+        public int player;
+        public int AI;
 
         public Supervisor()
         {
             game = new Gamestate();
             rng = new Random();
+            player = 0;
+            AI = 0;
         }
 
-        public void playCard(int x)
+        public void newGame()
+        {
+
+        }
+
+        public void playCard(int player, int card)
         {
 
         }

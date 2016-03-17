@@ -8,7 +8,12 @@ namespace Project_Oppenheimer.Properties
 {
     class Robert
     {
-        public Robert(Gamestate gme, int side)
+        public string actionType;
+        public int cardToPlay;
+        public List<int> targets;
+        private bool completed = false;
+
+        public Robert(Gamestate game, int side)
         {
 
         }
