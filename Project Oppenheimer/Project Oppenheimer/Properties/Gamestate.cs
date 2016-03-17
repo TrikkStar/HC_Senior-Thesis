@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Project_Oppenheimer.Properties
+﻿namespace Project_Oppenheimer.Properties
 {
     class Gamestate
     {
@@ -25,6 +19,29 @@ namespace Project_Oppenheimer.Properties
         public bool gameOver;
         public string victor;
         //EW
+        public bool DeGualleLeadsFrance;
+        public bool WarsawPactFormed;
+        public bool USJapanMutualDefensePact;
+        public bool NORAD;
+        public bool FormosanResolution;
+        public bool MarshallPlan;
+        public bool NATO;
+        //MW
+        public bool BearTrap;
+        public bool WillyBrandt;
+        public bool CampDavidAccords;
+        public bool ShuttleDiplomacy;
+        public bool FlowerPower;
+        public bool Quagmire;
+        public bool JohnPaulIIElectedPope;
+        //LW
+        public bool IranianHostageCrisis;
+        public bool AnEvilEmpire;
+        public bool AwacsSaleToSaudis;
+        public bool TearDownThisWall;
+        public bool TheIronLady;
+        public bool NorthSeaOil;
+        public bool TheReformer;
 
         public Gamestate()
         {
@@ -45,6 +62,27 @@ namespace Project_Oppenheimer.Properties
             countryLst = new CountryList();
             cards = new CardList();
             //permanent status markers
+            DeGualleLeadsFrance = false;
+            WarsawPactFormed = false;
+            USJapanMutualDefensePact = false;
+            NORAD = false;
+            MarshallPlan = false;
+            NATO = false;
+            FormosanResolution = false;
+            BearTrap = false;
+            WillyBrandt = false;
+            CampDavidAccords = false;
+            ShuttleDiplomacy = false;
+            FlowerPower = false;
+            Quagmire = false;
+            JohnPaulIIElectedPope = false;
+            IranianHostageCrisis = false;
+            AnEvilEmpire = false;
+            AwacsSaleToSaudis = false;
+            TearDownThisWall = false;
+            TheIronLady = false;
+            NorthSeaOil = false;
+            TheReformer = false;
         }
 
         public void advanceSpaceRace(int x)
