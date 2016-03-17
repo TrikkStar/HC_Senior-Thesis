@@ -127,6 +127,12 @@ namespace Project_Oppenheimer.Properties
                 case 38:
                     region = game.countryLst.SoutheastAsia;
                     break;
+                case -2:
+                    region = game.countryLst.EasternEurope;
+                    break;
+                case -4:
+                    region = game.countryLst.WesternEurope;
+                    break;
             }
             return region;
         }
@@ -243,7 +249,22 @@ namespace Project_Oppenheimer.Properties
                     returnValue = IndoPakistaniWarCondidtion();
                     break;
                 case 29:
-
+                    if (game.turn < 8)
+                    {
+                        if (numBattlegroundsControlled(-1, -2) >= 3)
+                        {
+                            //true, target battlegrounds
+                            break;
+                        }
+                    }
+                    else
+                    {
+                        if (numCountriesControlled(-1, -2) >= 3)
+                        {
+                            //
+                            break;
+                        }
+                    }
                     break;
                 case 22:
                     break;
@@ -299,6 +320,50 @@ namespace Project_Oppenheimer.Properties
                     break;
             }
             return returnValue;
+        }
+
+        private int numCountriesControlled(int player, int location)
+        {
+            List<int> region = new List<int>();
+            if (location == 00)
+            {
+                region = Enumerable.Range(0, 83).ToList();
+            }
+            else
+            {
+                region = getRegion(location);
+            }
+            int controlled = 0;
+            foreach (int element in region)
+            {
+                if (game.countryLst.countries[element].controller == player)
+                {
+                    controlled++;
+                }
+            }
+            return controlled;
+        }
+
+        private int numBattlegroundsControlled(int player, int location)
+        {
+            List<int> region = new List<int>();
+            if (location == 00)
+            {
+                region = Enumerable.Range(0, 83).ToList();
+            }
+            else
+            {
+                region = getRegion(location);
+            }
+            int battleground = 0;
+            foreach (int element in region)
+            {
+                if ((game.countryLst.countries[element].battleground) && (game.countryLst.countries[element].controller == player))
+                {
+                    battleground++;
+                }
+            }
+            return battleground;
         }
 
         private bool IndoPakistaniWarCondidtion()
