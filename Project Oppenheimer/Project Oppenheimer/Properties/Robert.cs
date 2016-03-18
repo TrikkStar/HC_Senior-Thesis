@@ -251,7 +251,7 @@ namespace Project_Oppenheimer.Properties
                 case 29:
                     if (game.turn < 8)
                     {
-                        if (numBattlegroundsControlled(-1, -2) >= 3)
+                        if (numBattlegrounds(-1, -2) >= 3)
                         {
                             //true, target battlegrounds
                             break;
@@ -259,7 +259,7 @@ namespace Project_Oppenheimer.Properties
                     }
                     else
                     {
-                        if (numCountriesControlled(-1, -2) >= 3)
+                        if (numCountries(-1, -2) >= 3)
                         {
                             //
                             break;
@@ -322,7 +322,7 @@ namespace Project_Oppenheimer.Properties
             return returnValue;
         }
 
-        private int numCountriesControlled(int player, int location)
+        private int numCountries(int player, int location)
         {
             List<int> region = new List<int>();
             if (location == 00)
@@ -344,7 +344,7 @@ namespace Project_Oppenheimer.Properties
             return controlled;
         }
 
-        private int numBattlegroundsControlled(int player, int location)
+        private int numBattlegrounds(int player, int location)
         {
             List<int> region = new List<int>();
             if (location == 00)
@@ -364,6 +364,37 @@ namespace Project_Oppenheimer.Properties
                 }
             }
             return battleground;
+        }
+
+        private int targetCountryRemoval(int player, int area, int amount)
+        {
+            List<int> region = new List<int>();
+            if (area == 00)
+            {
+                region = Enumerable.Range(0, 83).ToList();
+            }
+            else
+            {
+                region = getRegion(area);
+            }
+            foreach (var stability in Enumerable.Range(5, 1).ToList())
+            {
+                foreach (var country in region)
+                {
+                    var temp = game.countryLst.countries[country];
+                    if ((temp.battleground) && (temp.stability == stability))
+                    {
+                        if (player == 1)
+                        {
+                            if (temp.influenceUSA >= amount)
+                        }
+                        else
+                        {
+
+                        }
+                    }
+                }
+            }
         }
 
         private bool IndoPakistaniWarCondidtion()

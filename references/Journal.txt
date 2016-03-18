@@ -239,3 +239,15 @@ specific information about changes, I recommend looking through the commit histo
 	different bits of data that the Supervisor will need to have access to. The AI will go through a series of function calls to assemble the appropriate
 	call state. This will be interesting.
 	- Just learned about switch statements in C#, these are analogous to OCaml match statements and this makes me very happy.
+
+3/17/2016:
+	While creating Robert I'm quickly seeing that I have no chance of implementing an entire AI to play a full game by the due date. At this point
+	I'm just looking to get the Early War period implemented and playable but even that is looking like a very daunting task. Which is very dissapointing
+	considering the fact that I felt sure that I could do it before.
+	I still don't know whether or not I can make the GUI, still trying to follow up on some leads in regards to that but I don't know what's going to
+	happen. Needless to say I'm feeling fairly discouraged and overwhelmed. I feel like I over committed myself to an incredibly difficult project but
+	never put in enough time along the way since I'm also doing a bunch of other stuff too. I really regret taking the Programming Languages class, its
+	taking up way too much time that I don't have. My other classes aren't bad but have enough work to make them an actual entity that takes time.
+	That's all for now.
+	Edit: Forgot to mention that I've been having a ton on connectivity problems lately, think that my roommate is hogging the bandwidth with all the
+	devices he uses at the same time.
