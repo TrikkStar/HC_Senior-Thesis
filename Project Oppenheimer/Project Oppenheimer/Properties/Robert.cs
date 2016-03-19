@@ -189,11 +189,11 @@ namespace Project_Oppenheimer.Properties
                 //midWar priority list-need to make priority
                 if (side == -1)
                 {
-                    cardLst = new List<int> { };
+                    cardLst = new List<int> {};
                 }
                 else
                 {
-                    cardLst = new List<int> { };
+                    cardLst = new List<int> {};
                 }
             }
             else
@@ -201,11 +201,11 @@ namespace Project_Oppenheimer.Properties
                 //lateWar priority list-need to make priority
                 if (side == -1)
                 {
-                    cardLst = new List<int> { };
+                    cardLst = new List<int> {};
                 }
                 else
                 {
-                    cardLst = new List<int> { };
+                    cardLst = new List<int> {};
                 }
             }
             foreach (int cardId in cardLst)
@@ -317,6 +317,10 @@ namespace Project_Oppenheimer.Properties
                     //need to think on this one
                     break;
                 case 104:
+                    if (game.turn < 8)
+                    {
+
+                    }
                     break;
                 case 10:
                     break;
@@ -446,6 +450,34 @@ namespace Project_Oppenheimer.Properties
                             }
                         }
                     }
+                }
+            }
+            return 0;
+        }
+
+        private int targetCountryAdd(int area, int amount)
+        {
+            var region = getRegion(area);
+            foreach (var influence in Enumerable.Range(amount, amount + 5).ToList())
+            {
+                foreach (var country in region)
+                {
+                    var temp = game.countryLst.countries[country];
+                    if ((!targets.Contains(country)) && (temp.battleground))
+                    {
+                        if (side == 1)
+                        {
+
+                        }
+                        else
+                        {
+
+                        }
+                    }
+                }
+                foreach (var country in region)
+                {
+
                 }
             }
             return 0;

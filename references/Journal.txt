@@ -242,7 +242,7 @@ specific information about changes, I recommend looking through the commit histo
 
 3/17/2016:
 	While creating Robert I'm quickly seeing that I have no chance of implementing an entire AI to play a full game by the due date. At this point
-	I'm just looking to get the Early War period implemented and playable but even that is looking like a very daunting task. Which is very dissapointing
+	I'm just looking to get the Early War period implemented and playable but even that is looking like a very daunting task. Which is very disappointing
 	considering the fact that I felt sure that I could do it before.
 	I still don't know whether or not I can make the GUI, still trying to follow up on some leads in regards to that but I don't know what's going to
 	happen. Needless to say I'm feeling fairly discouraged and overwhelmed. I feel like I over committed myself to an incredibly difficult project but
@@ -251,3 +251,10 @@ specific information about changes, I recommend looking through the commit histo
 	That's all for now.
 	Edit: Forgot to mention that I've been having a ton on connectivity problems lately, think that my roommate is hogging the bandwidth with all the
 	devices he uses at the same time.
+
+3/19/2016:
+	Things are looking up. I finally was able to resolve the issues I was having in dynamically displaying my content on the GUI, was just a problem
+	of the scope of my object. Now that that's figured out I can get that hammered away fairly quickly, but there still is a lot of work to be done.
+	I'm slowly churning out Robert's decision-making procedures which are frustrating and confusing at times. I've determined that I'm only going to
+	implement decision-making logic to cover card events for the first three turns of the game. There just isn't enough time to make over a hundred
+	different conditions, and make those conditions actual do something.
