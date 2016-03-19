@@ -257,7 +257,12 @@ namespace Project_Oppenheimer.Properties
                     {
                         if (numBattlegrounds(-1, -2) >= 3)
                         {
-                            targetCountryRemoval(-1, -2, 1);
+                            int var = 0;
+                            while (var < 3)
+                            {
+                                targetCountryRemoval(-1, -2, 1);
+                                var++;
+                            }
                             returnValue = true;
                             break;
                         }
@@ -266,7 +271,12 @@ namespace Project_Oppenheimer.Properties
                     {
                         if (numCountries(-1, -2) >= 3)
                         {
-                            targetCountryRemoval(-1, -2, 2);
+                            int var = 0;
+                            while (var < 3)
+                            {
+                                targetCountryRemoval(-1, -2, 2);
+                                var++;
+                            }
                             returnValue = true;
                             break;
                         }
@@ -276,12 +286,16 @@ namespace Project_Oppenheimer.Properties
                     returnValue = IndependentRedsCondition();
                     break;
                 case 4:
+                    returnValue = (game.defcon == 3);
                     break;
                 case 34:
+                    returnValue = ((game.defcon == 2) && (checkRegionCondition(2)) && (checkRegionCondition(1)) && (checkRegionCondition(3)));
                     break;
                 case 20:
+                    returnValue = (game.defcon > 2);
                     break;
                 case 35:
+                    returnValue = ((game.countryLst.countries[71].controller == 1) && (!cardInHand(6)));
                     break;
                 case 19:
                     break;
@@ -355,6 +369,18 @@ namespace Project_Oppenheimer.Properties
                 }
             }
             return battleground;
+        }
+
+        private bool cardInHand(int value)
+        {
+            foreach (var card in hand)
+            {
+                if (card.id == value)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         private int targetCountryRemoval(int player, int area, int amount)
