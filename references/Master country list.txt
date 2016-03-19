@@ -1,85 +1,85 @@
 Countries appear in alphebetical order, which is the order that they will be indexed into CountryList:
-Afghanistan
-Algeria
-Angola
-Argentina
-Australia
-Austria
-Benlux
-Bolivia
-Botswana
-Brazil
-Bulgaria
-Burma
-Cameroon
-Canada
-Chile
-Colombia
-Costa Rica
-Cuba
-Czechoslovakia
-Denmark
-Dominican Rep.
-E. Germany
-Ecuador
-Egypt
-El Salvador
-Ethiopia
-Finland
-France
-Greece
-Guatemala
-Gulf States
-Haiti
-Honduras
-Hungary
-India
-Indonesia
-Iran
-Iraq
-Israel
-Italy
-Ivory Coast
-Japan
-Jordan
-Kenya
-Laos/Cambodia
-Lebanon
-Libya
-Malaysia
-Mexico
-Morocco
-Nicaragua
-Nigeria
-North Korea
-Norway
-Pakistan
-Panama
-Paraguay
-Peru
-Philippians
-Poland
-Romania
-SE African States
-Saharan States
-Saudi Arabia
-Somalia
-South Africa
-South Korea
-Spain/Portugul
-Sudan
-Sweden
-Syria
-Taiwan
-Thailand
-Tunisia
-Turkey
-U.K.
-Uruguay
-Venezuela
-Vietnam
-W. Germany
-West African States
-Yugoslavia
-Zaire
-Zimbabwe
+0 Afghanistan
+1 Algeria
+2 Angola
+3 Argentina
+4 Australia
+5 Austria
+6 Benlux
+7 Bolivia
+8 Botswana
+9 Brazil
+10 Bulgaria
+11 Burma
+12 Cameroon
+13 Canada
+14 Chile
+15 Colombia
+16 Costa Rica
+17 Cuba
+18 Czechoslovakia
+19 Denmark
+20 Dominican Rep.
+21 E. Germany
+22 Ecuador
+23 Egypt
+24 El Salvador
+25 Ethiopia
+26 Finland
+27 France
+28 Greece
+29 Guatemala
+30 Gulf States
+31 Haiti
+32 Honduras
+33 Hungary
+34 India
+35 Indonesia
+36 Iran
+37 Iraq
+38 Israel
+39 Italy
+40 Ivory Coast
+41 Japan
+42 Jordan
+43 Kenya
+44 Laos/Cambodia
+45 Lebanon
+46 Libya
+47 Malaysia
+48 Mexico
+49 Morocco
+50 Nicaragua
+51 Nigeria
+52 North Korea
+53 Norway
+54 Pakistan
+55 Panama
+56 Paraguay
+57 Peru
+58 Philippians
+59 Poland
+60 Romania
+61 SE African States
+62 Saharan States
+63 Saudi Arabia
+64 Somalia
+65 South Africa
+66 South Korea
+67 Spain/Portugul
+68 Sudan
+69 Sweden
+70 Syria
+71 Taiwan
+72 Thailand
+73 Tunisia
+74 Turkey
+75 U.K.
+76 Uruguay
+77 Venezuela
+78 Vietnam
+79 W. Germany
+80 West African States
+81 Yugoslavia
+82 Zaire
+83 Zimbabwe
