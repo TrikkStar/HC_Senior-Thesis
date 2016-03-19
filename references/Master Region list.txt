@@ -1,0 +1,10 @@
+Master Region List: region codes used by the AI
+All countries: 00
+Europe: 2
+Eastern Europe: -2
+Western Europe: -4
+Asia: 1
+SouthEast Asia: 38
+Middle East: 3
+South America: 81
+Central America: 37

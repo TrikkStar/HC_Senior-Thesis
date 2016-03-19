@@ -28,6 +28,7 @@ namespace Project_Oppenheimer.Properties
             {
                 hand = game.cards.ussrHand;
             }
+            targets = new List<int>();
             playScoringCard();
             if (!completed)
             {
@@ -253,7 +254,8 @@ namespace Project_Oppenheimer.Properties
                     {
                         if (numBattlegrounds(-1, -2) >= 3)
                         {
-                            //true, target battlegrounds
+                            targetCountryRemoval(-1, -2, 1);
+                            returnValue = true;
                             break;
                         }
                     }
@@ -261,7 +263,8 @@ namespace Project_Oppenheimer.Properties
                     {
                         if (numCountries(-1, -2) >= 3)
                         {
-                            //
+                            targetCountryRemoval(-1, -2, 2);
+                            returnValue = true;
                             break;
                         }
                     }
@@ -366,7 +369,7 @@ namespace Project_Oppenheimer.Properties
             return battleground;
         }
 
-      /*  private int targetCountryRemoval(int player, int area, int amount)
+        private int targetCountryRemoval(int player, int area, int amount)
         {
             List<int> region = new List<int>();
             if (area == 00)
@@ -377,26 +380,64 @@ namespace Project_Oppenheimer.Properties
             {
                 region = getRegion(area);
             }
-            foreach (var stability in Enumerable.Range(5, 1).ToList())
+            foreach (var influence in Enumerable.Range(amount, 0).ToList())
             {
-                foreach (var country in region)
+                foreach (var stability in Enumerable.Range(5, 1).ToList())
                 {
-                    var temp = game.countryLst.countries[country];
-                    if ((temp.battleground) && (temp.stability == stability))
+                    foreach (var country in region)
                     {
-                        if (player == 1)
+                        var temp = game.countryLst.countries[country];
+                        if ((!targets.Contains(country)) && (temp.battleground) && (temp.stability == stability))
                         {
-                            if (temp.influenceUSA >= amount)
+                            if (player == 1)
+                            {
+                                if (temp.influenceUSA >= influence)
+                                {
+                                    targets.Add(country);
+                                    return 0;
+                                }
+                            }
+                            else
+                            {
+                                if (temp.influenceUSSR >= influence)
+                                {
+                                    targets.Add(country);
+                                    return 0;
+                                }
+                            }
                         }
-                        else
+                    }
+                }
+                foreach (var stability in Enumerable.Range(5, 1).ToList())
+                {
+                    foreach (var country in region)
+                    {
+                        var temp = game.countryLst.countries[country];
+                        if ((!targets.Contains(country)) && (temp.stability == stability))
                         {
-
+                            if (player == 1)
+                            {
+                                if (temp.influenceUSA >= influence)
+                                {
+                                    targets.Add(country);
+                                    return 0;
+                                }
+                            }
+                            else
+                            {
+                                if (temp.influenceUSSR >= influence)
+                                {
+                                    targets.Add(country);
+                                    return 0;
+                                }
+                            }
                         }
                     }
                 }
             }
+            return 0;
         }
-        */
+        
         private bool IndoPakistaniWarCondidtion()
         {
             var india = game.countryLst.countries[34];
