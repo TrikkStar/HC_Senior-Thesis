@@ -732,6 +732,7 @@
                     }
                 }
             }
+            //need to add special case for FormosaResolution
             if ((usBattlegrounds == 6) && (usPresence > ussrPresence) && (usPresence >= 7))
             {
                 scoreUSA(9);

@@ -230,10 +230,10 @@ namespace Project_Oppenheimer.Properties
             switch (x)
             {
                 case 25:
-                    returnValue = (game.turn == 2);
+                    returnValue = ((game.round == 2) || (game.round == 0));
                     break;
                 case 31:
-                    returnValue = ((game.turn == 1) || (game.turn == 2));
+                    returnValue = (game.round < 3);
                     break;
                 case 21:
                     returnValue = ((game.MarshallPlan) || (game.WarsawPactFormed));
@@ -319,12 +319,25 @@ namespace Project_Oppenheimer.Properties
                 case 104:
                     if (game.turn < 8)
                     {
-
+                        foreach (var region in new List<int> {2, 1, 3, 81, 79, 37, 38 })
+                        {
+                            foreach (var card in game.cards.usHand)
+                            {
+                                if ((region == card.id))
+                                {
+                                    targetCountryAdd(region, 1);
+                                    returnValue = true;
+                                    break;
+                                }
+                            }
+                        }
                     }
                     break;
                 case 10:
+                    returnValue = ((game.round >= 11) && (game.countryLst.countries[79].influenceUSA > 2));
                     break;
                 case 13:
+                    returnValue = ArabIsraeliWarCondition();
                     break;
                 case 11:
                     break;
@@ -467,17 +480,44 @@ namespace Project_Oppenheimer.Properties
                     {
                         if (side == 1)
                         {
-
+                            if (temp.stability - temp.influenceUSA <= influence)
+                            {
+                                targets.Add(country);
+                                return 0;
+                            }
                         }
                         else
                         {
-
+                            if (temp.stability - temp.influenceUSSR <= influence)
+                            {
+                                targets.Add(country);
+                                return 0;
+                            }
                         }
                     }
                 }
                 foreach (var country in region)
                 {
-
+                    var temp = game.countryLst.countries[country];
+                    if (!targets.Contains(country))
+                    {
+                        if (side == 1)
+                        {
+                            if (temp.stability - temp.influenceUSA <= influence)
+                            {
+                                targets.Add(country);
+                                return 0;
+                            }
+                        }
+                        else
+                        {
+                            if (temp.stability - temp.influenceUSSR <= influence)
+                            {
+                                targets.Add(country);
+                                return 0;
+                            }
+                        }
+                    }
                 }
             }
             return 0;
@@ -578,6 +618,12 @@ namespace Project_Oppenheimer.Properties
                     }
                 }
             }
+            return false;
+        }
+
+        private bool ArabIsraeliWarCondition()
+        {
+            //stuff here
             return false;
         }
     }
