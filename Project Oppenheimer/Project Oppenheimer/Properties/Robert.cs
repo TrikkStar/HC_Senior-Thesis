@@ -134,6 +134,9 @@ namespace Project_Oppenheimer.Properties
                 case -4:
                     region = game.countryLst.WesternEurope;
                     break;
+                case 00:
+                    region = Enumerable.Range(0, 83).ToList();
+                    break;
             }
             return region;
         }
@@ -270,6 +273,7 @@ namespace Project_Oppenheimer.Properties
                     }
                     break;
                 case 22:
+                    returnValue = IndependentRedsCondition();
                     break;
                 case 4:
                     break;
@@ -327,15 +331,7 @@ namespace Project_Oppenheimer.Properties
 
         private int numCountries(int player, int location)
         {
-            List<int> region = new List<int>();
-            if (location == 00)
-            {
-                region = Enumerable.Range(0, 83).ToList();
-            }
-            else
-            {
-                region = getRegion(location);
-            }
+            var region = getRegion(location);
             int controlled = 0;
             foreach (int element in region)
             {
@@ -349,15 +345,7 @@ namespace Project_Oppenheimer.Properties
 
         private int numBattlegrounds(int player, int location)
         {
-            List<int> region = new List<int>();
-            if (location == 00)
-            {
-                region = Enumerable.Range(0, 83).ToList();
-            }
-            else
-            {
-                region = getRegion(location);
-            }
+            var region = getRegion(location);
             int battleground = 0;
             foreach (int element in region)
             {
@@ -371,15 +359,7 @@ namespace Project_Oppenheimer.Properties
 
         private int targetCountryRemoval(int player, int area, int amount)
         {
-            List<int> region = new List<int>();
-            if (area == 00)
-            {
-                region = Enumerable.Range(0, 83).ToList();
-            }
-            else
-            {
-                region = getRegion(area);
-            }
+            var region = getRegion(area);
             foreach (var influence in Enumerable.Range(amount, 0).ToList())
             {
                 foreach (var stability in Enumerable.Range(5, 1).ToList())
@@ -484,6 +464,20 @@ namespace Project_Oppenheimer.Properties
                             return true;
                         }
                     }
+                }
+            }
+            return false;
+        }
+
+        private bool IndependentRedsCondition()
+        {
+            var region = new List<int> {60, 81, 10, 33, 18};
+            foreach (int country in region)
+            {
+                if (game.countryLst.countries[country].influenceUSSR >= 2)
+                {
+                    targets.Add(country);
+                    return true;
                 }
             }
             return false;
