@@ -1195,7 +1195,930 @@ namespace Project_Oppenheimer
             Libya_USA.Text = supervisor.game.countryLst.countries[46].influenceUSA.ToString();
             Libya_USSR.Text = supervisor.game.countryLst.countries[46].influenceUSSR.ToString();
 
+            //Malaysia
+            if (supervisor.game.countryLst.countries[47].controller == 1)
+            {
+                Malaysia_USA.ForeColor = Color.White;
+                Malaysia_USA.BackColor = Color.Blue;
+                Malaysia_USSR.ForeColor = Color.Red;
+                Malaysia_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[47].controller == -1)
+            {
+                Malaysia_USA.ForeColor = Color.Blue;
+                Malaysia_USA.BackColor = Color.White;
+                Malaysia_USSR.ForeColor = Color.White;
+                Malaysia_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Malaysia_USA.ForeColor = Color.Blue;
+                Malaysia_USA.BackColor = Color.White;
+                Malaysia_USSR.ForeColor = Color.Red;
+                Malaysia_USSR.BackColor = Color.White;
+            }
+            Malaysia_USA.Text = supervisor.game.countryLst.countries[47].influenceUSA.ToString();
+            Malaysia_USSR.Text = supervisor.game.countryLst.countries[47].influenceUSSR.ToString();
 
+            //Mexico
+            if (supervisor.game.countryLst.countries[48].controller == 1)
+            {
+                Mexico_USA.ForeColor = Color.White;
+                Mexico_USA.BackColor = Color.Blue;
+                Mexico_USSR.ForeColor = Color.Red;
+                Mexico_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[48].controller == -1)
+            {
+                Mexico_USA.ForeColor = Color.Blue;
+                Mexico_USA.BackColor = Color.White;
+                Mexico_USSR.ForeColor = Color.White;
+                Mexico_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Mexico_USA.ForeColor = Color.Blue;
+                Mexico_USA.BackColor = Color.White;
+                Mexico_USSR.ForeColor = Color.Red;
+                Mexico_USSR.BackColor = Color.White;
+            }
+            Mexico_USA.Text = supervisor.game.countryLst.countries[48].influenceUSA.ToString();
+            Mexico_USSR.Text = supervisor.game.countryLst.countries[48].influenceUSSR.ToString();
+
+            //Morocco
+            if (supervisor.game.countryLst.countries[49].controller == 1)
+            {
+                Morocco_USA.ForeColor = Color.White;
+                Morocco_USA.BackColor = Color.Blue;
+                Morocco_USSR.ForeColor = Color.Red;
+                Morocco_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[49].controller == -1)
+            {
+                Morocco_USA.ForeColor = Color.Blue;
+                Morocco_USA.BackColor = Color.White;
+                Morocco_USSR.ForeColor = Color.White;
+                Morocco_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Morocco_USA.ForeColor = Color.Blue;
+                Morocco_USA.BackColor = Color.White;
+                Morocco_USSR.ForeColor = Color.Red;
+                Morocco_USSR.BackColor = Color.White;
+            }
+            Morocco_USA.Text = supervisor.game.countryLst.countries[49].influenceUSA.ToString();
+            Morocco_USSR.Text = supervisor.game.countryLst.countries[49].influenceUSSR.ToString();
+
+            //Nicaragua
+            if (supervisor.game.countryLst.countries[50].controller == 1)
+            {
+                Nicaragua_USA.ForeColor = Color.White;
+                Nicaragua_USA.BackColor = Color.Blue;
+                Nicaragua_USSR.ForeColor = Color.Red;
+                Nicaragua_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[50].controller == -1)
+            {
+                Nicaragua_USA.ForeColor = Color.Blue;
+                Nicaragua_USA.BackColor = Color.White;
+                Nicaragua_USSR.ForeColor = Color.White;
+                Nicaragua_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Nicaragua_USA.ForeColor = Color.Blue;
+                Nicaragua_USA.BackColor = Color.White;
+                Nicaragua_USSR.ForeColor = Color.Red;
+                Nicaragua_USSR.BackColor = Color.White;
+            }
+            Nicaragua_USA.Text = supervisor.game.countryLst.countries[50].influenceUSA.ToString();
+            Nicaragua_USSR.Text = supervisor.game.countryLst.countries[50].influenceUSSR.ToString();
+
+            //Nigeria
+            if (supervisor.game.countryLst.countries[51].controller == 1)
+            {
+                Nigeria_USA.ForeColor = Color.White;
+                Nigeria_USA.BackColor = Color.Blue;
+                Nigeria_USSR.ForeColor = Color.Red;
+                Nigeria_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[51].controller == -1)
+            {
+                Nigeria_USA.ForeColor = Color.Blue;
+                Nigeria_USA.BackColor = Color.White;
+                Nigeria_USSR.ForeColor = Color.White;
+                Nigeria_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Nigeria_USA.ForeColor = Color.Blue;
+                Nigeria_USA.BackColor = Color.White;
+                Nigeria_USSR.ForeColor = Color.Red;
+                Nigeria_USSR.BackColor = Color.White;
+            }
+            Nigeria_USA.Text = supervisor.game.countryLst.countries[51].influenceUSA.ToString();
+            Nigeria_USSR.Text = supervisor.game.countryLst.countries[51].influenceUSSR.ToString();
+
+            //North Korea
+            if (supervisor.game.countryLst.countries[52].controller == 1)
+            {
+                NorthKorea_USA.ForeColor = Color.White;
+                NorthKorea_USA.BackColor = Color.Blue;
+                NorthKorea_USSR.ForeColor = Color.Red;
+                NorthKorea_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[52].controller == -1)
+            {
+                NorthKorea_USA.ForeColor = Color.Blue;
+                NorthKorea_USA.BackColor = Color.White;
+                NorthKorea_USSR.ForeColor = Color.White;
+                NorthKorea_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                NorthKorea_USA.ForeColor = Color.Blue;
+                NorthKorea_USA.BackColor = Color.White;
+                NorthKorea_USSR.ForeColor = Color.Red;
+                NorthKorea_USSR.BackColor = Color.White;
+            }
+            NorthKorea_USA.Text = supervisor.game.countryLst.countries[52].influenceUSA.ToString();
+            NorthKorea_USSR.Text = supervisor.game.countryLst.countries[52].influenceUSSR.ToString();
+
+            //Norway
+            if (supervisor.game.countryLst.countries[53].controller == 1)
+            {
+                Norway_USA.ForeColor = Color.White;
+                Norway_USA.BackColor = Color.Blue;
+                Norway_USSR.ForeColor = Color.Red;
+                Norway_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[53].controller == -1)
+            {
+                Norway_USA.ForeColor = Color.Blue;
+                Norway_USA.BackColor = Color.White;
+                Norway_USSR.ForeColor = Color.White;
+                Norway_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Norway_USA.ForeColor = Color.Blue;
+                Norway_USA.BackColor = Color.White;
+                Norway_USSR.ForeColor = Color.Red;
+                Norway_USSR.BackColor = Color.White;
+            }
+            Norway_USA.Text = supervisor.game.countryLst.countries[53].influenceUSA.ToString();
+            Norway_USSR.Text = supervisor.game.countryLst.countries[53].influenceUSSR.ToString();
+
+            //Pakistan
+            if (supervisor.game.countryLst.countries[54].controller == 1)
+            {
+                Pakistan_USA.ForeColor = Color.White;
+                Pakistan_USA.BackColor = Color.Blue;
+                Pakistan_USSR.ForeColor = Color.Red;
+                Pakistan_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[54].controller == -1)
+            {
+                Pakistan_USA.ForeColor = Color.Blue;
+                Pakistan_USA.BackColor = Color.White;
+                Pakistan_USSR.ForeColor = Color.White;
+                Pakistan_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Pakistan_USA.ForeColor = Color.Blue;
+                Pakistan_USA.BackColor = Color.White;
+                Pakistan_USSR.ForeColor = Color.Red;
+                Pakistan_USSR.BackColor = Color.White;
+            }
+            Pakistan_USA.Text = supervisor.game.countryLst.countries[54].influenceUSA.ToString();
+            Pakistan_USSR.Text = supervisor.game.countryLst.countries[54].influenceUSSR.ToString();
+
+            //Panama
+            if (supervisor.game.countryLst.countries[55].controller == 1)
+            {
+                Panama_USA.ForeColor = Color.White;
+                Panama_USA.BackColor = Color.Blue;
+                Panama_USSR.ForeColor = Color.Red;
+                Panama_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[55].controller == -1)
+            {
+                Panama_USA.ForeColor = Color.Blue;
+                Panama_USA.BackColor = Color.White;
+                Panama_USSR.ForeColor = Color.White;
+                Panama_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Panama_USA.ForeColor = Color.Blue;
+                Panama_USA.BackColor = Color.White;
+                Panama_USSR.ForeColor = Color.Red;
+                Panama_USSR.BackColor = Color.White;
+            }
+            Panama_USA.Text = supervisor.game.countryLst.countries[55].influenceUSA.ToString();
+            Panama_USSR.Text = supervisor.game.countryLst.countries[55].influenceUSSR.ToString();
+
+            //Paraguay
+            if (supervisor.game.countryLst.countries[56].controller == 1)
+            {
+                Paraguay_USA.ForeColor = Color.White;
+                Paraguay_USA.BackColor = Color.Blue;
+                Paraguay_USSR.ForeColor = Color.Red;
+                Paraguay_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[56].controller == -1)
+            {
+                Paraguay_USA.ForeColor = Color.Blue;
+                Paraguay_USA.BackColor = Color.White;
+                Paraguay_USSR.ForeColor = Color.White;
+                Paraguay_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Paraguay_USA.ForeColor = Color.Blue;
+                Paraguay_USA.BackColor = Color.White;
+                Paraguay_USSR.ForeColor = Color.Red;
+                Paraguay_USSR.BackColor = Color.White;
+            }
+            Paraguay_USA.Text = supervisor.game.countryLst.countries[56].influenceUSA.ToString();
+            Paraguay_USSR.Text = supervisor.game.countryLst.countries[56].influenceUSSR.ToString();
+
+            //Peru
+            if (supervisor.game.countryLst.countries[57].controller == 1)
+            {
+                Peru_USA.ForeColor = Color.White;
+                Peru_USA.BackColor = Color.Blue;
+                Peru_USSR.ForeColor = Color.Red;
+                Peru_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[57].controller == -1)
+            {
+                Peru_USA.ForeColor = Color.Blue;
+                Peru_USA.BackColor = Color.White;
+                Peru_USSR.ForeColor = Color.White;
+                Peru_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Peru_USA.ForeColor = Color.Blue;
+                Peru_USA.BackColor = Color.White;
+                Peru_USSR.ForeColor = Color.Red;
+                Peru_USSR.BackColor = Color.White;
+            }
+            Peru_USA.Text = supervisor.game.countryLst.countries[57].influenceUSA.ToString();
+            Peru_USSR.Text = supervisor.game.countryLst.countries[57].influenceUSSR.ToString();
+
+            //Philippines
+            if (supervisor.game.countryLst.countries[58].controller == 1)
+            {
+                Philippines_USA.ForeColor = Color.White;
+                Philippines_USA.BackColor = Color.Blue;
+                Philippines_USSR.ForeColor = Color.Red;
+                Philippines_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[58].controller == -1)
+            {
+                Philippines_USA.ForeColor = Color.Blue;
+                Philippines_USA.BackColor = Color.White;
+                Philippines_USSR.ForeColor = Color.White;
+                Philippines_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Philippines_USA.ForeColor = Color.Blue;
+                Philippines_USA.BackColor = Color.White;
+                Philippines_USSR.ForeColor = Color.Red;
+                Philippines_USSR.BackColor = Color.White;
+            }
+            Philippines_USA.Text = supervisor.game.countryLst.countries[58].influenceUSA.ToString();
+            Philippines_USSR.Text = supervisor.game.countryLst.countries[58].influenceUSSR.ToString();
+
+            //Poland
+            if (supervisor.game.countryLst.countries[59].controller == 1)
+            {
+                Poland_USA.ForeColor = Color.White;
+                Poland_USA.BackColor = Color.Blue;
+                Poland_USSR.ForeColor = Color.Red;
+                Poland_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[59].controller == -1)
+            {
+                Poland_USA.ForeColor = Color.Blue;
+                Poland_USA.BackColor = Color.White;
+                Poland_USSR.ForeColor = Color.White;
+                Poland_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Poland_USA.ForeColor = Color.Blue;
+                Poland_USA.BackColor = Color.White;
+                Poland_USSR.ForeColor = Color.Red;
+                Poland_USSR.BackColor = Color.White;
+            }
+            Poland_USA.Text = supervisor.game.countryLst.countries[59].influenceUSA.ToString();
+            Poland_USSR.Text = supervisor.game.countryLst.countries[59].influenceUSSR.ToString();
+
+            //Romania
+            if (supervisor.game.countryLst.countries[60].controller == 1)
+            {
+                Romania_USA.ForeColor = Color.White;
+                Romania_USA.BackColor = Color.Blue;
+                Romania_USSR.ForeColor = Color.Red;
+                Romania_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[60].controller == -1)
+            {
+                Romania_USA.ForeColor = Color.Blue;
+                Romania_USA.BackColor = Color.White;
+                Romania_USSR.ForeColor = Color.White;
+                Romania_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Romania_USA.ForeColor = Color.Blue;
+                Romania_USA.BackColor = Color.White;
+                Romania_USSR.ForeColor = Color.Red;
+                Romania_USSR.BackColor = Color.White;
+            }
+            Romania_USA.Text = supervisor.game.countryLst.countries[60].influenceUSA.ToString();
+            Romania_USSR.Text = supervisor.game.countryLst.countries[60].influenceUSSR.ToString();
+
+            //Southeast African States
+            if (supervisor.game.countryLst.countries[61].controller == 1)
+            {
+                SEAfricanStates_USA.ForeColor = Color.White;
+                SEAfricanStates_USA.BackColor = Color.Blue;
+                SEAfricanStates_USSR.ForeColor = Color.Red;
+                SEAfricanStates_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[61].controller == -1)
+            {
+                SEAfricanStates_USA.ForeColor = Color.Blue;
+                SEAfricanStates_USA.BackColor = Color.White;
+                SEAfricanStates_USSR.ForeColor = Color.White;
+                SEAfricanStates_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                SEAfricanStates_USA.ForeColor = Color.Blue;
+                SEAfricanStates_USA.BackColor = Color.White;
+                SEAfricanStates_USSR.ForeColor = Color.Red;
+                SEAfricanStates_USSR.BackColor = Color.White;
+            }
+            SEAfricanStates_USA.Text = supervisor.game.countryLst.countries[61].influenceUSA.ToString();
+            SEAfricanStates_USSR.Text = supervisor.game.countryLst.countries[61].influenceUSSR.ToString();
+
+            //Saharan States
+            if (supervisor.game.countryLst.countries[62].controller == 1)
+            {
+                SaharanStates_USA.ForeColor = Color.White;
+                SaharanStates_USA.BackColor = Color.Blue;
+                SaharanStates_USSR.ForeColor = Color.Red;
+                SaharanStates_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[62].controller == -1)
+            {
+                SaharanStates_USA.ForeColor = Color.Blue;
+                SaharanStates_USA.BackColor = Color.White;
+                SaharanStates_USSR.ForeColor = Color.White;
+                SaharanStates_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                SaharanStates_USA.ForeColor = Color.Blue;
+                SaharanStates_USA.BackColor = Color.White;
+                SaharanStates_USSR.ForeColor = Color.Red;
+                SaharanStates_USSR.BackColor = Color.White;
+            }
+            SaharanStates_USA.Text = supervisor.game.countryLst.countries[62].influenceUSA.ToString();
+            SaharanStates_USSR.Text = supervisor.game.countryLst.countries[62].influenceUSSR.ToString();
+
+            //Saudi Arabia
+            if (supervisor.game.countryLst.countries[63].controller == 1)
+            {
+                SaudiArabia_USA.ForeColor = Color.White;
+                SaudiArabia_USA.BackColor = Color.Blue;
+                SaudiArabia_USSR.ForeColor = Color.Red;
+                SaudiArabia_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[63].controller == -1)
+            {
+                SaudiArabia_USA.ForeColor = Color.Blue;
+                SaudiArabia_USA.BackColor = Color.White;
+                SaudiArabia_USSR.ForeColor = Color.White;
+                SaudiArabia_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                SaudiArabia_USA.ForeColor = Color.Blue;
+                SaudiArabia_USA.BackColor = Color.White;
+                SaudiArabia_USSR.ForeColor = Color.Red;
+                SaudiArabia_USSR.BackColor = Color.White;
+            }
+            SaudiArabia_USA.Text = supervisor.game.countryLst.countries[63].influenceUSA.ToString();
+            SaudiArabia_USSR.Text = supervisor.game.countryLst.countries[63].influenceUSSR.ToString();
+
+            //Somalia
+            if (supervisor.game.countryLst.countries[64].controller == 1)
+            {
+                Somalia_USA.ForeColor = Color.White;
+                Somalia_USA.BackColor = Color.Blue;
+                Somalia_USSR.ForeColor = Color.Red;
+                Somalia_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[64].controller == -1)
+            {
+                Somalia_USA.ForeColor = Color.Blue;
+                Somalia_USA.BackColor = Color.White;
+                Somalia_USSR.ForeColor = Color.White;
+                Somalia_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Somalia_USA.ForeColor = Color.Blue;
+                Somalia_USA.BackColor = Color.White;
+                Somalia_USSR.ForeColor = Color.Red;
+                Somalia_USSR.BackColor = Color.White;
+            }
+            Somalia_USA.Text = supervisor.game.countryLst.countries[64].influenceUSA.ToString();
+            Somalia_USSR.Text = supervisor.game.countryLst.countries[64].influenceUSSR.ToString();
+
+            //South Africa
+            if (supervisor.game.countryLst.countries[65].controller == 1)
+            {
+                SouthAfrica_USA.ForeColor = Color.White;
+                SouthAfrica_USA.BackColor = Color.Blue;
+                SouthAfrica_USSR.ForeColor = Color.Red;
+                SouthAfrica_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[65].controller == -1)
+            {
+                SouthAfrica_USA.ForeColor = Color.Blue;
+                SouthAfrica_USA.BackColor = Color.White;
+                SouthAfrica_USSR.ForeColor = Color.White;
+                SouthAfrica_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                SouthAfrica_USA.ForeColor = Color.Blue;
+                SouthAfrica_USA.BackColor = Color.White;
+                SouthAfrica_USSR.ForeColor = Color.Red;
+                SouthAfrica_USSR.BackColor = Color.White;
+            }
+            SouthAfrica_USA.Text = supervisor.game.countryLst.countries[65].influenceUSA.ToString();
+            SouthAfrica_USSR.Text = supervisor.game.countryLst.countries[65].influenceUSSR.ToString();
+
+            //South Korea
+            if (supervisor.game.countryLst.countries[66].controller == 1)
+            {
+                SouthKorea_USA.ForeColor = Color.White;
+                SouthKorea_USA.BackColor = Color.Blue;
+                SouthKorea_USSR.ForeColor = Color.Red;
+                SouthKorea_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[66].controller == -1)
+            {
+                SouthKorea_USA.ForeColor = Color.Blue;
+                SouthKorea_USA.BackColor = Color.White;
+                SouthKorea_USSR.ForeColor = Color.White;
+                SouthKorea_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                SouthKorea_USA.ForeColor = Color.Blue;
+                SouthKorea_USA.BackColor = Color.White;
+                SouthKorea_USSR.ForeColor = Color.Red;
+                SouthKorea_USSR.BackColor = Color.White;
+            }
+            SouthKorea_USA.Text = supervisor.game.countryLst.countries[66].influenceUSA.ToString();
+            SouthKorea_USSR.Text = supervisor.game.countryLst.countries[66].influenceUSSR.ToString();
+
+            //Spain/Portugal
+            if (supervisor.game.countryLst.countries[67].controller == 1)
+            {
+                SpainPortugul_USA.ForeColor = Color.White;
+                SpainPortugul_USA.BackColor = Color.Blue;
+                SpainPortugul_USSR.ForeColor = Color.Red;
+                SpainPortugul_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[67].controller == -1)
+            {
+                SpainPortugul_USA.ForeColor = Color.Blue;
+                SpainPortugul_USA.BackColor = Color.White;
+                SpainPortugul_USSR.ForeColor = Color.White;
+                SpainPortugul_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                SpainPortugul_USA.ForeColor = Color.Blue;
+                SpainPortugul_USA.BackColor = Color.White;
+                SpainPortugul_USSR.ForeColor = Color.Red;
+                SpainPortugul_USSR.BackColor = Color.White;
+            }
+            SpainPortugul_USA.Text = supervisor.game.countryLst.countries[67].influenceUSA.ToString();
+            SpainPortugul_USSR.Text = supervisor.game.countryLst.countries[67].influenceUSSR.ToString();
+
+            //Sudan
+            if (supervisor.game.countryLst.countries[68].controller == 1)
+            {
+                Sudan_USA.ForeColor = Color.White;
+                Sudan_USA.BackColor = Color.Blue;
+                Sudan_USSR.ForeColor = Color.Red;
+                Sudan_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[68].controller == -1)
+            {
+                Sudan_USA.ForeColor = Color.Blue;
+                Sudan_USA.BackColor = Color.White;
+                Sudan_USSR.ForeColor = Color.White;
+                Sudan_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Sudan_USA.ForeColor = Color.Blue;
+                Sudan_USA.BackColor = Color.White;
+                Sudan_USSR.ForeColor = Color.Red;
+                Sudan_USSR.BackColor = Color.White;
+            }
+            Sudan_USA.Text = supervisor.game.countryLst.countries[68].influenceUSA.ToString();
+            Sudan_USSR.Text = supervisor.game.countryLst.countries[68].influenceUSSR.ToString();
+
+            //Sweden
+            if (supervisor.game.countryLst.countries[69].controller == 1)
+            {
+                Sweden_USA.ForeColor = Color.White;
+                Sweden_USA.BackColor = Color.Blue;
+                Sweden_USSR.ForeColor = Color.Red;
+                Sweden_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[69].controller == -1)
+            {
+                Sweden_USA.ForeColor = Color.Blue;
+                Sweden_USA.BackColor = Color.White;
+                Sweden_USSR.ForeColor = Color.White;
+                Sweden_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Sweden_USA.ForeColor = Color.Blue;
+                Sweden_USA.BackColor = Color.White;
+                Sweden_USSR.ForeColor = Color.Red;
+                Sweden_USSR.BackColor = Color.White;
+            }
+            Sweden_USA.Text = supervisor.game.countryLst.countries[69].influenceUSA.ToString();
+            Sweden_USSR.Text = supervisor.game.countryLst.countries[69].influenceUSSR.ToString();
+
+            //Syria
+            if (supervisor.game.countryLst.countries[70].controller == 1)
+            {
+                Syria_USA.ForeColor = Color.White;
+                Syria_USA.BackColor = Color.Blue;
+                Syria_USSR.ForeColor = Color.Red;
+                Syria_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[70].controller == -1)
+            {
+                Syria_USA.ForeColor = Color.Blue;
+                Syria_USA.BackColor = Color.White;
+                Syria_USSR.ForeColor = Color.White;
+                Syria_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Syria_USA.ForeColor = Color.Blue;
+                Syria_USA.BackColor = Color.White;
+                Syria_USSR.ForeColor = Color.Red;
+                Syria_USSR.BackColor = Color.White;
+            }
+            Syria_USA.Text = supervisor.game.countryLst.countries[70].influenceUSA.ToString();
+            Syria_USSR.Text = supervisor.game.countryLst.countries[70].influenceUSSR.ToString();
+
+            //Taiwan
+            if (supervisor.game.countryLst.countries[71].controller == 1)
+            {
+                Taiwan_USA.ForeColor = Color.White;
+                Taiwan_USA.BackColor = Color.Blue;
+                Taiwan_USSR.ForeColor = Color.Red;
+                Taiwan_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[71].controller == -1)
+            {
+                Taiwan_USA.ForeColor = Color.Blue;
+                Taiwan_USA.BackColor = Color.White;
+                Taiwan_USSR.ForeColor = Color.White;
+                Taiwan_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Taiwan_USA.ForeColor = Color.Blue;
+                Taiwan_USA.BackColor = Color.White;
+                Taiwan_USSR.ForeColor = Color.Red;
+                Taiwan_USSR.BackColor = Color.White;
+            }
+            Taiwan_USA.Text = supervisor.game.countryLst.countries[71].influenceUSA.ToString();
+            Taiwan_USSR.Text = supervisor.game.countryLst.countries[71].influenceUSSR.ToString();
+
+            //Thailand
+            if (supervisor.game.countryLst.countries[72].controller == 1)
+            {
+                Thailand_USA.ForeColor = Color.White;
+                Thailand_USA.BackColor = Color.Blue;
+                Thailand_USSR.ForeColor = Color.Red;
+                Thailand_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[72].controller == -1)
+            {
+                Thailand_USA.ForeColor = Color.Blue;
+                Thailand_USA.BackColor = Color.White;
+                Thailand_USSR.ForeColor = Color.White;
+                Thailand_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Thailand_USA.ForeColor = Color.Blue;
+                Thailand_USA.BackColor = Color.White;
+                Thailand_USSR.ForeColor = Color.Red;
+                Thailand_USSR.BackColor = Color.White;
+            }
+            Thailand_USA.Text = supervisor.game.countryLst.countries[72].influenceUSA.ToString();
+            Thailand_USSR.Text = supervisor.game.countryLst.countries[72].influenceUSSR.ToString();
+
+            //Tunisia
+            if (supervisor.game.countryLst.countries[73].controller == 1)
+            {
+                Tunisia_USA.ForeColor = Color.White;
+                Tunisia_USA.BackColor = Color.Blue;
+                Tunisia_USSR.ForeColor = Color.Red;
+                Tunisia_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[73].controller == -1)
+            {
+                Tunisia_USA.ForeColor = Color.Blue;
+                Tunisia_USA.BackColor = Color.White;
+                Tunisia_USSR.ForeColor = Color.White;
+                Tunisia_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Tunisia_USA.ForeColor = Color.Blue;
+                Tunisia_USA.BackColor = Color.White;
+                Tunisia_USSR.ForeColor = Color.Red;
+                Tunisia_USSR.BackColor = Color.White;
+            }
+            Tunisia_USA.Text = supervisor.game.countryLst.countries[73].influenceUSA.ToString();
+            Tunisia_USSR.Text = supervisor.game.countryLst.countries[73].influenceUSSR.ToString();
+
+            //Turkey
+            if (supervisor.game.countryLst.countries[74].controller == 1)
+            {
+                Turkey_USA.ForeColor = Color.White;
+                Turkey_USA.BackColor = Color.Blue;
+                Turkey_USSR.ForeColor = Color.Red;
+                Turkey_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[74].controller == -1)
+            {
+                Turkey_USA.ForeColor = Color.Blue;
+                Turkey_USA.BackColor = Color.White;
+                Turkey_USSR.ForeColor = Color.White;
+                Turkey_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Turkey_USA.ForeColor = Color.Blue;
+                Turkey_USA.BackColor = Color.White;
+                Turkey_USSR.ForeColor = Color.Red;
+                Turkey_USSR.BackColor = Color.White;
+            }
+            Turkey_USA.Text = supervisor.game.countryLst.countries[74].influenceUSA.ToString();
+            Turkey_USSR.Text = supervisor.game.countryLst.countries[74].influenceUSSR.ToString();
+
+            //U.K.
+            if (supervisor.game.countryLst.countries[75].controller == 1)
+            {
+                UK_USA.ForeColor = Color.White;
+                UK_USA.BackColor = Color.Blue;
+                UK_USSR.ForeColor = Color.Red;
+                UK_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[75].controller == -1)
+            {
+                UK_USA.ForeColor = Color.Blue;
+                UK_USA.BackColor = Color.White;
+                UK_USSR.ForeColor = Color.White;
+                UK_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                UK_USA.ForeColor = Color.Blue;
+                UK_USA.BackColor = Color.White;
+                UK_USSR.ForeColor = Color.Red;
+                UK_USSR.BackColor = Color.White;
+            }
+            UK_USA.Text = supervisor.game.countryLst.countries[75].influenceUSA.ToString();
+            UK_USSR.Text = supervisor.game.countryLst.countries[75].influenceUSSR.ToString();
+
+            //Uruguay
+            if (supervisor.game.countryLst.countries[76].controller == 1)
+            {
+                Uruguay_USA.ForeColor = Color.White;
+                Uruguay_USA.BackColor = Color.Blue;
+                Uruguay_USSR.ForeColor = Color.Red;
+                Uruguay_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[76].controller == -1)
+            {
+                Uruguay_USA.ForeColor = Color.Blue;
+                Uruguay_USA.BackColor = Color.White;
+                Uruguay_USSR.ForeColor = Color.White;
+                Uruguay_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Uruguay_USA.ForeColor = Color.Blue;
+                Uruguay_USA.BackColor = Color.White;
+                Uruguay_USSR.ForeColor = Color.Red;
+                Uruguay_USSR.BackColor = Color.White;
+            }
+            Uruguay_USA.Text = supervisor.game.countryLst.countries[76].influenceUSA.ToString();
+            Uruguay_USSR.Text = supervisor.game.countryLst.countries[76].influenceUSSR.ToString();
+
+            //Venezuela
+            if (supervisor.game.countryLst.countries[77].controller == 1)
+            {
+                Venezuela_USA.ForeColor = Color.White;
+                Venezuela_USA.BackColor = Color.Blue;
+                Venezuela_USSR.ForeColor = Color.Red;
+                Venezuela_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[77].controller == -1)
+            {
+                Venezuela_USA.ForeColor = Color.Blue;
+                Venezuela_USA.BackColor = Color.White;
+                Venezuela_USSR.ForeColor = Color.White;
+                Venezuela_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Venezuela_USA.ForeColor = Color.Blue;
+                Venezuela_USA.BackColor = Color.White;
+                Venezuela_USSR.ForeColor = Color.Red;
+                Venezuela_USSR.BackColor = Color.White;
+            }
+            Venezuela_USA.Text = supervisor.game.countryLst.countries[77].influenceUSA.ToString();
+            Venezuela_USSR.Text = supervisor.game.countryLst.countries[77].influenceUSSR.ToString();
+
+            //Vietnam
+            if (supervisor.game.countryLst.countries[78].controller == 1)
+            {
+                Vietnam_USA.ForeColor = Color.White;
+                Vietnam_USA.BackColor = Color.Blue;
+                Vietnam_USSR.ForeColor = Color.Red;
+                Vietnam_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[78].controller == -1)
+            {
+                Vietnam_USA.ForeColor = Color.Blue;
+                Vietnam_USA.BackColor = Color.White;
+                Vietnam_USSR.ForeColor = Color.White;
+                Vietnam_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Vietnam_USA.ForeColor = Color.Blue;
+                Vietnam_USA.BackColor = Color.White;
+                Vietnam_USSR.ForeColor = Color.Red;
+                Vietnam_USSR.BackColor = Color.White;
+            }
+            Vietnam_USA.Text = supervisor.game.countryLst.countries[78].influenceUSA.ToString();
+            Vietnam_USSR.Text = supervisor.game.countryLst.countries[78].influenceUSSR.ToString();
+
+            //West Germany
+            if (supervisor.game.countryLst.countries[79].controller == 1)
+            {
+                WGermany_USA.ForeColor = Color.White;
+                WGermany_USA.BackColor = Color.Blue;
+                WGermany_USSR.ForeColor = Color.Red;
+                WGermany_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[79].controller == -1)
+            {
+                WGermany_USA.ForeColor = Color.Blue;
+                WGermany_USA.BackColor = Color.White;
+                WGermany_USSR.ForeColor = Color.White;
+                WGermany_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                WGermany_USA.ForeColor = Color.Blue;
+                WGermany_USA.BackColor = Color.White;
+                WGermany_USSR.ForeColor = Color.Red;
+                WGermany_USSR.BackColor = Color.White;
+            }
+            WGermany_USA.Text = supervisor.game.countryLst.countries[79].influenceUSA.ToString();
+            WGermany_USSR.Text = supervisor.game.countryLst.countries[79].influenceUSSR.ToString();
+
+            //West African States
+            if (supervisor.game.countryLst.countries[80].controller == 1)
+            {
+                WestAfricanStates_USA.ForeColor = Color.White;
+                WestAfricanStates_USA.BackColor = Color.Blue;
+                WestAfricanStates_USSR.ForeColor = Color.Red;
+                WestAfricanStates_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[80].controller == -1)
+            {
+                WestAfricanStates_USA.ForeColor = Color.Blue;
+                WestAfricanStates_USA.BackColor = Color.White;
+                WestAfricanStates_USSR.ForeColor = Color.White;
+                WestAfricanStates_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                WestAfricanStates_USA.ForeColor = Color.Blue;
+                WestAfricanStates_USA.BackColor = Color.White;
+                WestAfricanStates_USSR.ForeColor = Color.Red;
+                WestAfricanStates_USSR.BackColor = Color.White;
+            }
+            WestAfricanStates_USA.Text = supervisor.game.countryLst.countries[80].influenceUSA.ToString();
+            WestAfricanStates_USSR.Text = supervisor.game.countryLst.countries[80].influenceUSSR.ToString();
+
+            //Yugoslavia
+            if (supervisor.game.countryLst.countries[81].controller == 1)
+            {
+                Yugoslavia_USA.ForeColor = Color.White;
+                Yugoslavia_USA.BackColor = Color.Blue;
+                Yugoslavia_USSR.ForeColor = Color.Red;
+                Yugoslavia_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[81].controller == -1)
+            {
+                Yugoslavia_USA.ForeColor = Color.Blue;
+                Yugoslavia_USA.BackColor = Color.White;
+                Yugoslavia_USSR.ForeColor = Color.White;
+                Yugoslavia_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Yugoslavia_USA.ForeColor = Color.Blue;
+                Yugoslavia_USA.BackColor = Color.White;
+                Yugoslavia_USSR.ForeColor = Color.Red;
+                Yugoslavia_USSR.BackColor = Color.White;
+            }
+            Yugoslavia_USA.Text = supervisor.game.countryLst.countries[81].influenceUSA.ToString();
+            Yugoslavia_USSR.Text = supervisor.game.countryLst.countries[81].influenceUSSR.ToString();
+
+            //Zaire
+            if (supervisor.game.countryLst.countries[82].controller == 1)
+            {
+                Zaire_USA.ForeColor = Color.White;
+                Zaire_USA.BackColor = Color.Blue;
+                Zaire_USSR.ForeColor = Color.Red;
+                Zaire_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[82].controller == -1)
+            {
+                Zaire_USA.ForeColor = Color.Blue;
+                Zaire_USA.BackColor = Color.White;
+                Zaire_USSR.ForeColor = Color.White;
+                Zaire_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Zaire_USA.ForeColor = Color.Blue;
+                Zaire_USA.BackColor = Color.White;
+                Zaire_USSR.ForeColor = Color.Red;
+                Zaire_USSR.BackColor = Color.White;
+            }
+            Zaire_USA.Text = supervisor.game.countryLst.countries[82].influenceUSA.ToString();
+            Zaire_USSR.Text = supervisor.game.countryLst.countries[82].influenceUSSR.ToString();
+
+            //Zimbabwe
+            if (supervisor.game.countryLst.countries[83].controller == 1)
+            {
+                Zimbabwe_USA.ForeColor = Color.White;
+                Zimbabwe_USA.BackColor = Color.Blue;
+                Zimbabwe_USSR.ForeColor = Color.Red;
+                Zimbabwe_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[83].controller == -1)
+            {
+                Zimbabwe_USA.ForeColor = Color.Blue;
+                Zimbabwe_USA.BackColor = Color.White;
+                Zimbabwe_USSR.ForeColor = Color.White;
+                Zimbabwe_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Zimbabwe_USA.ForeColor = Color.Blue;
+                Zimbabwe_USA.BackColor = Color.White;
+                Zimbabwe_USSR.ForeColor = Color.Red;
+                Zimbabwe_USSR.BackColor = Color.White;
+            }
+            Zimbabwe_USA.Text = supervisor.game.countryLst.countries[83].influenceUSA.ToString();
+            Zimbabwe_USSR.Text = supervisor.game.countryLst.countries[83].influenceUSSR.ToString();
         }
 
         private void uSAToolStripMenuItem_Click(object sender, EventArgs e)
