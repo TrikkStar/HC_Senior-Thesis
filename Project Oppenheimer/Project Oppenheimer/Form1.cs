@@ -219,6 +219,56 @@ namespace Project_Oppenheimer
             }
             Bolivia_USA.Text = supervisor.game.countryLst.countries[7].influenceUSA.ToString();
             Bolivia_USSR.Text = supervisor.game.countryLst.countries[7].influenceUSSR.ToString();
+
+            //Botswana
+            if (supervisor.game.countryLst.countries[8].controller == 1)
+            {
+                Botswana_USA.ForeColor = Color.White;
+                Botswana_USA.BackColor = Color.Blue;
+                Botswana_USSR.ForeColor = Color.Red;
+                Botswana_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[8].controller == -1)
+            {
+                Botswana_USA.ForeColor = Color.Blue;
+                Botswana_USA.BackColor = Color.White;
+                Botswana_USSR.ForeColor = Color.White;
+                Botswana_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Botswana_USA.ForeColor = Color.Blue;
+                Botswana_USA.BackColor = Color.White;
+                Botswana_USSR.ForeColor = Color.Red;
+                Botswana_USSR.BackColor = Color.White;
+            }
+            Botswana_USA.Text = supervisor.game.countryLst.countries[8].influenceUSA.ToString();
+            Botswana_USSR.Text = supervisor.game.countryLst.countries[8].influenceUSSR.ToString();
+
+            //Brazil
+            if (supervisor.game.countryLst.countries[9].controller == 1)
+            {
+                Brazil_USA.ForeColor = Color.White;
+                Brazil_USA.BackColor = Color.Blue;
+                Brazil_USSR.ForeColor = Color.Red;
+                Brazil_USSR.ForeColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[9].controller == -1)
+            {
+                Brazil_USA.ForeColor = Color.Blue;
+                Brazil_USA.BackColor = Color.White;
+                Brazil_USSR.ForeColor = Color.White;
+                Brazil_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Brazil_USA.ForeColor = Color.Blue;
+                Brazil_USA.BackColor = Color.White;
+                Brazil_USSR.ForeColor = Color.Red;
+                Brazil_USSR.BackColor = Color.White;
+            }
+            Brazil_USA.Text = supervisor.game.countryLst.countries[9].influenceUSA.ToString();
+            Brazil_USSR.Text = supervisor.game.countryLst.countries[9].influenceUSSR.ToString();
         }
 
         private void uSAToolStripMenuItem_Click(object sender, EventArgs e)
