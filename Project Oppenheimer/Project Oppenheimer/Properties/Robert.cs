@@ -366,7 +366,7 @@ namespace Project_Oppenheimer.Properties
             return battleground;
         }
 
-        private int targetCountryRemoval(int player, int area, int amount)
+      /*  private int targetCountryRemoval(int player, int area, int amount)
         {
             List<int> region = new List<int>();
             if (area == 00)
@@ -396,7 +396,7 @@ namespace Project_Oppenheimer.Properties
                 }
             }
         }
-
+        */
         private bool IndoPakistaniWarCondidtion()
         {
             var india = game.countryLst.countries[34];
