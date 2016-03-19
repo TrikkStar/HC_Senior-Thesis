@@ -18,6 +18,7 @@ namespace Project_Oppenheimer.Properties
 
         public Robert(Gamestate gme, int sde)
         {
+            //Need to add logic for playing a card in headline phase
             game = gme;
             side = sde;
             if (side == 1)
@@ -298,16 +299,22 @@ namespace Project_Oppenheimer.Properties
                     returnValue = ((game.countryLst.countries[71].controller == 1) && (!cardInHand(6)));
                     break;
                 case 19:
+                    returnValue = TrumanDoctrineCondition();
                     break;
                 case 5:
+                    returnValue = (game.round == 2);
                     break;
                 case 103:
+                    returnValue = (game.round == 0);
                     break;
                 case 18:
+                    returnValue = true;
                     break;
                 case 26:
+                    returnValue = true;
                     break;
                 case 32:
+                    //need to think on this one
                     break;
                 case 104:
                     break;
@@ -504,6 +511,39 @@ namespace Project_Oppenheimer.Properties
                 {
                     targets.Add(country);
                     return true;
+                }
+            }
+            return false;
+        }
+
+        private bool TrumanDoctrineCondition()
+        {
+            var region = getRegion(2);
+            foreach (var stability in Enumerable.Range(5, 1).ToList())
+            {
+                foreach (var country in region)
+                {
+                    var temp = game.countryLst.countries[country];
+                    if ((temp.stability == stability) && (temp.battleground) && (!temp.controlled))
+                    {
+                        if (stability - temp.influenceUSSR == 1)
+                        {
+                            targets.Add(country);
+                            return true;
+                        }
+                    }
+                }
+                foreach (var country in region)
+                {
+                    var temp = game.countryLst.countries[country];
+                    if ((temp.stability == stability) && (!temp.controlled))
+                    {
+                        if (stability - temp.influenceUSSR == 1)
+                        {
+                            targets.Add(country);
+                            return true;
+                        }
+                    }
                 }
             }
             return false;
