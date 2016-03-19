@@ -20,6 +20,28 @@ namespace Project_Oppenheimer
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Algeria
+            if (supervisor.game.countryLst.countries[1].controller == 1)
+            {
+                Algeria_USA.ForeColor = Color.White;
+                Algeria_USA.BackColor = Color.Blue;
+                Algeria_USSR.ForeColor = Color.Red;
+                Algeria_USSR.BackColor = Color.White;
+            }
+            else if (supervisor.game.countryLst.countries[1]. controller == -1)
+            {
+                Algeria_USA.ForeColor = Color.Blue;
+                Algeria_USA.BackColor = Color.White;
+                Algeria_USSR.ForeColor = Color.White;
+                Algeria_USSR.BackColor = Color.Red;
+            }
+            else
+            {
+                Algeria_USA.ForeColor = Color.Blue;
+                Algeria_USA.BackColor = Color.White;
+                Algeria_USSR.ForeColor = Color.Red;
+                Algeria_USSR.BackColor = Color.White;
+            }
             Algeria_USA.Text = supervisor.game.countryLst.countries[1].influenceUSA.ToString();
             Algeria_USSR.Text = supervisor.game.countryLst.countries[1].influenceUSSR.ToString();
         }
