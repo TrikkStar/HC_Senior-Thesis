@@ -337,9 +337,16 @@ namespace Project_Oppenheimer.Properties
                     returnValue = ((game.round >= 11) && (game.countryLst.countries[79].influenceUSA > 2));
                     break;
                 case 13:
-                    returnValue = ArabIsraeliWarCondition();
+                    if (game.ussrMilOps <= 3)
+                    {
+                        returnValue = ArabIsraeliWarCondition();
+                    }
                     break;
                 case 11:
+                    if (game.ussrMilOps <= 3)
+                    {
+                        returnValue = ((game.countryLst.countries[66].influenceUSA > 2) && (game.countryLst.countries[41].controller != 1) && (game.countryLst.countries[71].controller != 1));
+                    }
                     break;
                 case 30:
                     break;
@@ -397,6 +404,7 @@ namespace Project_Oppenheimer.Properties
 
         private bool cardInHand(int value)
         {
+            //should generalise to work for either player
             foreach (var card in hand)
             {
                 if (card.id == value)
@@ -623,8 +631,15 @@ namespace Project_Oppenheimer.Properties
 
         private bool ArabIsraeliWarCondition()
         {
-            //stuff here
-            return false;
+            int adjUs = 0;
+            foreach (var country in new List<int> {45, 70, 42, 23 })
+            {
+                if (game.countryLst.countries[country].controller == 1)
+                {
+                    adjUs++;
+                }
+            }
+            return ((game.countryLst.countries[38].influenceUSA > 2) && (adjUs < 2));
         }
     }
 }
