@@ -20,6 +20,11 @@ namespace Project_Oppenheimer
 
         private void button1_Click(object sender, EventArgs e)
         {
+            refreshEvent();
+        }
+
+        private void refreshEvent()
+        {
             //Afghanistan
             if (supervisor.game.countryLst.countries[0].controller == 1)
             {
@@ -126,7 +131,7 @@ namespace Project_Oppenheimer
                 Australia_USA.ForeColor = Color.White;
                 Australia_USA.BackColor = Color.Blue;
                 Australia_USSR.ForeColor = Color.Red;
-                Australia_USSR.ForeColor = Color.White;
+                Australia_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[4].controller == -1)
             {
@@ -151,7 +156,7 @@ namespace Project_Oppenheimer
                 Austria_USA.ForeColor = Color.White;
                 Austria_USA.BackColor = Color.Blue;
                 Austria_USSR.ForeColor = Color.Red;
-                Austria_USSR.ForeColor = Color.White;
+                Austria_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[5].controller == -1)
             {
@@ -176,7 +181,7 @@ namespace Project_Oppenheimer
                 Benlux_USA.ForeColor = Color.White;
                 Benlux_USA.BackColor = Color.Blue;
                 Benlux_USSR.ForeColor = Color.Red;
-                Benlux_USSR.ForeColor = Color.White;
+                Benlux_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[6].controller == -1)
             {
@@ -201,7 +206,7 @@ namespace Project_Oppenheimer
                 Bolivia_USA.ForeColor = Color.White;
                 Bolivia_USA.BackColor = Color.Blue;
                 Bolivia_USSR.ForeColor = Color.Red;
-                Bolivia_USSR.ForeColor = Color.White;
+                Bolivia_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[7].controller == -1)
             {
@@ -226,7 +231,7 @@ namespace Project_Oppenheimer
                 Botswana_USA.ForeColor = Color.White;
                 Botswana_USA.BackColor = Color.Blue;
                 Botswana_USSR.ForeColor = Color.Red;
-                Botswana_USSR.ForeColor = Color.White;
+                Botswana_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[8].controller == -1)
             {
@@ -251,7 +256,7 @@ namespace Project_Oppenheimer
                 Brazil_USA.ForeColor = Color.White;
                 Brazil_USA.BackColor = Color.Blue;
                 Brazil_USSR.ForeColor = Color.Red;
-                Brazil_USSR.ForeColor = Color.White;
+                Brazil_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[9].controller == -1)
             {
@@ -276,7 +281,7 @@ namespace Project_Oppenheimer
                 Bulgaria_USA.ForeColor = Color.White;
                 Bulgaria_USA.BackColor = Color.Blue;
                 Bulgaria_USSR.ForeColor = Color.Red;
-                Bulgaria_USSR.ForeColor = Color.White;
+                Bulgaria_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[10].controller == -1)
             {
@@ -301,7 +306,7 @@ namespace Project_Oppenheimer
                 Burma_USA.ForeColor = Color.White;
                 Burma_USA.BackColor = Color.Blue;
                 Burma_USSR.ForeColor = Color.Red;
-                Burma_USSR.ForeColor = Color.White;
+                Burma_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[11].controller == -1)
             {
@@ -326,7 +331,7 @@ namespace Project_Oppenheimer
                 Cameroon_USA.ForeColor = Color.White;
                 Cameroon_USA.BackColor = Color.Blue;
                 Cameroon_USSR.ForeColor = Color.Red;
-                Cameroon_USSR.ForeColor = Color.White;
+                Cameroon_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[12].controller == -1)
             {
@@ -351,7 +356,7 @@ namespace Project_Oppenheimer
                 Canada_USA.ForeColor = Color.White;
                 Canada_USA.BackColor = Color.Blue;
                 Canada_USSR.ForeColor = Color.Red;
-                Canada_USSR.ForeColor = Color.White;
+                Canada_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[13].controller == -1)
             {
@@ -376,7 +381,7 @@ namespace Project_Oppenheimer
                 Chile_USA.ForeColor = Color.White;
                 Chile_USA.BackColor = Color.Blue;
                 Chile_USSR.ForeColor = Color.Red;
-                Chile_USSR.ForeColor = Color.White;
+                Chile_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[14].controller == -1)
             {
@@ -401,7 +406,7 @@ namespace Project_Oppenheimer
                 Colombia_USA.ForeColor = Color.White;
                 Colombia_USA.BackColor = Color.Blue;
                 Colombia_USSR.ForeColor = Color.Red;
-                Colombia_USSR.ForeColor = Color.White;
+                Colombia_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[15].controller == -1)
             {
@@ -426,7 +431,7 @@ namespace Project_Oppenheimer
                 CostaRica_USA.ForeColor = Color.White;
                 CostaRica_USA.BackColor = Color.Blue;
                 CostaRica_USSR.ForeColor = Color.Red;
-                CostaRica_USSR.ForeColor = Color.White;
+                CostaRica_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[16].controller == -1)
             {
@@ -451,7 +456,7 @@ namespace Project_Oppenheimer
                 Cuba_USA.ForeColor = Color.White;
                 Cuba_USA.BackColor = Color.Blue;
                 Cuba_USSR.ForeColor = Color.Red;
-                Cuba_USSR.ForeColor = Color.White;
+                Cuba_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[17].controller == -1)
             {
@@ -476,7 +481,7 @@ namespace Project_Oppenheimer
                 Czechoslovakia_USA.ForeColor = Color.White;
                 Czechoslovakia_USA.BackColor = Color.Blue;
                 Czechoslovakia_USSR.ForeColor = Color.Red;
-                Czechoslovakia_USSR.ForeColor = Color.White;
+                Czechoslovakia_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[18].controller == -1)
             {
@@ -501,7 +506,7 @@ namespace Project_Oppenheimer
                 Denmark_USA.ForeColor = Color.White;
                 Denmark_USA.BackColor = Color.Blue;
                 Denmark_USSR.ForeColor = Color.Red;
-                Denmark_USSR.ForeColor = Color.White;
+                Denmark_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[19].controller == -1)
             {
@@ -526,7 +531,7 @@ namespace Project_Oppenheimer
                 DominicanRep_USA.ForeColor = Color.White;
                 DominicanRep_USA.BackColor = Color.Blue;
                 DominicanRep_USSR.ForeColor = Color.Red;
-                DominicanRep_USSR.ForeColor = Color.White;
+                DominicanRep_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[20].controller == -1)
             {
@@ -551,7 +556,7 @@ namespace Project_Oppenheimer
                 EGermany_USA.ForeColor = Color.White;
                 EGermany_USA.BackColor = Color.Blue;
                 EGermany_USSR.ForeColor = Color.Red;
-                EGermany_USSR.ForeColor = Color.White;
+                EGermany_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[21].controller == -1)
             {
@@ -576,7 +581,7 @@ namespace Project_Oppenheimer
                 Ecuador_USA.ForeColor = Color.White;
                 Ecuador_USA.BackColor = Color.Blue;
                 Ecuador_USSR.ForeColor = Color.Red;
-                Ecuador_USSR.ForeColor = Color.White;
+                Ecuador_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[22].controller == -1)
             {
@@ -601,7 +606,7 @@ namespace Project_Oppenheimer
                 Egypt_USA.ForeColor = Color.White;
                 Egypt_USA.BackColor = Color.Blue;
                 Egypt_USSR.ForeColor = Color.Red;
-                Egypt_USSR.ForeColor = Color.White;
+                Egypt_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[23].controller == -1)
             {
@@ -626,7 +631,7 @@ namespace Project_Oppenheimer
                 ElSalvador_USA.ForeColor = Color.White;
                 ElSalvador_USA.BackColor = Color.Blue;
                 ElSalvador_USSR.ForeColor = Color.Red;
-                ElSalvador_USSR.ForeColor = Color.White;
+                ElSalvador_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[24].controller == -1)
             {
@@ -651,7 +656,7 @@ namespace Project_Oppenheimer
                 Ethiopia_USA.ForeColor = Color.White;
                 Ethiopia_USA.BackColor = Color.Blue;
                 Ethiopia_USSR.ForeColor = Color.Red;
-                Ethiopia_USSR.ForeColor = Color.White;
+                Ethiopia_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[25].controller == -1)
             {
@@ -676,7 +681,7 @@ namespace Project_Oppenheimer
                 Finland_USA.ForeColor = Color.White;
                 Finland_USA.BackColor = Color.Blue;
                 Finland_USSR.ForeColor = Color.Red;
-                Finland_USSR.ForeColor = Color.White;
+                Finland_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[26].controller == -1)
             {
@@ -701,7 +706,7 @@ namespace Project_Oppenheimer
                 France_USA.ForeColor = Color.White;
                 France_USA.BackColor = Color.Blue;
                 France_USSR.ForeColor = Color.Red;
-                France_USSR.ForeColor = Color.White;
+                France_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[27].controller == -1)
             {
@@ -726,7 +731,7 @@ namespace Project_Oppenheimer
                 Greece_USA.ForeColor = Color.White;
                 Greece_USA.BackColor = Color.Blue;
                 Greece_USSR.ForeColor = Color.Red;
-                Greece_USSR.ForeColor = Color.White;
+                Greece_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[28].controller == -1)
             {
@@ -751,7 +756,7 @@ namespace Project_Oppenheimer
                 Guatemala_USA.ForeColor = Color.White;
                 Guatemala_USA.BackColor = Color.Blue;
                 Guatemala_USSR.ForeColor = Color.Red;
-                Guatemala_USSR.ForeColor = Color.White;
+                Guatemala_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[29].controller == -1)
             {
@@ -776,7 +781,7 @@ namespace Project_Oppenheimer
                 GulfStates_USA.ForeColor = Color.White;
                 GulfStates_USA.BackColor = Color.Blue;
                 GulfStates_USSR.ForeColor = Color.Red;
-                GulfStates_USSR.ForeColor = Color.White;
+                GulfStates_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[30].controller == -1)
             {
@@ -801,7 +806,7 @@ namespace Project_Oppenheimer
                 Haiti_USA.ForeColor = Color.White;
                 Haiti_USA.BackColor = Color.Blue;
                 Haiti_USSR.ForeColor = Color.Red;
-                Haiti_USSR.ForeColor = Color.White;
+                Haiti_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[31].controller == -1)
             {
@@ -826,7 +831,7 @@ namespace Project_Oppenheimer
                 Honduras_USA.ForeColor = Color.White;
                 Honduras_USA.BackColor = Color.Blue;
                 Honduras_USSR.ForeColor = Color.Red;
-                Honduras_USSR.ForeColor = Color.White;
+                Honduras_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[32].controller == -1)
             {
@@ -851,7 +856,7 @@ namespace Project_Oppenheimer
                 Hungary_USA.ForeColor = Color.White;
                 Hungary_USA.BackColor = Color.Blue;
                 Hungary_USSR.ForeColor = Color.Red;
-                Hungary_USSR.ForeColor = Color.White;
+                Hungary_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[33].controller == -1)
             {
@@ -876,7 +881,7 @@ namespace Project_Oppenheimer
                 India_USA.ForeColor = Color.White;
                 India_USA.BackColor = Color.Blue;
                 India_USSR.ForeColor = Color.Red;
-                India_USSR.ForeColor = Color.White;
+                India_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[34].controller == -1)
             {
@@ -901,7 +906,7 @@ namespace Project_Oppenheimer
                 Indonesia_USA.ForeColor = Color.White;
                 Indonesia_USA.BackColor = Color.Blue;
                 Indonesia_USSR.ForeColor = Color.Red;
-                Indonesia_USSR.ForeColor = Color.White;
+                Indonesia_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[35].controller == -1)
             {
@@ -926,7 +931,7 @@ namespace Project_Oppenheimer
                 Iran_USA.ForeColor = Color.White;
                 Iran_USA.BackColor = Color.Blue;
                 Iran_USSR.ForeColor = Color.Red;
-                Iran_USSR.ForeColor = Color.White;
+                Iran_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[36].controller == -1)
             {
@@ -951,7 +956,7 @@ namespace Project_Oppenheimer
                 Iraq_USA.ForeColor = Color.White;
                 Iraq_USA.BackColor = Color.Blue;
                 Iraq_USSR.ForeColor = Color.Red;
-                Iraq_USSR.ForeColor = Color.White;
+                Iraq_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[37].controller == -1)
             {
@@ -976,7 +981,7 @@ namespace Project_Oppenheimer
                 Israel_USA.ForeColor = Color.White;
                 Israel_USA.BackColor = Color.Blue;
                 Israel_USSR.ForeColor = Color.Red;
-                Israel_USSR.ForeColor = Color.White;
+                Israel_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[38].controller == -1)
             {
@@ -1001,7 +1006,7 @@ namespace Project_Oppenheimer
                 Italy_USA.ForeColor = Color.White;
                 Italy_USA.BackColor = Color.Blue;
                 Italy_USSR.ForeColor = Color.Red;
-                Italy_USSR.ForeColor = Color.White;
+                Italy_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[39].controller == -1)
             {
@@ -1026,7 +1031,7 @@ namespace Project_Oppenheimer
                 IvoryCoast_USA.ForeColor = Color.White;
                 IvoryCoast_USA.BackColor = Color.Blue;
                 IvoryCoast_USSR.ForeColor = Color.Red;
-                IvoryCoast_USSR.ForeColor = Color.White;
+                IvoryCoast_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[40].controller == -1)
             {
@@ -1051,7 +1056,7 @@ namespace Project_Oppenheimer
                 Japan_USA.ForeColor = Color.White;
                 Japan_USA.BackColor = Color.Blue;
                 Japan_USSR.ForeColor = Color.Red;
-                Japan_USSR.ForeColor = Color.White;
+                Japan_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[41].controller == -1)
             {
@@ -1076,7 +1081,7 @@ namespace Project_Oppenheimer
                 Jordan_USA.ForeColor = Color.White;
                 Jordan_USA.BackColor = Color.Blue;
                 Jordan_USSR.ForeColor = Color.Red;
-                Jordan_USSR.ForeColor = Color.White;
+                Jordan_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[42].controller == -1)
             {
@@ -1101,7 +1106,7 @@ namespace Project_Oppenheimer
                 Kenya_USA.ForeColor = Color.White;
                 Kenya_USA.BackColor = Color.Blue;
                 Kenya_USSR.ForeColor = Color.Red;
-                Kenya_USSR.ForeColor = Color.White;
+                Kenya_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[43].controller == -1)
             {
@@ -1126,7 +1131,7 @@ namespace Project_Oppenheimer
                 LaosCambodia_USA.ForeColor = Color.White;
                 LaosCambodia_USA.BackColor = Color.Blue;
                 LaosCambodia_USSR.ForeColor = Color.Red;
-                LaosCambodia_USSR.ForeColor = Color.White;
+                LaosCambodia_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[44].controller == -1)
             {
@@ -1151,7 +1156,7 @@ namespace Project_Oppenheimer
                 Lebanon_USA.ForeColor = Color.White;
                 Lebanon_USA.BackColor = Color.Blue;
                 Lebanon_USSR.ForeColor = Color.Red;
-                Lebanon_USSR.ForeColor = Color.White;
+                Lebanon_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[45].controller == -1)
             {
@@ -1176,7 +1181,7 @@ namespace Project_Oppenheimer
                 Libya_USA.ForeColor = Color.White;
                 Libya_USA.BackColor = Color.Blue;
                 Libya_USSR.ForeColor = Color.Red;
-                Libya_USSR.ForeColor = Color.White;
+                Libya_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[46].controller == -1)
             {
@@ -1201,7 +1206,7 @@ namespace Project_Oppenheimer
                 Malaysia_USA.ForeColor = Color.White;
                 Malaysia_USA.BackColor = Color.Blue;
                 Malaysia_USSR.ForeColor = Color.Red;
-                Malaysia_USSR.ForeColor = Color.White;
+                Malaysia_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[47].controller == -1)
             {
@@ -1226,7 +1231,7 @@ namespace Project_Oppenheimer
                 Mexico_USA.ForeColor = Color.White;
                 Mexico_USA.BackColor = Color.Blue;
                 Mexico_USSR.ForeColor = Color.Red;
-                Mexico_USSR.ForeColor = Color.White;
+                Mexico_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[48].controller == -1)
             {
@@ -1251,7 +1256,7 @@ namespace Project_Oppenheimer
                 Morocco_USA.ForeColor = Color.White;
                 Morocco_USA.BackColor = Color.Blue;
                 Morocco_USSR.ForeColor = Color.Red;
-                Morocco_USSR.ForeColor = Color.White;
+                Morocco_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[49].controller == -1)
             {
@@ -1276,7 +1281,7 @@ namespace Project_Oppenheimer
                 Nicaragua_USA.ForeColor = Color.White;
                 Nicaragua_USA.BackColor = Color.Blue;
                 Nicaragua_USSR.ForeColor = Color.Red;
-                Nicaragua_USSR.ForeColor = Color.White;
+                Nicaragua_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[50].controller == -1)
             {
@@ -1301,7 +1306,7 @@ namespace Project_Oppenheimer
                 Nigeria_USA.ForeColor = Color.White;
                 Nigeria_USA.BackColor = Color.Blue;
                 Nigeria_USSR.ForeColor = Color.Red;
-                Nigeria_USSR.ForeColor = Color.White;
+                Nigeria_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[51].controller == -1)
             {
@@ -1326,7 +1331,7 @@ namespace Project_Oppenheimer
                 NorthKorea_USA.ForeColor = Color.White;
                 NorthKorea_USA.BackColor = Color.Blue;
                 NorthKorea_USSR.ForeColor = Color.Red;
-                NorthKorea_USSR.ForeColor = Color.White;
+                NorthKorea_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[52].controller == -1)
             {
@@ -1351,7 +1356,7 @@ namespace Project_Oppenheimer
                 Norway_USA.ForeColor = Color.White;
                 Norway_USA.BackColor = Color.Blue;
                 Norway_USSR.ForeColor = Color.Red;
-                Norway_USSR.ForeColor = Color.White;
+                Norway_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[53].controller == -1)
             {
@@ -1376,7 +1381,7 @@ namespace Project_Oppenheimer
                 Pakistan_USA.ForeColor = Color.White;
                 Pakistan_USA.BackColor = Color.Blue;
                 Pakistan_USSR.ForeColor = Color.Red;
-                Pakistan_USSR.ForeColor = Color.White;
+                Pakistan_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[54].controller == -1)
             {
@@ -1401,7 +1406,7 @@ namespace Project_Oppenheimer
                 Panama_USA.ForeColor = Color.White;
                 Panama_USA.BackColor = Color.Blue;
                 Panama_USSR.ForeColor = Color.Red;
-                Panama_USSR.ForeColor = Color.White;
+                Panama_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[55].controller == -1)
             {
@@ -1426,7 +1431,7 @@ namespace Project_Oppenheimer
                 Paraguay_USA.ForeColor = Color.White;
                 Paraguay_USA.BackColor = Color.Blue;
                 Paraguay_USSR.ForeColor = Color.Red;
-                Paraguay_USSR.ForeColor = Color.White;
+                Paraguay_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[56].controller == -1)
             {
@@ -1451,7 +1456,7 @@ namespace Project_Oppenheimer
                 Peru_USA.ForeColor = Color.White;
                 Peru_USA.BackColor = Color.Blue;
                 Peru_USSR.ForeColor = Color.Red;
-                Peru_USSR.ForeColor = Color.White;
+                Peru_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[57].controller == -1)
             {
@@ -1476,7 +1481,7 @@ namespace Project_Oppenheimer
                 Philippines_USA.ForeColor = Color.White;
                 Philippines_USA.BackColor = Color.Blue;
                 Philippines_USSR.ForeColor = Color.Red;
-                Philippines_USSR.ForeColor = Color.White;
+                Philippines_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[58].controller == -1)
             {
@@ -1501,7 +1506,7 @@ namespace Project_Oppenheimer
                 Poland_USA.ForeColor = Color.White;
                 Poland_USA.BackColor = Color.Blue;
                 Poland_USSR.ForeColor = Color.Red;
-                Poland_USSR.ForeColor = Color.White;
+                Poland_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[59].controller == -1)
             {
@@ -1526,7 +1531,7 @@ namespace Project_Oppenheimer
                 Romania_USA.ForeColor = Color.White;
                 Romania_USA.BackColor = Color.Blue;
                 Romania_USSR.ForeColor = Color.Red;
-                Romania_USSR.ForeColor = Color.White;
+                Romania_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[60].controller == -1)
             {
@@ -1551,7 +1556,7 @@ namespace Project_Oppenheimer
                 SEAfricanStates_USA.ForeColor = Color.White;
                 SEAfricanStates_USA.BackColor = Color.Blue;
                 SEAfricanStates_USSR.ForeColor = Color.Red;
-                SEAfricanStates_USSR.ForeColor = Color.White;
+                SEAfricanStates_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[61].controller == -1)
             {
@@ -1576,7 +1581,7 @@ namespace Project_Oppenheimer
                 SaharanStates_USA.ForeColor = Color.White;
                 SaharanStates_USA.BackColor = Color.Blue;
                 SaharanStates_USSR.ForeColor = Color.Red;
-                SaharanStates_USSR.ForeColor = Color.White;
+                SaharanStates_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[62].controller == -1)
             {
@@ -1601,7 +1606,7 @@ namespace Project_Oppenheimer
                 SaudiArabia_USA.ForeColor = Color.White;
                 SaudiArabia_USA.BackColor = Color.Blue;
                 SaudiArabia_USSR.ForeColor = Color.Red;
-                SaudiArabia_USSR.ForeColor = Color.White;
+                SaudiArabia_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[63].controller == -1)
             {
@@ -1626,7 +1631,7 @@ namespace Project_Oppenheimer
                 Somalia_USA.ForeColor = Color.White;
                 Somalia_USA.BackColor = Color.Blue;
                 Somalia_USSR.ForeColor = Color.Red;
-                Somalia_USSR.ForeColor = Color.White;
+                Somalia_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[64].controller == -1)
             {
@@ -1651,7 +1656,7 @@ namespace Project_Oppenheimer
                 SouthAfrica_USA.ForeColor = Color.White;
                 SouthAfrica_USA.BackColor = Color.Blue;
                 SouthAfrica_USSR.ForeColor = Color.Red;
-                SouthAfrica_USSR.ForeColor = Color.White;
+                SouthAfrica_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[65].controller == -1)
             {
@@ -1676,7 +1681,7 @@ namespace Project_Oppenheimer
                 SouthKorea_USA.ForeColor = Color.White;
                 SouthKorea_USA.BackColor = Color.Blue;
                 SouthKorea_USSR.ForeColor = Color.Red;
-                SouthKorea_USSR.ForeColor = Color.White;
+                SouthKorea_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[66].controller == -1)
             {
@@ -1701,7 +1706,7 @@ namespace Project_Oppenheimer
                 SpainPortugul_USA.ForeColor = Color.White;
                 SpainPortugul_USA.BackColor = Color.Blue;
                 SpainPortugul_USSR.ForeColor = Color.Red;
-                SpainPortugul_USSR.ForeColor = Color.White;
+                SpainPortugul_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[67].controller == -1)
             {
@@ -1726,7 +1731,7 @@ namespace Project_Oppenheimer
                 Sudan_USA.ForeColor = Color.White;
                 Sudan_USA.BackColor = Color.Blue;
                 Sudan_USSR.ForeColor = Color.Red;
-                Sudan_USSR.ForeColor = Color.White;
+                Sudan_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[68].controller == -1)
             {
@@ -1751,7 +1756,7 @@ namespace Project_Oppenheimer
                 Sweden_USA.ForeColor = Color.White;
                 Sweden_USA.BackColor = Color.Blue;
                 Sweden_USSR.ForeColor = Color.Red;
-                Sweden_USSR.ForeColor = Color.White;
+                Sweden_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[69].controller == -1)
             {
@@ -1776,7 +1781,7 @@ namespace Project_Oppenheimer
                 Syria_USA.ForeColor = Color.White;
                 Syria_USA.BackColor = Color.Blue;
                 Syria_USSR.ForeColor = Color.Red;
-                Syria_USSR.ForeColor = Color.White;
+                Syria_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[70].controller == -1)
             {
@@ -1801,7 +1806,7 @@ namespace Project_Oppenheimer
                 Taiwan_USA.ForeColor = Color.White;
                 Taiwan_USA.BackColor = Color.Blue;
                 Taiwan_USSR.ForeColor = Color.Red;
-                Taiwan_USSR.ForeColor = Color.White;
+                Taiwan_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[71].controller == -1)
             {
@@ -1826,7 +1831,7 @@ namespace Project_Oppenheimer
                 Thailand_USA.ForeColor = Color.White;
                 Thailand_USA.BackColor = Color.Blue;
                 Thailand_USSR.ForeColor = Color.Red;
-                Thailand_USSR.ForeColor = Color.White;
+                Thailand_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[72].controller == -1)
             {
@@ -1851,7 +1856,7 @@ namespace Project_Oppenheimer
                 Tunisia_USA.ForeColor = Color.White;
                 Tunisia_USA.BackColor = Color.Blue;
                 Tunisia_USSR.ForeColor = Color.Red;
-                Tunisia_USSR.ForeColor = Color.White;
+                Tunisia_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[73].controller == -1)
             {
@@ -1876,7 +1881,7 @@ namespace Project_Oppenheimer
                 Turkey_USA.ForeColor = Color.White;
                 Turkey_USA.BackColor = Color.Blue;
                 Turkey_USSR.ForeColor = Color.Red;
-                Turkey_USSR.ForeColor = Color.White;
+                Turkey_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[74].controller == -1)
             {
@@ -1901,7 +1906,7 @@ namespace Project_Oppenheimer
                 UK_USA.ForeColor = Color.White;
                 UK_USA.BackColor = Color.Blue;
                 UK_USSR.ForeColor = Color.Red;
-                UK_USSR.ForeColor = Color.White;
+                UK_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[75].controller == -1)
             {
@@ -1926,7 +1931,7 @@ namespace Project_Oppenheimer
                 Uruguay_USA.ForeColor = Color.White;
                 Uruguay_USA.BackColor = Color.Blue;
                 Uruguay_USSR.ForeColor = Color.Red;
-                Uruguay_USSR.ForeColor = Color.White;
+                Uruguay_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[76].controller == -1)
             {
@@ -1951,7 +1956,7 @@ namespace Project_Oppenheimer
                 Venezuela_USA.ForeColor = Color.White;
                 Venezuela_USA.BackColor = Color.Blue;
                 Venezuela_USSR.ForeColor = Color.Red;
-                Venezuela_USSR.ForeColor = Color.White;
+                Venezuela_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[77].controller == -1)
             {
@@ -1976,7 +1981,7 @@ namespace Project_Oppenheimer
                 Vietnam_USA.ForeColor = Color.White;
                 Vietnam_USA.BackColor = Color.Blue;
                 Vietnam_USSR.ForeColor = Color.Red;
-                Vietnam_USSR.ForeColor = Color.White;
+                Vietnam_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[78].controller == -1)
             {
@@ -2001,7 +2006,7 @@ namespace Project_Oppenheimer
                 WGermany_USA.ForeColor = Color.White;
                 WGermany_USA.BackColor = Color.Blue;
                 WGermany_USSR.ForeColor = Color.Red;
-                WGermany_USSR.ForeColor = Color.White;
+                WGermany_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[79].controller == -1)
             {
@@ -2026,7 +2031,7 @@ namespace Project_Oppenheimer
                 WestAfricanStates_USA.ForeColor = Color.White;
                 WestAfricanStates_USA.BackColor = Color.Blue;
                 WestAfricanStates_USSR.ForeColor = Color.Red;
-                WestAfricanStates_USSR.ForeColor = Color.White;
+                WestAfricanStates_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[80].controller == -1)
             {
@@ -2051,7 +2056,7 @@ namespace Project_Oppenheimer
                 Yugoslavia_USA.ForeColor = Color.White;
                 Yugoslavia_USA.BackColor = Color.Blue;
                 Yugoslavia_USSR.ForeColor = Color.Red;
-                Yugoslavia_USSR.ForeColor = Color.White;
+                Yugoslavia_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[81].controller == -1)
             {
@@ -2076,7 +2081,7 @@ namespace Project_Oppenheimer
                 Zaire_USA.ForeColor = Color.White;
                 Zaire_USA.BackColor = Color.Blue;
                 Zaire_USSR.ForeColor = Color.Red;
-                Zaire_USSR.ForeColor = Color.White;
+                Zaire_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[82].controller == -1)
             {
@@ -2101,7 +2106,7 @@ namespace Project_Oppenheimer
                 Zimbabwe_USA.ForeColor = Color.White;
                 Zimbabwe_USA.BackColor = Color.Blue;
                 Zimbabwe_USSR.ForeColor = Color.Red;
-                Zimbabwe_USSR.ForeColor = Color.White;
+                Zimbabwe_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[83].controller == -1)
             {
@@ -2135,6 +2140,8 @@ namespace Project_Oppenheimer
         {
             supervisor.player = 1;
             supervisor.AI = -1;
+            supervisor.newGame();
+            refreshEvent();
             //play game
         }
 
@@ -2142,6 +2149,8 @@ namespace Project_Oppenheimer
         {
             supervisor.player = -1;
             supervisor.AI = 1;
+            supervisor.newGame();
+            refreshEvent();
             //play game
         }
     }

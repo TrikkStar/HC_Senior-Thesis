@@ -23,7 +23,22 @@ namespace Project_Oppenheimer.Properties
 
         public void newGame()
         {
-
+            game.countryLst.countries[4].set_infUSA(4);
+            game.countryLst.countries[58].set_infUSA(1);
+            game.countryLst.countries[41].set_infUSA(1);
+            game.countryLst.countries[66].set_infUSA(1);
+            game.countryLst.countries[52].set_infUSSR(3);
+            game.countryLst.countries[65].set_infUSA(1);
+            game.countryLst.countries[36].set_infUSA(1);
+            game.countryLst.countries[38].set_infUSA(1);
+            game.countryLst.countries[37].set_infUSSR(1);
+            game.countryLst.countries[70].set_infUSSR(1);
+            game.countryLst.countries[66].set_infUSA(1);
+            game.countryLst.countries[26].set_infUSSR(1);
+            game.countryLst.countries[21].set_infUSSR(3);
+            game.countryLst.countries[75].set_infUSA(5);
+            game.countryLst.countries[13].set_infUSA(2);
+            game.countryLst.countries[55].set_infUSA(2);
         }
 
         public void playCard(int player, int card)
