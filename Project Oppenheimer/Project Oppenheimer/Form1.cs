@@ -481,7 +481,7 @@ namespace Project_Oppenheimer
             else if (supervisor.game.countryLst.countries[18].controller == -1)
             {
                 Czechoslovakia_USA.ForeColor = Color.Blue;
-                Czechoslovakia_USA].BackColor = Color.White;
+                Czechoslovakia_USA.BackColor = Color.White;
                 Czechoslovakia_USSR.ForeColor = Color.White;
                 Czechoslovakia_USSR.BackColor = Color.Red;
             }
@@ -2119,6 +2119,16 @@ namespace Project_Oppenheimer
             }
             Zimbabwe_USA.Text = supervisor.game.countryLst.countries[83].influenceUSA.ToString();
             Zimbabwe_USSR.Text = supervisor.game.countryLst.countries[83].influenceUSSR.ToString();
+
+            //Board State
+            Turn_lbl.Text = supervisor.game.turn.ToString();
+            Round_lbl.Text = supervisor.game.round.ToString();
+            Score_lbl.Text = supervisor.game.score.ToString();
+            Defcon_lbl.Text = supervisor.game.defcon.ToString();
+            MilitaryOps_USA.Text = supervisor.game.usMilOps.ToString();
+            MilitaryOps_USSR.Text = supervisor.game.ussrMilOps.ToString();
+            SpaceRace_USA.Text = supervisor.game.usSpaceRace.ToString();
+            SpaceRace_USSR.Text = supervisor.game.ussrSpaceRace.ToString();
         }
 
         private void uSAToolStripMenuItem_Click(object sender, EventArgs e)
