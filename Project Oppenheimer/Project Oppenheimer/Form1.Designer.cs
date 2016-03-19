@@ -294,9 +294,9 @@
             this.India_USSR = new System.Windows.Forms.Label();
             this.label91 = new System.Windows.Forms.Label();
             this.label92 = new System.Windows.Forms.Label();
-            this.Philippeans_USA = new System.Windows.Forms.TableLayoutPanel();
-            this.Philippians_USA = new System.Windows.Forms.Label();
-            this.Philippians_USSR = new System.Windows.Forms.Label();
+            this.Philippines = new System.Windows.Forms.TableLayoutPanel();
+            this.Philippines_USA = new System.Windows.Forms.Label();
+            this.Philippines_USSR = new System.Windows.Forms.Label();
             this.label95 = new System.Windows.Forms.Label();
             this.tableLayoutPanel32 = new System.Windows.Forms.TableLayoutPanel();
             this.Burma_USA = new System.Windows.Forms.Label();
@@ -666,7 +666,7 @@
             this.tableLayoutPanel28.SuspendLayout();
             this.tableLayoutPanel29.SuspendLayout();
             this.tableLayoutPanel30.SuspendLayout();
-            this.Philippeans_USA.SuspendLayout();
+            this.Philippines.SuspendLayout();
             this.tableLayoutPanel32.SuspendLayout();
             this.tableLayoutPanel33.SuspendLayout();
             this.tableLayoutPanel34.SuspendLayout();
@@ -3853,7 +3853,7 @@
             this.groupBox2.Controls.Add(this.tableLayoutPanel30);
             this.groupBox2.Controls.Add(this.label91);
             this.groupBox2.Controls.Add(this.label92);
-            this.groupBox2.Controls.Add(this.Philippeans_USA);
+            this.groupBox2.Controls.Add(this.Philippines);
             this.groupBox2.Controls.Add(this.label95);
             this.groupBox2.Controls.Add(this.tableLayoutPanel32);
             this.groupBox2.Controls.Add(this.label98);
@@ -4366,7 +4366,7 @@
             this.label91.Name = "label91";
             this.label91.Size = new System.Drawing.Size(57, 13);
             this.label91.TabIndex = 27;
-            this.label91.Text = "Philippians";
+            this.label91.Text = "Philippines";
             // 
             // label92
             // 
@@ -4378,49 +4378,49 @@
             this.label92.TabIndex = 11;
             this.label92.Text = "Burma";
             // 
-            // Philippeans_USA
+            // Philippines
             // 
-            this.Philippeans_USA.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.Philippeans_USA.ColumnCount = 2;
-            this.Philippeans_USA.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.Philippeans_USA.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.Philippeans_USA.Controls.Add(this.Philippians_USA, 0, 0);
-            this.Philippeans_USA.Controls.Add(this.Philippians_USSR, 1, 0);
-            this.Philippeans_USA.Location = new System.Drawing.Point(94, 106);
-            this.Philippeans_USA.Margin = new System.Windows.Forms.Padding(2);
-            this.Philippeans_USA.Name = "Philippeans_USA";
-            this.Philippeans_USA.RowCount = 1;
-            this.Philippeans_USA.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.Philippeans_USA.Size = new System.Drawing.Size(51, 16);
-            this.Philippeans_USA.TabIndex = 26;
+            this.Philippines.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.Philippines.ColumnCount = 2;
+            this.Philippines.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.Philippines.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.Philippines.Controls.Add(this.Philippines_USA, 0, 0);
+            this.Philippines.Controls.Add(this.Philippines_USSR, 1, 0);
+            this.Philippines.Location = new System.Drawing.Point(94, 106);
+            this.Philippines.Margin = new System.Windows.Forms.Padding(2);
+            this.Philippines.Name = "Philippines";
+            this.Philippines.RowCount = 1;
+            this.Philippines.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.Philippines.Size = new System.Drawing.Size(51, 16);
+            this.Philippines.TabIndex = 26;
             // 
-            // Philippians_USA
+            // Philippines_USA
             // 
-            this.Philippians_USA.AutoSize = true;
-            this.Philippians_USA.BackColor = System.Drawing.Color.White;
-            this.Philippians_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Philippians_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Philippians_USA.Location = new System.Drawing.Point(3, 1);
-            this.Philippians_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Philippians_USA.Name = "Philippians_USA";
-            this.Philippians_USA.Size = new System.Drawing.Size(14, 14);
-            this.Philippians_USA.TabIndex = 0;
-            this.Philippians_USA.Text = "10";
-            this.Philippians_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Philippines_USA.AutoSize = true;
+            this.Philippines_USA.BackColor = System.Drawing.Color.White;
+            this.Philippines_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Philippines_USA.ForeColor = System.Drawing.Color.Blue;
+            this.Philippines_USA.Location = new System.Drawing.Point(3, 1);
+            this.Philippines_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Philippines_USA.Name = "Philippines_USA";
+            this.Philippines_USA.Size = new System.Drawing.Size(14, 14);
+            this.Philippines_USA.TabIndex = 0;
+            this.Philippines_USA.Text = "10";
+            this.Philippines_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Philippians_USSR
+            // Philippines_USSR
             // 
-            this.Philippians_USSR.AutoSize = true;
-            this.Philippians_USSR.BackColor = System.Drawing.Color.White;
-            this.Philippians_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Philippians_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Philippians_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Philippians_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Philippians_USSR.Name = "Philippians_USSR";
-            this.Philippians_USSR.Size = new System.Drawing.Size(14, 14);
-            this.Philippians_USSR.TabIndex = 5;
-            this.Philippians_USSR.Text = "10";
-            this.Philippians_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Philippines_USSR.AutoSize = true;
+            this.Philippines_USSR.BackColor = System.Drawing.Color.White;
+            this.Philippines_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Philippines_USSR.ForeColor = System.Drawing.Color.Red;
+            this.Philippines_USSR.Location = new System.Drawing.Point(28, 1);
+            this.Philippines_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Philippines_USSR.Name = "Philippines_USSR";
+            this.Philippines_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Philippines_USSR.TabIndex = 5;
+            this.Philippines_USSR.Text = "10";
+            this.Philippines_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label95
             // 
@@ -5765,7 +5765,7 @@
             this.middleEastToolStripMenuItem,
             this.southAmericaToolStripMenuItem});
             this.countryToolStripMenuItem.Name = "countryToolStripMenuItem";
-            this.countryToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.countryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.countryToolStripMenuItem.Text = "Country";
             // 
             // africaToolStripMenuItem
@@ -5987,7 +5987,7 @@
             // 
             this.philippinesToolStripMenuItem.Name = "philippinesToolStripMenuItem";
             this.philippinesToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.philippinesToolStripMenuItem.Text = "Philippians";
+            this.philippinesToolStripMenuItem.Text = "Philippines";
             // 
             // southKoreaToolStripMenuItem
             // 
@@ -6410,7 +6410,7 @@
             this.eventToolStripMenuItem,
             this.resetToolStripMenuItem});
             this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
-            this.gameToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.gameToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.gameToolStripMenuItem.Text = "Game";
             // 
             // turnToolStripMenuItem
@@ -7165,7 +7165,7 @@
             this.uSAToolStripMenuItem1,
             this.uSSRToolStripMenuItem1});
             this.handsToolStripMenuItem.Name = "handsToolStripMenuItem";
-            this.handsToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.handsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.handsToolStripMenuItem.Text = "Hands";
             // 
             // uSAToolStripMenuItem1
@@ -7349,8 +7349,8 @@
             this.tableLayoutPanel29.PerformLayout();
             this.tableLayoutPanel30.ResumeLayout(false);
             this.tableLayoutPanel30.PerformLayout();
-            this.Philippeans_USA.ResumeLayout(false);
-            this.Philippeans_USA.PerformLayout();
+            this.Philippines.ResumeLayout(false);
+            this.Philippines.PerformLayout();
             this.tableLayoutPanel32.ResumeLayout(false);
             this.tableLayoutPanel32.PerformLayout();
             this.tableLayoutPanel33.ResumeLayout(false);
@@ -7673,9 +7673,9 @@
         private System.Windows.Forms.Label India_USSR;
         private System.Windows.Forms.Label label91;
         private System.Windows.Forms.Label label92;
-        private System.Windows.Forms.TableLayoutPanel Philippeans_USA;
-        private System.Windows.Forms.Label Philippians_USA;
-        private System.Windows.Forms.Label Philippians_USSR;
+        private System.Windows.Forms.TableLayoutPanel Philippines;
+        private System.Windows.Forms.Label Philippines_USA;
+        private System.Windows.Forms.Label Philippines_USSR;
         private System.Windows.Forms.Label label95;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel32;
         private System.Windows.Forms.Label Burma_USA;
