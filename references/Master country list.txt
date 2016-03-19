@@ -57,7 +57,7 @@ Countries appear in alphebetical order, which is the order that they will be ind
 55 Panama
 56 Paraguay
 57 Peru
-58 Philippians
+58 Philippines
 59 Poland
 60 Romania
 61 SE African States
