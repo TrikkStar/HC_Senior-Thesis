@@ -235,8 +235,8 @@ specific information about changes, I recommend looking through the commit histo
 3/16/2016:
 	Determined that my supervisor will make a new AI instance each time that a decision has to be made. That AI instance will have certain attributes
 	that are dynamically created by following the AI logic that will be used by the Supervisor class to take the appropriate action in the game. Not
-	sure if this is the most intelligent way to go about doing it, but it makes the most sense to me. Especially since there are at least three
-	different bits of data that the Supervisor will need to have access to. The AI will go through a series of function calls to assemble the appropriate
+	sure if this is the most intelligent way to go about doing it, but it makes the most sense to me, especially since there are at least three
+	different bits of data that the supervisor will need to have access to. The AI will go through a series of function calls to assemble the appropriate
 	call state. This will be interesting.
 	- Just learned about switch statements in C#, these are analogous to OCaml match statements and this makes me very happy.
 
@@ -244,17 +244,19 @@ specific information about changes, I recommend looking through the commit histo
 	While creating Robert I'm quickly seeing that I have no chance of implementing an entire AI to play a full game by the due date. At this point
 	I'm just looking to get the Early War period implemented and playable but even that is looking like a very daunting task. Which is very disappointing
 	considering the fact that I felt sure that I could do it before.
-	I still don't know whether or not I can make the GUI, still trying to follow up on some leads in regards to that but I don't know what's going to
-	happen. Needless to say I'm feeling fairly discouraged and overwhelmed. I feel like I over committed myself to an incredibly difficult project but
-	never put in enough time along the way since I'm also doing a bunch of other stuff too. I really regret taking the Programming Languages class, its
+
+	I still don't know whether or not I can make the GUI; still trying to follow up on some leads in regards to that, but I don't know what's going to
+	happen. Needless to say I'm feeling fairly discouraged and overwhelmed. I feel like I over-committed myself to an incredibly difficult project but
+	never put in enough time along the way since I'm also doing a bunch of other stuff too. I really regret taking the Programming Languages class; it's
 	taking up way too much time that I don't have. My other classes aren't bad but have enough work to make them an actual entity that takes time.
 	That's all for now.
+
 	Edit: Forgot to mention that I've been having a ton on connectivity problems lately, think that my roommate is hogging the bandwidth with all the
 	devices he uses at the same time.
 
 3/19/2016:
-	Things are looking up. I finally was able to resolve the issues I was having in dynamically displaying my content on the GUI, was just a problem
+	Things are looking up. I finally was able to resolve the issues I was having in dynamically displaying my content on the GUI; it was just a problem
 	of the scope of my object. Now that that's figured out I can get that hammered away fairly quickly, but there still is a lot of work to be done.
 	I'm slowly churning out Robert's decision-making procedures which are frustrating and confusing at times. I've determined that I'm only going to
 	implement decision-making logic to cover card events for the first three turns of the game. There just isn't enough time to make over a hundred
-	different conditions, and make those conditions actual do something.
+	different conditions, and make those conditions actually do something.
