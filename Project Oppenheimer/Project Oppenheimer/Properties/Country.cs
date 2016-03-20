@@ -2,7 +2,7 @@
 
 namespace Project_Oppenheimer.Properties
 {
-    class Country
+    public class Country
     {
         public string name;
         public int stability;
@@ -29,13 +29,13 @@ namespace Project_Oppenheimer.Properties
 
         public void set_infUSA(int x)
         {
-            influenceUSA = x;
+            influenceUSA = influenceUSA + x;
             updateControl();
         }
 
         public void set_infUSSR(int x)
         {
-            influenceUSSR = x;
+            influenceUSSR = influenceUSSR + x;
             updateControl();
         }
 

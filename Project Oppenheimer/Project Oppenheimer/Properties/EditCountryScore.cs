@@ -1,20 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Project_Oppenheimer.Properties
 {
     public partial class EditCountryScore : Form
     {
-        public EditCountryScore()
+        private Country target;
+        public EditCountryScore(Country country)
         {
             InitializeComponent();
+            target = country;
+        }
+
+        private void submit_button_Click(object sender, EventArgs e)
+        {
+            target.set_infUSA(Decimal.ToInt32(USA_UpDown.Value));
+            target.set_infUSSR(Decimal.ToInt32(USSR_UpDown.Value));
+            this.Close();
         }
     }
 }

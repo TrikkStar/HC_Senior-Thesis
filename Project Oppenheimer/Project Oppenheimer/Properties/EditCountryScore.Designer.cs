@@ -58,6 +58,16 @@
             // USA_UpDown
             // 
             this.USA_UpDown.Location = new System.Drawing.Point(28, 48);
+            this.USA_UpDown.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.USA_UpDown.Minimum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            -2147483648});
             this.USA_UpDown.Name = "USA_UpDown";
             this.USA_UpDown.Size = new System.Drawing.Size(43, 22);
             this.USA_UpDown.TabIndex = 2;
@@ -65,6 +75,16 @@
             // USSR_UpDown
             // 
             this.USSR_UpDown.Location = new System.Drawing.Point(96, 48);
+            this.USSR_UpDown.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.USSR_UpDown.Minimum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            -2147483648});
             this.USSR_UpDown.Name = "USSR_UpDown";
             this.USSR_UpDown.Size = new System.Drawing.Size(43, 22);
             this.USSR_UpDown.TabIndex = 3;
@@ -77,6 +97,7 @@
             this.submit_button.TabIndex = 4;
             this.submit_button.Text = "Submit";
             this.submit_button.UseVisualStyleBackColor = true;
+            this.submit_button.Click += new System.EventHandler(this.submit_button_Click);
             // 
             // EditCountryScore
             // 

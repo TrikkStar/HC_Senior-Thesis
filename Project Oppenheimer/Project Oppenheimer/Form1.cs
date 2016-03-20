@@ -2756,8 +2756,9 @@ namespace Project_Oppenheimer
 
         private void algeriaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var popup = new Properties.EditCountryScore();
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[1]);
             popup.ShowDialog();
+            refreshEvent();
         }
     }
 }
