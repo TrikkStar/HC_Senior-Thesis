@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project_Oppenheimer.Properties
 {
-    class Supervisor
+    public class Supervisor
     {
         public Gamestate game;
         public Random rng;

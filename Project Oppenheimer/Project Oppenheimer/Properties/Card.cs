@@ -1,6 +1,6 @@
 ﻿namespace Project_Oppenheimer.Properties
 {
-    struct Card
+    public struct Card
     {
         public string name;
         public int id;

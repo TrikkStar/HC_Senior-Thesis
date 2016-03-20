@@ -12,9 +12,18 @@ namespace Project_Oppenheimer.Properties
 {
     public partial class CardPlay : Form
     {
-        public CardPlay()
+        private Card target;
+        private Supervisor TS;
+        public CardPlay(Card card, Supervisor supervisor)
         {
+            target = card;
+            TS = supervisor;
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

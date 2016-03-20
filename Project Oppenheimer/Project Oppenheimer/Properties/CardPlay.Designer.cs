@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.OPS_Radio = new System.Windows.Forms.RadioButton();
-            this.Event_Radio = new System.Windows.Forms.RadioButton();
             this.SpaceRace_Radio = new System.Windows.Forms.RadioButton();
+            this.Event_Radio = new System.Windows.Forms.RadioButton();
+            this.OPS_Radio = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -48,16 +48,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chose Action";
             // 
-            // OPS_Radio
+            // SpaceRace_Radio
             // 
-            this.OPS_Radio.AutoSize = true;
-            this.OPS_Radio.Location = new System.Drawing.Point(7, 22);
-            this.OPS_Radio.Name = "OPS_Radio";
-            this.OPS_Radio.Size = new System.Drawing.Size(101, 21);
-            this.OPS_Radio.TabIndex = 0;
-            this.OPS_Radio.TabStop = true;
-            this.OPS_Radio.Text = "OPS Points";
-            this.OPS_Radio.UseVisualStyleBackColor = true;
+            this.SpaceRace_Radio.AutoSize = true;
+            this.SpaceRace_Radio.Location = new System.Drawing.Point(7, 78);
+            this.SpaceRace_Radio.Name = "SpaceRace_Radio";
+            this.SpaceRace_Radio.Size = new System.Drawing.Size(106, 21);
+            this.SpaceRace_Radio.TabIndex = 2;
+            this.SpaceRace_Radio.TabStop = true;
+            this.SpaceRace_Radio.Text = "Space Race";
+            this.SpaceRace_Radio.UseVisualStyleBackColor = true;
             // 
             // Event_Radio
             // 
@@ -70,16 +70,16 @@
             this.Event_Radio.Text = "Event";
             this.Event_Radio.UseVisualStyleBackColor = true;
             // 
-            // SpaceRace_Radio
+            // OPS_Radio
             // 
-            this.SpaceRace_Radio.AutoSize = true;
-            this.SpaceRace_Radio.Location = new System.Drawing.Point(7, 78);
-            this.SpaceRace_Radio.Name = "SpaceRace_Radio";
-            this.SpaceRace_Radio.Size = new System.Drawing.Size(106, 21);
-            this.SpaceRace_Radio.TabIndex = 2;
-            this.SpaceRace_Radio.TabStop = true;
-            this.SpaceRace_Radio.Text = "Space Race";
-            this.SpaceRace_Radio.UseVisualStyleBackColor = true;
+            this.OPS_Radio.AutoSize = true;
+            this.OPS_Radio.Location = new System.Drawing.Point(7, 22);
+            this.OPS_Radio.Name = "OPS_Radio";
+            this.OPS_Radio.Size = new System.Drawing.Size(101, 21);
+            this.OPS_Radio.TabIndex = 0;
+            this.OPS_Radio.TabStop = true;
+            this.OPS_Radio.Text = "OPS Points";
+            this.OPS_Radio.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -89,6 +89,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Play Card";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // CardPlay
             // 

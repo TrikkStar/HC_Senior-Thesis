@@ -2,7 +2,7 @@
 
 namespace Project_Oppenheimer.Properties
 {
-    class CountryList
+    public class CountryList
     {
         public List<Country> countries;
         public List<int> Europe;

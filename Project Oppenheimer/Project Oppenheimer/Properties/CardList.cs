@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 
 namespace Project_Oppenheimer.Properties
 {
-    class CardList
+    public class CardList
     {
         public List<Card> deck;
         public List<Card> discarded;

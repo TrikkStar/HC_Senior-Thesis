@@ -1,6 +1,6 @@
 ﻿namespace Project_Oppenheimer.Properties
 {
-    class Gamestate
+    public class Gamestate
     {
         public CountryList countryLst;
         public CardList cards;
