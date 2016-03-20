@@ -3187,5 +3187,19 @@ namespace Project_Oppenheimer
             popup.ShowDialog();
             refreshEvent();
         }
+
+        private void wGermanyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[79]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void yugoslaviaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[81]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
     }
 }
