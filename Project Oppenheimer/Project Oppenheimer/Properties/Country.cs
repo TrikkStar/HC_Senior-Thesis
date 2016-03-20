@@ -30,12 +30,20 @@ namespace Project_Oppenheimer.Properties
         public void set_infUSA(int x)
         {
             influenceUSA = influenceUSA + x;
+            if (influenceUSA < 0)
+            {
+                influenceUSA = 0;
+            }
             updateControl();
         }
 
         public void set_infUSSR(int x)
         {
             influenceUSSR = influenceUSSR + x;
+            if (influenceUSSR < 0)
+            {
+                influenceUSSR = 0;
+            }
             updateControl();
         }
 
