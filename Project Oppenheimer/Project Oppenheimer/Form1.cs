@@ -2651,5 +2651,107 @@ namespace Project_Oppenheimer
             supervisor.game.ussrSpaceRace = 8;
             refreshEvent();
         }
+
+        private void headlinePhaseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            supervisor.game.round = 0;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem12_Click(object sender, EventArgs e)
+        {
+            supervisor.game.round = 1;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem13_Click(object sender, EventArgs e)
+        {
+            supervisor.game.round = 2;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem14_Click(object sender, EventArgs e)
+        {
+            supervisor.game.round = 3;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem15_Click(object sender, EventArgs e)
+        {
+            supervisor.game.round = 4;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem16_Click(object sender, EventArgs e)
+        {
+            supervisor.game.round = 5;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem17_Click(object sender, EventArgs e)
+        {
+            supervisor.game.round = 6;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem18_Click(object sender, EventArgs e)
+        {
+            supervisor.game.round = 7;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem19_Click(object sender, EventArgs e)
+        {
+            supervisor.game.round = 8;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem91_Click(object sender, EventArgs e)
+        {
+            supervisor.game.round = 9;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem92_Click(object sender, EventArgs e)
+        {
+            supervisor.game.round = 10;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem93_Click(object sender, EventArgs e)
+        {
+            supervisor.game.round = 11;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem94_Click(object sender, EventArgs e)
+        {
+            supervisor.game.round = 12;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem95_Click(object sender, EventArgs e)
+        {
+            supervisor.game.round = 13;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem96_Click(object sender, EventArgs e)
+        {
+            supervisor.game.round = 14;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem97_Click(object sender, EventArgs e)
+        {
+            supervisor.game.round = 15;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem98_Click(object sender, EventArgs e)
+        {
+            supervisor.game.round = 16;
+            refreshEvent();
+        }
     }
 }
