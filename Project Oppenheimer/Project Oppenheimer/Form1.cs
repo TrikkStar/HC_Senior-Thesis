@@ -2760,5 +2760,432 @@ namespace Project_Oppenheimer
             popup.ShowDialog();
             refreshEvent();
         }
+
+        private void angolaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[2]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void botsawnaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[8]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void cameroonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[12]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void ethiopiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[25]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void ivoryCoastToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[40]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void kenyaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[43]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void moroccoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[49]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void nigeriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[51]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void saharanStatesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[62]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void sEAfricanStatesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[61]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void somaliaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[64]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void southAfricaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[65]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void sudanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[68]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void tunisiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[73]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void westAfricanStatesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[80]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void zaireToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[82]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void zimbabweToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[83]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void afghanistanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[0]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void australiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[4]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void burmaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[11]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void indiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[34]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void indonesiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[35]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void japanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[41]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void laosCambodiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[44]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void malaysiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[47]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void northKoreaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[52]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void pakistanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[54]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void philippinesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[58]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void southKoreaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[66]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void taiwanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[71]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void thailandToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[72]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void vietnamToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[78]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void costaRicaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[16]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void cubaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[17]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void dominicanRepToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[20]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void elSalvadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[24]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void guatemalaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[29]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void hatiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[31]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void hondurasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[32]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void mexicoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[48]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void nicaraguaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[50]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void panamaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[55]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void austriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[5]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void benluxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[6]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void bulgariaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[10]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void canadaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[13]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void czechoslovakiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[18]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void denmarkToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[19]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void eGermanyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[21]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void finlandToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[26]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void franceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[27]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void greeceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[28]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void hungaryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[33]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void italyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[39]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void norwayToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[53]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void polandToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[59]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void romaniaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[60]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void spainPortugulToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[67]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void sweedenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[69]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void turkeyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[74]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
+
+        private void uKToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[75]);
+            popup.ShowDialog();
+            refreshEvent();
+        }
     }
 }
