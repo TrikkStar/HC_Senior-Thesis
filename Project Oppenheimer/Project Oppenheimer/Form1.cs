@@ -2171,5 +2171,485 @@ namespace Project_Oppenheimer
             supervisor.game.turn = 3;
             refreshEvent();
         }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            supervisor.game.turn = 4;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            supervisor.game.turn = 5;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            supervisor.game.turn = 6;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            supervisor.game.turn = 7;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+            supervisor.game.turn = 8;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            supervisor.game.turn = 9;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem11_Click(object sender, EventArgs e)
+        {
+            supervisor.game.turn = 10;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem21_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = 1;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem22_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = 2;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem23_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = 3;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem24_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = 4;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem25_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = 5;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem26_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = 6;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem27_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = 7;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem28_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = 8;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem29_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = 9;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem30_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = 10;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem31_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = 11;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem32_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = 12;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem33_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = 13;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem34_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = 14;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem35_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = 15;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem36_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = 16;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem37_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = 17;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem38_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = 18;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem39_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = 19;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem20_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = 0;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem40_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = -1;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem41_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = -2;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem42_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = -3;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem43_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = -4;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem44_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = -5;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem45_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = -6;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem46_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = -7;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem47_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = -8;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem48_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = -9;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem49_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = -10;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem50_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = -11;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem51_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = -12;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem52_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = -13;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem53_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = -14;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem54_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = -15;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem55_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = -16;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem56_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = -17;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem57_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = -18;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem58_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = -20;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem59_Click(object sender, EventArgs e)
+        {
+            supervisor.game.defcon = 5;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem60_Click(object sender, EventArgs e)
+        {
+            supervisor.game.defcon = 4;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem61_Click(object sender, EventArgs e)
+        {
+            supervisor.game.defcon = 3;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem62_Click(object sender, EventArgs e)
+        {
+            supervisor.game.score = 2;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem63_Click(object sender, EventArgs e)
+        {
+            supervisor.game.usMilOps = 0;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem64_Click(object sender, EventArgs e)
+        {
+            supervisor.game.usMilOps = 1;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem65_Click(object sender, EventArgs e)
+        {
+            supervisor.game.usMilOps = 2;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem66_Click(object sender, EventArgs e)
+        {
+            supervisor.game.usMilOps = 3;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem67_Click(object sender, EventArgs e)
+        {
+            supervisor.game.usMilOps = 4;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem68_Click(object sender, EventArgs e)
+        {
+            supervisor.game.usMilOps = 5;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem69_Click(object sender, EventArgs e)
+        {
+            supervisor.game.ussrMilOps = 0;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem70_Click(object sender, EventArgs e)
+        {
+            supervisor.game.ussrMilOps = 1;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem71_Click(object sender, EventArgs e)
+        {
+            supervisor.game.ussrMilOps = 2;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem72_Click(object sender, EventArgs e)
+        {
+            supervisor.game.ussrMilOps = 3;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem73_Click(object sender, EventArgs e)
+        {
+            supervisor.game.ussrMilOps = 4;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem74_Click(object sender, EventArgs e)
+        {
+            supervisor.game.ussrMilOps = 5;
+            refreshEvent();
+        }
+
+        private void startToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            supervisor.game.usSpaceRace = 0;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem75_Click(object sender, EventArgs e)
+        {
+            supervisor.game.usSpaceRace = 1;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem76_Click(object sender, EventArgs e)
+        {
+            supervisor.game.usSpaceRace = 2;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem77_Click(object sender, EventArgs e)
+        {
+            supervisor.game.usSpaceRace = 3;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem78_Click(object sender, EventArgs e)
+        {
+            supervisor.game.usSpaceRace = 4;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem79_Click(object sender, EventArgs e)
+        {
+            supervisor.game.usSpaceRace = 5;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem80_Click(object sender, EventArgs e)
+        {
+            supervisor.game.usSpaceRace = 6;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem81_Click(object sender, EventArgs e)
+        {
+            supervisor.game.usSpaceRace = 7;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem82_Click(object sender, EventArgs e)
+        {
+            supervisor.game.usSpaceRace = 8;
+            refreshEvent();
+        }
+
+        private void startToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            supervisor.game.ussrSpaceRace = 0;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem83_Click(object sender, EventArgs e)
+        {
+            supervisor.game.ussrSpaceRace = 1;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem84_Click(object sender, EventArgs e)
+        {
+            supervisor.game.ussrSpaceRace = 2;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem85_Click(object sender, EventArgs e)
+        {
+            supervisor.game.ussrSpaceRace = 3;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem86_Click(object sender, EventArgs e)
+        {
+            supervisor.game.ussrSpaceRace = 4;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem87_Click(object sender, EventArgs e)
+        {
+            supervisor.game.ussrSpaceRace = 5;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem88_Click(object sender, EventArgs e)
+        {
+            supervisor.game.ussrSpaceRace = 6;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem89_Click(object sender, EventArgs e)
+        {
+            supervisor.game.ussrSpaceRace = 7;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem90_Click(object sender, EventArgs e)
+        {
+            supervisor.game.ussrSpaceRace = 8;
+            refreshEvent();
+        }
     }
 }
