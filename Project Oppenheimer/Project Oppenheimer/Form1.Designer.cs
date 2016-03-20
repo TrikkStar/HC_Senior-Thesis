@@ -716,8 +716,8 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(893, 513);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(205, 426);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 20;
@@ -960,11 +960,11 @@
             this.groupBox6.Controls.Add(this.tableLayoutPanel81);
             this.groupBox6.Controls.Add(this.tableLayoutPanel82);
             this.groupBox6.Controls.Add(this.tableLayoutPanel83);
-            this.groupBox6.Location = new System.Drawing.Point(1059, 32);
+            this.groupBox6.Location = new System.Drawing.Point(419, 294);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox6.Size = new System.Drawing.Size(191, 258);
+            this.groupBox6.Size = new System.Drawing.Size(191, 252);
             this.groupBox6.TabIndex = 18;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "South America";
@@ -5481,7 +5481,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1256, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1255, 28);
             this.menuStrip1.TabIndex = 12;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -5536,7 +5536,7 @@
             this.middleEastToolStripMenuItem,
             this.southAmericaToolStripMenuItem});
             this.countryToolStripMenuItem.Name = "countryToolStripMenuItem";
-            this.countryToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
+            this.countryToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.countryToolStripMenuItem.Text = "Country";
             // 
             // africaToolStripMenuItem
@@ -6265,7 +6265,7 @@
             this.eventToolStripMenuItem,
             this.resetToolStripMenuItem});
             this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
-            this.gameToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
+            this.gameToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.gameToolStripMenuItem.Text = "Game";
             // 
             // turnToolStripMenuItem
@@ -6282,7 +6282,7 @@
             this.toolStripMenuItem10,
             this.toolStripMenuItem11});
             this.turnToolStripMenuItem.Name = "turnToolStripMenuItem";
-            this.turnToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.turnToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.turnToolStripMenuItem.Text = "Turn";
             // 
             // toolStripMenuItem2
@@ -6376,7 +6376,7 @@
             this.toolStripMenuItem97,
             this.toolStripMenuItem98});
             this.roundToolStripMenuItem.Name = "roundToolStripMenuItem";
-            this.roundToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.roundToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.roundToolStripMenuItem.Text = "Round";
             // 
             // headlinePhaseToolStripMenuItem
@@ -6505,7 +6505,7 @@
             this.uSAToolStripMenuItem2,
             this.uSSRToolStripMenuItem2});
             this.scoreToolStripMenuItem.Name = "scoreToolStripMenuItem";
-            this.scoreToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.scoreToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.scoreToolStripMenuItem.Text = "Score";
             // 
             // toolStripMenuItem20
@@ -6841,7 +6841,7 @@
             this.toolStripMenuItem61,
             this.toolStripMenuItem62});
             this.defconToolStripMenuItem.Name = "defconToolStripMenuItem";
-            this.defconToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.defconToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.defconToolStripMenuItem.Text = "Defcon";
             // 
             // toolStripMenuItem59
@@ -6878,7 +6878,7 @@
             this.uSAToolStripMenuItem3,
             this.uSSRToolStripMenuItem3});
             this.militaryOpsToolStripMenuItem.Name = "militaryOpsToolStripMenuItem";
-            this.militaryOpsToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.militaryOpsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.militaryOpsToolStripMenuItem.Text = "Military Ops";
             // 
             // uSAToolStripMenuItem3
@@ -6997,7 +6997,7 @@
             this.uSAToolStripMenuItem4,
             this.uSSRToolStripMenuItem4});
             this.spaceRaceToolStripMenuItem.Name = "spaceRaceToolStripMenuItem";
-            this.spaceRaceToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.spaceRaceToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.spaceRaceToolStripMenuItem.Text = "Space Race";
             // 
             // uSAToolStripMenuItem4
@@ -7162,23 +7162,24 @@
             // 
             this.eventToolStripMenuItem.Enabled = false;
             this.eventToolStripMenuItem.Name = "eventToolStripMenuItem";
-            this.eventToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.eventToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.eventToolStripMenuItem.Text = "Event";
             // 
             // resetToolStripMenuItem
             // 
-            this.resetToolStripMenuItem.Enabled = false;
             this.resetToolStripMenuItem.Name = "resetToolStripMenuItem";
-            this.resetToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.resetToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.resetToolStripMenuItem.Text = "Reset";
+            this.resetToolStripMenuItem.Click += new System.EventHandler(this.resetToolStripMenuItem_Click);
             // 
             // handsToolStripMenuItem
             // 
             this.handsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.uSAToolStripMenuItem1,
             this.uSSRToolStripMenuItem1});
+            this.handsToolStripMenuItem.Enabled = false;
             this.handsToolStripMenuItem.Name = "handsToolStripMenuItem";
-            this.handsToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
+            this.handsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.handsToolStripMenuItem.Text = "Hands";
             // 
             // uSAToolStripMenuItem1
@@ -7212,7 +7213,7 @@
             // Play_cardButton
             // 
             this.Play_cardButton.Enabled = false;
-            this.Play_cardButton.Location = new System.Drawing.Point(503, 60);
+            this.Play_cardButton.Location = new System.Drawing.Point(7, 258);
             this.Play_cardButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Play_cardButton.Name = "Play_cardButton";
             this.Play_cardButton.Size = new System.Drawing.Size(77, 30);
@@ -7224,7 +7225,7 @@
             // radioButton9
             // 
             this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(469, 28);
+            this.radioButton9.Location = new System.Drawing.Point(5, 228);
             this.radioButton9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton9.Name = "radioButton9";
             this.radioButton9.Size = new System.Drawing.Size(71, 21);
@@ -7236,7 +7237,7 @@
             // radioButton8
             // 
             this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(355, 64);
+            this.radioButton8.Location = new System.Drawing.Point(5, 203);
             this.radioButton8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(71, 21);
@@ -7248,7 +7249,7 @@
             // radioButton7
             // 
             this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(355, 28);
+            this.radioButton7.Location = new System.Drawing.Point(5, 178);
             this.radioButton7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(71, 21);
@@ -7260,7 +7261,7 @@
             // radioButton6
             // 
             this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(237, 64);
+            this.radioButton6.Location = new System.Drawing.Point(5, 153);
             this.radioButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(71, 21);
@@ -7272,7 +7273,7 @@
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(237, 28);
+            this.radioButton5.Location = new System.Drawing.Point(5, 128);
             this.radioButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(71, 21);
@@ -7284,7 +7285,7 @@
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(123, 64);
+            this.radioButton4.Location = new System.Drawing.Point(5, 103);
             this.radioButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(71, 21);
@@ -7296,7 +7297,7 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(123, 28);
+            this.radioButton3.Location = new System.Drawing.Point(5, 78);
             this.radioButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(71, 21);
@@ -7317,11 +7318,11 @@
             this.PlayerHand_group.Controls.Add(this.radioButton3);
             this.PlayerHand_group.Controls.Add(this.radioButton1);
             this.PlayerHand_group.Controls.Add(this.radioButton2);
-            this.PlayerHand_group.Location = new System.Drawing.Point(1, 476);
-            this.PlayerHand_group.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PlayerHand_group.Location = new System.Drawing.Point(1059, 32);
+            this.PlayerHand_group.Margin = new System.Windows.Forms.Padding(4);
             this.PlayerHand_group.Name = "PlayerHand_group";
-            this.PlayerHand_group.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.PlayerHand_group.Size = new System.Drawing.Size(595, 101);
+            this.PlayerHand_group.Padding = new System.Windows.Forms.Padding(4);
+            this.PlayerHand_group.Size = new System.Drawing.Size(193, 294);
             this.PlayerHand_group.TabIndex = 21;
             this.PlayerHand_group.TabStop = false;
             this.PlayerHand_group.Text = "Player Hand";
@@ -7341,7 +7342,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(5, 64);
+            this.radioButton2.Location = new System.Drawing.Point(5, 53);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(71, 21);
@@ -7354,7 +7355,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1256, 583);
+            this.ClientSize = new System.Drawing.Size(1255, 552);
             this.Controls.Add(this.PlayerHand_group);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox7);
@@ -7366,7 +7367,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Project Oppenheimer";
             this.groupBox7.ResumeLayout(false);

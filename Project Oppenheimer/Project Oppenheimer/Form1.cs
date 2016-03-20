@@ -16,6 +16,13 @@ namespace Project_Oppenheimer
         public Form1()
         {
             InitializeComponent();
+            refreshEvent();
+        }
+
+        private void resetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            supervisor = new Properties.Supervisor();
+            refreshEvent();
         }
 
         private void button1_Click(object sender, EventArgs e)
