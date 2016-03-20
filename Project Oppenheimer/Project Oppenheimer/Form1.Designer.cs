@@ -7230,9 +7230,9 @@
             this.radioButton9.Name = "radioButton9";
             this.radioButton9.Size = new System.Drawing.Size(71, 21);
             this.radioButton9.TabIndex = 29;
-            this.radioButton9.TabStop = true;
             this.radioButton9.Text = "Card 9";
             this.radioButton9.UseVisualStyleBackColor = true;
+            this.radioButton9.CheckedChanged += new System.EventHandler(this.radioButton9_CheckedChanged);
             // 
             // radioButton8
             // 
@@ -7242,9 +7242,9 @@
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(71, 21);
             this.radioButton8.TabIndex = 28;
-            this.radioButton8.TabStop = true;
             this.radioButton8.Text = "Card 8";
             this.radioButton8.UseVisualStyleBackColor = true;
+            this.radioButton8.CheckedChanged += new System.EventHandler(this.radioButton8_CheckedChanged);
             // 
             // radioButton7
             // 
@@ -7254,9 +7254,9 @@
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(71, 21);
             this.radioButton7.TabIndex = 27;
-            this.radioButton7.TabStop = true;
             this.radioButton7.Text = "Card 7";
             this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
             // 
             // radioButton6
             // 
@@ -7266,9 +7266,9 @@
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(71, 21);
             this.radioButton6.TabIndex = 26;
-            this.radioButton6.TabStop = true;
             this.radioButton6.Text = "Card 6";
             this.radioButton6.UseVisualStyleBackColor = true;
+            this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
             // 
             // radioButton5
             // 
@@ -7278,9 +7278,9 @@
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(71, 21);
             this.radioButton5.TabIndex = 25;
-            this.radioButton5.TabStop = true;
             this.radioButton5.Text = "Card 5";
             this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
             // 
             // radioButton4
             // 
@@ -7290,9 +7290,9 @@
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(71, 21);
             this.radioButton4.TabIndex = 24;
-            this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Card 4";
             this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
             // radioButton3
             // 
@@ -7302,9 +7302,9 @@
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(71, 21);
             this.radioButton3.TabIndex = 23;
-            this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Card 3";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // PlayerHand_group
             // 
@@ -7335,9 +7335,9 @@
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(71, 21);
             this.radioButton1.TabIndex = 22;
-            this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Card 1";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -7347,9 +7347,9 @@
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(71, 21);
             this.radioButton2.TabIndex = 0;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Card 2";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // Form1
             // 

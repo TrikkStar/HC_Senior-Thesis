@@ -2143,6 +2143,7 @@ namespace Project_Oppenheimer
             SpaceRace_USSR.Text = supervisor.game.ussrSpaceRace.ToString();
 
             //Add conditions for showing players hand
+            Play_cardButton.Enabled = false;
             List<Properties.Card> hand;
             if (supervisor.player == 1)
             {
@@ -2363,7 +2364,7 @@ namespace Project_Oppenheimer
 
         private void uSAToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Play_cardButton.Enabled = true;
+            supervisor = new Properties.Supervisor();
             supervisor.player = 1;
             supervisor.AI = -1;
             supervisor.newGame();
@@ -2373,7 +2374,7 @@ namespace Project_Oppenheimer
 
         private void uSSRToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Play_cardButton.Enabled = true;
+            supervisor = new Properties.Supervisor();
             supervisor.player = -1;
             supervisor.AI = 1;
             supervisor.newGame();
@@ -3571,8 +3572,101 @@ namespace Project_Oppenheimer
 
         private void Play_cardButton_Click(object sender, EventArgs e)
         {
-            var popup = new Properties.CardPlay(supervisor.game.cards.ussrHand[0], supervisor);
+            List<Properties.Card> hand;
+            Properties.Card card = new Properties.Card();
+            if (supervisor.player == 1)
+            {
+                hand = supervisor.game.cards.usHand;
+            }
+            else
+            {
+                hand = supervisor.game.cards.ussrHand;
+            }
+            if (radioButton1.Checked)
+            {
+                card = hand[0];
+            }
+            else if (radioButton2.Checked)
+            {
+                card = hand[1];
+            }
+            else if (radioButton3.Checked)
+            {
+                card = hand[2];
+            }
+            else if (radioButton4.Checked)
+            {
+                card = hand[3];
+            }
+            else if (radioButton5.Checked)
+            {
+                card = hand[4];
+            }
+            else if (radioButton6.Checked)
+            {
+                card = hand[5];
+            }
+            else if (radioButton7.Checked)
+            {
+                card = hand[6];
+            }
+            else if (radioButton8.Checked)
+            {
+                card = hand[7];
+            }
+            else if (radioButton9.Checked)
+            {
+                card = hand[8];
+            }
+            var popup = new Properties.CardPlay(card, supervisor);
             popup.ShowDialog();
+            //possibly more stuff here
+            refreshEvent();
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            Play_cardButton.Enabled = true;
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            Play_cardButton.Enabled = true;
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            Play_cardButton.Enabled = true;
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            Play_cardButton.Enabled = true;
+        }
+
+        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+            Play_cardButton.Enabled = true;
+        }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+            Play_cardButton.Enabled = true;
+        }
+
+        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        {
+            Play_cardButton.Enabled = true;
+        }
+
+        private void radioButton8_CheckedChanged(object sender, EventArgs e)
+        {
+            Play_cardButton.Enabled = true;
+        }
+
+        private void radioButton9_CheckedChanged(object sender, EventArgs e)
+        {
+            Play_cardButton.Enabled = true;
         }
     }
 }

@@ -265,3 +265,4 @@ specific information about changes, I recommend looking through the commit histo
 	Making great progress on the GUI, things are dynamically displayed and I can change the values through the developer menu. Unfortunately I have
 	discovered that my algorithm to randomly shuffle the cards is not doing that, its dealing each side the same cards each time. This is a problem.
 	I'll need to look into why this is happening, but for right now I have more pressing priorities.
+	- Turns out you need to actually shuffle cards and not just think you have shuffled them if you want them randomized.

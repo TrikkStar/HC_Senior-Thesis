@@ -30,7 +30,7 @@ namespace Project_Oppenheimer.Properties
             init_EW();
             init_MW();
             init_LW();
-            
+            shuffel();
             Card china = new Card("The China Card", 6, 4, 0, false);
             facedownChinaUssr.Add(china);
         }
@@ -216,7 +216,7 @@ namespace Project_Oppenheimer.Properties
             Card card027 = new Card("US/Japan Mutual Defense Pact", 27, 4, 1, false);
             earlyWar.Add(card027);
 
-            Card card002 = new Card("Europe Scorinr", 2, 0, 0, true);
+            Card card002 = new Card("Europe Scoring", 2, 0, 0, true);
             earlyWar.Add(card002);
 
             Card card001 = new Card("Asia Scoring", 1, 0, 0, true);
