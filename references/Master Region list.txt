@@ -8,3 +8,4 @@ SouthEast Asia: 38
 Middle East: 3
 South America: 81
 Central America: 37
+Africa: 79

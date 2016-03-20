@@ -43,7 +43,7 @@ namespace Project_Oppenheimer.Properties
             {
                 foreach (Card card in hand)
                 {
-                    if ((regionId == card.id) && (checkRegionCondition(regionId)))
+                    if ((regionId == card.id) && ((lastRound()) || (checkRegionCondition(regionId))))
                     {
                         cardToPlay = regionId;
                         actionType = "Scoring";
@@ -88,14 +88,14 @@ namespace Project_Oppenheimer.Properties
             }
             if (side == -1)
             {
-                if ((lastRound()) || (ussrPresence >= usPresence) && (ussrBattlegrounds >= usBattlegrounds) && (ussrPresence >= 2) && (ussrBattlegrounds >= 1))
+                if ((ussrPresence >= usPresence) && (ussrBattlegrounds >= usBattlegrounds) && (ussrPresence >= 2) && (ussrBattlegrounds >= 1))
                 {
                     returnVal = true;
                 }
             }
             else
             {
-                if ((lastRound()) || (ussrPresence <= usPresence) && (ussrBattlegrounds <= usBattlegrounds) && (ussrPresence <= 2) && (ussrBattlegrounds <= 1))
+                if ((ussrPresence <= usPresence) && (ussrBattlegrounds <= usBattlegrounds) && (ussrPresence <= 2) && (ussrBattlegrounds <= 1))
                 {
                     returnVal = true;
                 }
@@ -349,12 +349,43 @@ namespace Project_Oppenheimer.Properties
                     }
                     break;
                 case 30:
+                    if (!checkRegionCondition(79))
+                    {
+                        int itter = 0;
+                        while (itter < 4)
+                        {
+                            targetCountryAdd(79, 1);
+                            itter++;
+                        }
+                        returnValue = true;
+                    }
+                    else if (numCountries(-1, 38) < 5)
+                    {
+                        int itter = 0;
+                        while (itter < 4)
+                        {
+                            targetCountryAdd(38, 1);
+                            itter++;
+                        }
+                        returnValue = true;
+                    }
                     break;
                 case 9:
+                    returnValue = ((game.round < 7) && (game.countryLst.countries[78].influenceUSSR < 3));
                     break;
                 case 17:
+                    returnValue = (game.countryLst.countries[27].influenceUSA <= 2);
                     break;
                 case 14:
+                    if (!checkRegionCondition(2))
+                    {
+                        int itter = 0;
+                        while (itter < 4)
+                        {
+                            targetCountryNotControlledAdd(-2, 1, 1);
+                        }
+                        returnValue = true;
+                    }
                     break;
                 case 16:
                     break;
@@ -508,6 +539,61 @@ namespace Project_Oppenheimer.Properties
                 {
                     var temp = game.countryLst.countries[country];
                     if (!targets.Contains(country))
+                    {
+                        if (side == 1)
+                        {
+                            if (temp.stability - temp.influenceUSA <= influence)
+                            {
+                                targets.Add(country);
+                                return 0;
+                            }
+                        }
+                        else
+                        {
+                            if (temp.stability - temp.influenceUSSR <= influence)
+                            {
+                                targets.Add(country);
+                                return 0;
+                            }
+                        }
+                    }
+                }
+            }
+            return 0;
+        }
+
+        private int targetCountryNotControlledAdd(int area, int amount, int controller)
+        {
+            var region = getRegion(area);
+            foreach (var influence in Enumerable.Range(amount, amount + 5).ToList())
+            {
+                foreach (var country in region)
+                {
+                    var temp = game.countryLst.countries[country];
+                    if ((!targets.Contains(country)) && (temp.battleground) &&(temp.controller != controller))
+                    {
+                        if (side == 1)
+                        {
+                            if (temp.stability - temp.influenceUSA <= influence)
+                            {
+                                targets.Add(country);
+                                return 0;
+                            }
+                        }
+                        else
+                        {
+                            if (temp.stability - temp.influenceUSSR <= influence)
+                            {
+                                targets.Add(country);
+                                return 0;
+                            }
+                        }
+                    }
+                }
+                foreach (var country in region)
+                {
+                    var temp = game.countryLst.countries[country];
+                    if (!targets.Contains(country) && (temp.controller != controller))
                     {
                         if (side == 1)
                         {
