@@ -731,9 +731,9 @@
             this.groupBox7.Controls.Add(this.label251);
             this.groupBox7.Controls.Add(this.Turn_lbl);
             this.groupBox7.Location = new System.Drawing.Point(646, 240);
-            this.groupBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox7.Size = new System.Drawing.Size(142, 167);
             this.groupBox7.TabIndex = 19;
             this.groupBox7.TabStop = false;
@@ -758,7 +758,7 @@
             this.tableLayoutPanel85.Controls.Add(this.SpaceRace_USA, 0, 0);
             this.tableLayoutPanel85.Controls.Add(this.SpaceRace_USSR, 1, 0);
             this.tableLayoutPanel85.Location = new System.Drawing.Point(76, 106);
-            this.tableLayoutPanel85.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel85.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel85.Name = "tableLayoutPanel85";
             this.tableLayoutPanel85.RowCount = 1;
             this.tableLayoutPanel85.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -822,7 +822,7 @@
             this.tableLayoutPanel84.Controls.Add(this.MilitaryOps_USA, 0, 0);
             this.tableLayoutPanel84.Controls.Add(this.MilitaryOps_USSR, 1, 0);
             this.tableLayoutPanel84.Location = new System.Drawing.Point(76, 34);
-            this.tableLayoutPanel84.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel84.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel84.Name = "tableLayoutPanel84";
             this.tableLayoutPanel84.RowCount = 1;
             this.tableLayoutPanel84.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -966,9 +966,9 @@
             this.groupBox6.Controls.Add(this.tableLayoutPanel82);
             this.groupBox6.Controls.Add(this.tableLayoutPanel83);
             this.groupBox6.Location = new System.Drawing.Point(794, 26);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox6.Size = new System.Drawing.Size(143, 210);
             this.groupBox6.TabIndex = 18;
             this.groupBox6.TabStop = false;
@@ -1003,7 +1003,7 @@
             this.tableLayoutPanel74.Controls.Add(this.Venezuela_USA, 0, 0);
             this.tableLayoutPanel74.Controls.Add(this.Venezuela_USSR, 1, 0);
             this.tableLayoutPanel74.Location = new System.Drawing.Point(77, 176);
-            this.tableLayoutPanel74.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel74.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel74.Name = "tableLayoutPanel74";
             this.tableLayoutPanel74.RowCount = 1;
             this.tableLayoutPanel74.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1047,7 +1047,7 @@
             this.tableLayoutPanel75.Controls.Add(this.Colombia_USA, 0, 0);
             this.tableLayoutPanel75.Controls.Add(this.Colombia_USSR, 1, 0);
             this.tableLayoutPanel75.Location = new System.Drawing.Point(15, 176);
-            this.tableLayoutPanel75.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel75.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel75.Name = "tableLayoutPanel75";
             this.tableLayoutPanel75.RowCount = 1;
             this.tableLayoutPanel75.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1111,7 +1111,7 @@
             this.tableLayoutPanel76.Controls.Add(this.Uruguay_USA, 0, 0);
             this.tableLayoutPanel76.Controls.Add(this.Uruguay_USSR, 1, 0);
             this.tableLayoutPanel76.Location = new System.Drawing.Point(77, 140);
-            this.tableLayoutPanel76.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel76.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel76.Name = "tableLayoutPanel76";
             this.tableLayoutPanel76.RowCount = 1;
             this.tableLayoutPanel76.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1155,7 +1155,7 @@
             this.tableLayoutPanel77.Controls.Add(this.Chile_USA, 0, 0);
             this.tableLayoutPanel77.Controls.Add(this.Chile_USSR, 1, 0);
             this.tableLayoutPanel77.Location = new System.Drawing.Point(15, 140);
-            this.tableLayoutPanel77.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel77.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel77.Name = "tableLayoutPanel77";
             this.tableLayoutPanel77.RowCount = 1;
             this.tableLayoutPanel77.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1219,7 +1219,7 @@
             this.tableLayoutPanel78.Controls.Add(this.Peru_USA, 0, 0);
             this.tableLayoutPanel78.Controls.Add(this.Peru_USSR, 1, 0);
             this.tableLayoutPanel78.Location = new System.Drawing.Point(77, 105);
-            this.tableLayoutPanel78.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel78.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel78.Name = "tableLayoutPanel78";
             this.tableLayoutPanel78.RowCount = 1;
             this.tableLayoutPanel78.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1273,7 +1273,7 @@
             this.tableLayoutPanel79.Controls.Add(this.Bolivia_USA, 0, 0);
             this.tableLayoutPanel79.Controls.Add(this.Bolivia_USSR, 1, 0);
             this.tableLayoutPanel79.Location = new System.Drawing.Point(15, 105);
-            this.tableLayoutPanel79.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel79.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel79.Name = "tableLayoutPanel79";
             this.tableLayoutPanel79.RowCount = 1;
             this.tableLayoutPanel79.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1337,7 +1337,7 @@
             this.tableLayoutPanel80.Controls.Add(this.Paraguay_USA, 0, 0);
             this.tableLayoutPanel80.Controls.Add(this.Paraguay_USSR, 1, 0);
             this.tableLayoutPanel80.Location = new System.Drawing.Point(77, 70);
-            this.tableLayoutPanel80.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel80.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel80.Name = "tableLayoutPanel80";
             this.tableLayoutPanel80.RowCount = 1;
             this.tableLayoutPanel80.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1391,7 +1391,7 @@
             this.tableLayoutPanel81.Controls.Add(this.Ecuador_USA, 0, 0);
             this.tableLayoutPanel81.Controls.Add(this.Ecuador_USSR, 1, 0);
             this.tableLayoutPanel81.Location = new System.Drawing.Point(77, 35);
-            this.tableLayoutPanel81.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel81.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel81.Name = "tableLayoutPanel81";
             this.tableLayoutPanel81.RowCount = 1;
             this.tableLayoutPanel81.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1435,7 +1435,7 @@
             this.tableLayoutPanel82.Controls.Add(this.Brazil_USA, 0, 0);
             this.tableLayoutPanel82.Controls.Add(this.Brazil_USSR, 1, 0);
             this.tableLayoutPanel82.Location = new System.Drawing.Point(15, 70);
-            this.tableLayoutPanel82.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel82.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel82.Name = "tableLayoutPanel82";
             this.tableLayoutPanel82.RowCount = 1;
             this.tableLayoutPanel82.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1479,7 +1479,7 @@
             this.tableLayoutPanel83.Controls.Add(this.Argentina_USA, 0, 0);
             this.tableLayoutPanel83.Controls.Add(this.Argentina_USSR, 1, 0);
             this.tableLayoutPanel83.Location = new System.Drawing.Point(15, 35);
-            this.tableLayoutPanel83.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel83.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel83.Name = "tableLayoutPanel83";
             this.tableLayoutPanel83.RowCount = 1;
             this.tableLayoutPanel83.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1537,9 +1537,9 @@
             this.groupBox5.Controls.Add(this.tableLayoutPanel72);
             this.groupBox5.Controls.Add(this.tableLayoutPanel73);
             this.groupBox5.Location = new System.Drawing.Point(646, 26);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox5.Size = new System.Drawing.Size(143, 210);
             this.groupBox5.TabIndex = 17;
             this.groupBox5.TabStop = false;
@@ -1574,7 +1574,7 @@
             this.tableLayoutPanel64.Controls.Add(this.Syria_USA, 0, 0);
             this.tableLayoutPanel64.Controls.Add(this.Syria_USSR, 1, 0);
             this.tableLayoutPanel64.Location = new System.Drawing.Point(77, 176);
-            this.tableLayoutPanel64.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel64.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel64.Name = "tableLayoutPanel64";
             this.tableLayoutPanel64.RowCount = 1;
             this.tableLayoutPanel64.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1618,7 +1618,7 @@
             this.tableLayoutPanel65.Controls.Add(this.Israel_USA, 0, 0);
             this.tableLayoutPanel65.Controls.Add(this.Israel_USSR, 1, 0);
             this.tableLayoutPanel65.Location = new System.Drawing.Point(15, 176);
-            this.tableLayoutPanel65.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel65.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel65.Name = "tableLayoutPanel65";
             this.tableLayoutPanel65.RowCount = 1;
             this.tableLayoutPanel65.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1683,7 +1683,7 @@
             this.tableLayoutPanel66.Controls.Add(this.SaudiArabia_USA, 0, 0);
             this.tableLayoutPanel66.Controls.Add(this.SaudiArabia_USSR, 1, 0);
             this.tableLayoutPanel66.Location = new System.Drawing.Point(77, 140);
-            this.tableLayoutPanel66.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel66.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel66.Name = "tableLayoutPanel66";
             this.tableLayoutPanel66.RowCount = 1;
             this.tableLayoutPanel66.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1727,7 +1727,7 @@
             this.tableLayoutPanel67.Controls.Add(this.Iraq_USA, 0, 0);
             this.tableLayoutPanel67.Controls.Add(this.Iraq_USSR, 1, 0);
             this.tableLayoutPanel67.Location = new System.Drawing.Point(15, 140);
-            this.tableLayoutPanel67.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel67.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel67.Name = "tableLayoutPanel67";
             this.tableLayoutPanel67.RowCount = 1;
             this.tableLayoutPanel67.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1791,7 +1791,7 @@
             this.tableLayoutPanel68.Controls.Add(this.Libya_USA, 0, 0);
             this.tableLayoutPanel68.Controls.Add(this.Libya_USSR, 1, 0);
             this.tableLayoutPanel68.Location = new System.Drawing.Point(77, 105);
-            this.tableLayoutPanel68.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel68.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel68.Name = "tableLayoutPanel68";
             this.tableLayoutPanel68.RowCount = 1;
             this.tableLayoutPanel68.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1845,7 +1845,7 @@
             this.tableLayoutPanel69.Controls.Add(this.Iran_USA, 0, 0);
             this.tableLayoutPanel69.Controls.Add(this.Iran_USSR, 1, 0);
             this.tableLayoutPanel69.Location = new System.Drawing.Point(15, 105);
-            this.tableLayoutPanel69.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel69.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel69.Name = "tableLayoutPanel69";
             this.tableLayoutPanel69.RowCount = 1;
             this.tableLayoutPanel69.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1909,7 +1909,7 @@
             this.tableLayoutPanel70.Controls.Add(this.Lebanon_USA, 0, 0);
             this.tableLayoutPanel70.Controls.Add(this.Lebanon_USSR, 1, 0);
             this.tableLayoutPanel70.Location = new System.Drawing.Point(77, 70);
-            this.tableLayoutPanel70.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel70.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel70.Name = "tableLayoutPanel70";
             this.tableLayoutPanel70.RowCount = 1;
             this.tableLayoutPanel70.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1963,7 +1963,7 @@
             this.tableLayoutPanel71.Controls.Add(this.Jordan_USA, 0, 0);
             this.tableLayoutPanel71.Controls.Add(this.Jordan_USSR, 1, 0);
             this.tableLayoutPanel71.Location = new System.Drawing.Point(77, 35);
-            this.tableLayoutPanel71.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel71.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel71.Name = "tableLayoutPanel71";
             this.tableLayoutPanel71.RowCount = 1;
             this.tableLayoutPanel71.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -2007,7 +2007,7 @@
             this.tableLayoutPanel72.Controls.Add(this.GulfStates_USA, 0, 0);
             this.tableLayoutPanel72.Controls.Add(this.GulfStates_USSR, 1, 0);
             this.tableLayoutPanel72.Location = new System.Drawing.Point(15, 70);
-            this.tableLayoutPanel72.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel72.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel72.Name = "tableLayoutPanel72";
             this.tableLayoutPanel72.RowCount = 1;
             this.tableLayoutPanel72.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -2051,7 +2051,7 @@
             this.tableLayoutPanel73.Controls.Add(this.Egypt_USA, 0, 0);
             this.tableLayoutPanel73.Controls.Add(this.Egypt_USSR, 1, 0);
             this.tableLayoutPanel73.Location = new System.Drawing.Point(15, 35);
-            this.tableLayoutPanel73.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel73.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel73.Name = "tableLayoutPanel73";
             this.tableLayoutPanel73.RowCount = 1;
             this.tableLayoutPanel73.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -2131,9 +2131,9 @@
             this.groupBox4.Controls.Add(this.tableLayoutPanel60);
             this.groupBox4.Controls.Add(this.tableLayoutPanel61);
             this.groupBox4.Location = new System.Drawing.Point(472, 26);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox4.Size = new System.Drawing.Size(169, 418);
             this.groupBox4.TabIndex = 16;
             this.groupBox4.TabStop = false;
@@ -2159,7 +2159,7 @@
             this.tableLayoutPanel31.Controls.Add(this.SpainPortugal_USA, 0, 0);
             this.tableLayoutPanel31.Controls.Add(this.SpainPortugal_USSR, 1, 0);
             this.tableLayoutPanel31.Location = new System.Drawing.Point(95, 176);
-            this.tableLayoutPanel31.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel31.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel31.Name = "tableLayoutPanel31";
             this.tableLayoutPanel31.RowCount = 1;
             this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -2223,7 +2223,7 @@
             this.tableLayoutPanel62.Controls.Add(this.Yugoslavia_USA, 0, 0);
             this.tableLayoutPanel62.Controls.Add(this.Yugoslavia_USSR, 1, 0);
             this.tableLayoutPanel62.Location = new System.Drawing.Point(95, 353);
-            this.tableLayoutPanel62.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel62.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel62.Name = "tableLayoutPanel62";
             this.tableLayoutPanel62.RowCount = 1;
             this.tableLayoutPanel62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -2267,7 +2267,7 @@
             this.tableLayoutPanel63.Controls.Add(this.Greece_USA, 0, 0);
             this.tableLayoutPanel63.Controls.Add(this.Greece_USSR, 1, 0);
             this.tableLayoutPanel63.Location = new System.Drawing.Point(15, 353);
-            this.tableLayoutPanel63.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel63.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel63.Name = "tableLayoutPanel63";
             this.tableLayoutPanel63.RowCount = 1;
             this.tableLayoutPanel63.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -2332,7 +2332,7 @@
             this.tableLayoutPanel19.Controls.Add(this.WGermany_USA, 0, 0);
             this.tableLayoutPanel19.Controls.Add(this.WGermany_USSR, 1, 0);
             this.tableLayoutPanel19.Location = new System.Drawing.Point(95, 318);
-            this.tableLayoutPanel19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel19.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel19.Name = "tableLayoutPanel19";
             this.tableLayoutPanel19.RowCount = 1;
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -2376,7 +2376,7 @@
             this.tableLayoutPanel20.Controls.Add(this.France_USA, 0, 0);
             this.tableLayoutPanel20.Controls.Add(this.France_USSR, 1, 0);
             this.tableLayoutPanel20.Location = new System.Drawing.Point(15, 318);
-            this.tableLayoutPanel20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel20.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel20.Name = "tableLayoutPanel20";
             this.tableLayoutPanel20.RowCount = 1;
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -2440,7 +2440,7 @@
             this.tableLayoutPanel21.Controls.Add(this.UK_USA, 0, 0);
             this.tableLayoutPanel21.Controls.Add(this.UK_USSR, 1, 0);
             this.tableLayoutPanel21.Location = new System.Drawing.Point(95, 283);
-            this.tableLayoutPanel21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel21.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel21.Name = "tableLayoutPanel21";
             this.tableLayoutPanel21.RowCount = 1;
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -2484,7 +2484,7 @@
             this.tableLayoutPanel37.Controls.Add(this.Finland_USA, 0, 0);
             this.tableLayoutPanel37.Controls.Add(this.Finland_USSR, 1, 0);
             this.tableLayoutPanel37.Location = new System.Drawing.Point(15, 283);
-            this.tableLayoutPanel37.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel37.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel37.Name = "tableLayoutPanel37";
             this.tableLayoutPanel37.RowCount = 1;
             this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -2549,7 +2549,7 @@
             this.tableLayoutPanel38.Controls.Add(this.Turkey_USA, 0, 0);
             this.tableLayoutPanel38.Controls.Add(this.Turkey_USSR, 1, 0);
             this.tableLayoutPanel38.Location = new System.Drawing.Point(95, 246);
-            this.tableLayoutPanel38.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel38.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel38.Name = "tableLayoutPanel38";
             this.tableLayoutPanel38.RowCount = 1;
             this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -2593,7 +2593,7 @@
             this.tableLayoutPanel49.Controls.Add(this.EGermany_USA, 0, 0);
             this.tableLayoutPanel49.Controls.Add(this.EGermany_USSR, 1, 0);
             this.tableLayoutPanel49.Location = new System.Drawing.Point(15, 246);
-            this.tableLayoutPanel49.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel49.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel49.Name = "tableLayoutPanel49";
             this.tableLayoutPanel49.RowCount = 1;
             this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -2657,7 +2657,7 @@
             this.tableLayoutPanel50.Controls.Add(this.Sweden_USA, 0, 0);
             this.tableLayoutPanel50.Controls.Add(this.Sweden_USSR, 1, 0);
             this.tableLayoutPanel50.Location = new System.Drawing.Point(95, 211);
-            this.tableLayoutPanel50.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel50.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel50.Name = "tableLayoutPanel50";
             this.tableLayoutPanel50.RowCount = 1;
             this.tableLayoutPanel50.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -2701,7 +2701,7 @@
             this.tableLayoutPanel51.Controls.Add(this.Denmark_USA, 0, 0);
             this.tableLayoutPanel51.Controls.Add(this.Denmark_USSR, 1, 0);
             this.tableLayoutPanel51.Location = new System.Drawing.Point(15, 211);
-            this.tableLayoutPanel51.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel51.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel51.Name = "tableLayoutPanel51";
             this.tableLayoutPanel51.RowCount = 1;
             this.tableLayoutPanel51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -2766,7 +2766,7 @@
             this.tableLayoutPanel52.Controls.Add(this.Romania_USA, 0, 0);
             this.tableLayoutPanel52.Controls.Add(this.Romania_USSR, 1, 0);
             this.tableLayoutPanel52.Location = new System.Drawing.Point(95, 140);
-            this.tableLayoutPanel52.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel52.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel52.Name = "tableLayoutPanel52";
             this.tableLayoutPanel52.RowCount = 1;
             this.tableLayoutPanel52.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -2810,7 +2810,7 @@
             this.tableLayoutPanel53.Controls.Add(this.Czechoslovakia_USA, 0, 0);
             this.tableLayoutPanel53.Controls.Add(this.Czechoslovakia_USSR, 1, 0);
             this.tableLayoutPanel53.Location = new System.Drawing.Point(15, 176);
-            this.tableLayoutPanel53.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel53.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel53.Name = "tableLayoutPanel53";
             this.tableLayoutPanel53.RowCount = 1;
             this.tableLayoutPanel53.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -2874,7 +2874,7 @@
             this.tableLayoutPanel54.Controls.Add(this.Poland_USA, 0, 0);
             this.tableLayoutPanel54.Controls.Add(this.Poland_USSR, 1, 0);
             this.tableLayoutPanel54.Location = new System.Drawing.Point(95, 106);
-            this.tableLayoutPanel54.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel54.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel54.Name = "tableLayoutPanel54";
             this.tableLayoutPanel54.RowCount = 1;
             this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -2918,7 +2918,7 @@
             this.tableLayoutPanel55.Controls.Add(this.Canada_USA, 0, 0);
             this.tableLayoutPanel55.Controls.Add(this.Canada_USSR, 1, 0);
             this.tableLayoutPanel55.Location = new System.Drawing.Point(15, 140);
-            this.tableLayoutPanel55.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel55.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel55.Name = "tableLayoutPanel55";
             this.tableLayoutPanel55.RowCount = 1;
             this.tableLayoutPanel55.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -2982,7 +2982,7 @@
             this.tableLayoutPanel56.Controls.Add(this.Norway_USA, 0, 0);
             this.tableLayoutPanel56.Controls.Add(this.Norway_USSR, 1, 0);
             this.tableLayoutPanel56.Location = new System.Drawing.Point(95, 70);
-            this.tableLayoutPanel56.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel56.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel56.Name = "tableLayoutPanel56";
             this.tableLayoutPanel56.RowCount = 1;
             this.tableLayoutPanel56.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -3036,7 +3036,7 @@
             this.tableLayoutPanel57.Controls.Add(this.Bulgaria_USA, 0, 0);
             this.tableLayoutPanel57.Controls.Add(this.Bulgaria_USSR, 1, 0);
             this.tableLayoutPanel57.Location = new System.Drawing.Point(15, 105);
-            this.tableLayoutPanel57.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel57.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel57.Name = "tableLayoutPanel57";
             this.tableLayoutPanel57.RowCount = 1;
             this.tableLayoutPanel57.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -3100,7 +3100,7 @@
             this.tableLayoutPanel58.Controls.Add(this.Italy_USA, 0, 0);
             this.tableLayoutPanel58.Controls.Add(this.Italy_USSR, 1, 0);
             this.tableLayoutPanel58.Location = new System.Drawing.Point(95, 35);
-            this.tableLayoutPanel58.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel58.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel58.Name = "tableLayoutPanel58";
             this.tableLayoutPanel58.RowCount = 1;
             this.tableLayoutPanel58.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -3154,7 +3154,7 @@
             this.tableLayoutPanel59.Controls.Add(this.Hungary_USA, 0, 0);
             this.tableLayoutPanel59.Controls.Add(this.Hungary_USSR, 1, 0);
             this.tableLayoutPanel59.Location = new System.Drawing.Point(15, 390);
-            this.tableLayoutPanel59.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel59.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel59.Name = "tableLayoutPanel59";
             this.tableLayoutPanel59.RowCount = 1;
             this.tableLayoutPanel59.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -3198,7 +3198,7 @@
             this.tableLayoutPanel60.Controls.Add(this.Benlux_USA, 0, 0);
             this.tableLayoutPanel60.Controls.Add(this.Benlux_USSR, 1, 0);
             this.tableLayoutPanel60.Location = new System.Drawing.Point(15, 70);
-            this.tableLayoutPanel60.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel60.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel60.Name = "tableLayoutPanel60";
             this.tableLayoutPanel60.RowCount = 1;
             this.tableLayoutPanel60.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -3242,7 +3242,7 @@
             this.tableLayoutPanel61.Controls.Add(this.Austria_USA, 0, 0);
             this.tableLayoutPanel61.Controls.Add(this.Austria_USSR, 1, 0);
             this.tableLayoutPanel61.Location = new System.Drawing.Point(15, 35);
-            this.tableLayoutPanel61.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel61.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel61.Name = "tableLayoutPanel61";
             this.tableLayoutPanel61.RowCount = 1;
             this.tableLayoutPanel61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -3300,9 +3300,9 @@
             this.groupBox3.Controls.Add(this.tableLayoutPanel47);
             this.groupBox3.Controls.Add(this.tableLayoutPanel48);
             this.groupBox3.Location = new System.Drawing.Point(314, 26);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(154, 210);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
@@ -3338,7 +3338,7 @@
             this.tableLayoutPanel39.Controls.Add(this.Panama_USA, 0, 0);
             this.tableLayoutPanel39.Controls.Add(this.Panama_USSR, 1, 0);
             this.tableLayoutPanel39.Location = new System.Drawing.Point(94, 176);
-            this.tableLayoutPanel39.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel39.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel39.Name = "tableLayoutPanel39";
             this.tableLayoutPanel39.RowCount = 1;
             this.tableLayoutPanel39.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -3382,7 +3382,7 @@
             this.tableLayoutPanel40.Controls.Add(this.Guatemala_USA, 0, 0);
             this.tableLayoutPanel40.Controls.Add(this.Guatemala_USSR, 1, 0);
             this.tableLayoutPanel40.Location = new System.Drawing.Point(15, 176);
-            this.tableLayoutPanel40.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel40.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel40.Name = "tableLayoutPanel40";
             this.tableLayoutPanel40.RowCount = 1;
             this.tableLayoutPanel40.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -3447,7 +3447,7 @@
             this.tableLayoutPanel41.Controls.Add(this.Nicaragua_USA, 0, 0);
             this.tableLayoutPanel41.Controls.Add(this.Nicaragua_USSR, 1, 0);
             this.tableLayoutPanel41.Location = new System.Drawing.Point(94, 141);
-            this.tableLayoutPanel41.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel41.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel41.Name = "tableLayoutPanel41";
             this.tableLayoutPanel41.RowCount = 1;
             this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -3491,7 +3491,7 @@
             this.tableLayoutPanel42.Controls.Add(this.ElSalvador_USA, 0, 0);
             this.tableLayoutPanel42.Controls.Add(this.ElSalvador_USSR, 1, 0);
             this.tableLayoutPanel42.Location = new System.Drawing.Point(15, 140);
-            this.tableLayoutPanel42.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel42.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel42.Name = "tableLayoutPanel42";
             this.tableLayoutPanel42.RowCount = 1;
             this.tableLayoutPanel42.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -3556,7 +3556,7 @@
             this.tableLayoutPanel43.Controls.Add(this.Mexico_USA, 0, 0);
             this.tableLayoutPanel43.Controls.Add(this.Mexico_USSR, 1, 0);
             this.tableLayoutPanel43.Location = new System.Drawing.Point(94, 106);
-            this.tableLayoutPanel43.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel43.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel43.Name = "tableLayoutPanel43";
             this.tableLayoutPanel43.RowCount = 1;
             this.tableLayoutPanel43.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -3610,7 +3610,7 @@
             this.tableLayoutPanel44.Controls.Add(this.DominicanRep_USA, 0, 0);
             this.tableLayoutPanel44.Controls.Add(this.DominicanRep_USSR, 1, 0);
             this.tableLayoutPanel44.Location = new System.Drawing.Point(15, 105);
-            this.tableLayoutPanel44.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel44.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel44.Name = "tableLayoutPanel44";
             this.tableLayoutPanel44.RowCount = 1;
             this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -3674,7 +3674,7 @@
             this.tableLayoutPanel45.Controls.Add(this.Honduras_USA, 0, 0);
             this.tableLayoutPanel45.Controls.Add(this.Honduras_USSR, 1, 0);
             this.tableLayoutPanel45.Location = new System.Drawing.Point(94, 71);
-            this.tableLayoutPanel45.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel45.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel45.Name = "tableLayoutPanel45";
             this.tableLayoutPanel45.RowCount = 1;
             this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -3728,7 +3728,7 @@
             this.tableLayoutPanel46.Controls.Add(this.Haiti_USA, 0, 0);
             this.tableLayoutPanel46.Controls.Add(this.Haiti_USSR, 1, 0);
             this.tableLayoutPanel46.Location = new System.Drawing.Point(94, 36);
-            this.tableLayoutPanel46.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel46.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel46.Name = "tableLayoutPanel46";
             this.tableLayoutPanel46.RowCount = 1;
             this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -3772,7 +3772,7 @@
             this.tableLayoutPanel47.Controls.Add(this.Cuba_USA, 0, 0);
             this.tableLayoutPanel47.Controls.Add(this.Cuba_USSR, 1, 0);
             this.tableLayoutPanel47.Location = new System.Drawing.Point(15, 70);
-            this.tableLayoutPanel47.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel47.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel47.Name = "tableLayoutPanel47";
             this.tableLayoutPanel47.RowCount = 1;
             this.tableLayoutPanel47.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -3816,7 +3816,7 @@
             this.tableLayoutPanel48.Controls.Add(this.CostaRica_USA, 0, 0);
             this.tableLayoutPanel48.Controls.Add(this.CostaRica_USSR, 1, 0);
             this.tableLayoutPanel48.Location = new System.Drawing.Point(15, 35);
-            this.tableLayoutPanel48.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel48.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel48.Name = "tableLayoutPanel48";
             this.tableLayoutPanel48.RowCount = 1;
             this.tableLayoutPanel48.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -3884,9 +3884,9 @@
             this.groupBox2.Controls.Add(this.tableLayoutPanel35);
             this.groupBox2.Controls.Add(this.tableLayoutPanel36);
             this.groupBox2.Location = new System.Drawing.Point(154, 26);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(156, 315);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
@@ -3911,7 +3911,7 @@
             this.tableLayoutPanel22.Controls.Add(this.Malaysia_USA, 0, 0);
             this.tableLayoutPanel22.Controls.Add(this.Malaysia_USSR, 1, 0);
             this.tableLayoutPanel22.Location = new System.Drawing.Point(15, 283);
-            this.tableLayoutPanel22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel22.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel22.Name = "tableLayoutPanel22";
             this.tableLayoutPanel22.RowCount = 1;
             this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -3976,7 +3976,7 @@
             this.tableLayoutPanel23.Controls.Add(this.Vietnam_USA, 0, 0);
             this.tableLayoutPanel23.Controls.Add(this.Vietnam_USSR, 1, 0);
             this.tableLayoutPanel23.Location = new System.Drawing.Point(94, 247);
-            this.tableLayoutPanel23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel23.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel23.Name = "tableLayoutPanel23";
             this.tableLayoutPanel23.RowCount = 1;
             this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -4020,7 +4020,7 @@
             this.tableLayoutPanel24.Controls.Add(this.LaosCambodia_USA, 0, 0);
             this.tableLayoutPanel24.Controls.Add(this.LaosCambodia_USSR, 1, 0);
             this.tableLayoutPanel24.Location = new System.Drawing.Point(15, 246);
-            this.tableLayoutPanel24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel24.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel24.Name = "tableLayoutPanel24";
             this.tableLayoutPanel24.RowCount = 1;
             this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -4084,7 +4084,7 @@
             this.tableLayoutPanel25.Controls.Add(this.Thailand_USA, 0, 0);
             this.tableLayoutPanel25.Controls.Add(this.Thailand_USSR, 1, 0);
             this.tableLayoutPanel25.Location = new System.Drawing.Point(94, 212);
-            this.tableLayoutPanel25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel25.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel25.Name = "tableLayoutPanel25";
             this.tableLayoutPanel25.RowCount = 1;
             this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -4128,7 +4128,7 @@
             this.tableLayoutPanel26.Controls.Add(this.Japan_USA, 0, 0);
             this.tableLayoutPanel26.Controls.Add(this.Japan_USSR, 1, 0);
             this.tableLayoutPanel26.Location = new System.Drawing.Point(15, 211);
-            this.tableLayoutPanel26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel26.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel26.Name = "tableLayoutPanel26";
             this.tableLayoutPanel26.RowCount = 1;
             this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -4192,7 +4192,7 @@
             this.tableLayoutPanel27.Controls.Add(this.Taiwan_USA, 0, 0);
             this.tableLayoutPanel27.Controls.Add(this.Taiwan_USSR, 1, 0);
             this.tableLayoutPanel27.Location = new System.Drawing.Point(94, 176);
-            this.tableLayoutPanel27.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel27.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel27.Name = "tableLayoutPanel27";
             this.tableLayoutPanel27.RowCount = 1;
             this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -4236,7 +4236,7 @@
             this.tableLayoutPanel28.Controls.Add(this.Indonesia_USA, 0, 0);
             this.tableLayoutPanel28.Controls.Add(this.Indonesia_USSR, 1, 0);
             this.tableLayoutPanel28.Location = new System.Drawing.Point(15, 176);
-            this.tableLayoutPanel28.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel28.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel28.Name = "tableLayoutPanel28";
             this.tableLayoutPanel28.RowCount = 1;
             this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -4301,7 +4301,7 @@
             this.tableLayoutPanel29.Controls.Add(this.SouthKorea_USA, 0, 0);
             this.tableLayoutPanel29.Controls.Add(this.SouthKorea_USSR, 1, 0);
             this.tableLayoutPanel29.Location = new System.Drawing.Point(94, 141);
-            this.tableLayoutPanel29.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel29.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel29.Name = "tableLayoutPanel29";
             this.tableLayoutPanel29.RowCount = 1;
             this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -4345,7 +4345,7 @@
             this.tableLayoutPanel30.Controls.Add(this.India_USA, 0, 0);
             this.tableLayoutPanel30.Controls.Add(this.India_USSR, 1, 0);
             this.tableLayoutPanel30.Location = new System.Drawing.Point(15, 140);
-            this.tableLayoutPanel30.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel30.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel30.Name = "tableLayoutPanel30";
             this.tableLayoutPanel30.RowCount = 1;
             this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -4409,7 +4409,7 @@
             this.Philippines.Controls.Add(this.Philippines_USA, 0, 0);
             this.Philippines.Controls.Add(this.Philippines_USSR, 1, 0);
             this.Philippines.Location = new System.Drawing.Point(94, 106);
-            this.Philippines.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Philippines.Margin = new System.Windows.Forms.Padding(2);
             this.Philippines.Name = "Philippines";
             this.Philippines.RowCount = 1;
             this.Philippines.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -4463,7 +4463,7 @@
             this.tableLayoutPanel32.Controls.Add(this.Burma_USA, 0, 0);
             this.tableLayoutPanel32.Controls.Add(this.Burma_USSR, 1, 0);
             this.tableLayoutPanel32.Location = new System.Drawing.Point(15, 105);
-            this.tableLayoutPanel32.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel32.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel32.Name = "tableLayoutPanel32";
             this.tableLayoutPanel32.RowCount = 1;
             this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -4528,7 +4528,7 @@
             this.tableLayoutPanel33.Controls.Add(this.Pakistan_USA, 0, 0);
             this.tableLayoutPanel33.Controls.Add(this.Pakistan_USSR, 1, 0);
             this.tableLayoutPanel33.Location = new System.Drawing.Point(94, 71);
-            this.tableLayoutPanel33.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel33.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel33.Name = "tableLayoutPanel33";
             this.tableLayoutPanel33.RowCount = 1;
             this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -4583,7 +4583,7 @@
             this.tableLayoutPanel34.Controls.Add(this.NorthKorea_USA, 0, 0);
             this.tableLayoutPanel34.Controls.Add(this.NorthKorea_USSR, 1, 0);
             this.tableLayoutPanel34.Location = new System.Drawing.Point(94, 36);
-            this.tableLayoutPanel34.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel34.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel34.Name = "tableLayoutPanel34";
             this.tableLayoutPanel34.RowCount = 1;
             this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -4627,7 +4627,7 @@
             this.tableLayoutPanel35.Controls.Add(this.Australia_USA, 0, 0);
             this.tableLayoutPanel35.Controls.Add(this.Australia_USSR, 1, 0);
             this.tableLayoutPanel35.Location = new System.Drawing.Point(15, 70);
-            this.tableLayoutPanel35.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel35.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel35.Name = "tableLayoutPanel35";
             this.tableLayoutPanel35.RowCount = 1;
             this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -4671,7 +4671,7 @@
             this.tableLayoutPanel36.Controls.Add(this.Afghanistan_USA, 0, 0);
             this.tableLayoutPanel36.Controls.Add(this.Afghanistan_USSR, 1, 0);
             this.tableLayoutPanel36.Location = new System.Drawing.Point(15, 35);
-            this.tableLayoutPanel36.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel36.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel36.Name = "tableLayoutPanel36";
             this.tableLayoutPanel36.RowCount = 1;
             this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -4745,9 +4745,9 @@
             this.groupBox1.Controls.Add(this.tableLayoutPanel2);
             this.groupBox1.Controls.Add(this.tableLayoutPanel1);
             this.groupBox1.Location = new System.Drawing.Point(1, 26);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(148, 356);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
@@ -4782,7 +4782,7 @@
             this.tableLayoutPanel17.Controls.Add(this.Zimbabwe_USA, 0, 0);
             this.tableLayoutPanel17.Controls.Add(this.Zimbabwe_USSR, 1, 0);
             this.tableLayoutPanel17.Location = new System.Drawing.Point(79, 318);
-            this.tableLayoutPanel17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel17.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel17.Name = "tableLayoutPanel17";
             this.tableLayoutPanel17.RowCount = 1;
             this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -4826,7 +4826,7 @@
             this.tableLayoutPanel18.Controls.Add(this.Nigeria_USA, 0, 0);
             this.tableLayoutPanel18.Controls.Add(this.Nigeria_USSR, 1, 0);
             this.tableLayoutPanel18.Location = new System.Drawing.Point(15, 318);
-            this.tableLayoutPanel18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel18.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel18.Name = "tableLayoutPanel18";
             this.tableLayoutPanel18.RowCount = 1;
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -4890,7 +4890,7 @@
             this.tableLayoutPanel9.Controls.Add(this.Zaire_USA, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.Zaire_USSR, 1, 0);
             this.tableLayoutPanel9.Location = new System.Drawing.Point(79, 284);
-            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 1;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -4934,7 +4934,7 @@
             this.tableLayoutPanel8.Controls.Add(this.Morocco_USA, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.Morocco_USSR, 1, 0);
             this.tableLayoutPanel8.Location = new System.Drawing.Point(15, 283);
-            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -4999,7 +4999,7 @@
             this.tableLayoutPanel10.Controls.Add(this.WestAfricanStates_USA, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.WestAfricanStates_USSR, 1, 0);
             this.tableLayoutPanel10.Location = new System.Drawing.Point(79, 247);
-            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 1;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -5043,7 +5043,7 @@
             this.tableLayoutPanel7.Controls.Add(this.Kenya_USA, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.Kenya_USSR, 1, 0);
             this.tableLayoutPanel7.Location = new System.Drawing.Point(15, 246);
-            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -5107,7 +5107,7 @@
             this.tableLayoutPanel11.Controls.Add(this.Tunisia_USA, 0, 0);
             this.tableLayoutPanel11.Controls.Add(this.Tunisia_USSR, 1, 0);
             this.tableLayoutPanel11.Location = new System.Drawing.Point(79, 212);
-            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 1;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -5151,7 +5151,7 @@
             this.tableLayoutPanel6.Controls.Add(this.IvoryCoast_USA, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.IvoryCoast_USSR, 1, 0);
             this.tableLayoutPanel6.Location = new System.Drawing.Point(15, 211);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -5215,7 +5215,7 @@
             this.tableLayoutPanel12.Controls.Add(this.Sudan_USA, 0, 0);
             this.tableLayoutPanel12.Controls.Add(this.Sudan_USSR, 1, 0);
             this.tableLayoutPanel12.Location = new System.Drawing.Point(79, 176);
-            this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 1;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -5259,7 +5259,7 @@
             this.tableLayoutPanel5.Controls.Add(this.Ethiopia_USA, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.Ethiopia_USSR, 1, 0);
             this.tableLayoutPanel5.Location = new System.Drawing.Point(15, 176);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -5324,7 +5324,7 @@
             this.tableLayoutPanel13.Controls.Add(this.SouthAfrica_USA, 0, 0);
             this.tableLayoutPanel13.Controls.Add(this.SouthAfrica_USSR, 1, 0);
             this.tableLayoutPanel13.Location = new System.Drawing.Point(79, 141);
-            this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
             this.tableLayoutPanel13.RowCount = 1;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -5368,7 +5368,7 @@
             this.tableLayoutPanel4.Controls.Add(this.Cameroon_USA, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.Cameroon_USSR, 1, 0);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(15, 140);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -5432,7 +5432,7 @@
             this.tableLayoutPanel14.Controls.Add(this.Somalia_USA, 0, 0);
             this.tableLayoutPanel14.Controls.Add(this.Somalia_USSR, 1, 0);
             this.tableLayoutPanel14.Location = new System.Drawing.Point(79, 106);
-            this.tableLayoutPanel14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel14.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel14.Name = "tableLayoutPanel14";
             this.tableLayoutPanel14.RowCount = 1;
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -5487,7 +5487,7 @@
             this.tableLayoutPanel3.Controls.Add(this.Botswana_USA, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.Botswana_USSR, 1, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(15, 105);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -5552,7 +5552,7 @@
             this.tableLayoutPanel15.Controls.Add(this.SEAfricanStates_USA, 0, 0);
             this.tableLayoutPanel15.Controls.Add(this.SEAfricanStates_USSR, 1, 0);
             this.tableLayoutPanel15.Location = new System.Drawing.Point(79, 71);
-            this.tableLayoutPanel15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel15.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             this.tableLayoutPanel15.RowCount = 1;
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -5606,7 +5606,7 @@
             this.tableLayoutPanel16.Controls.Add(this.SaharanStates_USA, 0, 0);
             this.tableLayoutPanel16.Controls.Add(this.SaharanStates_USSR, 1, 0);
             this.tableLayoutPanel16.Location = new System.Drawing.Point(79, 36);
-            this.tableLayoutPanel16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel16.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel16.Name = "tableLayoutPanel16";
             this.tableLayoutPanel16.RowCount = 1;
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -5650,7 +5650,7 @@
             this.tableLayoutPanel2.Controls.Add(this.Angola_USA, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.Angola_USSR, 1, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(15, 70);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -5694,7 +5694,7 @@
             this.tableLayoutPanel1.Controls.Add(this.Algeria_USA, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.Algeria_USSR, 1, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(15, 35);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -5738,7 +5738,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(938, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(942, 24);
             this.menuStrip1.TabIndex = 12;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -5757,14 +5757,12 @@
             this.uSSRToolStripMenuItem});
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
             this.newGameToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.newGameToolStripMenuItem.Text = "New game";
             // 
             // uSAToolStripMenuItem
             // 
             this.uSAToolStripMenuItem.Name = "uSAToolStripMenuItem";
             this.uSAToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
-            this.uSAToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.uSAToolStripMenuItem.Text = "USA";
             this.uSAToolStripMenuItem.Click += new System.EventHandler(this.uSAToolStripMenuItem_Click);
             // 
@@ -5772,7 +5770,6 @@
             // 
             this.uSSRToolStripMenuItem.Name = "uSSRToolStripMenuItem";
             this.uSSRToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
-            this.uSSRToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.uSSRToolStripMenuItem.Text = "USSR";
             this.uSSRToolStripMenuItem.Click += new System.EventHandler(this.uSSRToolStripMenuItem_Click);
             // 
@@ -5796,7 +5793,7 @@
             this.middleEastToolStripMenuItem,
             this.southAmericaToolStripMenuItem});
             this.countryToolStripMenuItem.Name = "countryToolStripMenuItem";
-            this.countryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.countryToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.countryToolStripMenuItem.Text = "Country";
             // 
             // africaToolStripMenuItem
@@ -6441,7 +6438,7 @@
             this.eventToolStripMenuItem,
             this.resetToolStripMenuItem});
             this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
-            this.gameToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.gameToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.gameToolStripMenuItem.Text = "Game";
             // 
             // turnToolStripMenuItem
@@ -6458,76 +6455,76 @@
             this.toolStripMenuItem10,
             this.toolStripMenuItem11});
             this.turnToolStripMenuItem.Name = "turnToolStripMenuItem";
-            this.turnToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.turnToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.turnToolStripMenuItem.Text = "Turn";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem2.Text = "1";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem3.Text = "2";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem4.Text = "3";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem5.Text = "4";
             this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
             // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem6.Text = "5";
             this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
             // 
             // toolStripMenuItem7
             // 
             this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem7.Text = "6";
             this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
             // 
             // toolStripMenuItem8
             // 
             this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem8.Text = "7";
             this.toolStripMenuItem8.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
             // 
             // toolStripMenuItem9
             // 
             this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem9.Text = "8";
             this.toolStripMenuItem9.Click += new System.EventHandler(this.toolStripMenuItem9_Click);
             // 
             // toolStripMenuItem10
             // 
             this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem10.Text = "9";
             this.toolStripMenuItem10.Click += new System.EventHandler(this.toolStripMenuItem10_Click);
             // 
             // toolStripMenuItem11
             // 
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem11.Text = "10";
             this.toolStripMenuItem11.Click += new System.EventHandler(this.toolStripMenuItem11_Click);
             // 
@@ -6544,7 +6541,7 @@
             this.toolStripMenuItem18,
             this.toolStripMenuItem19});
             this.roundToolStripMenuItem.Name = "roundToolStripMenuItem";
-            this.roundToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.roundToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.roundToolStripMenuItem.Text = "Round";
             // 
             // headlinePhaseToolStripMenuItem
@@ -6608,13 +6605,13 @@
             this.uSAToolStripMenuItem2,
             this.uSSRToolStripMenuItem2});
             this.scoreToolStripMenuItem.Name = "scoreToolStripMenuItem";
-            this.scoreToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.scoreToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.scoreToolStripMenuItem.Text = "Score";
             // 
             // toolStripMenuItem20
             // 
             this.toolStripMenuItem20.Name = "toolStripMenuItem20";
-            this.toolStripMenuItem20.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem20.Size = new System.Drawing.Size(101, 22);
             this.toolStripMenuItem20.Text = "0";
             this.toolStripMenuItem20.Click += new System.EventHandler(this.toolStripMenuItem20_Click);
             // 
@@ -6641,158 +6638,139 @@
             this.toolStripMenuItem38,
             this.toolStripMenuItem39});
             this.uSAToolStripMenuItem2.Name = "uSAToolStripMenuItem2";
-            this.uSAToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.uSAToolStripMenuItem2.Size = new System.Drawing.Size(101, 22);
             this.uSAToolStripMenuItem2.Text = "USA";
             // 
             // toolStripMenuItem21
             // 
             this.toolStripMenuItem21.Name = "toolStripMenuItem21";
-            this.toolStripMenuItem21.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem21.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem21.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem21.Text = "1";
             this.toolStripMenuItem21.Click += new System.EventHandler(this.toolStripMenuItem21_Click);
             // 
             // toolStripMenuItem22
             // 
             this.toolStripMenuItem22.Name = "toolStripMenuItem22";
-            this.toolStripMenuItem22.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem22.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem22.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem22.Text = "2";
             this.toolStripMenuItem22.Click += new System.EventHandler(this.toolStripMenuItem22_Click);
             // 
             // toolStripMenuItem23
             // 
             this.toolStripMenuItem23.Name = "toolStripMenuItem23";
-            this.toolStripMenuItem23.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem23.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem23.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem23.Text = "3";
             this.toolStripMenuItem23.Click += new System.EventHandler(this.toolStripMenuItem23_Click);
             // 
             // toolStripMenuItem24
             // 
             this.toolStripMenuItem24.Name = "toolStripMenuItem24";
-            this.toolStripMenuItem24.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem24.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem24.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem24.Text = "4";
             this.toolStripMenuItem24.Click += new System.EventHandler(this.toolStripMenuItem24_Click);
             // 
             // toolStripMenuItem25
             // 
             this.toolStripMenuItem25.Name = "toolStripMenuItem25";
-            this.toolStripMenuItem25.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem25.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem25.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem25.Text = "5";
             this.toolStripMenuItem25.Click += new System.EventHandler(this.toolStripMenuItem25_Click);
             // 
             // toolStripMenuItem26
             // 
             this.toolStripMenuItem26.Name = "toolStripMenuItem26";
-            this.toolStripMenuItem26.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem26.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem26.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem26.Text = "6";
             this.toolStripMenuItem26.Click += new System.EventHandler(this.toolStripMenuItem26_Click);
             // 
             // toolStripMenuItem27
             // 
             this.toolStripMenuItem27.Name = "toolStripMenuItem27";
-            this.toolStripMenuItem27.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem27.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem27.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem27.Text = "7";
             this.toolStripMenuItem27.Click += new System.EventHandler(this.toolStripMenuItem27_Click);
             // 
             // toolStripMenuItem28
             // 
             this.toolStripMenuItem28.Name = "toolStripMenuItem28";
-            this.toolStripMenuItem28.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem28.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem28.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem28.Text = "8";
             this.toolStripMenuItem28.Click += new System.EventHandler(this.toolStripMenuItem28_Click);
             // 
             // toolStripMenuItem29
             // 
             this.toolStripMenuItem29.Name = "toolStripMenuItem29";
-            this.toolStripMenuItem29.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem29.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem29.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem29.Text = "9";
             this.toolStripMenuItem29.Click += new System.EventHandler(this.toolStripMenuItem29_Click);
             // 
             // toolStripMenuItem30
             // 
             this.toolStripMenuItem30.Name = "toolStripMenuItem30";
-            this.toolStripMenuItem30.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem30.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem30.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem30.Text = "10";
             this.toolStripMenuItem30.Click += new System.EventHandler(this.toolStripMenuItem30_Click);
             // 
             // toolStripMenuItem31
             // 
             this.toolStripMenuItem31.Name = "toolStripMenuItem31";
-            this.toolStripMenuItem31.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem31.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem31.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem31.Text = "11";
             this.toolStripMenuItem31.Click += new System.EventHandler(this.toolStripMenuItem31_Click);
             // 
             // toolStripMenuItem32
             // 
             this.toolStripMenuItem32.Name = "toolStripMenuItem32";
-            this.toolStripMenuItem32.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem32.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem32.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem32.Text = "12";
             this.toolStripMenuItem32.Click += new System.EventHandler(this.toolStripMenuItem32_Click);
             // 
             // toolStripMenuItem33
             // 
             this.toolStripMenuItem33.Name = "toolStripMenuItem33";
-            this.toolStripMenuItem33.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem33.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem33.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem33.Text = "13";
             this.toolStripMenuItem33.Click += new System.EventHandler(this.toolStripMenuItem33_Click);
             // 
             // toolStripMenuItem34
             // 
             this.toolStripMenuItem34.Name = "toolStripMenuItem34";
-            this.toolStripMenuItem34.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem34.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem34.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem34.Text = "14";
             this.toolStripMenuItem34.Click += new System.EventHandler(this.toolStripMenuItem34_Click);
             // 
             // toolStripMenuItem35
             // 
             this.toolStripMenuItem35.Name = "toolStripMenuItem35";
-            this.toolStripMenuItem35.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem35.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem35.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem35.Text = "15";
             this.toolStripMenuItem35.Click += new System.EventHandler(this.toolStripMenuItem35_Click);
             // 
             // toolStripMenuItem36
             // 
             this.toolStripMenuItem36.Name = "toolStripMenuItem36";
-            this.toolStripMenuItem36.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem36.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem36.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem36.Text = "16";
             this.toolStripMenuItem36.Click += new System.EventHandler(this.toolStripMenuItem36_Click);
             // 
             // toolStripMenuItem37
             // 
             this.toolStripMenuItem37.Name = "toolStripMenuItem37";
-            this.toolStripMenuItem37.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem37.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem37.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem37.Text = "17";
             this.toolStripMenuItem37.Click += new System.EventHandler(this.toolStripMenuItem37_Click);
             // 
             // toolStripMenuItem38
             // 
             this.toolStripMenuItem38.Name = "toolStripMenuItem38";
-            this.toolStripMenuItem38.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem38.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem38.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem38.Text = "18";
             this.toolStripMenuItem38.Click += new System.EventHandler(this.toolStripMenuItem38_Click);
             // 
             // toolStripMenuItem39
             // 
             this.toolStripMenuItem39.Name = "toolStripMenuItem39";
-            this.toolStripMenuItem39.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem39.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem39.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem39.Text = "19";
             this.toolStripMenuItem39.Click += new System.EventHandler(this.toolStripMenuItem39_Click);
             // 
@@ -6819,158 +6797,139 @@
             this.toolStripMenuItem57,
             this.toolStripMenuItem58});
             this.uSSRToolStripMenuItem2.Name = "uSSRToolStripMenuItem2";
-            this.uSSRToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.uSSRToolStripMenuItem2.Size = new System.Drawing.Size(101, 22);
             this.uSSRToolStripMenuItem2.Text = "USSR";
             // 
             // toolStripMenuItem40
             // 
             this.toolStripMenuItem40.Name = "toolStripMenuItem40";
-            this.toolStripMenuItem40.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem40.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem40.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem40.Text = "1";
             this.toolStripMenuItem40.Click += new System.EventHandler(this.toolStripMenuItem40_Click);
             // 
             // toolStripMenuItem41
             // 
             this.toolStripMenuItem41.Name = "toolStripMenuItem41";
-            this.toolStripMenuItem41.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem41.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem41.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem41.Text = "2";
             this.toolStripMenuItem41.Click += new System.EventHandler(this.toolStripMenuItem41_Click);
             // 
             // toolStripMenuItem42
             // 
             this.toolStripMenuItem42.Name = "toolStripMenuItem42";
-            this.toolStripMenuItem42.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem42.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem42.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem42.Text = "3";
             this.toolStripMenuItem42.Click += new System.EventHandler(this.toolStripMenuItem42_Click);
             // 
             // toolStripMenuItem43
             // 
             this.toolStripMenuItem43.Name = "toolStripMenuItem43";
-            this.toolStripMenuItem43.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem43.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem43.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem43.Text = "4";
             this.toolStripMenuItem43.Click += new System.EventHandler(this.toolStripMenuItem43_Click);
             // 
             // toolStripMenuItem44
             // 
             this.toolStripMenuItem44.Name = "toolStripMenuItem44";
-            this.toolStripMenuItem44.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem44.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem44.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem44.Text = "5";
             this.toolStripMenuItem44.Click += new System.EventHandler(this.toolStripMenuItem44_Click);
             // 
             // toolStripMenuItem45
             // 
             this.toolStripMenuItem45.Name = "toolStripMenuItem45";
-            this.toolStripMenuItem45.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem45.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem45.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem45.Text = "6";
             this.toolStripMenuItem45.Click += new System.EventHandler(this.toolStripMenuItem45_Click);
             // 
             // toolStripMenuItem46
             // 
             this.toolStripMenuItem46.Name = "toolStripMenuItem46";
-            this.toolStripMenuItem46.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem46.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem46.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem46.Text = "7";
             this.toolStripMenuItem46.Click += new System.EventHandler(this.toolStripMenuItem46_Click);
             // 
             // toolStripMenuItem47
             // 
             this.toolStripMenuItem47.Name = "toolStripMenuItem47";
-            this.toolStripMenuItem47.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem47.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem47.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem47.Text = "8";
             this.toolStripMenuItem47.Click += new System.EventHandler(this.toolStripMenuItem47_Click);
             // 
             // toolStripMenuItem48
             // 
             this.toolStripMenuItem48.Name = "toolStripMenuItem48";
-            this.toolStripMenuItem48.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem48.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem48.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem48.Text = "9";
             this.toolStripMenuItem48.Click += new System.EventHandler(this.toolStripMenuItem48_Click);
             // 
             // toolStripMenuItem49
             // 
             this.toolStripMenuItem49.Name = "toolStripMenuItem49";
-            this.toolStripMenuItem49.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem49.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem49.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem49.Text = "10";
             this.toolStripMenuItem49.Click += new System.EventHandler(this.toolStripMenuItem49_Click);
             // 
             // toolStripMenuItem50
             // 
             this.toolStripMenuItem50.Name = "toolStripMenuItem50";
-            this.toolStripMenuItem50.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem50.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem50.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem50.Text = "11";
             this.toolStripMenuItem50.Click += new System.EventHandler(this.toolStripMenuItem50_Click);
             // 
             // toolStripMenuItem51
             // 
             this.toolStripMenuItem51.Name = "toolStripMenuItem51";
-            this.toolStripMenuItem51.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem51.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem51.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem51.Text = "12";
             this.toolStripMenuItem51.Click += new System.EventHandler(this.toolStripMenuItem51_Click);
             // 
             // toolStripMenuItem52
             // 
             this.toolStripMenuItem52.Name = "toolStripMenuItem52";
-            this.toolStripMenuItem52.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem52.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem52.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem52.Text = "13";
             this.toolStripMenuItem52.Click += new System.EventHandler(this.toolStripMenuItem52_Click);
             // 
             // toolStripMenuItem53
             // 
             this.toolStripMenuItem53.Name = "toolStripMenuItem53";
-            this.toolStripMenuItem53.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem53.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem53.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem53.Text = "14";
             this.toolStripMenuItem53.Click += new System.EventHandler(this.toolStripMenuItem53_Click);
             // 
             // toolStripMenuItem54
             // 
             this.toolStripMenuItem54.Name = "toolStripMenuItem54";
-            this.toolStripMenuItem54.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem54.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem54.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem54.Text = "15";
             this.toolStripMenuItem54.Click += new System.EventHandler(this.toolStripMenuItem54_Click);
             // 
             // toolStripMenuItem55
             // 
             this.toolStripMenuItem55.Name = "toolStripMenuItem55";
-            this.toolStripMenuItem55.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem55.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem55.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem55.Text = "16";
             this.toolStripMenuItem55.Click += new System.EventHandler(this.toolStripMenuItem55_Click);
             // 
             // toolStripMenuItem56
             // 
             this.toolStripMenuItem56.Name = "toolStripMenuItem56";
-            this.toolStripMenuItem56.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem56.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem56.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem56.Text = "17";
             this.toolStripMenuItem56.Click += new System.EventHandler(this.toolStripMenuItem56_Click);
             // 
             // toolStripMenuItem57
             // 
             this.toolStripMenuItem57.Name = "toolStripMenuItem57";
-            this.toolStripMenuItem57.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem57.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem57.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem57.Text = "18";
             this.toolStripMenuItem57.Click += new System.EventHandler(this.toolStripMenuItem57_Click);
             // 
             // toolStripMenuItem58
             // 
             this.toolStripMenuItem58.Name = "toolStripMenuItem58";
-            this.toolStripMenuItem58.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem58.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem58.Size = new System.Drawing.Size(86, 22);
             this.toolStripMenuItem58.Text = "19";
             this.toolStripMenuItem58.Click += new System.EventHandler(this.toolStripMenuItem58_Click);
             // 
@@ -6982,34 +6941,34 @@
             this.toolStripMenuItem61,
             this.toolStripMenuItem62});
             this.defconToolStripMenuItem.Name = "defconToolStripMenuItem";
-            this.defconToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.defconToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.defconToolStripMenuItem.Text = "Defcon";
             // 
             // toolStripMenuItem59
             // 
             this.toolStripMenuItem59.Name = "toolStripMenuItem59";
-            this.toolStripMenuItem59.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem59.Size = new System.Drawing.Size(80, 22);
             this.toolStripMenuItem59.Text = "5";
             this.toolStripMenuItem59.Click += new System.EventHandler(this.toolStripMenuItem59_Click);
             // 
             // toolStripMenuItem60
             // 
             this.toolStripMenuItem60.Name = "toolStripMenuItem60";
-            this.toolStripMenuItem60.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem60.Size = new System.Drawing.Size(80, 22);
             this.toolStripMenuItem60.Text = "4";
             this.toolStripMenuItem60.Click += new System.EventHandler(this.toolStripMenuItem60_Click);
             // 
             // toolStripMenuItem61
             // 
             this.toolStripMenuItem61.Name = "toolStripMenuItem61";
-            this.toolStripMenuItem61.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem61.Size = new System.Drawing.Size(80, 22);
             this.toolStripMenuItem61.Text = "3";
             this.toolStripMenuItem61.Click += new System.EventHandler(this.toolStripMenuItem61_Click);
             // 
             // toolStripMenuItem62
             // 
             this.toolStripMenuItem62.Name = "toolStripMenuItem62";
-            this.toolStripMenuItem62.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem62.Size = new System.Drawing.Size(80, 22);
             this.toolStripMenuItem62.Text = "2";
             this.toolStripMenuItem62.Click += new System.EventHandler(this.toolStripMenuItem62_Click);
             // 
@@ -7019,7 +6978,7 @@
             this.uSAToolStripMenuItem3,
             this.uSSRToolStripMenuItem3});
             this.militaryOpsToolStripMenuItem.Name = "militaryOpsToolStripMenuItem";
-            this.militaryOpsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.militaryOpsToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.militaryOpsToolStripMenuItem.Text = "Military Ops";
             // 
             // uSAToolStripMenuItem3
@@ -7032,48 +6991,48 @@
             this.toolStripMenuItem67,
             this.toolStripMenuItem68});
             this.uSAToolStripMenuItem3.Name = "uSAToolStripMenuItem3";
-            this.uSAToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.uSAToolStripMenuItem3.Size = new System.Drawing.Size(101, 22);
             this.uSAToolStripMenuItem3.Text = "USA";
             // 
             // toolStripMenuItem63
             // 
             this.toolStripMenuItem63.Name = "toolStripMenuItem63";
-            this.toolStripMenuItem63.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem63.Size = new System.Drawing.Size(80, 22);
             this.toolStripMenuItem63.Text = "0";
             this.toolStripMenuItem63.Click += new System.EventHandler(this.toolStripMenuItem63_Click);
             // 
             // toolStripMenuItem64
             // 
             this.toolStripMenuItem64.Name = "toolStripMenuItem64";
-            this.toolStripMenuItem64.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem64.Size = new System.Drawing.Size(80, 22);
             this.toolStripMenuItem64.Text = "1";
             this.toolStripMenuItem64.Click += new System.EventHandler(this.toolStripMenuItem64_Click);
             // 
             // toolStripMenuItem65
             // 
             this.toolStripMenuItem65.Name = "toolStripMenuItem65";
-            this.toolStripMenuItem65.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem65.Size = new System.Drawing.Size(80, 22);
             this.toolStripMenuItem65.Text = "2";
             this.toolStripMenuItem65.Click += new System.EventHandler(this.toolStripMenuItem65_Click);
             // 
             // toolStripMenuItem66
             // 
             this.toolStripMenuItem66.Name = "toolStripMenuItem66";
-            this.toolStripMenuItem66.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem66.Size = new System.Drawing.Size(80, 22);
             this.toolStripMenuItem66.Text = "3";
             this.toolStripMenuItem66.Click += new System.EventHandler(this.toolStripMenuItem66_Click);
             // 
             // toolStripMenuItem67
             // 
             this.toolStripMenuItem67.Name = "toolStripMenuItem67";
-            this.toolStripMenuItem67.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem67.Size = new System.Drawing.Size(80, 22);
             this.toolStripMenuItem67.Text = "4";
             this.toolStripMenuItem67.Click += new System.EventHandler(this.toolStripMenuItem67_Click);
             // 
             // toolStripMenuItem68
             // 
             this.toolStripMenuItem68.Name = "toolStripMenuItem68";
-            this.toolStripMenuItem68.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem68.Size = new System.Drawing.Size(80, 22);
             this.toolStripMenuItem68.Text = "5";
             this.toolStripMenuItem68.Click += new System.EventHandler(this.toolStripMenuItem68_Click);
             // 
@@ -7087,48 +7046,48 @@
             this.toolStripMenuItem73,
             this.toolStripMenuItem74});
             this.uSSRToolStripMenuItem3.Name = "uSSRToolStripMenuItem3";
-            this.uSSRToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.uSSRToolStripMenuItem3.Size = new System.Drawing.Size(101, 22);
             this.uSSRToolStripMenuItem3.Text = "USSR";
             // 
             // toolStripMenuItem69
             // 
             this.toolStripMenuItem69.Name = "toolStripMenuItem69";
-            this.toolStripMenuItem69.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem69.Size = new System.Drawing.Size(80, 22);
             this.toolStripMenuItem69.Text = "0";
             this.toolStripMenuItem69.Click += new System.EventHandler(this.toolStripMenuItem69_Click);
             // 
             // toolStripMenuItem70
             // 
             this.toolStripMenuItem70.Name = "toolStripMenuItem70";
-            this.toolStripMenuItem70.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem70.Size = new System.Drawing.Size(80, 22);
             this.toolStripMenuItem70.Text = "1";
             this.toolStripMenuItem70.Click += new System.EventHandler(this.toolStripMenuItem70_Click);
             // 
             // toolStripMenuItem71
             // 
             this.toolStripMenuItem71.Name = "toolStripMenuItem71";
-            this.toolStripMenuItem71.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem71.Size = new System.Drawing.Size(80, 22);
             this.toolStripMenuItem71.Text = "2";
             this.toolStripMenuItem71.Click += new System.EventHandler(this.toolStripMenuItem71_Click);
             // 
             // toolStripMenuItem72
             // 
             this.toolStripMenuItem72.Name = "toolStripMenuItem72";
-            this.toolStripMenuItem72.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem72.Size = new System.Drawing.Size(80, 22);
             this.toolStripMenuItem72.Text = "3";
             this.toolStripMenuItem72.Click += new System.EventHandler(this.toolStripMenuItem72_Click);
             // 
             // toolStripMenuItem73
             // 
             this.toolStripMenuItem73.Name = "toolStripMenuItem73";
-            this.toolStripMenuItem73.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem73.Size = new System.Drawing.Size(80, 22);
             this.toolStripMenuItem73.Text = "4";
             this.toolStripMenuItem73.Click += new System.EventHandler(this.toolStripMenuItem73_Click);
             // 
             // toolStripMenuItem74
             // 
             this.toolStripMenuItem74.Name = "toolStripMenuItem74";
-            this.toolStripMenuItem74.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem74.Size = new System.Drawing.Size(80, 22);
             this.toolStripMenuItem74.Text = "5";
             this.toolStripMenuItem74.Click += new System.EventHandler(this.toolStripMenuItem74_Click);
             // 
@@ -7138,7 +7097,7 @@
             this.uSAToolStripMenuItem4,
             this.uSSRToolStripMenuItem4});
             this.spaceRaceToolStripMenuItem.Name = "spaceRaceToolStripMenuItem";
-            this.spaceRaceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.spaceRaceToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.spaceRaceToolStripMenuItem.Text = "Space Race";
             // 
             // uSAToolStripMenuItem4
@@ -7154,69 +7113,69 @@
             this.toolStripMenuItem81,
             this.toolStripMenuItem82});
             this.uSAToolStripMenuItem4.Name = "uSAToolStripMenuItem4";
-            this.uSAToolStripMenuItem4.Size = new System.Drawing.Size(152, 22);
+            this.uSAToolStripMenuItem4.Size = new System.Drawing.Size(101, 22);
             this.uSAToolStripMenuItem4.Text = "USA";
             // 
             // startToolStripMenuItem
             // 
             this.startToolStripMenuItem.Name = "startToolStripMenuItem";
-            this.startToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.startToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
             this.startToolStripMenuItem.Text = "Start";
             this.startToolStripMenuItem.Click += new System.EventHandler(this.startToolStripMenuItem_Click);
             // 
             // toolStripMenuItem75
             // 
             this.toolStripMenuItem75.Name = "toolStripMenuItem75";
-            this.toolStripMenuItem75.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem75.Size = new System.Drawing.Size(98, 22);
             this.toolStripMenuItem75.Text = "1";
             this.toolStripMenuItem75.Click += new System.EventHandler(this.toolStripMenuItem75_Click);
             // 
             // toolStripMenuItem76
             // 
             this.toolStripMenuItem76.Name = "toolStripMenuItem76";
-            this.toolStripMenuItem76.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem76.Size = new System.Drawing.Size(98, 22);
             this.toolStripMenuItem76.Text = "2";
             this.toolStripMenuItem76.Click += new System.EventHandler(this.toolStripMenuItem76_Click);
             // 
             // toolStripMenuItem77
             // 
             this.toolStripMenuItem77.Name = "toolStripMenuItem77";
-            this.toolStripMenuItem77.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem77.Size = new System.Drawing.Size(98, 22);
             this.toolStripMenuItem77.Text = "3";
             this.toolStripMenuItem77.Click += new System.EventHandler(this.toolStripMenuItem77_Click);
             // 
             // toolStripMenuItem78
             // 
             this.toolStripMenuItem78.Name = "toolStripMenuItem78";
-            this.toolStripMenuItem78.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem78.Size = new System.Drawing.Size(98, 22);
             this.toolStripMenuItem78.Text = "4";
             this.toolStripMenuItem78.Click += new System.EventHandler(this.toolStripMenuItem78_Click);
             // 
             // toolStripMenuItem79
             // 
             this.toolStripMenuItem79.Name = "toolStripMenuItem79";
-            this.toolStripMenuItem79.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem79.Size = new System.Drawing.Size(98, 22);
             this.toolStripMenuItem79.Text = "5";
             this.toolStripMenuItem79.Click += new System.EventHandler(this.toolStripMenuItem79_Click);
             // 
             // toolStripMenuItem80
             // 
             this.toolStripMenuItem80.Name = "toolStripMenuItem80";
-            this.toolStripMenuItem80.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem80.Size = new System.Drawing.Size(98, 22);
             this.toolStripMenuItem80.Text = "6";
             this.toolStripMenuItem80.Click += new System.EventHandler(this.toolStripMenuItem80_Click);
             // 
             // toolStripMenuItem81
             // 
             this.toolStripMenuItem81.Name = "toolStripMenuItem81";
-            this.toolStripMenuItem81.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem81.Size = new System.Drawing.Size(98, 22);
             this.toolStripMenuItem81.Text = "7";
             this.toolStripMenuItem81.Click += new System.EventHandler(this.toolStripMenuItem81_Click);
             // 
             // toolStripMenuItem82
             // 
             this.toolStripMenuItem82.Name = "toolStripMenuItem82";
-            this.toolStripMenuItem82.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem82.Size = new System.Drawing.Size(98, 22);
             this.toolStripMenuItem82.Text = "8";
             this.toolStripMenuItem82.Click += new System.EventHandler(this.toolStripMenuItem82_Click);
             // 
@@ -7233,69 +7192,69 @@
             this.toolStripMenuItem89,
             this.toolStripMenuItem90});
             this.uSSRToolStripMenuItem4.Name = "uSSRToolStripMenuItem4";
-            this.uSSRToolStripMenuItem4.Size = new System.Drawing.Size(152, 22);
+            this.uSSRToolStripMenuItem4.Size = new System.Drawing.Size(101, 22);
             this.uSSRToolStripMenuItem4.Text = "USSR";
             // 
             // startToolStripMenuItem1
             // 
             this.startToolStripMenuItem1.Name = "startToolStripMenuItem1";
-            this.startToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.startToolStripMenuItem1.Size = new System.Drawing.Size(98, 22);
             this.startToolStripMenuItem1.Text = "Start";
             this.startToolStripMenuItem1.Click += new System.EventHandler(this.startToolStripMenuItem1_Click);
             // 
             // toolStripMenuItem83
             // 
             this.toolStripMenuItem83.Name = "toolStripMenuItem83";
-            this.toolStripMenuItem83.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem83.Size = new System.Drawing.Size(98, 22);
             this.toolStripMenuItem83.Text = "1";
             this.toolStripMenuItem83.Click += new System.EventHandler(this.toolStripMenuItem83_Click);
             // 
             // toolStripMenuItem84
             // 
             this.toolStripMenuItem84.Name = "toolStripMenuItem84";
-            this.toolStripMenuItem84.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem84.Size = new System.Drawing.Size(98, 22);
             this.toolStripMenuItem84.Text = "2";
             this.toolStripMenuItem84.Click += new System.EventHandler(this.toolStripMenuItem84_Click);
             // 
             // toolStripMenuItem85
             // 
             this.toolStripMenuItem85.Name = "toolStripMenuItem85";
-            this.toolStripMenuItem85.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem85.Size = new System.Drawing.Size(98, 22);
             this.toolStripMenuItem85.Text = "3";
             this.toolStripMenuItem85.Click += new System.EventHandler(this.toolStripMenuItem85_Click);
             // 
             // toolStripMenuItem86
             // 
             this.toolStripMenuItem86.Name = "toolStripMenuItem86";
-            this.toolStripMenuItem86.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem86.Size = new System.Drawing.Size(98, 22);
             this.toolStripMenuItem86.Text = "4";
             this.toolStripMenuItem86.Click += new System.EventHandler(this.toolStripMenuItem86_Click);
             // 
             // toolStripMenuItem87
             // 
             this.toolStripMenuItem87.Name = "toolStripMenuItem87";
-            this.toolStripMenuItem87.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem87.Size = new System.Drawing.Size(98, 22);
             this.toolStripMenuItem87.Text = "5";
             this.toolStripMenuItem87.Click += new System.EventHandler(this.toolStripMenuItem87_Click);
             // 
             // toolStripMenuItem88
             // 
             this.toolStripMenuItem88.Name = "toolStripMenuItem88";
-            this.toolStripMenuItem88.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem88.Size = new System.Drawing.Size(98, 22);
             this.toolStripMenuItem88.Text = "6";
             this.toolStripMenuItem88.Click += new System.EventHandler(this.toolStripMenuItem88_Click);
             // 
             // toolStripMenuItem89
             // 
             this.toolStripMenuItem89.Name = "toolStripMenuItem89";
-            this.toolStripMenuItem89.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem89.Size = new System.Drawing.Size(98, 22);
             this.toolStripMenuItem89.Text = "7";
             this.toolStripMenuItem89.Click += new System.EventHandler(this.toolStripMenuItem89_Click);
             // 
             // toolStripMenuItem90
             // 
             this.toolStripMenuItem90.Name = "toolStripMenuItem90";
-            this.toolStripMenuItem90.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem90.Size = new System.Drawing.Size(98, 22);
             this.toolStripMenuItem90.Text = "8";
             this.toolStripMenuItem90.Click += new System.EventHandler(this.toolStripMenuItem90_Click);
             // 
@@ -7303,14 +7262,14 @@
             // 
             this.eventToolStripMenuItem.Enabled = false;
             this.eventToolStripMenuItem.Name = "eventToolStripMenuItem";
-            this.eventToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.eventToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.eventToolStripMenuItem.Text = "Event";
             // 
             // resetToolStripMenuItem
             // 
             this.resetToolStripMenuItem.Enabled = false;
             this.resetToolStripMenuItem.Name = "resetToolStripMenuItem";
-            this.resetToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.resetToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.resetToolStripMenuItem.Text = "Reset";
             // 
             // handsToolStripMenuItem
@@ -7319,7 +7278,7 @@
             this.uSAToolStripMenuItem1,
             this.uSSRToolStripMenuItem1});
             this.handsToolStripMenuItem.Name = "handsToolStripMenuItem";
-            this.handsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.handsToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.handsToolStripMenuItem.Text = "Hands";
             // 
             // uSAToolStripMenuItem1
@@ -7349,6 +7308,101 @@
             this.revealToolStripMenuItem1.Name = "revealToolStripMenuItem1";
             this.revealToolStripMenuItem1.Size = new System.Drawing.Size(108, 22);
             this.revealToolStripMenuItem1.Text = "Reveal";
+            // 
+            // Play_cardButton
+            // 
+            this.Play_cardButton.Location = new System.Drawing.Point(377, 49);
+            this.Play_cardButton.Margin = new System.Windows.Forms.Padding(2);
+            this.Play_cardButton.Name = "Play_cardButton";
+            this.Play_cardButton.Size = new System.Drawing.Size(58, 24);
+            this.Play_cardButton.TabIndex = 30;
+            this.Play_cardButton.Text = "Play Card";
+            this.Play_cardButton.UseVisualStyleBackColor = true;
+            // 
+            // radioButton9
+            // 
+            this.radioButton9.AutoSize = true;
+            this.radioButton9.Location = new System.Drawing.Point(352, 23);
+            this.radioButton9.Margin = new System.Windows.Forms.Padding(2);
+            this.radioButton9.Name = "radioButton9";
+            this.radioButton9.Size = new System.Drawing.Size(85, 17);
+            this.radioButton9.TabIndex = 29;
+            this.radioButton9.TabStop = true;
+            this.radioButton9.Text = "radioButton9";
+            this.radioButton9.UseVisualStyleBackColor = true;
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Location = new System.Drawing.Point(266, 52);
+            this.radioButton8.Margin = new System.Windows.Forms.Padding(2);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(85, 17);
+            this.radioButton8.TabIndex = 28;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "radioButton8";
+            this.radioButton8.UseVisualStyleBackColor = true;
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Location = new System.Drawing.Point(266, 23);
+            this.radioButton7.Margin = new System.Windows.Forms.Padding(2);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(85, 17);
+            this.radioButton7.TabIndex = 27;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "radioButton7";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Location = new System.Drawing.Point(178, 52);
+            this.radioButton6.Margin = new System.Windows.Forms.Padding(2);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(85, 17);
+            this.radioButton6.TabIndex = 26;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "radioButton6";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(178, 23);
+            this.radioButton5.Margin = new System.Windows.Forms.Padding(2);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(85, 17);
+            this.radioButton5.TabIndex = 25;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "radioButton5";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(92, 52);
+            this.radioButton4.Margin = new System.Windows.Forms.Padding(2);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(85, 17);
+            this.radioButton4.TabIndex = 24;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "radioButton4";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(92, 23);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(2);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(85, 17);
+            this.radioButton3.TabIndex = 23;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "radioButton3";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
             // PlayerHand_group
             // 
             this.PlayerHand_group.Controls.Add(this.Play_cardButton);
@@ -7361,112 +7415,18 @@
             this.PlayerHand_group.Controls.Add(this.radioButton3);
             this.PlayerHand_group.Controls.Add(this.radioButton1);
             this.PlayerHand_group.Controls.Add(this.radioButton2);
-            this.PlayerHand_group.Location = new System.Drawing.Point(12, 492);
+            this.PlayerHand_group.Location = new System.Drawing.Point(1, 387);
             this.PlayerHand_group.Name = "PlayerHand_group";
-            this.PlayerHand_group.Size = new System.Drawing.Size(600, 97);
+            this.PlayerHand_group.Size = new System.Drawing.Size(446, 82);
             this.PlayerHand_group.TabIndex = 21;
             this.PlayerHand_group.TabStop = false;
             this.PlayerHand_group.Text = "Player Hand";
-            // 
-            // Play_cardButton
-            // 
-            this.Play_cardButton.Location = new System.Drawing.Point(377, 49);
-            this.Play_cardButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Play_cardButton.Name = "Play_cardButton";
-            this.Play_cardButton.Size = new System.Drawing.Size(58, 24);
-            this.Play_cardButton.TabIndex = 30;
-            this.Play_cardButton.Text = "Play Card";
-            this.Play_cardButton.UseVisualStyleBackColor = true;
-            // 
-            // radioButton9
-            // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(352, 23);
-            this.radioButton9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(85, 17);
-            this.radioButton9.TabIndex = 29;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "radioButton9";
-            this.radioButton9.UseVisualStyleBackColor = true;
-            // 
-            // radioButton8
-            // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(266, 52);
-            this.radioButton8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(85, 17);
-            this.radioButton8.TabIndex = 28;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "radioButton8";
-            this.radioButton8.UseVisualStyleBackColor = true;
-            // 
-            // radioButton7
-            // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(266, 23);
-            this.radioButton7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(85, 17);
-            this.radioButton7.TabIndex = 27;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "radioButton7";
-            this.radioButton7.UseVisualStyleBackColor = true;
-            // 
-            // radioButton6
-            // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(178, 52);
-            this.radioButton6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(85, 17);
-            this.radioButton6.TabIndex = 26;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "radioButton6";
-            this.radioButton6.UseVisualStyleBackColor = true;
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(178, 23);
-            this.radioButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(85, 17);
-            this.radioButton5.TabIndex = 25;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "radioButton5";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(92, 52);
-            this.radioButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(85, 17);
-            this.radioButton4.TabIndex = 24;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "radioButton4";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(92, 23);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(85, 17);
-            this.radioButton3.TabIndex = 23;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(4, 23);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(85, 17);
             this.radioButton1.TabIndex = 22;
@@ -7478,7 +7438,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(4, 52);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(85, 17);
             this.radioButton2.TabIndex = 0;
@@ -7490,8 +7450,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(938, 524);
-            this.ClientSize = new System.Drawing.Size(1250, 599);
+            this.ClientSize = new System.Drawing.Size(942, 474);
             this.Controls.Add(this.PlayerHand_group);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox7);
