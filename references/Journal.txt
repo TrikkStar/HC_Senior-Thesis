@@ -260,3 +260,8 @@ specific information about changes, I recommend looking through the commit histo
 	I'm slowly churning out Robert's decision-making procedures which are frustrating and confusing at times. I've determined that I'm only going to
 	implement decision-making logic to cover card events for the first three turns of the game. There just isn't enough time to make over a hundred
 	different conditions, and make those conditions actually do something.
+
+3/20/2016:
+	Making great progress on the GUI, things are dynamically displayed and I can change the values through the developer menu. Unfortunately I have
+	discovered that my algorithm to randomly shuffle the cards is not doing that, its dealing each side the same cards each time. This is a problem.
+	I'll need to look into why this is happening, but for right now I have more pressing priorities.
