@@ -2134,7 +2134,224 @@ namespace Project_Oppenheimer
             MilitaryOps_USSR.Text = supervisor.game.ussrMilOps.ToString();
             SpaceRace_USA.Text = supervisor.game.usSpaceRace.ToString();
             SpaceRace_USSR.Text = supervisor.game.ussrSpaceRace.ToString();
+
             //Add conditions for showing players hand
+            List<Properties.Card> hand;
+            if (supervisor.player == 1)
+            {
+                hand = supervisor.game.cards.usHand;
+            }
+            else if (supervisor.player == -1)
+            {
+                hand = supervisor.game.cards.ussrHand;
+            }
+            else
+            {
+                hand = new List<Properties.Card> { };
+            }
+            switch (hand.Count)
+            {
+                case 0:
+                    radioButton1.Enabled = false;
+                    radioButton1.Text = "";
+                    radioButton2.Enabled = false;
+                    radioButton2.Text = "";
+                    radioButton3.Enabled = false;
+                    radioButton3.Text = "";
+                    radioButton4.Enabled = false;
+                    radioButton4.Text = "";
+                    radioButton5.Enabled = false;
+                    radioButton5.Text = "";
+                    radioButton6.Enabled = false;
+                    radioButton6.Text = "";
+                    radioButton7.Enabled = false;
+                    radioButton7.Text = "";
+                    radioButton8.Enabled = false;
+                    radioButton8.Text = "";
+                    radioButton9.Enabled = false;
+                    radioButton9.Text = "";
+                    break;
+                case 1:
+                    radioButton1.Enabled = true;
+                    radioButton1.Text = hand[0].name;
+                    radioButton2.Enabled = false;
+                    radioButton2.Text = "";
+                    radioButton3.Enabled = false;
+                    radioButton3.Text = "";
+                    radioButton4.Enabled = false;
+                    radioButton4.Text = "";
+                    radioButton5.Enabled = false;
+                    radioButton5.Text = "";
+                    radioButton6.Enabled = false;
+                    radioButton6.Text = "";
+                    radioButton7.Enabled = false;
+                    radioButton7.Text = "";
+                    radioButton8.Enabled = false;
+                    radioButton8.Text = "";
+                    radioButton9.Enabled = false;
+                    radioButton9.Text = "";
+                    break;
+                case 2:
+                    radioButton1.Enabled = true;
+                    radioButton1.Text = hand[0].name;
+                    radioButton2.Enabled = true;
+                    radioButton2.Text = hand[1].name;
+                    radioButton3.Enabled = false;
+                    radioButton3.Text = "";
+                    radioButton4.Enabled = false;
+                    radioButton4.Text = "";
+                    radioButton5.Enabled = false;
+                    radioButton5.Text = "";
+                    radioButton6.Enabled = false;
+                    radioButton6.Text = "";
+                    radioButton7.Enabled = false;
+                    radioButton7.Text = "";
+                    radioButton8.Enabled = false;
+                    radioButton8.Text = "";
+                    radioButton9.Enabled = false;
+                    radioButton9.Text = "";
+                    break;
+                case 3:
+                    radioButton1.Enabled = true;
+                    radioButton1.Text = hand[0].name;
+                    radioButton2.Enabled = true;
+                    radioButton2.Text = hand[1].name;
+                    radioButton3.Enabled = true;
+                    radioButton3.Text = hand[2].name;
+                    radioButton4.Enabled = false;
+                    radioButton4.Text = "";
+                    radioButton5.Enabled = false;
+                    radioButton5.Text = "";
+                    radioButton6.Enabled = false;
+                    radioButton6.Text = "";
+                    radioButton7.Enabled = false;
+                    radioButton7.Text = "";
+                    radioButton8.Enabled = false;
+                    radioButton8.Text = "";
+                    radioButton9.Enabled = false;
+                    radioButton9.Text = "";
+                    break;
+                case 4:
+                    radioButton1.Enabled = true;
+                    radioButton1.Text = hand[0].name;
+                    radioButton2.Enabled = true;
+                    radioButton2.Text = hand[1].name;
+                    radioButton3.Enabled = true;
+                    radioButton3.Text = hand[2].name;
+                    radioButton4.Enabled = true;
+                    radioButton4.Text = hand[3].name;
+                    radioButton5.Enabled = false;
+                    radioButton5.Text = "";
+                    radioButton6.Enabled = false;
+                    radioButton6.Text = "";
+                    radioButton7.Enabled = false;
+                    radioButton7.Text = "";
+                    radioButton8.Enabled = false;
+                    radioButton8.Text = "";
+                    radioButton9.Enabled = false;
+                    radioButton9.Text = "";
+                    break;
+                case 5:
+                    radioButton1.Enabled = true;
+                    radioButton1.Text = hand[0].name;
+                    radioButton2.Enabled = true;
+                    radioButton2.Text = hand[1].name;
+                    radioButton3.Enabled = true;
+                    radioButton3.Text = hand[2].name;
+                    radioButton4.Enabled = true;
+                    radioButton4.Text = hand[3].name;
+                    radioButton5.Enabled = true;
+                    radioButton5.Text = hand[4].name;
+                    radioButton6.Enabled = false;
+                    radioButton6.Text = "";
+                    radioButton7.Enabled = false;
+                    radioButton7.Text = "";
+                    radioButton8.Enabled = false;
+                    radioButton8.Text = "";
+                    radioButton9.Enabled = false;
+                    radioButton9.Text = "";
+                    break;
+                case 6:
+                    radioButton1.Enabled = true;
+                    radioButton1.Text = hand[0].name;
+                    radioButton2.Enabled = true;
+                    radioButton2.Text = hand[1].name;
+                    radioButton3.Enabled = true;
+                    radioButton3.Text = hand[2].name;
+                    radioButton4.Enabled = true;
+                    radioButton4.Text = hand[3].name;
+                    radioButton5.Enabled = true;
+                    radioButton5.Text = hand[4].name;
+                    radioButton6.Enabled = true;
+                    radioButton6.Text = hand[5].name;
+                    radioButton7.Enabled = false;
+                    radioButton7.Text = "";
+                    radioButton8.Enabled = false;
+                    radioButton8.Text = "";
+                    radioButton9.Enabled = false;
+                    radioButton9.Text = "";
+                    break;
+                case 7:
+                    radioButton1.Enabled = true;
+                    radioButton1.Text = hand[0].name;
+                    radioButton2.Enabled = true;
+                    radioButton2.Text = hand[1].name;
+                    radioButton3.Enabled = true;
+                    radioButton3.Text = hand[2].name;
+                    radioButton4.Enabled = true;
+                    radioButton4.Text = hand[3].name;
+                    radioButton5.Enabled = true;
+                    radioButton5.Text = hand[4].name;
+                    radioButton6.Enabled = true;
+                    radioButton6.Text = hand[5].name;
+                    radioButton7.Enabled = true;
+                    radioButton7.Text = hand[6].name;
+                    radioButton8.Enabled = false;
+                    radioButton8.Text = "";
+                    radioButton9.Enabled = false;
+                    radioButton9.Text = "";
+                    break;
+                case 8:
+                    radioButton1.Enabled = true;
+                    radioButton1.Text = hand[0].name;
+                    radioButton2.Enabled = true;
+                    radioButton2.Text = hand[1].name;
+                    radioButton3.Enabled = true;
+                    radioButton3.Text = hand[2].name;
+                    radioButton4.Enabled = true;
+                    radioButton4.Text = hand[3].name;
+                    radioButton5.Enabled = true;
+                    radioButton5.Text = hand[4].name;
+                    radioButton6.Enabled = true;
+                    radioButton6.Text = hand[5].name;
+                    radioButton7.Enabled = true;
+                    radioButton7.Text = hand[6].name;
+                    radioButton8.Enabled = true;
+                    radioButton8.Text = hand[7].name;
+                    radioButton9.Enabled = false;
+                    radioButton9.Text = "";
+                    break;
+                case 9:
+                    radioButton1.Enabled = true;
+                    radioButton1.Text = hand[0].name;
+                    radioButton2.Enabled = true;
+                    radioButton2.Text = hand[1].name;
+                    radioButton3.Enabled = true;
+                    radioButton3.Text = hand[2].name;
+                    radioButton4.Enabled = true;
+                    radioButton4.Text = hand[3].name;
+                    radioButton5.Enabled = true;
+                    radioButton5.Text = hand[4].name;
+                    radioButton6.Enabled = true;
+                    radioButton6.Text = hand[5].name;
+                    radioButton7.Enabled = true;
+                    radioButton7.Text = hand[6].name;
+                    radioButton8.Enabled = true;
+                    radioButton8.Text = hand[7].name;
+                    radioButton9.Enabled = true;
+                    radioButton9.Text = hand[8].name;
+                    break;
+            }
         }
 
         private void uSAToolStripMenuItem_Click(object sender, EventArgs e)
