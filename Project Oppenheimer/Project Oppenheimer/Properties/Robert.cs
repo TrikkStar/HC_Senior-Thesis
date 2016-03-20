@@ -189,11 +189,11 @@ namespace Project_Oppenheimer.Properties
                 //midWar priority list-need to make priority
                 if (side == -1)
                 {
-                    cardLst = new List<int> {};
+                    cardLst = new List<int> {31, 16, 28, 7, 17, 14, 9, 30, 24, 11, 13, 10, 15, 12, 8, 33, 104, 20, 34, 18, 32 };
                 }
                 else
                 {
-                    cardLst = new List<int> {};
+                    cardLst = new List<int> {25, 31, 21, 23, 27, 106, 105, 24, 29, 22, 4, 34, 20, 35, 19, 5, 103, 18, 26, 32 };
                 }
             }
             else
@@ -201,11 +201,11 @@ namespace Project_Oppenheimer.Properties
                 //lateWar priority list-need to make priority
                 if (side == -1)
                 {
-                    cardLst = new List<int> {};
+                    cardLst = new List<int> {31, 16, 28, 7, 17, 14, 9, 30, 24, 11, 13, 10, 15, 12, 8, 33, 104, 20, 34, 18, 32 };
                 }
                 else
                 {
-                    cardLst = new List<int> {};
+                    cardLst = new List<int> {25, 31, 21, 23, 27, 106, 105, 24, 29, 22, 4, 34, 20, 35, 19, 5, 103, 18, 26, 32 };
                 }
             }
             foreach (int cardId in cardLst)

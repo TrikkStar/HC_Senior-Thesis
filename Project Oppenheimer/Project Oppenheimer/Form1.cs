@@ -2153,5 +2153,23 @@ namespace Project_Oppenheimer
             refreshEvent();
             //play game
         }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            supervisor.game.turn = 1;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            supervisor.game.turn = 2;
+            refreshEvent();
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            supervisor.game.turn = 3;
+            refreshEvent();
+        }
     }
 }
