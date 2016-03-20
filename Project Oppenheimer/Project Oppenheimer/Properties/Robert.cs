@@ -388,18 +388,34 @@ namespace Project_Oppenheimer.Properties
                     }
                     break;
                 case 16:
+                    if (!checkRegionCondition(2))
+                    {
+                        WarsawPactSelection();
+                        returnValue = true;
+                    }
                     break;
                 case 28:
+                    returnValue = SuezCrisisCondition();
                     break;
                 case 7:
+                    if ((!game.TheIronLady) && (!checkRegionCondition(2)))
+                    {
+                        targetCountryRemoval(1, -4, 2);
+                        targetCountryRemoval(1, -4, 1);
+                        returnValue = true;
+                    }
                     break;
                 case 33:
+                    //Ai not doing this unless I have extra time
                     break;
                 case 8:
+                    returnValue = ((game.countryLst.countries[17].influenceUSSR < 2) && (game.countryLst.countries[17].influenceUSA >= 2));
                     break;
                 case 12:
+                    returnValue = ((game.countryLst.countries[60].influenceUSSR < 3) && (game.countryLst.countries[60].influenceUSA >= 2));
                     break;
                 case 15:
+                    returnValue = ((game.countryLst.countries[23].influenceUSSR <= 2) && (game.countryLst.countries[23].influenceUSA >= 2));
                     break;
             }
             return returnValue;
@@ -726,6 +742,49 @@ namespace Project_Oppenheimer.Properties
                 }
             }
             return ((game.countryLst.countries[38].influenceUSA > 2) && (adjUs < 2));
+        }
+
+        private void WarsawPactSelection()
+        {
+            if (numCountries(1, -2) >= 4)
+            {
+                int itter = 0;
+                while (itter < 4)
+                {
+                    targetCountryRemoval(1, -2, 10);
+                    itter++;
+                }
+            }
+            else
+            {
+                targetCountryAdd(-2, 2);
+                targetCountryAdd(-2, 2);
+                targetCountryAdd(-2, 1);
+            }
+        }
+
+        private bool SuezCrisisCondition()
+        {
+            var france = game.countryLst.countries[27];
+            var UK = game.countryLst.countries[75];
+            var israel = game.countryLst.countries[38];
+            if (israel.influenceUSA + UK.influenceUSA + france.influenceUSA >= 5)
+            {
+                if (israel.influenceUSA >= 2)
+                {
+                    targets.Add(38);
+                }
+                if (france.influenceUSA >= 2)
+                {
+                    targets.Add(27);
+                }
+                if ((UK.influenceUSSR >= 2) && (targets.Count < 2))
+                {
+                    targets.Add(75);
+                }
+                return true;
+            }
+            return false;
         }
     }
 }
