@@ -93,7 +93,7 @@
             this.Name = "EditCountryScore";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "Add Country Score";
+            this.Text = "Add Score";
             this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.USA_UpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.USSR_UpDown)).EndInit();

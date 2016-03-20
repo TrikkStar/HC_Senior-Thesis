@@ -2753,5 +2753,11 @@ namespace Project_Oppenheimer
             supervisor.game.round = 16;
             refreshEvent();
         }
+
+        private void algeriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.EditCountryScore();
+            popup.ShowDialog();
+        }
     }
 }
