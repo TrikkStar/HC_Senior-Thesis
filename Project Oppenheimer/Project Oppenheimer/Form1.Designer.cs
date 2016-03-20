@@ -132,8 +132,8 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel31 = new System.Windows.Forms.TableLayoutPanel();
-            this.SpainPortugul_USA = new System.Windows.Forms.Label();
-            this.SpainPortugul_USSR = new System.Windows.Forms.Label();
+            this.SpainPortugal_USA = new System.Windows.Forms.Label();
+            this.SpainPortugal_USSR = new System.Windows.Forms.Label();
             this.label184 = new System.Windows.Forms.Label();
             this.label185 = new System.Windows.Forms.Label();
             this.tableLayoutPanel62 = new System.Windows.Forms.TableLayoutPanel();
@@ -1644,10 +1644,11 @@
             // label196
             // 
             this.label196.AutoSize = true;
+            this.label196.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label196.Location = new System.Drawing.Point(75, 124);
             this.label196.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label196.Name = "label196";
-            this.label196.Size = new System.Drawing.Size(67, 13);
+            this.label196.Size = new System.Drawing.Size(57, 12);
             this.label196.TabIndex = 24;
             this.label196.Text = "Saudi Arabia";
             // 
@@ -2129,12 +2130,13 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(93, 160);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 13);
+            this.label4.Size = new System.Drawing.Size(65, 12);
             this.label4.TabIndex = 37;
-            this.label4.Text = "Spain/Portugul";
+            this.label4.Text = "Spain/Portugal";
             // 
             // tableLayoutPanel31
             // 
@@ -2142,8 +2144,8 @@
             this.tableLayoutPanel31.ColumnCount = 2;
             this.tableLayoutPanel31.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel31.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel31.Controls.Add(this.SpainPortugul_USA, 0, 0);
-            this.tableLayoutPanel31.Controls.Add(this.SpainPortugul_USSR, 1, 0);
+            this.tableLayoutPanel31.Controls.Add(this.SpainPortugal_USA, 0, 0);
+            this.tableLayoutPanel31.Controls.Add(this.SpainPortugal_USSR, 1, 0);
             this.tableLayoutPanel31.Location = new System.Drawing.Point(95, 176);
             this.tableLayoutPanel31.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel31.Name = "tableLayoutPanel31";
@@ -2152,33 +2154,33 @@
             this.tableLayoutPanel31.Size = new System.Drawing.Size(51, 16);
             this.tableLayoutPanel31.TabIndex = 36;
             // 
-            // SpainPortugul_USA
+            // SpainPortugal_USA
             // 
-            this.SpainPortugul_USA.AutoSize = true;
-            this.SpainPortugul_USA.BackColor = System.Drawing.Color.White;
-            this.SpainPortugul_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SpainPortugul_USA.ForeColor = System.Drawing.Color.Blue;
-            this.SpainPortugul_USA.Location = new System.Drawing.Point(3, 1);
-            this.SpainPortugul_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.SpainPortugul_USA.Name = "SpainPortugul_USA";
-            this.SpainPortugul_USA.Size = new System.Drawing.Size(14, 14);
-            this.SpainPortugul_USA.TabIndex = 0;
-            this.SpainPortugul_USA.Text = "10";
-            this.SpainPortugul_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SpainPortugal_USA.AutoSize = true;
+            this.SpainPortugal_USA.BackColor = System.Drawing.Color.White;
+            this.SpainPortugal_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SpainPortugal_USA.ForeColor = System.Drawing.Color.Blue;
+            this.SpainPortugal_USA.Location = new System.Drawing.Point(3, 1);
+            this.SpainPortugal_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SpainPortugal_USA.Name = "SpainPortugal_USA";
+            this.SpainPortugal_USA.Size = new System.Drawing.Size(14, 14);
+            this.SpainPortugal_USA.TabIndex = 0;
+            this.SpainPortugal_USA.Text = "10";
+            this.SpainPortugal_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // SpainPortugul_USSR
+            // SpainPortugal_USSR
             // 
-            this.SpainPortugul_USSR.AutoSize = true;
-            this.SpainPortugul_USSR.BackColor = System.Drawing.Color.White;
-            this.SpainPortugul_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SpainPortugul_USSR.ForeColor = System.Drawing.Color.Red;
-            this.SpainPortugul_USSR.Location = new System.Drawing.Point(28, 1);
-            this.SpainPortugul_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.SpainPortugul_USSR.Name = "SpainPortugul_USSR";
-            this.SpainPortugul_USSR.Size = new System.Drawing.Size(14, 14);
-            this.SpainPortugul_USSR.TabIndex = 5;
-            this.SpainPortugul_USSR.Text = "10";
-            this.SpainPortugul_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SpainPortugal_USSR.AutoSize = true;
+            this.SpainPortugal_USSR.BackColor = System.Drawing.Color.White;
+            this.SpainPortugal_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SpainPortugal_USSR.ForeColor = System.Drawing.Color.Red;
+            this.SpainPortugal_USSR.Location = new System.Drawing.Point(28, 1);
+            this.SpainPortugal_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SpainPortugal_USSR.Name = "SpainPortugal_USSR";
+            this.SpainPortugal_USSR.Size = new System.Drawing.Size(14, 14);
+            this.SpainPortugal_USSR.TabIndex = 5;
+            this.SpainPortugal_USSR.Text = "10";
+            this.SpainPortugal_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label184
             // 
@@ -2291,10 +2293,11 @@
             // label55
             // 
             this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label55.Location = new System.Drawing.Point(93, 301);
             this.label55.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(66, 13);
+            this.label55.Size = new System.Drawing.Size(57, 12);
             this.label55.TabIndex = 39;
             this.label55.Text = "W. Germany";
             // 
@@ -2517,10 +2520,11 @@
             // label113
             // 
             this.label113.AutoSize = true;
+            this.label113.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label113.Location = new System.Drawing.Point(13, 230);
             this.label113.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(62, 13);
+            this.label113.Size = new System.Drawing.Size(54, 12);
             this.label113.TabIndex = 17;
             this.label113.Text = "E. Germany";
             // 
@@ -2733,10 +2737,11 @@
             // label155
             // 
             this.label155.AutoSize = true;
+            this.label155.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label155.Location = new System.Drawing.Point(13, 159);
             this.label155.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label155.Name = "label155";
-            this.label155.Size = new System.Drawing.Size(82, 13);
+            this.label155.Size = new System.Drawing.Size(72, 12);
             this.label155.TabIndex = 13;
             this.label155.Text = "Czechoslovakia";
             // 
@@ -3304,10 +3309,11 @@
             // label116
             // 
             this.label116.AutoSize = true;
+            this.label116.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label116.Location = new System.Drawing.Point(13, 159);
             this.label116.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label116.Name = "label116";
-            this.label116.Size = new System.Drawing.Size(58, 13);
+            this.label116.Size = new System.Drawing.Size(50, 12);
             this.label116.TabIndex = 13;
             this.label116.Text = "Guatemala";
             // 
@@ -3412,10 +3418,11 @@
             // label122
             // 
             this.label122.AutoSize = true;
+            this.label122.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label122.Location = new System.Drawing.Point(13, 124);
             this.label122.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label122.Name = "label122";
-            this.label122.Size = new System.Drawing.Size(61, 13);
+            this.label122.Size = new System.Drawing.Size(52, 12);
             this.label122.TabIndex = 9;
             this.label122.Text = "El Salvador";
             // 
@@ -3520,10 +3527,11 @@
             // label128
             // 
             this.label128.AutoSize = true;
+            this.label128.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label128.Location = new System.Drawing.Point(13, 89);
             this.label128.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label128.Name = "label128";
-            this.label128.Size = new System.Drawing.Size(83, 13);
+            this.label128.Size = new System.Drawing.Size(71, 12);
             this.label128.TabIndex = 11;
             this.label128.Text = "Dominican Rep.";
             // 
@@ -3939,10 +3947,11 @@
             // label68
             // 
             this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label68.Location = new System.Drawing.Point(13, 230);
             this.label68.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(82, 13);
+            this.label68.Size = new System.Drawing.Size(70, 12);
             this.label68.TabIndex = 17;
             this.label68.Text = "Laos/Cambodia";
             // 
@@ -4253,12 +4262,13 @@
             // label85
             // 
             this.label85.AutoSize = true;
+            this.label85.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label85.Location = new System.Drawing.Point(92, 124);
             this.label85.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(66, 13);
+            this.label85.Size = new System.Drawing.Size(48, 13);
             this.label85.TabIndex = 24;
-            this.label85.Text = "South Korea";
+            this.label85.Text = "S. Korea";
             // 
             // label86
             // 
@@ -4479,12 +4489,13 @@
             // label98
             // 
             this.label98.AutoSize = true;
+            this.label98.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label98.Location = new System.Drawing.Point(92, 20);
             this.label98.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(64, 13);
+            this.label98.Size = new System.Drawing.Size(49, 13);
             this.label98.TabIndex = 21;
-            this.label98.Text = "North Korea";
+            this.label98.Text = "N. Korea";
             // 
             // label99
             // 
@@ -4543,10 +4554,11 @@
             // label102
             // 
             this.label102.AutoSize = true;
+            this.label102.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label102.Location = new System.Drawing.Point(13, 19);
             this.label102.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label102.Name = "label102";
-            this.label102.Size = new System.Drawing.Size(63, 13);
+            this.label102.Size = new System.Drawing.Size(55, 12);
             this.label102.TabIndex = 7;
             this.label102.Text = "Afghanistan";
             // 
@@ -4948,12 +4960,13 @@
             // label28
             // 
             this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.Location = new System.Drawing.Point(76, 231);
             this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(101, 13);
+            this.label28.Size = new System.Drawing.Size(61, 12);
             this.label28.TabIndex = 33;
-            this.label28.Text = "West African States";
+            this.label28.Text = "W. Af. States";
             // 
             // label19
             // 
@@ -5272,10 +5285,11 @@
             // label37
             // 
             this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label37.Location = new System.Drawing.Point(76, 124);
             this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(65, 13);
+            this.label37.Size = new System.Drawing.Size(56, 12);
             this.label37.TabIndex = 24;
             this.label37.Text = "South Africa";
             // 
@@ -5444,12 +5458,13 @@
             // label43
             // 
             this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label43.Location = new System.Drawing.Point(76, 54);
             this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(90, 13);
+            this.label43.Size = new System.Drawing.Size(67, 12);
             this.label43.TabIndex = 25;
-            this.label43.Text = "SE African States";
+            this.label43.Text = "S.E. Af. States";
             // 
             // tableLayoutPanel3
             // 
@@ -5498,10 +5513,11 @@
             // label44
             // 
             this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label44.Location = new System.Drawing.Point(76, 20);
             this.label44.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(80, 13);
+            this.label44.Size = new System.Drawing.Size(68, 12);
             this.label44.TabIndex = 21;
             this.label44.Text = "Saharan States";
             // 
@@ -5728,20 +5744,20 @@
             this.uSAToolStripMenuItem,
             this.uSSRToolStripMenuItem});
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.newGameToolStripMenuItem.Text = "New game";
             // 
             // uSAToolStripMenuItem
             // 
             this.uSAToolStripMenuItem.Name = "uSAToolStripMenuItem";
-            this.uSAToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.uSAToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
             this.uSAToolStripMenuItem.Text = "USA";
             this.uSAToolStripMenuItem.Click += new System.EventHandler(this.uSAToolStripMenuItem_Click);
             // 
             // uSSRToolStripMenuItem
             // 
             this.uSSRToolStripMenuItem.Name = "uSSRToolStripMenuItem";
-            this.uSSRToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.uSSRToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
             this.uSSRToolStripMenuItem.Text = "USSR";
             this.uSSRToolStripMenuItem.Click += new System.EventHandler(this.uSSRToolStripMenuItem_Click);
             // 
@@ -5765,7 +5781,7 @@
             this.middleEastToolStripMenuItem,
             this.southAmericaToolStripMenuItem});
             this.countryToolStripMenuItem.Name = "countryToolStripMenuItem";
-            this.countryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.countryToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.countryToolStripMenuItem.Text = "Country";
             // 
             // africaToolStripMenuItem
@@ -6410,7 +6426,7 @@
             this.eventToolStripMenuItem,
             this.resetToolStripMenuItem});
             this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
-            this.gameToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.gameToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.gameToolStripMenuItem.Text = "Game";
             // 
             // turnToolStripMenuItem
@@ -7165,7 +7181,7 @@
             this.uSAToolStripMenuItem1,
             this.uSSRToolStripMenuItem1});
             this.handsToolStripMenuItem.Name = "handsToolStripMenuItem";
-            this.handsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.handsToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.handsToolStripMenuItem.Text = "Hands";
             // 
             // uSAToolStripMenuItem1
@@ -7511,8 +7527,8 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel31;
-        private System.Windows.Forms.Label SpainPortugul_USA;
-        private System.Windows.Forms.Label SpainPortugul_USSR;
+        private System.Windows.Forms.Label SpainPortugal_USA;
+        private System.Windows.Forms.Label SpainPortugal_USSR;
         private System.Windows.Forms.Label label184;
         private System.Windows.Forms.Label label185;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel62;

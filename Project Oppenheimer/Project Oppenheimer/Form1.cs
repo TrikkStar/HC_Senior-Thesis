@@ -1703,27 +1703,27 @@ namespace Project_Oppenheimer
             //Spain/Portugal
             if (supervisor.game.countryLst.countries[67].controller == 1)
             {
-                SpainPortugul_USA.ForeColor = Color.White;
-                SpainPortugul_USA.BackColor = Color.Blue;
-                SpainPortugul_USSR.ForeColor = Color.Red;
-                SpainPortugul_USSR.BackColor = Color.White;
+                SpainPortugal_USA.ForeColor = Color.White;
+                SpainPortugal_USA.BackColor = Color.Blue;
+                SpainPortugal_USSR.ForeColor = Color.Red;
+                SpainPortugal_USSR.BackColor = Color.White;
             }
             else if (supervisor.game.countryLst.countries[67].controller == -1)
             {
-                SpainPortugul_USA.ForeColor = Color.Blue;
-                SpainPortugul_USA.BackColor = Color.White;
-                SpainPortugul_USSR.ForeColor = Color.White;
-                SpainPortugul_USSR.BackColor = Color.Red;
+                SpainPortugal_USA.ForeColor = Color.Blue;
+                SpainPortugal_USA.BackColor = Color.White;
+                SpainPortugal_USSR.ForeColor = Color.White;
+                SpainPortugal_USSR.BackColor = Color.Red;
             }
             else
             {
-                SpainPortugul_USA.ForeColor = Color.Blue;
-                SpainPortugul_USA.BackColor = Color.White;
-                SpainPortugul_USSR.ForeColor = Color.Red;
-                SpainPortugul_USSR.BackColor = Color.White;
+                SpainPortugal_USA.ForeColor = Color.Blue;
+                SpainPortugal_USA.BackColor = Color.White;
+                SpainPortugal_USSR.ForeColor = Color.Red;
+                SpainPortugal_USSR.BackColor = Color.White;
             }
-            SpainPortugul_USA.Text = supervisor.game.countryLst.countries[67].influenceUSA.ToString();
-            SpainPortugul_USSR.Text = supervisor.game.countryLst.countries[67].influenceUSSR.ToString();
+            SpainPortugal_USA.Text = supervisor.game.countryLst.countries[67].influenceUSA.ToString();
+            SpainPortugal_USSR.Text = supervisor.game.countryLst.countries[67].influenceUSSR.ToString();
 
             //Sudan
             if (supervisor.game.countryLst.countries[68].controller == 1)
