@@ -43,6 +43,11 @@ namespace Project_Oppenheimer.Properties
             game.cards.deal(1);
         }
 
+        public void initialInfluencePlacement()
+        {
+
+        }
+
         public void playCard(int player, int card)
         {
 

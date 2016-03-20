@@ -3570,6 +3570,51 @@ namespace Project_Oppenheimer
             refreshEvent();
         }
 
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            Play_cardButton.Enabled = true;
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            Play_cardButton.Enabled = true;
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            Play_cardButton.Enabled = true;
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            Play_cardButton.Enabled = true;
+        }
+
+        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+            Play_cardButton.Enabled = true;
+        }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+            Play_cardButton.Enabled = true;
+        }
+
+        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        {
+            Play_cardButton.Enabled = true;
+        }
+
+        private void radioButton8_CheckedChanged(object sender, EventArgs e)
+        {
+            Play_cardButton.Enabled = true;
+        }
+
+        private void radioButton9_CheckedChanged(object sender, EventArgs e)
+        {
+            Play_cardButton.Enabled = true;
+        }
+
         private void Play_cardButton_Click(object sender, EventArgs e)
         {
             List<Properties.Card> hand;
@@ -3622,51 +3667,6 @@ namespace Project_Oppenheimer
             popup.ShowDialog();
             //possibly more stuff here
             refreshEvent();
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-            Play_cardButton.Enabled = true;
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            Play_cardButton.Enabled = true;
-        }
-
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-            Play_cardButton.Enabled = true;
-        }
-
-        private void radioButton4_CheckedChanged(object sender, EventArgs e)
-        {
-            Play_cardButton.Enabled = true;
-        }
-
-        private void radioButton5_CheckedChanged(object sender, EventArgs e)
-        {
-            Play_cardButton.Enabled = true;
-        }
-
-        private void radioButton6_CheckedChanged(object sender, EventArgs e)
-        {
-            Play_cardButton.Enabled = true;
-        }
-
-        private void radioButton7_CheckedChanged(object sender, EventArgs e)
-        {
-            Play_cardButton.Enabled = true;
-        }
-
-        private void radioButton8_CheckedChanged(object sender, EventArgs e)
-        {
-            Play_cardButton.Enabled = true;
-        }
-
-        private void radioButton9_CheckedChanged(object sender, EventArgs e)
-        {
-            Play_cardButton.Enabled = true;
         }
     }
 }
