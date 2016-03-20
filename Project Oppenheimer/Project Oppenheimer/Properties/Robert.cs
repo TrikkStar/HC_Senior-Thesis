@@ -38,7 +38,11 @@ namespace Project_Oppenheimer.Properties
                 }
                 if (!completed)
                 {
-                    //logic for playing event if one isn't found
+                    if (hand[0].id != 6)
+                    {
+                        cardToPlay = hand[0].id;
+                        actionType = "Desperation";
+                    }
                 }
             }
             else
@@ -47,6 +51,10 @@ namespace Project_Oppenheimer.Properties
                 if (!completed)
                 {
                     playEventCard();
+                }
+                if (!completed)
+                {
+                    playSpaceRace();
                 }
             }
         }
@@ -240,33 +248,24 @@ namespace Project_Oppenheimer.Properties
 
         private bool checkEventCondition (int x)
         {
-            bool returnValue = false;
             switch (x)
             {
                 case 25:
-                    returnValue = ((game.round == 2) || (game.round == 0));
-                    break;
+                    return ((game.round == 2) || (game.round == 0));
                 case 31:
-                    returnValue = (game.round < 3);
-                    break;
+                    return (game.round < 3);
                 case 21:
-                    returnValue = ((game.MarshallPlan) || (game.WarsawPactFormed));
-                    break;
+                    return ((game.MarshallPlan) || (game.WarsawPactFormed));
                 case 23:
-                    returnValue = ((!game.NATO) || (!checkRegionCondition(2)));
-                    break;
+                    return ((!game.NATO) || (!checkRegionCondition(2)));
                 case 27:
-                    returnValue = (game.countryLst.countries[41].influenceUSA < 3);
-                    break;
+                    return (game.countryLst.countries[41].influenceUSA < 3);
                 case 106:
-                    returnValue = (game.countryLst.countries[13].controller == 1);
-                    break;
+                    return (game.countryLst.countries[13].controller == 1);
                 case 105:
-                    returnValue = ((game.NATO) && (game.countryLst.countries[75].controller == 1));
-                    break;
+                    return ((game.NATO) && (game.countryLst.countries[75].controller == 1));
                 case 24:
-                    returnValue = IndoPakistaniWarCondidtion();
-                    break;
+                    return IndoPakistaniWarCondidtion();
                 case 29:
                     if (game.turn < 8)
                     {
@@ -278,8 +277,7 @@ namespace Project_Oppenheimer.Properties
                                 targetCountryRemoval(-1, -2, 1);
                                 var++;
                             }
-                            returnValue = true;
-                            break;
+                            return true;
                         }
                     }
                     else
@@ -292,41 +290,30 @@ namespace Project_Oppenheimer.Properties
                                 targetCountryRemoval(-1, -2, 2);
                                 var++;
                             }
-                            returnValue = true;
-                            break;
+                            return true;
                         }
                     }
-                    break;
+                    return false;
                 case 22:
-                    returnValue = IndependentRedsCondition();
-                    break;
+                    return IndependentRedsCondition();
                 case 4:
-                    returnValue = (game.defcon == 3);
-                    break;
+                    return (game.defcon == 3);
                 case 34:
-                    returnValue = ((game.defcon == 2) && (checkRegionCondition(2)) && (checkRegionCondition(1)) && (checkRegionCondition(3)));
-                    break;
+                    return ((game.defcon == 2) && (checkRegionCondition(2)) && (checkRegionCondition(1)) && (checkRegionCondition(3)));
                 case 20:
-                    returnValue = (game.defcon > 2);
-                    break;
+                    return (game.defcon > 2);
                 case 35:
-                    returnValue = ((game.countryLst.countries[71].controller == 1) && (!cardInHand(6)));
-                    break;
+                    return ((game.countryLst.countries[71].controller == 1) && (!cardInHand(6)));
                 case 19:
-                    returnValue = TrumanDoctrineCondition();
-                    break;
+                    return TrumanDoctrineCondition();
                 case 5:
-                    returnValue = (game.round == 2);
-                    break;
+                    return (game.round == 2);
                 case 103:
-                    returnValue = (game.round == 0);
-                    break;
+                    return (game.round == 0);
                 case 18:
-                    returnValue = true;
-                    break;
+                    return true;
                 case 26:
-                    returnValue = true;
-                    break;
+                    return true;
                 case 32:
                     //need to think on this one
                     break;
@@ -340,28 +327,26 @@ namespace Project_Oppenheimer.Properties
                                 if ((region == card.id))
                                 {
                                     targetCountryAdd(region, 1);
-                                    returnValue = true;
-                                    break;
+                                    return true;
                                 }
                             }
                         }
                     }
-                    break;
+                    return false;
                 case 10:
-                    returnValue = ((game.round >= 11) && (game.countryLst.countries[79].influenceUSA > 2));
-                    break;
+                    return ((game.round >= 11) && (game.countryLst.countries[79].influenceUSA > 2));
                 case 13:
                     if (game.ussrMilOps <= 3)
                     {
-                        returnValue = ArabIsraeliWarCondition();
+                        return ArabIsraeliWarCondition();
                     }
-                    break;
+                    return false;
                 case 11:
                     if (game.ussrMilOps <= 3)
                     {
-                        returnValue = ((game.countryLst.countries[66].influenceUSA > 2) && (game.countryLst.countries[41].controller != 1) && (game.countryLst.countries[71].controller != 1));
+                        return ((game.countryLst.countries[66].influenceUSA > 2) && (game.countryLst.countries[41].controller != 1) && (game.countryLst.countries[71].controller != 1));
                     }
-                    break;
+                    return false;
                 case 30:
                     if (!checkRegionCondition(79))
                     {
@@ -371,7 +356,7 @@ namespace Project_Oppenheimer.Properties
                             targetCountryAdd(79, 1);
                             itter++;
                         }
-                        returnValue = true;
+                        return true;
                     }
                     else if (numCountries(-1, 38) < 5)
                     {
@@ -381,15 +366,13 @@ namespace Project_Oppenheimer.Properties
                             targetCountryAdd(38, 1);
                             itter++;
                         }
-                        returnValue = true;
+                        return true;
                     }
-                    break;
+                    return false;
                 case 9:
-                    returnValue = ((game.round < 7) && (game.countryLst.countries[78].influenceUSSR < 3));
-                    break;
+                    return ((game.round < 7) && (game.countryLst.countries[78].influenceUSSR < 3));
                 case 17:
-                    returnValue = (game.countryLst.countries[27].influenceUSA <= 2);
-                    break;
+                    return (game.countryLst.countries[27].influenceUSA <= 2);
                 case 14:
                     if (!checkRegionCondition(2))
                     {
@@ -398,41 +381,37 @@ namespace Project_Oppenheimer.Properties
                         {
                             targetCountryNotControlledAdd(-2, 1, 1);
                         }
-                        returnValue = true;
+                        return true;
                     }
-                    break;
+                    return false;
                 case 16:
                     if (!checkRegionCondition(2))
                     {
                         WarsawPactSelection();
-                        returnValue = true;
+                        return true;
                     }
-                    break;
+                    return false;
                 case 28:
-                    returnValue = SuezCrisisCondition();
-                    break;
+                    return SuezCrisisCondition();
                 case 7:
                     if ((!game.TheIronLady) && (!checkRegionCondition(2)))
                     {
                         targetCountryRemoval(1, -4, 2);
                         targetCountryRemoval(1, -4, 1);
-                        returnValue = true;
+                        return true;
                     }
-                    break;
+                    return false;
                 case 33:
                     //Ai not doing this unless I have extra time
                     break;
                 case 8:
-                    returnValue = ((game.countryLst.countries[17].influenceUSSR < 2) && (game.countryLst.countries[17].influenceUSA >= 2));
-                    break;
+                    return ((game.countryLst.countries[17].influenceUSSR < 2) && (game.countryLst.countries[17].influenceUSA >= 2));
                 case 12:
-                    returnValue = ((game.countryLst.countries[60].influenceUSSR < 3) && (game.countryLst.countries[60].influenceUSA >= 2));
-                    break;
+                    return ((game.countryLst.countries[60].influenceUSSR < 3) && (game.countryLst.countries[60].influenceUSA >= 2));
                 case 15:
-                    returnValue = ((game.countryLst.countries[23].influenceUSSR <= 2) && (game.countryLst.countries[23].influenceUSA >= 2));
-                    break;
+                    return ((game.countryLst.countries[23].influenceUSSR <= 2) && (game.countryLst.countries[23].influenceUSA >= 2));
             }
-            return returnValue;
+            return false;
         }
 
         private int numCountries(int player, int location)
@@ -799,6 +778,65 @@ namespace Project_Oppenheimer.Properties
                 return true;
             }
             return false;
+        }
+
+        private int playSpaceRace()
+        {
+            List<int> cardLst;
+            if (game.turn < 4)
+            {
+                //earlyWar priority lists
+                if (side == 1)
+                {
+                    cardLst = new List<int> {31, 16, 28, 7, 17, 14, 9, 30, 11, 13, 10, 15, 12, 8, 33, 104};
+                }
+                else
+                {
+                    cardLst = new List<int> {25, 31, 21, 23, 27, 106, 105, 29, 22, 4, 35, 19, 5, 103, 26};
+                }
+            }
+            else if (game.turn < 8)
+            {
+                //midWar priority list-need to make priority
+                if (side == 1)
+                {
+                    cardLst = new List<int> {31, 16, 28, 7, 17, 14, 9, 30, 11, 13, 10, 15, 12, 8, 33, 104};
+                }
+                else
+                {
+                    cardLst = new List<int> {25, 31, 21, 23, 27, 106, 105, 29, 22, 4, 35, 19, 5, 103, 26};
+                }
+            }
+            else
+            {
+                //lateWar priority list-need to make priority
+                if (side == 1)
+                {
+                    cardLst = new List<int> {31, 16, 28, 7, 17, 14, 9, 30, 11, 13, 10, 15, 12, 8, 33, 104};
+                }
+                else
+                {
+                    cardLst = new List<int> {25, 31, 21, 23, 27, 106, 105, 29, 22, 4, 35, 19, 5, 103, 26};
+                }
+            }
+            List<int> valu = new List<int> {4, 3, 2, 1};
+            foreach (int ops in valu)
+            {
+                foreach (int cardId in cardLst)
+                {
+                    foreach (Card card in hand)
+                    {
+                        if ((card.opsValue == ops) && (cardId == card.id) && (checkEventCondition(cardId)))
+                        {
+                            cardToPlay = cardId;
+                            actionType = "SpaceRace";
+                            completed = true;
+                            return 0;
+                        }
+                    }
+                }
+            }
+            return 0;
         }
     }
 }
