@@ -18,7 +18,6 @@ namespace Project_Oppenheimer.Properties
 
         public Robert(Gamestate gme, int sde)
         {
-            //Need to add logic for playing a card in headline phase
             game = gme;
             side = sde;
             if (side == 1)
@@ -30,10 +29,25 @@ namespace Project_Oppenheimer.Properties
                 hand = game.cards.ussrHand;
             }
             targets = new List<int>();
-            playScoringCard();
-            if (!completed)
+            if (game.turn == 0)
             {
-                playEventCard();
+                playScoringCard();
+                if (!completed)
+                {
+                    playEventCard();
+                }
+                if (!completed)
+                {
+                    //logic for playing event if one isn't found
+                }
+            }
+            else
+            {
+                playScoringCard();
+                if (!completed)
+                {
+                    playEventCard();
+                }
             }
         }
 
