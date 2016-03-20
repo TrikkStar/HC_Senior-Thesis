@@ -716,9 +716,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(670, 417);
+            this.button1.Location = new System.Drawing.Point(893, 513);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 20;
             this.button1.Text = "Refresh";
             this.button1.UseVisualStyleBackColor = true;
@@ -738,11 +739,11 @@
             this.groupBox7.Controls.Add(this.Round_lbl);
             this.groupBox7.Controls.Add(this.label251);
             this.groupBox7.Controls.Add(this.Turn_lbl);
-            this.groupBox7.Location = new System.Drawing.Point(646, 240);
-            this.groupBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox7.Location = new System.Drawing.Point(861, 295);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox7.Size = new System.Drawing.Size(142, 167);
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox7.Size = new System.Drawing.Size(189, 206);
             this.groupBox7.TabIndex = 19;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Board State";
@@ -750,10 +751,9 @@
             // label261
             // 
             this.label261.AutoSize = true;
-            this.label261.Location = new System.Drawing.Point(74, 89);
-            this.label261.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label261.Location = new System.Drawing.Point(99, 110);
             this.label261.Name = "label261";
-            this.label261.Size = new System.Drawing.Size(67, 13);
+            this.label261.Size = new System.Drawing.Size(85, 17);
             this.label261.TabIndex = 45;
             this.label261.Text = "Space Race";
             // 
@@ -765,12 +765,12 @@
             this.tableLayoutPanel85.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel85.Controls.Add(this.SpaceRace_USA, 0, 0);
             this.tableLayoutPanel85.Controls.Add(this.SpaceRace_USSR, 1, 0);
-            this.tableLayoutPanel85.Location = new System.Drawing.Point(76, 106);
-            this.tableLayoutPanel85.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel85.Location = new System.Drawing.Point(101, 130);
+            this.tableLayoutPanel85.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel85.Name = "tableLayoutPanel85";
             this.tableLayoutPanel85.RowCount = 1;
             this.tableLayoutPanel85.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel85.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel85.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel85.TabIndex = 44;
             // 
             // SpaceRace_USA
@@ -779,10 +779,9 @@
             this.SpaceRace_USA.BackColor = System.Drawing.Color.White;
             this.SpaceRace_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SpaceRace_USA.ForeColor = System.Drawing.Color.Blue;
-            this.SpaceRace_USA.Location = new System.Drawing.Point(3, 1);
-            this.SpaceRace_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SpaceRace_USA.Location = new System.Drawing.Point(4, 1);
             this.SpaceRace_USA.Name = "SpaceRace_USA";
-            this.SpaceRace_USA.Size = new System.Drawing.Size(14, 14);
+            this.SpaceRace_USA.Size = new System.Drawing.Size(26, 17);
             this.SpaceRace_USA.TabIndex = 0;
             this.SpaceRace_USA.Text = "10";
             this.SpaceRace_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -793,10 +792,9 @@
             this.SpaceRace_USSR.BackColor = System.Drawing.Color.White;
             this.SpaceRace_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SpaceRace_USSR.ForeColor = System.Drawing.Color.Red;
-            this.SpaceRace_USSR.Location = new System.Drawing.Point(28, 1);
-            this.SpaceRace_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SpaceRace_USSR.Location = new System.Drawing.Point(37, 1);
             this.SpaceRace_USSR.Name = "SpaceRace_USSR";
-            this.SpaceRace_USSR.Size = new System.Drawing.Size(14, 14);
+            this.SpaceRace_USSR.Size = new System.Drawing.Size(26, 17);
             this.SpaceRace_USSR.TabIndex = 5;
             this.SpaceRace_USSR.Text = "10";
             this.SpaceRace_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -804,20 +802,18 @@
             // label258
             // 
             this.label258.AutoSize = true;
-            this.label258.Location = new System.Drawing.Point(74, 18);
-            this.label258.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label258.Location = new System.Drawing.Point(99, 22);
             this.label258.Name = "label258";
-            this.label258.Size = new System.Drawing.Size(61, 13);
+            this.label258.Size = new System.Drawing.Size(82, 17);
             this.label258.TabIndex = 43;
             this.label258.Text = "Military Ops";
             // 
             // label256
             // 
             this.label256.AutoSize = true;
-            this.label256.Location = new System.Drawing.Point(12, 122);
-            this.label256.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label256.Location = new System.Drawing.Point(16, 150);
             this.label256.Name = "label256";
-            this.label256.Size = new System.Drawing.Size(42, 13);
+            this.label256.Size = new System.Drawing.Size(53, 17);
             this.label256.TabIndex = 18;
             this.label256.Text = "Defcon";
             // 
@@ -829,12 +825,12 @@
             this.tableLayoutPanel84.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel84.Controls.Add(this.MilitaryOps_USA, 0, 0);
             this.tableLayoutPanel84.Controls.Add(this.MilitaryOps_USSR, 1, 0);
-            this.tableLayoutPanel84.Location = new System.Drawing.Point(76, 34);
-            this.tableLayoutPanel84.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel84.Location = new System.Drawing.Point(101, 42);
+            this.tableLayoutPanel84.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel84.Name = "tableLayoutPanel84";
             this.tableLayoutPanel84.RowCount = 1;
             this.tableLayoutPanel84.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel84.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel84.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel84.TabIndex = 42;
             // 
             // MilitaryOps_USA
@@ -843,10 +839,9 @@
             this.MilitaryOps_USA.BackColor = System.Drawing.Color.White;
             this.MilitaryOps_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MilitaryOps_USA.ForeColor = System.Drawing.Color.Blue;
-            this.MilitaryOps_USA.Location = new System.Drawing.Point(3, 1);
-            this.MilitaryOps_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MilitaryOps_USA.Location = new System.Drawing.Point(4, 1);
             this.MilitaryOps_USA.Name = "MilitaryOps_USA";
-            this.MilitaryOps_USA.Size = new System.Drawing.Size(14, 14);
+            this.MilitaryOps_USA.Size = new System.Drawing.Size(26, 17);
             this.MilitaryOps_USA.TabIndex = 0;
             this.MilitaryOps_USA.Text = "10";
             this.MilitaryOps_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -857,10 +852,9 @@
             this.MilitaryOps_USSR.BackColor = System.Drawing.Color.White;
             this.MilitaryOps_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MilitaryOps_USSR.ForeColor = System.Drawing.Color.Red;
-            this.MilitaryOps_USSR.Location = new System.Drawing.Point(28, 1);
-            this.MilitaryOps_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MilitaryOps_USSR.Location = new System.Drawing.Point(37, 1);
             this.MilitaryOps_USSR.Name = "MilitaryOps_USSR";
-            this.MilitaryOps_USSR.Size = new System.Drawing.Size(14, 14);
+            this.MilitaryOps_USSR.Size = new System.Drawing.Size(26, 17);
             this.MilitaryOps_USSR.TabIndex = 5;
             this.MilitaryOps_USSR.Text = "10";
             this.MilitaryOps_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -871,10 +865,9 @@
             this.Defcon_lbl.BackColor = System.Drawing.Color.White;
             this.Defcon_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Defcon_lbl.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Defcon_lbl.Location = new System.Drawing.Point(12, 141);
-            this.Defcon_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Defcon_lbl.Location = new System.Drawing.Point(16, 174);
             this.Defcon_lbl.Name = "Defcon_lbl";
-            this.Defcon_lbl.Size = new System.Drawing.Size(25, 13);
+            this.Defcon_lbl.Size = new System.Drawing.Size(32, 17);
             this.Defcon_lbl.TabIndex = 17;
             this.Defcon_lbl.Text = "-10";
             this.Defcon_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -882,10 +875,9 @@
             // label254
             // 
             this.label254.AutoSize = true;
-            this.label254.Location = new System.Drawing.Point(12, 87);
-            this.label254.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label254.Location = new System.Drawing.Point(16, 107);
             this.label254.Name = "label254";
-            this.label254.Size = new System.Drawing.Size(35, 13);
+            this.label254.Size = new System.Drawing.Size(45, 17);
             this.label254.TabIndex = 16;
             this.label254.Text = "Score";
             // 
@@ -895,10 +887,9 @@
             this.Score_lbl.BackColor = System.Drawing.Color.White;
             this.Score_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Score_lbl.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Score_lbl.Location = new System.Drawing.Point(12, 106);
-            this.Score_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Score_lbl.Location = new System.Drawing.Point(16, 130);
             this.Score_lbl.Name = "Score_lbl";
-            this.Score_lbl.Size = new System.Drawing.Size(25, 13);
+            this.Score_lbl.Size = new System.Drawing.Size(32, 17);
             this.Score_lbl.TabIndex = 15;
             this.Score_lbl.Text = "-10";
             this.Score_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -906,10 +897,9 @@
             // label252
             // 
             this.label252.AutoSize = true;
-            this.label252.Location = new System.Drawing.Point(12, 52);
-            this.label252.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label252.Location = new System.Drawing.Point(16, 64);
             this.label252.Name = "label252";
-            this.label252.Size = new System.Drawing.Size(39, 13);
+            this.label252.Size = new System.Drawing.Size(50, 17);
             this.label252.TabIndex = 14;
             this.label252.Text = "Round";
             // 
@@ -919,10 +909,9 @@
             this.Round_lbl.BackColor = System.Drawing.Color.White;
             this.Round_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Round_lbl.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Round_lbl.Location = new System.Drawing.Point(12, 71);
-            this.Round_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Round_lbl.Location = new System.Drawing.Point(16, 87);
             this.Round_lbl.Name = "Round_lbl";
-            this.Round_lbl.Size = new System.Drawing.Size(25, 13);
+            this.Round_lbl.Size = new System.Drawing.Size(32, 17);
             this.Round_lbl.TabIndex = 13;
             this.Round_lbl.Text = "-10";
             this.Round_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -930,10 +919,9 @@
             // label251
             // 
             this.label251.AutoSize = true;
-            this.label251.Location = new System.Drawing.Point(12, 15);
-            this.label251.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label251.Location = new System.Drawing.Point(16, 18);
             this.label251.Name = "label251";
-            this.label251.Size = new System.Drawing.Size(29, 13);
+            this.label251.Size = new System.Drawing.Size(38, 17);
             this.label251.TabIndex = 12;
             this.label251.Text = "Turn";
             // 
@@ -943,10 +931,9 @@
             this.Turn_lbl.BackColor = System.Drawing.Color.White;
             this.Turn_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Turn_lbl.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Turn_lbl.Location = new System.Drawing.Point(12, 34);
-            this.Turn_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Turn_lbl.Location = new System.Drawing.Point(16, 42);
             this.Turn_lbl.Name = "Turn_lbl";
-            this.Turn_lbl.Size = new System.Drawing.Size(25, 13);
+            this.Turn_lbl.Size = new System.Drawing.Size(32, 17);
             this.Turn_lbl.TabIndex = 11;
             this.Turn_lbl.Text = "-10";
             this.Turn_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -973,11 +960,11 @@
             this.groupBox6.Controls.Add(this.tableLayoutPanel81);
             this.groupBox6.Controls.Add(this.tableLayoutPanel82);
             this.groupBox6.Controls.Add(this.tableLayoutPanel83);
-            this.groupBox6.Location = new System.Drawing.Point(794, 26);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox6.Location = new System.Drawing.Point(1059, 32);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox6.Size = new System.Drawing.Size(143, 210);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox6.Size = new System.Drawing.Size(191, 258);
             this.groupBox6.TabIndex = 18;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "South America";
@@ -985,20 +972,18 @@
             // label220
             // 
             this.label220.AutoSize = true;
-            this.label220.Location = new System.Drawing.Point(75, 159);
-            this.label220.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label220.Location = new System.Drawing.Point(100, 196);
             this.label220.Name = "label220";
-            this.label220.Size = new System.Drawing.Size(57, 13);
+            this.label220.Size = new System.Drawing.Size(75, 17);
             this.label220.TabIndex = 29;
             this.label220.Text = "Venezuela";
             // 
             // label221
             // 
             this.label221.AutoSize = true;
-            this.label221.Location = new System.Drawing.Point(13, 159);
-            this.label221.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label221.Location = new System.Drawing.Point(17, 196);
             this.label221.Name = "label221";
-            this.label221.Size = new System.Drawing.Size(50, 13);
+            this.label221.Size = new System.Drawing.Size(66, 17);
             this.label221.TabIndex = 13;
             this.label221.Text = "Colombia";
             // 
@@ -1010,12 +995,12 @@
             this.tableLayoutPanel74.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel74.Controls.Add(this.Venezuela_USA, 0, 0);
             this.tableLayoutPanel74.Controls.Add(this.Venezuela_USSR, 1, 0);
-            this.tableLayoutPanel74.Location = new System.Drawing.Point(77, 176);
-            this.tableLayoutPanel74.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel74.Location = new System.Drawing.Point(103, 217);
+            this.tableLayoutPanel74.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel74.Name = "tableLayoutPanel74";
             this.tableLayoutPanel74.RowCount = 1;
             this.tableLayoutPanel74.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel74.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel74.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel74.TabIndex = 28;
             // 
             // Venezuela_USA
@@ -1024,10 +1009,9 @@
             this.Venezuela_USA.BackColor = System.Drawing.Color.White;
             this.Venezuela_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Venezuela_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Venezuela_USA.Location = new System.Drawing.Point(3, 1);
-            this.Venezuela_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Venezuela_USA.Location = new System.Drawing.Point(4, 1);
             this.Venezuela_USA.Name = "Venezuela_USA";
-            this.Venezuela_USA.Size = new System.Drawing.Size(14, 14);
+            this.Venezuela_USA.Size = new System.Drawing.Size(26, 17);
             this.Venezuela_USA.TabIndex = 0;
             this.Venezuela_USA.Text = "10";
             this.Venezuela_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1038,10 +1022,9 @@
             this.Venezuela_USSR.BackColor = System.Drawing.Color.White;
             this.Venezuela_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Venezuela_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Venezuela_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Venezuela_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Venezuela_USSR.Location = new System.Drawing.Point(37, 1);
             this.Venezuela_USSR.Name = "Venezuela_USSR";
-            this.Venezuela_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Venezuela_USSR.Size = new System.Drawing.Size(26, 17);
             this.Venezuela_USSR.TabIndex = 5;
             this.Venezuela_USSR.Text = "10";
             this.Venezuela_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1054,12 +1037,12 @@
             this.tableLayoutPanel75.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel75.Controls.Add(this.Colombia_USA, 0, 0);
             this.tableLayoutPanel75.Controls.Add(this.Colombia_USSR, 1, 0);
-            this.tableLayoutPanel75.Location = new System.Drawing.Point(15, 176);
-            this.tableLayoutPanel75.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel75.Location = new System.Drawing.Point(20, 217);
+            this.tableLayoutPanel75.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel75.Name = "tableLayoutPanel75";
             this.tableLayoutPanel75.RowCount = 1;
             this.tableLayoutPanel75.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel75.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel75.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel75.TabIndex = 12;
             // 
             // Colombia_USA
@@ -1068,10 +1051,9 @@
             this.Colombia_USA.BackColor = System.Drawing.Color.White;
             this.Colombia_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Colombia_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Colombia_USA.Location = new System.Drawing.Point(3, 1);
-            this.Colombia_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Colombia_USA.Location = new System.Drawing.Point(4, 1);
             this.Colombia_USA.Name = "Colombia_USA";
-            this.Colombia_USA.Size = new System.Drawing.Size(14, 14);
+            this.Colombia_USA.Size = new System.Drawing.Size(26, 17);
             this.Colombia_USA.TabIndex = 0;
             this.Colombia_USA.Text = "10";
             this.Colombia_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1082,10 +1064,9 @@
             this.Colombia_USSR.BackColor = System.Drawing.Color.White;
             this.Colombia_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Colombia_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Colombia_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Colombia_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Colombia_USSR.Location = new System.Drawing.Point(37, 1);
             this.Colombia_USSR.Name = "Colombia_USSR";
-            this.Colombia_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Colombia_USSR.Size = new System.Drawing.Size(26, 17);
             this.Colombia_USSR.TabIndex = 5;
             this.Colombia_USSR.Text = "10";
             this.Colombia_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1093,20 +1074,18 @@
             // label226
             // 
             this.label226.AutoSize = true;
-            this.label226.Location = new System.Drawing.Point(75, 124);
-            this.label226.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label226.Location = new System.Drawing.Point(100, 153);
             this.label226.Name = "label226";
-            this.label226.Size = new System.Drawing.Size(47, 13);
+            this.label226.Size = new System.Drawing.Size(62, 17);
             this.label226.TabIndex = 24;
             this.label226.Text = "Uruguay";
             // 
             // label227
             // 
             this.label227.AutoSize = true;
-            this.label227.Location = new System.Drawing.Point(13, 124);
-            this.label227.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label227.Location = new System.Drawing.Point(17, 153);
             this.label227.Name = "label227";
-            this.label227.Size = new System.Drawing.Size(30, 13);
+            this.label227.Size = new System.Drawing.Size(39, 17);
             this.label227.TabIndex = 9;
             this.label227.Text = "Chile";
             // 
@@ -1118,12 +1097,12 @@
             this.tableLayoutPanel76.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel76.Controls.Add(this.Uruguay_USA, 0, 0);
             this.tableLayoutPanel76.Controls.Add(this.Uruguay_USSR, 1, 0);
-            this.tableLayoutPanel76.Location = new System.Drawing.Point(77, 140);
-            this.tableLayoutPanel76.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel76.Location = new System.Drawing.Point(103, 172);
+            this.tableLayoutPanel76.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel76.Name = "tableLayoutPanel76";
             this.tableLayoutPanel76.RowCount = 1;
             this.tableLayoutPanel76.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel76.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel76.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel76.TabIndex = 22;
             // 
             // Uruguay_USA
@@ -1132,10 +1111,9 @@
             this.Uruguay_USA.BackColor = System.Drawing.Color.White;
             this.Uruguay_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Uruguay_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Uruguay_USA.Location = new System.Drawing.Point(3, 1);
-            this.Uruguay_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Uruguay_USA.Location = new System.Drawing.Point(4, 1);
             this.Uruguay_USA.Name = "Uruguay_USA";
-            this.Uruguay_USA.Size = new System.Drawing.Size(14, 14);
+            this.Uruguay_USA.Size = new System.Drawing.Size(26, 17);
             this.Uruguay_USA.TabIndex = 0;
             this.Uruguay_USA.Text = "10";
             this.Uruguay_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1146,10 +1124,9 @@
             this.Uruguay_USSR.BackColor = System.Drawing.Color.White;
             this.Uruguay_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Uruguay_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Uruguay_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Uruguay_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Uruguay_USSR.Location = new System.Drawing.Point(37, 1);
             this.Uruguay_USSR.Name = "Uruguay_USSR";
-            this.Uruguay_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Uruguay_USSR.Size = new System.Drawing.Size(26, 17);
             this.Uruguay_USSR.TabIndex = 5;
             this.Uruguay_USSR.Text = "10";
             this.Uruguay_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1162,12 +1139,12 @@
             this.tableLayoutPanel77.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel77.Controls.Add(this.Chile_USA, 0, 0);
             this.tableLayoutPanel77.Controls.Add(this.Chile_USSR, 1, 0);
-            this.tableLayoutPanel77.Location = new System.Drawing.Point(15, 140);
-            this.tableLayoutPanel77.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel77.Location = new System.Drawing.Point(20, 172);
+            this.tableLayoutPanel77.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel77.Name = "tableLayoutPanel77";
             this.tableLayoutPanel77.RowCount = 1;
             this.tableLayoutPanel77.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel77.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel77.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel77.TabIndex = 8;
             // 
             // Chile_USA
@@ -1176,10 +1153,9 @@
             this.Chile_USA.BackColor = System.Drawing.Color.White;
             this.Chile_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Chile_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Chile_USA.Location = new System.Drawing.Point(3, 1);
-            this.Chile_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Chile_USA.Location = new System.Drawing.Point(4, 1);
             this.Chile_USA.Name = "Chile_USA";
-            this.Chile_USA.Size = new System.Drawing.Size(14, 14);
+            this.Chile_USA.Size = new System.Drawing.Size(26, 17);
             this.Chile_USA.TabIndex = 0;
             this.Chile_USA.Text = "10";
             this.Chile_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1190,10 +1166,9 @@
             this.Chile_USSR.BackColor = System.Drawing.Color.White;
             this.Chile_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Chile_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Chile_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Chile_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Chile_USSR.Location = new System.Drawing.Point(37, 1);
             this.Chile_USSR.Name = "Chile_USSR";
-            this.Chile_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Chile_USSR.Size = new System.Drawing.Size(26, 17);
             this.Chile_USSR.TabIndex = 5;
             this.Chile_USSR.Text = "10";
             this.Chile_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1201,20 +1176,18 @@
             // label232
             // 
             this.label232.AutoSize = true;
-            this.label232.Location = new System.Drawing.Point(75, 89);
-            this.label232.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label232.Location = new System.Drawing.Point(100, 110);
             this.label232.Name = "label232";
-            this.label232.Size = new System.Drawing.Size(29, 13);
+            this.label232.Size = new System.Drawing.Size(38, 17);
             this.label232.TabIndex = 27;
             this.label232.Text = "Peru";
             // 
             // label233
             // 
             this.label233.AutoSize = true;
-            this.label233.Location = new System.Drawing.Point(13, 89);
-            this.label233.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label233.Location = new System.Drawing.Point(17, 110);
             this.label233.Name = "label233";
-            this.label233.Size = new System.Drawing.Size(38, 13);
+            this.label233.Size = new System.Drawing.Size(49, 17);
             this.label233.TabIndex = 11;
             this.label233.Text = "Bolivia";
             // 
@@ -1226,12 +1199,12 @@
             this.tableLayoutPanel78.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel78.Controls.Add(this.Peru_USA, 0, 0);
             this.tableLayoutPanel78.Controls.Add(this.Peru_USSR, 1, 0);
-            this.tableLayoutPanel78.Location = new System.Drawing.Point(77, 105);
-            this.tableLayoutPanel78.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel78.Location = new System.Drawing.Point(103, 129);
+            this.tableLayoutPanel78.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel78.Name = "tableLayoutPanel78";
             this.tableLayoutPanel78.RowCount = 1;
             this.tableLayoutPanel78.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel78.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel78.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel78.TabIndex = 26;
             // 
             // Peru_USA
@@ -1240,10 +1213,9 @@
             this.Peru_USA.BackColor = System.Drawing.Color.White;
             this.Peru_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Peru_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Peru_USA.Location = new System.Drawing.Point(3, 1);
-            this.Peru_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Peru_USA.Location = new System.Drawing.Point(4, 1);
             this.Peru_USA.Name = "Peru_USA";
-            this.Peru_USA.Size = new System.Drawing.Size(14, 14);
+            this.Peru_USA.Size = new System.Drawing.Size(26, 17);
             this.Peru_USA.TabIndex = 0;
             this.Peru_USA.Text = "10";
             this.Peru_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1254,10 +1226,9 @@
             this.Peru_USSR.BackColor = System.Drawing.Color.White;
             this.Peru_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Peru_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Peru_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Peru_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Peru_USSR.Location = new System.Drawing.Point(37, 1);
             this.Peru_USSR.Name = "Peru_USSR";
-            this.Peru_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Peru_USSR.Size = new System.Drawing.Size(26, 17);
             this.Peru_USSR.TabIndex = 5;
             this.Peru_USSR.Text = "10";
             this.Peru_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1265,10 +1236,9 @@
             // label236
             // 
             this.label236.AutoSize = true;
-            this.label236.Location = new System.Drawing.Point(75, 54);
-            this.label236.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label236.Location = new System.Drawing.Point(100, 66);
             this.label236.Name = "label236";
-            this.label236.Size = new System.Drawing.Size(52, 13);
+            this.label236.Size = new System.Drawing.Size(69, 17);
             this.label236.TabIndex = 25;
             this.label236.Text = "Paraguay";
             // 
@@ -1280,12 +1250,12 @@
             this.tableLayoutPanel79.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel79.Controls.Add(this.Bolivia_USA, 0, 0);
             this.tableLayoutPanel79.Controls.Add(this.Bolivia_USSR, 1, 0);
-            this.tableLayoutPanel79.Location = new System.Drawing.Point(15, 105);
-            this.tableLayoutPanel79.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel79.Location = new System.Drawing.Point(20, 129);
+            this.tableLayoutPanel79.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel79.Name = "tableLayoutPanel79";
             this.tableLayoutPanel79.RowCount = 1;
             this.tableLayoutPanel79.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel79.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel79.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel79.TabIndex = 10;
             // 
             // Bolivia_USA
@@ -1294,10 +1264,9 @@
             this.Bolivia_USA.BackColor = System.Drawing.Color.White;
             this.Bolivia_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bolivia_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Bolivia_USA.Location = new System.Drawing.Point(3, 1);
-            this.Bolivia_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Bolivia_USA.Location = new System.Drawing.Point(4, 1);
             this.Bolivia_USA.Name = "Bolivia_USA";
-            this.Bolivia_USA.Size = new System.Drawing.Size(14, 14);
+            this.Bolivia_USA.Size = new System.Drawing.Size(26, 17);
             this.Bolivia_USA.TabIndex = 0;
             this.Bolivia_USA.Text = "10";
             this.Bolivia_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1308,10 +1277,9 @@
             this.Bolivia_USSR.BackColor = System.Drawing.Color.White;
             this.Bolivia_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bolivia_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Bolivia_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Bolivia_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Bolivia_USSR.Location = new System.Drawing.Point(37, 1);
             this.Bolivia_USSR.Name = "Bolivia_USSR";
-            this.Bolivia_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Bolivia_USSR.Size = new System.Drawing.Size(26, 17);
             this.Bolivia_USSR.TabIndex = 5;
             this.Bolivia_USSR.Text = "10";
             this.Bolivia_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1319,20 +1287,18 @@
             // label239
             // 
             this.label239.AutoSize = true;
-            this.label239.Location = new System.Drawing.Point(75, 19);
-            this.label239.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label239.Location = new System.Drawing.Point(100, 23);
             this.label239.Name = "label239";
-            this.label239.Size = new System.Drawing.Size(47, 13);
+            this.label239.Size = new System.Drawing.Size(61, 17);
             this.label239.TabIndex = 21;
             this.label239.Text = "Ecuador";
             // 
             // label240
             // 
             this.label240.AutoSize = true;
-            this.label240.Location = new System.Drawing.Point(13, 54);
-            this.label240.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label240.Location = new System.Drawing.Point(17, 66);
             this.label240.Name = "label240";
-            this.label240.Size = new System.Drawing.Size(32, 13);
+            this.label240.Size = new System.Drawing.Size(43, 17);
             this.label240.TabIndex = 9;
             this.label240.Text = "Brazil";
             // 
@@ -1344,12 +1310,12 @@
             this.tableLayoutPanel80.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel80.Controls.Add(this.Paraguay_USA, 0, 0);
             this.tableLayoutPanel80.Controls.Add(this.Paraguay_USSR, 1, 0);
-            this.tableLayoutPanel80.Location = new System.Drawing.Point(77, 70);
-            this.tableLayoutPanel80.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel80.Location = new System.Drawing.Point(103, 86);
+            this.tableLayoutPanel80.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel80.Name = "tableLayoutPanel80";
             this.tableLayoutPanel80.RowCount = 1;
             this.tableLayoutPanel80.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel80.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel80.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel80.TabIndex = 23;
             // 
             // Paraguay_USA
@@ -1358,10 +1324,9 @@
             this.Paraguay_USA.BackColor = System.Drawing.Color.White;
             this.Paraguay_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Paraguay_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Paraguay_USA.Location = new System.Drawing.Point(3, 1);
-            this.Paraguay_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Paraguay_USA.Location = new System.Drawing.Point(4, 1);
             this.Paraguay_USA.Name = "Paraguay_USA";
-            this.Paraguay_USA.Size = new System.Drawing.Size(14, 14);
+            this.Paraguay_USA.Size = new System.Drawing.Size(26, 17);
             this.Paraguay_USA.TabIndex = 0;
             this.Paraguay_USA.Text = "10";
             this.Paraguay_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1372,10 +1337,9 @@
             this.Paraguay_USSR.BackColor = System.Drawing.Color.White;
             this.Paraguay_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Paraguay_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Paraguay_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Paraguay_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Paraguay_USSR.Location = new System.Drawing.Point(37, 1);
             this.Paraguay_USSR.Name = "Paraguay_USSR";
-            this.Paraguay_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Paraguay_USSR.Size = new System.Drawing.Size(26, 17);
             this.Paraguay_USSR.TabIndex = 5;
             this.Paraguay_USSR.Text = "10";
             this.Paraguay_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1383,10 +1347,9 @@
             // label243
             // 
             this.label243.AutoSize = true;
-            this.label243.Location = new System.Drawing.Point(13, 19);
-            this.label243.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label243.Location = new System.Drawing.Point(17, 23);
             this.label243.Name = "label243";
-            this.label243.Size = new System.Drawing.Size(52, 13);
+            this.label243.Size = new System.Drawing.Size(69, 17);
             this.label243.TabIndex = 7;
             this.label243.Text = "Argentina";
             // 
@@ -1398,12 +1361,12 @@
             this.tableLayoutPanel81.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel81.Controls.Add(this.Ecuador_USA, 0, 0);
             this.tableLayoutPanel81.Controls.Add(this.Ecuador_USSR, 1, 0);
-            this.tableLayoutPanel81.Location = new System.Drawing.Point(77, 35);
-            this.tableLayoutPanel81.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel81.Location = new System.Drawing.Point(103, 43);
+            this.tableLayoutPanel81.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel81.Name = "tableLayoutPanel81";
             this.tableLayoutPanel81.RowCount = 1;
             this.tableLayoutPanel81.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel81.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel81.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel81.TabIndex = 20;
             // 
             // Ecuador_USA
@@ -1412,10 +1375,9 @@
             this.Ecuador_USA.BackColor = System.Drawing.Color.White;
             this.Ecuador_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ecuador_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Ecuador_USA.Location = new System.Drawing.Point(3, 1);
-            this.Ecuador_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Ecuador_USA.Location = new System.Drawing.Point(4, 1);
             this.Ecuador_USA.Name = "Ecuador_USA";
-            this.Ecuador_USA.Size = new System.Drawing.Size(14, 14);
+            this.Ecuador_USA.Size = new System.Drawing.Size(26, 17);
             this.Ecuador_USA.TabIndex = 0;
             this.Ecuador_USA.Text = "10";
             this.Ecuador_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1426,10 +1388,9 @@
             this.Ecuador_USSR.BackColor = System.Drawing.Color.White;
             this.Ecuador_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ecuador_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Ecuador_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Ecuador_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Ecuador_USSR.Location = new System.Drawing.Point(37, 1);
             this.Ecuador_USSR.Name = "Ecuador_USSR";
-            this.Ecuador_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Ecuador_USSR.Size = new System.Drawing.Size(26, 17);
             this.Ecuador_USSR.TabIndex = 5;
             this.Ecuador_USSR.Text = "10";
             this.Ecuador_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1442,12 +1403,12 @@
             this.tableLayoutPanel82.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel82.Controls.Add(this.Brazil_USA, 0, 0);
             this.tableLayoutPanel82.Controls.Add(this.Brazil_USSR, 1, 0);
-            this.tableLayoutPanel82.Location = new System.Drawing.Point(15, 70);
-            this.tableLayoutPanel82.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel82.Location = new System.Drawing.Point(20, 86);
+            this.tableLayoutPanel82.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel82.Name = "tableLayoutPanel82";
             this.tableLayoutPanel82.RowCount = 1;
             this.tableLayoutPanel82.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel82.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel82.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel82.TabIndex = 8;
             // 
             // Brazil_USA
@@ -1456,10 +1417,9 @@
             this.Brazil_USA.BackColor = System.Drawing.Color.White;
             this.Brazil_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Brazil_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Brazil_USA.Location = new System.Drawing.Point(3, 1);
-            this.Brazil_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Brazil_USA.Location = new System.Drawing.Point(4, 1);
             this.Brazil_USA.Name = "Brazil_USA";
-            this.Brazil_USA.Size = new System.Drawing.Size(14, 14);
+            this.Brazil_USA.Size = new System.Drawing.Size(26, 17);
             this.Brazil_USA.TabIndex = 0;
             this.Brazil_USA.Text = "10";
             this.Brazil_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1470,10 +1430,9 @@
             this.Brazil_USSR.BackColor = System.Drawing.Color.White;
             this.Brazil_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Brazil_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Brazil_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Brazil_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Brazil_USSR.Location = new System.Drawing.Point(37, 1);
             this.Brazil_USSR.Name = "Brazil_USSR";
-            this.Brazil_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Brazil_USSR.Size = new System.Drawing.Size(26, 17);
             this.Brazil_USSR.TabIndex = 5;
             this.Brazil_USSR.Text = "10";
             this.Brazil_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1486,12 +1445,12 @@
             this.tableLayoutPanel83.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel83.Controls.Add(this.Argentina_USA, 0, 0);
             this.tableLayoutPanel83.Controls.Add(this.Argentina_USSR, 1, 0);
-            this.tableLayoutPanel83.Location = new System.Drawing.Point(15, 35);
-            this.tableLayoutPanel83.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel83.Location = new System.Drawing.Point(20, 43);
+            this.tableLayoutPanel83.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel83.Name = "tableLayoutPanel83";
             this.tableLayoutPanel83.RowCount = 1;
             this.tableLayoutPanel83.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel83.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel83.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel83.TabIndex = 6;
             // 
             // Argentina_USA
@@ -1500,10 +1459,9 @@
             this.Argentina_USA.BackColor = System.Drawing.Color.White;
             this.Argentina_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Argentina_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Argentina_USA.Location = new System.Drawing.Point(3, 1);
-            this.Argentina_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Argentina_USA.Location = new System.Drawing.Point(4, 1);
             this.Argentina_USA.Name = "Argentina_USA";
-            this.Argentina_USA.Size = new System.Drawing.Size(14, 14);
+            this.Argentina_USA.Size = new System.Drawing.Size(26, 17);
             this.Argentina_USA.TabIndex = 0;
             this.Argentina_USA.Text = "10";
             this.Argentina_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1514,10 +1472,9 @@
             this.Argentina_USSR.BackColor = System.Drawing.Color.White;
             this.Argentina_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Argentina_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Argentina_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Argentina_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Argentina_USSR.Location = new System.Drawing.Point(37, 1);
             this.Argentina_USSR.Name = "Argentina_USSR";
-            this.Argentina_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Argentina_USSR.Size = new System.Drawing.Size(26, 17);
             this.Argentina_USSR.TabIndex = 5;
             this.Argentina_USSR.Text = "10";
             this.Argentina_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1544,11 +1501,11 @@
             this.groupBox5.Controls.Add(this.tableLayoutPanel71);
             this.groupBox5.Controls.Add(this.tableLayoutPanel72);
             this.groupBox5.Controls.Add(this.tableLayoutPanel73);
-            this.groupBox5.Location = new System.Drawing.Point(646, 26);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Location = new System.Drawing.Point(861, 32);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox5.Size = new System.Drawing.Size(143, 210);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox5.Size = new System.Drawing.Size(191, 258);
             this.groupBox5.TabIndex = 17;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Middle East";
@@ -1556,20 +1513,18 @@
             // label190
             // 
             this.label190.AutoSize = true;
-            this.label190.Location = new System.Drawing.Point(75, 159);
-            this.label190.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label190.Location = new System.Drawing.Point(100, 196);
             this.label190.Name = "label190";
-            this.label190.Size = new System.Drawing.Size(30, 13);
+            this.label190.Size = new System.Drawing.Size(40, 17);
             this.label190.TabIndex = 29;
             this.label190.Text = "Syria";
             // 
             // label191
             // 
             this.label191.AutoSize = true;
-            this.label191.Location = new System.Drawing.Point(13, 159);
-            this.label191.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label191.Location = new System.Drawing.Point(17, 196);
             this.label191.Name = "label191";
-            this.label191.Size = new System.Drawing.Size(32, 13);
+            this.label191.Size = new System.Drawing.Size(42, 17);
             this.label191.TabIndex = 13;
             this.label191.Text = "Israel";
             // 
@@ -1581,12 +1536,12 @@
             this.tableLayoutPanel64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel64.Controls.Add(this.Syria_USA, 0, 0);
             this.tableLayoutPanel64.Controls.Add(this.Syria_USSR, 1, 0);
-            this.tableLayoutPanel64.Location = new System.Drawing.Point(77, 176);
-            this.tableLayoutPanel64.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel64.Location = new System.Drawing.Point(103, 217);
+            this.tableLayoutPanel64.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel64.Name = "tableLayoutPanel64";
             this.tableLayoutPanel64.RowCount = 1;
             this.tableLayoutPanel64.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel64.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel64.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel64.TabIndex = 28;
             // 
             // Syria_USA
@@ -1595,10 +1550,9 @@
             this.Syria_USA.BackColor = System.Drawing.Color.White;
             this.Syria_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Syria_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Syria_USA.Location = new System.Drawing.Point(3, 1);
-            this.Syria_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Syria_USA.Location = new System.Drawing.Point(4, 1);
             this.Syria_USA.Name = "Syria_USA";
-            this.Syria_USA.Size = new System.Drawing.Size(14, 14);
+            this.Syria_USA.Size = new System.Drawing.Size(26, 17);
             this.Syria_USA.TabIndex = 0;
             this.Syria_USA.Text = "10";
             this.Syria_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1609,10 +1563,9 @@
             this.Syria_USSR.BackColor = System.Drawing.Color.White;
             this.Syria_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Syria_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Syria_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Syria_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Syria_USSR.Location = new System.Drawing.Point(37, 1);
             this.Syria_USSR.Name = "Syria_USSR";
-            this.Syria_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Syria_USSR.Size = new System.Drawing.Size(26, 17);
             this.Syria_USSR.TabIndex = 5;
             this.Syria_USSR.Text = "10";
             this.Syria_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1625,12 +1578,12 @@
             this.tableLayoutPanel65.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel65.Controls.Add(this.Israel_USA, 0, 0);
             this.tableLayoutPanel65.Controls.Add(this.Israel_USSR, 1, 0);
-            this.tableLayoutPanel65.Location = new System.Drawing.Point(15, 176);
-            this.tableLayoutPanel65.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel65.Location = new System.Drawing.Point(20, 217);
+            this.tableLayoutPanel65.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel65.Name = "tableLayoutPanel65";
             this.tableLayoutPanel65.RowCount = 1;
             this.tableLayoutPanel65.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel65.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel65.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel65.TabIndex = 12;
             // 
             // Israel_USA
@@ -1639,10 +1592,9 @@
             this.Israel_USA.BackColor = System.Drawing.Color.White;
             this.Israel_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Israel_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Israel_USA.Location = new System.Drawing.Point(3, 1);
-            this.Israel_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Israel_USA.Location = new System.Drawing.Point(4, 1);
             this.Israel_USA.Name = "Israel_USA";
-            this.Israel_USA.Size = new System.Drawing.Size(14, 14);
+            this.Israel_USA.Size = new System.Drawing.Size(26, 17);
             this.Israel_USA.TabIndex = 0;
             this.Israel_USA.Text = "10";
             this.Israel_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1653,10 +1605,9 @@
             this.Israel_USSR.BackColor = System.Drawing.Color.White;
             this.Israel_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Israel_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Israel_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Israel_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Israel_USSR.Location = new System.Drawing.Point(37, 1);
             this.Israel_USSR.Name = "Israel_USSR";
-            this.Israel_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Israel_USSR.Size = new System.Drawing.Size(26, 17);
             this.Israel_USSR.TabIndex = 5;
             this.Israel_USSR.Text = "10";
             this.Israel_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1665,20 +1616,18 @@
             // 
             this.label196.AutoSize = true;
             this.label196.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label196.Location = new System.Drawing.Point(75, 124);
-            this.label196.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label196.Location = new System.Drawing.Point(100, 153);
             this.label196.Name = "label196";
-            this.label196.Size = new System.Drawing.Size(57, 12);
+            this.label196.Size = new System.Drawing.Size(77, 15);
             this.label196.TabIndex = 24;
             this.label196.Text = "Saudi Arabia";
             // 
             // label197
             // 
             this.label197.AutoSize = true;
-            this.label197.Location = new System.Drawing.Point(13, 124);
-            this.label197.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label197.Location = new System.Drawing.Point(17, 153);
             this.label197.Name = "label197";
-            this.label197.Size = new System.Drawing.Size(25, 13);
+            this.label197.Size = new System.Drawing.Size(32, 17);
             this.label197.TabIndex = 9;
             this.label197.Text = "Iraq";
             // 
@@ -1690,12 +1639,12 @@
             this.tableLayoutPanel66.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel66.Controls.Add(this.SaudiArabia_USA, 0, 0);
             this.tableLayoutPanel66.Controls.Add(this.SaudiArabia_USSR, 1, 0);
-            this.tableLayoutPanel66.Location = new System.Drawing.Point(77, 140);
-            this.tableLayoutPanel66.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel66.Location = new System.Drawing.Point(103, 172);
+            this.tableLayoutPanel66.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel66.Name = "tableLayoutPanel66";
             this.tableLayoutPanel66.RowCount = 1;
             this.tableLayoutPanel66.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel66.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel66.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel66.TabIndex = 22;
             // 
             // SaudiArabia_USA
@@ -1704,10 +1653,9 @@
             this.SaudiArabia_USA.BackColor = System.Drawing.Color.White;
             this.SaudiArabia_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaudiArabia_USA.ForeColor = System.Drawing.Color.Blue;
-            this.SaudiArabia_USA.Location = new System.Drawing.Point(3, 1);
-            this.SaudiArabia_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SaudiArabia_USA.Location = new System.Drawing.Point(4, 1);
             this.SaudiArabia_USA.Name = "SaudiArabia_USA";
-            this.SaudiArabia_USA.Size = new System.Drawing.Size(14, 14);
+            this.SaudiArabia_USA.Size = new System.Drawing.Size(26, 17);
             this.SaudiArabia_USA.TabIndex = 0;
             this.SaudiArabia_USA.Text = "10";
             this.SaudiArabia_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1718,10 +1666,9 @@
             this.SaudiArabia_USSR.BackColor = System.Drawing.Color.White;
             this.SaudiArabia_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaudiArabia_USSR.ForeColor = System.Drawing.Color.Red;
-            this.SaudiArabia_USSR.Location = new System.Drawing.Point(28, 1);
-            this.SaudiArabia_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SaudiArabia_USSR.Location = new System.Drawing.Point(37, 1);
             this.SaudiArabia_USSR.Name = "SaudiArabia_USSR";
-            this.SaudiArabia_USSR.Size = new System.Drawing.Size(14, 14);
+            this.SaudiArabia_USSR.Size = new System.Drawing.Size(26, 17);
             this.SaudiArabia_USSR.TabIndex = 5;
             this.SaudiArabia_USSR.Text = "10";
             this.SaudiArabia_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1734,12 +1681,12 @@
             this.tableLayoutPanel67.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel67.Controls.Add(this.Iraq_USA, 0, 0);
             this.tableLayoutPanel67.Controls.Add(this.Iraq_USSR, 1, 0);
-            this.tableLayoutPanel67.Location = new System.Drawing.Point(15, 140);
-            this.tableLayoutPanel67.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel67.Location = new System.Drawing.Point(20, 172);
+            this.tableLayoutPanel67.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel67.Name = "tableLayoutPanel67";
             this.tableLayoutPanel67.RowCount = 1;
             this.tableLayoutPanel67.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel67.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel67.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel67.TabIndex = 8;
             // 
             // Iraq_USA
@@ -1748,10 +1695,9 @@
             this.Iraq_USA.BackColor = System.Drawing.Color.White;
             this.Iraq_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Iraq_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Iraq_USA.Location = new System.Drawing.Point(3, 1);
-            this.Iraq_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Iraq_USA.Location = new System.Drawing.Point(4, 1);
             this.Iraq_USA.Name = "Iraq_USA";
-            this.Iraq_USA.Size = new System.Drawing.Size(14, 14);
+            this.Iraq_USA.Size = new System.Drawing.Size(26, 17);
             this.Iraq_USA.TabIndex = 0;
             this.Iraq_USA.Text = "10";
             this.Iraq_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1762,10 +1708,9 @@
             this.Iraq_USSR.BackColor = System.Drawing.Color.White;
             this.Iraq_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Iraq_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Iraq_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Iraq_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Iraq_USSR.Location = new System.Drawing.Point(37, 1);
             this.Iraq_USSR.Name = "Iraq_USSR";
-            this.Iraq_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Iraq_USSR.Size = new System.Drawing.Size(26, 17);
             this.Iraq_USSR.TabIndex = 5;
             this.Iraq_USSR.Text = "10";
             this.Iraq_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1773,20 +1718,18 @@
             // label202
             // 
             this.label202.AutoSize = true;
-            this.label202.Location = new System.Drawing.Point(75, 89);
-            this.label202.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label202.Location = new System.Drawing.Point(100, 110);
             this.label202.Name = "label202";
-            this.label202.Size = new System.Drawing.Size(32, 13);
+            this.label202.Size = new System.Drawing.Size(42, 17);
             this.label202.TabIndex = 27;
             this.label202.Text = "Libya";
             // 
             // label203
             // 
             this.label203.AutoSize = true;
-            this.label203.Location = new System.Drawing.Point(13, 89);
-            this.label203.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label203.Location = new System.Drawing.Point(17, 110);
             this.label203.Name = "label203";
-            this.label203.Size = new System.Drawing.Size(25, 13);
+            this.label203.Size = new System.Drawing.Size(32, 17);
             this.label203.TabIndex = 11;
             this.label203.Text = "Iran";
             // 
@@ -1798,12 +1741,12 @@
             this.tableLayoutPanel68.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel68.Controls.Add(this.Libya_USA, 0, 0);
             this.tableLayoutPanel68.Controls.Add(this.Libya_USSR, 1, 0);
-            this.tableLayoutPanel68.Location = new System.Drawing.Point(77, 105);
-            this.tableLayoutPanel68.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel68.Location = new System.Drawing.Point(103, 129);
+            this.tableLayoutPanel68.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel68.Name = "tableLayoutPanel68";
             this.tableLayoutPanel68.RowCount = 1;
             this.tableLayoutPanel68.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel68.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel68.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel68.TabIndex = 26;
             // 
             // Libya_USA
@@ -1812,10 +1755,9 @@
             this.Libya_USA.BackColor = System.Drawing.Color.White;
             this.Libya_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Libya_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Libya_USA.Location = new System.Drawing.Point(3, 1);
-            this.Libya_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Libya_USA.Location = new System.Drawing.Point(4, 1);
             this.Libya_USA.Name = "Libya_USA";
-            this.Libya_USA.Size = new System.Drawing.Size(14, 14);
+            this.Libya_USA.Size = new System.Drawing.Size(26, 17);
             this.Libya_USA.TabIndex = 0;
             this.Libya_USA.Text = "10";
             this.Libya_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1826,10 +1768,9 @@
             this.Libya_USSR.BackColor = System.Drawing.Color.White;
             this.Libya_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Libya_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Libya_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Libya_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Libya_USSR.Location = new System.Drawing.Point(37, 1);
             this.Libya_USSR.Name = "Libya_USSR";
-            this.Libya_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Libya_USSR.Size = new System.Drawing.Size(26, 17);
             this.Libya_USSR.TabIndex = 5;
             this.Libya_USSR.Text = "10";
             this.Libya_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1837,10 +1778,9 @@
             // label206
             // 
             this.label206.AutoSize = true;
-            this.label206.Location = new System.Drawing.Point(75, 54);
-            this.label206.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label206.Location = new System.Drawing.Point(100, 66);
             this.label206.Name = "label206";
-            this.label206.Size = new System.Drawing.Size(49, 13);
+            this.label206.Size = new System.Drawing.Size(64, 17);
             this.label206.TabIndex = 25;
             this.label206.Text = "Lebanon";
             // 
@@ -1852,12 +1792,12 @@
             this.tableLayoutPanel69.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel69.Controls.Add(this.Iran_USA, 0, 0);
             this.tableLayoutPanel69.Controls.Add(this.Iran_USSR, 1, 0);
-            this.tableLayoutPanel69.Location = new System.Drawing.Point(15, 105);
-            this.tableLayoutPanel69.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel69.Location = new System.Drawing.Point(20, 129);
+            this.tableLayoutPanel69.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel69.Name = "tableLayoutPanel69";
             this.tableLayoutPanel69.RowCount = 1;
             this.tableLayoutPanel69.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel69.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel69.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel69.TabIndex = 10;
             // 
             // Iran_USA
@@ -1866,10 +1806,9 @@
             this.Iran_USA.BackColor = System.Drawing.Color.White;
             this.Iran_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Iran_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Iran_USA.Location = new System.Drawing.Point(3, 1);
-            this.Iran_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Iran_USA.Location = new System.Drawing.Point(4, 1);
             this.Iran_USA.Name = "Iran_USA";
-            this.Iran_USA.Size = new System.Drawing.Size(14, 14);
+            this.Iran_USA.Size = new System.Drawing.Size(26, 17);
             this.Iran_USA.TabIndex = 0;
             this.Iran_USA.Text = "10";
             this.Iran_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1880,10 +1819,9 @@
             this.Iran_USSR.BackColor = System.Drawing.Color.White;
             this.Iran_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Iran_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Iran_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Iran_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Iran_USSR.Location = new System.Drawing.Point(37, 1);
             this.Iran_USSR.Name = "Iran_USSR";
-            this.Iran_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Iran_USSR.Size = new System.Drawing.Size(26, 17);
             this.Iran_USSR.TabIndex = 5;
             this.Iran_USSR.Text = "10";
             this.Iran_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1891,20 +1829,18 @@
             // label209
             // 
             this.label209.AutoSize = true;
-            this.label209.Location = new System.Drawing.Point(75, 19);
-            this.label209.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label209.Location = new System.Drawing.Point(100, 23);
             this.label209.Name = "label209";
-            this.label209.Size = new System.Drawing.Size(39, 13);
+            this.label209.Size = new System.Drawing.Size(52, 17);
             this.label209.TabIndex = 21;
             this.label209.Text = "Jordan";
             // 
             // label210
             // 
             this.label210.AutoSize = true;
-            this.label210.Location = new System.Drawing.Point(13, 54);
-            this.label210.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label210.Location = new System.Drawing.Point(17, 66);
             this.label210.Name = "label210";
-            this.label210.Size = new System.Drawing.Size(59, 13);
+            this.label210.Size = new System.Drawing.Size(78, 17);
             this.label210.TabIndex = 9;
             this.label210.Text = "Gulf States";
             // 
@@ -1916,12 +1852,12 @@
             this.tableLayoutPanel70.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel70.Controls.Add(this.Lebanon_USA, 0, 0);
             this.tableLayoutPanel70.Controls.Add(this.Lebanon_USSR, 1, 0);
-            this.tableLayoutPanel70.Location = new System.Drawing.Point(77, 70);
-            this.tableLayoutPanel70.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel70.Location = new System.Drawing.Point(103, 86);
+            this.tableLayoutPanel70.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel70.Name = "tableLayoutPanel70";
             this.tableLayoutPanel70.RowCount = 1;
             this.tableLayoutPanel70.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel70.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel70.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel70.TabIndex = 23;
             // 
             // Lebanon_USA
@@ -1930,10 +1866,9 @@
             this.Lebanon_USA.BackColor = System.Drawing.Color.White;
             this.Lebanon_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lebanon_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Lebanon_USA.Location = new System.Drawing.Point(3, 1);
-            this.Lebanon_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lebanon_USA.Location = new System.Drawing.Point(4, 1);
             this.Lebanon_USA.Name = "Lebanon_USA";
-            this.Lebanon_USA.Size = new System.Drawing.Size(14, 14);
+            this.Lebanon_USA.Size = new System.Drawing.Size(26, 17);
             this.Lebanon_USA.TabIndex = 0;
             this.Lebanon_USA.Text = "10";
             this.Lebanon_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1944,10 +1879,9 @@
             this.Lebanon_USSR.BackColor = System.Drawing.Color.White;
             this.Lebanon_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lebanon_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Lebanon_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Lebanon_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lebanon_USSR.Location = new System.Drawing.Point(37, 1);
             this.Lebanon_USSR.Name = "Lebanon_USSR";
-            this.Lebanon_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Lebanon_USSR.Size = new System.Drawing.Size(26, 17);
             this.Lebanon_USSR.TabIndex = 5;
             this.Lebanon_USSR.Text = "10";
             this.Lebanon_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1955,10 +1889,9 @@
             // label213
             // 
             this.label213.AutoSize = true;
-            this.label213.Location = new System.Drawing.Point(13, 19);
-            this.label213.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label213.Location = new System.Drawing.Point(17, 23);
             this.label213.Name = "label213";
-            this.label213.Size = new System.Drawing.Size(34, 13);
+            this.label213.Size = new System.Drawing.Size(44, 17);
             this.label213.TabIndex = 7;
             this.label213.Text = "Egypt";
             // 
@@ -1970,12 +1903,12 @@
             this.tableLayoutPanel71.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel71.Controls.Add(this.Jordan_USA, 0, 0);
             this.tableLayoutPanel71.Controls.Add(this.Jordan_USSR, 1, 0);
-            this.tableLayoutPanel71.Location = new System.Drawing.Point(77, 35);
-            this.tableLayoutPanel71.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel71.Location = new System.Drawing.Point(103, 43);
+            this.tableLayoutPanel71.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel71.Name = "tableLayoutPanel71";
             this.tableLayoutPanel71.RowCount = 1;
             this.tableLayoutPanel71.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel71.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel71.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel71.TabIndex = 20;
             // 
             // Jordan_USA
@@ -1984,10 +1917,9 @@
             this.Jordan_USA.BackColor = System.Drawing.Color.White;
             this.Jordan_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Jordan_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Jordan_USA.Location = new System.Drawing.Point(3, 1);
-            this.Jordan_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Jordan_USA.Location = new System.Drawing.Point(4, 1);
             this.Jordan_USA.Name = "Jordan_USA";
-            this.Jordan_USA.Size = new System.Drawing.Size(14, 14);
+            this.Jordan_USA.Size = new System.Drawing.Size(26, 17);
             this.Jordan_USA.TabIndex = 0;
             this.Jordan_USA.Text = "10";
             this.Jordan_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1998,10 +1930,9 @@
             this.Jordan_USSR.BackColor = System.Drawing.Color.White;
             this.Jordan_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Jordan_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Jordan_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Jordan_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Jordan_USSR.Location = new System.Drawing.Point(37, 1);
             this.Jordan_USSR.Name = "Jordan_USSR";
-            this.Jordan_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Jordan_USSR.Size = new System.Drawing.Size(26, 17);
             this.Jordan_USSR.TabIndex = 5;
             this.Jordan_USSR.Text = "10";
             this.Jordan_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2014,12 +1945,12 @@
             this.tableLayoutPanel72.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel72.Controls.Add(this.GulfStates_USA, 0, 0);
             this.tableLayoutPanel72.Controls.Add(this.GulfStates_USSR, 1, 0);
-            this.tableLayoutPanel72.Location = new System.Drawing.Point(15, 70);
-            this.tableLayoutPanel72.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel72.Location = new System.Drawing.Point(20, 86);
+            this.tableLayoutPanel72.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel72.Name = "tableLayoutPanel72";
             this.tableLayoutPanel72.RowCount = 1;
             this.tableLayoutPanel72.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel72.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel72.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel72.TabIndex = 8;
             // 
             // GulfStates_USA
@@ -2028,10 +1959,9 @@
             this.GulfStates_USA.BackColor = System.Drawing.Color.White;
             this.GulfStates_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GulfStates_USA.ForeColor = System.Drawing.Color.Blue;
-            this.GulfStates_USA.Location = new System.Drawing.Point(3, 1);
-            this.GulfStates_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.GulfStates_USA.Location = new System.Drawing.Point(4, 1);
             this.GulfStates_USA.Name = "GulfStates_USA";
-            this.GulfStates_USA.Size = new System.Drawing.Size(14, 14);
+            this.GulfStates_USA.Size = new System.Drawing.Size(26, 17);
             this.GulfStates_USA.TabIndex = 0;
             this.GulfStates_USA.Text = "10";
             this.GulfStates_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2042,10 +1972,9 @@
             this.GulfStates_USSR.BackColor = System.Drawing.Color.White;
             this.GulfStates_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GulfStates_USSR.ForeColor = System.Drawing.Color.Red;
-            this.GulfStates_USSR.Location = new System.Drawing.Point(28, 1);
-            this.GulfStates_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.GulfStates_USSR.Location = new System.Drawing.Point(37, 1);
             this.GulfStates_USSR.Name = "GulfStates_USSR";
-            this.GulfStates_USSR.Size = new System.Drawing.Size(14, 14);
+            this.GulfStates_USSR.Size = new System.Drawing.Size(26, 17);
             this.GulfStates_USSR.TabIndex = 5;
             this.GulfStates_USSR.Text = "10";
             this.GulfStates_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2058,12 +1987,12 @@
             this.tableLayoutPanel73.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel73.Controls.Add(this.Egypt_USA, 0, 0);
             this.tableLayoutPanel73.Controls.Add(this.Egypt_USSR, 1, 0);
-            this.tableLayoutPanel73.Location = new System.Drawing.Point(15, 35);
-            this.tableLayoutPanel73.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel73.Location = new System.Drawing.Point(20, 43);
+            this.tableLayoutPanel73.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel73.Name = "tableLayoutPanel73";
             this.tableLayoutPanel73.RowCount = 1;
             this.tableLayoutPanel73.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel73.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel73.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel73.TabIndex = 6;
             // 
             // Egypt_USA
@@ -2072,10 +2001,9 @@
             this.Egypt_USA.BackColor = System.Drawing.Color.White;
             this.Egypt_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Egypt_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Egypt_USA.Location = new System.Drawing.Point(3, 1);
-            this.Egypt_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Egypt_USA.Location = new System.Drawing.Point(4, 1);
             this.Egypt_USA.Name = "Egypt_USA";
-            this.Egypt_USA.Size = new System.Drawing.Size(14, 14);
+            this.Egypt_USA.Size = new System.Drawing.Size(26, 17);
             this.Egypt_USA.TabIndex = 0;
             this.Egypt_USA.Text = "10";
             this.Egypt_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2086,10 +2014,9 @@
             this.Egypt_USSR.BackColor = System.Drawing.Color.White;
             this.Egypt_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Egypt_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Egypt_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Egypt_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Egypt_USSR.Location = new System.Drawing.Point(37, 1);
             this.Egypt_USSR.Name = "Egypt_USSR";
-            this.Egypt_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Egypt_USSR.Size = new System.Drawing.Size(26, 17);
             this.Egypt_USSR.TabIndex = 5;
             this.Egypt_USSR.Text = "10";
             this.Egypt_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2138,11 +2065,11 @@
             this.groupBox4.Controls.Add(this.tableLayoutPanel59);
             this.groupBox4.Controls.Add(this.tableLayoutPanel60);
             this.groupBox4.Controls.Add(this.tableLayoutPanel61);
-            this.groupBox4.Location = new System.Drawing.Point(472, 26);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Location = new System.Drawing.Point(629, 32);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox4.Size = new System.Drawing.Size(169, 418);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox4.Size = new System.Drawing.Size(225, 514);
             this.groupBox4.TabIndex = 16;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Europe";
@@ -2151,10 +2078,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(93, 160);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(124, 197);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 12);
+            this.label4.Size = new System.Drawing.Size(88, 15);
             this.label4.TabIndex = 37;
             this.label4.Text = "Spain/Portugal";
             // 
@@ -2166,12 +2092,12 @@
             this.tableLayoutPanel31.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel31.Controls.Add(this.SpainPortugal_USA, 0, 0);
             this.tableLayoutPanel31.Controls.Add(this.SpainPortugal_USSR, 1, 0);
-            this.tableLayoutPanel31.Location = new System.Drawing.Point(95, 176);
-            this.tableLayoutPanel31.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel31.Location = new System.Drawing.Point(127, 217);
+            this.tableLayoutPanel31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel31.Name = "tableLayoutPanel31";
             this.tableLayoutPanel31.RowCount = 1;
             this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel31.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel31.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel31.TabIndex = 36;
             // 
             // SpainPortugal_USA
@@ -2180,10 +2106,9 @@
             this.SpainPortugal_USA.BackColor = System.Drawing.Color.White;
             this.SpainPortugal_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SpainPortugal_USA.ForeColor = System.Drawing.Color.Blue;
-            this.SpainPortugal_USA.Location = new System.Drawing.Point(3, 1);
-            this.SpainPortugal_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SpainPortugal_USA.Location = new System.Drawing.Point(4, 1);
             this.SpainPortugal_USA.Name = "SpainPortugal_USA";
-            this.SpainPortugal_USA.Size = new System.Drawing.Size(14, 14);
+            this.SpainPortugal_USA.Size = new System.Drawing.Size(26, 17);
             this.SpainPortugal_USA.TabIndex = 0;
             this.SpainPortugal_USA.Text = "10";
             this.SpainPortugal_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2194,10 +2119,9 @@
             this.SpainPortugal_USSR.BackColor = System.Drawing.Color.White;
             this.SpainPortugal_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SpainPortugal_USSR.ForeColor = System.Drawing.Color.Red;
-            this.SpainPortugal_USSR.Location = new System.Drawing.Point(28, 1);
-            this.SpainPortugal_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SpainPortugal_USSR.Location = new System.Drawing.Point(37, 1);
             this.SpainPortugal_USSR.Name = "SpainPortugal_USSR";
-            this.SpainPortugal_USSR.Size = new System.Drawing.Size(14, 14);
+            this.SpainPortugal_USSR.Size = new System.Drawing.Size(26, 17);
             this.SpainPortugal_USSR.TabIndex = 5;
             this.SpainPortugal_USSR.Text = "10";
             this.SpainPortugal_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2205,20 +2129,18 @@
             // label184
             // 
             this.label184.AutoSize = true;
-            this.label184.Location = new System.Drawing.Point(93, 337);
-            this.label184.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label184.Location = new System.Drawing.Point(124, 415);
             this.label184.Name = "label184";
-            this.label184.Size = new System.Drawing.Size(59, 13);
+            this.label184.Size = new System.Drawing.Size(77, 17);
             this.label184.TabIndex = 43;
             this.label184.Text = "Yugoslavia";
             // 
             // label185
             // 
             this.label185.AutoSize = true;
-            this.label185.Location = new System.Drawing.Point(13, 337);
-            this.label185.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label185.Location = new System.Drawing.Point(17, 415);
             this.label185.Name = "label185";
-            this.label185.Size = new System.Drawing.Size(42, 13);
+            this.label185.Size = new System.Drawing.Size(55, 17);
             this.label185.TabIndex = 41;
             this.label185.Text = "Greece";
             // 
@@ -2230,12 +2152,12 @@
             this.tableLayoutPanel62.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel62.Controls.Add(this.Yugoslavia_USA, 0, 0);
             this.tableLayoutPanel62.Controls.Add(this.Yugoslavia_USSR, 1, 0);
-            this.tableLayoutPanel62.Location = new System.Drawing.Point(95, 353);
-            this.tableLayoutPanel62.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel62.Location = new System.Drawing.Point(127, 434);
+            this.tableLayoutPanel62.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel62.Name = "tableLayoutPanel62";
             this.tableLayoutPanel62.RowCount = 1;
             this.tableLayoutPanel62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel62.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel62.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel62.TabIndex = 42;
             // 
             // Yugoslavia_USA
@@ -2244,10 +2166,9 @@
             this.Yugoslavia_USA.BackColor = System.Drawing.Color.White;
             this.Yugoslavia_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Yugoslavia_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Yugoslavia_USA.Location = new System.Drawing.Point(3, 1);
-            this.Yugoslavia_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Yugoslavia_USA.Location = new System.Drawing.Point(4, 1);
             this.Yugoslavia_USA.Name = "Yugoslavia_USA";
-            this.Yugoslavia_USA.Size = new System.Drawing.Size(14, 14);
+            this.Yugoslavia_USA.Size = new System.Drawing.Size(26, 17);
             this.Yugoslavia_USA.TabIndex = 0;
             this.Yugoslavia_USA.Text = "10";
             this.Yugoslavia_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2258,10 +2179,9 @@
             this.Yugoslavia_USSR.BackColor = System.Drawing.Color.White;
             this.Yugoslavia_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Yugoslavia_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Yugoslavia_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Yugoslavia_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Yugoslavia_USSR.Location = new System.Drawing.Point(37, 1);
             this.Yugoslavia_USSR.Name = "Yugoslavia_USSR";
-            this.Yugoslavia_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Yugoslavia_USSR.Size = new System.Drawing.Size(26, 17);
             this.Yugoslavia_USSR.TabIndex = 5;
             this.Yugoslavia_USSR.Text = "10";
             this.Yugoslavia_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2274,12 +2194,12 @@
             this.tableLayoutPanel63.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel63.Controls.Add(this.Greece_USA, 0, 0);
             this.tableLayoutPanel63.Controls.Add(this.Greece_USSR, 1, 0);
-            this.tableLayoutPanel63.Location = new System.Drawing.Point(15, 353);
-            this.tableLayoutPanel63.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel63.Location = new System.Drawing.Point(20, 434);
+            this.tableLayoutPanel63.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel63.Name = "tableLayoutPanel63";
             this.tableLayoutPanel63.RowCount = 1;
             this.tableLayoutPanel63.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel63.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel63.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel63.TabIndex = 40;
             // 
             // Greece_USA
@@ -2288,10 +2208,9 @@
             this.Greece_USA.BackColor = System.Drawing.Color.White;
             this.Greece_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Greece_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Greece_USA.Location = new System.Drawing.Point(3, 1);
-            this.Greece_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Greece_USA.Location = new System.Drawing.Point(4, 1);
             this.Greece_USA.Name = "Greece_USA";
-            this.Greece_USA.Size = new System.Drawing.Size(14, 14);
+            this.Greece_USA.Size = new System.Drawing.Size(26, 17);
             this.Greece_USA.TabIndex = 0;
             this.Greece_USA.Text = "10";
             this.Greece_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2302,10 +2221,9 @@
             this.Greece_USSR.BackColor = System.Drawing.Color.White;
             this.Greece_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Greece_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Greece_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Greece_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Greece_USSR.Location = new System.Drawing.Point(37, 1);
             this.Greece_USSR.Name = "Greece_USSR";
-            this.Greece_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Greece_USSR.Size = new System.Drawing.Size(26, 17);
             this.Greece_USSR.TabIndex = 5;
             this.Greece_USSR.Text = "10";
             this.Greece_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2314,20 +2232,18 @@
             // 
             this.label55.AutoSize = true;
             this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(93, 301);
-            this.label55.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label55.Location = new System.Drawing.Point(124, 370);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(57, 12);
+            this.label55.Size = new System.Drawing.Size(74, 15);
             this.label55.TabIndex = 39;
             this.label55.Text = "W. Germany";
             // 
             // label56
             // 
             this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(13, 301);
-            this.label56.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label56.Location = new System.Drawing.Point(17, 370);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(40, 13);
+            this.label56.Size = new System.Drawing.Size(52, 17);
             this.label56.TabIndex = 37;
             this.label56.Text = "France";
             // 
@@ -2339,12 +2255,12 @@
             this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel19.Controls.Add(this.WGermany_USA, 0, 0);
             this.tableLayoutPanel19.Controls.Add(this.WGermany_USSR, 1, 0);
-            this.tableLayoutPanel19.Location = new System.Drawing.Point(95, 318);
-            this.tableLayoutPanel19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel19.Location = new System.Drawing.Point(127, 391);
+            this.tableLayoutPanel19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel19.Name = "tableLayoutPanel19";
             this.tableLayoutPanel19.RowCount = 1;
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel19.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel19.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel19.TabIndex = 38;
             // 
             // WGermany_USA
@@ -2353,10 +2269,9 @@
             this.WGermany_USA.BackColor = System.Drawing.Color.White;
             this.WGermany_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WGermany_USA.ForeColor = System.Drawing.Color.Blue;
-            this.WGermany_USA.Location = new System.Drawing.Point(3, 1);
-            this.WGermany_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.WGermany_USA.Location = new System.Drawing.Point(4, 1);
             this.WGermany_USA.Name = "WGermany_USA";
-            this.WGermany_USA.Size = new System.Drawing.Size(14, 14);
+            this.WGermany_USA.Size = new System.Drawing.Size(26, 17);
             this.WGermany_USA.TabIndex = 0;
             this.WGermany_USA.Text = "10";
             this.WGermany_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2367,10 +2282,9 @@
             this.WGermany_USSR.BackColor = System.Drawing.Color.White;
             this.WGermany_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WGermany_USSR.ForeColor = System.Drawing.Color.Red;
-            this.WGermany_USSR.Location = new System.Drawing.Point(28, 1);
-            this.WGermany_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.WGermany_USSR.Location = new System.Drawing.Point(37, 1);
             this.WGermany_USSR.Name = "WGermany_USSR";
-            this.WGermany_USSR.Size = new System.Drawing.Size(14, 14);
+            this.WGermany_USSR.Size = new System.Drawing.Size(26, 17);
             this.WGermany_USSR.TabIndex = 5;
             this.WGermany_USSR.Text = "10";
             this.WGermany_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2383,12 +2297,12 @@
             this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel20.Controls.Add(this.France_USA, 0, 0);
             this.tableLayoutPanel20.Controls.Add(this.France_USSR, 1, 0);
-            this.tableLayoutPanel20.Location = new System.Drawing.Point(15, 318);
-            this.tableLayoutPanel20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel20.Location = new System.Drawing.Point(20, 391);
+            this.tableLayoutPanel20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel20.Name = "tableLayoutPanel20";
             this.tableLayoutPanel20.RowCount = 1;
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel20.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel20.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel20.TabIndex = 36;
             // 
             // France_USA
@@ -2397,10 +2311,9 @@
             this.France_USA.BackColor = System.Drawing.Color.White;
             this.France_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.France_USA.ForeColor = System.Drawing.Color.Blue;
-            this.France_USA.Location = new System.Drawing.Point(3, 1);
-            this.France_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.France_USA.Location = new System.Drawing.Point(4, 1);
             this.France_USA.Name = "France_USA";
-            this.France_USA.Size = new System.Drawing.Size(14, 14);
+            this.France_USA.Size = new System.Drawing.Size(26, 17);
             this.France_USA.TabIndex = 0;
             this.France_USA.Text = "10";
             this.France_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2411,10 +2324,9 @@
             this.France_USSR.BackColor = System.Drawing.Color.White;
             this.France_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.France_USSR.ForeColor = System.Drawing.Color.Red;
-            this.France_USSR.Location = new System.Drawing.Point(28, 1);
-            this.France_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.France_USSR.Location = new System.Drawing.Point(37, 1);
             this.France_USSR.Name = "France_USSR";
-            this.France_USSR.Size = new System.Drawing.Size(14, 14);
+            this.France_USSR.Size = new System.Drawing.Size(26, 17);
             this.France_USSR.TabIndex = 5;
             this.France_USSR.Text = "10";
             this.France_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2422,20 +2334,18 @@
             // label61
             // 
             this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(93, 266);
-            this.label61.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label61.Location = new System.Drawing.Point(124, 327);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(28, 13);
+            this.label61.Size = new System.Drawing.Size(35, 17);
             this.label61.TabIndex = 35;
             this.label61.Text = "U.K.";
             // 
             // label63
             // 
             this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(13, 266);
-            this.label63.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label63.Location = new System.Drawing.Point(17, 327);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(41, 13);
+            this.label63.Size = new System.Drawing.Size(54, 17);
             this.label63.TabIndex = 19;
             this.label63.Text = "Finland";
             // 
@@ -2447,12 +2357,12 @@
             this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel21.Controls.Add(this.UK_USA, 0, 0);
             this.tableLayoutPanel21.Controls.Add(this.UK_USSR, 1, 0);
-            this.tableLayoutPanel21.Location = new System.Drawing.Point(95, 283);
-            this.tableLayoutPanel21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel21.Location = new System.Drawing.Point(127, 348);
+            this.tableLayoutPanel21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel21.Name = "tableLayoutPanel21";
             this.tableLayoutPanel21.RowCount = 1;
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel21.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel21.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel21.TabIndex = 34;
             // 
             // UK_USA
@@ -2461,10 +2371,9 @@
             this.UK_USA.BackColor = System.Drawing.Color.White;
             this.UK_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UK_USA.ForeColor = System.Drawing.Color.Blue;
-            this.UK_USA.Location = new System.Drawing.Point(3, 1);
-            this.UK_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.UK_USA.Location = new System.Drawing.Point(4, 1);
             this.UK_USA.Name = "UK_USA";
-            this.UK_USA.Size = new System.Drawing.Size(14, 14);
+            this.UK_USA.Size = new System.Drawing.Size(26, 17);
             this.UK_USA.TabIndex = 0;
             this.UK_USA.Text = "10";
             this.UK_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2475,10 +2384,9 @@
             this.UK_USSR.BackColor = System.Drawing.Color.White;
             this.UK_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UK_USSR.ForeColor = System.Drawing.Color.Red;
-            this.UK_USSR.Location = new System.Drawing.Point(28, 1);
-            this.UK_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.UK_USSR.Location = new System.Drawing.Point(37, 1);
             this.UK_USSR.Name = "UK_USSR";
-            this.UK_USSR.Size = new System.Drawing.Size(14, 14);
+            this.UK_USSR.Size = new System.Drawing.Size(26, 17);
             this.UK_USSR.TabIndex = 5;
             this.UK_USSR.Text = "10";
             this.UK_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2491,12 +2399,12 @@
             this.tableLayoutPanel37.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel37.Controls.Add(this.Finland_USA, 0, 0);
             this.tableLayoutPanel37.Controls.Add(this.Finland_USSR, 1, 0);
-            this.tableLayoutPanel37.Location = new System.Drawing.Point(15, 283);
-            this.tableLayoutPanel37.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel37.Location = new System.Drawing.Point(20, 348);
+            this.tableLayoutPanel37.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel37.Name = "tableLayoutPanel37";
             this.tableLayoutPanel37.RowCount = 1;
             this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel37.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel37.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel37.TabIndex = 18;
             // 
             // Finland_USA
@@ -2505,10 +2413,9 @@
             this.Finland_USA.BackColor = System.Drawing.Color.White;
             this.Finland_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Finland_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Finland_USA.Location = new System.Drawing.Point(3, 1);
-            this.Finland_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Finland_USA.Location = new System.Drawing.Point(4, 1);
             this.Finland_USA.Name = "Finland_USA";
-            this.Finland_USA.Size = new System.Drawing.Size(14, 14);
+            this.Finland_USA.Size = new System.Drawing.Size(26, 17);
             this.Finland_USA.TabIndex = 0;
             this.Finland_USA.Text = "10";
             this.Finland_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2519,10 +2426,9 @@
             this.Finland_USSR.BackColor = System.Drawing.Color.White;
             this.Finland_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Finland_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Finland_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Finland_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Finland_USSR.Location = new System.Drawing.Point(37, 1);
             this.Finland_USSR.Name = "Finland_USSR";
-            this.Finland_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Finland_USSR.Size = new System.Drawing.Size(26, 17);
             this.Finland_USSR.TabIndex = 5;
             this.Finland_USSR.Text = "10";
             this.Finland_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2530,10 +2436,9 @@
             // label112
             // 
             this.label112.AutoSize = true;
-            this.label112.Location = new System.Drawing.Point(93, 230);
-            this.label112.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label112.Location = new System.Drawing.Point(124, 283);
             this.label112.Name = "label112";
-            this.label112.Size = new System.Drawing.Size(40, 13);
+            this.label112.Size = new System.Drawing.Size(52, 17);
             this.label112.TabIndex = 33;
             this.label112.Text = "Turkey";
             // 
@@ -2541,10 +2446,9 @@
             // 
             this.label113.AutoSize = true;
             this.label113.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label113.Location = new System.Drawing.Point(13, 230);
-            this.label113.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label113.Location = new System.Drawing.Point(17, 283);
             this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(54, 12);
+            this.label113.Size = new System.Drawing.Size(71, 15);
             this.label113.TabIndex = 17;
             this.label113.Text = "E. Germany";
             // 
@@ -2556,12 +2460,12 @@
             this.tableLayoutPanel38.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel38.Controls.Add(this.Turkey_USA, 0, 0);
             this.tableLayoutPanel38.Controls.Add(this.Turkey_USSR, 1, 0);
-            this.tableLayoutPanel38.Location = new System.Drawing.Point(95, 246);
-            this.tableLayoutPanel38.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel38.Location = new System.Drawing.Point(127, 303);
+            this.tableLayoutPanel38.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel38.Name = "tableLayoutPanel38";
             this.tableLayoutPanel38.RowCount = 1;
             this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel38.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel38.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel38.TabIndex = 32;
             // 
             // Turkey_USA
@@ -2570,10 +2474,9 @@
             this.Turkey_USA.BackColor = System.Drawing.Color.White;
             this.Turkey_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Turkey_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Turkey_USA.Location = new System.Drawing.Point(3, 1);
-            this.Turkey_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Turkey_USA.Location = new System.Drawing.Point(4, 1);
             this.Turkey_USA.Name = "Turkey_USA";
-            this.Turkey_USA.Size = new System.Drawing.Size(14, 14);
+            this.Turkey_USA.Size = new System.Drawing.Size(26, 17);
             this.Turkey_USA.TabIndex = 0;
             this.Turkey_USA.Text = "10";
             this.Turkey_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2584,10 +2487,9 @@
             this.Turkey_USSR.BackColor = System.Drawing.Color.White;
             this.Turkey_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Turkey_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Turkey_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Turkey_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Turkey_USSR.Location = new System.Drawing.Point(37, 1);
             this.Turkey_USSR.Name = "Turkey_USSR";
-            this.Turkey_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Turkey_USSR.Size = new System.Drawing.Size(26, 17);
             this.Turkey_USSR.TabIndex = 5;
             this.Turkey_USSR.Text = "10";
             this.Turkey_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2600,12 +2502,12 @@
             this.tableLayoutPanel49.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel49.Controls.Add(this.EGermany_USA, 0, 0);
             this.tableLayoutPanel49.Controls.Add(this.EGermany_USSR, 1, 0);
-            this.tableLayoutPanel49.Location = new System.Drawing.Point(15, 246);
-            this.tableLayoutPanel49.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel49.Location = new System.Drawing.Point(20, 303);
+            this.tableLayoutPanel49.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel49.Name = "tableLayoutPanel49";
             this.tableLayoutPanel49.RowCount = 1;
             this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel49.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel49.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel49.TabIndex = 16;
             // 
             // EGermany_USA
@@ -2614,10 +2516,9 @@
             this.EGermany_USA.BackColor = System.Drawing.Color.White;
             this.EGermany_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EGermany_USA.ForeColor = System.Drawing.Color.Blue;
-            this.EGermany_USA.Location = new System.Drawing.Point(3, 1);
-            this.EGermany_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.EGermany_USA.Location = new System.Drawing.Point(4, 1);
             this.EGermany_USA.Name = "EGermany_USA";
-            this.EGermany_USA.Size = new System.Drawing.Size(14, 14);
+            this.EGermany_USA.Size = new System.Drawing.Size(26, 17);
             this.EGermany_USA.TabIndex = 0;
             this.EGermany_USA.Text = "10";
             this.EGermany_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2628,10 +2529,9 @@
             this.EGermany_USSR.BackColor = System.Drawing.Color.White;
             this.EGermany_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EGermany_USSR.ForeColor = System.Drawing.Color.Red;
-            this.EGermany_USSR.Location = new System.Drawing.Point(28, 1);
-            this.EGermany_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.EGermany_USSR.Location = new System.Drawing.Point(37, 1);
             this.EGermany_USSR.Name = "EGermany_USSR";
-            this.EGermany_USSR.Size = new System.Drawing.Size(14, 14);
+            this.EGermany_USSR.Size = new System.Drawing.Size(26, 17);
             this.EGermany_USSR.TabIndex = 5;
             this.EGermany_USSR.Text = "10";
             this.EGermany_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2639,20 +2539,18 @@
             // label148
             // 
             this.label148.AutoSize = true;
-            this.label148.Location = new System.Drawing.Point(93, 195);
-            this.label148.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label148.Location = new System.Drawing.Point(124, 240);
             this.label148.Name = "label148";
-            this.label148.Size = new System.Drawing.Size(46, 13);
+            this.label148.Size = new System.Drawing.Size(58, 17);
             this.label148.TabIndex = 31;
             this.label148.Text = "Sweden";
             // 
             // label149
             // 
             this.label149.AutoSize = true;
-            this.label149.Location = new System.Drawing.Point(13, 195);
-            this.label149.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label149.Location = new System.Drawing.Point(17, 240);
             this.label149.Name = "label149";
-            this.label149.Size = new System.Drawing.Size(50, 13);
+            this.label149.Size = new System.Drawing.Size(65, 17);
             this.label149.TabIndex = 15;
             this.label149.Text = "Denmark";
             // 
@@ -2664,12 +2562,12 @@
             this.tableLayoutPanel50.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel50.Controls.Add(this.Sweden_USA, 0, 0);
             this.tableLayoutPanel50.Controls.Add(this.Sweden_USSR, 1, 0);
-            this.tableLayoutPanel50.Location = new System.Drawing.Point(95, 211);
-            this.tableLayoutPanel50.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel50.Location = new System.Drawing.Point(127, 260);
+            this.tableLayoutPanel50.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel50.Name = "tableLayoutPanel50";
             this.tableLayoutPanel50.RowCount = 1;
             this.tableLayoutPanel50.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel50.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel50.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel50.TabIndex = 30;
             // 
             // Sweden_USA
@@ -2678,10 +2576,9 @@
             this.Sweden_USA.BackColor = System.Drawing.Color.White;
             this.Sweden_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sweden_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Sweden_USA.Location = new System.Drawing.Point(3, 1);
-            this.Sweden_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Sweden_USA.Location = new System.Drawing.Point(4, 1);
             this.Sweden_USA.Name = "Sweden_USA";
-            this.Sweden_USA.Size = new System.Drawing.Size(14, 14);
+            this.Sweden_USA.Size = new System.Drawing.Size(26, 17);
             this.Sweden_USA.TabIndex = 0;
             this.Sweden_USA.Text = "10";
             this.Sweden_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2692,10 +2589,9 @@
             this.Sweden_USSR.BackColor = System.Drawing.Color.White;
             this.Sweden_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sweden_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Sweden_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Sweden_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Sweden_USSR.Location = new System.Drawing.Point(37, 1);
             this.Sweden_USSR.Name = "Sweden_USSR";
-            this.Sweden_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Sweden_USSR.Size = new System.Drawing.Size(26, 17);
             this.Sweden_USSR.TabIndex = 5;
             this.Sweden_USSR.Text = "10";
             this.Sweden_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2708,12 +2604,12 @@
             this.tableLayoutPanel51.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel51.Controls.Add(this.Denmark_USA, 0, 0);
             this.tableLayoutPanel51.Controls.Add(this.Denmark_USSR, 1, 0);
-            this.tableLayoutPanel51.Location = new System.Drawing.Point(15, 211);
-            this.tableLayoutPanel51.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel51.Location = new System.Drawing.Point(20, 260);
+            this.tableLayoutPanel51.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel51.Name = "tableLayoutPanel51";
             this.tableLayoutPanel51.RowCount = 1;
             this.tableLayoutPanel51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel51.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel51.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel51.TabIndex = 14;
             // 
             // Denmark_USA
@@ -2722,10 +2618,9 @@
             this.Denmark_USA.BackColor = System.Drawing.Color.White;
             this.Denmark_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Denmark_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Denmark_USA.Location = new System.Drawing.Point(3, 1);
-            this.Denmark_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Denmark_USA.Location = new System.Drawing.Point(4, 1);
             this.Denmark_USA.Name = "Denmark_USA";
-            this.Denmark_USA.Size = new System.Drawing.Size(14, 14);
+            this.Denmark_USA.Size = new System.Drawing.Size(26, 17);
             this.Denmark_USA.TabIndex = 0;
             this.Denmark_USA.Text = "10";
             this.Denmark_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2736,10 +2631,9 @@
             this.Denmark_USSR.BackColor = System.Drawing.Color.White;
             this.Denmark_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Denmark_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Denmark_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Denmark_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Denmark_USSR.Location = new System.Drawing.Point(37, 1);
             this.Denmark_USSR.Name = "Denmark_USSR";
-            this.Denmark_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Denmark_USSR.Size = new System.Drawing.Size(26, 17);
             this.Denmark_USSR.TabIndex = 5;
             this.Denmark_USSR.Text = "10";
             this.Denmark_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2747,10 +2641,9 @@
             // label154
             // 
             this.label154.AutoSize = true;
-            this.label154.Location = new System.Drawing.Point(93, 124);
-            this.label154.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label154.Location = new System.Drawing.Point(124, 153);
             this.label154.Name = "label154";
-            this.label154.Size = new System.Drawing.Size(49, 13);
+            this.label154.Size = new System.Drawing.Size(64, 17);
             this.label154.TabIndex = 29;
             this.label154.Text = "Romania";
             // 
@@ -2758,10 +2651,9 @@
             // 
             this.label155.AutoSize = true;
             this.label155.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label155.Location = new System.Drawing.Point(13, 159);
-            this.label155.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label155.Location = new System.Drawing.Point(17, 196);
             this.label155.Name = "label155";
-            this.label155.Size = new System.Drawing.Size(72, 12);
+            this.label155.Size = new System.Drawing.Size(92, 15);
             this.label155.TabIndex = 13;
             this.label155.Text = "Czechoslovakia";
             // 
@@ -2773,12 +2665,12 @@
             this.tableLayoutPanel52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel52.Controls.Add(this.Romania_USA, 0, 0);
             this.tableLayoutPanel52.Controls.Add(this.Romania_USSR, 1, 0);
-            this.tableLayoutPanel52.Location = new System.Drawing.Point(95, 140);
-            this.tableLayoutPanel52.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel52.Location = new System.Drawing.Point(127, 172);
+            this.tableLayoutPanel52.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel52.Name = "tableLayoutPanel52";
             this.tableLayoutPanel52.RowCount = 1;
             this.tableLayoutPanel52.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel52.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel52.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel52.TabIndex = 28;
             // 
             // Romania_USA
@@ -2787,10 +2679,9 @@
             this.Romania_USA.BackColor = System.Drawing.Color.White;
             this.Romania_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Romania_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Romania_USA.Location = new System.Drawing.Point(3, 1);
-            this.Romania_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Romania_USA.Location = new System.Drawing.Point(4, 1);
             this.Romania_USA.Name = "Romania_USA";
-            this.Romania_USA.Size = new System.Drawing.Size(14, 14);
+            this.Romania_USA.Size = new System.Drawing.Size(26, 17);
             this.Romania_USA.TabIndex = 0;
             this.Romania_USA.Text = "10";
             this.Romania_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2801,10 +2692,9 @@
             this.Romania_USSR.BackColor = System.Drawing.Color.White;
             this.Romania_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Romania_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Romania_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Romania_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Romania_USSR.Location = new System.Drawing.Point(37, 1);
             this.Romania_USSR.Name = "Romania_USSR";
-            this.Romania_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Romania_USSR.Size = new System.Drawing.Size(26, 17);
             this.Romania_USSR.TabIndex = 5;
             this.Romania_USSR.Text = "10";
             this.Romania_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2817,12 +2707,12 @@
             this.tableLayoutPanel53.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel53.Controls.Add(this.Czechoslovakia_USA, 0, 0);
             this.tableLayoutPanel53.Controls.Add(this.Czechoslovakia_USSR, 1, 0);
-            this.tableLayoutPanel53.Location = new System.Drawing.Point(15, 176);
-            this.tableLayoutPanel53.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel53.Location = new System.Drawing.Point(20, 217);
+            this.tableLayoutPanel53.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel53.Name = "tableLayoutPanel53";
             this.tableLayoutPanel53.RowCount = 1;
             this.tableLayoutPanel53.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel53.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel53.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel53.TabIndex = 12;
             // 
             // Czechoslovakia_USA
@@ -2831,10 +2721,9 @@
             this.Czechoslovakia_USA.BackColor = System.Drawing.Color.White;
             this.Czechoslovakia_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Czechoslovakia_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Czechoslovakia_USA.Location = new System.Drawing.Point(3, 1);
-            this.Czechoslovakia_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Czechoslovakia_USA.Location = new System.Drawing.Point(4, 1);
             this.Czechoslovakia_USA.Name = "Czechoslovakia_USA";
-            this.Czechoslovakia_USA.Size = new System.Drawing.Size(14, 14);
+            this.Czechoslovakia_USA.Size = new System.Drawing.Size(26, 17);
             this.Czechoslovakia_USA.TabIndex = 0;
             this.Czechoslovakia_USA.Text = "10";
             this.Czechoslovakia_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2845,10 +2734,9 @@
             this.Czechoslovakia_USSR.BackColor = System.Drawing.Color.White;
             this.Czechoslovakia_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Czechoslovakia_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Czechoslovakia_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Czechoslovakia_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Czechoslovakia_USSR.Location = new System.Drawing.Point(37, 1);
             this.Czechoslovakia_USSR.Name = "Czechoslovakia_USSR";
-            this.Czechoslovakia_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Czechoslovakia_USSR.Size = new System.Drawing.Size(26, 17);
             this.Czechoslovakia_USSR.TabIndex = 5;
             this.Czechoslovakia_USSR.Text = "10";
             this.Czechoslovakia_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2856,20 +2744,18 @@
             // label160
             // 
             this.label160.AutoSize = true;
-            this.label160.Location = new System.Drawing.Point(93, 89);
-            this.label160.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label160.Location = new System.Drawing.Point(124, 110);
             this.label160.Name = "label160";
-            this.label160.Size = new System.Drawing.Size(40, 13);
+            this.label160.Size = new System.Drawing.Size(52, 17);
             this.label160.TabIndex = 24;
             this.label160.Text = "Poland";
             // 
             // label161
             // 
             this.label161.AutoSize = true;
-            this.label161.Location = new System.Drawing.Point(13, 124);
-            this.label161.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label161.Location = new System.Drawing.Point(17, 153);
             this.label161.Name = "label161";
-            this.label161.Size = new System.Drawing.Size(44, 13);
+            this.label161.Size = new System.Drawing.Size(57, 17);
             this.label161.TabIndex = 9;
             this.label161.Text = "Canada";
             // 
@@ -2881,12 +2767,12 @@
             this.tableLayoutPanel54.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel54.Controls.Add(this.Poland_USA, 0, 0);
             this.tableLayoutPanel54.Controls.Add(this.Poland_USSR, 1, 0);
-            this.tableLayoutPanel54.Location = new System.Drawing.Point(95, 106);
-            this.tableLayoutPanel54.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel54.Location = new System.Drawing.Point(127, 130);
+            this.tableLayoutPanel54.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel54.Name = "tableLayoutPanel54";
             this.tableLayoutPanel54.RowCount = 1;
             this.tableLayoutPanel54.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel54.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel54.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel54.TabIndex = 22;
             // 
             // Poland_USA
@@ -2895,10 +2781,9 @@
             this.Poland_USA.BackColor = System.Drawing.Color.White;
             this.Poland_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Poland_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Poland_USA.Location = new System.Drawing.Point(3, 1);
-            this.Poland_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Poland_USA.Location = new System.Drawing.Point(4, 1);
             this.Poland_USA.Name = "Poland_USA";
-            this.Poland_USA.Size = new System.Drawing.Size(14, 14);
+            this.Poland_USA.Size = new System.Drawing.Size(26, 17);
             this.Poland_USA.TabIndex = 0;
             this.Poland_USA.Text = "10";
             this.Poland_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2909,10 +2794,9 @@
             this.Poland_USSR.BackColor = System.Drawing.Color.White;
             this.Poland_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Poland_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Poland_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Poland_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Poland_USSR.Location = new System.Drawing.Point(37, 1);
             this.Poland_USSR.Name = "Poland_USSR";
-            this.Poland_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Poland_USSR.Size = new System.Drawing.Size(26, 17);
             this.Poland_USSR.TabIndex = 5;
             this.Poland_USSR.Text = "10";
             this.Poland_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2925,12 +2809,12 @@
             this.tableLayoutPanel55.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel55.Controls.Add(this.Canada_USA, 0, 0);
             this.tableLayoutPanel55.Controls.Add(this.Canada_USSR, 1, 0);
-            this.tableLayoutPanel55.Location = new System.Drawing.Point(15, 140);
-            this.tableLayoutPanel55.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel55.Location = new System.Drawing.Point(20, 172);
+            this.tableLayoutPanel55.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel55.Name = "tableLayoutPanel55";
             this.tableLayoutPanel55.RowCount = 1;
             this.tableLayoutPanel55.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel55.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel55.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel55.TabIndex = 8;
             // 
             // Canada_USA
@@ -2939,10 +2823,9 @@
             this.Canada_USA.BackColor = System.Drawing.Color.White;
             this.Canada_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Canada_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Canada_USA.Location = new System.Drawing.Point(3, 1);
-            this.Canada_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Canada_USA.Location = new System.Drawing.Point(4, 1);
             this.Canada_USA.Name = "Canada_USA";
-            this.Canada_USA.Size = new System.Drawing.Size(14, 14);
+            this.Canada_USA.Size = new System.Drawing.Size(26, 17);
             this.Canada_USA.TabIndex = 0;
             this.Canada_USA.Text = "10";
             this.Canada_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2953,10 +2836,9 @@
             this.Canada_USSR.BackColor = System.Drawing.Color.White;
             this.Canada_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Canada_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Canada_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Canada_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Canada_USSR.Location = new System.Drawing.Point(37, 1);
             this.Canada_USSR.Name = "Canada_USSR";
-            this.Canada_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Canada_USSR.Size = new System.Drawing.Size(26, 17);
             this.Canada_USSR.TabIndex = 5;
             this.Canada_USSR.Text = "10";
             this.Canada_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2964,20 +2846,18 @@
             // label166
             // 
             this.label166.AutoSize = true;
-            this.label166.Location = new System.Drawing.Point(93, 54);
-            this.label166.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label166.Location = new System.Drawing.Point(124, 66);
             this.label166.Name = "label166";
-            this.label166.Size = new System.Drawing.Size(43, 13);
+            this.label166.Size = new System.Drawing.Size(55, 17);
             this.label166.TabIndex = 27;
             this.label166.Text = "Norway";
             // 
             // label167
             // 
             this.label167.AutoSize = true;
-            this.label167.Location = new System.Drawing.Point(13, 89);
-            this.label167.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label167.Location = new System.Drawing.Point(17, 110);
             this.label167.Name = "label167";
-            this.label167.Size = new System.Drawing.Size(45, 13);
+            this.label167.Size = new System.Drawing.Size(60, 17);
             this.label167.TabIndex = 11;
             this.label167.Text = "Bulgaria";
             // 
@@ -2989,12 +2869,12 @@
             this.tableLayoutPanel56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel56.Controls.Add(this.Norway_USA, 0, 0);
             this.tableLayoutPanel56.Controls.Add(this.Norway_USSR, 1, 0);
-            this.tableLayoutPanel56.Location = new System.Drawing.Point(95, 70);
-            this.tableLayoutPanel56.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel56.Location = new System.Drawing.Point(127, 86);
+            this.tableLayoutPanel56.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel56.Name = "tableLayoutPanel56";
             this.tableLayoutPanel56.RowCount = 1;
             this.tableLayoutPanel56.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel56.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel56.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel56.TabIndex = 26;
             // 
             // Norway_USA
@@ -3003,10 +2883,9 @@
             this.Norway_USA.BackColor = System.Drawing.Color.White;
             this.Norway_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Norway_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Norway_USA.Location = new System.Drawing.Point(3, 1);
-            this.Norway_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Norway_USA.Location = new System.Drawing.Point(4, 1);
             this.Norway_USA.Name = "Norway_USA";
-            this.Norway_USA.Size = new System.Drawing.Size(14, 14);
+            this.Norway_USA.Size = new System.Drawing.Size(26, 17);
             this.Norway_USA.TabIndex = 0;
             this.Norway_USA.Text = "10";
             this.Norway_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3017,10 +2896,9 @@
             this.Norway_USSR.BackColor = System.Drawing.Color.White;
             this.Norway_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Norway_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Norway_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Norway_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Norway_USSR.Location = new System.Drawing.Point(37, 1);
             this.Norway_USSR.Name = "Norway_USSR";
-            this.Norway_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Norway_USSR.Size = new System.Drawing.Size(26, 17);
             this.Norway_USSR.TabIndex = 5;
             this.Norway_USSR.Text = "10";
             this.Norway_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3028,10 +2906,9 @@
             // label170
             // 
             this.label170.AutoSize = true;
-            this.label170.Location = new System.Drawing.Point(93, 19);
-            this.label170.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label170.Location = new System.Drawing.Point(124, 23);
             this.label170.Name = "label170";
-            this.label170.Size = new System.Drawing.Size(26, 13);
+            this.label170.Size = new System.Drawing.Size(33, 17);
             this.label170.TabIndex = 25;
             this.label170.Text = "Italy";
             // 
@@ -3043,12 +2920,12 @@
             this.tableLayoutPanel57.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel57.Controls.Add(this.Bulgaria_USA, 0, 0);
             this.tableLayoutPanel57.Controls.Add(this.Bulgaria_USSR, 1, 0);
-            this.tableLayoutPanel57.Location = new System.Drawing.Point(15, 105);
-            this.tableLayoutPanel57.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel57.Location = new System.Drawing.Point(20, 129);
+            this.tableLayoutPanel57.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel57.Name = "tableLayoutPanel57";
             this.tableLayoutPanel57.RowCount = 1;
             this.tableLayoutPanel57.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel57.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel57.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel57.TabIndex = 10;
             // 
             // Bulgaria_USA
@@ -3057,10 +2934,9 @@
             this.Bulgaria_USA.BackColor = System.Drawing.Color.White;
             this.Bulgaria_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bulgaria_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Bulgaria_USA.Location = new System.Drawing.Point(3, 1);
-            this.Bulgaria_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Bulgaria_USA.Location = new System.Drawing.Point(4, 1);
             this.Bulgaria_USA.Name = "Bulgaria_USA";
-            this.Bulgaria_USA.Size = new System.Drawing.Size(14, 14);
+            this.Bulgaria_USA.Size = new System.Drawing.Size(26, 17);
             this.Bulgaria_USA.TabIndex = 0;
             this.Bulgaria_USA.Text = "10";
             this.Bulgaria_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3071,10 +2947,9 @@
             this.Bulgaria_USSR.BackColor = System.Drawing.Color.White;
             this.Bulgaria_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bulgaria_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Bulgaria_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Bulgaria_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Bulgaria_USSR.Location = new System.Drawing.Point(37, 1);
             this.Bulgaria_USSR.Name = "Bulgaria_USSR";
-            this.Bulgaria_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Bulgaria_USSR.Size = new System.Drawing.Size(26, 17);
             this.Bulgaria_USSR.TabIndex = 5;
             this.Bulgaria_USSR.Text = "10";
             this.Bulgaria_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3082,20 +2957,18 @@
             // label173
             // 
             this.label173.AutoSize = true;
-            this.label173.Location = new System.Drawing.Point(13, 374);
-            this.label173.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label173.Location = new System.Drawing.Point(17, 460);
             this.label173.Name = "label173";
-            this.label173.Size = new System.Drawing.Size(47, 13);
+            this.label173.Size = new System.Drawing.Size(62, 17);
             this.label173.TabIndex = 21;
             this.label173.Text = "Hungary";
             // 
             // label174
             // 
             this.label174.AutoSize = true;
-            this.label174.Location = new System.Drawing.Point(13, 54);
-            this.label174.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label174.Location = new System.Drawing.Point(17, 66);
             this.label174.Name = "label174";
-            this.label174.Size = new System.Drawing.Size(39, 13);
+            this.label174.Size = new System.Drawing.Size(50, 17);
             this.label174.TabIndex = 9;
             this.label174.Text = "Benlux";
             // 
@@ -3107,12 +2980,12 @@
             this.tableLayoutPanel58.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel58.Controls.Add(this.Italy_USA, 0, 0);
             this.tableLayoutPanel58.Controls.Add(this.Italy_USSR, 1, 0);
-            this.tableLayoutPanel58.Location = new System.Drawing.Point(95, 35);
-            this.tableLayoutPanel58.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel58.Location = new System.Drawing.Point(127, 43);
+            this.tableLayoutPanel58.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel58.Name = "tableLayoutPanel58";
             this.tableLayoutPanel58.RowCount = 1;
             this.tableLayoutPanel58.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel58.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel58.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel58.TabIndex = 23;
             // 
             // Italy_USA
@@ -3121,10 +2994,9 @@
             this.Italy_USA.BackColor = System.Drawing.Color.White;
             this.Italy_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Italy_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Italy_USA.Location = new System.Drawing.Point(3, 1);
-            this.Italy_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Italy_USA.Location = new System.Drawing.Point(4, 1);
             this.Italy_USA.Name = "Italy_USA";
-            this.Italy_USA.Size = new System.Drawing.Size(14, 14);
+            this.Italy_USA.Size = new System.Drawing.Size(26, 17);
             this.Italy_USA.TabIndex = 0;
             this.Italy_USA.Text = "10";
             this.Italy_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3135,10 +3007,9 @@
             this.Italy_USSR.BackColor = System.Drawing.Color.White;
             this.Italy_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Italy_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Italy_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Italy_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Italy_USSR.Location = new System.Drawing.Point(37, 1);
             this.Italy_USSR.Name = "Italy_USSR";
-            this.Italy_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Italy_USSR.Size = new System.Drawing.Size(26, 17);
             this.Italy_USSR.TabIndex = 5;
             this.Italy_USSR.Text = "10";
             this.Italy_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3146,10 +3017,9 @@
             // label177
             // 
             this.label177.AutoSize = true;
-            this.label177.Location = new System.Drawing.Point(13, 19);
-            this.label177.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label177.Location = new System.Drawing.Point(17, 23);
             this.label177.Name = "label177";
-            this.label177.Size = new System.Drawing.Size(39, 13);
+            this.label177.Size = new System.Drawing.Size(52, 17);
             this.label177.TabIndex = 7;
             this.label177.Text = "Austria";
             // 
@@ -3161,12 +3031,12 @@
             this.tableLayoutPanel59.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel59.Controls.Add(this.Hungary_USA, 0, 0);
             this.tableLayoutPanel59.Controls.Add(this.Hungary_USSR, 1, 0);
-            this.tableLayoutPanel59.Location = new System.Drawing.Point(15, 390);
-            this.tableLayoutPanel59.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel59.Location = new System.Drawing.Point(20, 480);
+            this.tableLayoutPanel59.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel59.Name = "tableLayoutPanel59";
             this.tableLayoutPanel59.RowCount = 1;
             this.tableLayoutPanel59.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel59.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel59.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel59.TabIndex = 20;
             // 
             // Hungary_USA
@@ -3175,10 +3045,9 @@
             this.Hungary_USA.BackColor = System.Drawing.Color.White;
             this.Hungary_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Hungary_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Hungary_USA.Location = new System.Drawing.Point(3, 1);
-            this.Hungary_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Hungary_USA.Location = new System.Drawing.Point(4, 1);
             this.Hungary_USA.Name = "Hungary_USA";
-            this.Hungary_USA.Size = new System.Drawing.Size(14, 14);
+            this.Hungary_USA.Size = new System.Drawing.Size(26, 17);
             this.Hungary_USA.TabIndex = 0;
             this.Hungary_USA.Text = "10";
             this.Hungary_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3189,10 +3058,9 @@
             this.Hungary_USSR.BackColor = System.Drawing.Color.White;
             this.Hungary_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Hungary_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Hungary_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Hungary_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Hungary_USSR.Location = new System.Drawing.Point(37, 1);
             this.Hungary_USSR.Name = "Hungary_USSR";
-            this.Hungary_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Hungary_USSR.Size = new System.Drawing.Size(26, 17);
             this.Hungary_USSR.TabIndex = 5;
             this.Hungary_USSR.Text = "10";
             this.Hungary_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3205,12 +3073,12 @@
             this.tableLayoutPanel60.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel60.Controls.Add(this.Benlux_USA, 0, 0);
             this.tableLayoutPanel60.Controls.Add(this.Benlux_USSR, 1, 0);
-            this.tableLayoutPanel60.Location = new System.Drawing.Point(15, 70);
-            this.tableLayoutPanel60.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel60.Location = new System.Drawing.Point(20, 86);
+            this.tableLayoutPanel60.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel60.Name = "tableLayoutPanel60";
             this.tableLayoutPanel60.RowCount = 1;
             this.tableLayoutPanel60.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel60.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel60.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel60.TabIndex = 8;
             // 
             // Benlux_USA
@@ -3219,10 +3087,9 @@
             this.Benlux_USA.BackColor = System.Drawing.Color.White;
             this.Benlux_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Benlux_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Benlux_USA.Location = new System.Drawing.Point(3, 1);
-            this.Benlux_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Benlux_USA.Location = new System.Drawing.Point(4, 1);
             this.Benlux_USA.Name = "Benlux_USA";
-            this.Benlux_USA.Size = new System.Drawing.Size(14, 14);
+            this.Benlux_USA.Size = new System.Drawing.Size(26, 17);
             this.Benlux_USA.TabIndex = 0;
             this.Benlux_USA.Text = "10";
             this.Benlux_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3233,10 +3100,9 @@
             this.Benlux_USSR.BackColor = System.Drawing.Color.White;
             this.Benlux_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Benlux_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Benlux_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Benlux_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Benlux_USSR.Location = new System.Drawing.Point(37, 1);
             this.Benlux_USSR.Name = "Benlux_USSR";
-            this.Benlux_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Benlux_USSR.Size = new System.Drawing.Size(26, 17);
             this.Benlux_USSR.TabIndex = 5;
             this.Benlux_USSR.Text = "10";
             this.Benlux_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3249,12 +3115,12 @@
             this.tableLayoutPanel61.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel61.Controls.Add(this.Austria_USA, 0, 0);
             this.tableLayoutPanel61.Controls.Add(this.Austria_USSR, 1, 0);
-            this.tableLayoutPanel61.Location = new System.Drawing.Point(15, 35);
-            this.tableLayoutPanel61.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel61.Location = new System.Drawing.Point(20, 43);
+            this.tableLayoutPanel61.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel61.Name = "tableLayoutPanel61";
             this.tableLayoutPanel61.RowCount = 1;
             this.tableLayoutPanel61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel61.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel61.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel61.TabIndex = 6;
             // 
             // Austria_USA
@@ -3263,10 +3129,9 @@
             this.Austria_USA.BackColor = System.Drawing.Color.White;
             this.Austria_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Austria_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Austria_USA.Location = new System.Drawing.Point(3, 1);
-            this.Austria_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Austria_USA.Location = new System.Drawing.Point(4, 1);
             this.Austria_USA.Name = "Austria_USA";
-            this.Austria_USA.Size = new System.Drawing.Size(14, 14);
+            this.Austria_USA.Size = new System.Drawing.Size(26, 17);
             this.Austria_USA.TabIndex = 0;
             this.Austria_USA.Text = "10";
             this.Austria_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3277,10 +3142,9 @@
             this.Austria_USSR.BackColor = System.Drawing.Color.White;
             this.Austria_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Austria_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Austria_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Austria_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Austria_USSR.Location = new System.Drawing.Point(37, 1);
             this.Austria_USSR.Name = "Austria_USSR";
-            this.Austria_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Austria_USSR.Size = new System.Drawing.Size(26, 17);
             this.Austria_USSR.TabIndex = 5;
             this.Austria_USSR.Text = "10";
             this.Austria_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3307,11 +3171,11 @@
             this.groupBox3.Controls.Add(this.tableLayoutPanel46);
             this.groupBox3.Controls.Add(this.tableLayoutPanel47);
             this.groupBox3.Controls.Add(this.tableLayoutPanel48);
-            this.groupBox3.Location = new System.Drawing.Point(314, 26);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Location = new System.Drawing.Point(419, 32);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox3.Size = new System.Drawing.Size(154, 210);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox3.Size = new System.Drawing.Size(205, 258);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Central America";
@@ -3319,10 +3183,9 @@
             // label115
             // 
             this.label115.AutoSize = true;
-            this.label115.Location = new System.Drawing.Point(92, 160);
-            this.label115.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label115.Location = new System.Drawing.Point(123, 197);
             this.label115.Name = "label115";
-            this.label115.Size = new System.Drawing.Size(46, 13);
+            this.label115.Size = new System.Drawing.Size(60, 17);
             this.label115.TabIndex = 29;
             this.label115.Text = "Panama";
             // 
@@ -3330,10 +3193,9 @@
             // 
             this.label116.AutoSize = true;
             this.label116.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label116.Location = new System.Drawing.Point(13, 159);
-            this.label116.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label116.Location = new System.Drawing.Point(17, 196);
             this.label116.Name = "label116";
-            this.label116.Size = new System.Drawing.Size(50, 12);
+            this.label116.Size = new System.Drawing.Size(68, 15);
             this.label116.TabIndex = 13;
             this.label116.Text = "Guatemala";
             // 
@@ -3345,12 +3207,12 @@
             this.tableLayoutPanel39.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel39.Controls.Add(this.Panama_USA, 0, 0);
             this.tableLayoutPanel39.Controls.Add(this.Panama_USSR, 1, 0);
-            this.tableLayoutPanel39.Location = new System.Drawing.Point(94, 176);
-            this.tableLayoutPanel39.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel39.Location = new System.Drawing.Point(125, 217);
+            this.tableLayoutPanel39.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel39.Name = "tableLayoutPanel39";
             this.tableLayoutPanel39.RowCount = 1;
             this.tableLayoutPanel39.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel39.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel39.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel39.TabIndex = 28;
             // 
             // Panama_USA
@@ -3359,10 +3221,9 @@
             this.Panama_USA.BackColor = System.Drawing.Color.White;
             this.Panama_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Panama_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Panama_USA.Location = new System.Drawing.Point(3, 1);
-            this.Panama_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Panama_USA.Location = new System.Drawing.Point(4, 1);
             this.Panama_USA.Name = "Panama_USA";
-            this.Panama_USA.Size = new System.Drawing.Size(14, 14);
+            this.Panama_USA.Size = new System.Drawing.Size(26, 17);
             this.Panama_USA.TabIndex = 0;
             this.Panama_USA.Text = "10";
             this.Panama_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3373,10 +3234,9 @@
             this.Panama_USSR.BackColor = System.Drawing.Color.White;
             this.Panama_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Panama_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Panama_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Panama_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Panama_USSR.Location = new System.Drawing.Point(37, 1);
             this.Panama_USSR.Name = "Panama_USSR";
-            this.Panama_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Panama_USSR.Size = new System.Drawing.Size(26, 17);
             this.Panama_USSR.TabIndex = 5;
             this.Panama_USSR.Text = "10";
             this.Panama_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3389,12 +3249,12 @@
             this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel40.Controls.Add(this.Guatemala_USA, 0, 0);
             this.tableLayoutPanel40.Controls.Add(this.Guatemala_USSR, 1, 0);
-            this.tableLayoutPanel40.Location = new System.Drawing.Point(15, 176);
-            this.tableLayoutPanel40.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel40.Location = new System.Drawing.Point(20, 217);
+            this.tableLayoutPanel40.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel40.Name = "tableLayoutPanel40";
             this.tableLayoutPanel40.RowCount = 1;
             this.tableLayoutPanel40.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel40.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel40.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel40.TabIndex = 12;
             // 
             // Guatemala_USA
@@ -3403,10 +3263,9 @@
             this.Guatemala_USA.BackColor = System.Drawing.Color.White;
             this.Guatemala_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Guatemala_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Guatemala_USA.Location = new System.Drawing.Point(3, 1);
-            this.Guatemala_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Guatemala_USA.Location = new System.Drawing.Point(4, 1);
             this.Guatemala_USA.Name = "Guatemala_USA";
-            this.Guatemala_USA.Size = new System.Drawing.Size(14, 14);
+            this.Guatemala_USA.Size = new System.Drawing.Size(26, 17);
             this.Guatemala_USA.TabIndex = 0;
             this.Guatemala_USA.Text = "10";
             this.Guatemala_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3417,10 +3276,9 @@
             this.Guatemala_USSR.BackColor = System.Drawing.Color.White;
             this.Guatemala_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Guatemala_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Guatemala_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Guatemala_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Guatemala_USSR.Location = new System.Drawing.Point(37, 1);
             this.Guatemala_USSR.Name = "Guatemala_USSR";
-            this.Guatemala_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Guatemala_USSR.Size = new System.Drawing.Size(26, 17);
             this.Guatemala_USSR.TabIndex = 5;
             this.Guatemala_USSR.Text = "10";
             this.Guatemala_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3428,10 +3286,9 @@
             // label121
             // 
             this.label121.AutoSize = true;
-            this.label121.Location = new System.Drawing.Point(92, 124);
-            this.label121.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label121.Location = new System.Drawing.Point(123, 153);
             this.label121.Name = "label121";
-            this.label121.Size = new System.Drawing.Size(56, 13);
+            this.label121.Size = new System.Drawing.Size(73, 17);
             this.label121.TabIndex = 24;
             this.label121.Text = "Nicaragua";
             // 
@@ -3439,10 +3296,9 @@
             // 
             this.label122.AutoSize = true;
             this.label122.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label122.Location = new System.Drawing.Point(13, 124);
-            this.label122.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label122.Location = new System.Drawing.Point(17, 153);
             this.label122.Name = "label122";
-            this.label122.Size = new System.Drawing.Size(52, 12);
+            this.label122.Size = new System.Drawing.Size(69, 15);
             this.label122.TabIndex = 9;
             this.label122.Text = "El Salvador";
             // 
@@ -3454,12 +3310,12 @@
             this.tableLayoutPanel41.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel41.Controls.Add(this.Nicaragua_USA, 0, 0);
             this.tableLayoutPanel41.Controls.Add(this.Nicaragua_USSR, 1, 0);
-            this.tableLayoutPanel41.Location = new System.Drawing.Point(94, 141);
-            this.tableLayoutPanel41.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel41.Location = new System.Drawing.Point(125, 174);
+            this.tableLayoutPanel41.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel41.Name = "tableLayoutPanel41";
             this.tableLayoutPanel41.RowCount = 1;
             this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel41.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel41.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel41.TabIndex = 22;
             // 
             // Nicaragua_USA
@@ -3468,10 +3324,9 @@
             this.Nicaragua_USA.BackColor = System.Drawing.Color.White;
             this.Nicaragua_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nicaragua_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Nicaragua_USA.Location = new System.Drawing.Point(3, 1);
-            this.Nicaragua_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Nicaragua_USA.Location = new System.Drawing.Point(4, 1);
             this.Nicaragua_USA.Name = "Nicaragua_USA";
-            this.Nicaragua_USA.Size = new System.Drawing.Size(14, 14);
+            this.Nicaragua_USA.Size = new System.Drawing.Size(26, 17);
             this.Nicaragua_USA.TabIndex = 0;
             this.Nicaragua_USA.Text = "10";
             this.Nicaragua_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3482,10 +3337,9 @@
             this.Nicaragua_USSR.BackColor = System.Drawing.Color.White;
             this.Nicaragua_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nicaragua_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Nicaragua_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Nicaragua_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Nicaragua_USSR.Location = new System.Drawing.Point(37, 1);
             this.Nicaragua_USSR.Name = "Nicaragua_USSR";
-            this.Nicaragua_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Nicaragua_USSR.Size = new System.Drawing.Size(26, 17);
             this.Nicaragua_USSR.TabIndex = 5;
             this.Nicaragua_USSR.Text = "10";
             this.Nicaragua_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3498,12 +3352,12 @@
             this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel42.Controls.Add(this.ElSalvador_USA, 0, 0);
             this.tableLayoutPanel42.Controls.Add(this.ElSalvador_USSR, 1, 0);
-            this.tableLayoutPanel42.Location = new System.Drawing.Point(15, 140);
-            this.tableLayoutPanel42.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel42.Location = new System.Drawing.Point(20, 172);
+            this.tableLayoutPanel42.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel42.Name = "tableLayoutPanel42";
             this.tableLayoutPanel42.RowCount = 1;
             this.tableLayoutPanel42.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel42.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel42.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel42.TabIndex = 8;
             // 
             // ElSalvador_USA
@@ -3512,10 +3366,9 @@
             this.ElSalvador_USA.BackColor = System.Drawing.Color.White;
             this.ElSalvador_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ElSalvador_USA.ForeColor = System.Drawing.Color.Blue;
-            this.ElSalvador_USA.Location = new System.Drawing.Point(3, 1);
-            this.ElSalvador_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ElSalvador_USA.Location = new System.Drawing.Point(4, 1);
             this.ElSalvador_USA.Name = "ElSalvador_USA";
-            this.ElSalvador_USA.Size = new System.Drawing.Size(14, 14);
+            this.ElSalvador_USA.Size = new System.Drawing.Size(26, 17);
             this.ElSalvador_USA.TabIndex = 0;
             this.ElSalvador_USA.Text = "10";
             this.ElSalvador_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3526,10 +3379,9 @@
             this.ElSalvador_USSR.BackColor = System.Drawing.Color.White;
             this.ElSalvador_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ElSalvador_USSR.ForeColor = System.Drawing.Color.Red;
-            this.ElSalvador_USSR.Location = new System.Drawing.Point(28, 1);
-            this.ElSalvador_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ElSalvador_USSR.Location = new System.Drawing.Point(37, 1);
             this.ElSalvador_USSR.Name = "ElSalvador_USSR";
-            this.ElSalvador_USSR.Size = new System.Drawing.Size(14, 14);
+            this.ElSalvador_USSR.Size = new System.Drawing.Size(26, 17);
             this.ElSalvador_USSR.TabIndex = 5;
             this.ElSalvador_USSR.Text = "10";
             this.ElSalvador_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3537,10 +3389,9 @@
             // label127
             // 
             this.label127.AutoSize = true;
-            this.label127.Location = new System.Drawing.Point(92, 89);
-            this.label127.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label127.Location = new System.Drawing.Point(123, 110);
             this.label127.Name = "label127";
-            this.label127.Size = new System.Drawing.Size(41, 13);
+            this.label127.Size = new System.Drawing.Size(51, 17);
             this.label127.TabIndex = 27;
             this.label127.Text = "Mexico";
             // 
@@ -3548,10 +3399,9 @@
             // 
             this.label128.AutoSize = true;
             this.label128.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label128.Location = new System.Drawing.Point(13, 89);
-            this.label128.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label128.Location = new System.Drawing.Point(17, 110);
             this.label128.Name = "label128";
-            this.label128.Size = new System.Drawing.Size(71, 12);
+            this.label128.Size = new System.Drawing.Size(96, 15);
             this.label128.TabIndex = 11;
             this.label128.Text = "Dominican Rep.";
             // 
@@ -3563,12 +3413,12 @@
             this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel43.Controls.Add(this.Mexico_USA, 0, 0);
             this.tableLayoutPanel43.Controls.Add(this.Mexico_USSR, 1, 0);
-            this.tableLayoutPanel43.Location = new System.Drawing.Point(94, 106);
-            this.tableLayoutPanel43.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel43.Location = new System.Drawing.Point(125, 130);
+            this.tableLayoutPanel43.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel43.Name = "tableLayoutPanel43";
             this.tableLayoutPanel43.RowCount = 1;
             this.tableLayoutPanel43.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel43.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel43.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel43.TabIndex = 26;
             // 
             // Mexico_USA
@@ -3577,10 +3427,9 @@
             this.Mexico_USA.BackColor = System.Drawing.Color.White;
             this.Mexico_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Mexico_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Mexico_USA.Location = new System.Drawing.Point(3, 1);
-            this.Mexico_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Mexico_USA.Location = new System.Drawing.Point(4, 1);
             this.Mexico_USA.Name = "Mexico_USA";
-            this.Mexico_USA.Size = new System.Drawing.Size(14, 14);
+            this.Mexico_USA.Size = new System.Drawing.Size(26, 17);
             this.Mexico_USA.TabIndex = 0;
             this.Mexico_USA.Text = "10";
             this.Mexico_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3591,10 +3440,9 @@
             this.Mexico_USSR.BackColor = System.Drawing.Color.White;
             this.Mexico_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Mexico_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Mexico_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Mexico_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Mexico_USSR.Location = new System.Drawing.Point(37, 1);
             this.Mexico_USSR.Name = "Mexico_USSR";
-            this.Mexico_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Mexico_USSR.Size = new System.Drawing.Size(26, 17);
             this.Mexico_USSR.TabIndex = 5;
             this.Mexico_USSR.Text = "10";
             this.Mexico_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3602,10 +3450,9 @@
             // label131
             // 
             this.label131.AutoSize = true;
-            this.label131.Location = new System.Drawing.Point(92, 54);
-            this.label131.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label131.Location = new System.Drawing.Point(123, 66);
             this.label131.Name = "label131";
-            this.label131.Size = new System.Drawing.Size(53, 13);
+            this.label131.Size = new System.Drawing.Size(70, 17);
             this.label131.TabIndex = 25;
             this.label131.Text = "Honduras";
             // 
@@ -3617,12 +3464,12 @@
             this.tableLayoutPanel44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel44.Controls.Add(this.DominicanRep_USA, 0, 0);
             this.tableLayoutPanel44.Controls.Add(this.DominicanRep_USSR, 1, 0);
-            this.tableLayoutPanel44.Location = new System.Drawing.Point(15, 105);
-            this.tableLayoutPanel44.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel44.Location = new System.Drawing.Point(20, 129);
+            this.tableLayoutPanel44.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel44.Name = "tableLayoutPanel44";
             this.tableLayoutPanel44.RowCount = 1;
             this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel44.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel44.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel44.TabIndex = 10;
             // 
             // DominicanRep_USA
@@ -3631,10 +3478,9 @@
             this.DominicanRep_USA.BackColor = System.Drawing.Color.White;
             this.DominicanRep_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DominicanRep_USA.ForeColor = System.Drawing.Color.Blue;
-            this.DominicanRep_USA.Location = new System.Drawing.Point(3, 1);
-            this.DominicanRep_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.DominicanRep_USA.Location = new System.Drawing.Point(4, 1);
             this.DominicanRep_USA.Name = "DominicanRep_USA";
-            this.DominicanRep_USA.Size = new System.Drawing.Size(14, 14);
+            this.DominicanRep_USA.Size = new System.Drawing.Size(26, 17);
             this.DominicanRep_USA.TabIndex = 0;
             this.DominicanRep_USA.Text = "10";
             this.DominicanRep_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3645,10 +3491,9 @@
             this.DominicanRep_USSR.BackColor = System.Drawing.Color.White;
             this.DominicanRep_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DominicanRep_USSR.ForeColor = System.Drawing.Color.Red;
-            this.DominicanRep_USSR.Location = new System.Drawing.Point(28, 1);
-            this.DominicanRep_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.DominicanRep_USSR.Location = new System.Drawing.Point(37, 1);
             this.DominicanRep_USSR.Name = "DominicanRep_USSR";
-            this.DominicanRep_USSR.Size = new System.Drawing.Size(14, 14);
+            this.DominicanRep_USSR.Size = new System.Drawing.Size(26, 17);
             this.DominicanRep_USSR.TabIndex = 5;
             this.DominicanRep_USSR.Text = "10";
             this.DominicanRep_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3656,20 +3501,18 @@
             // label134
             // 
             this.label134.AutoSize = true;
-            this.label134.Location = new System.Drawing.Point(92, 20);
-            this.label134.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label134.Location = new System.Drawing.Point(123, 25);
             this.label134.Name = "label134";
-            this.label134.Size = new System.Drawing.Size(28, 13);
+            this.label134.Size = new System.Drawing.Size(36, 17);
             this.label134.TabIndex = 21;
             this.label134.Text = "Haiti";
             // 
             // label135
             // 
             this.label135.AutoSize = true;
-            this.label135.Location = new System.Drawing.Point(13, 54);
-            this.label135.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label135.Location = new System.Drawing.Point(17, 66);
             this.label135.Name = "label135";
-            this.label135.Size = new System.Drawing.Size(32, 13);
+            this.label135.Size = new System.Drawing.Size(41, 17);
             this.label135.TabIndex = 9;
             this.label135.Text = "Cuba";
             // 
@@ -3681,12 +3524,12 @@
             this.tableLayoutPanel45.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel45.Controls.Add(this.Honduras_USA, 0, 0);
             this.tableLayoutPanel45.Controls.Add(this.Honduras_USSR, 1, 0);
-            this.tableLayoutPanel45.Location = new System.Drawing.Point(94, 71);
-            this.tableLayoutPanel45.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel45.Location = new System.Drawing.Point(125, 87);
+            this.tableLayoutPanel45.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel45.Name = "tableLayoutPanel45";
             this.tableLayoutPanel45.RowCount = 1;
             this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel45.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel45.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel45.TabIndex = 23;
             // 
             // Honduras_USA
@@ -3695,10 +3538,9 @@
             this.Honduras_USA.BackColor = System.Drawing.Color.White;
             this.Honduras_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Honduras_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Honduras_USA.Location = new System.Drawing.Point(3, 1);
-            this.Honduras_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Honduras_USA.Location = new System.Drawing.Point(4, 1);
             this.Honduras_USA.Name = "Honduras_USA";
-            this.Honduras_USA.Size = new System.Drawing.Size(14, 14);
+            this.Honduras_USA.Size = new System.Drawing.Size(26, 17);
             this.Honduras_USA.TabIndex = 0;
             this.Honduras_USA.Text = "10";
             this.Honduras_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3709,10 +3551,9 @@
             this.Honduras_USSR.BackColor = System.Drawing.Color.White;
             this.Honduras_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Honduras_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Honduras_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Honduras_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Honduras_USSR.Location = new System.Drawing.Point(37, 1);
             this.Honduras_USSR.Name = "Honduras_USSR";
-            this.Honduras_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Honduras_USSR.Size = new System.Drawing.Size(26, 17);
             this.Honduras_USSR.TabIndex = 5;
             this.Honduras_USSR.Text = "10";
             this.Honduras_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3720,10 +3561,9 @@
             // label138
             // 
             this.label138.AutoSize = true;
-            this.label138.Location = new System.Drawing.Point(13, 19);
-            this.label138.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label138.Location = new System.Drawing.Point(17, 23);
             this.label138.Name = "label138";
-            this.label138.Size = new System.Drawing.Size(59, 13);
+            this.label138.Size = new System.Drawing.Size(76, 17);
             this.label138.TabIndex = 7;
             this.label138.Text = "Costa Rica";
             // 
@@ -3735,12 +3575,12 @@
             this.tableLayoutPanel46.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel46.Controls.Add(this.Haiti_USA, 0, 0);
             this.tableLayoutPanel46.Controls.Add(this.Haiti_USSR, 1, 0);
-            this.tableLayoutPanel46.Location = new System.Drawing.Point(94, 36);
-            this.tableLayoutPanel46.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel46.Location = new System.Drawing.Point(125, 44);
+            this.tableLayoutPanel46.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel46.Name = "tableLayoutPanel46";
             this.tableLayoutPanel46.RowCount = 1;
             this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel46.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel46.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel46.TabIndex = 20;
             // 
             // Haiti_USA
@@ -3749,10 +3589,9 @@
             this.Haiti_USA.BackColor = System.Drawing.Color.White;
             this.Haiti_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Haiti_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Haiti_USA.Location = new System.Drawing.Point(3, 1);
-            this.Haiti_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Haiti_USA.Location = new System.Drawing.Point(4, 1);
             this.Haiti_USA.Name = "Haiti_USA";
-            this.Haiti_USA.Size = new System.Drawing.Size(14, 14);
+            this.Haiti_USA.Size = new System.Drawing.Size(26, 17);
             this.Haiti_USA.TabIndex = 0;
             this.Haiti_USA.Text = "10";
             this.Haiti_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3763,10 +3602,9 @@
             this.Haiti_USSR.BackColor = System.Drawing.Color.White;
             this.Haiti_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Haiti_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Haiti_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Haiti_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Haiti_USSR.Location = new System.Drawing.Point(37, 1);
             this.Haiti_USSR.Name = "Haiti_USSR";
-            this.Haiti_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Haiti_USSR.Size = new System.Drawing.Size(26, 17);
             this.Haiti_USSR.TabIndex = 5;
             this.Haiti_USSR.Text = "10";
             this.Haiti_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3779,12 +3617,12 @@
             this.tableLayoutPanel47.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel47.Controls.Add(this.Cuba_USA, 0, 0);
             this.tableLayoutPanel47.Controls.Add(this.Cuba_USSR, 1, 0);
-            this.tableLayoutPanel47.Location = new System.Drawing.Point(15, 70);
-            this.tableLayoutPanel47.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel47.Location = new System.Drawing.Point(20, 86);
+            this.tableLayoutPanel47.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel47.Name = "tableLayoutPanel47";
             this.tableLayoutPanel47.RowCount = 1;
             this.tableLayoutPanel47.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel47.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel47.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel47.TabIndex = 8;
             // 
             // Cuba_USA
@@ -3793,10 +3631,9 @@
             this.Cuba_USA.BackColor = System.Drawing.Color.White;
             this.Cuba_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cuba_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Cuba_USA.Location = new System.Drawing.Point(3, 1);
-            this.Cuba_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Cuba_USA.Location = new System.Drawing.Point(4, 1);
             this.Cuba_USA.Name = "Cuba_USA";
-            this.Cuba_USA.Size = new System.Drawing.Size(14, 14);
+            this.Cuba_USA.Size = new System.Drawing.Size(26, 17);
             this.Cuba_USA.TabIndex = 0;
             this.Cuba_USA.Text = "10";
             this.Cuba_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3807,10 +3644,9 @@
             this.Cuba_USSR.BackColor = System.Drawing.Color.White;
             this.Cuba_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cuba_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Cuba_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Cuba_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Cuba_USSR.Location = new System.Drawing.Point(37, 1);
             this.Cuba_USSR.Name = "Cuba_USSR";
-            this.Cuba_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Cuba_USSR.Size = new System.Drawing.Size(26, 17);
             this.Cuba_USSR.TabIndex = 5;
             this.Cuba_USSR.Text = "10";
             this.Cuba_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3823,12 +3659,12 @@
             this.tableLayoutPanel48.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel48.Controls.Add(this.CostaRica_USA, 0, 0);
             this.tableLayoutPanel48.Controls.Add(this.CostaRica_USSR, 1, 0);
-            this.tableLayoutPanel48.Location = new System.Drawing.Point(15, 35);
-            this.tableLayoutPanel48.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel48.Location = new System.Drawing.Point(20, 43);
+            this.tableLayoutPanel48.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel48.Name = "tableLayoutPanel48";
             this.tableLayoutPanel48.RowCount = 1;
             this.tableLayoutPanel48.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel48.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel48.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel48.TabIndex = 6;
             // 
             // CostaRica_USA
@@ -3837,10 +3673,9 @@
             this.CostaRica_USA.BackColor = System.Drawing.Color.White;
             this.CostaRica_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CostaRica_USA.ForeColor = System.Drawing.Color.Blue;
-            this.CostaRica_USA.Location = new System.Drawing.Point(3, 1);
-            this.CostaRica_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.CostaRica_USA.Location = new System.Drawing.Point(4, 1);
             this.CostaRica_USA.Name = "CostaRica_USA";
-            this.CostaRica_USA.Size = new System.Drawing.Size(14, 14);
+            this.CostaRica_USA.Size = new System.Drawing.Size(26, 17);
             this.CostaRica_USA.TabIndex = 0;
             this.CostaRica_USA.Text = "10";
             this.CostaRica_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3851,10 +3686,9 @@
             this.CostaRica_USSR.BackColor = System.Drawing.Color.White;
             this.CostaRica_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CostaRica_USSR.ForeColor = System.Drawing.Color.Red;
-            this.CostaRica_USSR.Location = new System.Drawing.Point(28, 1);
-            this.CostaRica_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.CostaRica_USSR.Location = new System.Drawing.Point(37, 1);
             this.CostaRica_USSR.Name = "CostaRica_USSR";
-            this.CostaRica_USSR.Size = new System.Drawing.Size(14, 14);
+            this.CostaRica_USSR.Size = new System.Drawing.Size(26, 17);
             this.CostaRica_USSR.TabIndex = 5;
             this.CostaRica_USSR.Text = "10";
             this.CostaRica_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3891,11 +3725,11 @@
             this.groupBox2.Controls.Add(this.tableLayoutPanel34);
             this.groupBox2.Controls.Add(this.tableLayoutPanel35);
             this.groupBox2.Controls.Add(this.tableLayoutPanel36);
-            this.groupBox2.Location = new System.Drawing.Point(154, 26);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Location = new System.Drawing.Point(205, 32);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox2.Size = new System.Drawing.Size(156, 315);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(208, 388);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Asia";
@@ -3903,10 +3737,9 @@
             // label62
             // 
             this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(13, 266);
-            this.label62.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label62.Location = new System.Drawing.Point(17, 327);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(48, 13);
+            this.label62.Size = new System.Drawing.Size(63, 17);
             this.label62.TabIndex = 19;
             this.label62.Text = "Malaysia";
             // 
@@ -3918,12 +3751,12 @@
             this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel22.Controls.Add(this.Malaysia_USA, 0, 0);
             this.tableLayoutPanel22.Controls.Add(this.Malaysia_USSR, 1, 0);
-            this.tableLayoutPanel22.Location = new System.Drawing.Point(15, 283);
-            this.tableLayoutPanel22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel22.Location = new System.Drawing.Point(20, 348);
+            this.tableLayoutPanel22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel22.Name = "tableLayoutPanel22";
             this.tableLayoutPanel22.RowCount = 1;
             this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel22.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel22.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel22.TabIndex = 18;
             // 
             // Malaysia_USA
@@ -3932,10 +3765,9 @@
             this.Malaysia_USA.BackColor = System.Drawing.Color.White;
             this.Malaysia_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Malaysia_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Malaysia_USA.Location = new System.Drawing.Point(3, 1);
-            this.Malaysia_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Malaysia_USA.Location = new System.Drawing.Point(4, 1);
             this.Malaysia_USA.Name = "Malaysia_USA";
-            this.Malaysia_USA.Size = new System.Drawing.Size(14, 14);
+            this.Malaysia_USA.Size = new System.Drawing.Size(26, 17);
             this.Malaysia_USA.TabIndex = 0;
             this.Malaysia_USA.Text = "10";
             this.Malaysia_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3946,10 +3778,9 @@
             this.Malaysia_USSR.BackColor = System.Drawing.Color.White;
             this.Malaysia_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Malaysia_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Malaysia_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Malaysia_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Malaysia_USSR.Location = new System.Drawing.Point(37, 1);
             this.Malaysia_USSR.Name = "Malaysia_USSR";
-            this.Malaysia_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Malaysia_USSR.Size = new System.Drawing.Size(26, 17);
             this.Malaysia_USSR.TabIndex = 5;
             this.Malaysia_USSR.Text = "10";
             this.Malaysia_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3957,10 +3788,9 @@
             // label67
             // 
             this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(92, 231);
-            this.label67.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label67.Location = new System.Drawing.Point(123, 284);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(45, 13);
+            this.label67.Size = new System.Drawing.Size(59, 17);
             this.label67.TabIndex = 33;
             this.label67.Text = "Vietnam";
             // 
@@ -3968,10 +3798,9 @@
             // 
             this.label68.AutoSize = true;
             this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(13, 230);
-            this.label68.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label68.Location = new System.Drawing.Point(17, 283);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(70, 12);
+            this.label68.Size = new System.Drawing.Size(94, 15);
             this.label68.TabIndex = 17;
             this.label68.Text = "Laos/Cambodia";
             // 
@@ -3983,12 +3812,12 @@
             this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel23.Controls.Add(this.Vietnam_USA, 0, 0);
             this.tableLayoutPanel23.Controls.Add(this.Vietnam_USSR, 1, 0);
-            this.tableLayoutPanel23.Location = new System.Drawing.Point(94, 247);
-            this.tableLayoutPanel23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel23.Location = new System.Drawing.Point(125, 304);
+            this.tableLayoutPanel23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel23.Name = "tableLayoutPanel23";
             this.tableLayoutPanel23.RowCount = 1;
             this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel23.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel23.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel23.TabIndex = 32;
             // 
             // Vietnam_USA
@@ -3997,10 +3826,9 @@
             this.Vietnam_USA.BackColor = System.Drawing.Color.White;
             this.Vietnam_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Vietnam_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Vietnam_USA.Location = new System.Drawing.Point(3, 1);
-            this.Vietnam_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Vietnam_USA.Location = new System.Drawing.Point(4, 1);
             this.Vietnam_USA.Name = "Vietnam_USA";
-            this.Vietnam_USA.Size = new System.Drawing.Size(14, 14);
+            this.Vietnam_USA.Size = new System.Drawing.Size(26, 17);
             this.Vietnam_USA.TabIndex = 0;
             this.Vietnam_USA.Text = "10";
             this.Vietnam_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4011,10 +3839,9 @@
             this.Vietnam_USSR.BackColor = System.Drawing.Color.White;
             this.Vietnam_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Vietnam_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Vietnam_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Vietnam_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Vietnam_USSR.Location = new System.Drawing.Point(37, 1);
             this.Vietnam_USSR.Name = "Vietnam_USSR";
-            this.Vietnam_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Vietnam_USSR.Size = new System.Drawing.Size(26, 17);
             this.Vietnam_USSR.TabIndex = 5;
             this.Vietnam_USSR.Text = "10";
             this.Vietnam_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4027,12 +3854,12 @@
             this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel24.Controls.Add(this.LaosCambodia_USA, 0, 0);
             this.tableLayoutPanel24.Controls.Add(this.LaosCambodia_USSR, 1, 0);
-            this.tableLayoutPanel24.Location = new System.Drawing.Point(15, 246);
-            this.tableLayoutPanel24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel24.Location = new System.Drawing.Point(20, 303);
+            this.tableLayoutPanel24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel24.Name = "tableLayoutPanel24";
             this.tableLayoutPanel24.RowCount = 1;
             this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel24.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel24.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel24.TabIndex = 16;
             // 
             // LaosCambodia_USA
@@ -4041,10 +3868,9 @@
             this.LaosCambodia_USA.BackColor = System.Drawing.Color.White;
             this.LaosCambodia_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LaosCambodia_USA.ForeColor = System.Drawing.Color.Blue;
-            this.LaosCambodia_USA.Location = new System.Drawing.Point(3, 1);
-            this.LaosCambodia_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LaosCambodia_USA.Location = new System.Drawing.Point(4, 1);
             this.LaosCambodia_USA.Name = "LaosCambodia_USA";
-            this.LaosCambodia_USA.Size = new System.Drawing.Size(14, 14);
+            this.LaosCambodia_USA.Size = new System.Drawing.Size(26, 17);
             this.LaosCambodia_USA.TabIndex = 0;
             this.LaosCambodia_USA.Text = "10";
             this.LaosCambodia_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4055,10 +3881,9 @@
             this.LaosCambodia_USSR.BackColor = System.Drawing.Color.White;
             this.LaosCambodia_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LaosCambodia_USSR.ForeColor = System.Drawing.Color.Red;
-            this.LaosCambodia_USSR.Location = new System.Drawing.Point(28, 1);
-            this.LaosCambodia_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LaosCambodia_USSR.Location = new System.Drawing.Point(37, 1);
             this.LaosCambodia_USSR.Name = "LaosCambodia_USSR";
-            this.LaosCambodia_USSR.Size = new System.Drawing.Size(14, 14);
+            this.LaosCambodia_USSR.Size = new System.Drawing.Size(26, 17);
             this.LaosCambodia_USSR.TabIndex = 5;
             this.LaosCambodia_USSR.Text = "10";
             this.LaosCambodia_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4066,20 +3891,18 @@
             // label73
             // 
             this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(92, 196);
-            this.label73.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label73.Location = new System.Drawing.Point(123, 241);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(48, 13);
+            this.label73.Size = new System.Drawing.Size(63, 17);
             this.label73.TabIndex = 31;
             this.label73.Text = "Thailand";
             // 
             // label74
             // 
             this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(13, 195);
-            this.label74.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label74.Location = new System.Drawing.Point(17, 240);
             this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(36, 13);
+            this.label74.Size = new System.Drawing.Size(47, 17);
             this.label74.TabIndex = 15;
             this.label74.Text = "Japan";
             // 
@@ -4091,12 +3914,12 @@
             this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel25.Controls.Add(this.Thailand_USA, 0, 0);
             this.tableLayoutPanel25.Controls.Add(this.Thailand_USSR, 1, 0);
-            this.tableLayoutPanel25.Location = new System.Drawing.Point(94, 212);
-            this.tableLayoutPanel25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel25.Location = new System.Drawing.Point(125, 261);
+            this.tableLayoutPanel25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel25.Name = "tableLayoutPanel25";
             this.tableLayoutPanel25.RowCount = 1;
             this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel25.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel25.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel25.TabIndex = 30;
             // 
             // Thailand_USA
@@ -4105,10 +3928,9 @@
             this.Thailand_USA.BackColor = System.Drawing.Color.White;
             this.Thailand_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Thailand_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Thailand_USA.Location = new System.Drawing.Point(3, 1);
-            this.Thailand_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Thailand_USA.Location = new System.Drawing.Point(4, 1);
             this.Thailand_USA.Name = "Thailand_USA";
-            this.Thailand_USA.Size = new System.Drawing.Size(14, 14);
+            this.Thailand_USA.Size = new System.Drawing.Size(26, 17);
             this.Thailand_USA.TabIndex = 0;
             this.Thailand_USA.Text = "10";
             this.Thailand_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4119,10 +3941,9 @@
             this.Thailand_USSR.BackColor = System.Drawing.Color.White;
             this.Thailand_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Thailand_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Thailand_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Thailand_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Thailand_USSR.Location = new System.Drawing.Point(37, 1);
             this.Thailand_USSR.Name = "Thailand_USSR";
-            this.Thailand_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Thailand_USSR.Size = new System.Drawing.Size(26, 17);
             this.Thailand_USSR.TabIndex = 5;
             this.Thailand_USSR.Text = "10";
             this.Thailand_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4135,12 +3956,12 @@
             this.tableLayoutPanel26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel26.Controls.Add(this.Japan_USA, 0, 0);
             this.tableLayoutPanel26.Controls.Add(this.Japan_USSR, 1, 0);
-            this.tableLayoutPanel26.Location = new System.Drawing.Point(15, 211);
-            this.tableLayoutPanel26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel26.Location = new System.Drawing.Point(20, 260);
+            this.tableLayoutPanel26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel26.Name = "tableLayoutPanel26";
             this.tableLayoutPanel26.RowCount = 1;
             this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel26.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel26.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel26.TabIndex = 14;
             // 
             // Japan_USA
@@ -4149,10 +3970,9 @@
             this.Japan_USA.BackColor = System.Drawing.Color.White;
             this.Japan_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Japan_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Japan_USA.Location = new System.Drawing.Point(3, 1);
-            this.Japan_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Japan_USA.Location = new System.Drawing.Point(4, 1);
             this.Japan_USA.Name = "Japan_USA";
-            this.Japan_USA.Size = new System.Drawing.Size(14, 14);
+            this.Japan_USA.Size = new System.Drawing.Size(26, 17);
             this.Japan_USA.TabIndex = 0;
             this.Japan_USA.Text = "10";
             this.Japan_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4163,10 +3983,9 @@
             this.Japan_USSR.BackColor = System.Drawing.Color.White;
             this.Japan_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Japan_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Japan_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Japan_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Japan_USSR.Location = new System.Drawing.Point(37, 1);
             this.Japan_USSR.Name = "Japan_USSR";
-            this.Japan_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Japan_USSR.Size = new System.Drawing.Size(26, 17);
             this.Japan_USSR.TabIndex = 5;
             this.Japan_USSR.Text = "10";
             this.Japan_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4174,20 +3993,18 @@
             // label79
             // 
             this.label79.AutoSize = true;
-            this.label79.Location = new System.Drawing.Point(92, 160);
-            this.label79.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label79.Location = new System.Drawing.Point(123, 197);
             this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(42, 13);
+            this.label79.Size = new System.Drawing.Size(53, 17);
             this.label79.TabIndex = 29;
             this.label79.Text = "Taiwan";
             // 
             // label80
             // 
             this.label80.AutoSize = true;
-            this.label80.Location = new System.Drawing.Point(13, 159);
-            this.label80.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label80.Location = new System.Drawing.Point(17, 196);
             this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(53, 13);
+            this.label80.Size = new System.Drawing.Size(69, 17);
             this.label80.TabIndex = 13;
             this.label80.Text = "Indonesia";
             // 
@@ -4199,12 +4016,12 @@
             this.tableLayoutPanel27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel27.Controls.Add(this.Taiwan_USA, 0, 0);
             this.tableLayoutPanel27.Controls.Add(this.Taiwan_USSR, 1, 0);
-            this.tableLayoutPanel27.Location = new System.Drawing.Point(94, 176);
-            this.tableLayoutPanel27.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel27.Location = new System.Drawing.Point(125, 217);
+            this.tableLayoutPanel27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel27.Name = "tableLayoutPanel27";
             this.tableLayoutPanel27.RowCount = 1;
             this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel27.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel27.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel27.TabIndex = 28;
             // 
             // Taiwan_USA
@@ -4213,10 +4030,9 @@
             this.Taiwan_USA.BackColor = System.Drawing.Color.White;
             this.Taiwan_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Taiwan_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Taiwan_USA.Location = new System.Drawing.Point(3, 1);
-            this.Taiwan_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Taiwan_USA.Location = new System.Drawing.Point(4, 1);
             this.Taiwan_USA.Name = "Taiwan_USA";
-            this.Taiwan_USA.Size = new System.Drawing.Size(14, 14);
+            this.Taiwan_USA.Size = new System.Drawing.Size(26, 17);
             this.Taiwan_USA.TabIndex = 0;
             this.Taiwan_USA.Text = "10";
             this.Taiwan_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4227,10 +4043,9 @@
             this.Taiwan_USSR.BackColor = System.Drawing.Color.White;
             this.Taiwan_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Taiwan_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Taiwan_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Taiwan_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Taiwan_USSR.Location = new System.Drawing.Point(37, 1);
             this.Taiwan_USSR.Name = "Taiwan_USSR";
-            this.Taiwan_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Taiwan_USSR.Size = new System.Drawing.Size(26, 17);
             this.Taiwan_USSR.TabIndex = 5;
             this.Taiwan_USSR.Text = "10";
             this.Taiwan_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4243,12 +4058,12 @@
             this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel28.Controls.Add(this.Indonesia_USA, 0, 0);
             this.tableLayoutPanel28.Controls.Add(this.Indonesia_USSR, 1, 0);
-            this.tableLayoutPanel28.Location = new System.Drawing.Point(15, 176);
-            this.tableLayoutPanel28.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel28.Location = new System.Drawing.Point(20, 217);
+            this.tableLayoutPanel28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel28.Name = "tableLayoutPanel28";
             this.tableLayoutPanel28.RowCount = 1;
             this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel28.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel28.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel28.TabIndex = 12;
             // 
             // Indonesia_USA
@@ -4257,10 +4072,9 @@
             this.Indonesia_USA.BackColor = System.Drawing.Color.White;
             this.Indonesia_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Indonesia_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Indonesia_USA.Location = new System.Drawing.Point(3, 1);
-            this.Indonesia_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Indonesia_USA.Location = new System.Drawing.Point(4, 1);
             this.Indonesia_USA.Name = "Indonesia_USA";
-            this.Indonesia_USA.Size = new System.Drawing.Size(14, 14);
+            this.Indonesia_USA.Size = new System.Drawing.Size(26, 17);
             this.Indonesia_USA.TabIndex = 0;
             this.Indonesia_USA.Text = "10";
             this.Indonesia_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4271,10 +4085,9 @@
             this.Indonesia_USSR.BackColor = System.Drawing.Color.White;
             this.Indonesia_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Indonesia_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Indonesia_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Indonesia_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Indonesia_USSR.Location = new System.Drawing.Point(37, 1);
             this.Indonesia_USSR.Name = "Indonesia_USSR";
-            this.Indonesia_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Indonesia_USSR.Size = new System.Drawing.Size(26, 17);
             this.Indonesia_USSR.TabIndex = 5;
             this.Indonesia_USSR.Text = "10";
             this.Indonesia_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4283,20 +4096,18 @@
             // 
             this.label85.AutoSize = true;
             this.label85.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label85.Location = new System.Drawing.Point(92, 124);
-            this.label85.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label85.Location = new System.Drawing.Point(123, 153);
             this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(48, 13);
+            this.label85.Size = new System.Drawing.Size(63, 17);
             this.label85.TabIndex = 24;
             this.label85.Text = "S. Korea";
             // 
             // label86
             // 
             this.label86.AutoSize = true;
-            this.label86.Location = new System.Drawing.Point(13, 124);
-            this.label86.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label86.Location = new System.Drawing.Point(17, 153);
             this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(30, 13);
+            this.label86.Size = new System.Drawing.Size(38, 17);
             this.label86.TabIndex = 9;
             this.label86.Text = "India";
             // 
@@ -4308,12 +4119,12 @@
             this.tableLayoutPanel29.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel29.Controls.Add(this.SouthKorea_USA, 0, 0);
             this.tableLayoutPanel29.Controls.Add(this.SouthKorea_USSR, 1, 0);
-            this.tableLayoutPanel29.Location = new System.Drawing.Point(94, 141);
-            this.tableLayoutPanel29.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel29.Location = new System.Drawing.Point(125, 174);
+            this.tableLayoutPanel29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel29.Name = "tableLayoutPanel29";
             this.tableLayoutPanel29.RowCount = 1;
             this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel29.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel29.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel29.TabIndex = 22;
             // 
             // SouthKorea_USA
@@ -4322,10 +4133,9 @@
             this.SouthKorea_USA.BackColor = System.Drawing.Color.White;
             this.SouthKorea_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SouthKorea_USA.ForeColor = System.Drawing.Color.Blue;
-            this.SouthKorea_USA.Location = new System.Drawing.Point(3, 1);
-            this.SouthKorea_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SouthKorea_USA.Location = new System.Drawing.Point(4, 1);
             this.SouthKorea_USA.Name = "SouthKorea_USA";
-            this.SouthKorea_USA.Size = new System.Drawing.Size(14, 14);
+            this.SouthKorea_USA.Size = new System.Drawing.Size(26, 17);
             this.SouthKorea_USA.TabIndex = 0;
             this.SouthKorea_USA.Text = "10";
             this.SouthKorea_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4336,10 +4146,9 @@
             this.SouthKorea_USSR.BackColor = System.Drawing.Color.White;
             this.SouthKorea_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SouthKorea_USSR.ForeColor = System.Drawing.Color.Red;
-            this.SouthKorea_USSR.Location = new System.Drawing.Point(28, 1);
-            this.SouthKorea_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SouthKorea_USSR.Location = new System.Drawing.Point(37, 1);
             this.SouthKorea_USSR.Name = "SouthKorea_USSR";
-            this.SouthKorea_USSR.Size = new System.Drawing.Size(14, 14);
+            this.SouthKorea_USSR.Size = new System.Drawing.Size(26, 17);
             this.SouthKorea_USSR.TabIndex = 5;
             this.SouthKorea_USSR.Text = "10";
             this.SouthKorea_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4352,12 +4161,12 @@
             this.tableLayoutPanel30.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel30.Controls.Add(this.India_USA, 0, 0);
             this.tableLayoutPanel30.Controls.Add(this.India_USSR, 1, 0);
-            this.tableLayoutPanel30.Location = new System.Drawing.Point(15, 140);
-            this.tableLayoutPanel30.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel30.Location = new System.Drawing.Point(20, 172);
+            this.tableLayoutPanel30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel30.Name = "tableLayoutPanel30";
             this.tableLayoutPanel30.RowCount = 1;
             this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel30.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel30.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel30.TabIndex = 8;
             // 
             // India_USA
@@ -4366,10 +4175,9 @@
             this.India_USA.BackColor = System.Drawing.Color.White;
             this.India_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.India_USA.ForeColor = System.Drawing.Color.Blue;
-            this.India_USA.Location = new System.Drawing.Point(3, 1);
-            this.India_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.India_USA.Location = new System.Drawing.Point(4, 1);
             this.India_USA.Name = "India_USA";
-            this.India_USA.Size = new System.Drawing.Size(14, 14);
+            this.India_USA.Size = new System.Drawing.Size(26, 17);
             this.India_USA.TabIndex = 0;
             this.India_USA.Text = "10";
             this.India_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4380,10 +4188,9 @@
             this.India_USSR.BackColor = System.Drawing.Color.White;
             this.India_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.India_USSR.ForeColor = System.Drawing.Color.Red;
-            this.India_USSR.Location = new System.Drawing.Point(28, 1);
-            this.India_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.India_USSR.Location = new System.Drawing.Point(37, 1);
             this.India_USSR.Name = "India_USSR";
-            this.India_USSR.Size = new System.Drawing.Size(14, 14);
+            this.India_USSR.Size = new System.Drawing.Size(26, 17);
             this.India_USSR.TabIndex = 5;
             this.India_USSR.Text = "10";
             this.India_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4391,20 +4198,18 @@
             // label91
             // 
             this.label91.AutoSize = true;
-            this.label91.Location = new System.Drawing.Point(92, 89);
-            this.label91.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label91.Location = new System.Drawing.Point(123, 110);
             this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(57, 13);
+            this.label91.Size = new System.Drawing.Size(76, 17);
             this.label91.TabIndex = 27;
             this.label91.Text = "Philippines";
             // 
             // label92
             // 
             this.label92.AutoSize = true;
-            this.label92.Location = new System.Drawing.Point(13, 89);
-            this.label92.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label92.Location = new System.Drawing.Point(17, 110);
             this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(37, 13);
+            this.label92.Size = new System.Drawing.Size(49, 17);
             this.label92.TabIndex = 11;
             this.label92.Text = "Burma";
             // 
@@ -4416,12 +4221,12 @@
             this.Philippines.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.Philippines.Controls.Add(this.Philippines_USA, 0, 0);
             this.Philippines.Controls.Add(this.Philippines_USSR, 1, 0);
-            this.Philippines.Location = new System.Drawing.Point(94, 106);
-            this.Philippines.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Philippines.Location = new System.Drawing.Point(125, 130);
+            this.Philippines.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Philippines.Name = "Philippines";
             this.Philippines.RowCount = 1;
             this.Philippines.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.Philippines.Size = new System.Drawing.Size(51, 16);
+            this.Philippines.Size = new System.Drawing.Size(68, 20);
             this.Philippines.TabIndex = 26;
             // 
             // Philippines_USA
@@ -4430,10 +4235,9 @@
             this.Philippines_USA.BackColor = System.Drawing.Color.White;
             this.Philippines_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Philippines_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Philippines_USA.Location = new System.Drawing.Point(3, 1);
-            this.Philippines_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Philippines_USA.Location = new System.Drawing.Point(4, 1);
             this.Philippines_USA.Name = "Philippines_USA";
-            this.Philippines_USA.Size = new System.Drawing.Size(14, 14);
+            this.Philippines_USA.Size = new System.Drawing.Size(26, 17);
             this.Philippines_USA.TabIndex = 0;
             this.Philippines_USA.Text = "10";
             this.Philippines_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4444,10 +4248,9 @@
             this.Philippines_USSR.BackColor = System.Drawing.Color.White;
             this.Philippines_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Philippines_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Philippines_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Philippines_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Philippines_USSR.Location = new System.Drawing.Point(37, 1);
             this.Philippines_USSR.Name = "Philippines_USSR";
-            this.Philippines_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Philippines_USSR.Size = new System.Drawing.Size(26, 17);
             this.Philippines_USSR.TabIndex = 5;
             this.Philippines_USSR.Text = "10";
             this.Philippines_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4455,10 +4258,9 @@
             // label95
             // 
             this.label95.AutoSize = true;
-            this.label95.Location = new System.Drawing.Point(92, 54);
-            this.label95.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label95.Location = new System.Drawing.Point(123, 66);
             this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(48, 13);
+            this.label95.Size = new System.Drawing.Size(62, 17);
             this.label95.TabIndex = 25;
             this.label95.Text = "Pakistan";
             // 
@@ -4470,12 +4272,12 @@
             this.tableLayoutPanel32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel32.Controls.Add(this.Burma_USA, 0, 0);
             this.tableLayoutPanel32.Controls.Add(this.Burma_USSR, 1, 0);
-            this.tableLayoutPanel32.Location = new System.Drawing.Point(15, 105);
-            this.tableLayoutPanel32.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel32.Location = new System.Drawing.Point(20, 129);
+            this.tableLayoutPanel32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel32.Name = "tableLayoutPanel32";
             this.tableLayoutPanel32.RowCount = 1;
             this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel32.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel32.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel32.TabIndex = 10;
             // 
             // Burma_USA
@@ -4484,10 +4286,9 @@
             this.Burma_USA.BackColor = System.Drawing.Color.White;
             this.Burma_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Burma_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Burma_USA.Location = new System.Drawing.Point(3, 1);
-            this.Burma_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Burma_USA.Location = new System.Drawing.Point(4, 1);
             this.Burma_USA.Name = "Burma_USA";
-            this.Burma_USA.Size = new System.Drawing.Size(14, 14);
+            this.Burma_USA.Size = new System.Drawing.Size(26, 17);
             this.Burma_USA.TabIndex = 0;
             this.Burma_USA.Text = "10";
             this.Burma_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4498,10 +4299,9 @@
             this.Burma_USSR.BackColor = System.Drawing.Color.White;
             this.Burma_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Burma_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Burma_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Burma_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Burma_USSR.Location = new System.Drawing.Point(37, 1);
             this.Burma_USSR.Name = "Burma_USSR";
-            this.Burma_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Burma_USSR.Size = new System.Drawing.Size(26, 17);
             this.Burma_USSR.TabIndex = 5;
             this.Burma_USSR.Text = "10";
             this.Burma_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4510,20 +4310,18 @@
             // 
             this.label98.AutoSize = true;
             this.label98.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label98.Location = new System.Drawing.Point(92, 20);
-            this.label98.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label98.Location = new System.Drawing.Point(123, 25);
             this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(49, 13);
+            this.label98.Size = new System.Drawing.Size(64, 17);
             this.label98.TabIndex = 21;
             this.label98.Text = "N. Korea";
             // 
             // label99
             // 
             this.label99.AutoSize = true;
-            this.label99.Location = new System.Drawing.Point(13, 54);
-            this.label99.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label99.Location = new System.Drawing.Point(17, 66);
             this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(47, 13);
+            this.label99.Size = new System.Drawing.Size(63, 17);
             this.label99.TabIndex = 9;
             this.label99.Text = "Australia";
             // 
@@ -4535,12 +4333,12 @@
             this.tableLayoutPanel33.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel33.Controls.Add(this.Pakistan_USA, 0, 0);
             this.tableLayoutPanel33.Controls.Add(this.Pakistan_USSR, 1, 0);
-            this.tableLayoutPanel33.Location = new System.Drawing.Point(94, 71);
-            this.tableLayoutPanel33.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel33.Location = new System.Drawing.Point(125, 87);
+            this.tableLayoutPanel33.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel33.Name = "tableLayoutPanel33";
             this.tableLayoutPanel33.RowCount = 1;
             this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel33.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel33.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel33.TabIndex = 23;
             // 
             // Pakistan_USA
@@ -4549,10 +4347,9 @@
             this.Pakistan_USA.BackColor = System.Drawing.Color.White;
             this.Pakistan_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pakistan_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Pakistan_USA.Location = new System.Drawing.Point(3, 1);
-            this.Pakistan_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Pakistan_USA.Location = new System.Drawing.Point(4, 1);
             this.Pakistan_USA.Name = "Pakistan_USA";
-            this.Pakistan_USA.Size = new System.Drawing.Size(14, 14);
+            this.Pakistan_USA.Size = new System.Drawing.Size(26, 17);
             this.Pakistan_USA.TabIndex = 0;
             this.Pakistan_USA.Text = "10";
             this.Pakistan_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4563,10 +4360,9 @@
             this.Pakistan_USSR.BackColor = System.Drawing.Color.White;
             this.Pakistan_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pakistan_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Pakistan_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Pakistan_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Pakistan_USSR.Location = new System.Drawing.Point(37, 1);
             this.Pakistan_USSR.Name = "Pakistan_USSR";
-            this.Pakistan_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Pakistan_USSR.Size = new System.Drawing.Size(26, 17);
             this.Pakistan_USSR.TabIndex = 5;
             this.Pakistan_USSR.Text = "10";
             this.Pakistan_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4575,10 +4371,9 @@
             // 
             this.label102.AutoSize = true;
             this.label102.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label102.Location = new System.Drawing.Point(13, 19);
-            this.label102.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label102.Location = new System.Drawing.Point(17, 23);
             this.label102.Name = "label102";
-            this.label102.Size = new System.Drawing.Size(55, 12);
+            this.label102.Size = new System.Drawing.Size(71, 15);
             this.label102.TabIndex = 7;
             this.label102.Text = "Afghanistan";
             // 
@@ -4590,12 +4385,12 @@
             this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel34.Controls.Add(this.NorthKorea_USA, 0, 0);
             this.tableLayoutPanel34.Controls.Add(this.NorthKorea_USSR, 1, 0);
-            this.tableLayoutPanel34.Location = new System.Drawing.Point(94, 36);
-            this.tableLayoutPanel34.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel34.Location = new System.Drawing.Point(125, 44);
+            this.tableLayoutPanel34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel34.Name = "tableLayoutPanel34";
             this.tableLayoutPanel34.RowCount = 1;
             this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel34.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel34.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel34.TabIndex = 20;
             // 
             // NorthKorea_USA
@@ -4604,10 +4399,9 @@
             this.NorthKorea_USA.BackColor = System.Drawing.Color.White;
             this.NorthKorea_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NorthKorea_USA.ForeColor = System.Drawing.Color.Blue;
-            this.NorthKorea_USA.Location = new System.Drawing.Point(3, 1);
-            this.NorthKorea_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.NorthKorea_USA.Location = new System.Drawing.Point(4, 1);
             this.NorthKorea_USA.Name = "NorthKorea_USA";
-            this.NorthKorea_USA.Size = new System.Drawing.Size(14, 14);
+            this.NorthKorea_USA.Size = new System.Drawing.Size(26, 17);
             this.NorthKorea_USA.TabIndex = 0;
             this.NorthKorea_USA.Text = "10";
             this.NorthKorea_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4618,10 +4412,9 @@
             this.NorthKorea_USSR.BackColor = System.Drawing.Color.White;
             this.NorthKorea_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NorthKorea_USSR.ForeColor = System.Drawing.Color.Red;
-            this.NorthKorea_USSR.Location = new System.Drawing.Point(28, 1);
-            this.NorthKorea_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.NorthKorea_USSR.Location = new System.Drawing.Point(37, 1);
             this.NorthKorea_USSR.Name = "NorthKorea_USSR";
-            this.NorthKorea_USSR.Size = new System.Drawing.Size(14, 14);
+            this.NorthKorea_USSR.Size = new System.Drawing.Size(26, 17);
             this.NorthKorea_USSR.TabIndex = 5;
             this.NorthKorea_USSR.Text = "10";
             this.NorthKorea_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4634,12 +4427,12 @@
             this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel35.Controls.Add(this.Australia_USA, 0, 0);
             this.tableLayoutPanel35.Controls.Add(this.Australia_USSR, 1, 0);
-            this.tableLayoutPanel35.Location = new System.Drawing.Point(15, 70);
-            this.tableLayoutPanel35.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel35.Location = new System.Drawing.Point(20, 86);
+            this.tableLayoutPanel35.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel35.Name = "tableLayoutPanel35";
             this.tableLayoutPanel35.RowCount = 1;
             this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel35.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel35.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel35.TabIndex = 8;
             // 
             // Australia_USA
@@ -4648,10 +4441,9 @@
             this.Australia_USA.BackColor = System.Drawing.Color.White;
             this.Australia_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Australia_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Australia_USA.Location = new System.Drawing.Point(3, 1);
-            this.Australia_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Australia_USA.Location = new System.Drawing.Point(4, 1);
             this.Australia_USA.Name = "Australia_USA";
-            this.Australia_USA.Size = new System.Drawing.Size(14, 14);
+            this.Australia_USA.Size = new System.Drawing.Size(26, 17);
             this.Australia_USA.TabIndex = 0;
             this.Australia_USA.Text = "10";
             this.Australia_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4662,10 +4454,9 @@
             this.Australia_USSR.BackColor = System.Drawing.Color.White;
             this.Australia_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Australia_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Australia_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Australia_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Australia_USSR.Location = new System.Drawing.Point(37, 1);
             this.Australia_USSR.Name = "Australia_USSR";
-            this.Australia_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Australia_USSR.Size = new System.Drawing.Size(26, 17);
             this.Australia_USSR.TabIndex = 5;
             this.Australia_USSR.Text = "10";
             this.Australia_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4678,12 +4469,12 @@
             this.tableLayoutPanel36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel36.Controls.Add(this.Afghanistan_USA, 0, 0);
             this.tableLayoutPanel36.Controls.Add(this.Afghanistan_USSR, 1, 0);
-            this.tableLayoutPanel36.Location = new System.Drawing.Point(15, 35);
-            this.tableLayoutPanel36.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel36.Location = new System.Drawing.Point(20, 43);
+            this.tableLayoutPanel36.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel36.Name = "tableLayoutPanel36";
             this.tableLayoutPanel36.RowCount = 1;
             this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel36.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel36.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel36.TabIndex = 6;
             // 
             // Afghanistan_USA
@@ -4692,10 +4483,9 @@
             this.Afghanistan_USA.BackColor = System.Drawing.Color.White;
             this.Afghanistan_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Afghanistan_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Afghanistan_USA.Location = new System.Drawing.Point(3, 1);
-            this.Afghanistan_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Afghanistan_USA.Location = new System.Drawing.Point(4, 1);
             this.Afghanistan_USA.Name = "Afghanistan_USA";
-            this.Afghanistan_USA.Size = new System.Drawing.Size(14, 14);
+            this.Afghanistan_USA.Size = new System.Drawing.Size(26, 17);
             this.Afghanistan_USA.TabIndex = 0;
             this.Afghanistan_USA.Text = "10";
             this.Afghanistan_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4706,10 +4496,9 @@
             this.Afghanistan_USSR.BackColor = System.Drawing.Color.White;
             this.Afghanistan_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Afghanistan_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Afghanistan_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Afghanistan_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Afghanistan_USSR.Location = new System.Drawing.Point(37, 1);
             this.Afghanistan_USSR.Name = "Afghanistan_USSR";
-            this.Afghanistan_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Afghanistan_USSR.Size = new System.Drawing.Size(26, 17);
             this.Afghanistan_USSR.TabIndex = 5;
             this.Afghanistan_USSR.Text = "10";
             this.Afghanistan_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4752,11 +4541,11 @@
             this.groupBox1.Controls.Add(this.tableLayoutPanel16);
             this.groupBox1.Controls.Add(this.tableLayoutPanel2);
             this.groupBox1.Controls.Add(this.tableLayoutPanel1);
-            this.groupBox1.Location = new System.Drawing.Point(1, 26);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(1, 32);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(148, 356);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(197, 438);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Africa";
@@ -4764,20 +4553,18 @@
             // label49
             // 
             this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(76, 302);
-            this.label49.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label49.Location = new System.Drawing.Point(101, 372);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(56, 13);
+            this.label49.Size = new System.Drawing.Size(72, 17);
             this.label49.TabIndex = 39;
             this.label49.Text = "Zimbabwe";
             // 
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(13, 301);
-            this.label50.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label50.Location = new System.Drawing.Point(17, 370);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(40, 13);
+            this.label50.Size = new System.Drawing.Size(53, 17);
             this.label50.TabIndex = 37;
             this.label50.Text = "Nigeria";
             // 
@@ -4789,12 +4576,12 @@
             this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel17.Controls.Add(this.Zimbabwe_USA, 0, 0);
             this.tableLayoutPanel17.Controls.Add(this.Zimbabwe_USSR, 1, 0);
-            this.tableLayoutPanel17.Location = new System.Drawing.Point(79, 318);
-            this.tableLayoutPanel17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel17.Location = new System.Drawing.Point(105, 391);
+            this.tableLayoutPanel17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel17.Name = "tableLayoutPanel17";
             this.tableLayoutPanel17.RowCount = 1;
             this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel17.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel17.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel17.TabIndex = 38;
             // 
             // Zimbabwe_USA
@@ -4803,10 +4590,9 @@
             this.Zimbabwe_USA.BackColor = System.Drawing.Color.White;
             this.Zimbabwe_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Zimbabwe_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Zimbabwe_USA.Location = new System.Drawing.Point(3, 1);
-            this.Zimbabwe_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Zimbabwe_USA.Location = new System.Drawing.Point(4, 1);
             this.Zimbabwe_USA.Name = "Zimbabwe_USA";
-            this.Zimbabwe_USA.Size = new System.Drawing.Size(14, 14);
+            this.Zimbabwe_USA.Size = new System.Drawing.Size(26, 17);
             this.Zimbabwe_USA.TabIndex = 0;
             this.Zimbabwe_USA.Text = "10";
             this.Zimbabwe_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4817,10 +4603,9 @@
             this.Zimbabwe_USSR.BackColor = System.Drawing.Color.White;
             this.Zimbabwe_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Zimbabwe_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Zimbabwe_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Zimbabwe_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Zimbabwe_USSR.Location = new System.Drawing.Point(37, 1);
             this.Zimbabwe_USSR.Name = "Zimbabwe_USSR";
-            this.Zimbabwe_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Zimbabwe_USSR.Size = new System.Drawing.Size(26, 17);
             this.Zimbabwe_USSR.TabIndex = 5;
             this.Zimbabwe_USSR.Text = "10";
             this.Zimbabwe_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4833,12 +4618,12 @@
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel18.Controls.Add(this.Nigeria_USA, 0, 0);
             this.tableLayoutPanel18.Controls.Add(this.Nigeria_USSR, 1, 0);
-            this.tableLayoutPanel18.Location = new System.Drawing.Point(15, 318);
-            this.tableLayoutPanel18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel18.Location = new System.Drawing.Point(20, 391);
+            this.tableLayoutPanel18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel18.Name = "tableLayoutPanel18";
             this.tableLayoutPanel18.RowCount = 1;
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel18.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel18.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel18.TabIndex = 36;
             // 
             // Nigeria_USA
@@ -4847,10 +4632,9 @@
             this.Nigeria_USA.BackColor = System.Drawing.Color.White;
             this.Nigeria_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nigeria_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Nigeria_USA.Location = new System.Drawing.Point(3, 1);
-            this.Nigeria_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Nigeria_USA.Location = new System.Drawing.Point(4, 1);
             this.Nigeria_USA.Name = "Nigeria_USA";
-            this.Nigeria_USA.Size = new System.Drawing.Size(14, 14);
+            this.Nigeria_USA.Size = new System.Drawing.Size(26, 17);
             this.Nigeria_USA.TabIndex = 0;
             this.Nigeria_USA.Text = "10";
             this.Nigeria_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4861,10 +4645,9 @@
             this.Nigeria_USSR.BackColor = System.Drawing.Color.White;
             this.Nigeria_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nigeria_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Nigeria_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Nigeria_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Nigeria_USSR.Location = new System.Drawing.Point(37, 1);
             this.Nigeria_USSR.Name = "Nigeria_USSR";
-            this.Nigeria_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Nigeria_USSR.Size = new System.Drawing.Size(26, 17);
             this.Nigeria_USSR.TabIndex = 5;
             this.Nigeria_USSR.Text = "10";
             this.Nigeria_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4872,20 +4655,18 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(76, 267);
-            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label25.Location = new System.Drawing.Point(101, 329);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(31, 13);
+            this.label25.Size = new System.Drawing.Size(41, 17);
             this.label25.TabIndex = 35;
             this.label25.Text = "Zaire";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(13, 266);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Location = new System.Drawing.Point(17, 327);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(49, 13);
+            this.label22.Size = new System.Drawing.Size(62, 17);
             this.label22.TabIndex = 19;
             this.label22.Text = "Morocco";
             // 
@@ -4897,12 +4678,12 @@
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel9.Controls.Add(this.Zaire_USA, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.Zaire_USSR, 1, 0);
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(79, 284);
-            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(105, 350);
+            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 1;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel9.TabIndex = 34;
             // 
             // Zaire_USA
@@ -4911,10 +4692,9 @@
             this.Zaire_USA.BackColor = System.Drawing.Color.White;
             this.Zaire_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Zaire_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Zaire_USA.Location = new System.Drawing.Point(3, 1);
-            this.Zaire_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Zaire_USA.Location = new System.Drawing.Point(4, 1);
             this.Zaire_USA.Name = "Zaire_USA";
-            this.Zaire_USA.Size = new System.Drawing.Size(14, 14);
+            this.Zaire_USA.Size = new System.Drawing.Size(26, 17);
             this.Zaire_USA.TabIndex = 0;
             this.Zaire_USA.Text = "10";
             this.Zaire_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4925,10 +4705,9 @@
             this.Zaire_USSR.BackColor = System.Drawing.Color.White;
             this.Zaire_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Zaire_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Zaire_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Zaire_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Zaire_USSR.Location = new System.Drawing.Point(37, 1);
             this.Zaire_USSR.Name = "Zaire_USSR";
-            this.Zaire_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Zaire_USSR.Size = new System.Drawing.Size(26, 17);
             this.Zaire_USSR.TabIndex = 5;
             this.Zaire_USSR.Text = "10";
             this.Zaire_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4941,12 +4720,12 @@
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.Controls.Add(this.Morocco_USA, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.Morocco_USSR, 1, 0);
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(15, 283);
-            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(20, 348);
+            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel8.TabIndex = 18;
             // 
             // Morocco_USA
@@ -4955,10 +4734,9 @@
             this.Morocco_USA.BackColor = System.Drawing.Color.White;
             this.Morocco_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Morocco_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Morocco_USA.Location = new System.Drawing.Point(3, 1);
-            this.Morocco_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Morocco_USA.Location = new System.Drawing.Point(4, 1);
             this.Morocco_USA.Name = "Morocco_USA";
-            this.Morocco_USA.Size = new System.Drawing.Size(14, 14);
+            this.Morocco_USA.Size = new System.Drawing.Size(26, 17);
             this.Morocco_USA.TabIndex = 0;
             this.Morocco_USA.Text = "10";
             this.Morocco_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4969,10 +4747,9 @@
             this.Morocco_USSR.BackColor = System.Drawing.Color.White;
             this.Morocco_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Morocco_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Morocco_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Morocco_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Morocco_USSR.Location = new System.Drawing.Point(37, 1);
             this.Morocco_USSR.Name = "Morocco_USSR";
-            this.Morocco_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Morocco_USSR.Size = new System.Drawing.Size(26, 17);
             this.Morocco_USSR.TabIndex = 5;
             this.Morocco_USSR.Text = "10";
             this.Morocco_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4981,20 +4758,18 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(76, 231);
-            this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label28.Location = new System.Drawing.Point(101, 284);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(61, 12);
+            this.label28.Size = new System.Drawing.Size(74, 15);
             this.label28.TabIndex = 33;
             this.label28.Text = "W. Af. States";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(13, 230);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Location = new System.Drawing.Point(17, 283);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(37, 13);
+            this.label19.Size = new System.Drawing.Size(48, 17);
             this.label19.TabIndex = 17;
             this.label19.Text = "Kenya";
             // 
@@ -5006,12 +4781,12 @@
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel10.Controls.Add(this.WestAfricanStates_USA, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.WestAfricanStates_USSR, 1, 0);
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(79, 247);
-            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(105, 304);
+            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 1;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel10.TabIndex = 32;
             // 
             // WestAfricanStates_USA
@@ -5020,10 +4795,9 @@
             this.WestAfricanStates_USA.BackColor = System.Drawing.Color.White;
             this.WestAfricanStates_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WestAfricanStates_USA.ForeColor = System.Drawing.Color.Blue;
-            this.WestAfricanStates_USA.Location = new System.Drawing.Point(3, 1);
-            this.WestAfricanStates_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.WestAfricanStates_USA.Location = new System.Drawing.Point(4, 1);
             this.WestAfricanStates_USA.Name = "WestAfricanStates_USA";
-            this.WestAfricanStates_USA.Size = new System.Drawing.Size(14, 14);
+            this.WestAfricanStates_USA.Size = new System.Drawing.Size(26, 17);
             this.WestAfricanStates_USA.TabIndex = 0;
             this.WestAfricanStates_USA.Text = "10";
             this.WestAfricanStates_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5034,10 +4808,9 @@
             this.WestAfricanStates_USSR.BackColor = System.Drawing.Color.White;
             this.WestAfricanStates_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WestAfricanStates_USSR.ForeColor = System.Drawing.Color.Red;
-            this.WestAfricanStates_USSR.Location = new System.Drawing.Point(28, 1);
-            this.WestAfricanStates_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.WestAfricanStates_USSR.Location = new System.Drawing.Point(37, 1);
             this.WestAfricanStates_USSR.Name = "WestAfricanStates_USSR";
-            this.WestAfricanStates_USSR.Size = new System.Drawing.Size(14, 14);
+            this.WestAfricanStates_USSR.Size = new System.Drawing.Size(26, 17);
             this.WestAfricanStates_USSR.TabIndex = 5;
             this.WestAfricanStates_USSR.Text = "10";
             this.WestAfricanStates_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5050,12 +4823,12 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.Controls.Add(this.Kenya_USA, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.Kenya_USSR, 1, 0);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(15, 246);
-            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(20, 303);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel7.TabIndex = 16;
             // 
             // Kenya_USA
@@ -5064,10 +4837,9 @@
             this.Kenya_USA.BackColor = System.Drawing.Color.White;
             this.Kenya_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Kenya_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Kenya_USA.Location = new System.Drawing.Point(3, 1);
-            this.Kenya_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Kenya_USA.Location = new System.Drawing.Point(4, 1);
             this.Kenya_USA.Name = "Kenya_USA";
-            this.Kenya_USA.Size = new System.Drawing.Size(14, 14);
+            this.Kenya_USA.Size = new System.Drawing.Size(26, 17);
             this.Kenya_USA.TabIndex = 0;
             this.Kenya_USA.Text = "10";
             this.Kenya_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5078,10 +4850,9 @@
             this.Kenya_USSR.BackColor = System.Drawing.Color.White;
             this.Kenya_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Kenya_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Kenya_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Kenya_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Kenya_USSR.Location = new System.Drawing.Point(37, 1);
             this.Kenya_USSR.Name = "Kenya_USSR";
-            this.Kenya_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Kenya_USSR.Size = new System.Drawing.Size(26, 17);
             this.Kenya_USSR.TabIndex = 5;
             this.Kenya_USSR.Text = "10";
             this.Kenya_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5089,20 +4860,18 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(76, 196);
-            this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label31.Location = new System.Drawing.Point(101, 241);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(41, 13);
+            this.label31.Size = new System.Drawing.Size(54, 17);
             this.label31.TabIndex = 31;
             this.label31.Text = "Tunisia";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(13, 195);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Location = new System.Drawing.Point(17, 240);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(60, 13);
+            this.label16.Size = new System.Drawing.Size(78, 17);
             this.label16.TabIndex = 15;
             this.label16.Text = "Ivory Coast";
             // 
@@ -5114,12 +4883,12 @@
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel11.Controls.Add(this.Tunisia_USA, 0, 0);
             this.tableLayoutPanel11.Controls.Add(this.Tunisia_USSR, 1, 0);
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(79, 212);
-            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(105, 261);
+            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 1;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel11.TabIndex = 30;
             // 
             // Tunisia_USA
@@ -5128,10 +4897,9 @@
             this.Tunisia_USA.BackColor = System.Drawing.Color.White;
             this.Tunisia_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tunisia_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Tunisia_USA.Location = new System.Drawing.Point(3, 1);
-            this.Tunisia_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Tunisia_USA.Location = new System.Drawing.Point(4, 1);
             this.Tunisia_USA.Name = "Tunisia_USA";
-            this.Tunisia_USA.Size = new System.Drawing.Size(14, 14);
+            this.Tunisia_USA.Size = new System.Drawing.Size(26, 17);
             this.Tunisia_USA.TabIndex = 0;
             this.Tunisia_USA.Text = "10";
             this.Tunisia_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5142,10 +4910,9 @@
             this.Tunisia_USSR.BackColor = System.Drawing.Color.White;
             this.Tunisia_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tunisia_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Tunisia_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Tunisia_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Tunisia_USSR.Location = new System.Drawing.Point(37, 1);
             this.Tunisia_USSR.Name = "Tunisia_USSR";
-            this.Tunisia_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Tunisia_USSR.Size = new System.Drawing.Size(26, 17);
             this.Tunisia_USSR.TabIndex = 5;
             this.Tunisia_USSR.Text = "10";
             this.Tunisia_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5158,12 +4925,12 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.Controls.Add(this.IvoryCoast_USA, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.IvoryCoast_USSR, 1, 0);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(15, 211);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(20, 260);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel6.TabIndex = 14;
             // 
             // IvoryCoast_USA
@@ -5172,10 +4939,9 @@
             this.IvoryCoast_USA.BackColor = System.Drawing.Color.White;
             this.IvoryCoast_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IvoryCoast_USA.ForeColor = System.Drawing.Color.Blue;
-            this.IvoryCoast_USA.Location = new System.Drawing.Point(3, 1);
-            this.IvoryCoast_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.IvoryCoast_USA.Location = new System.Drawing.Point(4, 1);
             this.IvoryCoast_USA.Name = "IvoryCoast_USA";
-            this.IvoryCoast_USA.Size = new System.Drawing.Size(14, 14);
+            this.IvoryCoast_USA.Size = new System.Drawing.Size(26, 17);
             this.IvoryCoast_USA.TabIndex = 0;
             this.IvoryCoast_USA.Text = "10";
             this.IvoryCoast_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5186,10 +4952,9 @@
             this.IvoryCoast_USSR.BackColor = System.Drawing.Color.White;
             this.IvoryCoast_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IvoryCoast_USSR.ForeColor = System.Drawing.Color.Red;
-            this.IvoryCoast_USSR.Location = new System.Drawing.Point(28, 1);
-            this.IvoryCoast_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.IvoryCoast_USSR.Location = new System.Drawing.Point(37, 1);
             this.IvoryCoast_USSR.Name = "IvoryCoast_USSR";
-            this.IvoryCoast_USSR.Size = new System.Drawing.Size(14, 14);
+            this.IvoryCoast_USSR.Size = new System.Drawing.Size(26, 17);
             this.IvoryCoast_USSR.TabIndex = 5;
             this.IvoryCoast_USSR.Text = "10";
             this.IvoryCoast_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5197,20 +4962,18 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(76, 160);
-            this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label34.Location = new System.Drawing.Point(101, 197);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(38, 13);
+            this.label34.Size = new System.Drawing.Size(49, 17);
             this.label34.TabIndex = 29;
             this.label34.Text = "Sudan";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(13, 159);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Location = new System.Drawing.Point(17, 196);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(45, 13);
+            this.label13.Size = new System.Drawing.Size(59, 17);
             this.label13.TabIndex = 13;
             this.label13.Text = "Ethiopia";
             // 
@@ -5222,12 +4985,12 @@
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel12.Controls.Add(this.Sudan_USA, 0, 0);
             this.tableLayoutPanel12.Controls.Add(this.Sudan_USSR, 1, 0);
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(79, 176);
-            this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(105, 217);
+            this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 1;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel12.TabIndex = 28;
             // 
             // Sudan_USA
@@ -5236,10 +4999,9 @@
             this.Sudan_USA.BackColor = System.Drawing.Color.White;
             this.Sudan_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sudan_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Sudan_USA.Location = new System.Drawing.Point(3, 1);
-            this.Sudan_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Sudan_USA.Location = new System.Drawing.Point(4, 1);
             this.Sudan_USA.Name = "Sudan_USA";
-            this.Sudan_USA.Size = new System.Drawing.Size(14, 14);
+            this.Sudan_USA.Size = new System.Drawing.Size(26, 17);
             this.Sudan_USA.TabIndex = 0;
             this.Sudan_USA.Text = "10";
             this.Sudan_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5250,10 +5012,9 @@
             this.Sudan_USSR.BackColor = System.Drawing.Color.White;
             this.Sudan_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sudan_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Sudan_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Sudan_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Sudan_USSR.Location = new System.Drawing.Point(37, 1);
             this.Sudan_USSR.Name = "Sudan_USSR";
-            this.Sudan_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Sudan_USSR.Size = new System.Drawing.Size(26, 17);
             this.Sudan_USSR.TabIndex = 5;
             this.Sudan_USSR.Text = "10";
             this.Sudan_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5266,12 +5027,12 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.Controls.Add(this.Ethiopia_USA, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.Ethiopia_USSR, 1, 0);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(15, 176);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(20, 217);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel5.TabIndex = 12;
             // 
             // Ethiopia_USA
@@ -5280,10 +5041,9 @@
             this.Ethiopia_USA.BackColor = System.Drawing.Color.White;
             this.Ethiopia_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ethiopia_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Ethiopia_USA.Location = new System.Drawing.Point(3, 1);
-            this.Ethiopia_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Ethiopia_USA.Location = new System.Drawing.Point(4, 1);
             this.Ethiopia_USA.Name = "Ethiopia_USA";
-            this.Ethiopia_USA.Size = new System.Drawing.Size(14, 14);
+            this.Ethiopia_USA.Size = new System.Drawing.Size(26, 17);
             this.Ethiopia_USA.TabIndex = 0;
             this.Ethiopia_USA.Text = "10";
             this.Ethiopia_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5294,10 +5054,9 @@
             this.Ethiopia_USSR.BackColor = System.Drawing.Color.White;
             this.Ethiopia_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ethiopia_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Ethiopia_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Ethiopia_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Ethiopia_USSR.Location = new System.Drawing.Point(37, 1);
             this.Ethiopia_USSR.Name = "Ethiopia_USSR";
-            this.Ethiopia_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Ethiopia_USSR.Size = new System.Drawing.Size(26, 17);
             this.Ethiopia_USSR.TabIndex = 5;
             this.Ethiopia_USSR.Text = "10";
             this.Ethiopia_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5306,20 +5065,18 @@
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(76, 124);
-            this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label37.Location = new System.Drawing.Point(101, 153);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(56, 12);
+            this.label37.Size = new System.Drawing.Size(72, 15);
             this.label37.TabIndex = 24;
             this.label37.Text = "South Africa";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(13, 124);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(17, 153);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(55, 13);
+            this.label10.Size = new System.Drawing.Size(73, 17);
             this.label10.TabIndex = 9;
             this.label10.Text = "Cameroon";
             // 
@@ -5331,12 +5088,12 @@
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel13.Controls.Add(this.SouthAfrica_USA, 0, 0);
             this.tableLayoutPanel13.Controls.Add(this.SouthAfrica_USSR, 1, 0);
-            this.tableLayoutPanel13.Location = new System.Drawing.Point(79, 141);
-            this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel13.Location = new System.Drawing.Point(105, 174);
+            this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
             this.tableLayoutPanel13.RowCount = 1;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel13.TabIndex = 22;
             // 
             // SouthAfrica_USA
@@ -5345,10 +5102,9 @@
             this.SouthAfrica_USA.BackColor = System.Drawing.Color.White;
             this.SouthAfrica_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SouthAfrica_USA.ForeColor = System.Drawing.Color.Blue;
-            this.SouthAfrica_USA.Location = new System.Drawing.Point(3, 1);
-            this.SouthAfrica_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SouthAfrica_USA.Location = new System.Drawing.Point(4, 1);
             this.SouthAfrica_USA.Name = "SouthAfrica_USA";
-            this.SouthAfrica_USA.Size = new System.Drawing.Size(14, 14);
+            this.SouthAfrica_USA.Size = new System.Drawing.Size(26, 17);
             this.SouthAfrica_USA.TabIndex = 0;
             this.SouthAfrica_USA.Text = "10";
             this.SouthAfrica_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5359,10 +5115,9 @@
             this.SouthAfrica_USSR.BackColor = System.Drawing.Color.White;
             this.SouthAfrica_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SouthAfrica_USSR.ForeColor = System.Drawing.Color.Red;
-            this.SouthAfrica_USSR.Location = new System.Drawing.Point(28, 1);
-            this.SouthAfrica_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SouthAfrica_USSR.Location = new System.Drawing.Point(37, 1);
             this.SouthAfrica_USSR.Name = "SouthAfrica_USSR";
-            this.SouthAfrica_USSR.Size = new System.Drawing.Size(14, 14);
+            this.SouthAfrica_USSR.Size = new System.Drawing.Size(26, 17);
             this.SouthAfrica_USSR.TabIndex = 5;
             this.SouthAfrica_USSR.Text = "10";
             this.SouthAfrica_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5375,12 +5130,12 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.Controls.Add(this.Cameroon_USA, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.Cameroon_USSR, 1, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(15, 140);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(20, 172);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel4.TabIndex = 8;
             // 
             // Cameroon_USA
@@ -5389,10 +5144,9 @@
             this.Cameroon_USA.BackColor = System.Drawing.Color.White;
             this.Cameroon_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cameroon_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Cameroon_USA.Location = new System.Drawing.Point(3, 1);
-            this.Cameroon_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Cameroon_USA.Location = new System.Drawing.Point(4, 1);
             this.Cameroon_USA.Name = "Cameroon_USA";
-            this.Cameroon_USA.Size = new System.Drawing.Size(14, 14);
+            this.Cameroon_USA.Size = new System.Drawing.Size(26, 17);
             this.Cameroon_USA.TabIndex = 0;
             this.Cameroon_USA.Text = "10";
             this.Cameroon_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5403,10 +5157,9 @@
             this.Cameroon_USSR.BackColor = System.Drawing.Color.White;
             this.Cameroon_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cameroon_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Cameroon_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Cameroon_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Cameroon_USSR.Location = new System.Drawing.Point(37, 1);
             this.Cameroon_USSR.Name = "Cameroon_USSR";
-            this.Cameroon_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Cameroon_USSR.Size = new System.Drawing.Size(26, 17);
             this.Cameroon_USSR.TabIndex = 5;
             this.Cameroon_USSR.Text = "10";
             this.Cameroon_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5414,20 +5167,18 @@
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(76, 89);
-            this.label40.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label40.Location = new System.Drawing.Point(101, 110);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(44, 13);
+            this.label40.Size = new System.Drawing.Size(58, 17);
             this.label40.TabIndex = 27;
             this.label40.Text = "Somalia";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 89);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(17, 110);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 13);
+            this.label7.Size = new System.Drawing.Size(69, 17);
             this.label7.TabIndex = 11;
             this.label7.Text = "Botswana";
             // 
@@ -5439,12 +5190,12 @@
             this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel14.Controls.Add(this.Somalia_USA, 0, 0);
             this.tableLayoutPanel14.Controls.Add(this.Somalia_USSR, 1, 0);
-            this.tableLayoutPanel14.Location = new System.Drawing.Point(79, 106);
-            this.tableLayoutPanel14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel14.Location = new System.Drawing.Point(105, 130);
+            this.tableLayoutPanel14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel14.Name = "tableLayoutPanel14";
             this.tableLayoutPanel14.RowCount = 1;
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel14.TabIndex = 26;
             // 
             // Somalia_USA
@@ -5453,10 +5204,9 @@
             this.Somalia_USA.BackColor = System.Drawing.Color.White;
             this.Somalia_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Somalia_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Somalia_USA.Location = new System.Drawing.Point(3, 1);
-            this.Somalia_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Somalia_USA.Location = new System.Drawing.Point(4, 1);
             this.Somalia_USA.Name = "Somalia_USA";
-            this.Somalia_USA.Size = new System.Drawing.Size(14, 14);
+            this.Somalia_USA.Size = new System.Drawing.Size(26, 17);
             this.Somalia_USA.TabIndex = 0;
             this.Somalia_USA.Text = "10";
             this.Somalia_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5467,10 +5217,9 @@
             this.Somalia_USSR.BackColor = System.Drawing.Color.White;
             this.Somalia_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Somalia_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Somalia_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Somalia_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Somalia_USSR.Location = new System.Drawing.Point(37, 1);
             this.Somalia_USSR.Name = "Somalia_USSR";
-            this.Somalia_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Somalia_USSR.Size = new System.Drawing.Size(26, 17);
             this.Somalia_USSR.TabIndex = 5;
             this.Somalia_USSR.Text = "10";
             this.Somalia_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5479,10 +5228,9 @@
             // 
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(76, 54);
-            this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label43.Location = new System.Drawing.Point(101, 66);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(67, 12);
+            this.label43.Size = new System.Drawing.Size(82, 15);
             this.label43.TabIndex = 25;
             this.label43.Text = "S.E. Af. States";
             // 
@@ -5494,12 +5242,12 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.Botswana_USA, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.Botswana_USSR, 1, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(15, 105);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(20, 129);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel3.TabIndex = 10;
             // 
             // Botswana_USA
@@ -5508,10 +5256,9 @@
             this.Botswana_USA.BackColor = System.Drawing.Color.White;
             this.Botswana_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Botswana_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Botswana_USA.Location = new System.Drawing.Point(3, 1);
-            this.Botswana_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Botswana_USA.Location = new System.Drawing.Point(4, 1);
             this.Botswana_USA.Name = "Botswana_USA";
-            this.Botswana_USA.Size = new System.Drawing.Size(14, 14);
+            this.Botswana_USA.Size = new System.Drawing.Size(26, 17);
             this.Botswana_USA.TabIndex = 0;
             this.Botswana_USA.Text = "10";
             this.Botswana_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5522,10 +5269,9 @@
             this.Botswana_USSR.BackColor = System.Drawing.Color.White;
             this.Botswana_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Botswana_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Botswana_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Botswana_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Botswana_USSR.Location = new System.Drawing.Point(37, 1);
             this.Botswana_USSR.Name = "Botswana_USSR";
-            this.Botswana_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Botswana_USSR.Size = new System.Drawing.Size(26, 17);
             this.Botswana_USSR.TabIndex = 5;
             this.Botswana_USSR.Text = "10";
             this.Botswana_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5534,20 +5280,18 @@
             // 
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(76, 20);
-            this.label44.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label44.Location = new System.Drawing.Point(101, 25);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(68, 12);
+            this.label44.Size = new System.Drawing.Size(91, 15);
             this.label44.TabIndex = 21;
             this.label44.Text = "Saharan States";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 54);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(17, 66);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 13);
+            this.label3.Size = new System.Drawing.Size(52, 17);
             this.label3.TabIndex = 9;
             this.label3.Text = "Angola";
             // 
@@ -5559,12 +5303,12 @@
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel15.Controls.Add(this.SEAfricanStates_USA, 0, 0);
             this.tableLayoutPanel15.Controls.Add(this.SEAfricanStates_USSR, 1, 0);
-            this.tableLayoutPanel15.Location = new System.Drawing.Point(79, 71);
-            this.tableLayoutPanel15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel15.Location = new System.Drawing.Point(105, 87);
+            this.tableLayoutPanel15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             this.tableLayoutPanel15.RowCount = 1;
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel15.TabIndex = 23;
             // 
             // SEAfricanStates_USA
@@ -5573,10 +5317,9 @@
             this.SEAfricanStates_USA.BackColor = System.Drawing.Color.White;
             this.SEAfricanStates_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SEAfricanStates_USA.ForeColor = System.Drawing.Color.Blue;
-            this.SEAfricanStates_USA.Location = new System.Drawing.Point(3, 1);
-            this.SEAfricanStates_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SEAfricanStates_USA.Location = new System.Drawing.Point(4, 1);
             this.SEAfricanStates_USA.Name = "SEAfricanStates_USA";
-            this.SEAfricanStates_USA.Size = new System.Drawing.Size(14, 14);
+            this.SEAfricanStates_USA.Size = new System.Drawing.Size(26, 17);
             this.SEAfricanStates_USA.TabIndex = 0;
             this.SEAfricanStates_USA.Text = "10";
             this.SEAfricanStates_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5587,10 +5330,9 @@
             this.SEAfricanStates_USSR.BackColor = System.Drawing.Color.White;
             this.SEAfricanStates_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SEAfricanStates_USSR.ForeColor = System.Drawing.Color.Red;
-            this.SEAfricanStates_USSR.Location = new System.Drawing.Point(28, 1);
-            this.SEAfricanStates_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SEAfricanStates_USSR.Location = new System.Drawing.Point(37, 1);
             this.SEAfricanStates_USSR.Name = "SEAfricanStates_USSR";
-            this.SEAfricanStates_USSR.Size = new System.Drawing.Size(14, 14);
+            this.SEAfricanStates_USSR.Size = new System.Drawing.Size(26, 17);
             this.SEAfricanStates_USSR.TabIndex = 5;
             this.SEAfricanStates_USSR.Text = "10";
             this.SEAfricanStates_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5598,10 +5340,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 19);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(17, 23);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 13);
+            this.label2.Size = new System.Drawing.Size(52, 17);
             this.label2.TabIndex = 7;
             this.label2.Text = "Algeria";
             // 
@@ -5613,12 +5354,12 @@
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel16.Controls.Add(this.SaharanStates_USA, 0, 0);
             this.tableLayoutPanel16.Controls.Add(this.SaharanStates_USSR, 1, 0);
-            this.tableLayoutPanel16.Location = new System.Drawing.Point(79, 36);
-            this.tableLayoutPanel16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel16.Location = new System.Drawing.Point(105, 44);
+            this.tableLayoutPanel16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel16.Name = "tableLayoutPanel16";
             this.tableLayoutPanel16.RowCount = 1;
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel16.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel16.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel16.TabIndex = 20;
             // 
             // SaharanStates_USA
@@ -5627,10 +5368,9 @@
             this.SaharanStates_USA.BackColor = System.Drawing.Color.White;
             this.SaharanStates_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaharanStates_USA.ForeColor = System.Drawing.Color.Blue;
-            this.SaharanStates_USA.Location = new System.Drawing.Point(3, 1);
-            this.SaharanStates_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SaharanStates_USA.Location = new System.Drawing.Point(4, 1);
             this.SaharanStates_USA.Name = "SaharanStates_USA";
-            this.SaharanStates_USA.Size = new System.Drawing.Size(14, 14);
+            this.SaharanStates_USA.Size = new System.Drawing.Size(26, 17);
             this.SaharanStates_USA.TabIndex = 0;
             this.SaharanStates_USA.Text = "10";
             this.SaharanStates_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5641,10 +5381,9 @@
             this.SaharanStates_USSR.BackColor = System.Drawing.Color.White;
             this.SaharanStates_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaharanStates_USSR.ForeColor = System.Drawing.Color.Red;
-            this.SaharanStates_USSR.Location = new System.Drawing.Point(28, 1);
-            this.SaharanStates_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SaharanStates_USSR.Location = new System.Drawing.Point(37, 1);
             this.SaharanStates_USSR.Name = "SaharanStates_USSR";
-            this.SaharanStates_USSR.Size = new System.Drawing.Size(14, 14);
+            this.SaharanStates_USSR.Size = new System.Drawing.Size(26, 17);
             this.SaharanStates_USSR.TabIndex = 5;
             this.SaharanStates_USSR.Text = "10";
             this.SaharanStates_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5657,12 +5396,12 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.Angola_USA, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.Angola_USSR, 1, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(15, 70);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(20, 86);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel2.TabIndex = 8;
             // 
             // Angola_USA
@@ -5671,10 +5410,9 @@
             this.Angola_USA.BackColor = System.Drawing.Color.White;
             this.Angola_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Angola_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Angola_USA.Location = new System.Drawing.Point(3, 1);
-            this.Angola_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Angola_USA.Location = new System.Drawing.Point(4, 1);
             this.Angola_USA.Name = "Angola_USA";
-            this.Angola_USA.Size = new System.Drawing.Size(14, 14);
+            this.Angola_USA.Size = new System.Drawing.Size(26, 17);
             this.Angola_USA.TabIndex = 0;
             this.Angola_USA.Text = "10";
             this.Angola_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5685,10 +5423,9 @@
             this.Angola_USSR.BackColor = System.Drawing.Color.White;
             this.Angola_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Angola_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Angola_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Angola_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Angola_USSR.Location = new System.Drawing.Point(37, 1);
             this.Angola_USSR.Name = "Angola_USSR";
-            this.Angola_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Angola_USSR.Size = new System.Drawing.Size(26, 17);
             this.Angola_USSR.TabIndex = 5;
             this.Angola_USSR.Text = "10";
             this.Angola_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5701,12 +5438,12 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.Algeria_USA, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.Algeria_USSR, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(15, 35);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(20, 43);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(51, 16);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(68, 20);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
             // Algeria_USA
@@ -5715,10 +5452,9 @@
             this.Algeria_USA.BackColor = System.Drawing.Color.White;
             this.Algeria_USA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Algeria_USA.ForeColor = System.Drawing.Color.Blue;
-            this.Algeria_USA.Location = new System.Drawing.Point(3, 1);
-            this.Algeria_USA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Algeria_USA.Location = new System.Drawing.Point(4, 1);
             this.Algeria_USA.Name = "Algeria_USA";
-            this.Algeria_USA.Size = new System.Drawing.Size(14, 14);
+            this.Algeria_USA.Size = new System.Drawing.Size(26, 17);
             this.Algeria_USA.TabIndex = 0;
             this.Algeria_USA.Text = "10";
             this.Algeria_USA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5729,10 +5465,9 @@
             this.Algeria_USSR.BackColor = System.Drawing.Color.White;
             this.Algeria_USSR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Algeria_USSR.ForeColor = System.Drawing.Color.Red;
-            this.Algeria_USSR.Location = new System.Drawing.Point(28, 1);
-            this.Algeria_USSR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Algeria_USSR.Location = new System.Drawing.Point(37, 1);
             this.Algeria_USSR.Name = "Algeria_USSR";
-            this.Algeria_USSR.Size = new System.Drawing.Size(14, 14);
+            this.Algeria_USSR.Size = new System.Drawing.Size(26, 17);
             this.Algeria_USSR.TabIndex = 5;
             this.Algeria_USSR.Text = "10";
             this.Algeria_USSR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5745,8 +5480,8 @@
             this.developerToolsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(942, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1256, 28);
             this.menuStrip1.TabIndex = 12;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -5755,7 +5490,7 @@
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newGameToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
             this.menuToolStripMenuItem.Text = "Menu";
             // 
             // newGameToolStripMenuItem
@@ -5764,20 +5499,20 @@
             this.uSAToolStripMenuItem,
             this.uSSRToolStripMenuItem});
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
             this.newGameToolStripMenuItem.Text = "New game";
             // 
             // uSAToolStripMenuItem
             // 
             this.uSAToolStripMenuItem.Name = "uSAToolStripMenuItem";
-            this.uSAToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
+            this.uSAToolStripMenuItem.Size = new System.Drawing.Size(119, 26);
             this.uSAToolStripMenuItem.Text = "USA";
             this.uSAToolStripMenuItem.Click += new System.EventHandler(this.uSAToolStripMenuItem_Click);
             // 
             // uSSRToolStripMenuItem
             // 
             this.uSSRToolStripMenuItem.Name = "uSSRToolStripMenuItem";
-            this.uSSRToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
+            this.uSSRToolStripMenuItem.Size = new System.Drawing.Size(119, 26);
             this.uSSRToolStripMenuItem.Text = "USSR";
             this.uSSRToolStripMenuItem.Click += new System.EventHandler(this.uSSRToolStripMenuItem_Click);
             // 
@@ -5788,7 +5523,7 @@
             this.gameToolStripMenuItem,
             this.handsToolStripMenuItem});
             this.developerToolsToolStripMenuItem.Name = "developerToolsToolStripMenuItem";
-            this.developerToolsToolStripMenuItem.Size = new System.Drawing.Size(103, 20);
+            this.developerToolsToolStripMenuItem.Size = new System.Drawing.Size(130, 24);
             this.developerToolsToolStripMenuItem.Text = "Developer Tools";
             // 
             // countryToolStripMenuItem
@@ -5801,7 +5536,7 @@
             this.middleEastToolStripMenuItem,
             this.southAmericaToolStripMenuItem});
             this.countryToolStripMenuItem.Name = "countryToolStripMenuItem";
-            this.countryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.countryToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
             this.countryToolStripMenuItem.Text = "Country";
             // 
             // africaToolStripMenuItem
@@ -5826,132 +5561,132 @@
             this.zaireToolStripMenuItem,
             this.zimbabweToolStripMenuItem});
             this.africaToolStripMenuItem.Name = "africaToolStripMenuItem";
-            this.africaToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.africaToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
             this.africaToolStripMenuItem.Text = "Africa";
             // 
             // algeriaToolStripMenuItem
             // 
             this.algeriaToolStripMenuItem.Name = "algeriaToolStripMenuItem";
-            this.algeriaToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.algeriaToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.algeriaToolStripMenuItem.Text = "Algeria";
             this.algeriaToolStripMenuItem.Click += new System.EventHandler(this.algeriaToolStripMenuItem_Click);
             // 
             // angolaToolStripMenuItem
             // 
             this.angolaToolStripMenuItem.Name = "angolaToolStripMenuItem";
-            this.angolaToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.angolaToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.angolaToolStripMenuItem.Text = "Angola";
             this.angolaToolStripMenuItem.Click += new System.EventHandler(this.angolaToolStripMenuItem_Click);
             // 
             // botsawnaToolStripMenuItem
             // 
             this.botsawnaToolStripMenuItem.Name = "botsawnaToolStripMenuItem";
-            this.botsawnaToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.botsawnaToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.botsawnaToolStripMenuItem.Text = "Botsawna";
             this.botsawnaToolStripMenuItem.Click += new System.EventHandler(this.botsawnaToolStripMenuItem_Click);
             // 
             // cameroonToolStripMenuItem
             // 
             this.cameroonToolStripMenuItem.Name = "cameroonToolStripMenuItem";
-            this.cameroonToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.cameroonToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.cameroonToolStripMenuItem.Text = "Cameroon";
             this.cameroonToolStripMenuItem.Click += new System.EventHandler(this.cameroonToolStripMenuItem_Click);
             // 
             // ethiopiaToolStripMenuItem
             // 
             this.ethiopiaToolStripMenuItem.Name = "ethiopiaToolStripMenuItem";
-            this.ethiopiaToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.ethiopiaToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.ethiopiaToolStripMenuItem.Text = "Ethiopia";
             this.ethiopiaToolStripMenuItem.Click += new System.EventHandler(this.ethiopiaToolStripMenuItem_Click);
             // 
             // ivoryCoastToolStripMenuItem
             // 
             this.ivoryCoastToolStripMenuItem.Name = "ivoryCoastToolStripMenuItem";
-            this.ivoryCoastToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.ivoryCoastToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.ivoryCoastToolStripMenuItem.Text = "Ivory Coast";
             this.ivoryCoastToolStripMenuItem.Click += new System.EventHandler(this.ivoryCoastToolStripMenuItem_Click);
             // 
             // kenyaToolStripMenuItem
             // 
             this.kenyaToolStripMenuItem.Name = "kenyaToolStripMenuItem";
-            this.kenyaToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.kenyaToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.kenyaToolStripMenuItem.Text = "Kenya";
             this.kenyaToolStripMenuItem.Click += new System.EventHandler(this.kenyaToolStripMenuItem_Click);
             // 
             // moroccoToolStripMenuItem
             // 
             this.moroccoToolStripMenuItem.Name = "moroccoToolStripMenuItem";
-            this.moroccoToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.moroccoToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.moroccoToolStripMenuItem.Text = "Morocco";
             this.moroccoToolStripMenuItem.Click += new System.EventHandler(this.moroccoToolStripMenuItem_Click);
             // 
             // nigeriaToolStripMenuItem
             // 
             this.nigeriaToolStripMenuItem.Name = "nigeriaToolStripMenuItem";
-            this.nigeriaToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.nigeriaToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.nigeriaToolStripMenuItem.Text = "Nigeria";
             this.nigeriaToolStripMenuItem.Click += new System.EventHandler(this.nigeriaToolStripMenuItem_Click);
             // 
             // saharanStatesToolStripMenuItem
             // 
             this.saharanStatesToolStripMenuItem.Name = "saharanStatesToolStripMenuItem";
-            this.saharanStatesToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.saharanStatesToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.saharanStatesToolStripMenuItem.Text = "Saharan States";
             this.saharanStatesToolStripMenuItem.Click += new System.EventHandler(this.saharanStatesToolStripMenuItem_Click);
             // 
             // sEAfricanStatesToolStripMenuItem
             // 
             this.sEAfricanStatesToolStripMenuItem.Name = "sEAfricanStatesToolStripMenuItem";
-            this.sEAfricanStatesToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.sEAfricanStatesToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.sEAfricanStatesToolStripMenuItem.Text = "SE African States";
             this.sEAfricanStatesToolStripMenuItem.Click += new System.EventHandler(this.sEAfricanStatesToolStripMenuItem_Click);
             // 
             // somaliaToolStripMenuItem
             // 
             this.somaliaToolStripMenuItem.Name = "somaliaToolStripMenuItem";
-            this.somaliaToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.somaliaToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.somaliaToolStripMenuItem.Text = "Somalia";
             this.somaliaToolStripMenuItem.Click += new System.EventHandler(this.somaliaToolStripMenuItem_Click);
             // 
             // southAfricaToolStripMenuItem
             // 
             this.southAfricaToolStripMenuItem.Name = "southAfricaToolStripMenuItem";
-            this.southAfricaToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.southAfricaToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.southAfricaToolStripMenuItem.Text = "South Africa";
             this.southAfricaToolStripMenuItem.Click += new System.EventHandler(this.southAfricaToolStripMenuItem_Click);
             // 
             // sudanToolStripMenuItem
             // 
             this.sudanToolStripMenuItem.Name = "sudanToolStripMenuItem";
-            this.sudanToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.sudanToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.sudanToolStripMenuItem.Text = "Sudan";
             this.sudanToolStripMenuItem.Click += new System.EventHandler(this.sudanToolStripMenuItem_Click);
             // 
             // tunisiaToolStripMenuItem
             // 
             this.tunisiaToolStripMenuItem.Name = "tunisiaToolStripMenuItem";
-            this.tunisiaToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.tunisiaToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.tunisiaToolStripMenuItem.Text = "Tunisia";
             this.tunisiaToolStripMenuItem.Click += new System.EventHandler(this.tunisiaToolStripMenuItem_Click);
             // 
             // westAfricanStatesToolStripMenuItem
             // 
             this.westAfricanStatesToolStripMenuItem.Name = "westAfricanStatesToolStripMenuItem";
-            this.westAfricanStatesToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.westAfricanStatesToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.westAfricanStatesToolStripMenuItem.Text = "West African States";
             this.westAfricanStatesToolStripMenuItem.Click += new System.EventHandler(this.westAfricanStatesToolStripMenuItem_Click);
             // 
             // zaireToolStripMenuItem
             // 
             this.zaireToolStripMenuItem.Name = "zaireToolStripMenuItem";
-            this.zaireToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.zaireToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.zaireToolStripMenuItem.Text = "Zaire";
             this.zaireToolStripMenuItem.Click += new System.EventHandler(this.zaireToolStripMenuItem_Click);
             // 
             // zimbabweToolStripMenuItem
             // 
             this.zimbabweToolStripMenuItem.Name = "zimbabweToolStripMenuItem";
-            this.zimbabweToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.zimbabweToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.zimbabweToolStripMenuItem.Text = "Zimbabwe";
             this.zimbabweToolStripMenuItem.Click += new System.EventHandler(this.zimbabweToolStripMenuItem_Click);
             // 
@@ -5974,111 +5709,111 @@
             this.thailandToolStripMenuItem,
             this.vietnamToolStripMenuItem});
             this.asiaToolStripMenuItem.Name = "asiaToolStripMenuItem";
-            this.asiaToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.asiaToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
             this.asiaToolStripMenuItem.Text = "Asia";
             // 
             // afghanistanToolStripMenuItem
             // 
             this.afghanistanToolStripMenuItem.Name = "afghanistanToolStripMenuItem";
-            this.afghanistanToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.afghanistanToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.afghanistanToolStripMenuItem.Text = "Afghanistan";
             this.afghanistanToolStripMenuItem.Click += new System.EventHandler(this.afghanistanToolStripMenuItem_Click);
             // 
             // australiaToolStripMenuItem
             // 
             this.australiaToolStripMenuItem.Name = "australiaToolStripMenuItem";
-            this.australiaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.australiaToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.australiaToolStripMenuItem.Text = "Australia";
             this.australiaToolStripMenuItem.Click += new System.EventHandler(this.australiaToolStripMenuItem_Click);
             // 
             // burmaToolStripMenuItem
             // 
             this.burmaToolStripMenuItem.Name = "burmaToolStripMenuItem";
-            this.burmaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.burmaToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.burmaToolStripMenuItem.Text = "Burma";
             this.burmaToolStripMenuItem.Click += new System.EventHandler(this.burmaToolStripMenuItem_Click);
             // 
             // indiaToolStripMenuItem
             // 
             this.indiaToolStripMenuItem.Name = "indiaToolStripMenuItem";
-            this.indiaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.indiaToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.indiaToolStripMenuItem.Text = "India";
             this.indiaToolStripMenuItem.Click += new System.EventHandler(this.indiaToolStripMenuItem_Click);
             // 
             // indonesiaToolStripMenuItem
             // 
             this.indonesiaToolStripMenuItem.Name = "indonesiaToolStripMenuItem";
-            this.indonesiaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.indonesiaToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.indonesiaToolStripMenuItem.Text = "Indonesia";
             this.indonesiaToolStripMenuItem.Click += new System.EventHandler(this.indonesiaToolStripMenuItem_Click);
             // 
             // japanToolStripMenuItem
             // 
             this.japanToolStripMenuItem.Name = "japanToolStripMenuItem";
-            this.japanToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.japanToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.japanToolStripMenuItem.Text = "Japan";
             this.japanToolStripMenuItem.Click += new System.EventHandler(this.japanToolStripMenuItem_Click);
             // 
             // laosCambodiaToolStripMenuItem
             // 
             this.laosCambodiaToolStripMenuItem.Name = "laosCambodiaToolStripMenuItem";
-            this.laosCambodiaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.laosCambodiaToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.laosCambodiaToolStripMenuItem.Text = "Laos/Cambodia";
             this.laosCambodiaToolStripMenuItem.Click += new System.EventHandler(this.laosCambodiaToolStripMenuItem_Click);
             // 
             // malaysiaToolStripMenuItem
             // 
             this.malaysiaToolStripMenuItem.Name = "malaysiaToolStripMenuItem";
-            this.malaysiaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.malaysiaToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.malaysiaToolStripMenuItem.Text = "Malaysia";
             this.malaysiaToolStripMenuItem.Click += new System.EventHandler(this.malaysiaToolStripMenuItem_Click);
             // 
             // northKoreaToolStripMenuItem
             // 
             this.northKoreaToolStripMenuItem.Name = "northKoreaToolStripMenuItem";
-            this.northKoreaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.northKoreaToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.northKoreaToolStripMenuItem.Text = "North Korea";
             this.northKoreaToolStripMenuItem.Click += new System.EventHandler(this.northKoreaToolStripMenuItem_Click);
             // 
             // pakistanToolStripMenuItem
             // 
             this.pakistanToolStripMenuItem.Name = "pakistanToolStripMenuItem";
-            this.pakistanToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.pakistanToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.pakistanToolStripMenuItem.Text = "Pakistan";
             this.pakistanToolStripMenuItem.Click += new System.EventHandler(this.pakistanToolStripMenuItem_Click);
             // 
             // philippinesToolStripMenuItem
             // 
             this.philippinesToolStripMenuItem.Name = "philippinesToolStripMenuItem";
-            this.philippinesToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.philippinesToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.philippinesToolStripMenuItem.Text = "Philippines";
             this.philippinesToolStripMenuItem.Click += new System.EventHandler(this.philippinesToolStripMenuItem_Click);
             // 
             // southKoreaToolStripMenuItem
             // 
             this.southKoreaToolStripMenuItem.Name = "southKoreaToolStripMenuItem";
-            this.southKoreaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.southKoreaToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.southKoreaToolStripMenuItem.Text = "South Korea";
             this.southKoreaToolStripMenuItem.Click += new System.EventHandler(this.southKoreaToolStripMenuItem_Click);
             // 
             // taiwanToolStripMenuItem
             // 
             this.taiwanToolStripMenuItem.Name = "taiwanToolStripMenuItem";
-            this.taiwanToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.taiwanToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.taiwanToolStripMenuItem.Text = "Taiwan";
             this.taiwanToolStripMenuItem.Click += new System.EventHandler(this.taiwanToolStripMenuItem_Click);
             // 
             // thailandToolStripMenuItem
             // 
             this.thailandToolStripMenuItem.Name = "thailandToolStripMenuItem";
-            this.thailandToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.thailandToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.thailandToolStripMenuItem.Text = "Thailand";
             this.thailandToolStripMenuItem.Click += new System.EventHandler(this.thailandToolStripMenuItem_Click);
             // 
             // vietnamToolStripMenuItem
             // 
             this.vietnamToolStripMenuItem.Name = "vietnamToolStripMenuItem";
-            this.vietnamToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.vietnamToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.vietnamToolStripMenuItem.Text = "Vietnam";
             this.vietnamToolStripMenuItem.Click += new System.EventHandler(this.vietnamToolStripMenuItem_Click);
             // 
@@ -6096,76 +5831,76 @@
             this.nicaraguaToolStripMenuItem,
             this.panamaToolStripMenuItem});
             this.centralAmericaToolStripMenuItem.Name = "centralAmericaToolStripMenuItem";
-            this.centralAmericaToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.centralAmericaToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
             this.centralAmericaToolStripMenuItem.Text = "Central America";
             // 
             // costaRicaToolStripMenuItem
             // 
             this.costaRicaToolStripMenuItem.Name = "costaRicaToolStripMenuItem";
-            this.costaRicaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.costaRicaToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.costaRicaToolStripMenuItem.Text = "Costa Rica";
             this.costaRicaToolStripMenuItem.Click += new System.EventHandler(this.costaRicaToolStripMenuItem_Click);
             // 
             // cubaToolStripMenuItem
             // 
             this.cubaToolStripMenuItem.Name = "cubaToolStripMenuItem";
-            this.cubaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.cubaToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.cubaToolStripMenuItem.Text = "Cuba";
             this.cubaToolStripMenuItem.Click += new System.EventHandler(this.cubaToolStripMenuItem_Click);
             // 
             // dominicanRepToolStripMenuItem
             // 
             this.dominicanRepToolStripMenuItem.Name = "dominicanRepToolStripMenuItem";
-            this.dominicanRepToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.dominicanRepToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.dominicanRepToolStripMenuItem.Text = "Dominican Rep.";
             this.dominicanRepToolStripMenuItem.Click += new System.EventHandler(this.dominicanRepToolStripMenuItem_Click);
             // 
             // elSalvadorToolStripMenuItem
             // 
             this.elSalvadorToolStripMenuItem.Name = "elSalvadorToolStripMenuItem";
-            this.elSalvadorToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.elSalvadorToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.elSalvadorToolStripMenuItem.Text = "El Salvador";
             this.elSalvadorToolStripMenuItem.Click += new System.EventHandler(this.elSalvadorToolStripMenuItem_Click);
             // 
             // guatemalaToolStripMenuItem
             // 
             this.guatemalaToolStripMenuItem.Name = "guatemalaToolStripMenuItem";
-            this.guatemalaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.guatemalaToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.guatemalaToolStripMenuItem.Text = "Guatemala";
             this.guatemalaToolStripMenuItem.Click += new System.EventHandler(this.guatemalaToolStripMenuItem_Click);
             // 
             // hatiToolStripMenuItem
             // 
             this.hatiToolStripMenuItem.Name = "hatiToolStripMenuItem";
-            this.hatiToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.hatiToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.hatiToolStripMenuItem.Text = "Haiti";
             this.hatiToolStripMenuItem.Click += new System.EventHandler(this.hatiToolStripMenuItem_Click);
             // 
             // hondurasToolStripMenuItem
             // 
             this.hondurasToolStripMenuItem.Name = "hondurasToolStripMenuItem";
-            this.hondurasToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.hondurasToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.hondurasToolStripMenuItem.Text = "Honduras";
             this.hondurasToolStripMenuItem.Click += new System.EventHandler(this.hondurasToolStripMenuItem_Click);
             // 
             // mexicoToolStripMenuItem
             // 
             this.mexicoToolStripMenuItem.Name = "mexicoToolStripMenuItem";
-            this.mexicoToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.mexicoToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.mexicoToolStripMenuItem.Text = "Mexico";
             this.mexicoToolStripMenuItem.Click += new System.EventHandler(this.mexicoToolStripMenuItem_Click);
             // 
             // nicaraguaToolStripMenuItem
             // 
             this.nicaraguaToolStripMenuItem.Name = "nicaraguaToolStripMenuItem";
-            this.nicaraguaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.nicaraguaToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.nicaraguaToolStripMenuItem.Text = "Nicaragua";
             this.nicaraguaToolStripMenuItem.Click += new System.EventHandler(this.nicaraguaToolStripMenuItem_Click);
             // 
             // panamaToolStripMenuItem
             // 
             this.panamaToolStripMenuItem.Name = "panamaToolStripMenuItem";
-            this.panamaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.panamaToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.panamaToolStripMenuItem.Text = "Panama";
             this.panamaToolStripMenuItem.Click += new System.EventHandler(this.panamaToolStripMenuItem_Click);
             // 
@@ -6194,153 +5929,153 @@
             this.wGermanyToolStripMenuItem,
             this.yugoslaviaToolStripMenuItem});
             this.europeToolStripMenuItem.Name = "europeToolStripMenuItem";
-            this.europeToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.europeToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
             this.europeToolStripMenuItem.Text = "Europe";
             // 
             // austriaToolStripMenuItem
             // 
             this.austriaToolStripMenuItem.Name = "austriaToolStripMenuItem";
-            this.austriaToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.austriaToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.austriaToolStripMenuItem.Text = "Austria";
             this.austriaToolStripMenuItem.Click += new System.EventHandler(this.austriaToolStripMenuItem_Click);
             // 
             // benluxToolStripMenuItem
             // 
             this.benluxToolStripMenuItem.Name = "benluxToolStripMenuItem";
-            this.benluxToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.benluxToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.benluxToolStripMenuItem.Text = "Benlux";
             this.benluxToolStripMenuItem.Click += new System.EventHandler(this.benluxToolStripMenuItem_Click);
             // 
             // bulgariaToolStripMenuItem
             // 
             this.bulgariaToolStripMenuItem.Name = "bulgariaToolStripMenuItem";
-            this.bulgariaToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.bulgariaToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.bulgariaToolStripMenuItem.Text = "Bulgaria";
             this.bulgariaToolStripMenuItem.Click += new System.EventHandler(this.bulgariaToolStripMenuItem_Click);
             // 
             // canadaToolStripMenuItem
             // 
             this.canadaToolStripMenuItem.Name = "canadaToolStripMenuItem";
-            this.canadaToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.canadaToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.canadaToolStripMenuItem.Text = "Canada";
             this.canadaToolStripMenuItem.Click += new System.EventHandler(this.canadaToolStripMenuItem_Click);
             // 
             // czechoslovakiaToolStripMenuItem
             // 
             this.czechoslovakiaToolStripMenuItem.Name = "czechoslovakiaToolStripMenuItem";
-            this.czechoslovakiaToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.czechoslovakiaToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.czechoslovakiaToolStripMenuItem.Text = "Czechoslovakia";
             this.czechoslovakiaToolStripMenuItem.Click += new System.EventHandler(this.czechoslovakiaToolStripMenuItem_Click);
             // 
             // denmarkToolStripMenuItem
             // 
             this.denmarkToolStripMenuItem.Name = "denmarkToolStripMenuItem";
-            this.denmarkToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.denmarkToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.denmarkToolStripMenuItem.Text = "Denmark";
             this.denmarkToolStripMenuItem.Click += new System.EventHandler(this.denmarkToolStripMenuItem_Click);
             // 
             // eGermanyToolStripMenuItem
             // 
             this.eGermanyToolStripMenuItem.Name = "eGermanyToolStripMenuItem";
-            this.eGermanyToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.eGermanyToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.eGermanyToolStripMenuItem.Text = "E. Germany";
             this.eGermanyToolStripMenuItem.Click += new System.EventHandler(this.eGermanyToolStripMenuItem_Click);
             // 
             // finlandToolStripMenuItem
             // 
             this.finlandToolStripMenuItem.Name = "finlandToolStripMenuItem";
-            this.finlandToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.finlandToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.finlandToolStripMenuItem.Text = "Finland";
             this.finlandToolStripMenuItem.Click += new System.EventHandler(this.finlandToolStripMenuItem_Click);
             // 
             // franceToolStripMenuItem
             // 
             this.franceToolStripMenuItem.Name = "franceToolStripMenuItem";
-            this.franceToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.franceToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.franceToolStripMenuItem.Text = "France";
             this.franceToolStripMenuItem.Click += new System.EventHandler(this.franceToolStripMenuItem_Click);
             // 
             // greeceToolStripMenuItem
             // 
             this.greeceToolStripMenuItem.Name = "greeceToolStripMenuItem";
-            this.greeceToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.greeceToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.greeceToolStripMenuItem.Text = "Greece";
             this.greeceToolStripMenuItem.Click += new System.EventHandler(this.greeceToolStripMenuItem_Click);
             // 
             // hungaryToolStripMenuItem
             // 
             this.hungaryToolStripMenuItem.Name = "hungaryToolStripMenuItem";
-            this.hungaryToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.hungaryToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.hungaryToolStripMenuItem.Text = "Hungary";
             this.hungaryToolStripMenuItem.Click += new System.EventHandler(this.hungaryToolStripMenuItem_Click);
             // 
             // italyToolStripMenuItem
             // 
             this.italyToolStripMenuItem.Name = "italyToolStripMenuItem";
-            this.italyToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.italyToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.italyToolStripMenuItem.Text = "Italy";
             this.italyToolStripMenuItem.Click += new System.EventHandler(this.italyToolStripMenuItem_Click);
             // 
             // norwayToolStripMenuItem
             // 
             this.norwayToolStripMenuItem.Name = "norwayToolStripMenuItem";
-            this.norwayToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.norwayToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.norwayToolStripMenuItem.Text = "Norway";
             this.norwayToolStripMenuItem.Click += new System.EventHandler(this.norwayToolStripMenuItem_Click);
             // 
             // polandToolStripMenuItem
             // 
             this.polandToolStripMenuItem.Name = "polandToolStripMenuItem";
-            this.polandToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.polandToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.polandToolStripMenuItem.Text = "Poland";
             this.polandToolStripMenuItem.Click += new System.EventHandler(this.polandToolStripMenuItem_Click);
             // 
             // romaniaToolStripMenuItem
             // 
             this.romaniaToolStripMenuItem.Name = "romaniaToolStripMenuItem";
-            this.romaniaToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.romaniaToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.romaniaToolStripMenuItem.Text = "Romania";
             this.romaniaToolStripMenuItem.Click += new System.EventHandler(this.romaniaToolStripMenuItem_Click);
             // 
             // spainPortugulToolStripMenuItem
             // 
             this.spainPortugulToolStripMenuItem.Name = "spainPortugulToolStripMenuItem";
-            this.spainPortugulToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.spainPortugulToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.spainPortugulToolStripMenuItem.Text = "Spain/Portugul";
             this.spainPortugulToolStripMenuItem.Click += new System.EventHandler(this.spainPortugulToolStripMenuItem_Click);
             // 
             // sweedenToolStripMenuItem
             // 
             this.sweedenToolStripMenuItem.Name = "sweedenToolStripMenuItem";
-            this.sweedenToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.sweedenToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.sweedenToolStripMenuItem.Text = "Sweden";
             this.sweedenToolStripMenuItem.Click += new System.EventHandler(this.sweedenToolStripMenuItem_Click);
             // 
             // turkeyToolStripMenuItem
             // 
             this.turkeyToolStripMenuItem.Name = "turkeyToolStripMenuItem";
-            this.turkeyToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.turkeyToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.turkeyToolStripMenuItem.Text = "Turkey";
             this.turkeyToolStripMenuItem.Click += new System.EventHandler(this.turkeyToolStripMenuItem_Click);
             // 
             // uKToolStripMenuItem
             // 
             this.uKToolStripMenuItem.Name = "uKToolStripMenuItem";
-            this.uKToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.uKToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.uKToolStripMenuItem.Text = "U.K.";
             this.uKToolStripMenuItem.Click += new System.EventHandler(this.uKToolStripMenuItem_Click);
             // 
             // wGermanyToolStripMenuItem
             // 
             this.wGermanyToolStripMenuItem.Name = "wGermanyToolStripMenuItem";
-            this.wGermanyToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.wGermanyToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.wGermanyToolStripMenuItem.Text = "W. Germany";
             this.wGermanyToolStripMenuItem.Click += new System.EventHandler(this.wGermanyToolStripMenuItem_Click);
             // 
             // yugoslaviaToolStripMenuItem
             // 
             this.yugoslaviaToolStripMenuItem.Name = "yugoslaviaToolStripMenuItem";
-            this.yugoslaviaToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.yugoslaviaToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.yugoslaviaToolStripMenuItem.Text = "Yugoslavia";
             this.yugoslaviaToolStripMenuItem.Click += new System.EventHandler(this.yugoslaviaToolStripMenuItem_Click);
             // 
@@ -6358,76 +6093,76 @@
             this.saudiArabiaToolStripMenuItem,
             this.syriaToolStripMenuItem});
             this.middleEastToolStripMenuItem.Name = "middleEastToolStripMenuItem";
-            this.middleEastToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.middleEastToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
             this.middleEastToolStripMenuItem.Text = "Middle East";
             // 
             // egyptToolStripMenuItem
             // 
             this.egyptToolStripMenuItem.Name = "egyptToolStripMenuItem";
-            this.egyptToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.egyptToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.egyptToolStripMenuItem.Text = "Egypt";
             this.egyptToolStripMenuItem.Click += new System.EventHandler(this.egyptToolStripMenuItem_Click);
             // 
             // gulfStatesToolStripMenuItem
             // 
             this.gulfStatesToolStripMenuItem.Name = "gulfStatesToolStripMenuItem";
-            this.gulfStatesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.gulfStatesToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.gulfStatesToolStripMenuItem.Text = "Gulf States";
             this.gulfStatesToolStripMenuItem.Click += new System.EventHandler(this.gulfStatesToolStripMenuItem_Click);
             // 
             // iranToolStripMenuItem
             // 
             this.iranToolStripMenuItem.Name = "iranToolStripMenuItem";
-            this.iranToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.iranToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.iranToolStripMenuItem.Text = "Iran";
             this.iranToolStripMenuItem.Click += new System.EventHandler(this.iranToolStripMenuItem_Click);
             // 
             // iraqToolStripMenuItem
             // 
             this.iraqToolStripMenuItem.Name = "iraqToolStripMenuItem";
-            this.iraqToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.iraqToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.iraqToolStripMenuItem.Text = "Iraq";
             this.iraqToolStripMenuItem.Click += new System.EventHandler(this.iraqToolStripMenuItem_Click);
             // 
             // israelToolStripMenuItem
             // 
             this.israelToolStripMenuItem.Name = "israelToolStripMenuItem";
-            this.israelToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.israelToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.israelToolStripMenuItem.Text = "Israel";
             this.israelToolStripMenuItem.Click += new System.EventHandler(this.israelToolStripMenuItem_Click);
             // 
             // jordanToolStripMenuItem
             // 
             this.jordanToolStripMenuItem.Name = "jordanToolStripMenuItem";
-            this.jordanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.jordanToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.jordanToolStripMenuItem.Text = "Jordan";
             this.jordanToolStripMenuItem.Click += new System.EventHandler(this.jordanToolStripMenuItem_Click);
             // 
             // lebanonToolStripMenuItem
             // 
             this.lebanonToolStripMenuItem.Name = "lebanonToolStripMenuItem";
-            this.lebanonToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.lebanonToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.lebanonToolStripMenuItem.Text = "Lebanon";
             this.lebanonToolStripMenuItem.Click += new System.EventHandler(this.lebanonToolStripMenuItem_Click);
             // 
             // libyaToolStripMenuItem
             // 
             this.libyaToolStripMenuItem.Name = "libyaToolStripMenuItem";
-            this.libyaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.libyaToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.libyaToolStripMenuItem.Text = "Libya";
             this.libyaToolStripMenuItem.Click += new System.EventHandler(this.libyaToolStripMenuItem_Click);
             // 
             // saudiArabiaToolStripMenuItem
             // 
             this.saudiArabiaToolStripMenuItem.Name = "saudiArabiaToolStripMenuItem";
-            this.saudiArabiaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saudiArabiaToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.saudiArabiaToolStripMenuItem.Text = "Saudi Arabia";
             this.saudiArabiaToolStripMenuItem.Click += new System.EventHandler(this.saudiArabiaToolStripMenuItem_Click);
             // 
             // syriaToolStripMenuItem
             // 
             this.syriaToolStripMenuItem.Name = "syriaToolStripMenuItem";
-            this.syriaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.syriaToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.syriaToolStripMenuItem.Text = "Syria";
             this.syriaToolStripMenuItem.Click += new System.EventHandler(this.syriaToolStripMenuItem_Click);
             // 
@@ -6445,76 +6180,76 @@
             this.uruguayToolStripMenuItem,
             this.venezuelaToolStripMenuItem});
             this.southAmericaToolStripMenuItem.Name = "southAmericaToolStripMenuItem";
-            this.southAmericaToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.southAmericaToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
             this.southAmericaToolStripMenuItem.Text = "South America";
             // 
             // argentinaToolStripMenuItem
             // 
             this.argentinaToolStripMenuItem.Name = "argentinaToolStripMenuItem";
-            this.argentinaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.argentinaToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.argentinaToolStripMenuItem.Text = "Argentina";
             this.argentinaToolStripMenuItem.Click += new System.EventHandler(this.argentinaToolStripMenuItem_Click);
             // 
             // brazilToolStripMenuItem
             // 
             this.brazilToolStripMenuItem.Name = "brazilToolStripMenuItem";
-            this.brazilToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.brazilToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.brazilToolStripMenuItem.Text = "Brazil";
             this.brazilToolStripMenuItem.Click += new System.EventHandler(this.brazilToolStripMenuItem_Click);
             // 
             // boliviaToolStripMenuItem
             // 
             this.boliviaToolStripMenuItem.Name = "boliviaToolStripMenuItem";
-            this.boliviaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.boliviaToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.boliviaToolStripMenuItem.Text = "Bolivia";
             this.boliviaToolStripMenuItem.Click += new System.EventHandler(this.boliviaToolStripMenuItem_Click);
             // 
             // chileToolStripMenuItem
             // 
             this.chileToolStripMenuItem.Name = "chileToolStripMenuItem";
-            this.chileToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.chileToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.chileToolStripMenuItem.Text = "Chile";
             this.chileToolStripMenuItem.Click += new System.EventHandler(this.chileToolStripMenuItem_Click);
             // 
             // colombiaToolStripMenuItem
             // 
             this.colombiaToolStripMenuItem.Name = "colombiaToolStripMenuItem";
-            this.colombiaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.colombiaToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.colombiaToolStripMenuItem.Text = "Colombia";
             this.colombiaToolStripMenuItem.Click += new System.EventHandler(this.colombiaToolStripMenuItem_Click);
             // 
             // ecuadorToolStripMenuItem
             // 
             this.ecuadorToolStripMenuItem.Name = "ecuadorToolStripMenuItem";
-            this.ecuadorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ecuadorToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.ecuadorToolStripMenuItem.Text = "Ecuador";
             this.ecuadorToolStripMenuItem.Click += new System.EventHandler(this.ecuadorToolStripMenuItem_Click);
             // 
             // paraguayToolStripMenuItem
             // 
             this.paraguayToolStripMenuItem.Name = "paraguayToolStripMenuItem";
-            this.paraguayToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.paraguayToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.paraguayToolStripMenuItem.Text = "Paraguay";
             this.paraguayToolStripMenuItem.Click += new System.EventHandler(this.paraguayToolStripMenuItem_Click);
             // 
             // peruToolStripMenuItem
             // 
             this.peruToolStripMenuItem.Name = "peruToolStripMenuItem";
-            this.peruToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.peruToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.peruToolStripMenuItem.Text = "Peru";
             this.peruToolStripMenuItem.Click += new System.EventHandler(this.peruToolStripMenuItem_Click);
             // 
             // uruguayToolStripMenuItem
             // 
             this.uruguayToolStripMenuItem.Name = "uruguayToolStripMenuItem";
-            this.uruguayToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.uruguayToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.uruguayToolStripMenuItem.Text = "Uruguay";
             this.uruguayToolStripMenuItem.Click += new System.EventHandler(this.uruguayToolStripMenuItem_Click);
             // 
             // venezuelaToolStripMenuItem
             // 
             this.venezuelaToolStripMenuItem.Name = "venezuelaToolStripMenuItem";
-            this.venezuelaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.venezuelaToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.venezuelaToolStripMenuItem.Text = "Venezuela";
             this.venezuelaToolStripMenuItem.Click += new System.EventHandler(this.venezuelaToolStripMenuItem_Click);
             // 
@@ -6530,7 +6265,7 @@
             this.eventToolStripMenuItem,
             this.resetToolStripMenuItem});
             this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
-            this.gameToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.gameToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
             this.gameToolStripMenuItem.Text = "Game";
             // 
             // turnToolStripMenuItem
@@ -6547,76 +6282,76 @@
             this.toolStripMenuItem10,
             this.toolStripMenuItem11});
             this.turnToolStripMenuItem.Name = "turnToolStripMenuItem";
-            this.turnToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.turnToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.turnToolStripMenuItem.Text = "Turn";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem2.Text = "1";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem3.Text = "2";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem4.Text = "3";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem5.Text = "4";
             this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
             // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem6.Text = "5";
             this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
             // 
             // toolStripMenuItem7
             // 
             this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem7.Text = "6";
             this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
             // 
             // toolStripMenuItem8
             // 
             this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem8.Text = "7";
             this.toolStripMenuItem8.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
             // 
             // toolStripMenuItem9
             // 
             this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem9.Text = "8";
             this.toolStripMenuItem9.Click += new System.EventHandler(this.toolStripMenuItem9_Click);
             // 
             // toolStripMenuItem10
             // 
             this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem10.Text = "9";
             this.toolStripMenuItem10.Click += new System.EventHandler(this.toolStripMenuItem10_Click);
             // 
             // toolStripMenuItem11
             // 
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem11.Text = "10";
             this.toolStripMenuItem11.Click += new System.EventHandler(this.toolStripMenuItem11_Click);
             // 
@@ -6641,125 +6376,125 @@
             this.toolStripMenuItem97,
             this.toolStripMenuItem98});
             this.roundToolStripMenuItem.Name = "roundToolStripMenuItem";
-            this.roundToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.roundToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.roundToolStripMenuItem.Text = "Round";
             // 
             // headlinePhaseToolStripMenuItem
             // 
             this.headlinePhaseToolStripMenuItem.Name = "headlinePhaseToolStripMenuItem";
-            this.headlinePhaseToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.headlinePhaseToolStripMenuItem.Size = new System.Drawing.Size(186, 26);
             this.headlinePhaseToolStripMenuItem.Text = "Headline Phase";
             this.headlinePhaseToolStripMenuItem.Click += new System.EventHandler(this.headlinePhaseToolStripMenuItem_Click);
             // 
             // toolStripMenuItem12
             // 
             this.toolStripMenuItem12.Name = "toolStripMenuItem12";
-            this.toolStripMenuItem12.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem12.Size = new System.Drawing.Size(186, 26);
             this.toolStripMenuItem12.Text = "1";
             this.toolStripMenuItem12.Click += new System.EventHandler(this.toolStripMenuItem12_Click);
             // 
             // toolStripMenuItem13
             // 
             this.toolStripMenuItem13.Name = "toolStripMenuItem13";
-            this.toolStripMenuItem13.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem13.Size = new System.Drawing.Size(186, 26);
             this.toolStripMenuItem13.Text = "2";
             this.toolStripMenuItem13.Click += new System.EventHandler(this.toolStripMenuItem13_Click);
             // 
             // toolStripMenuItem14
             // 
             this.toolStripMenuItem14.Name = "toolStripMenuItem14";
-            this.toolStripMenuItem14.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem14.Size = new System.Drawing.Size(186, 26);
             this.toolStripMenuItem14.Text = "3";
             this.toolStripMenuItem14.Click += new System.EventHandler(this.toolStripMenuItem14_Click);
             // 
             // toolStripMenuItem15
             // 
             this.toolStripMenuItem15.Name = "toolStripMenuItem15";
-            this.toolStripMenuItem15.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem15.Size = new System.Drawing.Size(186, 26);
             this.toolStripMenuItem15.Text = "4";
             this.toolStripMenuItem15.Click += new System.EventHandler(this.toolStripMenuItem15_Click);
             // 
             // toolStripMenuItem16
             // 
             this.toolStripMenuItem16.Name = "toolStripMenuItem16";
-            this.toolStripMenuItem16.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem16.Size = new System.Drawing.Size(186, 26);
             this.toolStripMenuItem16.Text = "5";
             this.toolStripMenuItem16.Click += new System.EventHandler(this.toolStripMenuItem16_Click);
             // 
             // toolStripMenuItem17
             // 
             this.toolStripMenuItem17.Name = "toolStripMenuItem17";
-            this.toolStripMenuItem17.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem17.Size = new System.Drawing.Size(186, 26);
             this.toolStripMenuItem17.Text = "6";
             this.toolStripMenuItem17.Click += new System.EventHandler(this.toolStripMenuItem17_Click);
             // 
             // toolStripMenuItem18
             // 
             this.toolStripMenuItem18.Name = "toolStripMenuItem18";
-            this.toolStripMenuItem18.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem18.Size = new System.Drawing.Size(186, 26);
             this.toolStripMenuItem18.Text = "7";
             this.toolStripMenuItem18.Click += new System.EventHandler(this.toolStripMenuItem18_Click);
             // 
             // toolStripMenuItem19
             // 
             this.toolStripMenuItem19.Name = "toolStripMenuItem19";
-            this.toolStripMenuItem19.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem19.Size = new System.Drawing.Size(186, 26);
             this.toolStripMenuItem19.Text = "8";
             this.toolStripMenuItem19.Click += new System.EventHandler(this.toolStripMenuItem19_Click);
             // 
             // toolStripMenuItem91
             // 
             this.toolStripMenuItem91.Name = "toolStripMenuItem91";
-            this.toolStripMenuItem91.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem91.Size = new System.Drawing.Size(186, 26);
             this.toolStripMenuItem91.Text = "9";
             this.toolStripMenuItem91.Click += new System.EventHandler(this.toolStripMenuItem91_Click);
             // 
             // toolStripMenuItem92
             // 
             this.toolStripMenuItem92.Name = "toolStripMenuItem92";
-            this.toolStripMenuItem92.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem92.Size = new System.Drawing.Size(186, 26);
             this.toolStripMenuItem92.Text = "10";
             this.toolStripMenuItem92.Click += new System.EventHandler(this.toolStripMenuItem92_Click);
             // 
             // toolStripMenuItem93
             // 
             this.toolStripMenuItem93.Name = "toolStripMenuItem93";
-            this.toolStripMenuItem93.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem93.Size = new System.Drawing.Size(186, 26);
             this.toolStripMenuItem93.Text = "11";
             this.toolStripMenuItem93.Click += new System.EventHandler(this.toolStripMenuItem93_Click);
             // 
             // toolStripMenuItem94
             // 
             this.toolStripMenuItem94.Name = "toolStripMenuItem94";
-            this.toolStripMenuItem94.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem94.Size = new System.Drawing.Size(186, 26);
             this.toolStripMenuItem94.Text = "12";
             this.toolStripMenuItem94.Click += new System.EventHandler(this.toolStripMenuItem94_Click);
             // 
             // toolStripMenuItem95
             // 
             this.toolStripMenuItem95.Name = "toolStripMenuItem95";
-            this.toolStripMenuItem95.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem95.Size = new System.Drawing.Size(186, 26);
             this.toolStripMenuItem95.Text = "13";
             this.toolStripMenuItem95.Click += new System.EventHandler(this.toolStripMenuItem95_Click);
             // 
             // toolStripMenuItem96
             // 
             this.toolStripMenuItem96.Name = "toolStripMenuItem96";
-            this.toolStripMenuItem96.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem96.Size = new System.Drawing.Size(186, 26);
             this.toolStripMenuItem96.Text = "14";
             this.toolStripMenuItem96.Click += new System.EventHandler(this.toolStripMenuItem96_Click);
             // 
             // toolStripMenuItem97
             // 
             this.toolStripMenuItem97.Name = "toolStripMenuItem97";
-            this.toolStripMenuItem97.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem97.Size = new System.Drawing.Size(186, 26);
             this.toolStripMenuItem97.Text = "15";
             this.toolStripMenuItem97.Click += new System.EventHandler(this.toolStripMenuItem97_Click);
             // 
             // toolStripMenuItem98
             // 
             this.toolStripMenuItem98.Name = "toolStripMenuItem98";
-            this.toolStripMenuItem98.Size = new System.Drawing.Size(155, 22);
+            this.toolStripMenuItem98.Size = new System.Drawing.Size(186, 26);
             this.toolStripMenuItem98.Text = "16";
             this.toolStripMenuItem98.Click += new System.EventHandler(this.toolStripMenuItem98_Click);
             // 
@@ -6770,13 +6505,13 @@
             this.uSAToolStripMenuItem2,
             this.uSSRToolStripMenuItem2});
             this.scoreToolStripMenuItem.Name = "scoreToolStripMenuItem";
-            this.scoreToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.scoreToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.scoreToolStripMenuItem.Text = "Score";
             // 
             // toolStripMenuItem20
             // 
             this.toolStripMenuItem20.Name = "toolStripMenuItem20";
-            this.toolStripMenuItem20.Size = new System.Drawing.Size(101, 22);
+            this.toolStripMenuItem20.Size = new System.Drawing.Size(119, 26);
             this.toolStripMenuItem20.Text = "0";
             this.toolStripMenuItem20.Click += new System.EventHandler(this.toolStripMenuItem20_Click);
             // 
@@ -6803,139 +6538,139 @@
             this.toolStripMenuItem38,
             this.toolStripMenuItem39});
             this.uSAToolStripMenuItem2.Name = "uSAToolStripMenuItem2";
-            this.uSAToolStripMenuItem2.Size = new System.Drawing.Size(101, 22);
+            this.uSAToolStripMenuItem2.Size = new System.Drawing.Size(119, 26);
             this.uSAToolStripMenuItem2.Text = "USA";
             // 
             // toolStripMenuItem21
             // 
             this.toolStripMenuItem21.Name = "toolStripMenuItem21";
-            this.toolStripMenuItem21.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem21.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem21.Text = "1";
             this.toolStripMenuItem21.Click += new System.EventHandler(this.toolStripMenuItem21_Click);
             // 
             // toolStripMenuItem22
             // 
             this.toolStripMenuItem22.Name = "toolStripMenuItem22";
-            this.toolStripMenuItem22.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem22.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem22.Text = "2";
             this.toolStripMenuItem22.Click += new System.EventHandler(this.toolStripMenuItem22_Click);
             // 
             // toolStripMenuItem23
             // 
             this.toolStripMenuItem23.Name = "toolStripMenuItem23";
-            this.toolStripMenuItem23.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem23.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem23.Text = "3";
             this.toolStripMenuItem23.Click += new System.EventHandler(this.toolStripMenuItem23_Click);
             // 
             // toolStripMenuItem24
             // 
             this.toolStripMenuItem24.Name = "toolStripMenuItem24";
-            this.toolStripMenuItem24.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem24.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem24.Text = "4";
             this.toolStripMenuItem24.Click += new System.EventHandler(this.toolStripMenuItem24_Click);
             // 
             // toolStripMenuItem25
             // 
             this.toolStripMenuItem25.Name = "toolStripMenuItem25";
-            this.toolStripMenuItem25.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem25.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem25.Text = "5";
             this.toolStripMenuItem25.Click += new System.EventHandler(this.toolStripMenuItem25_Click);
             // 
             // toolStripMenuItem26
             // 
             this.toolStripMenuItem26.Name = "toolStripMenuItem26";
-            this.toolStripMenuItem26.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem26.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem26.Text = "6";
             this.toolStripMenuItem26.Click += new System.EventHandler(this.toolStripMenuItem26_Click);
             // 
             // toolStripMenuItem27
             // 
             this.toolStripMenuItem27.Name = "toolStripMenuItem27";
-            this.toolStripMenuItem27.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem27.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem27.Text = "7";
             this.toolStripMenuItem27.Click += new System.EventHandler(this.toolStripMenuItem27_Click);
             // 
             // toolStripMenuItem28
             // 
             this.toolStripMenuItem28.Name = "toolStripMenuItem28";
-            this.toolStripMenuItem28.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem28.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem28.Text = "8";
             this.toolStripMenuItem28.Click += new System.EventHandler(this.toolStripMenuItem28_Click);
             // 
             // toolStripMenuItem29
             // 
             this.toolStripMenuItem29.Name = "toolStripMenuItem29";
-            this.toolStripMenuItem29.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem29.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem29.Text = "9";
             this.toolStripMenuItem29.Click += new System.EventHandler(this.toolStripMenuItem29_Click);
             // 
             // toolStripMenuItem30
             // 
             this.toolStripMenuItem30.Name = "toolStripMenuItem30";
-            this.toolStripMenuItem30.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem30.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem30.Text = "10";
             this.toolStripMenuItem30.Click += new System.EventHandler(this.toolStripMenuItem30_Click);
             // 
             // toolStripMenuItem31
             // 
             this.toolStripMenuItem31.Name = "toolStripMenuItem31";
-            this.toolStripMenuItem31.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem31.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem31.Text = "11";
             this.toolStripMenuItem31.Click += new System.EventHandler(this.toolStripMenuItem31_Click);
             // 
             // toolStripMenuItem32
             // 
             this.toolStripMenuItem32.Name = "toolStripMenuItem32";
-            this.toolStripMenuItem32.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem32.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem32.Text = "12";
             this.toolStripMenuItem32.Click += new System.EventHandler(this.toolStripMenuItem32_Click);
             // 
             // toolStripMenuItem33
             // 
             this.toolStripMenuItem33.Name = "toolStripMenuItem33";
-            this.toolStripMenuItem33.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem33.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem33.Text = "13";
             this.toolStripMenuItem33.Click += new System.EventHandler(this.toolStripMenuItem33_Click);
             // 
             // toolStripMenuItem34
             // 
             this.toolStripMenuItem34.Name = "toolStripMenuItem34";
-            this.toolStripMenuItem34.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem34.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem34.Text = "14";
             this.toolStripMenuItem34.Click += new System.EventHandler(this.toolStripMenuItem34_Click);
             // 
             // toolStripMenuItem35
             // 
             this.toolStripMenuItem35.Name = "toolStripMenuItem35";
-            this.toolStripMenuItem35.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem35.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem35.Text = "15";
             this.toolStripMenuItem35.Click += new System.EventHandler(this.toolStripMenuItem35_Click);
             // 
             // toolStripMenuItem36
             // 
             this.toolStripMenuItem36.Name = "toolStripMenuItem36";
-            this.toolStripMenuItem36.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem36.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem36.Text = "16";
             this.toolStripMenuItem36.Click += new System.EventHandler(this.toolStripMenuItem36_Click);
             // 
             // toolStripMenuItem37
             // 
             this.toolStripMenuItem37.Name = "toolStripMenuItem37";
-            this.toolStripMenuItem37.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem37.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem37.Text = "17";
             this.toolStripMenuItem37.Click += new System.EventHandler(this.toolStripMenuItem37_Click);
             // 
             // toolStripMenuItem38
             // 
             this.toolStripMenuItem38.Name = "toolStripMenuItem38";
-            this.toolStripMenuItem38.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem38.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem38.Text = "18";
             this.toolStripMenuItem38.Click += new System.EventHandler(this.toolStripMenuItem38_Click);
             // 
             // toolStripMenuItem39
             // 
             this.toolStripMenuItem39.Name = "toolStripMenuItem39";
-            this.toolStripMenuItem39.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem39.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem39.Text = "19";
             this.toolStripMenuItem39.Click += new System.EventHandler(this.toolStripMenuItem39_Click);
             // 
@@ -6962,139 +6697,139 @@
             this.toolStripMenuItem57,
             this.toolStripMenuItem58});
             this.uSSRToolStripMenuItem2.Name = "uSSRToolStripMenuItem2";
-            this.uSSRToolStripMenuItem2.Size = new System.Drawing.Size(101, 22);
+            this.uSSRToolStripMenuItem2.Size = new System.Drawing.Size(119, 26);
             this.uSSRToolStripMenuItem2.Text = "USSR";
             // 
             // toolStripMenuItem40
             // 
             this.toolStripMenuItem40.Name = "toolStripMenuItem40";
-            this.toolStripMenuItem40.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem40.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem40.Text = "1";
             this.toolStripMenuItem40.Click += new System.EventHandler(this.toolStripMenuItem40_Click);
             // 
             // toolStripMenuItem41
             // 
             this.toolStripMenuItem41.Name = "toolStripMenuItem41";
-            this.toolStripMenuItem41.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem41.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem41.Text = "2";
             this.toolStripMenuItem41.Click += new System.EventHandler(this.toolStripMenuItem41_Click);
             // 
             // toolStripMenuItem42
             // 
             this.toolStripMenuItem42.Name = "toolStripMenuItem42";
-            this.toolStripMenuItem42.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem42.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem42.Text = "3";
             this.toolStripMenuItem42.Click += new System.EventHandler(this.toolStripMenuItem42_Click);
             // 
             // toolStripMenuItem43
             // 
             this.toolStripMenuItem43.Name = "toolStripMenuItem43";
-            this.toolStripMenuItem43.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem43.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem43.Text = "4";
             this.toolStripMenuItem43.Click += new System.EventHandler(this.toolStripMenuItem43_Click);
             // 
             // toolStripMenuItem44
             // 
             this.toolStripMenuItem44.Name = "toolStripMenuItem44";
-            this.toolStripMenuItem44.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem44.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem44.Text = "5";
             this.toolStripMenuItem44.Click += new System.EventHandler(this.toolStripMenuItem44_Click);
             // 
             // toolStripMenuItem45
             // 
             this.toolStripMenuItem45.Name = "toolStripMenuItem45";
-            this.toolStripMenuItem45.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem45.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem45.Text = "6";
             this.toolStripMenuItem45.Click += new System.EventHandler(this.toolStripMenuItem45_Click);
             // 
             // toolStripMenuItem46
             // 
             this.toolStripMenuItem46.Name = "toolStripMenuItem46";
-            this.toolStripMenuItem46.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem46.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem46.Text = "7";
             this.toolStripMenuItem46.Click += new System.EventHandler(this.toolStripMenuItem46_Click);
             // 
             // toolStripMenuItem47
             // 
             this.toolStripMenuItem47.Name = "toolStripMenuItem47";
-            this.toolStripMenuItem47.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem47.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem47.Text = "8";
             this.toolStripMenuItem47.Click += new System.EventHandler(this.toolStripMenuItem47_Click);
             // 
             // toolStripMenuItem48
             // 
             this.toolStripMenuItem48.Name = "toolStripMenuItem48";
-            this.toolStripMenuItem48.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem48.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem48.Text = "9";
             this.toolStripMenuItem48.Click += new System.EventHandler(this.toolStripMenuItem48_Click);
             // 
             // toolStripMenuItem49
             // 
             this.toolStripMenuItem49.Name = "toolStripMenuItem49";
-            this.toolStripMenuItem49.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem49.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem49.Text = "10";
             this.toolStripMenuItem49.Click += new System.EventHandler(this.toolStripMenuItem49_Click);
             // 
             // toolStripMenuItem50
             // 
             this.toolStripMenuItem50.Name = "toolStripMenuItem50";
-            this.toolStripMenuItem50.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem50.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem50.Text = "11";
             this.toolStripMenuItem50.Click += new System.EventHandler(this.toolStripMenuItem50_Click);
             // 
             // toolStripMenuItem51
             // 
             this.toolStripMenuItem51.Name = "toolStripMenuItem51";
-            this.toolStripMenuItem51.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem51.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem51.Text = "12";
             this.toolStripMenuItem51.Click += new System.EventHandler(this.toolStripMenuItem51_Click);
             // 
             // toolStripMenuItem52
             // 
             this.toolStripMenuItem52.Name = "toolStripMenuItem52";
-            this.toolStripMenuItem52.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem52.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem52.Text = "13";
             this.toolStripMenuItem52.Click += new System.EventHandler(this.toolStripMenuItem52_Click);
             // 
             // toolStripMenuItem53
             // 
             this.toolStripMenuItem53.Name = "toolStripMenuItem53";
-            this.toolStripMenuItem53.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem53.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem53.Text = "14";
             this.toolStripMenuItem53.Click += new System.EventHandler(this.toolStripMenuItem53_Click);
             // 
             // toolStripMenuItem54
             // 
             this.toolStripMenuItem54.Name = "toolStripMenuItem54";
-            this.toolStripMenuItem54.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem54.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem54.Text = "15";
             this.toolStripMenuItem54.Click += new System.EventHandler(this.toolStripMenuItem54_Click);
             // 
             // toolStripMenuItem55
             // 
             this.toolStripMenuItem55.Name = "toolStripMenuItem55";
-            this.toolStripMenuItem55.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem55.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem55.Text = "16";
             this.toolStripMenuItem55.Click += new System.EventHandler(this.toolStripMenuItem55_Click);
             // 
             // toolStripMenuItem56
             // 
             this.toolStripMenuItem56.Name = "toolStripMenuItem56";
-            this.toolStripMenuItem56.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem56.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem56.Text = "17";
             this.toolStripMenuItem56.Click += new System.EventHandler(this.toolStripMenuItem56_Click);
             // 
             // toolStripMenuItem57
             // 
             this.toolStripMenuItem57.Name = "toolStripMenuItem57";
-            this.toolStripMenuItem57.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem57.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem57.Text = "18";
             this.toolStripMenuItem57.Click += new System.EventHandler(this.toolStripMenuItem57_Click);
             // 
             // toolStripMenuItem58
             // 
             this.toolStripMenuItem58.Name = "toolStripMenuItem58";
-            this.toolStripMenuItem58.Size = new System.Drawing.Size(86, 22);
+            this.toolStripMenuItem58.Size = new System.Drawing.Size(100, 26);
             this.toolStripMenuItem58.Text = "19";
             this.toolStripMenuItem58.Click += new System.EventHandler(this.toolStripMenuItem58_Click);
             // 
@@ -7106,34 +6841,34 @@
             this.toolStripMenuItem61,
             this.toolStripMenuItem62});
             this.defconToolStripMenuItem.Name = "defconToolStripMenuItem";
-            this.defconToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.defconToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.defconToolStripMenuItem.Text = "Defcon";
             // 
             // toolStripMenuItem59
             // 
             this.toolStripMenuItem59.Name = "toolStripMenuItem59";
-            this.toolStripMenuItem59.Size = new System.Drawing.Size(80, 22);
+            this.toolStripMenuItem59.Size = new System.Drawing.Size(92, 26);
             this.toolStripMenuItem59.Text = "5";
             this.toolStripMenuItem59.Click += new System.EventHandler(this.toolStripMenuItem59_Click);
             // 
             // toolStripMenuItem60
             // 
             this.toolStripMenuItem60.Name = "toolStripMenuItem60";
-            this.toolStripMenuItem60.Size = new System.Drawing.Size(80, 22);
+            this.toolStripMenuItem60.Size = new System.Drawing.Size(92, 26);
             this.toolStripMenuItem60.Text = "4";
             this.toolStripMenuItem60.Click += new System.EventHandler(this.toolStripMenuItem60_Click);
             // 
             // toolStripMenuItem61
             // 
             this.toolStripMenuItem61.Name = "toolStripMenuItem61";
-            this.toolStripMenuItem61.Size = new System.Drawing.Size(80, 22);
+            this.toolStripMenuItem61.Size = new System.Drawing.Size(92, 26);
             this.toolStripMenuItem61.Text = "3";
             this.toolStripMenuItem61.Click += new System.EventHandler(this.toolStripMenuItem61_Click);
             // 
             // toolStripMenuItem62
             // 
             this.toolStripMenuItem62.Name = "toolStripMenuItem62";
-            this.toolStripMenuItem62.Size = new System.Drawing.Size(80, 22);
+            this.toolStripMenuItem62.Size = new System.Drawing.Size(92, 26);
             this.toolStripMenuItem62.Text = "2";
             this.toolStripMenuItem62.Click += new System.EventHandler(this.toolStripMenuItem62_Click);
             // 
@@ -7143,7 +6878,7 @@
             this.uSAToolStripMenuItem3,
             this.uSSRToolStripMenuItem3});
             this.militaryOpsToolStripMenuItem.Name = "militaryOpsToolStripMenuItem";
-            this.militaryOpsToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.militaryOpsToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.militaryOpsToolStripMenuItem.Text = "Military Ops";
             // 
             // uSAToolStripMenuItem3
@@ -7156,48 +6891,48 @@
             this.toolStripMenuItem67,
             this.toolStripMenuItem68});
             this.uSAToolStripMenuItem3.Name = "uSAToolStripMenuItem3";
-            this.uSAToolStripMenuItem3.Size = new System.Drawing.Size(101, 22);
+            this.uSAToolStripMenuItem3.Size = new System.Drawing.Size(119, 26);
             this.uSAToolStripMenuItem3.Text = "USA";
             // 
             // toolStripMenuItem63
             // 
             this.toolStripMenuItem63.Name = "toolStripMenuItem63";
-            this.toolStripMenuItem63.Size = new System.Drawing.Size(80, 22);
+            this.toolStripMenuItem63.Size = new System.Drawing.Size(92, 26);
             this.toolStripMenuItem63.Text = "0";
             this.toolStripMenuItem63.Click += new System.EventHandler(this.toolStripMenuItem63_Click);
             // 
             // toolStripMenuItem64
             // 
             this.toolStripMenuItem64.Name = "toolStripMenuItem64";
-            this.toolStripMenuItem64.Size = new System.Drawing.Size(80, 22);
+            this.toolStripMenuItem64.Size = new System.Drawing.Size(92, 26);
             this.toolStripMenuItem64.Text = "1";
             this.toolStripMenuItem64.Click += new System.EventHandler(this.toolStripMenuItem64_Click);
             // 
             // toolStripMenuItem65
             // 
             this.toolStripMenuItem65.Name = "toolStripMenuItem65";
-            this.toolStripMenuItem65.Size = new System.Drawing.Size(80, 22);
+            this.toolStripMenuItem65.Size = new System.Drawing.Size(92, 26);
             this.toolStripMenuItem65.Text = "2";
             this.toolStripMenuItem65.Click += new System.EventHandler(this.toolStripMenuItem65_Click);
             // 
             // toolStripMenuItem66
             // 
             this.toolStripMenuItem66.Name = "toolStripMenuItem66";
-            this.toolStripMenuItem66.Size = new System.Drawing.Size(80, 22);
+            this.toolStripMenuItem66.Size = new System.Drawing.Size(92, 26);
             this.toolStripMenuItem66.Text = "3";
             this.toolStripMenuItem66.Click += new System.EventHandler(this.toolStripMenuItem66_Click);
             // 
             // toolStripMenuItem67
             // 
             this.toolStripMenuItem67.Name = "toolStripMenuItem67";
-            this.toolStripMenuItem67.Size = new System.Drawing.Size(80, 22);
+            this.toolStripMenuItem67.Size = new System.Drawing.Size(92, 26);
             this.toolStripMenuItem67.Text = "4";
             this.toolStripMenuItem67.Click += new System.EventHandler(this.toolStripMenuItem67_Click);
             // 
             // toolStripMenuItem68
             // 
             this.toolStripMenuItem68.Name = "toolStripMenuItem68";
-            this.toolStripMenuItem68.Size = new System.Drawing.Size(80, 22);
+            this.toolStripMenuItem68.Size = new System.Drawing.Size(92, 26);
             this.toolStripMenuItem68.Text = "5";
             this.toolStripMenuItem68.Click += new System.EventHandler(this.toolStripMenuItem68_Click);
             // 
@@ -7211,48 +6946,48 @@
             this.toolStripMenuItem73,
             this.toolStripMenuItem74});
             this.uSSRToolStripMenuItem3.Name = "uSSRToolStripMenuItem3";
-            this.uSSRToolStripMenuItem3.Size = new System.Drawing.Size(101, 22);
+            this.uSSRToolStripMenuItem3.Size = new System.Drawing.Size(119, 26);
             this.uSSRToolStripMenuItem3.Text = "USSR";
             // 
             // toolStripMenuItem69
             // 
             this.toolStripMenuItem69.Name = "toolStripMenuItem69";
-            this.toolStripMenuItem69.Size = new System.Drawing.Size(80, 22);
+            this.toolStripMenuItem69.Size = new System.Drawing.Size(92, 26);
             this.toolStripMenuItem69.Text = "0";
             this.toolStripMenuItem69.Click += new System.EventHandler(this.toolStripMenuItem69_Click);
             // 
             // toolStripMenuItem70
             // 
             this.toolStripMenuItem70.Name = "toolStripMenuItem70";
-            this.toolStripMenuItem70.Size = new System.Drawing.Size(80, 22);
+            this.toolStripMenuItem70.Size = new System.Drawing.Size(92, 26);
             this.toolStripMenuItem70.Text = "1";
             this.toolStripMenuItem70.Click += new System.EventHandler(this.toolStripMenuItem70_Click);
             // 
             // toolStripMenuItem71
             // 
             this.toolStripMenuItem71.Name = "toolStripMenuItem71";
-            this.toolStripMenuItem71.Size = new System.Drawing.Size(80, 22);
+            this.toolStripMenuItem71.Size = new System.Drawing.Size(92, 26);
             this.toolStripMenuItem71.Text = "2";
             this.toolStripMenuItem71.Click += new System.EventHandler(this.toolStripMenuItem71_Click);
             // 
             // toolStripMenuItem72
             // 
             this.toolStripMenuItem72.Name = "toolStripMenuItem72";
-            this.toolStripMenuItem72.Size = new System.Drawing.Size(80, 22);
+            this.toolStripMenuItem72.Size = new System.Drawing.Size(92, 26);
             this.toolStripMenuItem72.Text = "3";
             this.toolStripMenuItem72.Click += new System.EventHandler(this.toolStripMenuItem72_Click);
             // 
             // toolStripMenuItem73
             // 
             this.toolStripMenuItem73.Name = "toolStripMenuItem73";
-            this.toolStripMenuItem73.Size = new System.Drawing.Size(80, 22);
+            this.toolStripMenuItem73.Size = new System.Drawing.Size(92, 26);
             this.toolStripMenuItem73.Text = "4";
             this.toolStripMenuItem73.Click += new System.EventHandler(this.toolStripMenuItem73_Click);
             // 
             // toolStripMenuItem74
             // 
             this.toolStripMenuItem74.Name = "toolStripMenuItem74";
-            this.toolStripMenuItem74.Size = new System.Drawing.Size(80, 22);
+            this.toolStripMenuItem74.Size = new System.Drawing.Size(92, 26);
             this.toolStripMenuItem74.Text = "5";
             this.toolStripMenuItem74.Click += new System.EventHandler(this.toolStripMenuItem74_Click);
             // 
@@ -7262,7 +6997,7 @@
             this.uSAToolStripMenuItem4,
             this.uSSRToolStripMenuItem4});
             this.spaceRaceToolStripMenuItem.Name = "spaceRaceToolStripMenuItem";
-            this.spaceRaceToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.spaceRaceToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.spaceRaceToolStripMenuItem.Text = "Space Race";
             // 
             // uSAToolStripMenuItem4
@@ -7278,69 +7013,69 @@
             this.toolStripMenuItem81,
             this.toolStripMenuItem82});
             this.uSAToolStripMenuItem4.Name = "uSAToolStripMenuItem4";
-            this.uSAToolStripMenuItem4.Size = new System.Drawing.Size(101, 22);
+            this.uSAToolStripMenuItem4.Size = new System.Drawing.Size(119, 26);
             this.uSAToolStripMenuItem4.Text = "USA";
             // 
             // startToolStripMenuItem
             // 
             this.startToolStripMenuItem.Name = "startToolStripMenuItem";
-            this.startToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.startToolStripMenuItem.Size = new System.Drawing.Size(115, 26);
             this.startToolStripMenuItem.Text = "Start";
             this.startToolStripMenuItem.Click += new System.EventHandler(this.startToolStripMenuItem_Click);
             // 
             // toolStripMenuItem75
             // 
             this.toolStripMenuItem75.Name = "toolStripMenuItem75";
-            this.toolStripMenuItem75.Size = new System.Drawing.Size(98, 22);
+            this.toolStripMenuItem75.Size = new System.Drawing.Size(115, 26);
             this.toolStripMenuItem75.Text = "1";
             this.toolStripMenuItem75.Click += new System.EventHandler(this.toolStripMenuItem75_Click);
             // 
             // toolStripMenuItem76
             // 
             this.toolStripMenuItem76.Name = "toolStripMenuItem76";
-            this.toolStripMenuItem76.Size = new System.Drawing.Size(98, 22);
+            this.toolStripMenuItem76.Size = new System.Drawing.Size(115, 26);
             this.toolStripMenuItem76.Text = "2";
             this.toolStripMenuItem76.Click += new System.EventHandler(this.toolStripMenuItem76_Click);
             // 
             // toolStripMenuItem77
             // 
             this.toolStripMenuItem77.Name = "toolStripMenuItem77";
-            this.toolStripMenuItem77.Size = new System.Drawing.Size(98, 22);
+            this.toolStripMenuItem77.Size = new System.Drawing.Size(115, 26);
             this.toolStripMenuItem77.Text = "3";
             this.toolStripMenuItem77.Click += new System.EventHandler(this.toolStripMenuItem77_Click);
             // 
             // toolStripMenuItem78
             // 
             this.toolStripMenuItem78.Name = "toolStripMenuItem78";
-            this.toolStripMenuItem78.Size = new System.Drawing.Size(98, 22);
+            this.toolStripMenuItem78.Size = new System.Drawing.Size(115, 26);
             this.toolStripMenuItem78.Text = "4";
             this.toolStripMenuItem78.Click += new System.EventHandler(this.toolStripMenuItem78_Click);
             // 
             // toolStripMenuItem79
             // 
             this.toolStripMenuItem79.Name = "toolStripMenuItem79";
-            this.toolStripMenuItem79.Size = new System.Drawing.Size(98, 22);
+            this.toolStripMenuItem79.Size = new System.Drawing.Size(115, 26);
             this.toolStripMenuItem79.Text = "5";
             this.toolStripMenuItem79.Click += new System.EventHandler(this.toolStripMenuItem79_Click);
             // 
             // toolStripMenuItem80
             // 
             this.toolStripMenuItem80.Name = "toolStripMenuItem80";
-            this.toolStripMenuItem80.Size = new System.Drawing.Size(98, 22);
+            this.toolStripMenuItem80.Size = new System.Drawing.Size(115, 26);
             this.toolStripMenuItem80.Text = "6";
             this.toolStripMenuItem80.Click += new System.EventHandler(this.toolStripMenuItem80_Click);
             // 
             // toolStripMenuItem81
             // 
             this.toolStripMenuItem81.Name = "toolStripMenuItem81";
-            this.toolStripMenuItem81.Size = new System.Drawing.Size(98, 22);
+            this.toolStripMenuItem81.Size = new System.Drawing.Size(115, 26);
             this.toolStripMenuItem81.Text = "7";
             this.toolStripMenuItem81.Click += new System.EventHandler(this.toolStripMenuItem81_Click);
             // 
             // toolStripMenuItem82
             // 
             this.toolStripMenuItem82.Name = "toolStripMenuItem82";
-            this.toolStripMenuItem82.Size = new System.Drawing.Size(98, 22);
+            this.toolStripMenuItem82.Size = new System.Drawing.Size(115, 26);
             this.toolStripMenuItem82.Text = "8";
             this.toolStripMenuItem82.Click += new System.EventHandler(this.toolStripMenuItem82_Click);
             // 
@@ -7357,69 +7092,69 @@
             this.toolStripMenuItem89,
             this.toolStripMenuItem90});
             this.uSSRToolStripMenuItem4.Name = "uSSRToolStripMenuItem4";
-            this.uSSRToolStripMenuItem4.Size = new System.Drawing.Size(101, 22);
+            this.uSSRToolStripMenuItem4.Size = new System.Drawing.Size(119, 26);
             this.uSSRToolStripMenuItem4.Text = "USSR";
             // 
             // startToolStripMenuItem1
             // 
             this.startToolStripMenuItem1.Name = "startToolStripMenuItem1";
-            this.startToolStripMenuItem1.Size = new System.Drawing.Size(98, 22);
+            this.startToolStripMenuItem1.Size = new System.Drawing.Size(115, 26);
             this.startToolStripMenuItem1.Text = "Start";
             this.startToolStripMenuItem1.Click += new System.EventHandler(this.startToolStripMenuItem1_Click);
             // 
             // toolStripMenuItem83
             // 
             this.toolStripMenuItem83.Name = "toolStripMenuItem83";
-            this.toolStripMenuItem83.Size = new System.Drawing.Size(98, 22);
+            this.toolStripMenuItem83.Size = new System.Drawing.Size(115, 26);
             this.toolStripMenuItem83.Text = "1";
             this.toolStripMenuItem83.Click += new System.EventHandler(this.toolStripMenuItem83_Click);
             // 
             // toolStripMenuItem84
             // 
             this.toolStripMenuItem84.Name = "toolStripMenuItem84";
-            this.toolStripMenuItem84.Size = new System.Drawing.Size(98, 22);
+            this.toolStripMenuItem84.Size = new System.Drawing.Size(115, 26);
             this.toolStripMenuItem84.Text = "2";
             this.toolStripMenuItem84.Click += new System.EventHandler(this.toolStripMenuItem84_Click);
             // 
             // toolStripMenuItem85
             // 
             this.toolStripMenuItem85.Name = "toolStripMenuItem85";
-            this.toolStripMenuItem85.Size = new System.Drawing.Size(98, 22);
+            this.toolStripMenuItem85.Size = new System.Drawing.Size(115, 26);
             this.toolStripMenuItem85.Text = "3";
             this.toolStripMenuItem85.Click += new System.EventHandler(this.toolStripMenuItem85_Click);
             // 
             // toolStripMenuItem86
             // 
             this.toolStripMenuItem86.Name = "toolStripMenuItem86";
-            this.toolStripMenuItem86.Size = new System.Drawing.Size(98, 22);
+            this.toolStripMenuItem86.Size = new System.Drawing.Size(115, 26);
             this.toolStripMenuItem86.Text = "4";
             this.toolStripMenuItem86.Click += new System.EventHandler(this.toolStripMenuItem86_Click);
             // 
             // toolStripMenuItem87
             // 
             this.toolStripMenuItem87.Name = "toolStripMenuItem87";
-            this.toolStripMenuItem87.Size = new System.Drawing.Size(98, 22);
+            this.toolStripMenuItem87.Size = new System.Drawing.Size(115, 26);
             this.toolStripMenuItem87.Text = "5";
             this.toolStripMenuItem87.Click += new System.EventHandler(this.toolStripMenuItem87_Click);
             // 
             // toolStripMenuItem88
             // 
             this.toolStripMenuItem88.Name = "toolStripMenuItem88";
-            this.toolStripMenuItem88.Size = new System.Drawing.Size(98, 22);
+            this.toolStripMenuItem88.Size = new System.Drawing.Size(115, 26);
             this.toolStripMenuItem88.Text = "6";
             this.toolStripMenuItem88.Click += new System.EventHandler(this.toolStripMenuItem88_Click);
             // 
             // toolStripMenuItem89
             // 
             this.toolStripMenuItem89.Name = "toolStripMenuItem89";
-            this.toolStripMenuItem89.Size = new System.Drawing.Size(98, 22);
+            this.toolStripMenuItem89.Size = new System.Drawing.Size(115, 26);
             this.toolStripMenuItem89.Text = "7";
             this.toolStripMenuItem89.Click += new System.EventHandler(this.toolStripMenuItem89_Click);
             // 
             // toolStripMenuItem90
             // 
             this.toolStripMenuItem90.Name = "toolStripMenuItem90";
-            this.toolStripMenuItem90.Size = new System.Drawing.Size(98, 22);
+            this.toolStripMenuItem90.Size = new System.Drawing.Size(115, 26);
             this.toolStripMenuItem90.Text = "8";
             this.toolStripMenuItem90.Click += new System.EventHandler(this.toolStripMenuItem90_Click);
             // 
@@ -7427,14 +7162,14 @@
             // 
             this.eventToolStripMenuItem.Enabled = false;
             this.eventToolStripMenuItem.Name = "eventToolStripMenuItem";
-            this.eventToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.eventToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.eventToolStripMenuItem.Text = "Event";
             // 
             // resetToolStripMenuItem
             // 
             this.resetToolStripMenuItem.Enabled = false;
             this.resetToolStripMenuItem.Name = "resetToolStripMenuItem";
-            this.resetToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.resetToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.resetToolStripMenuItem.Text = "Reset";
             // 
             // handsToolStripMenuItem
@@ -7443,7 +7178,7 @@
             this.uSAToolStripMenuItem1,
             this.uSSRToolStripMenuItem1});
             this.handsToolStripMenuItem.Name = "handsToolStripMenuItem";
-            this.handsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.handsToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
             this.handsToolStripMenuItem.Text = "Hands";
             // 
             // uSAToolStripMenuItem1
@@ -7451,13 +7186,13 @@
             this.uSAToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.revealToolStripMenuItem});
             this.uSAToolStripMenuItem1.Name = "uSAToolStripMenuItem1";
-            this.uSAToolStripMenuItem1.Size = new System.Drawing.Size(101, 22);
+            this.uSAToolStripMenuItem1.Size = new System.Drawing.Size(119, 26);
             this.uSAToolStripMenuItem1.Text = "USA";
             // 
             // revealToolStripMenuItem
             // 
             this.revealToolStripMenuItem.Name = "revealToolStripMenuItem";
-            this.revealToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.revealToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.revealToolStripMenuItem.Text = "Reveal";
             // 
             // uSSRToolStripMenuItem1
@@ -7465,107 +7200,109 @@
             this.uSSRToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.revealToolStripMenuItem1});
             this.uSSRToolStripMenuItem1.Name = "uSSRToolStripMenuItem1";
-            this.uSSRToolStripMenuItem1.Size = new System.Drawing.Size(101, 22);
+            this.uSSRToolStripMenuItem1.Size = new System.Drawing.Size(119, 26);
             this.uSSRToolStripMenuItem1.Text = "USSR";
             // 
             // revealToolStripMenuItem1
             // 
             this.revealToolStripMenuItem1.Name = "revealToolStripMenuItem1";
-            this.revealToolStripMenuItem1.Size = new System.Drawing.Size(108, 22);
+            this.revealToolStripMenuItem1.Size = new System.Drawing.Size(128, 26);
             this.revealToolStripMenuItem1.Text = "Reveal";
             // 
             // Play_cardButton
             // 
-            this.Play_cardButton.Location = new System.Drawing.Point(377, 49);
-            this.Play_cardButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Play_cardButton.Enabled = false;
+            this.Play_cardButton.Location = new System.Drawing.Point(503, 60);
+            this.Play_cardButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Play_cardButton.Name = "Play_cardButton";
-            this.Play_cardButton.Size = new System.Drawing.Size(58, 24);
+            this.Play_cardButton.Size = new System.Drawing.Size(77, 30);
             this.Play_cardButton.TabIndex = 30;
             this.Play_cardButton.Text = "Play Card";
             this.Play_cardButton.UseVisualStyleBackColor = true;
+            this.Play_cardButton.Click += new System.EventHandler(this.Play_cardButton_Click);
             // 
             // radioButton9
             // 
             this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(352, 23);
-            this.radioButton9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton9.Location = new System.Drawing.Point(469, 28);
+            this.radioButton9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(85, 17);
+            this.radioButton9.Size = new System.Drawing.Size(71, 21);
             this.radioButton9.TabIndex = 29;
             this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "radioButton9";
+            this.radioButton9.Text = "Card 9";
             this.radioButton9.UseVisualStyleBackColor = true;
             // 
             // radioButton8
             // 
             this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(266, 52);
-            this.radioButton8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton8.Location = new System.Drawing.Point(355, 64);
+            this.radioButton8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(85, 17);
+            this.radioButton8.Size = new System.Drawing.Size(71, 21);
             this.radioButton8.TabIndex = 28;
             this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "radioButton8";
+            this.radioButton8.Text = "Card 8";
             this.radioButton8.UseVisualStyleBackColor = true;
             // 
             // radioButton7
             // 
             this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(266, 23);
-            this.radioButton7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton7.Location = new System.Drawing.Point(355, 28);
+            this.radioButton7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(85, 17);
+            this.radioButton7.Size = new System.Drawing.Size(71, 21);
             this.radioButton7.TabIndex = 27;
             this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "radioButton7";
+            this.radioButton7.Text = "Card 7";
             this.radioButton7.UseVisualStyleBackColor = true;
             // 
             // radioButton6
             // 
             this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(178, 52);
-            this.radioButton6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton6.Location = new System.Drawing.Point(237, 64);
+            this.radioButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(85, 17);
+            this.radioButton6.Size = new System.Drawing.Size(71, 21);
             this.radioButton6.TabIndex = 26;
             this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "radioButton6";
+            this.radioButton6.Text = "Card 6";
             this.radioButton6.UseVisualStyleBackColor = true;
             // 
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(178, 23);
-            this.radioButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton5.Location = new System.Drawing.Point(237, 28);
+            this.radioButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(85, 17);
+            this.radioButton5.Size = new System.Drawing.Size(71, 21);
             this.radioButton5.TabIndex = 25;
             this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "radioButton5";
+            this.radioButton5.Text = "Card 5";
             this.radioButton5.UseVisualStyleBackColor = true;
             // 
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(92, 52);
-            this.radioButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton4.Location = new System.Drawing.Point(123, 64);
+            this.radioButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(85, 17);
+            this.radioButton4.Size = new System.Drawing.Size(71, 21);
             this.radioButton4.TabIndex = 24;
             this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "radioButton4";
+            this.radioButton4.Text = "Card 4";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(92, 23);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton3.Location = new System.Drawing.Point(123, 28);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(85, 17);
+            this.radioButton3.Size = new System.Drawing.Size(71, 21);
             this.radioButton3.TabIndex = 23;
             this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
+            this.radioButton3.Text = "Card 3";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // PlayerHand_group
@@ -7580,9 +7317,11 @@
             this.PlayerHand_group.Controls.Add(this.radioButton3);
             this.PlayerHand_group.Controls.Add(this.radioButton1);
             this.PlayerHand_group.Controls.Add(this.radioButton2);
-            this.PlayerHand_group.Location = new System.Drawing.Point(1, 387);
+            this.PlayerHand_group.Location = new System.Drawing.Point(1, 476);
+            this.PlayerHand_group.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PlayerHand_group.Name = "PlayerHand_group";
-            this.PlayerHand_group.Size = new System.Drawing.Size(446, 82);
+            this.PlayerHand_group.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PlayerHand_group.Size = new System.Drawing.Size(595, 101);
             this.PlayerHand_group.TabIndex = 21;
             this.PlayerHand_group.TabStop = false;
             this.PlayerHand_group.Text = "Player Hand";
@@ -7590,32 +7329,32 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(4, 23);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton1.Location = new System.Drawing.Point(5, 28);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 17);
+            this.radioButton1.Size = new System.Drawing.Size(71, 21);
             this.radioButton1.TabIndex = 22;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.Text = "Card 1";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(4, 52);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton2.Location = new System.Drawing.Point(5, 64);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 17);
+            this.radioButton2.Size = new System.Drawing.Size(71, 21);
             this.radioButton2.TabIndex = 0;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
+            this.radioButton2.Text = "Card 2";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(942, 474);
+            this.ClientSize = new System.Drawing.Size(1256, 583);
             this.Controls.Add(this.PlayerHand_group);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox7);
@@ -7627,6 +7366,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Project Oppenheimer";
             this.groupBox7.ResumeLayout(false);

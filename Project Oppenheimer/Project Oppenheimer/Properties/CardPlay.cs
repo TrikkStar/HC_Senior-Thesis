@@ -23,7 +23,8 @@ namespace Project_Oppenheimer.Properties
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            //stuff for it to do
+            this.Close();
         }
     }
 }

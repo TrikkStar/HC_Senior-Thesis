@@ -40,7 +40,7 @@ namespace Project_Oppenheimer.Properties
             game.countryLst.countries[13].set_infUSA(2);
             game.countryLst.countries[55].set_infUSA(2);
             //not final stuff just testing
-            game.advanceTurn();
+            game.cards.deal(1);
         }
 
         public void playCard(int player, int card)

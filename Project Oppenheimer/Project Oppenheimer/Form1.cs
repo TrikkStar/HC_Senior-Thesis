@@ -2134,10 +2134,12 @@ namespace Project_Oppenheimer
             MilitaryOps_USSR.Text = supervisor.game.ussrMilOps.ToString();
             SpaceRace_USA.Text = supervisor.game.usSpaceRace.ToString();
             SpaceRace_USSR.Text = supervisor.game.ussrSpaceRace.ToString();
+            //Add conditions for showing players hand
         }
 
         private void uSAToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Play_cardButton.Enabled = true;
             supervisor.player = 1;
             supervisor.AI = -1;
             supervisor.newGame();
@@ -2147,6 +2149,7 @@ namespace Project_Oppenheimer
 
         private void uSSRToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Play_cardButton.Enabled = true;
             supervisor.player = -1;
             supervisor.AI = 1;
             supervisor.newGame();
@@ -3340,6 +3343,12 @@ namespace Project_Oppenheimer
             var popup = new Properties.EditCountryScore(supervisor.game.countryLst.countries[77]);
             popup.ShowDialog();
             refreshEvent();
+        }
+
+        private void Play_cardButton_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.CardPlay(supervisor.game.cards.ussrHand[0], supervisor);
+            popup.ShowDialog();
         }
     }
 }
