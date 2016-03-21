@@ -888,13 +888,14 @@ namespace Project_Oppenheimer.Properties
         {
             foreach (int regionId in new List<int> {2, 1, 3, 81, 79, 37})
             {
-                if (RealingmentCondition(regionId))
+                if (RegionDefconSafe(regionId) && (RealingmentCondition(regionId)))
                 {
                     actionType = "Realingment";
                     completed = true;
-                    //add logic for chosing single country to realign, possibly multiple times
+                    //add logic for chosing card to use to realign single country, possibly multiple times
+
                 }
-                else if (false)
+                if ((RegionDefconSafe(regionId)) && (CoupCondition(regionId)))
                 {
 
                 }
@@ -994,6 +995,37 @@ namespace Project_Oppenheimer.Properties
                     }
                 }
             }
+            return false;
+        }
+
+        private bool RegionDefconSafe(int region)
+        {
+            switch (region)
+            {
+                case 2:
+                    if (game.defcon < 5)
+                    {
+                        return false;
+                    }
+                    break;
+                case 1:
+                    if (game.defcon < 4)
+                    {
+                        return false;
+                    }
+                    break;
+                case 3:
+                    if (game.defcon < 3)
+                    {
+                        return false;
+                    }
+                    break;
+            }
+            return true;
+        }
+
+        private bool CoupCondition(int region)
+        {
             return false;
         }
     }
