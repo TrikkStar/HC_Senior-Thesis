@@ -65,6 +65,10 @@ namespace Project_Oppenheimer.Properties
                     {
                         playSpaceRace();
                     }
+                    if (!completed)
+                    {
+                        playOpsPoints();
+                    }
                 }
             }
         }
@@ -878,6 +882,119 @@ namespace Project_Oppenheimer.Properties
                 }
             }
             return 0;
+        }
+
+        private int playOpsPoints()
+        {
+            foreach (int regionId in new List<int> {2, 1, 3, 81, 79, 37})
+            {
+                if (RealingmentCondition(regionId))
+                {
+                    actionType = "Realingment";
+                    completed = true;
+                    //add logic for chosing single country to realign, possibly multiple times
+                }
+                else if (false)
+                {
+
+                }
+                else
+                {
+
+                }
+            }
+            return 0;
+        }
+
+        private bool RealingmentCondition(int region)
+        {
+            if (!checkRegionCondition(region))
+            {
+                var area = getRegion(region);
+                foreach (var country in area)
+                {
+                    var temp = game.countryLst.countries[country];
+                    if (side == 1)
+                    {
+                        if ((temp.influenceUSA >= temp.stability) && (temp.influenceUSSR >= 1))
+                        {
+                            int usBonus = 0;
+                            int ussrBonus = 0;
+                            if (temp.influenceUSA > temp.influenceUSSR)
+                            {
+                                usBonus++;
+                            }
+                            foreach (var adjacent in temp.adjacent)
+                            {
+                                if (adjacent == -5)
+                                {
+                                    usBonus++;
+                                }
+                                else if (adjacent == -10)
+                                {
+                                    ussrBonus++;
+                                }
+                                else
+                                {
+                                    if(game.countryLst.countries[adjacent].controller == 1)
+                                    {
+                                        usBonus++;
+                                    }
+                                    else if (game.countryLst.countries[adjacent].controller == -1)
+                                    {
+                                        ussrBonus++;
+                                    }
+                                }
+                            }
+                            if (usBonus > ussrBonus)
+                            {
+                                targets.Add(country);
+                                return true;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        if ((temp.influenceUSSR >= temp.stability) && (temp.influenceUSA >= 1))
+                        {
+                            int usBonus = 0;
+                            int ussrBonus = 0;
+                            if (temp.influenceUSSR > temp.influenceUSA)
+                            {
+                                ussrBonus++;
+                            }
+                            foreach (var adjacent in temp.adjacent)
+                            {
+                                if (adjacent == -5)
+                                {
+                                    usBonus++;
+                                }
+                                else if (adjacent == -10)
+                                {
+                                    ussrBonus++;
+                                }
+                                else
+                                {
+                                    if (game.countryLst.countries[adjacent].controller == 1)
+                                    {
+                                        usBonus++;
+                                    }
+                                    else if (game.countryLst.countries[adjacent].controller == -1)
+                                    {
+                                        ussrBonus++;
+                                    }
+                                }
+                            }
+                            if (usBonus < ussrBonus)
+                            {
+                                targets.Add(country);
+                                return true;
+                            }
+                        }
+                    }
+                }
+            }
+            return false;
         }
     }
 }
