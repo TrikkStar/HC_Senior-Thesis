@@ -1035,6 +1035,38 @@ namespace Project_Oppenheimer.Properties
 
         private bool CoupCondition(int region)
         {
+            if (!checkRegionCondition(region))
+            {
+                var area = getRegion(region);
+                foreach (var country in area)
+                {
+                    var temp = game.countryLst.countries[country];
+                    if (!((game.defcon == 2) && (!temp.battleground)))
+                    {
+                        if (side == 1)
+                        {
+                            if (game.usMilOps < 4)
+                            {
+                                //needto determine diff between stability value and influence
+                                if ((temp.influenceUSSR > temp.influenceUSA) && (temp.influenceUSSR >= 1))
+                                {
+
+                                }
+                            }
+                        }
+                        else
+                        {
+                            if (game.ussrMilOps < 4)
+                            {
+                                if ((temp.influenceUSSR >= temp.stability) && (temp.influenceUSA >= 1))
+                                {
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             return false;
         }
     }
