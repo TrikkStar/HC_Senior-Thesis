@@ -11,51 +11,76 @@ namespace Project_Oppenheimer.Properties
         public string actionType;
         public int cardToPlay;
         public List<int> targets;
+        public List<int> targetAmounts;
         private bool completed = false;
         private List<Card> hand;
         private Gamestate game;
         private int side;
+        private Random rng;
 
         public Robert(Gamestate gme, int sde)
         {
             game = gme;
             side = sde;
-            if (side == 1)
+            targetAmounts = new List<int> {};
+            if (game.turn == 0)
             {
-                hand = game.cards.usHand;
+                initalInfluencePlacement();
             }
             else
             {
-                hand = game.cards.ussrHand;
-            }
-            targets = new List<int>();
-            if (game.turn == 0)
-            {
-                playScoringCard();
-                if (!completed)
+                if (side == 1)
                 {
-                    playEventCard();
+                    hand = game.cards.usHand;
                 }
-                if (!completed)
+                else
                 {
-                    if (hand[0].id != 6)
+                    hand = game.cards.ussrHand;
+                }
+                targets = new List<int>();
+                if (game.round == 0)
+                {
+                    playScoringCard();
+                    if (!completed)
                     {
-                        cardToPlay = hand[0].id;
-                        actionType = "Desperation";
+                        playEventCard();
+                    }
+                    if (!completed)
+                    {
+                        if (hand[0].id != 6)
+                        {
+                            cardToPlay = hand[0].id;
+                            actionType = "Desperation";
+                        }
+                    }
+                }
+                else
+                {
+                    playScoringCard();
+                    if (!completed)
+                    {
+                        playEventCard();
+                    }
+                    if (!completed)
+                    {
+                        playSpaceRace();
                     }
                 }
             }
+        }
+
+        private void initalInfluencePlacement()
+        {
+            rng = new Random();
+            actionType = "Inital Placement";
+            if (side == 1)
+            {
+                //need to implement general placement functions
+                //can do wide vs. tall placement vs. random placement
+            }
             else
             {
-                playScoringCard();
-                if (!completed)
-                {
-                    playEventCard();
-                }
-                if (!completed)
-                {
-                    playSpaceRace();
-                }
+
             }
         }
 
@@ -472,6 +497,7 @@ namespace Project_Oppenheimer.Properties
                                 if (temp.influenceUSA >= influence)
                                 {
                                     targets.Add(country);
+                                    targetAmounts.Add(amount);
                                     return 0;
                                 }
                             }
@@ -480,6 +506,7 @@ namespace Project_Oppenheimer.Properties
                                 if (temp.influenceUSSR >= influence)
                                 {
                                     targets.Add(country);
+                                    targetAmounts.Add(amount);
                                     return 0;
                                 }
                             }
@@ -498,6 +525,7 @@ namespace Project_Oppenheimer.Properties
                                 if (temp.influenceUSA >= influence)
                                 {
                                     targets.Add(country);
+                                    targetAmounts.Add(amount);
                                     return 0;
                                 }
                             }
@@ -506,6 +534,7 @@ namespace Project_Oppenheimer.Properties
                                 if (temp.influenceUSSR >= influence)
                                 {
                                     targets.Add(country);
+                                    targetAmounts.Add(amount);
                                     return 0;
                                 }
                             }
@@ -531,6 +560,7 @@ namespace Project_Oppenheimer.Properties
                             if (temp.stability - temp.influenceUSA <= influence)
                             {
                                 targets.Add(country);
+                                targetAmounts.Add(amount);
                                 return 0;
                             }
                         }
@@ -539,6 +569,7 @@ namespace Project_Oppenheimer.Properties
                             if (temp.stability - temp.influenceUSSR <= influence)
                             {
                                 targets.Add(country);
+                                targetAmounts.Add(amount);
                                 return 0;
                             }
                         }
@@ -554,6 +585,7 @@ namespace Project_Oppenheimer.Properties
                             if (temp.stability - temp.influenceUSA <= influence)
                             {
                                 targets.Add(country);
+                                targetAmounts.Add(amount);
                                 return 0;
                             }
                         }
@@ -562,6 +594,7 @@ namespace Project_Oppenheimer.Properties
                             if (temp.stability - temp.influenceUSSR <= influence)
                             {
                                 targets.Add(country);
+                                targetAmounts.Add(amount);
                                 return 0;
                             }
                         }
@@ -586,6 +619,7 @@ namespace Project_Oppenheimer.Properties
                             if (temp.stability - temp.influenceUSA <= influence)
                             {
                                 targets.Add(country);
+                                targetAmounts.Add(amount);
                                 return 0;
                             }
                         }
@@ -594,6 +628,7 @@ namespace Project_Oppenheimer.Properties
                             if (temp.stability - temp.influenceUSSR <= influence)
                             {
                                 targets.Add(country);
+                                targetAmounts.Add(amount);
                                 return 0;
                             }
                         }
@@ -685,6 +720,7 @@ namespace Project_Oppenheimer.Properties
                 if (game.countryLst.countries[country].influenceUSSR >= 2)
                 {
                     targets.Add(country);
+                    targetAmounts.Add(game.countryLst.countries[country].influenceUSSR);
                     return true;
                 }
             }
@@ -704,6 +740,7 @@ namespace Project_Oppenheimer.Properties
                         if (stability - temp.influenceUSSR == 1)
                         {
                             targets.Add(country);
+                            targetAmounts.Add(temp.influenceUSSR);
                             return true;
                         }
                     }
@@ -715,6 +752,7 @@ namespace Project_Oppenheimer.Properties
                     {
                         if (stability - temp.influenceUSSR == 1)
                         {
+                            targetAmounts.Add(temp.influenceUSSR);
                             targets.Add(country);
                             return true;
                         }
@@ -766,14 +804,17 @@ namespace Project_Oppenheimer.Properties
                 if (israel.influenceUSA >= 2)
                 {
                     targets.Add(38);
+                    targetAmounts.Add(2);
                 }
                 if (france.influenceUSA >= 2)
                 {
                     targets.Add(27);
+                    targetAmounts.Add(2);
                 }
                 if ((UK.influenceUSSR >= 2) && (targets.Count < 2))
                 {
                     targets.Add(75);
+                    targetAmounts.Add(2);
                 }
                 return true;
             }
