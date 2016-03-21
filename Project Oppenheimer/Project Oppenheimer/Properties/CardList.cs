@@ -186,7 +186,7 @@ namespace Project_Oppenheimer.Properties
             Card card022 = new Card("Independent Reds", 22, 2, 1, false);
             earlyWar.Add(card022);
 
-            Card card023 = new Card("Mershal Plan", 23, 4, 1, false);
+            Card card023 = new Card("Marshall Plan", 23, 4, 1, false);
             earlyWar.Add(card023);
 
             Card card026 = new Card("CIA Created", 26, 1, 1, false);
@@ -276,7 +276,7 @@ namespace Project_Oppenheimer.Properties
             Card card024 = new Card("Indo-Pakistani War", 24, 2, 0, false);
             earlyWar.Add(card024);
 
-            Card card030 = new Card("Decolinization", 30, 2, -1, false);
+            Card card030 = new Card("Decolonization", 30, 2, -1, false);
             earlyWar.Add(card030);
 
             Card card009 = new Card("Vietnam Revolts", 9, 2, -1, false);
@@ -487,7 +487,7 @@ namespace Project_Oppenheimer.Properties
             Card card093 = new Card("Iran-Contra Scandal", 93, 2, -1, false);
             lateWar.Add(card093);
 
-            Card card088 = new Card("Marine Baracks Bombing", 88, 2, -1, false);
+            Card card088 = new Card("Marine Barracks Bombing", 88, 2, -1, false);
             lateWar.Add(card088);
 
             Card card089 = new Card("Soviets Shoot Down KAL-007", 89, 4, 1, false);
