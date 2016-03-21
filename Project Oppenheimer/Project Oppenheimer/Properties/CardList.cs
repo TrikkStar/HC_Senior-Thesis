@@ -31,7 +31,7 @@ namespace Project_Oppenheimer.Properties
             init_MW();
             init_LW();
             shuffel();
-            Card china = new Card("The China Card", 6, 4, 0, false);
+            Card china = new Card("The China Card", 6, 4, 0, false, false);
             facedownChinaUssr.Add(china);
         }
 
@@ -174,118 +174,118 @@ namespace Project_Oppenheimer.Properties
         {
             earlyWar = new List<Card>();
             
-            Card card005 = new Card("Five-Year Plan", 5, 3, 1, false);
+            Card card005 = new Card("Five-Year Plan", 5, 3, 1, false, false);
             earlyWar.Add(card005);
 
-            Card card019 = new Card("Truman Doctrine", 19, 1, 1, false);
+            Card card019 = new Card("Truman Doctrine", 19, 1, 1, false, true);
             earlyWar.Add(card019);
 
-            Card card021 = new Card("NATO", 21, 4, 1, false);
+            Card card021 = new Card("NATO", 21, 4, 1, false, true);
             earlyWar.Add(card021);
 
-            Card card022 = new Card("Independent Reds", 22, 2, 1, false);
+            Card card022 = new Card("Independent Reds", 22, 2, 1, false, true);
             earlyWar.Add(card022);
 
-            Card card023 = new Card("Marshall Plan", 23, 4, 1, false);
+            Card card023 = new Card("Marshall Plan", 23, 4, 1, false, true);
             earlyWar.Add(card023);
 
-            Card card026 = new Card("CIA Created", 26, 1, 1, false);
+            Card card026 = new Card("CIA Created", 26, 1, 1, false, true);
             earlyWar.Add(card026);
 
-            Card card025 = new Card("Containment", 25, 3, 1, false);
+            Card card025 = new Card("Containment", 25, 3, 1, false, true);
             earlyWar.Add(card025);
 
-            Card card029 = new Card("East European Unrest", 29, 3, 1, false);
+            Card card029 = new Card("East European Unrest", 29, 3, 1, false, false);
             earlyWar.Add(card029);
 
-            Card card035 = new Card("Formosan Resolution", 35, 2, 1, false);
+            Card card035 = new Card("Formosan Resolution", 35, 2, 1, false, true);
             earlyWar.Add(card035);
 
-            Card card103 = new Card("Defectors", 103, 2, 1, false);
+            Card card103 = new Card("Defectors", 103, 2, 1, false, false);
             earlyWar.Add(card103);
 
-            Card card105 = new Card("Special Relationship", 105, 2, 1, false);
+            Card card105 = new Card("Special Relationship", 105, 2, 1, false, false);
             earlyWar.Add(card105);
 
-            Card card106 = new Card("NORAD", 106, 3, 1, false);
+            Card card106 = new Card("NORAD", 106, 3, 1, false, false);
             earlyWar.Add(card106);
 
-            Card card004 = new Card("Duck and Cover", 4, 3, 1, false);
+            Card card004 = new Card("Duck and Cover", 4, 3, 1, false, false);
             earlyWar.Add(card004);
 
-            Card card027 = new Card("US/Japan Mutual Defense Pact", 27, 4, 1, false);
+            Card card027 = new Card("US/Japan Mutual Defense Pact", 27, 4, 1, false, true);
             earlyWar.Add(card027);
 
-            Card card002 = new Card("Europe Scoring", 2, 0, 0, true);
+            Card card002 = new Card("Europe Scoring", 2, 0, 0, true, false);
             earlyWar.Add(card002);
 
-            Card card001 = new Card("Asia Scoring", 1, 0, 0, true);
+            Card card001 = new Card("Asia Scoring", 1, 0, 0, true, false);
             earlyWar.Add(card001);
 
-            Card card003 = new Card("Middle East Scoring", 3, 0, 0, true);
+            Card card003 = new Card("Middle East Scoring", 3, 0, 0, true, false);
             earlyWar.Add(card003);
 
-            Card card031 = new Card("Red Scare/Purge", 31, 4, 0, false);
+            Card card031 = new Card("Red Scare/Purge", 31, 4, 0, false, false);
             earlyWar.Add(card031);
 
-            Card card016 = new Card("Warsaw Pact Formed", 16, 3, -1, false);
+            Card card016 = new Card("Warsaw Pact Formed", 16, 3, -1, false, true);
             earlyWar.Add(card016);
 
-            Card card028 = new Card("Suez Crisis", 28, 3, -1, false);
+            Card card028 = new Card("Suez Crisis", 28, 3, -1, false, true);
             earlyWar.Add(card028);
 
-            Card card007 = new Card("Socialist Governments", 7, 3, -1, false);
+            Card card007 = new Card("Socialist Governments", 7, 3, -1, false, false);
             earlyWar.Add(card007);
 
-            Card card018 = new Card("Captured Nazi Scientist", 18, 1, 0, false);
+            Card card018 = new Card("Captured Nazi Scientist", 18, 1, 0, false, true);
             earlyWar.Add(card018);
 
-            Card card032 = new Card("UN Intervention", 32, 1, 0, false);
+            Card card032 = new Card("UN Intervention", 32, 1, 0, false, false);
             earlyWar.Add(card032);
 
-            Card card034 = new Card("Nuclear Test Ban", 34, 4, 0, false);
+            Card card034 = new Card("Nuclear Test Ban", 34, 4, 0, false, false);
             earlyWar.Add(card034);
 
-            Card card020 = new Card("Olympic Games", 20, 2, 0, false);
+            Card card020 = new Card("Olympic Games", 20, 2, 0, false, false);
             earlyWar.Add(card020);
 
-            Card card033 = new Card("De-Stalinization", 33, 3, -1, false);
+            Card card033 = new Card("De-Stalinization", 33, 3, -1, false, true);
             earlyWar.Add(card033);
 
-            Card card008 = new Card("Fidel", 8, 2, -1, false);
+            Card card008 = new Card("Fidel", 8, 2, -1, false, true);
             earlyWar.Add(card008);
 
-            Card card012 = new Card("Romanian Abdication", 12, 1, -1, false);
+            Card card012 = new Card("Romanian Abdication", 12, 1, -1, false, true);
             earlyWar.Add(card012);
 
-            Card card015 = new Card("Nassir", 15, 1, -1, false);
+            Card card015 = new Card("Nassir", 15, 1, -1, false, true);
             earlyWar.Add(card015);
 
-            Card card104 = new Card("The Cambridge Five", 104, 2, -1, false);
+            Card card104 = new Card("The Cambridge Five", 104, 2, -1, false, false);
             earlyWar.Add(card104);
 
-            Card card010 = new Card("Blockade", 10, 1, -1, false);
+            Card card010 = new Card("Blockade", 10, 1, -1, false, true);
             earlyWar.Add(card010);
 
-            Card card013 = new Card("Arab-Israeli War", 13, 2, -1, false);
+            Card card013 = new Card("Arab-Israeli War", 13, 2, -1, false, false);
             earlyWar.Add(card013);
 
-            Card card011 = new Card("Korean War", 11, 2, -1, false);
+            Card card011 = new Card("Korean War", 11, 2, -1, false, true);
             earlyWar.Add(card011);
 
-            Card card024 = new Card("Indo-Pakistani War", 24, 2, 0, false);
+            Card card024 = new Card("Indo-Pakistani War", 24, 2, 0, false, false);
             earlyWar.Add(card024);
 
-            Card card030 = new Card("Decolonization", 30, 2, -1, false);
+            Card card030 = new Card("Decolonization", 30, 2, -1, false, false);
             earlyWar.Add(card030);
 
-            Card card009 = new Card("Vietnam Revolts", 9, 2, -1, false);
+            Card card009 = new Card("Vietnam Revolts", 9, 2, -1, false, true);
             earlyWar.Add(card009);
 
-            Card card017 = new Card("De Gaulle Leads France", 17, 3, -1, false);
+            Card card017 = new Card("De Gaulle Leads France", 17, 3, -1, false, true);
             earlyWar.Add(card017);
 
-            Card card014 = new Card("COMECON", 14, 3, -1, false);
+            Card card014 = new Card("COMECON", 14, 3, -1, false, true);
             earlyWar.Add(card014);
 
             deck.AddRange(earlyWar.Take(earlyWar.Count));
@@ -295,148 +295,148 @@ namespace Project_Oppenheimer.Properties
         {
             midWar = new List<Card>();
 
-            Card card044 = new Card("Bear Trap", 44, 3, 1, false);
+            Card card044 = new Card("Bear Trap", 44, 3, 1, false, true);
             midWar.Add(card044);
 
-            Card card038 = new Card("Southeast Asia Scoring", 38, 0, 0, true);
+            Card card038 = new Card("Southeast Asia Scoring", 38, 0, 0, true, true);
             midWar.Add(card038);
 
-            Card card078 = new Card("Alliance for Progress", 78, 3, 1, false);
+            Card card078 = new Card("Alliance for Progress", 78, 3, 1, false, true);
             midWar.Add(card078);
 
-            Card card058 = new Card("Cultural Revolution", 58, 3, -1, false);
+            Card card058 = new Card("Cultural Revolution", 58, 3, -1, false, true);
             midWar.Add(card058);
 
-            Card card041 = new Card("Nuclear Subs", 41, 2, 1, false);
+            Card card041 = new Card("Nuclear Subs", 41, 2, 1, false, true);
             midWar.Add(card041);
 
-            Card card062 = new Card("Lone Gunman", 62, 1, -1, false);
+            Card card062 = new Card("Lone Gunman", 62, 1, -1, false, true);
             midWar.Add(card041);
 
-            Card card072 = new Card("Sadat Expels Soviets", 72, 1, 1, false);
+            Card card072 = new Card("Sadat Expels Soviets", 72, 1, 1, false, true);
             midWar.Add(card072);
 
-            Card card064 = new Card("Panama Canal Returned", 64, 1, 1, false);
+            Card card064 = new Card("Panama Canal Returned", 64, 1, 1, false, true);
             midWar.Add(card064);
 
-            Card card066 = new Card("Puppet Governments", 66, 2, 1, false);
+            Card card066 = new Card("Puppet Governments", 66, 2, 1, false, true);
             midWar.Add(card066);
 
-            Card card060 = new Card("U2 Incident", 60, 3, -1, false);
+            Card card060 = new Card("U2 Incident", 60, 3, -1, false, true);
             midWar.Add(card060);
 
-            Card card048 = new Card("Kitchen Debates", 48, 1, 1, false);
+            Card card048 = new Card("Kitchen Debates", 48, 1, 1, false, true);
             midWar.Add(card048);
 
-            Card card077 = new Card("Ask Not What Your Country Can Do for You...", 77, 3, 1, false);
+            Card card077 = new Card("Ask Not What Your Country Can Do for You...", 77, 3, 1, false, true);
             midWar.Add(card077);
 
-            Card card046 = new Card("How I Learned to Stop Worrying", 46, 2, 0, false);
+            Card card046 = new Card("How I Learned to Stop Worrying", 46, 2, 0, false, true);
             midWar.Add(card046);
 
-            Card card040 = new Card("Cuban Missile Crisis", 40, 3, 0, false);
+            Card card040 = new Card("Cuban Missile Crisis", 40, 3, 0, false, true);
             midWar.Add(card040);
 
-            Card card055 = new Card("Willy Brandt", 55, 2, -1, false);
+            Card card055 = new Card("Willy Brandt", 55, 2, -1, false, true);
             midWar.Add(card055);
 
-            Card card065 = new Card("Camp David Accords", 65, 2, 1, false);
+            Card card065 = new Card("Camp David Accords", 65, 2, 1, false, true);
             midWar.Add(card065);
 
-            Card card054 = new Card("Allende", 54, 1, -1, false);
+            Card card054 = new Card("Allende", 54, 1, -1, false, true);
             midWar.Add(card054);
 
-            Card card070 = new Card("OAS Founded", 70, 1, 1, false);
+            Card card070 = new Card("OAS Founded", 70, 1, 1, false, true);
             midWar.Add(card070);
 
-            Card card049 = new Card("Missile Envy", 49, 2, 0, false);
+            Card card049 = new Card("Missile Envy", 49, 2, 0, false, false);
             midWar.Add(card049);
 
-            Card card069 = new Card("Latin American Death Squads", 69, 2, 0, false);
+            Card card069 = new Card("Latin American Death Squads", 69, 2, 0, false, false);
             midWar.Add(card069);
 
-            Card card108 = new Card("Our Man in Tehran", 108, 2, 1, false);
+            Card card108 = new Card("Our Man in Tehran", 108, 2, 1, false, true);
             midWar.Add(card108);
 
-            Card card063 = new Card("Colonial Rear Guards", 63, 2, 1, false);
+            Card card063 = new Card("Colonial Rear Guards", 63, 2, 1, false, false);
             midWar.Add(card063);
 
-            Card card075 = new Card("Liberation Theology", 75, 2, -1, false);
+            Card card075 = new Card("Liberation Theology", 75, 2, -1, false, false);
             midWar.Add(card075);
 
-            Card card074 = new Card("The Voice of America", 74, 2, 1, false);
+            Card card074 = new Card("The Voice of America", 74, 2, 1, false, false);
             midWar.Add(card074);
 
-            Card card073 = new Card("Shuttle Diplomacy", 73, 3, 1, false);
+            Card card073 = new Card("Shuttle Diplomacy", 73, 3, 1, false, false);
             midWar.Add(card073);
 
-            Card card059 = new Card("Flower Power", 59, 4, -1, false);
+            Card card059 = new Card("Flower Power", 59, 4, -1, false, true);
             midWar.Add(card059);
 
-            Card card107 = new Card("Che", 107, 3, -1, false);
+            Card card107 = new Card("Che", 107, 3, -1, false, false);
             midWar.Add(card107);
 
-            Card card045 = new Card("Summit", 45, 1, 0, false);
+            Card card045 = new Card("Summit", 45, 1, 0, false, false);
             midWar.Add(card045);
 
-            Card card053 = new Card("South African Unrest", 53, 2, -1, false);
+            Card card053 = new Card("South African Unrest", 53, 2, -1, false, false);
             midWar.Add(card053);
 
-            Card card042 = new Card("Quagmire", 42, 3, -1, false);
+            Card card042 = new Card("Quagmire", 42, 3, -1, false, true);
             midWar.Add(card042);
 
-            Card card056 = new Card("Muslim Revolution", 56, 4, -1, false);
+            Card card056 = new Card("Muslim Revolution", 56, 4, -1, false, false);
             midWar.Add(card056);
 
-            Card card043 = new Card("SALT Negotiations", 43, 3, 0, false);
+            Card card043 = new Card("SALT Negotiations", 43, 3, 0, false, true);
             midWar.Add(card043);
 
-            Card card057 = new Card("ABM Treaty", 57, 4, 0, false);
+            Card card057 = new Card("ABM Treaty", 57, 4, 0, false, false);
             midWar.Add(card057);
 
-            Card card039 = new Card("Arms Race", 39, 3, 0, false);
+            Card card039 = new Card("Arms Race", 39, 3, 0, false, false);
             midWar.Add(card039);
 
-            Card card080 = new Card("One Small Step...", 80, 2, 0, false);
+            Card card080 = new Card("One Small Step...", 80, 2, 0, false, false);
             midWar.Add(card080);
 
-            Card card068 = new Card("John Paul II Elected Pope", 68, 2, 1, false);
+            Card card068 = new Card("John Paul II Elected Pope", 68, 2, 1, false, true);
             midWar.Add(card068);
 
-            Card card047 = new Card("Junta", 47, 2, 0, false);
+            Card card047 = new Card("Junta", 47, 2, 0, false, false);
             midWar.Add(card047);
 
-            Card card036 = new Card("Brush War", 36, 3, 0, false);
+            Card card036 = new Card("Brush War", 36, 3, 0, false, false);
             midWar.Add(card036);
 
-            Card card079 = new Card("Africa Scoring", 79, 0, 0, true);
+            Card card079 = new Card("Africa Scoring", 79, 0, 0, true, false);
             midWar.Add(card079);
 
-            Card card081 = new Card("South America Scoring", 81, 0, 0, true);
+            Card card081 = new Card("South America Scoring", 81, 0, 0, true, false);
             midWar.Add(card081);
 
-            Card card050 = new Card("We Will Bury You", 50, 4, -1, false);
+            Card card050 = new Card("We Will Bury You", 50, 4, -1, false, true);
             midWar.Add(card050);
 
-            Card card067 = new Card("Grain Sales to Soviets", 67, 2, 1, false);
+            Card card067 = new Card("Grain Sales to Soviets", 67, 2, 1, false, false);
             midWar.Add(card067);
 
-            Card card051 = new Card("Brezhnev Doctrine", 51, 3, -1, false);
+            Card card051 = new Card("Brezhnev Doctrine", 51, 3, -1, false, true);
             midWar.Add(card051);
 
-            Card card037 = new Card("Central America Scoring", 37, 0, 0, true);
+            Card card037 = new Card("Central America Scoring", 37, 0, 0, true, false);
             midWar.Add(card037);
 
-            Card card076 = new Card("Ussuri River Skirmish", 76, 3, 1, false);
+            Card card076 = new Card("Ussuri River Skirmish", 76, 3, 1, false, true);
             midWar.Add(card076);
 
-            Card card071 = new Card("Nixon Plays the China Card", 71, 2, 1, false);
+            Card card071 = new Card("Nixon Plays the China Card", 71, 2, 1, false, true);
             midWar.Add(card071);
 
-            Card card052 = new Card("Portuguese Empire Crumbles", 52, 2, -1, false);
+            Card card052 = new Card("Portuguese Empire Crumbles", 52, 2, -1, false, true);
             midWar.Add(card052);
 
-            Card card061 = new Card("OPEC", 61, 3, -1, false);
+            Card card061 = new Card("OPEC", 61, 3, -1, false, false);
             midWar.Add(card061);
 
         }
@@ -445,73 +445,73 @@ namespace Project_Oppenheimer.Properties
         {
             lateWar = new List<Card>();
 
-            Card card087 = new Card("The Reformer", 87, 3, -1, false);
+            Card card087 = new Card("The Reformer", 87, 3, -1, false, true);
             lateWar.Add(card087);
 
-            Card card102 = new Card("Iran-Iraq War", 102, 2, 0, false);
+            Card card102 = new Card("Iran-Iraq War", 102, 2, 0, false, true);
             lateWar.Add(card102);
 
-            Card card086 = new Card("North Sea Oil", 86, 3, 1, false);
+            Card card086 = new Card("North Sea Oil", 86, 3, 1, false, true);
             lateWar.Add(card086);
 
-            Card card084 = new Card("Reagan Bombs Libya", 84, 2, 1, false);
+            Card card084 = new Card("Reagan Bombs Libya", 84, 2, 1, false, true);
             lateWar.Add(card084);
 
-            Card card083 = new Card("The Iron Lady", 83, 3, 1, false);
+            Card card083 = new Card("The Iron Lady", 83, 3, 1, false, true);
             lateWar.Add(card083);
 
-            Card card096 = new Card("Tear Down This Wall", 96, 3, 1, false);
+            Card card096 = new Card("Tear Down This Wall", 96, 3, 1, false, true);
             lateWar.Add(card096);
 
-            Card card110 = new Card("AWACS Sale to Saudis", 110, 3, 1, false);
+            Card card110 = new Card("AWACS Sale to Saudis", 110, 3, 1, false, false);
             lateWar.Add(card110);
 
-            Card card097 = new Card("An Evil Empire", 97, 3, 1, false);
+            Card card097 = new Card("An Evil Empire", 97, 3, 1, false, true);
             lateWar.Add(card097);
 
-            Card card095 = new Card("Latin American Debt Crisis", 95, 2, -1, false);
+            Card card095 = new Card("Latin American Debt Crisis", 95, 2, -1, false, false);
             lateWar.Add(card095);
 
-            Card card109 = new Card("Yuri and Samantha", 109, 2, -1, false);
+            Card card109 = new Card("Yuri and Samantha", 109, 2, -1, false, true);
             lateWar.Add(card109);
 
-            Card card085 = new Card("Star Wars", 85, 2, 1, false);
+            Card card085 = new Card("Star Wars", 85, 2, 1, false, true);
             lateWar.Add(card085);
 
-            Card card082 = new Card("Iranian Hostage Crisis", 82, 3, -1, false);
+            Card card082 = new Card("Iranian Hostage Crisis", 82, 3, -1, false, true);
             lateWar.Add(card082);
 
-            Card card094 = new Card("Chernobyl", 94, 3, -1, false);
+            Card card094 = new Card("Chernobyl", 94, 3, -1, false, true);
             lateWar.Add(card094);
 
-            Card card093 = new Card("Iran-Contra Scandal", 93, 2, -1, false);
+            Card card093 = new Card("Iran-Contra Scandal", 93, 2, -1, false, true);
             lateWar.Add(card093);
 
-            Card card088 = new Card("Marine Barracks Bombing", 88, 2, -1, false);
+            Card card088 = new Card("Marine acks Bombing", 88, 2, -1, false, true);
             lateWar.Add(card088);
 
-            Card card089 = new Card("Soviets Shoot Down KAL-007", 89, 4, 1, false);
+            Card card089 = new Card("Soviets Shoot Down KAL-007", 89, 4, 1, false, true);
             lateWar.Add(card089);
 
-            Card card090 = new Card("Glasnost", 90, 4, -1, false);
+            Card card090 = new Card("Glasnost", 90, 4, -1, false, true);
             lateWar.Add(card090);
 
-            Card card091 = new Card("Ortega Elected in Nicaragua", 91, 2, -1, false);
+            Card card091 = new Card("Ortega Elected in Nicaragua", 91, 2, -1, false, true);
             lateWar.Add(card091);
 
-            Card card092 = new Card("Terrorism", 92, 2, 0, false);
+            Card card092 = new Card("Terrorism", 92, 2, 0, false, false);
             lateWar.Add(card092);
 
-            Card card098 = new Card("Aldrich AMES Remix", 98, 3, -1, false);
+            Card card098 = new Card("Aldrich AMES Remix", 98, 3, -1, false, true);
             lateWar.Add(card098);
 
-            Card card099 = new Card("Pershing II Deployed", 99, 3, -1, false);
+            Card card099 = new Card("Pershing II Deployed", 99, 3, -1, false, true);
             lateWar.Add(card099);
 
-            Card card101 = new Card("Solidarity", 101, 2, 1, false);
+            Card card101 = new Card("Solidarity", 101, 2, 1, false, true);
             lateWar.Add(card101);
 
-            Card card100 = new Card("Wargames", 100, 4, 0, false);
+            Card card100 = new Card("Wargames", 100, 4, 0, false, true);
             lateWar.Add(card100);
         }
     }
