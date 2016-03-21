@@ -886,6 +886,7 @@ namespace Project_Oppenheimer.Properties
 
         private int playOpsPoints()
         {
+            //realingment and coup logic should be more rigiorous
             foreach (int regionId in new List<int> {2, 1, 3, 81, 79, 37})
             {
                 if (RegionDefconSafe(regionId) && (RealingmentCondition(regionId)))
@@ -899,6 +900,7 @@ namespace Project_Oppenheimer.Properties
                             if ((card.affiliation != -side) && (card.opsValue == ops))
                             {
                                 cardToPlay = card.id;
+                                targetAmounts.Add(card.opsValue);
                                 return 0;
                             }
                         }
@@ -906,7 +908,19 @@ namespace Project_Oppenheimer.Properties
                 }
                 else if ((RegionDefconSafe(regionId)) && (CoupCondition(regionId)))
                 {
+                    actionType = "Coup";
+                    completed = true;
+                    foreach (int ops in new List<int> { 1, 2, 3, 4 })
+                    {
+                        foreach (Card card in hand)
+                        {
+                            if ((card.affiliation != -side) && (card.opsValue == ops))
+                            {
+                                //determine if ops value is enough to sucessfully coup in target
 
+                            }
+                        }
+                    }
                 }
                 else
                 {
@@ -1047,10 +1061,10 @@ namespace Project_Oppenheimer.Properties
                         {
                             if (game.usMilOps < 4)
                             {
-                                //needto determine diff between stability value and influence
-                                if ((temp.influenceUSSR > temp.influenceUSA) && (temp.influenceUSSR >= 1))
+                                if ((temp.influenceUSSR > temp.influenceUSA) && (Math.Abs(temp.influenceUSSR - temp.stability) <= 2))
                                 {
-
+                                    targets.Add(country);
+                                    return true;
                                 }
                             }
                         }
@@ -1058,9 +1072,10 @@ namespace Project_Oppenheimer.Properties
                         {
                             if (game.ussrMilOps < 4)
                             {
-                                if ((temp.influenceUSSR >= temp.stability) && (temp.influenceUSA >= 1))
+                                if ((temp.influenceUSSR < temp.influenceUSA) && (Math.Abs(temp.influenceUSA - temp.stability) <= 2))
                                 {
-
+                                    targets.Add(country);
+                                    return true;
                                 }
                             }
                         }
