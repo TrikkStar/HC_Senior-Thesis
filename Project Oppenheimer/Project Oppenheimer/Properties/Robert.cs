@@ -892,10 +892,19 @@ namespace Project_Oppenheimer.Properties
                 {
                     actionType = "Realingment";
                     completed = true;
-                    //add logic for chosing card to use to realign single country, possibly multiple times
-
+                    foreach (int ops in new List<int> { 1, 2, 3, 4 })
+                    {
+                        foreach (Card card in hand)
+                        {
+                            if ((card.affiliation != -side) && (card.opsValue == ops))
+                            {
+                                cardToPlay = card.id;
+                                return 0;
+                            }
+                        }
+                    }
                 }
-                if ((RegionDefconSafe(regionId)) && (CoupCondition(regionId)))
+                else if ((RegionDefconSafe(regionId)) && (CoupCondition(regionId)))
                 {
 
                 }
