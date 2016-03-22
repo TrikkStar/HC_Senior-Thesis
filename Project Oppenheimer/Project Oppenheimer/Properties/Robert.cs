@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Project_Oppenheimer.Properties
 {
@@ -77,15 +75,55 @@ namespace Project_Oppenheimer.Properties
         {
             rng = new Random();
             actionType = "Inital Placement";
+            int rand = rng.Next(3);
             if (side == 1)
             {
-                //need to implement general placement functions
                 //can do wide vs. tall placement vs. random placement
+                switch (rand)
+                {
+                    case 0:
+                        int temp = 0;
+                        while (temp < 7)
+                        {
+                            targetCountryAdd(-4, 1);
+                            temp++;
+                        }
+                        break;
+                    case 1:
+                        targets.Add(27);
+                        targetAmounts.Add(3);
+                        targets.Add(79);
+                        targetAmounts.Add(4);
+                        break;
+                    case 2:
+                        PlaceInfluenceInRegion(7, -4);
+                        break;
+                }
             }
             else
             {
-
+                switch (rand)
+                {
+                    case 0:
+                        int temp = 0;
+                        while (temp < 6)
+                        {
+                            targetCountryAdd(-2, 1);
+                            temp++;
+                        }
+                        break;
+                    case 1:
+                        targets.Add(21);
+                        targetAmounts.Add(3);
+                        targets.Add(59);
+                        targetAmounts.Add(3);
+                        break;
+                    case 2:
+                        PlaceInfluenceInRegion(6, -2);
+                        break;
+                }
             }
+            completed = true;
         }
 
         private int playScoringCard()
@@ -1214,14 +1252,21 @@ namespace Project_Oppenheimer.Properties
                             }
                             else
                             {
-                                if (side == 1)
-                                {
-                                    int diff = Math.Abs(temp.influenceUSA - temp.influenceUSSR);
-                                }
-                                else
-                                {
-
-                                }
+                                int diff = temp.stability - Math.Abs(temp.influenceUSA - temp.influenceUSSR);
+                                    if ((diff < amount) && (diff > 0))
+                                    {
+                                        targetAmounts.Add(amount - diff);
+                                        targets.Add(temp.id);
+                                        amount = amount - diff;
+                                        break;
+                                    }
+                                    else
+                                    {
+                                        targetAmounts.Add(1);
+                                        targets.Add(temp.id);
+                                        amount--;
+                                        break;
+                                    }
                             }
                         }
                     }
