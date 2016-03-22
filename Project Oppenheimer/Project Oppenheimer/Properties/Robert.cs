@@ -917,7 +917,10 @@ namespace Project_Oppenheimer.Properties
                             if ((card.affiliation != -side) && (card.opsValue == ops))
                             {
                                 //determine if ops value is enough to sucessfully coup in target
+                                if (Math.Abs((2 * game.countryLst.countries[targets[0]].stability) - card.opsValue) <= 4)
+                                {
 
+                                }
                             }
                         }
                     }
