@@ -12,6 +12,7 @@ namespace Project_Oppenheimer.Properties
         public Random rng;
         public int player;
         public int AI;
+        public string AiOuput;
 
         public Supervisor()
         {
@@ -19,6 +20,7 @@ namespace Project_Oppenheimer.Properties
             rng = new Random();
             player = 0;
             AI = 0;
+            AiOuput = "";
         }
 
         public void newGame()

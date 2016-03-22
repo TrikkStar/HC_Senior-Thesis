@@ -985,6 +985,7 @@ namespace Project_Oppenheimer.Properties
                             }
                         }
                     }
+                    PlaceInfluenceInRegion(hand[0].opsValue, 00);
                 }
             }
             return 0;
@@ -1150,7 +1151,81 @@ namespace Project_Oppenheimer.Properties
             var area = getRegion(region);
             while (amount > 0)
             {
+                foreach (int stability in new List<int> {5, 4, 3, 2, 1 })
+                {
+                    if (amount <= 0)
+                    {
+                        break;
+                    }
+                    foreach (int country in area)
+                    {
+                        if (amount <= 0)
+                        {
+                            break;
+                        }
+                        var temp = game.countryLst.countries[country];
+                        if ((temp.stability == stability) && (temp.battleground))
+                        {
+                            if (temp.controller == side)
+                            {
+                                if (side == 1)
+                                {
+                                    if (!(temp.influenceUSA - temp.influenceUSSR > temp.stability))
+                                    {
+                                        targetAmounts.Add(1);
+                                        targets.Add(temp.id);
+                                        amount--;
+                                        break;
+                                    }
+                                }
+                                else
+                                {
+                                    if (!(temp.influenceUSSR - temp.influenceUSA > temp.stability))
+                                    {
+                                        targetAmounts.Add(1);
+                                        targets.Add(temp.id);
+                                        amount--;
+                                        break;
+                                    }
+                                }
+                            }
+                            else if (temp.controller == -side)
+                            {
+                                if (side == 1)
+                                {
+                                    if ((temp.influenceUSSR - temp.influenceUSA == temp.stability) && (amount >= 2))
+                                    {
+                                        targetAmounts.Add(1);
+                                        targets.Add(temp.id);
+                                        amount = amount - 2;
+                                        break;
+                                    }
+                                }
+                                else
+                                {
+                                    if ((temp.influenceUSA - temp.influenceUSSR == temp.stability) && (amount >= 2))
+                                    {
+                                        targetAmounts.Add(1);
+                                        targets.Add(temp.id);
+                                        amount = amount - 2;
+                                        break;
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                if (side == 1)
+                                {
+                                    int diff = Math.Abs(temp.influenceUSA - temp.influenceUSSR);
+                                }
+                                else
+                                {
 
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
