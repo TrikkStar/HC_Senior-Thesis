@@ -887,6 +887,7 @@ namespace Project_Oppenheimer.Properties
         private int playOpsPoints()
         {
             //realingment and coup logic should be more rigiorous, prioritize battlegrounds over normal countries
+            //should probably break the logic up into 3 functions
             foreach (int regionId in new List<int> {2, 1, 3, 81, 79, 37})
             {
                 if (RegionDefconSafe(regionId) && (RealingmentCondition(regionId)))
@@ -904,6 +905,11 @@ namespace Project_Oppenheimer.Properties
                                 return 0;
                             }
                         }
+                    }
+                    if (cardToPlay == 0)
+                    {
+                        cardToPlay = hand[0].id;
+                        return 0;
                     }
                 }
                 else if ((RegionDefconSafe(regionId)) && (CoupCondition(regionId)))
@@ -924,7 +930,6 @@ namespace Project_Oppenheimer.Properties
                             }
                         }
                     }
-                    //if no card found
                     if (cardToPlay == 0)
                     {
                         cardToPlay = hand[0].id;
@@ -933,7 +938,53 @@ namespace Project_Oppenheimer.Properties
                 }
                 else
                 {
-
+                    actionType = "Place Influenc";
+                    completed = true;
+                    foreach (int ops in new List<int> {4, 3, 2, 1})
+                    {
+                        foreach (Card card in hand)
+                        {
+                            if (card.id == 6)
+                            {
+                                PlaceInfluenceInRegion(5, 1);
+                                cardToPlay = 6;
+                                return 0;
+                            }
+                            else
+                            {
+                                if ((card.opsValue == ops) && (card.affiliation != -side))
+                                {
+                                    foreach (int region in new List<int> { 2, 1, 3, 81, 79, 37 })
+                                    {
+                                        if (!checkRegionCondition(region))
+                                        {
+                                            PlaceInfluenceInRegion(ops, region);
+                                            cardToPlay = card.id;
+                                            return 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    foreach (int ops in new List<int> { 4, 3, 2, 1 })
+                    {
+                        foreach (Card card in hand)
+                        {
+                            if (card.opsValue == ops)
+                            {
+                                foreach (int region in new List<int> { 2, 1, 3, 81, 79, 37 })
+                                {
+                                    if (!checkRegionCondition(region))
+                                    {
+                                        PlaceInfluenceInRegion(ops, region);
+                                        cardToPlay = card.id;
+                                        return 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
             return 0;
@@ -1092,6 +1143,15 @@ namespace Project_Oppenheimer.Properties
                 }
             }
             return false;
+        }
+
+        private void PlaceInfluenceInRegion(int amount, int region)
+        {
+            var area = getRegion(region);
+            while (amount > 0)
+            {
+
+            }
         }
     }
 }

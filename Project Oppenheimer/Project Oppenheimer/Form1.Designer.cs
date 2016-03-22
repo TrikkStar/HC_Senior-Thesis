@@ -719,9 +719,9 @@
             this.button1.Location = new System.Drawing.Point(205, 426);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 28);
+            this.button1.Size = new System.Drawing.Size(100, 44);
             this.button1.TabIndex = 20;
-            this.button1.Text = "Refresh";
+            this.button1.Text = "Advance Round";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -5536,7 +5536,7 @@
             this.middleEastToolStripMenuItem,
             this.southAmericaToolStripMenuItem});
             this.countryToolStripMenuItem.Name = "countryToolStripMenuItem";
-            this.countryToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.countryToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
             this.countryToolStripMenuItem.Text = "Country";
             // 
             // africaToolStripMenuItem
@@ -6265,7 +6265,7 @@
             this.eventToolStripMenuItem,
             this.resetToolStripMenuItem});
             this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
-            this.gameToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.gameToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
             this.gameToolStripMenuItem.Text = "Game";
             // 
             // turnToolStripMenuItem
@@ -6282,7 +6282,7 @@
             this.toolStripMenuItem10,
             this.toolStripMenuItem11});
             this.turnToolStripMenuItem.Name = "turnToolStripMenuItem";
-            this.turnToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.turnToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.turnToolStripMenuItem.Text = "Turn";
             // 
             // toolStripMenuItem2
@@ -6376,7 +6376,7 @@
             this.toolStripMenuItem97,
             this.toolStripMenuItem98});
             this.roundToolStripMenuItem.Name = "roundToolStripMenuItem";
-            this.roundToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.roundToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.roundToolStripMenuItem.Text = "Round";
             // 
             // headlinePhaseToolStripMenuItem
@@ -6505,7 +6505,7 @@
             this.uSAToolStripMenuItem2,
             this.uSSRToolStripMenuItem2});
             this.scoreToolStripMenuItem.Name = "scoreToolStripMenuItem";
-            this.scoreToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.scoreToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.scoreToolStripMenuItem.Text = "Score";
             // 
             // toolStripMenuItem20
@@ -6841,7 +6841,7 @@
             this.toolStripMenuItem61,
             this.toolStripMenuItem62});
             this.defconToolStripMenuItem.Name = "defconToolStripMenuItem";
-            this.defconToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.defconToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.defconToolStripMenuItem.Text = "Defcon";
             // 
             // toolStripMenuItem59
@@ -6878,7 +6878,7 @@
             this.uSAToolStripMenuItem3,
             this.uSSRToolStripMenuItem3});
             this.militaryOpsToolStripMenuItem.Name = "militaryOpsToolStripMenuItem";
-            this.militaryOpsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.militaryOpsToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.militaryOpsToolStripMenuItem.Text = "Military Ops";
             // 
             // uSAToolStripMenuItem3
@@ -6997,7 +6997,7 @@
             this.uSAToolStripMenuItem4,
             this.uSSRToolStripMenuItem4});
             this.spaceRaceToolStripMenuItem.Name = "spaceRaceToolStripMenuItem";
-            this.spaceRaceToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.spaceRaceToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.spaceRaceToolStripMenuItem.Text = "Space Race";
             // 
             // uSAToolStripMenuItem4
@@ -7162,13 +7162,13 @@
             // 
             this.eventToolStripMenuItem.Enabled = false;
             this.eventToolStripMenuItem.Name = "eventToolStripMenuItem";
-            this.eventToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.eventToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.eventToolStripMenuItem.Text = "Event";
             // 
             // resetToolStripMenuItem
             // 
             this.resetToolStripMenuItem.Name = "resetToolStripMenuItem";
-            this.resetToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.resetToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.resetToolStripMenuItem.Text = "Reset";
             this.resetToolStripMenuItem.Click += new System.EventHandler(this.resetToolStripMenuItem_Click);
             // 
@@ -7179,7 +7179,7 @@
             this.uSSRToolStripMenuItem1});
             this.handsToolStripMenuItem.Enabled = false;
             this.handsToolStripMenuItem.Name = "handsToolStripMenuItem";
-            this.handsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.handsToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
             this.handsToolStripMenuItem.Text = "Hands";
             // 
             // uSAToolStripMenuItem1
