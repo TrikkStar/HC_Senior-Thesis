@@ -886,7 +886,7 @@ namespace Project_Oppenheimer.Properties
 
         private int playOpsPoints()
         {
-            //realingment and coup logic should be more rigiorous
+            //realingment and coup logic should be more rigiorous, prioritize battlegrounds over normal countries
             foreach (int regionId in new List<int> {2, 1, 3, 81, 79, 37})
             {
                 if (RegionDefconSafe(regionId) && (RealingmentCondition(regionId)))
@@ -916,13 +916,19 @@ namespace Project_Oppenheimer.Properties
                         {
                             if ((card.affiliation != -side) && (card.opsValue == ops))
                             {
-                                //determine if ops value is enough to sucessfully coup in target
-                                if (Math.Abs((2 * game.countryLst.countries[targets[0]].stability) - card.opsValue) <= 4)
+                                if (Math.Abs((2 * game.countryLst.countries[targets[0]].stability) - card.opsValue) <= 3)
                                 {
-
+                                    cardToPlay = card.id;
+                                    return 0;
                                 }
                             }
                         }
+                    }
+                    //if no card found
+                    if (cardToPlay == 0)
+                    {
+                        cardToPlay = hand[0].id;
+                        return 0;
                     }
                 }
                 else
@@ -1075,7 +1081,7 @@ namespace Project_Oppenheimer.Properties
                         {
                             if (game.ussrMilOps < 4)
                             {
-                                if ((temp.influenceUSSR < temp.influenceUSA) && (Math.Abs(temp.influenceUSA - temp.stability) <= 2))
+                                if ((temp.influenceUSSR < temp.influenceUSA) && (Math.Abs(temp.influenceUSA - temp.stability) <= 2) && (temp.stability < 5))
                                 {
                                     targets.Add(country);
                                     return true;
