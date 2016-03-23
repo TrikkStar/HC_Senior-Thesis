@@ -56,9 +56,23 @@ namespace Project_Oppenheimer.Properties
             Robert rob = new Robert(game, AI);
             AiOuput = rob.actionType + "\r\n";
             AiOuput = AiOuput + "Card to Play: " + rob.cardToPlay.ToString() + "\r\n";
-            for (int i = 0; i < rob.targets.Count; i++)
+            if (rob.targets.Count == rob.targetAmounts.Count)
             {
-                AiOuput = AiOuput + "Target: " + game.countryLst.countries[rob.targets[i]].name + " Amount: " + rob.targetAmounts[i].ToString() + "\r\n";
+                for (int i = 0; i < rob.targets.Count; i++)
+                {
+                    AiOuput = AiOuput + "Target: " + game.countryLst.countries[rob.targets[i]].name + " Amount: " + rob.targetAmounts[i].ToString() + "\r\n";
+                }
+            }
+            else
+            {
+                foreach (var x in rob.targets)
+                {
+                    AiOuput = AiOuput + "Target: " + game.countryLst.countries[x].name + "\r\n";
+                }
+                foreach(var y in rob.targetAmounts)
+                {
+                    AiOuput = AiOuput + "Amount: " + y.ToString() + "\r\n";
+                }
             }
             //apply Ai Move;
         }
