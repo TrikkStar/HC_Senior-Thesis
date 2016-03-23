@@ -74,6 +74,7 @@ namespace Project_Oppenheimer.Properties
                     AiOuput = AiOuput + "Amount: " + y.ToString() + "\r\n";
                 }
             }
+            //Switch statement to cause appropriate event to happen
             bool isEvent = (rob.actionType == "Event" || rob.actionType == "Scoring" || rob.actionType == "Desperation" || rob.actionType == "Super Desperation");
             playCard(AI, rob.cardToPlay, isEvent);
             //apply Ai Move;

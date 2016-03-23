@@ -332,6 +332,7 @@ namespace Project_Oppenheimer.Properties
 
         private bool checkEventCondition (int x)
         {
+            //Need to make sure everything targets correctly
             switch (x)
             {
                 case 25:
