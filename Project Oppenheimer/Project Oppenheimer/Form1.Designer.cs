@@ -979,9 +979,10 @@
             // label220
             // 
             this.label220.AutoSize = true;
+            this.label220.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label220.Location = new System.Drawing.Point(100, 196);
             this.label220.Name = "label220";
-            this.label220.Size = new System.Drawing.Size(75, 17);
+            this.label220.Size = new System.Drawing.Size(84, 17);
             this.label220.TabIndex = 29;
             this.label220.Text = "Venezuela";
             // 
@@ -1090,9 +1091,10 @@
             // label227
             // 
             this.label227.AutoSize = true;
+            this.label227.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label227.Location = new System.Drawing.Point(17, 153);
             this.label227.Name = "label227";
-            this.label227.Size = new System.Drawing.Size(39, 17);
+            this.label227.Size = new System.Drawing.Size(44, 17);
             this.label227.TabIndex = 9;
             this.label227.Text = "Chile";
             // 
@@ -1303,9 +1305,10 @@
             // label240
             // 
             this.label240.AutoSize = true;
+            this.label240.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label240.Location = new System.Drawing.Point(17, 66);
             this.label240.Name = "label240";
-            this.label240.Size = new System.Drawing.Size(43, 17);
+            this.label240.Size = new System.Drawing.Size(49, 17);
             this.label240.TabIndex = 9;
             this.label240.Text = "Brazil";
             // 
@@ -1354,9 +1357,10 @@
             // label243
             // 
             this.label243.AutoSize = true;
+            this.label243.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label243.Location = new System.Drawing.Point(17, 23);
             this.label243.Name = "label243";
-            this.label243.Size = new System.Drawing.Size(69, 17);
+            this.label243.Size = new System.Drawing.Size(78, 17);
             this.label243.TabIndex = 7;
             this.label243.Text = "Argentina";
             // 
@@ -1529,9 +1533,10 @@
             // label191
             // 
             this.label191.AutoSize = true;
+            this.label191.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label191.Location = new System.Drawing.Point(17, 196);
             this.label191.Name = "label191";
-            this.label191.Size = new System.Drawing.Size(42, 17);
+            this.label191.Size = new System.Drawing.Size(48, 17);
             this.label191.TabIndex = 13;
             this.label191.Text = "Israel";
             // 
@@ -1622,19 +1627,20 @@
             // label196
             // 
             this.label196.AutoSize = true;
-            this.label196.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label196.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label196.Location = new System.Drawing.Point(100, 153);
             this.label196.Name = "label196";
-            this.label196.Size = new System.Drawing.Size(77, 15);
+            this.label196.Size = new System.Drawing.Size(89, 15);
             this.label196.TabIndex = 24;
             this.label196.Text = "Saudi Arabia";
             // 
             // label197
             // 
             this.label197.AutoSize = true;
+            this.label197.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label197.Location = new System.Drawing.Point(17, 153);
             this.label197.Name = "label197";
-            this.label197.Size = new System.Drawing.Size(32, 17);
+            this.label197.Size = new System.Drawing.Size(36, 17);
             this.label197.TabIndex = 9;
             this.label197.Text = "Iraq";
             // 
@@ -1725,18 +1731,20 @@
             // label202
             // 
             this.label202.AutoSize = true;
+            this.label202.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label202.Location = new System.Drawing.Point(100, 110);
             this.label202.Name = "label202";
-            this.label202.Size = new System.Drawing.Size(42, 17);
+            this.label202.Size = new System.Drawing.Size(47, 17);
             this.label202.TabIndex = 27;
             this.label202.Text = "Libya";
             // 
             // label203
             // 
             this.label203.AutoSize = true;
+            this.label203.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label203.Location = new System.Drawing.Point(17, 110);
             this.label203.Name = "label203";
-            this.label203.Size = new System.Drawing.Size(32, 17);
+            this.label203.Size = new System.Drawing.Size(36, 17);
             this.label203.TabIndex = 11;
             this.label203.Text = "Iran";
             // 
@@ -1896,9 +1904,10 @@
             // label213
             // 
             this.label213.AutoSize = true;
+            this.label213.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label213.Location = new System.Drawing.Point(17, 23);
             this.label213.Name = "label213";
-            this.label213.Size = new System.Drawing.Size(44, 17);
+            this.label213.Size = new System.Drawing.Size(49, 17);
             this.label213.TabIndex = 7;
             this.label213.Text = "Egypt";
             // 
@@ -2238,19 +2247,20 @@
             // label55
             // 
             this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label55.Location = new System.Drawing.Point(124, 370);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(74, 15);
+            this.label55.Size = new System.Drawing.Size(84, 15);
             this.label55.TabIndex = 39;
             this.label55.Text = "W. Germany";
             // 
             // label56
             // 
             this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label56.Location = new System.Drawing.Point(17, 370);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(52, 17);
+            this.label56.Size = new System.Drawing.Size(58, 17);
             this.label56.TabIndex = 37;
             this.label56.Text = "France";
             // 
@@ -2452,10 +2462,10 @@
             // label113
             // 
             this.label113.AutoSize = true;
-            this.label113.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label113.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label113.Location = new System.Drawing.Point(17, 283);
             this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(71, 15);
+            this.label113.Size = new System.Drawing.Size(81, 15);
             this.label113.TabIndex = 17;
             this.label113.Text = "E. Germany";
             // 
@@ -2751,9 +2761,10 @@
             // label160
             // 
             this.label160.AutoSize = true;
+            this.label160.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label160.Location = new System.Drawing.Point(124, 110);
             this.label160.Name = "label160";
-            this.label160.Size = new System.Drawing.Size(52, 17);
+            this.label160.Size = new System.Drawing.Size(58, 17);
             this.label160.TabIndex = 24;
             this.label160.Text = "Poland";
             // 
@@ -2913,9 +2924,10 @@
             // label170
             // 
             this.label170.AutoSize = true;
+            this.label170.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label170.Location = new System.Drawing.Point(124, 23);
             this.label170.Name = "label170";
-            this.label170.Size = new System.Drawing.Size(33, 17);
+            this.label170.Size = new System.Drawing.Size(38, 17);
             this.label170.TabIndex = 25;
             this.label170.Text = "Italy";
             // 
@@ -3190,9 +3202,10 @@
             // label115
             // 
             this.label115.AutoSize = true;
+            this.label115.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label115.Location = new System.Drawing.Point(123, 197);
             this.label115.Name = "label115";
-            this.label115.Size = new System.Drawing.Size(60, 17);
+            this.label115.Size = new System.Drawing.Size(66, 17);
             this.label115.TabIndex = 29;
             this.label115.Text = "Panama";
             // 
@@ -3396,9 +3409,10 @@
             // label127
             // 
             this.label127.AutoSize = true;
+            this.label127.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label127.Location = new System.Drawing.Point(123, 110);
             this.label127.Name = "label127";
-            this.label127.Size = new System.Drawing.Size(51, 17);
+            this.label127.Size = new System.Drawing.Size(57, 17);
             this.label127.TabIndex = 27;
             this.label127.Text = "Mexico";
             // 
@@ -3517,9 +3531,10 @@
             // label135
             // 
             this.label135.AutoSize = true;
+            this.label135.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label135.Location = new System.Drawing.Point(17, 66);
             this.label135.Name = "label135";
-            this.label135.Size = new System.Drawing.Size(41, 17);
+            this.label135.Size = new System.Drawing.Size(45, 17);
             this.label135.TabIndex = 9;
             this.label135.Text = "Cuba";
             // 
@@ -3898,18 +3913,20 @@
             // label73
             // 
             this.label73.AutoSize = true;
+            this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label73.Location = new System.Drawing.Point(123, 241);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(63, 17);
+            this.label73.Size = new System.Drawing.Size(71, 17);
             this.label73.TabIndex = 31;
             this.label73.Text = "Thailand";
             // 
             // label74
             // 
             this.label74.AutoSize = true;
+            this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label74.Location = new System.Drawing.Point(17, 240);
             this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(47, 17);
+            this.label74.Size = new System.Drawing.Size(52, 17);
             this.label74.TabIndex = 15;
             this.label74.Text = "Japan";
             // 
@@ -4102,19 +4119,20 @@
             // label85
             // 
             this.label85.AutoSize = true;
-            this.label85.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label85.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label85.Location = new System.Drawing.Point(123, 153);
             this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(63, 17);
+            this.label85.Size = new System.Drawing.Size(71, 17);
             this.label85.TabIndex = 24;
             this.label85.Text = "S. Korea";
             // 
             // label86
             // 
             this.label86.AutoSize = true;
+            this.label86.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label86.Location = new System.Drawing.Point(17, 153);
             this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(38, 17);
+            this.label86.Size = new System.Drawing.Size(43, 17);
             this.label86.TabIndex = 9;
             this.label86.Text = "India";
             // 
@@ -4265,9 +4283,10 @@
             // label95
             // 
             this.label95.AutoSize = true;
+            this.label95.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label95.Location = new System.Drawing.Point(123, 66);
             this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(62, 17);
+            this.label95.Size = new System.Drawing.Size(70, 17);
             this.label95.TabIndex = 25;
             this.label95.Text = "Pakistan";
             // 
@@ -4316,10 +4335,10 @@
             // label98
             // 
             this.label98.AutoSize = true;
-            this.label98.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label98.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label98.Location = new System.Drawing.Point(123, 25);
             this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(64, 17);
+            this.label98.Size = new System.Drawing.Size(72, 17);
             this.label98.TabIndex = 21;
             this.label98.Text = "N. Korea";
             // 
@@ -4569,9 +4588,10 @@
             // label50
             // 
             this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label50.Location = new System.Drawing.Point(17, 370);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(53, 17);
+            this.label50.Size = new System.Drawing.Size(60, 17);
             this.label50.TabIndex = 37;
             this.label50.Text = "Nigeria";
             // 
@@ -4662,9 +4682,10 @@
             // label25
             // 
             this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(101, 329);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(41, 17);
+            this.label25.Size = new System.Drawing.Size(46, 17);
             this.label25.TabIndex = 35;
             this.label25.Text = "Zaire";
             // 
@@ -5071,10 +5092,10 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label37.Location = new System.Drawing.Point(101, 153);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(72, 15);
+            this.label37.Size = new System.Drawing.Size(84, 15);
             this.label37.TabIndex = 24;
             this.label37.Text = "South Africa";
             // 
@@ -5296,9 +5317,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(17, 66);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 17);
+            this.label3.Size = new System.Drawing.Size(58, 17);
             this.label3.TabIndex = 9;
             this.label3.Text = "Angola";
             // 
@@ -5347,9 +5369,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(17, 23);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 17);
+            this.label2.Size = new System.Drawing.Size(59, 17);
             this.label2.TabIndex = 7;
             this.label2.Text = "Algeria";
             // 
@@ -5488,7 +5511,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1389, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1282, 28);
             this.menuStrip1.TabIndex = 12;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -7422,7 +7445,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1389, 552);
+            this.ClientSize = new System.Drawing.Size(1282, 552);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.AI_Output);
             this.Controls.Add(this.PlayerHand_group);
