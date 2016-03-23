@@ -448,6 +448,7 @@ namespace Project_Oppenheimer.Properties
                         while (itter < 4)
                         {
                             targetCountryNotControlledAdd(-2, 1, 1);
+                            itter++;
                         }
                         return true;
                     }
