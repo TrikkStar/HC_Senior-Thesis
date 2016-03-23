@@ -55,7 +55,7 @@ namespace Project_Oppenheimer.Properties
             AiOuput = "";
             Robert rob = new Robert(game, AI);
             AiOuput = rob.actionType + "\r\n";
-            AiOuput = AiOuput + "Card to Play: " + rob.cardToPlay.ToString() + "\r\n";
+            AiOuput = AiOuput + "Card to Play: " + rob.cardToPlay.ToString() + " At index: " + rob.cardIndex.ToString() + "\r\n";
             if (rob.targets.Count == rob.targetAmounts.Count)
             {
                 for (int i = 0; i < rob.targets.Count; i++)
@@ -63,6 +63,7 @@ namespace Project_Oppenheimer.Properties
                     AiOuput = AiOuput + "Target: " + game.countryLst.countries[rob.targets[i]].name + " Amount: " + rob.targetAmounts[i].ToString() + "\r\n";
                 }
             }
+            //in case something breaks
             else
             {
                 foreach (var x in rob.targets)

@@ -8,6 +8,7 @@ namespace Project_Oppenheimer.Properties
     {
         public string actionType;
         public int cardToPlay;
+        public int cardIndex;
         public List<int> targets;
         public List<int> targetAmounts;
         private bool completed = false;
@@ -46,10 +47,25 @@ namespace Project_Oppenheimer.Properties
                     }
                     if (!completed)
                     {
-                        if (hand[0].id != 6)
+                        foreach (var card in hand)
                         {
-                            cardToPlay = hand[0].id;
-                            actionType = "Desperation";
+                            if (card.affiliation != -side)
+                            {
+                                cardToPlay = card.id;
+                                actionType = "Desperation";
+                                break;
+                            }
+                        }
+                        if (cardToPlay == 0)
+                        {
+                            foreach (var card in hand)
+                            {
+                                if (card.id != 6)
+                                {
+                                    cardToPlay = card.id;
+                                    actionType = "Super Desperation";
+                                }
+                            }
                         }
                     }
                 }
@@ -68,6 +84,14 @@ namespace Project_Oppenheimer.Properties
                     {
                         playOpsPoints();
                     }
+                }
+            }
+            for (int i = 0; i < hand.Count; i++)
+            {
+                if (hand[i].id == cardToPlay)
+                {
+                    cardIndex = i;
+                    break;
                 }
             }
         }
@@ -115,9 +139,10 @@ namespace Project_Oppenheimer.Properties
                         break;
                     case 1:
                         targets.Add(21);
-                        targetAmounts.Add(3);
+                        targetAmounts.Add(1);
                         targets.Add(59);
-                        targetAmounts.Add(3);
+                        targetAmounts.Add(4);
+                        PlaceInfluenceInRegion(2, -2);
                         break;
                     case 2:
                         PlaceInfluenceInRegion(6, -2);

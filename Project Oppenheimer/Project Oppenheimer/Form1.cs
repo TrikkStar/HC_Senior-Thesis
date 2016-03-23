@@ -28,7 +28,7 @@ namespace Project_Oppenheimer
         private void button1_Click(object sender, EventArgs e)
         {
             supervisor.getAiMove();
-            System.Diagnostics.Debug.WriteLine(supervisor.AiOuput);
+            //System.Diagnostics.Debug.WriteLine(supervisor.AiOuput);
             AI_Output.Text = supervisor.AiOuput;
             refreshEvent();
         }
