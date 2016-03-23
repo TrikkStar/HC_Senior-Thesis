@@ -624,6 +624,7 @@
             this.centralAmericaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.africaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.southeastAsiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.radioButton10 = new System.Windows.Forms.RadioButton();
             this.groupBox7.SuspendLayout();
             this.tableLayoutPanel85.SuspendLayout();
             this.tableLayoutPanel84.SuspendLayout();
@@ -6877,28 +6878,28 @@
             // toolStripMenuItem59
             // 
             this.toolStripMenuItem59.Name = "toolStripMenuItem59";
-            this.toolStripMenuItem59.Size = new System.Drawing.Size(92, 26);
+            this.toolStripMenuItem59.Size = new System.Drawing.Size(181, 26);
             this.toolStripMenuItem59.Text = "5";
             this.toolStripMenuItem59.Click += new System.EventHandler(this.toolStripMenuItem59_Click);
             // 
             // toolStripMenuItem60
             // 
             this.toolStripMenuItem60.Name = "toolStripMenuItem60";
-            this.toolStripMenuItem60.Size = new System.Drawing.Size(92, 26);
+            this.toolStripMenuItem60.Size = new System.Drawing.Size(181, 26);
             this.toolStripMenuItem60.Text = "4";
             this.toolStripMenuItem60.Click += new System.EventHandler(this.toolStripMenuItem60_Click);
             // 
             // toolStripMenuItem61
             // 
             this.toolStripMenuItem61.Name = "toolStripMenuItem61";
-            this.toolStripMenuItem61.Size = new System.Drawing.Size(92, 26);
+            this.toolStripMenuItem61.Size = new System.Drawing.Size(181, 26);
             this.toolStripMenuItem61.Text = "3";
             this.toolStripMenuItem61.Click += new System.EventHandler(this.toolStripMenuItem61_Click);
             // 
             // toolStripMenuItem62
             // 
             this.toolStripMenuItem62.Name = "toolStripMenuItem62";
-            this.toolStripMenuItem62.Size = new System.Drawing.Size(92, 26);
+            this.toolStripMenuItem62.Size = new System.Drawing.Size(181, 26);
             this.toolStripMenuItem62.Text = "2";
             this.toolStripMenuItem62.Click += new System.EventHandler(this.toolStripMenuItem62_Click);
             // 
@@ -7235,7 +7236,7 @@
             // Play_cardButton
             // 
             this.Play_cardButton.Enabled = false;
-            this.Play_cardButton.Location = new System.Drawing.Point(7, 258);
+            this.Play_cardButton.Location = new System.Drawing.Point(7, 278);
             this.Play_cardButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Play_cardButton.Name = "Play_cardButton";
             this.Play_cardButton.Size = new System.Drawing.Size(77, 30);
@@ -7330,6 +7331,7 @@
             // 
             // PlayerHand_group
             // 
+            this.PlayerHand_group.Controls.Add(this.radioButton10);
             this.PlayerHand_group.Controls.Add(this.Play_cardButton);
             this.PlayerHand_group.Controls.Add(this.radioButton9);
             this.PlayerHand_group.Controls.Add(this.radioButton8);
@@ -7344,7 +7346,7 @@
             this.PlayerHand_group.Margin = new System.Windows.Forms.Padding(4);
             this.PlayerHand_group.Name = "PlayerHand_group";
             this.PlayerHand_group.Padding = new System.Windows.Forms.Padding(4);
-            this.PlayerHand_group.Size = new System.Drawing.Size(193, 294);
+            this.PlayerHand_group.Size = new System.Drawing.Size(193, 321);
             this.PlayerHand_group.TabIndex = 21;
             this.PlayerHand_group.TabStop = false;
             this.PlayerHand_group.Text = "Player Hand";
@@ -7376,7 +7378,7 @@
             // AI_Output
             // 
             this.AI_Output.AutoSize = true;
-            this.AI_Output.Location = new System.Drawing.Point(1056, 338);
+            this.AI_Output.Location = new System.Drawing.Point(1056, 357);
             this.AI_Output.Name = "AI_Output";
             this.AI_Output.Size = new System.Drawing.Size(67, 17);
             this.AI_Output.TabIndex = 22;
@@ -7440,6 +7442,18 @@
             this.southeastAsiaToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
             this.southeastAsiaToolStripMenuItem.Text = "Southeast Asia";
             this.southeastAsiaToolStripMenuItem.Click += new System.EventHandler(this.southeastAsiaToolStripMenuItem_Click);
+            // 
+            // radioButton10
+            // 
+            this.radioButton10.AutoSize = true;
+            this.radioButton10.Location = new System.Drawing.Point(7, 253);
+            this.radioButton10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.radioButton10.Name = "radioButton10";
+            this.radioButton10.Size = new System.Drawing.Size(79, 21);
+            this.radioButton10.TabIndex = 31;
+            this.radioButton10.Text = "Card 10";
+            this.radioButton10.UseVisualStyleBackColor = true;
+            this.radioButton10.CheckedChanged += new System.EventHandler(this.radioButton10_CheckedChanged);
             // 
             // Form1
             // 
@@ -8254,6 +8268,7 @@
         private System.Windows.Forms.ToolStripMenuItem southAmericaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem africaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem southeastAsiaToolStripMenuItem;
+        private System.Windows.Forms.RadioButton radioButton10;
     }
 }
 

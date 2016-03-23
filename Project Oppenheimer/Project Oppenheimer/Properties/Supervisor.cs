@@ -74,11 +74,12 @@ namespace Project_Oppenheimer.Properties
                     AiOuput = AiOuput + "Amount: " + y.ToString() + "\r\n";
                 }
             }
-            playCard(AI, rob.cardToPlay);
+            bool isEvent = (rob.actionType == "Event" || rob.actionType == "Scoring" || rob.actionType == "Desperation" || rob.actionType == "Super Desperation");
+            playCard(AI, rob.cardToPlay, isEvent);
             //apply Ai Move;
         }
 
-        public void playCard(int player, int card)
+        public void playCard(int player, int card, bool isEvent)
         {
             //only discardes or removes card, doesn't do anything more yet
             Card toPlay = new Card();
@@ -92,7 +93,7 @@ namespace Project_Oppenheimer.Properties
                         break;
                     }
                 }
-                if (toPlay.oneTimeEvent)
+                if ((isEvent) && (toPlay.oneTimeEvent))
                 {
                     game.cards.remove(toPlay);
                 }

@@ -24,13 +24,18 @@ namespace Project_Oppenheimer.Properties
         private void button1_Click(object sender, EventArgs e)
         {
             //stuff for it to do
+            bool isEvent = false;
+            if (Event_Radio.Checked)
+            {
+                isEvent = true;
+            }
             if (TS.player == 1)
             {
-                TS.playCard(1, target.id);
+                TS.playCard(1, target.id, isEvent);
             }
             else
             {
-                TS.playCard(-1, target.id);
+                TS.playCard(-1, target.id, isEvent);
             }
             this.Close();
         }

@@ -1205,6 +1205,7 @@ namespace Project_Oppenheimer.Properties
 
         private void PlaceInfluenceInRegion(int amount, int region)
         {
+            //Needs to factor in adjacency
             var area = getRegion(region);
             while (amount > 0)
             {

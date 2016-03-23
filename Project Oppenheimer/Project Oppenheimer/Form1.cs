@@ -2181,6 +2181,8 @@ namespace Project_Oppenheimer
                     radioButton8.Text = "";
                     radioButton9.Enabled = false;
                     radioButton9.Text = "";
+                    radioButton10.Enabled = false;
+                    radioButton10.Text = "";
                     break;
                 case 1:
                     radioButton1.Enabled = true;
@@ -2201,6 +2203,8 @@ namespace Project_Oppenheimer
                     radioButton8.Text = "";
                     radioButton9.Enabled = false;
                     radioButton9.Text = "";
+                    radioButton10.Enabled = false;
+                    radioButton10.Text = "";
                     break;
                 case 2:
                     radioButton1.Enabled = true;
@@ -2221,6 +2225,8 @@ namespace Project_Oppenheimer
                     radioButton8.Text = "";
                     radioButton9.Enabled = false;
                     radioButton9.Text = "";
+                    radioButton10.Enabled = false;
+                    radioButton10.Text = "";
                     break;
                 case 3:
                     radioButton1.Enabled = true;
@@ -2241,6 +2247,8 @@ namespace Project_Oppenheimer
                     radioButton8.Text = "";
                     radioButton9.Enabled = false;
                     radioButton9.Text = "";
+                    radioButton10.Enabled = false;
+                    radioButton10.Text = "";
                     break;
                 case 4:
                     radioButton1.Enabled = true;
@@ -2261,6 +2269,8 @@ namespace Project_Oppenheimer
                     radioButton8.Text = "";
                     radioButton9.Enabled = false;
                     radioButton9.Text = "";
+                    radioButton10.Enabled = false;
+                    radioButton10.Text = "";
                     break;
                 case 5:
                     radioButton1.Enabled = true;
@@ -2281,6 +2291,8 @@ namespace Project_Oppenheimer
                     radioButton8.Text = "";
                     radioButton9.Enabled = false;
                     radioButton9.Text = "";
+                    radioButton10.Enabled = false;
+                    radioButton10.Text = "";
                     break;
                 case 6:
                     radioButton1.Enabled = true;
@@ -2301,6 +2313,8 @@ namespace Project_Oppenheimer
                     radioButton8.Text = "";
                     radioButton9.Enabled = false;
                     radioButton9.Text = "";
+                    radioButton10.Enabled = false;
+                    radioButton10.Text = "";
                     break;
                 case 7:
                     radioButton1.Enabled = true;
@@ -2321,6 +2335,8 @@ namespace Project_Oppenheimer
                     radioButton8.Text = "";
                     radioButton9.Enabled = false;
                     radioButton9.Text = "";
+                    radioButton10.Enabled = false;
+                    radioButton10.Text = "";
                     break;
                 case 8:
                     radioButton1.Enabled = true;
@@ -2341,6 +2357,8 @@ namespace Project_Oppenheimer
                     radioButton8.Text = hand[7].name;
                     radioButton9.Enabled = false;
                     radioButton9.Text = "";
+                    radioButton10.Enabled = false;
+                    radioButton10.Text = "";
                     break;
                 case 9:
                     radioButton1.Enabled = true;
@@ -2361,6 +2379,30 @@ namespace Project_Oppenheimer
                     radioButton8.Text = hand[7].name;
                     radioButton9.Enabled = true;
                     radioButton9.Text = hand[8].name;
+                    radioButton10.Enabled = false;
+                    radioButton10.Text = "";
+                    break;
+                case 10:
+                    radioButton1.Enabled = true;
+                    radioButton1.Text = hand[0].name;
+                    radioButton2.Enabled = true;
+                    radioButton2.Text = hand[1].name;
+                    radioButton3.Enabled = true;
+                    radioButton3.Text = hand[2].name;
+                    radioButton4.Enabled = true;
+                    radioButton4.Text = hand[3].name;
+                    radioButton5.Enabled = true;
+                    radioButton5.Text = hand[4].name;
+                    radioButton6.Enabled = true;
+                    radioButton6.Text = hand[5].name;
+                    radioButton7.Enabled = true;
+                    radioButton7.Text = hand[6].name;
+                    radioButton8.Enabled = true;
+                    radioButton8.Text = hand[7].name;
+                    radioButton9.Enabled = true;
+                    radioButton9.Text = hand[8].name;
+                    radioButton10.Enabled = true;
+                    radioButton10.Text = hand[9].name;
                     break;
             }
         }
@@ -2699,7 +2741,7 @@ namespace Project_Oppenheimer
 
         private void toolStripMenuItem62_Click(object sender, EventArgs e)
         {
-            supervisor.game.score = 2;
+            supervisor.game.defcon = 2;
             refreshEvent();
         }
 
@@ -3618,6 +3660,11 @@ namespace Project_Oppenheimer
             Play_cardButton.Enabled = true;
         }
 
+        private void radioButton10_CheckedChanged(object sender, EventArgs e)
+        {
+            Play_cardButton.Enabled = true;
+        }
+
         private void Play_cardButton_Click(object sender, EventArgs e)
         {
             List<Properties.Card> hand;
@@ -3665,6 +3712,10 @@ namespace Project_Oppenheimer
             else if (radioButton9.Checked)
             {
                 card = hand[8];
+            }
+            else if (radioButton10.Checked)
+            {
+                card = hand[9];
             }
             var popup = new Properties.CardPlay(card, supervisor);
             popup.ShowDialog();
@@ -3731,5 +3782,6 @@ namespace Project_Oppenheimer
             supervisor.game.scoreRegion(38);
             refreshEvent();
         }
+
     }
 }
