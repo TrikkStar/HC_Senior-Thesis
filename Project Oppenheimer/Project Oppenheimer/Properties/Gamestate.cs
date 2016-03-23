@@ -296,6 +296,11 @@
         public void advanceRound()
         {
             //need to add special case for spacerace
+            if (turn == 0)
+            {
+                turn = 1;
+                round = 0;
+            }
             if (turn < 4)
             {
                 if (round < 14)

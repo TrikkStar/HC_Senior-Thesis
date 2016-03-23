@@ -603,9 +603,7 @@
             this.resetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.handsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uSAToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.revealToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uSSRToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.revealToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.Play_cardButton = new System.Windows.Forms.Button();
             this.radioButton9 = new System.Windows.Forms.RadioButton();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
@@ -618,6 +616,7 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.AI_Output = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox7.SuspendLayout();
             this.tableLayoutPanel85.SuspendLayout();
             this.tableLayoutPanel84.SuspendLayout();
@@ -717,12 +716,12 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(205, 426);
+            this.button1.Location = new System.Drawing.Point(260, 426);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 44);
             this.button1.TabIndex = 20;
-            this.button1.Text = "Advance Round";
+            this.button1.Text = "Robert!!!";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -5537,7 +5536,7 @@
             this.middleEastToolStripMenuItem,
             this.southAmericaToolStripMenuItem});
             this.countryToolStripMenuItem.Name = "countryToolStripMenuItem";
-            this.countryToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
+            this.countryToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.countryToolStripMenuItem.Text = "Country";
             // 
             // africaToolStripMenuItem
@@ -6266,7 +6265,7 @@
             this.eventToolStripMenuItem,
             this.resetToolStripMenuItem});
             this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
-            this.gameToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
+            this.gameToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.gameToolStripMenuItem.Text = "Game";
             // 
             // turnToolStripMenuItem
@@ -6283,7 +6282,7 @@
             this.toolStripMenuItem10,
             this.toolStripMenuItem11});
             this.turnToolStripMenuItem.Name = "turnToolStripMenuItem";
-            this.turnToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.turnToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.turnToolStripMenuItem.Text = "Turn";
             // 
             // toolStripMenuItem2
@@ -6377,7 +6376,7 @@
             this.toolStripMenuItem97,
             this.toolStripMenuItem98});
             this.roundToolStripMenuItem.Name = "roundToolStripMenuItem";
-            this.roundToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.roundToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.roundToolStripMenuItem.Text = "Round";
             // 
             // headlinePhaseToolStripMenuItem
@@ -6506,7 +6505,7 @@
             this.uSAToolStripMenuItem2,
             this.uSSRToolStripMenuItem2});
             this.scoreToolStripMenuItem.Name = "scoreToolStripMenuItem";
-            this.scoreToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.scoreToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.scoreToolStripMenuItem.Text = "Score";
             // 
             // toolStripMenuItem20
@@ -6842,7 +6841,7 @@
             this.toolStripMenuItem61,
             this.toolStripMenuItem62});
             this.defconToolStripMenuItem.Name = "defconToolStripMenuItem";
-            this.defconToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.defconToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.defconToolStripMenuItem.Text = "Defcon";
             // 
             // toolStripMenuItem59
@@ -6879,7 +6878,7 @@
             this.uSAToolStripMenuItem3,
             this.uSSRToolStripMenuItem3});
             this.militaryOpsToolStripMenuItem.Name = "militaryOpsToolStripMenuItem";
-            this.militaryOpsToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.militaryOpsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.militaryOpsToolStripMenuItem.Text = "Military Ops";
             // 
             // uSAToolStripMenuItem3
@@ -6998,7 +6997,7 @@
             this.uSAToolStripMenuItem4,
             this.uSSRToolStripMenuItem4});
             this.spaceRaceToolStripMenuItem.Name = "spaceRaceToolStripMenuItem";
-            this.spaceRaceToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.spaceRaceToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.spaceRaceToolStripMenuItem.Text = "Space Race";
             // 
             // uSAToolStripMenuItem4
@@ -7163,13 +7162,13 @@
             // 
             this.eventToolStripMenuItem.Enabled = false;
             this.eventToolStripMenuItem.Name = "eventToolStripMenuItem";
-            this.eventToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.eventToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.eventToolStripMenuItem.Text = "Event";
             // 
             // resetToolStripMenuItem
             // 
             this.resetToolStripMenuItem.Name = "resetToolStripMenuItem";
-            this.resetToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.resetToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.resetToolStripMenuItem.Text = "Reset";
             this.resetToolStripMenuItem.Click += new System.EventHandler(this.resetToolStripMenuItem_Click);
             // 
@@ -7178,38 +7177,23 @@
             this.handsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.uSAToolStripMenuItem1,
             this.uSSRToolStripMenuItem1});
-            this.handsToolStripMenuItem.Enabled = false;
             this.handsToolStripMenuItem.Name = "handsToolStripMenuItem";
-            this.handsToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
+            this.handsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.handsToolStripMenuItem.Text = "Hands";
             // 
             // uSAToolStripMenuItem1
             // 
-            this.uSAToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.revealToolStripMenuItem});
             this.uSAToolStripMenuItem1.Name = "uSAToolStripMenuItem1";
-            this.uSAToolStripMenuItem1.Size = new System.Drawing.Size(119, 26);
+            this.uSAToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
             this.uSAToolStripMenuItem1.Text = "USA";
-            // 
-            // revealToolStripMenuItem
-            // 
-            this.revealToolStripMenuItem.Name = "revealToolStripMenuItem";
-            this.revealToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
-            this.revealToolStripMenuItem.Text = "Reveal";
+            this.uSAToolStripMenuItem1.Click += new System.EventHandler(this.uSAToolStripMenuItem1_Click);
             // 
             // uSSRToolStripMenuItem1
             // 
-            this.uSSRToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.revealToolStripMenuItem1});
             this.uSSRToolStripMenuItem1.Name = "uSSRToolStripMenuItem1";
-            this.uSSRToolStripMenuItem1.Size = new System.Drawing.Size(119, 26);
+            this.uSSRToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
             this.uSSRToolStripMenuItem1.Text = "USSR";
-            // 
-            // revealToolStripMenuItem1
-            // 
-            this.revealToolStripMenuItem1.Name = "revealToolStripMenuItem1";
-            this.revealToolStripMenuItem1.Size = new System.Drawing.Size(128, 26);
-            this.revealToolStripMenuItem1.Text = "Reveal";
+            this.uSSRToolStripMenuItem1.Click += new System.EventHandler(this.uSSRToolStripMenuItem1_Click);
             // 
             // Play_cardButton
             // 
@@ -7361,11 +7345,22 @@
             this.AI_Output.TabIndex = 22;
             this.AI_Output.Text = "AI Output";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(285, 485);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 26);
+            this.button2.TabIndex = 23;
+            this.button2.Text = "Advance";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1389, 552);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.AI_Output);
             this.Controls.Add(this.PlayerHand_group);
             this.Controls.Add(this.button1);
@@ -8144,9 +8139,7 @@
         private System.Windows.Forms.ToolStripMenuItem resetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem handsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem uSAToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem revealToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem uSSRToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem revealToolStripMenuItem1;
         private System.Windows.Forms.GroupBox PlayerHand_group;
         private System.Windows.Forms.Button Play_cardButton;
         private System.Windows.Forms.RadioButton radioButton9;
@@ -8167,6 +8160,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem97;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem98;
         private System.Windows.Forms.Label AI_Output;
+        private System.Windows.Forms.Button button2;
     }
 }
 

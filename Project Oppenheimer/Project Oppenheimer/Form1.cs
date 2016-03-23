@@ -3671,5 +3671,22 @@ namespace Project_Oppenheimer
             //possibly more stuff here
             refreshEvent();
         }
+
+        private void uSAToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.Hand_View(supervisor.game.cards.usHand);
+            popup.ShowDialog();
+        }
+
+        private void uSSRToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.Hand_View(supervisor.game.cards.ussrHand);
+            popup.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            supervisor.game.advanceRound();
+        }
     }
 }

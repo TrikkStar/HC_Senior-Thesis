@@ -83,6 +83,12 @@
     <Compile Include="Properties\EditCountryScore.Designer.cs">
       <DependentUpon>EditCountryScore.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Hand View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Hand View.Designer.cs">
+      <DependentUpon>Hand View.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Robert.cs" />
     <Compile Include="Properties\Supervisor.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -93,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\EditCountryScore.resx">
       <DependentUpon>EditCountryScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Hand View.resx">
+      <DependentUpon>Hand View.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

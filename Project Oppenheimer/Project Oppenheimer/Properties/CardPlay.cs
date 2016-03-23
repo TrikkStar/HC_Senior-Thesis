@@ -24,6 +24,14 @@ namespace Project_Oppenheimer.Properties
         private void button1_Click(object sender, EventArgs e)
         {
             //stuff for it to do
+            if (target.oneTimeEvent)
+            {
+                TS.game.cards.remove(target);
+            }
+            else
+            {
+                TS.game.cards.discard(target);
+            }
             this.Close();
         }
     }

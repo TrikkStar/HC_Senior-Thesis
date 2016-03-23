@@ -86,12 +86,15 @@ namespace Project_Oppenheimer.Properties
                     }
                 }
             }
-            for (int i = 0; i < hand.Count; i++)
+            if (game.turn != 0)
             {
-                if (hand[i].id == cardToPlay)
+                for (int i = 0; i < hand.Count; i++)
                 {
-                    cardIndex = i;
-                    break;
+                    if (hand[i].id == cardToPlay)
+                    {
+                        cardIndex = i;
+                        break;
+                    }
                 }
             }
         }
@@ -870,6 +873,7 @@ namespace Project_Oppenheimer.Properties
             var israel = game.countryLst.countries[38];
             if (israel.influenceUSA + UK.influenceUSA + france.influenceUSA >= 5)
             {
+                //targetiing logic doesn't work
                 if (israel.influenceUSA >= 2)
                 {
                     targets.Add(38);
