@@ -21,6 +21,7 @@ namespace Project_Oppenheimer.Properties
             game = gme;
             side = sde;
             targetAmounts = new List<int> {};
+            targets = new List<int> {};
             if (game.turn == 0)
             {
                 initalInfluencePlacement();
