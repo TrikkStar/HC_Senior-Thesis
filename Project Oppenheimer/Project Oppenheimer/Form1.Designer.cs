@@ -617,6 +617,7 @@
             this.PlayerHand_group = new System.Windows.Forms.GroupBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.AI_Output = new System.Windows.Forms.Label();
             this.groupBox7.SuspendLayout();
             this.tableLayoutPanel85.SuspendLayout();
             this.tableLayoutPanel84.SuspendLayout();
@@ -7351,11 +7352,21 @@
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
+            // AI_Output
+            // 
+            this.AI_Output.AutoSize = true;
+            this.AI_Output.Location = new System.Drawing.Point(1056, 338);
+            this.AI_Output.Name = "AI_Output";
+            this.AI_Output.Size = new System.Drawing.Size(67, 17);
+            this.AI_Output.TabIndex = 22;
+            this.AI_Output.Text = "AI Output";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1255, 552);
+            this.Controls.Add(this.AI_Output);
             this.Controls.Add(this.PlayerHand_group);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox7);
@@ -8155,6 +8166,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem96;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem97;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem98;
+        private System.Windows.Forms.Label AI_Output;
     }
 }
 

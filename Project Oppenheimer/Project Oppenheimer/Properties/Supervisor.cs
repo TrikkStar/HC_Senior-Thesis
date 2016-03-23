@@ -50,9 +50,17 @@ namespace Project_Oppenheimer.Properties
 
         }
 
-        public void playCard(int player, int card)
+        public void getAiMove()
         {
-
+            AiOuput = "";
+            Robert rob = new Robert(game, AI);
+            AiOuput = rob.actionType + "\r\n";
+            AiOuput = AiOuput + "Card to Play: " + rob.cardToPlay.ToString() + "\r\n";
+            for (int i = 0; i < rob.targets.Count; i++)
+            {
+                AiOuput = AiOuput + "Target: " + game.countryLst.countries[rob.targets[i]].name + " Amount: " + rob.targetAmounts[i].ToString() + "\r\n";
+            }
+            //apply Ai Move;
         }
     }
 }
