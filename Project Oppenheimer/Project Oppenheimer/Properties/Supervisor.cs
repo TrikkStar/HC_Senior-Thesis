@@ -41,13 +41,12 @@ namespace Project_Oppenheimer.Properties
             game.countryLst.countries[75].set_infUSA(5);
             game.countryLst.countries[13].set_infUSA(2);
             game.countryLst.countries[55].set_infUSA(2);
-            //not final stuff just testing
             game.cards.deal(0);
         }
 
         public void initialInfluencePlacement()
         {
-
+            //stuff
         }
 
         public void getAiMove()
@@ -55,7 +54,7 @@ namespace Project_Oppenheimer.Properties
             AiOuput = "";
             Robert rob = new Robert(game, AI);
             AiOuput = rob.actionType + "\r\n";
-            AiOuput = AiOuput + "Card to Play: " + rob.cardToPlay.ToString() + " At index: " + rob.cardIndex.ToString() + "\r\n";
+            AiOuput = AiOuput + "Card to Play: " + rob.cardToPlay.ToString() + "\r\n";
             if (rob.targets.Count == rob.targetAmounts.Count)
             {
                 for (int i = 0; i < rob.targets.Count; i++)
@@ -75,7 +74,52 @@ namespace Project_Oppenheimer.Properties
                     AiOuput = AiOuput + "Amount: " + y.ToString() + "\r\n";
                 }
             }
+            playCard(AI, rob.cardToPlay);
             //apply Ai Move;
+        }
+
+        public void playCard(int player, int card)
+        {
+            //only discardes or removes card, doesn't do anything more yet
+            Card toPlay = new Card();
+            if (player == 1)
+            {
+                foreach (var crd in game.cards.usHand)
+                {
+                    if (crd.id == card)
+                    {
+                        toPlay = crd;
+                        break;
+                    }
+                }
+                if (toPlay.oneTimeEvent)
+                {
+                    game.cards.remove(toPlay);
+                }
+                else
+                {
+                    game.cards.discard(toPlay);
+                }
+            }
+            else
+            {
+                foreach (var crd in game.cards.ussrHand)
+                {
+                    if (crd.id == card)
+                    {
+                        toPlay = crd;
+                        break;
+                    }
+                }
+                if (toPlay.oneTimeEvent)
+                {
+                    game.cards.remove(toPlay);
+                }
+                else
+                {
+                    game.cards.discard(toPlay);
+                }
+            }
         }
     }
 }

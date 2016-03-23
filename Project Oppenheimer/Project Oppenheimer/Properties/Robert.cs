@@ -8,7 +8,6 @@ namespace Project_Oppenheimer.Properties
     {
         public string actionType;
         public int cardToPlay;
-        public int cardIndex;
         public List<int> targets;
         public List<int> targetAmounts;
         private bool completed = false;
@@ -83,17 +82,6 @@ namespace Project_Oppenheimer.Properties
                     if (!completed)
                     {
                         playOpsPoints();
-                    }
-                }
-            }
-            if (game.turn != 0)
-            {
-                for (int i = 0; i < hand.Count; i++)
-                {
-                    if (hand[i].id == cardToPlay)
-                    {
-                        cardIndex = i;
-                        break;
                     }
                 }
             }

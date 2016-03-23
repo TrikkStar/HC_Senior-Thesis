@@ -617,6 +617,13 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.AI_Output = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.europeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.asiaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.middleEastToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.southAmericaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.centralAmericaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.africaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.southeastAsiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox7.SuspendLayout();
             this.tableLayoutPanel85.SuspendLayout();
             this.tableLayoutPanel84.SuspendLayout();
@@ -5499,7 +5506,7 @@
             this.uSAToolStripMenuItem,
             this.uSSRToolStripMenuItem});
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.newGameToolStripMenuItem.Text = "New game";
             // 
             // uSAToolStripMenuItem
@@ -7160,10 +7167,17 @@
             // 
             // eventToolStripMenuItem
             // 
-            this.eventToolStripMenuItem.Enabled = false;
+            this.eventToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.europeToolStripMenuItem1,
+            this.asiaToolStripMenuItem1,
+            this.middleEastToolStripMenuItem1,
+            this.centralAmericaToolStripMenuItem1,
+            this.southAmericaToolStripMenuItem1,
+            this.africaToolStripMenuItem1,
+            this.southeastAsiaToolStripMenuItem});
             this.eventToolStripMenuItem.Name = "eventToolStripMenuItem";
             this.eventToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.eventToolStripMenuItem.Text = "Event";
+            this.eventToolStripMenuItem.Text = "Scoring";
             // 
             // resetToolStripMenuItem
             // 
@@ -7354,6 +7368,55 @@
             this.button2.Text = "Advance";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // europeToolStripMenuItem1
+            // 
+            this.europeToolStripMenuItem1.Name = "europeToolStripMenuItem1";
+            this.europeToolStripMenuItem1.Size = new System.Drawing.Size(190, 26);
+            this.europeToolStripMenuItem1.Text = "Europe";
+            this.europeToolStripMenuItem1.Click += new System.EventHandler(this.europeToolStripMenuItem1_Click);
+            // 
+            // asiaToolStripMenuItem1
+            // 
+            this.asiaToolStripMenuItem1.Name = "asiaToolStripMenuItem1";
+            this.asiaToolStripMenuItem1.Size = new System.Drawing.Size(190, 26);
+            this.asiaToolStripMenuItem1.Text = "Asia";
+            this.asiaToolStripMenuItem1.Click += new System.EventHandler(this.asiaToolStripMenuItem1_Click);
+            // 
+            // middleEastToolStripMenuItem1
+            // 
+            this.middleEastToolStripMenuItem1.Name = "middleEastToolStripMenuItem1";
+            this.middleEastToolStripMenuItem1.Size = new System.Drawing.Size(190, 26);
+            this.middleEastToolStripMenuItem1.Text = "Middle East";
+            this.middleEastToolStripMenuItem1.Click += new System.EventHandler(this.middleEastToolStripMenuItem1_Click);
+            // 
+            // southAmericaToolStripMenuItem1
+            // 
+            this.southAmericaToolStripMenuItem1.Name = "southAmericaToolStripMenuItem1";
+            this.southAmericaToolStripMenuItem1.Size = new System.Drawing.Size(190, 26);
+            this.southAmericaToolStripMenuItem1.Text = "South America";
+            this.southAmericaToolStripMenuItem1.Click += new System.EventHandler(this.southAmericaToolStripMenuItem1_Click);
+            // 
+            // centralAmericaToolStripMenuItem1
+            // 
+            this.centralAmericaToolStripMenuItem1.Name = "centralAmericaToolStripMenuItem1";
+            this.centralAmericaToolStripMenuItem1.Size = new System.Drawing.Size(190, 26);
+            this.centralAmericaToolStripMenuItem1.Text = "Central America";
+            this.centralAmericaToolStripMenuItem1.Click += new System.EventHandler(this.centralAmericaToolStripMenuItem1_Click);
+            // 
+            // africaToolStripMenuItem1
+            // 
+            this.africaToolStripMenuItem1.Name = "africaToolStripMenuItem1";
+            this.africaToolStripMenuItem1.Size = new System.Drawing.Size(190, 26);
+            this.africaToolStripMenuItem1.Text = "Africa";
+            this.africaToolStripMenuItem1.Click += new System.EventHandler(this.africaToolStripMenuItem1_Click);
+            // 
+            // southeastAsiaToolStripMenuItem
+            // 
+            this.southeastAsiaToolStripMenuItem.Name = "southeastAsiaToolStripMenuItem";
+            this.southeastAsiaToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
+            this.southeastAsiaToolStripMenuItem.Text = "Southeast Asia";
+            this.southeastAsiaToolStripMenuItem.Click += new System.EventHandler(this.southeastAsiaToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -8161,6 +8224,13 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem98;
         private System.Windows.Forms.Label AI_Output;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ToolStripMenuItem europeToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem asiaToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem middleEastToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem centralAmericaToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem southAmericaToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem africaToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem southeastAsiaToolStripMenuItem;
     }
 }
 

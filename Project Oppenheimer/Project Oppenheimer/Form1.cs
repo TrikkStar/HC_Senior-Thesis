@@ -3687,6 +3687,49 @@ namespace Project_Oppenheimer
         private void button2_Click(object sender, EventArgs e)
         {
             supervisor.game.advanceRound();
+            refreshEvent();
+        }
+
+        private void europeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            supervisor.game.scoreRegion(2);
+            refreshEvent();
+        }
+
+        private void asiaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            supervisor.game.scoreRegion(1);
+            refreshEvent();
+        }
+
+        private void middleEastToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            supervisor.game.scoreRegion(3);
+            refreshEvent();
+        }
+
+        private void centralAmericaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            supervisor.game.scoreRegion(37);
+            refreshEvent();
+        }
+
+        private void southAmericaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            supervisor.game.scoreRegion(81);
+            refreshEvent();
+        }
+
+        private void africaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            supervisor.game.scoreRegion(79);
+            refreshEvent();
+        }
+
+        private void southeastAsiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            supervisor.game.scoreRegion(38);
+            refreshEvent();
         }
     }
 }

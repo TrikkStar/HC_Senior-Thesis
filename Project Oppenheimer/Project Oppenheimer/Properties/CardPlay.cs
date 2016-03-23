@@ -24,13 +24,13 @@ namespace Project_Oppenheimer.Properties
         private void button1_Click(object sender, EventArgs e)
         {
             //stuff for it to do
-            if (target.oneTimeEvent)
+            if (TS.player == 1)
             {
-                TS.game.cards.remove(target);
+                TS.playCard(1, target.id);
             }
             else
             {
-                TS.game.cards.discard(target);
+                TS.playCard(-1, target.id);
             }
             this.Close();
         }

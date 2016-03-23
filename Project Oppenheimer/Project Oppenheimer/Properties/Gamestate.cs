@@ -301,7 +301,7 @@
                 turn = 1;
                 round = 0;
             }
-            if (turn < 4)
+            else if (turn < 4)
             {
                 if (round < 14)
                 {
