@@ -1223,57 +1223,59 @@ namespace Project_Oppenheimer.Properties
                             break;
                         }
                         var temp = game.countryLst.countries[country];
-                        if ((temp.stability == stability) && (temp.battleground))
+                        if (adjacentToInfluence(temp.id))
                         {
-                            if (temp.controller == side)
+                            if ((temp.stability == stability) && (temp.battleground))
                             {
-                                if (side == 1)
+                                if (temp.controller == side)
                                 {
-                                    if (!(temp.influenceUSA - temp.influenceUSSR > temp.stability))
+                                    if (side == 1)
                                     {
-                                        targetAmounts.Add(1);
-                                        targets.Add(temp.id);
-                                        amount--;
-                                        break;
+                                        if (!(temp.influenceUSA - temp.influenceUSSR > temp.stability))
+                                        {
+                                            targetAmounts.Add(1);
+                                            targets.Add(temp.id);
+                                            amount--;
+                                            break;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        if (!(temp.influenceUSSR - temp.influenceUSA > temp.stability))
+                                        {
+                                            targetAmounts.Add(1);
+                                            targets.Add(temp.id);
+                                            amount--;
+                                            break;
+                                        }
+                                    }
+                                }
+                                else if (temp.controller == -side)
+                                {
+                                    if (side == 1)
+                                    {
+                                        if ((temp.influenceUSSR - temp.influenceUSA == temp.stability) && (amount >= 2))
+                                        {
+                                            targetAmounts.Add(1);
+                                            targets.Add(temp.id);
+                                            amount = amount - 2;
+                                            break;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        if ((temp.influenceUSA - temp.influenceUSSR == temp.stability) && (amount >= 2))
+                                        {
+                                            targetAmounts.Add(1);
+                                            targets.Add(temp.id);
+                                            amount = amount - 2;
+                                            break;
+                                        }
                                     }
                                 }
                                 else
                                 {
-                                    if (!(temp.influenceUSSR - temp.influenceUSA > temp.stability))
-                                    {
-                                        targetAmounts.Add(1);
-                                        targets.Add(temp.id);
-                                        amount--;
-                                        break;
-                                    }
-                                }
-                            }
-                            else if (temp.controller == -side)
-                            {
-                                if (side == 1)
-                                {
-                                    if ((temp.influenceUSSR - temp.influenceUSA == temp.stability) && (amount >= 2))
-                                    {
-                                        targetAmounts.Add(1);
-                                        targets.Add(temp.id);
-                                        amount = amount - 2;
-                                        break;
-                                    }
-                                }
-                                else
-                                {
-                                    if ((temp.influenceUSA - temp.influenceUSSR == temp.stability) && (amount >= 2))
-                                    {
-                                        targetAmounts.Add(1);
-                                        targets.Add(temp.id);
-                                        amount = amount - 2;
-                                        break;
-                                    }
-                                }
-                            }
-                            else
-                            {
-                                int diff = temp.stability - Math.Abs(temp.influenceUSA - temp.influenceUSSR);
+                                    int diff = temp.stability - Math.Abs(temp.influenceUSA - temp.influenceUSSR);
                                     if ((diff < amount) && (diff > 0))
                                     {
                                         targetAmounts.Add(amount - diff);
@@ -1288,11 +1290,102 @@ namespace Project_Oppenheimer.Properties
                                         amount--;
                                         break;
                                     }
+                                }
+                            }
+                        }
+                    }
+                }
+                foreach (int stability in new List<int> { 5, 4, 3, 2, 1 })
+                {
+                    if (amount <= 0)
+                    {
+                        break;
+                    }
+                    foreach (int country in area)
+                    {
+                        if (amount <= 0)
+                        {
+                            break;
+                        }
+                        var temp = game.countryLst.countries[country];
+                        if (adjacentToInfluence(temp.id))
+                        {
+                            if (temp.stability == stability)
+                            {
+                                if (temp.controller == side)
+                                {
+                                    if (side == 1)
+                                    {
+                                        if (!(temp.influenceUSA - temp.influenceUSSR > temp.stability))
+                                        {
+                                            targetAmounts.Add(1);
+                                            targets.Add(temp.id);
+                                            amount--;
+                                            break;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        if (!(temp.influenceUSSR - temp.influenceUSA > temp.stability))
+                                        {
+                                            targetAmounts.Add(1);
+                                            targets.Add(temp.id);
+                                            amount--;
+                                            break;
+                                        }
+                                    }
+                                }
+                                else if (temp.controller == -side)
+                                {
+                                    if (side == 1)
+                                    {
+                                        if ((temp.influenceUSSR - temp.influenceUSA == temp.stability) && (amount >= 2))
+                                        {
+                                            targetAmounts.Add(1);
+                                            targets.Add(temp.id);
+                                            amount = amount - 2;
+                                            break;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        if ((temp.influenceUSA - temp.influenceUSSR == temp.stability) && (amount >= 2))
+                                        {
+                                            targetAmounts.Add(1);
+                                            targets.Add(temp.id);
+                                            amount = amount - 2;
+                                            break;
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    int diff = temp.stability - Math.Abs(temp.influenceUSA - temp.influenceUSSR);
+                                    if ((diff < amount) && (diff > 0))
+                                    {
+                                        targetAmounts.Add(amount - diff);
+                                        targets.Add(temp.id);
+                                        amount = amount - diff;
+                                        break;
+                                    }
+                                    else
+                                    {
+                                        targetAmounts.Add(1);
+                                        targets.Add(temp.id);
+                                        amount--;
+                                        break;
+                                    }
+                                }
                             }
                         }
                     }
                 }
             }
+        }
+
+        private bool adjacentToInfluence(int country)
+        {
+            return false;
         }
     }
 }
