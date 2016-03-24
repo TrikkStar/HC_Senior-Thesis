@@ -36,7 +36,7 @@ namespace Project_Oppenheimer.Properties
                 {
                     hand = game.cards.ussrHand;
                 }
-                targets = new List<int>();
+                //chack if hands are empty
                 if (game.round == 0)
                 {
                     playScoringCard();
@@ -342,6 +342,7 @@ namespace Project_Oppenheimer.Properties
                 case 21:
                     return ((game.MarshallPlan) || (game.WarsawPactFormed));
                 case 23:
+                    //needs to actually target stuff
                     return ((!game.NATO) || (!checkRegionCondition(2)));
                 case 27:
                     return (game.countryLst.countries[41].influenceUSA < 3);
@@ -996,7 +997,7 @@ namespace Project_Oppenheimer.Properties
                 }
                 else
                 {
-                    actionType = "Place Influenc";
+                    actionType = "Place Influence";
                     completed = true;
                     foreach (int ops in new List<int> {4, 3, 2, 1})
                     {
