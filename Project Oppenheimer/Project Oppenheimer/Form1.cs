@@ -3914,5 +3914,23 @@ namespace Project_Oppenheimer
                 supervisor.game.NATO = false;
             }
         }
+
+        private void deckToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.Hand_View(supervisor.game.cards.deck);
+            popup.ShowDialog();
+        }
+
+        private void discardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.Hand_View(supervisor.game.cards.discarded);
+            popup.ShowDialog();
+        }
+
+        private void removedToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var popup = new Properties.Hand_View(supervisor.game.cards.removed);
+            popup.ShowDialog();
+        }
     }
 }

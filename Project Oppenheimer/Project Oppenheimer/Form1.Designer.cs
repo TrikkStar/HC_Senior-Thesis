@@ -637,6 +637,9 @@
             this.formosanResolutionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.marshallPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nATOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deckToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.discardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.removedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox7.SuspendLayout();
             this.tableLayoutPanel85.SuspendLayout();
             this.tableLayoutPanel84.SuspendLayout();
@@ -7280,10 +7283,13 @@
             // 
             this.handsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.uSAToolStripMenuItem1,
-            this.uSSRToolStripMenuItem1});
+            this.uSSRToolStripMenuItem1,
+            this.deckToolStripMenuItem,
+            this.discardToolStripMenuItem,
+            this.removedToolStripMenuItem});
             this.handsToolStripMenuItem.Name = "handsToolStripMenuItem";
             this.handsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.handsToolStripMenuItem.Text = "Hands";
+            this.handsToolStripMenuItem.Text = "Cards";
             // 
             // uSAToolStripMenuItem1
             // 
@@ -7573,6 +7579,27 @@
             this.nATOToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
             this.nATOToolStripMenuItem.Text = "NATO";
             this.nATOToolStripMenuItem.Click += new System.EventHandler(this.nATOToolStripMenuItem_Click);
+            // 
+            // deckToolStripMenuItem
+            // 
+            this.deckToolStripMenuItem.Name = "deckToolStripMenuItem";
+            this.deckToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.deckToolStripMenuItem.Text = "Deck";
+            this.deckToolStripMenuItem.Click += new System.EventHandler(this.deckToolStripMenuItem_Click);
+            // 
+            // discardToolStripMenuItem
+            // 
+            this.discardToolStripMenuItem.Name = "discardToolStripMenuItem";
+            this.discardToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.discardToolStripMenuItem.Text = "Discard";
+            this.discardToolStripMenuItem.Click += new System.EventHandler(this.discardToolStripMenuItem_Click);
+            // 
+            // removedToolStripMenuItem
+            // 
+            this.removedToolStripMenuItem.Name = "removedToolStripMenuItem";
+            this.removedToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.removedToolStripMenuItem.Text = "Removed";
+            this.removedToolStripMenuItem.Click += new System.EventHandler(this.removedToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -8400,6 +8427,9 @@
         private System.Windows.Forms.ToolStripMenuItem formosanResolutionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem marshallPlanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nATOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deckToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem discardToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem removedToolStripMenuItem;
     }
 }
 

@@ -83,6 +83,7 @@ namespace Project_Oppenheimer.Properties
         public void playCard(int player, int card, bool isEvent)
         {
             //only discardes or removes card, doesn't do anything more yet
+            //Needs to factor in spacereace
             Card toPlay = new Card();
             if (player == 1)
             {

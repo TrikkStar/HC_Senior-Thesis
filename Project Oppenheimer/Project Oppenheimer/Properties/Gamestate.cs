@@ -279,7 +279,7 @@
             {
                 if (defcon < 5)
                 {
-                    defcon = defcon - 1;
+                    defcon++;
                 }
                 turn++;
                 round = 0;
