@@ -1044,6 +1044,7 @@ namespace Project_Oppenheimer.Properties
                         }
                     }
                     PlaceInfluenceInRegion(hand[0].opsValue, 00);
+                    cardToPlay = hand[0].id;
                 }
             }
             return 0;
@@ -1385,6 +1386,41 @@ namespace Project_Oppenheimer.Properties
 
         private bool adjacentToInfluence(int country)
         {
+            var target = game.countryLst.countries[country];
+            foreach (var adjacent in target.adjacent)
+            {
+                if (adjacent == -5)
+                {
+                    if (side == 1)
+                    {
+                        return true;
+                    }
+                }
+                else if (adjacent == -10)
+                {
+                    if (side == -1)
+                    {
+                        return false;
+                    }
+                }
+                else
+                {
+                    if (side == 1)
+                    {
+                        if (game.countryLst.countries[adjacent].influenceUSA > 0)
+                        {
+                            return true;
+                        }
+                    }
+                    else
+                    {
+                        if (game.countryLst.countries[adjacent].influenceUSSR > 0)
+                        {
+                            return true;
+                        }
+                    }
+                }
+            }
             return false;
         }
     }
