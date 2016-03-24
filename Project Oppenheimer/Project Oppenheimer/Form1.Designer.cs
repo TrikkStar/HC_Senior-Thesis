@@ -600,6 +600,13 @@
             this.toolStripMenuItem89 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem90 = new System.Windows.Forms.ToolStripMenuItem();
             this.eventToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.europeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.asiaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.middleEastToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.centralAmericaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.southAmericaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.africaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.southeastAsiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.handsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uSAToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -613,18 +620,23 @@
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.PlayerHand_group = new System.Windows.Forms.GroupBox();
+            this.radioButton10 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.AI_Output = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.europeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.asiaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.middleEastToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.southAmericaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.centralAmericaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.africaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.southeastAsiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
+            this.playedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.playedSecondToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.playedToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.playedSecondToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.eventToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.deGaulleLeadsFranceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.warsawPactFormedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uSJapanMutualDefensePactToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.noradToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.formosanResolutionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.marshallPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nATOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox7.SuspendLayout();
             this.tableLayoutPanel85.SuspendLayout();
             this.tableLayoutPanel84.SuspendLayout();
@@ -5530,7 +5542,7 @@
             this.uSAToolStripMenuItem,
             this.uSSRToolStripMenuItem});
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
             this.newGameToolStripMenuItem.Text = "New game";
             // 
             // uSAToolStripMenuItem
@@ -6294,6 +6306,7 @@
             this.militaryOpsToolStripMenuItem,
             this.spaceRaceToolStripMenuItem,
             this.eventToolStripMenuItem,
+            this.eventToolStripMenuItem1,
             this.resetToolStripMenuItem});
             this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
             this.gameToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
@@ -6878,28 +6891,28 @@
             // toolStripMenuItem59
             // 
             this.toolStripMenuItem59.Name = "toolStripMenuItem59";
-            this.toolStripMenuItem59.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem59.Size = new System.Drawing.Size(92, 26);
             this.toolStripMenuItem59.Text = "5";
             this.toolStripMenuItem59.Click += new System.EventHandler(this.toolStripMenuItem59_Click);
             // 
             // toolStripMenuItem60
             // 
             this.toolStripMenuItem60.Name = "toolStripMenuItem60";
-            this.toolStripMenuItem60.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem60.Size = new System.Drawing.Size(92, 26);
             this.toolStripMenuItem60.Text = "4";
             this.toolStripMenuItem60.Click += new System.EventHandler(this.toolStripMenuItem60_Click);
             // 
             // toolStripMenuItem61
             // 
             this.toolStripMenuItem61.Name = "toolStripMenuItem61";
-            this.toolStripMenuItem61.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem61.Size = new System.Drawing.Size(92, 26);
             this.toolStripMenuItem61.Text = "3";
             this.toolStripMenuItem61.Click += new System.EventHandler(this.toolStripMenuItem61_Click);
             // 
             // toolStripMenuItem62
             // 
             this.toolStripMenuItem62.Name = "toolStripMenuItem62";
-            this.toolStripMenuItem62.Size = new System.Drawing.Size(181, 26);
+            this.toolStripMenuItem62.Size = new System.Drawing.Size(92, 26);
             this.toolStripMenuItem62.Text = "2";
             this.toolStripMenuItem62.Click += new System.EventHandler(this.toolStripMenuItem62_Click);
             // 
@@ -7042,71 +7055,73 @@
             this.toolStripMenuItem79,
             this.toolStripMenuItem80,
             this.toolStripMenuItem81,
-            this.toolStripMenuItem82});
+            this.toolStripMenuItem82,
+            this.playedToolStripMenuItem,
+            this.playedSecondToolStripMenuItem});
             this.uSAToolStripMenuItem4.Name = "uSAToolStripMenuItem4";
-            this.uSAToolStripMenuItem4.Size = new System.Drawing.Size(119, 26);
+            this.uSAToolStripMenuItem4.Size = new System.Drawing.Size(181, 26);
             this.uSAToolStripMenuItem4.Text = "USA";
             // 
             // startToolStripMenuItem
             // 
             this.startToolStripMenuItem.Name = "startToolStripMenuItem";
-            this.startToolStripMenuItem.Size = new System.Drawing.Size(115, 26);
+            this.startToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.startToolStripMenuItem.Text = "Start";
             this.startToolStripMenuItem.Click += new System.EventHandler(this.startToolStripMenuItem_Click);
             // 
             // toolStripMenuItem75
             // 
             this.toolStripMenuItem75.Name = "toolStripMenuItem75";
-            this.toolStripMenuItem75.Size = new System.Drawing.Size(115, 26);
+            this.toolStripMenuItem75.Size = new System.Drawing.Size(181, 26);
             this.toolStripMenuItem75.Text = "1";
             this.toolStripMenuItem75.Click += new System.EventHandler(this.toolStripMenuItem75_Click);
             // 
             // toolStripMenuItem76
             // 
             this.toolStripMenuItem76.Name = "toolStripMenuItem76";
-            this.toolStripMenuItem76.Size = new System.Drawing.Size(115, 26);
+            this.toolStripMenuItem76.Size = new System.Drawing.Size(181, 26);
             this.toolStripMenuItem76.Text = "2";
             this.toolStripMenuItem76.Click += new System.EventHandler(this.toolStripMenuItem76_Click);
             // 
             // toolStripMenuItem77
             // 
             this.toolStripMenuItem77.Name = "toolStripMenuItem77";
-            this.toolStripMenuItem77.Size = new System.Drawing.Size(115, 26);
+            this.toolStripMenuItem77.Size = new System.Drawing.Size(181, 26);
             this.toolStripMenuItem77.Text = "3";
             this.toolStripMenuItem77.Click += new System.EventHandler(this.toolStripMenuItem77_Click);
             // 
             // toolStripMenuItem78
             // 
             this.toolStripMenuItem78.Name = "toolStripMenuItem78";
-            this.toolStripMenuItem78.Size = new System.Drawing.Size(115, 26);
+            this.toolStripMenuItem78.Size = new System.Drawing.Size(181, 26);
             this.toolStripMenuItem78.Text = "4";
             this.toolStripMenuItem78.Click += new System.EventHandler(this.toolStripMenuItem78_Click);
             // 
             // toolStripMenuItem79
             // 
             this.toolStripMenuItem79.Name = "toolStripMenuItem79";
-            this.toolStripMenuItem79.Size = new System.Drawing.Size(115, 26);
+            this.toolStripMenuItem79.Size = new System.Drawing.Size(181, 26);
             this.toolStripMenuItem79.Text = "5";
             this.toolStripMenuItem79.Click += new System.EventHandler(this.toolStripMenuItem79_Click);
             // 
             // toolStripMenuItem80
             // 
             this.toolStripMenuItem80.Name = "toolStripMenuItem80";
-            this.toolStripMenuItem80.Size = new System.Drawing.Size(115, 26);
+            this.toolStripMenuItem80.Size = new System.Drawing.Size(181, 26);
             this.toolStripMenuItem80.Text = "6";
             this.toolStripMenuItem80.Click += new System.EventHandler(this.toolStripMenuItem80_Click);
             // 
             // toolStripMenuItem81
             // 
             this.toolStripMenuItem81.Name = "toolStripMenuItem81";
-            this.toolStripMenuItem81.Size = new System.Drawing.Size(115, 26);
+            this.toolStripMenuItem81.Size = new System.Drawing.Size(181, 26);
             this.toolStripMenuItem81.Text = "7";
             this.toolStripMenuItem81.Click += new System.EventHandler(this.toolStripMenuItem81_Click);
             // 
             // toolStripMenuItem82
             // 
             this.toolStripMenuItem82.Name = "toolStripMenuItem82";
-            this.toolStripMenuItem82.Size = new System.Drawing.Size(115, 26);
+            this.toolStripMenuItem82.Size = new System.Drawing.Size(181, 26);
             this.toolStripMenuItem82.Text = "8";
             this.toolStripMenuItem82.Click += new System.EventHandler(this.toolStripMenuItem82_Click);
             // 
@@ -7121,71 +7136,73 @@
             this.toolStripMenuItem87,
             this.toolStripMenuItem88,
             this.toolStripMenuItem89,
-            this.toolStripMenuItem90});
+            this.toolStripMenuItem90,
+            this.playedToolStripMenuItem1,
+            this.playedSecondToolStripMenuItem1});
             this.uSSRToolStripMenuItem4.Name = "uSSRToolStripMenuItem4";
-            this.uSSRToolStripMenuItem4.Size = new System.Drawing.Size(119, 26);
+            this.uSSRToolStripMenuItem4.Size = new System.Drawing.Size(181, 26);
             this.uSSRToolStripMenuItem4.Text = "USSR";
             // 
             // startToolStripMenuItem1
             // 
             this.startToolStripMenuItem1.Name = "startToolStripMenuItem1";
-            this.startToolStripMenuItem1.Size = new System.Drawing.Size(115, 26);
+            this.startToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
             this.startToolStripMenuItem1.Text = "Start";
             this.startToolStripMenuItem1.Click += new System.EventHandler(this.startToolStripMenuItem1_Click);
             // 
             // toolStripMenuItem83
             // 
             this.toolStripMenuItem83.Name = "toolStripMenuItem83";
-            this.toolStripMenuItem83.Size = new System.Drawing.Size(115, 26);
+            this.toolStripMenuItem83.Size = new System.Drawing.Size(181, 26);
             this.toolStripMenuItem83.Text = "1";
             this.toolStripMenuItem83.Click += new System.EventHandler(this.toolStripMenuItem83_Click);
             // 
             // toolStripMenuItem84
             // 
             this.toolStripMenuItem84.Name = "toolStripMenuItem84";
-            this.toolStripMenuItem84.Size = new System.Drawing.Size(115, 26);
+            this.toolStripMenuItem84.Size = new System.Drawing.Size(181, 26);
             this.toolStripMenuItem84.Text = "2";
             this.toolStripMenuItem84.Click += new System.EventHandler(this.toolStripMenuItem84_Click);
             // 
             // toolStripMenuItem85
             // 
             this.toolStripMenuItem85.Name = "toolStripMenuItem85";
-            this.toolStripMenuItem85.Size = new System.Drawing.Size(115, 26);
+            this.toolStripMenuItem85.Size = new System.Drawing.Size(181, 26);
             this.toolStripMenuItem85.Text = "3";
             this.toolStripMenuItem85.Click += new System.EventHandler(this.toolStripMenuItem85_Click);
             // 
             // toolStripMenuItem86
             // 
             this.toolStripMenuItem86.Name = "toolStripMenuItem86";
-            this.toolStripMenuItem86.Size = new System.Drawing.Size(115, 26);
+            this.toolStripMenuItem86.Size = new System.Drawing.Size(181, 26);
             this.toolStripMenuItem86.Text = "4";
             this.toolStripMenuItem86.Click += new System.EventHandler(this.toolStripMenuItem86_Click);
             // 
             // toolStripMenuItem87
             // 
             this.toolStripMenuItem87.Name = "toolStripMenuItem87";
-            this.toolStripMenuItem87.Size = new System.Drawing.Size(115, 26);
+            this.toolStripMenuItem87.Size = new System.Drawing.Size(181, 26);
             this.toolStripMenuItem87.Text = "5";
             this.toolStripMenuItem87.Click += new System.EventHandler(this.toolStripMenuItem87_Click);
             // 
             // toolStripMenuItem88
             // 
             this.toolStripMenuItem88.Name = "toolStripMenuItem88";
-            this.toolStripMenuItem88.Size = new System.Drawing.Size(115, 26);
+            this.toolStripMenuItem88.Size = new System.Drawing.Size(181, 26);
             this.toolStripMenuItem88.Text = "6";
             this.toolStripMenuItem88.Click += new System.EventHandler(this.toolStripMenuItem88_Click);
             // 
             // toolStripMenuItem89
             // 
             this.toolStripMenuItem89.Name = "toolStripMenuItem89";
-            this.toolStripMenuItem89.Size = new System.Drawing.Size(115, 26);
+            this.toolStripMenuItem89.Size = new System.Drawing.Size(181, 26);
             this.toolStripMenuItem89.Text = "7";
             this.toolStripMenuItem89.Click += new System.EventHandler(this.toolStripMenuItem89_Click);
             // 
             // toolStripMenuItem90
             // 
             this.toolStripMenuItem90.Name = "toolStripMenuItem90";
-            this.toolStripMenuItem90.Size = new System.Drawing.Size(115, 26);
+            this.toolStripMenuItem90.Size = new System.Drawing.Size(181, 26);
             this.toolStripMenuItem90.Text = "8";
             this.toolStripMenuItem90.Click += new System.EventHandler(this.toolStripMenuItem90_Click);
             // 
@@ -7202,6 +7219,55 @@
             this.eventToolStripMenuItem.Name = "eventToolStripMenuItem";
             this.eventToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.eventToolStripMenuItem.Text = "Scoring";
+            // 
+            // europeToolStripMenuItem1
+            // 
+            this.europeToolStripMenuItem1.Name = "europeToolStripMenuItem1";
+            this.europeToolStripMenuItem1.Size = new System.Drawing.Size(190, 26);
+            this.europeToolStripMenuItem1.Text = "Europe";
+            this.europeToolStripMenuItem1.Click += new System.EventHandler(this.europeToolStripMenuItem1_Click);
+            // 
+            // asiaToolStripMenuItem1
+            // 
+            this.asiaToolStripMenuItem1.Name = "asiaToolStripMenuItem1";
+            this.asiaToolStripMenuItem1.Size = new System.Drawing.Size(190, 26);
+            this.asiaToolStripMenuItem1.Text = "Asia";
+            this.asiaToolStripMenuItem1.Click += new System.EventHandler(this.asiaToolStripMenuItem1_Click);
+            // 
+            // middleEastToolStripMenuItem1
+            // 
+            this.middleEastToolStripMenuItem1.Name = "middleEastToolStripMenuItem1";
+            this.middleEastToolStripMenuItem1.Size = new System.Drawing.Size(190, 26);
+            this.middleEastToolStripMenuItem1.Text = "Middle East";
+            this.middleEastToolStripMenuItem1.Click += new System.EventHandler(this.middleEastToolStripMenuItem1_Click);
+            // 
+            // centralAmericaToolStripMenuItem1
+            // 
+            this.centralAmericaToolStripMenuItem1.Name = "centralAmericaToolStripMenuItem1";
+            this.centralAmericaToolStripMenuItem1.Size = new System.Drawing.Size(190, 26);
+            this.centralAmericaToolStripMenuItem1.Text = "Central America";
+            this.centralAmericaToolStripMenuItem1.Click += new System.EventHandler(this.centralAmericaToolStripMenuItem1_Click);
+            // 
+            // southAmericaToolStripMenuItem1
+            // 
+            this.southAmericaToolStripMenuItem1.Name = "southAmericaToolStripMenuItem1";
+            this.southAmericaToolStripMenuItem1.Size = new System.Drawing.Size(190, 26);
+            this.southAmericaToolStripMenuItem1.Text = "South America";
+            this.southAmericaToolStripMenuItem1.Click += new System.EventHandler(this.southAmericaToolStripMenuItem1_Click);
+            // 
+            // africaToolStripMenuItem1
+            // 
+            this.africaToolStripMenuItem1.Name = "africaToolStripMenuItem1";
+            this.africaToolStripMenuItem1.Size = new System.Drawing.Size(190, 26);
+            this.africaToolStripMenuItem1.Text = "Africa";
+            this.africaToolStripMenuItem1.Click += new System.EventHandler(this.africaToolStripMenuItem1_Click);
+            // 
+            // southeastAsiaToolStripMenuItem
+            // 
+            this.southeastAsiaToolStripMenuItem.Name = "southeastAsiaToolStripMenuItem";
+            this.southeastAsiaToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
+            this.southeastAsiaToolStripMenuItem.Text = "Southeast Asia";
+            this.southeastAsiaToolStripMenuItem.Click += new System.EventHandler(this.southeastAsiaToolStripMenuItem_Click);
             // 
             // resetToolStripMenuItem
             // 
@@ -7351,6 +7417,18 @@
             this.PlayerHand_group.TabStop = false;
             this.PlayerHand_group.Text = "Player Hand";
             // 
+            // radioButton10
+            // 
+            this.radioButton10.AutoSize = true;
+            this.radioButton10.Location = new System.Drawing.Point(7, 253);
+            this.radioButton10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.radioButton10.Name = "radioButton10";
+            this.radioButton10.Size = new System.Drawing.Size(79, 21);
+            this.radioButton10.TabIndex = 31;
+            this.radioButton10.Text = "Card 10";
+            this.radioButton10.UseVisualStyleBackColor = true;
+            this.radioButton10.CheckedChanged += new System.EventHandler(this.radioButton10_CheckedChanged);
+            // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
@@ -7394,66 +7472,107 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // europeToolStripMenuItem1
+            // playedToolStripMenuItem
             // 
-            this.europeToolStripMenuItem1.Name = "europeToolStripMenuItem1";
-            this.europeToolStripMenuItem1.Size = new System.Drawing.Size(190, 26);
-            this.europeToolStripMenuItem1.Text = "Europe";
-            this.europeToolStripMenuItem1.Click += new System.EventHandler(this.europeToolStripMenuItem1_Click);
+            this.playedToolStripMenuItem.CheckOnClick = true;
+            this.playedToolStripMenuItem.Name = "playedToolStripMenuItem";
+            this.playedToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.playedToolStripMenuItem.Text = "Played";
+            this.playedToolStripMenuItem.Click += new System.EventHandler(this.playedToolStripMenuItem_Click);
             // 
-            // asiaToolStripMenuItem1
+            // playedSecondToolStripMenuItem
             // 
-            this.asiaToolStripMenuItem1.Name = "asiaToolStripMenuItem1";
-            this.asiaToolStripMenuItem1.Size = new System.Drawing.Size(190, 26);
-            this.asiaToolStripMenuItem1.Text = "Asia";
-            this.asiaToolStripMenuItem1.Click += new System.EventHandler(this.asiaToolStripMenuItem1_Click);
+            this.playedSecondToolStripMenuItem.CheckOnClick = true;
+            this.playedSecondToolStripMenuItem.Name = "playedSecondToolStripMenuItem";
+            this.playedSecondToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.playedSecondToolStripMenuItem.Text = "Played Second";
+            this.playedSecondToolStripMenuItem.Click += new System.EventHandler(this.playedSecondToolStripMenuItem_Click);
             // 
-            // middleEastToolStripMenuItem1
+            // playedToolStripMenuItem1
             // 
-            this.middleEastToolStripMenuItem1.Name = "middleEastToolStripMenuItem1";
-            this.middleEastToolStripMenuItem1.Size = new System.Drawing.Size(190, 26);
-            this.middleEastToolStripMenuItem1.Text = "Middle East";
-            this.middleEastToolStripMenuItem1.Click += new System.EventHandler(this.middleEastToolStripMenuItem1_Click);
+            this.playedToolStripMenuItem1.CheckOnClick = true;
+            this.playedToolStripMenuItem1.Name = "playedToolStripMenuItem1";
+            this.playedToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
+            this.playedToolStripMenuItem1.Text = "Played";
+            this.playedToolStripMenuItem1.Click += new System.EventHandler(this.playedToolStripMenuItem1_Click);
             // 
-            // southAmericaToolStripMenuItem1
+            // playedSecondToolStripMenuItem1
             // 
-            this.southAmericaToolStripMenuItem1.Name = "southAmericaToolStripMenuItem1";
-            this.southAmericaToolStripMenuItem1.Size = new System.Drawing.Size(190, 26);
-            this.southAmericaToolStripMenuItem1.Text = "South America";
-            this.southAmericaToolStripMenuItem1.Click += new System.EventHandler(this.southAmericaToolStripMenuItem1_Click);
+            this.playedSecondToolStripMenuItem1.CheckOnClick = true;
+            this.playedSecondToolStripMenuItem1.Name = "playedSecondToolStripMenuItem1";
+            this.playedSecondToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
+            this.playedSecondToolStripMenuItem1.Text = "Played Second";
+            this.playedSecondToolStripMenuItem1.Click += new System.EventHandler(this.playedSecondToolStripMenuItem1_Click);
             // 
-            // centralAmericaToolStripMenuItem1
+            // eventToolStripMenuItem1
             // 
-            this.centralAmericaToolStripMenuItem1.Name = "centralAmericaToolStripMenuItem1";
-            this.centralAmericaToolStripMenuItem1.Size = new System.Drawing.Size(190, 26);
-            this.centralAmericaToolStripMenuItem1.Text = "Central America";
-            this.centralAmericaToolStripMenuItem1.Click += new System.EventHandler(this.centralAmericaToolStripMenuItem1_Click);
+            this.eventToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.deGaulleLeadsFranceToolStripMenuItem,
+            this.warsawPactFormedToolStripMenuItem,
+            this.uSJapanMutualDefensePactToolStripMenuItem,
+            this.noradToolStripMenuItem,
+            this.formosanResolutionToolStripMenuItem,
+            this.marshallPlanToolStripMenuItem,
+            this.nATOToolStripMenuItem});
+            this.eventToolStripMenuItem1.Name = "eventToolStripMenuItem1";
+            this.eventToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
+            this.eventToolStripMenuItem1.Text = "Event";
             // 
-            // africaToolStripMenuItem1
+            // deGaulleLeadsFranceToolStripMenuItem
             // 
-            this.africaToolStripMenuItem1.Name = "africaToolStripMenuItem1";
-            this.africaToolStripMenuItem1.Size = new System.Drawing.Size(190, 26);
-            this.africaToolStripMenuItem1.Text = "Africa";
-            this.africaToolStripMenuItem1.Click += new System.EventHandler(this.africaToolStripMenuItem1_Click);
+            this.deGaulleLeadsFranceToolStripMenuItem.CheckOnClick = true;
+            this.deGaulleLeadsFranceToolStripMenuItem.Name = "deGaulleLeadsFranceToolStripMenuItem";
+            this.deGaulleLeadsFranceToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
+            this.deGaulleLeadsFranceToolStripMenuItem.Text = "DeGaulle Leads France";
+            this.deGaulleLeadsFranceToolStripMenuItem.Click += new System.EventHandler(this.deGaulleLeadsFranceToolStripMenuItem_Click);
             // 
-            // southeastAsiaToolStripMenuItem
+            // warsawPactFormedToolStripMenuItem
             // 
-            this.southeastAsiaToolStripMenuItem.Name = "southeastAsiaToolStripMenuItem";
-            this.southeastAsiaToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
-            this.southeastAsiaToolStripMenuItem.Text = "Southeast Asia";
-            this.southeastAsiaToolStripMenuItem.Click += new System.EventHandler(this.southeastAsiaToolStripMenuItem_Click);
+            this.warsawPactFormedToolStripMenuItem.CheckOnClick = true;
+            this.warsawPactFormedToolStripMenuItem.Name = "warsawPactFormedToolStripMenuItem";
+            this.warsawPactFormedToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
+            this.warsawPactFormedToolStripMenuItem.Text = "Warsaw Pact Formed";
+            this.warsawPactFormedToolStripMenuItem.Click += new System.EventHandler(this.warsawPactFormedToolStripMenuItem_Click);
             // 
-            // radioButton10
+            // uSJapanMutualDefensePactToolStripMenuItem
             // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Location = new System.Drawing.Point(7, 253);
-            this.radioButton10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(79, 21);
-            this.radioButton10.TabIndex = 31;
-            this.radioButton10.Text = "Card 10";
-            this.radioButton10.UseVisualStyleBackColor = true;
-            this.radioButton10.CheckedChanged += new System.EventHandler(this.radioButton10_CheckedChanged);
+            this.uSJapanMutualDefensePactToolStripMenuItem.CheckOnClick = true;
+            this.uSJapanMutualDefensePactToolStripMenuItem.Name = "uSJapanMutualDefensePactToolStripMenuItem";
+            this.uSJapanMutualDefensePactToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
+            this.uSJapanMutualDefensePactToolStripMenuItem.Text = "US/Japan Mutual Defense Pact";
+            this.uSJapanMutualDefensePactToolStripMenuItem.Click += new System.EventHandler(this.uSJapanMutualDefensePactToolStripMenuItem_Click);
+            // 
+            // noradToolStripMenuItem
+            // 
+            this.noradToolStripMenuItem.CheckOnClick = true;
+            this.noradToolStripMenuItem.Name = "noradToolStripMenuItem";
+            this.noradToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
+            this.noradToolStripMenuItem.Text = "NORAD";
+            this.noradToolStripMenuItem.Click += new System.EventHandler(this.noradToolStripMenuItem_Click);
+            // 
+            // formosanResolutionToolStripMenuItem
+            // 
+            this.formosanResolutionToolStripMenuItem.CheckOnClick = true;
+            this.formosanResolutionToolStripMenuItem.Name = "formosanResolutionToolStripMenuItem";
+            this.formosanResolutionToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
+            this.formosanResolutionToolStripMenuItem.Text = "Formosan Resolution";
+            this.formosanResolutionToolStripMenuItem.Click += new System.EventHandler(this.formosanResolutionToolStripMenuItem_Click);
+            // 
+            // marshallPlanToolStripMenuItem
+            // 
+            this.marshallPlanToolStripMenuItem.CheckOnClick = true;
+            this.marshallPlanToolStripMenuItem.Name = "marshallPlanToolStripMenuItem";
+            this.marshallPlanToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
+            this.marshallPlanToolStripMenuItem.Text = "Marshall Plan";
+            this.marshallPlanToolStripMenuItem.Click += new System.EventHandler(this.marshallPlanToolStripMenuItem_Click);
+            // 
+            // nATOToolStripMenuItem
+            // 
+            this.nATOToolStripMenuItem.CheckOnClick = true;
+            this.nATOToolStripMenuItem.Name = "nATOToolStripMenuItem";
+            this.nATOToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
+            this.nATOToolStripMenuItem.Text = "NATO";
+            this.nATOToolStripMenuItem.Click += new System.EventHandler(this.nATOToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -8269,6 +8388,18 @@
         private System.Windows.Forms.ToolStripMenuItem africaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem southeastAsiaToolStripMenuItem;
         private System.Windows.Forms.RadioButton radioButton10;
+        private System.Windows.Forms.ToolStripMenuItem playedToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem playedSecondToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem playedToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem playedSecondToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem eventToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem deGaulleLeadsFranceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem warsawPactFormedToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem uSJapanMutualDefensePactToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem noradToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem formosanResolutionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem marshallPlanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nATOToolStripMenuItem;
     }
 }
 

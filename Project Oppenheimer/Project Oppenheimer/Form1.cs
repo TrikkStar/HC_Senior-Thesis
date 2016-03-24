@@ -2146,7 +2146,7 @@ namespace Project_Oppenheimer
             SpaceRace_USSR.Text = supervisor.game.ussrSpaceRace.ToString();
 
             //Add conditions for showing players hand
-            Play_cardButton.Enabled = false;
+            //Play_cardButton.Enabled = false;
             List<Properties.Card> hand;
             if (supervisor.player == 1)
             {
@@ -3783,5 +3783,136 @@ namespace Project_Oppenheimer
             refreshEvent();
         }
 
+        private void playedToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (playedToolStripMenuItem.Checked)
+            {
+                supervisor.game.usSrPlayed = true;
+            }
+            else
+            {
+                supervisor.game.usSrPlayed = false;
+            }
+        }
+
+        private void playedSecondToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (playedToolStripMenuItem.Checked)
+            {
+                supervisor.game.usSrSecond = true;
+            }
+            else
+            {
+                supervisor.game.usSrSecond = false;
+            }
+        }
+
+        private void playedToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (playedToolStripMenuItem.Checked)
+            {
+                supervisor.game.ussrSrPlayed = true;
+            }
+            else
+            {
+                supervisor.game.ussrSrPlayed = false;
+            }
+        }
+
+        private void playedSecondToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (playedToolStripMenuItem.Checked)
+            {
+                supervisor.game.ussrSrSecond = true;
+            }
+            else
+            {
+                supervisor.game.ussrSrSecond = false;
+            }
+        }
+
+        private void deGaulleLeadsFranceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (playedToolStripMenuItem.Checked)
+            {
+                supervisor.game.DeGualleLeadsFrance = true;
+            }
+            else
+            {
+                supervisor.game.DeGualleLeadsFrance = false;
+            }
+        }
+
+        private void warsawPactFormedToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (playedToolStripMenuItem.Checked)
+            {
+                supervisor.game.WarsawPactFormed = true;
+            }
+            else
+            {
+                supervisor.game.WarsawPactFormed = false;
+            }
+        }
+
+        private void uSJapanMutualDefensePactToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (playedToolStripMenuItem.Checked)
+            {
+                supervisor.game.USJapanMutualDefensePact = true;
+            }
+            else
+            {
+                supervisor.game.USJapanMutualDefensePact = false;
+            }
+        }
+
+        private void noradToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (playedToolStripMenuItem.Checked)
+            {
+                supervisor.game.NORAD = true;
+            }
+            else
+            {
+                supervisor.game.NORAD = false;
+            }
+        }
+
+        private void formosanResolutionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (playedToolStripMenuItem.Checked)
+            {
+                supervisor.game.FormosanResolution = true;
+            }
+            else
+            {
+                supervisor.game.FormosanResolution = false;
+            }
+        }
+
+        private void marshallPlanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (playedToolStripMenuItem.Checked)
+            {
+                supervisor.game.MarshallPlan = true;
+            }
+            else
+            {
+                supervisor.game.MarshallPlan = false;
+            }
+        }
+
+        private void nATOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (playedToolStripMenuItem.Checked)
+            {
+                supervisor.game.NATO = true;
+            }
+            else
+            {
+                supervisor.game.NATO = false;
+            }
+        }
     }
 }
