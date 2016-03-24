@@ -36,53 +36,59 @@ namespace Project_Oppenheimer.Properties
                 {
                     hand = game.cards.ussrHand;
                 }
-                //chack if hands are empty
-                if (game.round == 0)
+                if (hand.Count != 0)
                 {
-                    playScoringCard();
-                    if (!completed)
+                    if (game.round == 0)
                     {
-                        playEventCard();
-                    }
-                    if (!completed)
-                    {
-                        foreach (var card in hand)
+                        playScoringCard();
+                        if (!completed)
                         {
-                            if (card.affiliation != -side)
-                            {
-                                cardToPlay = card.id;
-                                actionType = "Desperation";
-                                break;
-                            }
+                            playEventCard();
                         }
-                        if (cardToPlay == 0)
+                        if (!completed)
                         {
                             foreach (var card in hand)
                             {
-                                if (card.id != 6)
+                                if (card.affiliation != -side)
                                 {
                                     cardToPlay = card.id;
-                                    actionType = "Super Desperation";
+                                    actionType = "Desperation";
+                                    break;
                                 }
                             }
+                            if (cardToPlay == 0)
+                            {
+                                foreach (var card in hand)
+                                {
+                                    if (card.id != 6)
+                                    {
+                                        cardToPlay = card.id;
+                                        actionType = "Super Desperation";
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        playScoringCard();
+                        if (!completed)
+                        {
+                            playEventCard();
+                        }
+                        if (!completed)
+                        {
+                            playSpaceRace();
+                        }
+                        if (!completed)
+                        {
+                            playOpsPoints();
                         }
                     }
                 }
                 else
                 {
-                    playScoringCard();
-                    if (!completed)
-                    {
-                        playEventCard();
-                    }
-                    if (!completed)
-                    {
-                        playSpaceRace();
-                    }
-                    if (!completed)
-                    {
-                        playOpsPoints();
-                    }
+                    actionType = "No Cards in Hand";
                 }
             }
         }
@@ -342,8 +348,17 @@ namespace Project_Oppenheimer.Properties
                 case 21:
                     return ((game.MarshallPlan) || (game.WarsawPactFormed));
                 case 23:
-                    //needs to actually target stuff
-                    return ((!game.NATO) || (!checkRegionCondition(2)));
+                    if ((!game.NATO) || (!checkRegionCondition(2)))
+                    {
+                        int temp = 0;
+                        while (temp < 7)
+                        {
+                            targetCountryNotControlledAdd(-4, 1, -1);
+                            temp++;
+                        }
+                        return true;
+                    }
+                    return false;
                 case 27:
                     return (game.countryLst.countries[41].influenceUSA < 3);
                 case 106:
@@ -1208,7 +1223,6 @@ namespace Project_Oppenheimer.Properties
 
         private void PlaceInfluenceInRegion(int amount, int region)
         {
-            //Needs to factor in adjacency
             var area = getRegion(region);
             while (amount > 0)
             {

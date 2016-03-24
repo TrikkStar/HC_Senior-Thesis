@@ -10,6 +10,7 @@ namespace Project_Oppenheimer.Properties
         {
             InitializeComponent();
             target = country;
+            this.Text = target.name;
         }
 
         private void submit_button_Click(object sender, EventArgs e)

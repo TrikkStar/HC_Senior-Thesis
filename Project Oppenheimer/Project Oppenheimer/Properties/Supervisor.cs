@@ -94,7 +94,7 @@ namespace Project_Oppenheimer.Properties
                         break;
                     }
                 }
-                if ((isEvent) && (toPlay.oneTimeEvent))
+                if (((toPlay.affiliation == -1) || (isEvent)) && (toPlay.oneTimeEvent))
                 {
                     game.cards.remove(toPlay);
                 }
@@ -113,7 +113,7 @@ namespace Project_Oppenheimer.Properties
                         break;
                     }
                 }
-                if (toPlay.oneTimeEvent)
+                if (((toPlay.affiliation == 1) || (isEvent)) && (toPlay.oneTimeEvent))
                 {
                     game.cards.remove(toPlay);
                 }
