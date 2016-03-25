@@ -25,17 +25,22 @@ namespace Project_Oppenheimer.Properties
         {
             //stuff for it to do
             bool isEvent = false;
+            bool isDiscarded = false;
             if (Event_Radio.Checked)
             {
                 isEvent = true;
             }
+            if (SpaceRace_Radio.Checked)
+            {
+                isDiscarded = true;
+            }
             if (TS.player == 1)
             {
-                TS.playCard(1, target.id, isEvent);
+                TS.playCard(1, target.id, isEvent, isDiscarded);
             }
             else
             {
-                TS.playCard(-1, target.id, isEvent);
+                TS.playCard(-1, target.id, isEvent, isDiscarded);
             }
             this.Close();
         }

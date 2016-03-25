@@ -44,11 +44,6 @@ namespace Project_Oppenheimer.Properties
             game.cards.deal(0);
         }
 
-        public void initialInfluencePlacement()
-        {
-            //stuff
-        }
-
         public void getAiMove()
         {
             AiOuput = "";
@@ -73,17 +68,40 @@ namespace Project_Oppenheimer.Properties
                 {
                     AiOuput = AiOuput + "Amount: " + y.ToString() + "\r\n";
                 }
+                AiOuput = AiOuput + "Something didn't quite go right \r\n";
             }
             //Switch statement to cause appropriate event to happen
-            bool isEvent = (rob.actionType == "Event" || rob.actionType == "Scoring" || rob.actionType == "Desperation" || rob.actionType == "Super Desperation");
-            playCard(AI, rob.cardToPlay, isEvent);
-            //apply Ai Move;
+            switch (rob.actionType)
+            {
+                case ("Desperation"):
+
+                    break;
+                case ("Super Desperation"):
+                    break;
+                case ("No Cards in Hand"):
+                    break;
+                case ("Inital Placement"):
+                    break;
+                case ("Scoring"):
+                    break;
+                case ("Event"):
+                    break;
+                case ("SpaceRace"):
+                    break;
+                case ("Realingment"):
+                    break;
+                case ("Coup"):
+                    break;
+                case ("Place Influence"):
+                    break;
+            }
+            //bool isEvent = (rob.actionType == "Event" || rob.actionType == "Scoring" || rob.actionType == "Desperation" || rob.actionType == "Super Desperation");
+            //playCard(AI, rob.cardToPlay, isEvent);
         }
 
-        public void playCard(int player, int card, bool isEvent)
+        public void playCard(int player, int card, bool isEvent, bool isDiscarded)
         {
-            //only discardes or removes card, doesn't do anything more yet
-            //Needs to factor in spacereace
+            //only discardes or removes card
             Card toPlay = new Card();
             if (player == 1)
             {
@@ -95,7 +113,7 @@ namespace Project_Oppenheimer.Properties
                         break;
                     }
                 }
-                if (((toPlay.affiliation == -1) || (isEvent)) && (toPlay.oneTimeEvent))
+                if (((isEvent) || ((toPlay.affiliation == -1) && (!isDiscarded))) && (toPlay.oneTimeEvent))
                 {
                     game.cards.remove(toPlay);
                 }
@@ -114,7 +132,7 @@ namespace Project_Oppenheimer.Properties
                         break;
                     }
                 }
-                if (((toPlay.affiliation == 1) || (isEvent)) && (toPlay.oneTimeEvent))
+                if (((isEvent) || ((toPlay.affiliation == 1) && (!isDiscarded))) && (toPlay.oneTimeEvent))
                 {
                     game.cards.remove(toPlay);
                 }
@@ -123,6 +141,11 @@ namespace Project_Oppenheimer.Properties
                     game.cards.discard(toPlay);
                 }
             }
+        }
+
+        public void applyEvent()
+        {
+            //figure out how this will target stuff
         }
     }
 }

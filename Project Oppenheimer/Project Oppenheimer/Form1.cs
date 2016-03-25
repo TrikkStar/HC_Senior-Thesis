@@ -3614,7 +3614,7 @@ namespace Project_Oppenheimer
             popup.ShowDialog();
             refreshEvent();
         }
-
+        //think i can get rid of this block
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             Play_cardButton.Enabled = true;
@@ -3664,7 +3664,7 @@ namespace Project_Oppenheimer
         {
             Play_cardButton.Enabled = true;
         }
-
+        //end block
         private void Play_cardButton_Click(object sender, EventArgs e)
         {
             List<Properties.Card> hand;

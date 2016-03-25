@@ -18,6 +18,7 @@ namespace Project_Oppenheimer.Properties
 
         public Robert(Gamestate gme, int sde)
         {
+            //need to implement something that tracks bonus modifiers to ops points
             game = gme;
             side = sde;
             targetAmounts = new List<int> {};
