@@ -48,9 +48,9 @@ namespace Project_Oppenheimer.Properties
 
         public void getAiMove()
         {
-            AiOuput = "";
             Robert rob = new Robert(game, AI);
             AiOuput = rob.actionType + "\r\n";
+            //need to get actual name of card
             AiOuput = AiOuput + "Card to Play: " + rob.cardToPlay.ToString() + "\r\n";
             if (rob.targets.Count == rob.targetAmounts.Count)
             {
@@ -96,7 +96,7 @@ namespace Project_Oppenheimer.Properties
                     playCard(AI, agent.cardToPlay, true, false);
                     break;
                 case "Event":
-                    applyEvent(agent.cardToPlay);
+                    applyEvent(agent.cardToPlay, agent.targets, agent.targetAmounts);
                     playCard(AI, agent.cardToPlay, true, false);
                     break;
                 case "SpaceRace":
@@ -107,7 +107,7 @@ namespace Project_Oppenheimer.Properties
                     //need to make sure apropriate number of realingments are made
                     foreach (int target in agent.targets)
                     {
-                        attempRealign(AI, target);
+                        attempRealignment(AI, target);
                     }
                     playCard(AI, agent.cardToPlay, false, false);
                     break;
@@ -186,17 +186,76 @@ namespace Project_Oppenheimer.Properties
 
         }
 
-        public void attempRealign(int player, int target)
+        public void attempRealignment(int player, int target)
         {
-
+            int usRoll = rng.Next(1, 7);
+            int ussrRoll = rng.Next(1, 7);
+            int usBonus = usRoll;
+            int ussrBonus = ussrRoll;
+            Country country = game.countryLst.countries[target];
+            if (country.influenceUSA > country.influenceUSSR)
+            {
+                usBonus++;
+            }
+            else if (country.influenceUSSR > country.influenceUSA)
+            {
+                ussrBonus++;
+            }
+            foreach (var adj in country.adjacent)
+            {
+                if ((adj == -5) && (player == 1))
+                {
+                    usBonus++;
+                }
+                else if ((adj == -10) && (player == -1))
+                {
+                    ussrBonus++;
+                }
+                else if (game.countryLst.countries[adj].controller == 1)
+                {
+                    usBonus++;
+                }
+                else if (game.countryLst.countries[adj].controller == -1)
+                {
+                    ussrBonus++;
+                }
+            }
+            GameOutput = "Realignment Attempt \r\n US Roll: " + usRoll + "\r\n USSR Roll: " + ussrRoll + "\r\n";
+            if (player == 1)
+            {
+                if (usBonus > ussrBonus)
+                {
+                    GameOutput = GameOutput + "Outcome: Success!";
+                    country.set_infUSSR(-(usBonus - ussrBonus));
+                }
+                else
+                {
+                    GameOutput = GameOutput + "Outcome: Failure!";
+                }
+            }
+            else
+            {
+                if (usBonus < ussrBonus)
+                {
+                    GameOutput = GameOutput + "Outcome: Success!";
+                    country.set_infUSSR(-(ussrBonus - usBonus));
+                }
+                else
+                {
+                    GameOutput = GameOutput + "Outcome: Failure!";
+                }
+            }
         }
 
         public void attemptCoup(int player, int target, int ops)
         {
-            GameOutput = "";
             int rand = rng.Next(1, 7);
             int attempt = rand + ops;
             int dificulty = game.countryLst.countries[target].stability * 2;
+            if (game.countryLst.countries[target].battleground)
+            {
+                game.defcon--;
+            }
             GameOutput = "Coup Attempt: rolled " + rand.ToString() + "\r\n Target: " + game.countryLst.countries[target].name + "\r\n Strength: " + attempt.ToString() + "\r\n";
             if (attempt > dificulty)
             {
@@ -215,6 +274,7 @@ namespace Project_Oppenheimer.Properties
                         country.influenceUSSR = 0;
                         country.set_infUSA(success);
                     }
+                    game.usMillOp(ops);
                 }
                 else
                 {
@@ -228,6 +288,7 @@ namespace Project_Oppenheimer.Properties
                         country.influenceUSA = 0;
                         country.set_infUSSR(success);
                     }
+                    game.ussrMillOp(ops);
                 }
             }
             else

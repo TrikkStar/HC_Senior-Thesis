@@ -903,6 +903,7 @@ namespace Project_Oppenheimer.Properties
 
         private int playSpaceRace()
         {
+            //gives targets when evaluating event logic
             List<int> cardLst;
             if (game.turn < 4)
             {
