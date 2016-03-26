@@ -327,28 +327,29 @@
 
         public void scoreRegion(int x)
         {
-            if (x == 2)
+            switch (x)
             {
-                scoreEurope();
-            } else if (x == 1)
-            {
-                scoreAsia();
-            } else if (x == 3)
-            {
-                scoreMiddleEast();
-            } else if (x == 38)
-            {
-                scoreSoutheastAsia();
-            } else if (x == 79)
-            {
-                scoreAfrica();
-            } else if (x == 81)
-            {
-                scoreSouthAmerica();
-            }
-            else if (x == 37)
-            {
-                scoreCentralAmerica();
+                case 2:
+                    scoreEurope();
+                    break;
+                case 1:
+                    scoreAsia();
+                    break;
+                case 3:
+                    scoreMiddleEast();
+                    break;
+                case 38:
+                    scoreSoutheastAsia();
+                    break;
+                case 79:
+                    scoreAfrica();
+                    break;
+                case 81:
+                    scoreSouthAmerica();
+                    break;
+                case 37:
+                    scoreCentralAmerica();
+                    break;
             }
             checkVictory();
         }

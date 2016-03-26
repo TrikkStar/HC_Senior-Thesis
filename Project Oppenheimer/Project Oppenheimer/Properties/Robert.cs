@@ -19,6 +19,7 @@ namespace Project_Oppenheimer.Properties
         public Robert(Gamestate gme, int sde)
         {
             //need to implement something that tracks bonus modifiers to ops points
+            //needs off turn event trigger
             game = gme;
             side = sde;
             targetAmounts = new List<int> {};
@@ -1000,6 +1001,7 @@ namespace Project_Oppenheimer.Properties
                                 if (Math.Abs((2 * game.countryLst.countries[targets[0]].stability) - card.opsValue) <= 3)
                                 {
                                     cardToPlay = card.id;
+                                    targetAmounts.Add(card.opsValue);
                                     return 0;
                                 }
                             }
@@ -1008,6 +1010,7 @@ namespace Project_Oppenheimer.Properties
                     if (cardToPlay == 0)
                     {
                         cardToPlay = hand[0].id;
+                        targetAmounts.Add(hand[0].opsValue);
                         return 0;
                     }
                 }

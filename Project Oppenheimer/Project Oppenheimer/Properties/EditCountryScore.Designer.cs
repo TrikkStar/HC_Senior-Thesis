@@ -114,6 +114,7 @@
             this.Name = "EditCountryScore";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Add Score";
             this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.USA_UpDown)).EndInit();

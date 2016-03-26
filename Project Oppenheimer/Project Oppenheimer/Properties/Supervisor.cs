@@ -73,35 +73,55 @@ namespace Project_Oppenheimer.Properties
             //Switch statement to cause appropriate event to happen
             switch (rob.actionType)
             {
-                case ("Desperation"):
-
+                case "Desperation":
+                case "Super Desperation":
+                    if ((rob.cardToPlay != 2) && (rob.cardToPlay != 1) && (rob.cardToPlay != 3) && (rob.cardToPlay != 38) && (rob.cardToPlay != 81) && (rob.cardToPlay != 37) && (rob.cardToPlay != 79))
+                    {
+                        applyEvent(rob.cardToPlay);
+                    }
+                    else
+                    {
+                        game.scoreRegion(rob.cardToPlay);
+                    }
+                    playCard(AI, rob.cardToPlay, true, false);
                     break;
-                case ("Super Desperation"):
+                case "No Cards in Hand":
+                    //not sure if I even need this case
                     break;
-                case ("No Cards in Hand"):
+                case "Scoring":
+                    game.scoreRegion(rob.cardToPlay);
+                    playCard(AI, rob.cardToPlay, true, false);
                     break;
-                case ("Inital Placement"):
+                case "Event":
+                    applyEvent(rob.cardToPlay);
+                    playCard(AI, rob.cardToPlay, true, false);
                     break;
-                case ("Scoring"):
+                case "SpaceRace":
+                    attemptSpaceRace(AI);
+                    playCard(AI, rob.cardToPlay, false, true);
                     break;
-                case ("Event"):
+                case "Realingment":
+                    foreach(int target in rob.targets)
+                    {
+                        attempRealign(AI, target);
+                    }
+                    playCard(AI, rob.cardToPlay, false, false);
                     break;
-                case ("SpaceRace"):
+                case "Coup":
+                    attemptCoup(AI, rob.targets[0], rob.targetAmounts[0]);
+                    playCard(AI, rob.cardToPlay, false, false);
                     break;
-                case ("Realingment"):
+                case "Inital Placement":
                     break;
-                case ("Coup"):
-                    break;
-                case ("Place Influence"):
+                case "Place Influence":
                     break;
             }
-            //bool isEvent = (rob.actionType == "Event" || rob.actionType == "Scoring" || rob.actionType == "Desperation" || rob.actionType == "Super Desperation");
-            //playCard(AI, rob.cardToPlay, isEvent);
         }
 
         public void playCard(int player, int card, bool isEvent, bool isDiscarded)
         {
             //only discardes or removes card
+            //need to figure out how to trigger events caused by player not playing card
             Card toPlay = new Card();
             if (player == 1)
             {
@@ -143,9 +163,24 @@ namespace Project_Oppenheimer.Properties
             }
         }
 
-        public void applyEvent()
+        public void applyEvent(int id)
         {
             //figure out how this will target stuff
+        }
+
+        public void attemptSpaceRace(int player)
+        {
+
+        }
+
+        public void attempRealign(int player, int target)
+        {
+
+        }
+
+        public void attemptCoup(int player, int target, int ops)
+        {
+
         }
     }
 }
