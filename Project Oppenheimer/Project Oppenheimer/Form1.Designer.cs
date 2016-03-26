@@ -7593,9 +7593,8 @@
             this.AI_Output.AutoSize = true;
             this.AI_Output.Location = new System.Drawing.Point(6, 18);
             this.AI_Output.Name = "AI_Output";
-            this.AI_Output.Size = new System.Drawing.Size(67, 17);
+            this.AI_Output.Size = new System.Drawing.Size(0, 17);
             this.AI_Output.TabIndex = 22;
-            this.AI_Output.Text = "AI Output";
             // 
             // button2
             // 
@@ -7615,6 +7614,7 @@
             this.groupBox8.Size = new System.Drawing.Size(200, 125);
             this.groupBox8.TabIndex = 24;
             this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Game Output";
             // 
             // TS_Output
             // 
@@ -7633,6 +7633,7 @@
             this.groupBox9.Size = new System.Drawing.Size(246, 183);
             this.groupBox9.TabIndex = 25;
             this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "AI Output";
             // 
             // Form1
             // 

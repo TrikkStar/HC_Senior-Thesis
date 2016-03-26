@@ -19,30 +19,43 @@ namespace Project_Oppenheimer.Properties
             card = _card;
             TS = supervisor;
             InitializeComponent();
+            this.Text = card.name;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //stuff for it to do
-            bool isEvent = false;
-            bool isDiscarded = false;
             if (Event_Radio.Checked)
             {
-                isEvent = true;
+                TS.playCard(TS.player, card.id, true, false);
+                this.Close();
             }
             else if (SpaceRace_Radio.Checked)
             {
-                isDiscarded = true;
+                TS.attemptSpaceRace(TS.player);
+                TS.playCard(TS.player, card.id, false, true);
+                this.Close();
             }
-            if (TS.player == 1)
+            else if (OPS_Radio.Checked)
             {
-                TS.playCard(1, card.id, isEvent, isDiscarded);
+                //need to make targeting form
+                TS.playCard(TS.player, card.id, false, false);
+                this.Close();
             }
-            else
-            {
-                TS.playCard(-1, card.id, isEvent, isDiscarded);
-            }
-            this.Close();
+        }
+
+        private void OPS_Radio_CheckedChanged(object sender, EventArgs e)
+        {
+            groupBox2.Enabled = true;
+        }
+
+        private void Event_Radio_CheckedChanged(object sender, EventArgs e)
+        {
+            groupBox2.Enabled = false;
+        }
+
+        private void SpaceRace_Radio_CheckedChanged(object sender, EventArgs e)
+        {
+            groupBox2.Enabled = false;
         }
     }
 }

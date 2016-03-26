@@ -2147,7 +2147,17 @@ namespace Project_Oppenheimer
             TS_Output.Text = supervisor.GameOutput;
 
             //Add conditions for showing players hand
-            //Play_cardButton.Enabled = false;
+            Play_cardButton.Enabled = false;
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            radioButton3.Checked = false;
+            radioButton4.Checked = false;
+            radioButton5.Checked = false;
+            radioButton6.Checked = false;
+            radioButton7.Checked = false;
+            radioButton8.Checked = false;
+            radioButton9.Checked = false;
+            radioButton10.Checked = false;
             List<Properties.Card> hand;
             if (supervisor.player == 1)
             {
@@ -3720,7 +3730,6 @@ namespace Project_Oppenheimer
             }
             var popup = new Properties.CardPlay(card, supervisor);
             popup.ShowDialog();
-            //possibly more stuff here
             refreshEvent();
         }
 

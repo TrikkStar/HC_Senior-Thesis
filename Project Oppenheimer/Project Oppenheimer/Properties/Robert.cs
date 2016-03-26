@@ -1229,6 +1229,7 @@ namespace Project_Oppenheimer.Properties
         private void PlaceInfluenceInRegion(int amount, int region)
         {
             //need to look at odd influence placements, non possible amounts
+            //probably need to break into smaller functions to get to work right
             var area = getRegion(region);
             while (amount > 0)
             {
