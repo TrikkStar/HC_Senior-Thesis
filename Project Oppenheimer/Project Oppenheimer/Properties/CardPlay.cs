@@ -30,7 +30,7 @@ namespace Project_Oppenheimer.Properties
             {
                 isEvent = true;
             }
-            if (SpaceRace_Radio.Checked)
+            else if (SpaceRace_Radio.Checked)
             {
                 isDiscarded = true;
             }

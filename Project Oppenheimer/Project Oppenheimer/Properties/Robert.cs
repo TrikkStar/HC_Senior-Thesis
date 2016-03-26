@@ -919,7 +919,7 @@ namespace Project_Oppenheimer.Properties
             }
             else if (game.turn < 8)
             {
-                //midWar priority list-need to make priority
+                //midWar priority list-need to make priority, not final
                 if (side == 1)
                 {
                     cardLst = new List<int> {31, 16, 28, 7, 17, 14, 9, 30, 11, 13, 10, 15, 12, 8, 33, 104};
@@ -931,7 +931,7 @@ namespace Project_Oppenheimer.Properties
             }
             else
             {
-                //lateWar priority list-need to make priority
+                //lateWar priority list-need to make priority, not final
                 if (side == 1)
                 {
                     cardLst = new List<int> {31, 16, 28, 7, 17, 14, 9, 30, 11, 13, 10, 15, 12, 8, 33, 104};

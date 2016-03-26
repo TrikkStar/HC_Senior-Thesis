@@ -50,8 +50,32 @@ namespace Project_Oppenheimer.Properties
         {
             Robert rob = new Robert(game, AI);
             AiOuput = rob.actionType + "\r\n";
-            //need to get actual name of card
-            AiOuput = AiOuput + "Card to Play: " + rob.cardToPlay.ToString() + "\r\n";
+            if (AI == 1)
+            {
+                Card card = new Card();
+                foreach (Card crd in game.cards.usHand)
+                {
+                    if (crd.id == rob.cardToPlay)
+                    {
+                        card = crd;
+                        break;
+                    }
+                }
+                AiOuput = AiOuput + "Card to Play: " + card.name + "\r\n OPS Value: " + card.opsValue.ToString() + "\r\n";
+            }
+            else
+            {
+                Card card = new Card();
+                foreach (Card crd in game.cards.ussrHand)
+                {
+                    if (crd.id == rob.cardToPlay)
+                    {
+                        card = crd;
+                        break;
+                    }
+                }
+                AiOuput = AiOuput + "Card to Play: " + card.name + "\r\n OPS Value: " + card.opsValue.ToString() + "\r\n";
+            }
             if (rob.targets.Count == rob.targetAmounts.Count)
             {
                 for (int i = 0; i < rob.targets.Count; i++)
@@ -83,7 +107,7 @@ namespace Project_Oppenheimer.Properties
                 case "Super Desperation":
                     if ((agent.cardToPlay != 2) && (agent.cardToPlay != 1) && (agent.cardToPlay != 3) && (agent.cardToPlay != 38) && (agent.cardToPlay != 81) && (agent.cardToPlay != 37) && (agent.cardToPlay != 79))
                     {
-                        applyEvent(agent.cardToPlay, agent.targets, agent.targetAmounts);
+                        applyEvent(AI, agent.cardToPlay, agent.targets, agent.targetAmounts);
                     }
                     else
                     {
@@ -96,7 +120,7 @@ namespace Project_Oppenheimer.Properties
                     playCard(AI, agent.cardToPlay, true, false);
                     break;
                 case "Event":
-                    applyEvent(agent.cardToPlay, agent.targets, agent.targetAmounts);
+                    applyEvent(AI, agent.cardToPlay, agent.targets, agent.targetAmounts);
                     playCard(AI, agent.cardToPlay, true, false);
                     break;
                 case "SpaceRace":
@@ -176,14 +200,288 @@ namespace Project_Oppenheimer.Properties
             }
         }
 
-        public void applyEvent(int id, List<int> target, List<int> amount)
+        public void applyEvent(int player, int id, List<int> target, List<int> amount)
         {
             //figure out how this will target stuff
+            switch (id)
+            {
+                case 4:
+                    break;
+            }
         }
 
         public void attemptSpaceRace(int player)
         {
-
+            var rand = rng.Next(1, 7);
+            GameOutput = "Space Race Attempt \r\n Roll: " + rand.ToString() + "\r\n";
+            if (player == 1)
+            {
+                switch (game.usSpaceRace)
+                {
+                    case 0:
+                        if (rand <= 3)
+                        {
+                            GameOutput = GameOutput + "Outcome: Success!";
+                            game.usSpaceRace++;
+                            if (game.usSpaceRace > game.ussrSpaceRace)
+                            {
+                                game.scoreUSA(2);
+                            }
+                            else
+                            {
+                                game.scoreUSA(1);
+                            }
+                        }
+                        else
+                        {
+                            GameOutput = GameOutput + "Outcome: Failure!";
+                        }
+                        game.usSrPlayed = true;
+                        break;
+                    case 1:
+                        if (rand <= 4)
+                        {
+                            GameOutput = GameOutput + "Outcome: Success!";
+                            game.usSpaceRace++;
+                        }
+                        else
+                        {
+                            GameOutput = GameOutput + "Outcome: Failure!";
+                        }
+                        game.usSrPlayed = true;
+                        break;
+                    case 2:
+                        if (rand <= 3)
+                        {
+                            GameOutput = GameOutput + "Outcome: Success!";
+                            game.usSpaceRace++;
+                            if (game.usSpaceRace > game.ussrSpaceRace)
+                            {
+                                game.scoreUSA(2);
+                            }
+                        }
+                        else
+                        {
+                            GameOutput = GameOutput + "Outcome: Failure!";
+                        }
+                        game.usSrPlayed = true;
+                        break;
+                    case 3:
+                        if (rand <= 4)
+                        {
+                            GameOutput = GameOutput + "Outcome: Success!";
+                            game.usSpaceRace++;
+                        }
+                        else
+                        {
+                            GameOutput = GameOutput + "Outcome: Failure!";
+                        }
+                        game.usSrPlayed = true;
+                        break;
+                    case 4:
+                        if (rand <= 3)
+                        {
+                            GameOutput = GameOutput + "Outcome: Success!";
+                            game.usSpaceRace++;
+                            if (game.usSpaceRace > game.ussrSpaceRace)
+                            {
+                                game.scoreUSA(3);
+                            }
+                            else
+                            {
+                                game.scoreUSA(1);
+                            }
+                        }
+                        else
+                        {
+                            GameOutput = GameOutput + "Outcome: Failure!";
+                        }
+                        game.usSrPlayed = true;
+                        break;
+                    case 5:
+                        if (rand <= 4)
+                        {
+                            GameOutput = GameOutput + "Outcome: Success!";
+                            game.usSpaceRace++;
+                        }
+                        else
+                        {
+                            GameOutput = GameOutput + "Outcome: Failure!";
+                        }
+                        game.usSrPlayed = true;
+                        break;
+                    case 6:
+                        if (rand <= 3)
+                        {
+                            GameOutput = GameOutput + "Outcome: Success!";
+                            game.usSpaceRace++;
+                            if (game.usSpaceRace > game.ussrSpaceRace)
+                            {
+                                game.scoreUSA(4);
+                            }
+                            else
+                            {
+                                game.scoreUSA(2);
+                            }
+                        }
+                        else
+                        {
+                            GameOutput = GameOutput + "Outcome: Failure!";
+                        }
+                        game.usSrPlayed = true;
+                        break;
+                    case 7:
+                        if (rand <= 2)
+                        {
+                            GameOutput = GameOutput + "Outcome: Success!";
+                            game.usSpaceRace++;
+                            if (game.usSpaceRace > game.ussrSpaceRace)
+                            {
+                                game.scoreUSA(2);
+                            }
+                        }
+                        else
+                        {
+                            GameOutput = GameOutput + "Outcome: Failure!";
+                        }
+                        game.usSrPlayed = true;
+                        break;
+                }
+            }
+            else
+            {
+                switch (game.ussrSpaceRace)
+                {
+                    case 0:
+                        if (rand <= 3)
+                        {
+                            GameOutput = GameOutput + "Outcome: Success!";
+                            game.ussrSpaceRace++;
+                            if (game.usSpaceRace < game.ussrSpaceRace)
+                            {
+                                game.scoreUSSR(2);
+                            }
+                            else
+                            {
+                                game.scoreUSSR(1);
+                            }
+                        }
+                        else
+                        {
+                            GameOutput = GameOutput + "Outcome: Failure!";
+                        }
+                        game.ussrSrPlayed = true;
+                        break;
+                    case 1:
+                        if (rand <= 4)
+                        {
+                            GameOutput = GameOutput + "Outcome: Success!";
+                            game.ussrSpaceRace++;
+                        }
+                        else
+                        {
+                            GameOutput = GameOutput + "Outcome: Failure!";
+                        }
+                        game.ussrSrPlayed = true;
+                        break;
+                    case 2:
+                        if (rand <= 3)
+                        {
+                            GameOutput = GameOutput + "Outcome: Success!";
+                            game.ussrSpaceRace++;
+                            if (game.usSpaceRace < game.ussrSpaceRace)
+                            {
+                                game.scoreUSSR(2);
+                            }
+                        }
+                        else
+                        {
+                            GameOutput = GameOutput + "Outcome: Failure!";
+                        }
+                        game.ussrSrPlayed = true;
+                        break;
+                    case 3:
+                        if (rand <= 4)
+                        {
+                            GameOutput = GameOutput + "Outcome: Success!";
+                            game.ussrSpaceRace++;
+                        }
+                        else
+                        {
+                            GameOutput = GameOutput + "Outcome: Failure!";
+                        }
+                        game.ussrSrPlayed = true;
+                        break;
+                    case 4:
+                        if (rand <= 3)
+                        {
+                            GameOutput = GameOutput + "Outcome: Success!";
+                            game.ussrSpaceRace++;
+                            if (game.usSpaceRace < game.ussrSpaceRace)
+                            {
+                                game.scoreUSSR(3);
+                            }
+                            else
+                            {
+                                game.scoreUSSR(1);
+                            }
+                        }
+                        else
+                        {
+                            GameOutput = GameOutput + "Outcome: Failure!";
+                        }
+                        game.ussrSrPlayed = true;
+                        break;
+                    case 5:
+                        if (rand <= 4)
+                        {
+                            GameOutput = GameOutput + "Outcome: Success!";
+                            game.ussrSpaceRace++;
+                        }
+                        else
+                        {
+                            GameOutput = GameOutput + "Outcome: Failure!";
+                        }
+                        game.ussrSrPlayed = true;
+                        break;
+                    case 6:
+                        if (rand <= 3)
+                        {
+                            GameOutput = GameOutput + "Outcome: Success!";
+                            game.ussrSpaceRace++;
+                            if (game.usSpaceRace < game.ussrSpaceRace)
+                            {
+                                game.scoreUSSR(4);
+                            }
+                            else
+                            {
+                                game.scoreUSSR(2);
+                            }
+                        }
+                        else
+                        {
+                            GameOutput = GameOutput + "Outcome: Failure!";
+                        }
+                        game.ussrSrPlayed = true;
+                        break;
+                    case 7:
+                        if (rand <= 2)
+                        {
+                            GameOutput = GameOutput + "Outcome: Success!";
+                            game.ussrSpaceRace++;
+                            if (game.usSpaceRace < game.ussrSpaceRace)
+                            {
+                                game.scoreUSSR(2);
+                            }
+                        }
+                        else
+                        {
+                            GameOutput = GameOutput + "Outcome: Failure!";
+                        }
+                        game.ussrSrPlayed = true;
+                        break;
+                }
+            }
         }
 
         public void attempRealignment(int player, int target)
