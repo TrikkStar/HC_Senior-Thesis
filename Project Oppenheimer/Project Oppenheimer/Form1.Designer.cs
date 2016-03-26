@@ -642,6 +642,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.TS_Output = new System.Windows.Forms.Label();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.groupBox7.SuspendLayout();
             this.tableLayoutPanel85.SuspendLayout();
             this.tableLayoutPanel84.SuspendLayout();
@@ -738,6 +739,7 @@
             this.menuStrip1.SuspendLayout();
             this.PlayerHand_group.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            this.groupBox9.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -5531,7 +5533,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1275, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1316, 28);
             this.menuStrip1.TabIndex = 12;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -7545,7 +7547,7 @@
             this.PlayerHand_group.Margin = new System.Windows.Forms.Padding(4);
             this.PlayerHand_group.Name = "PlayerHand_group";
             this.PlayerHand_group.Padding = new System.Windows.Forms.Padding(4);
-            this.PlayerHand_group.Size = new System.Drawing.Size(203, 321);
+            this.PlayerHand_group.Size = new System.Drawing.Size(244, 321);
             this.PlayerHand_group.TabIndex = 21;
             this.PlayerHand_group.TabStop = false;
             this.PlayerHand_group.Text = "Player Hand";
@@ -7589,7 +7591,7 @@
             // AI_Output
             // 
             this.AI_Output.AutoSize = true;
-            this.AI_Output.Location = new System.Drawing.Point(1056, 357);
+            this.AI_Output.Location = new System.Drawing.Point(6, 18);
             this.AI_Output.Name = "AI_Output";
             this.AI_Output.Size = new System.Drawing.Size(67, 17);
             this.AI_Output.TabIndex = 22;
@@ -7623,14 +7625,23 @@
             this.TS_Output.TabIndex = 0;
             this.TS_Output.Text = "Output";
             // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.AI_Output);
+            this.groupBox9.Location = new System.Drawing.Point(1057, 361);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(246, 183);
+            this.groupBox9.TabIndex = 25;
+            this.groupBox9.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1275, 564);
+            this.ClientSize = new System.Drawing.Size(1316, 564);
+            this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.AI_Output);
             this.Controls.Add(this.PlayerHand_group);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox7);
@@ -7840,6 +7851,8 @@
             this.PlayerHand_group.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -8460,6 +8473,7 @@
         private System.Windows.Forms.ToolStripMenuItem removedToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Label TS_Output;
+        private System.Windows.Forms.GroupBox groupBox9;
     }
 }
 

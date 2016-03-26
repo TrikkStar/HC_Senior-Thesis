@@ -30,7 +30,6 @@ namespace Project_Oppenheimer.Properties
             game.countryLst.countries[4].set_infUSA(4);
             game.countryLst.countries[58].set_infUSA(1);
             game.countryLst.countries[41].set_infUSA(1);
-            game.countryLst.countries[66].set_infUSA(1);
             game.countryLst.countries[52].set_infUSSR(3);
             game.countryLst.countries[65].set_infUSA(1);
             game.countryLst.countries[36].set_infUSA(1);
@@ -42,7 +41,7 @@ namespace Project_Oppenheimer.Properties
             game.countryLst.countries[21].set_infUSSR(3);
             game.countryLst.countries[75].set_infUSA(5);
             game.countryLst.countries[13].set_infUSA(2);
-            game.countryLst.countries[55].set_infUSA(2);
+            game.countryLst.countries[55].set_infUSA(1);
             game.cards.deal(0);
         }
 
