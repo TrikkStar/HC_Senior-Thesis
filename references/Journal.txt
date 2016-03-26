@@ -271,3 +271,6 @@ specific information about changes, I recommend looking through the commit histo
 	Finally finished implementing Robert, now to see if he works.
 	-He's working to a degree, my testing capability is still limited at this point but that will get fleshed out more soon. Right now I'm making some
 	general improvements to his logic. He's still a bit dumb.
+
+3/23/2016:
+	Find-and-Replace is a thing I need to remember exists. Very, very useful.

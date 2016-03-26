@@ -2144,6 +2144,7 @@ namespace Project_Oppenheimer
             MilitaryOps_USSR.Text = supervisor.game.ussrMilOps.ToString();
             SpaceRace_USA.Text = supervisor.game.usSpaceRace.ToString();
             SpaceRace_USSR.Text = supervisor.game.ussrSpaceRace.ToString();
+            TS_Output.Text = supervisor.GameOutput;
 
             //Add conditions for showing players hand
             //Play_cardButton.Enabled = false;
@@ -2413,8 +2414,8 @@ namespace Project_Oppenheimer
             supervisor.player = 1;
             supervisor.AI = -1;
             supervisor.newGame();
+            button1.Enabled = true;
             refreshEvent();
-            //play game
         }
 
         private void uSSRToolStripMenuItem_Click(object sender, EventArgs e)
@@ -2423,8 +2424,8 @@ namespace Project_Oppenheimer
             supervisor.player = -1;
             supervisor.AI = 1;
             supervisor.newGame();
+            button1.Enabled = true;
             refreshEvent();
-            //play game
         }
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
@@ -3614,7 +3615,7 @@ namespace Project_Oppenheimer
             popup.ShowDialog();
             refreshEvent();
         }
-        //think i can get rid of this block
+
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             Play_cardButton.Enabled = true;
@@ -3664,7 +3665,7 @@ namespace Project_Oppenheimer
         {
             Play_cardButton.Enabled = true;
         }
-        //end block
+
         private void Play_cardButton_Click(object sender, EventArgs e)
         {
             List<Properties.Card> hand;

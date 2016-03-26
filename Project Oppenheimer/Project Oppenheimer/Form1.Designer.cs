@@ -589,6 +589,8 @@
             this.toolStripMenuItem80 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem81 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem82 = new System.Windows.Forms.ToolStripMenuItem();
+            this.playedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.playedSecondToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uSSRToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.startToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem83 = new System.Windows.Forms.ToolStripMenuItem();
@@ -599,6 +601,8 @@
             this.toolStripMenuItem88 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem89 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem90 = new System.Windows.Forms.ToolStripMenuItem();
+            this.playedToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.playedSecondToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.eventToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.europeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.asiaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -607,10 +611,21 @@
             this.southAmericaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.africaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.southeastAsiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eventToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.deGaulleLeadsFranceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.warsawPactFormedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uSJapanMutualDefensePactToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.noradToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.formosanResolutionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.marshallPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nATOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.handsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uSAToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.uSSRToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.deckToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.discardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.removedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Play_cardButton = new System.Windows.Forms.Button();
             this.radioButton9 = new System.Windows.Forms.RadioButton();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
@@ -625,21 +640,8 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.AI_Output = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.playedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.playedSecondToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.playedToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.playedSecondToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.eventToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.deGaulleLeadsFranceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.warsawPactFormedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.uSJapanMutualDefensePactToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.noradToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.formosanResolutionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.marshallPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nATOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deckToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.discardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.removedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.TS_Output = new System.Windows.Forms.Label();
             this.groupBox7.SuspendLayout();
             this.tableLayoutPanel85.SuspendLayout();
             this.tableLayoutPanel84.SuspendLayout();
@@ -735,11 +737,13 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.PlayerHand_group.SuspendLayout();
+            this.groupBox8.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(260, 426);
+            this.button1.Enabled = false;
+            this.button1.Location = new System.Drawing.Point(861, 507);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 44);
@@ -5527,7 +5531,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1282, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1275, 28);
             this.menuStrip1.TabIndex = 12;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -5582,7 +5586,7 @@
             this.middleEastToolStripMenuItem,
             this.southAmericaToolStripMenuItem});
             this.countryToolStripMenuItem.Name = "countryToolStripMenuItem";
-            this.countryToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.countryToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
             this.countryToolStripMenuItem.Text = "Country";
             // 
             // africaToolStripMenuItem
@@ -6312,7 +6316,7 @@
             this.eventToolStripMenuItem1,
             this.resetToolStripMenuItem});
             this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
-            this.gameToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.gameToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
             this.gameToolStripMenuItem.Text = "Game";
             // 
             // turnToolStripMenuItem
@@ -6329,7 +6333,7 @@
             this.toolStripMenuItem10,
             this.toolStripMenuItem11});
             this.turnToolStripMenuItem.Name = "turnToolStripMenuItem";
-            this.turnToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.turnToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.turnToolStripMenuItem.Text = "Turn";
             // 
             // toolStripMenuItem2
@@ -6423,7 +6427,7 @@
             this.toolStripMenuItem97,
             this.toolStripMenuItem98});
             this.roundToolStripMenuItem.Name = "roundToolStripMenuItem";
-            this.roundToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.roundToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.roundToolStripMenuItem.Text = "Round";
             // 
             // headlinePhaseToolStripMenuItem
@@ -6552,7 +6556,7 @@
             this.uSAToolStripMenuItem2,
             this.uSSRToolStripMenuItem2});
             this.scoreToolStripMenuItem.Name = "scoreToolStripMenuItem";
-            this.scoreToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.scoreToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.scoreToolStripMenuItem.Text = "Score";
             // 
             // toolStripMenuItem20
@@ -6888,7 +6892,7 @@
             this.toolStripMenuItem61,
             this.toolStripMenuItem62});
             this.defconToolStripMenuItem.Name = "defconToolStripMenuItem";
-            this.defconToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.defconToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.defconToolStripMenuItem.Text = "Defcon";
             // 
             // toolStripMenuItem59
@@ -6925,7 +6929,7 @@
             this.uSAToolStripMenuItem3,
             this.uSSRToolStripMenuItem3});
             this.militaryOpsToolStripMenuItem.Name = "militaryOpsToolStripMenuItem";
-            this.militaryOpsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.militaryOpsToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.militaryOpsToolStripMenuItem.Text = "Military Ops";
             // 
             // uSAToolStripMenuItem3
@@ -7044,7 +7048,7 @@
             this.uSAToolStripMenuItem4,
             this.uSSRToolStripMenuItem4});
             this.spaceRaceToolStripMenuItem.Name = "spaceRaceToolStripMenuItem";
-            this.spaceRaceToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.spaceRaceToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.spaceRaceToolStripMenuItem.Text = "Space Race";
             // 
             // uSAToolStripMenuItem4
@@ -7062,7 +7066,7 @@
             this.playedToolStripMenuItem,
             this.playedSecondToolStripMenuItem});
             this.uSAToolStripMenuItem4.Name = "uSAToolStripMenuItem4";
-            this.uSAToolStripMenuItem4.Size = new System.Drawing.Size(181, 26);
+            this.uSAToolStripMenuItem4.Size = new System.Drawing.Size(119, 26);
             this.uSAToolStripMenuItem4.Text = "USA";
             // 
             // startToolStripMenuItem
@@ -7128,6 +7132,22 @@
             this.toolStripMenuItem82.Text = "8";
             this.toolStripMenuItem82.Click += new System.EventHandler(this.toolStripMenuItem82_Click);
             // 
+            // playedToolStripMenuItem
+            // 
+            this.playedToolStripMenuItem.CheckOnClick = true;
+            this.playedToolStripMenuItem.Name = "playedToolStripMenuItem";
+            this.playedToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.playedToolStripMenuItem.Text = "Played";
+            this.playedToolStripMenuItem.Click += new System.EventHandler(this.playedToolStripMenuItem_Click);
+            // 
+            // playedSecondToolStripMenuItem
+            // 
+            this.playedSecondToolStripMenuItem.CheckOnClick = true;
+            this.playedSecondToolStripMenuItem.Name = "playedSecondToolStripMenuItem";
+            this.playedSecondToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.playedSecondToolStripMenuItem.Text = "Played Second";
+            this.playedSecondToolStripMenuItem.Click += new System.EventHandler(this.playedSecondToolStripMenuItem_Click);
+            // 
             // uSSRToolStripMenuItem4
             // 
             this.uSSRToolStripMenuItem4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -7143,7 +7163,7 @@
             this.playedToolStripMenuItem1,
             this.playedSecondToolStripMenuItem1});
             this.uSSRToolStripMenuItem4.Name = "uSSRToolStripMenuItem4";
-            this.uSSRToolStripMenuItem4.Size = new System.Drawing.Size(181, 26);
+            this.uSSRToolStripMenuItem4.Size = new System.Drawing.Size(119, 26);
             this.uSSRToolStripMenuItem4.Text = "USSR";
             // 
             // startToolStripMenuItem1
@@ -7209,6 +7229,22 @@
             this.toolStripMenuItem90.Text = "8";
             this.toolStripMenuItem90.Click += new System.EventHandler(this.toolStripMenuItem90_Click);
             // 
+            // playedToolStripMenuItem1
+            // 
+            this.playedToolStripMenuItem1.CheckOnClick = true;
+            this.playedToolStripMenuItem1.Name = "playedToolStripMenuItem1";
+            this.playedToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
+            this.playedToolStripMenuItem1.Text = "Played";
+            this.playedToolStripMenuItem1.Click += new System.EventHandler(this.playedToolStripMenuItem1_Click);
+            // 
+            // playedSecondToolStripMenuItem1
+            // 
+            this.playedSecondToolStripMenuItem1.CheckOnClick = true;
+            this.playedSecondToolStripMenuItem1.Name = "playedSecondToolStripMenuItem1";
+            this.playedSecondToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
+            this.playedSecondToolStripMenuItem1.Text = "Played Second";
+            this.playedSecondToolStripMenuItem1.Click += new System.EventHandler(this.playedSecondToolStripMenuItem1_Click);
+            // 
             // eventToolStripMenuItem
             // 
             this.eventToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -7220,7 +7256,7 @@
             this.africaToolStripMenuItem1,
             this.southeastAsiaToolStripMenuItem});
             this.eventToolStripMenuItem.Name = "eventToolStripMenuItem";
-            this.eventToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.eventToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.eventToolStripMenuItem.Text = "Scoring";
             // 
             // europeToolStripMenuItem1
@@ -7272,10 +7308,80 @@
             this.southeastAsiaToolStripMenuItem.Text = "Southeast Asia";
             this.southeastAsiaToolStripMenuItem.Click += new System.EventHandler(this.southeastAsiaToolStripMenuItem_Click);
             // 
+            // eventToolStripMenuItem1
+            // 
+            this.eventToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.deGaulleLeadsFranceToolStripMenuItem,
+            this.warsawPactFormedToolStripMenuItem,
+            this.uSJapanMutualDefensePactToolStripMenuItem,
+            this.noradToolStripMenuItem,
+            this.formosanResolutionToolStripMenuItem,
+            this.marshallPlanToolStripMenuItem,
+            this.nATOToolStripMenuItem});
+            this.eventToolStripMenuItem1.Name = "eventToolStripMenuItem1";
+            this.eventToolStripMenuItem1.Size = new System.Drawing.Size(164, 26);
+            this.eventToolStripMenuItem1.Text = "Event";
+            // 
+            // deGaulleLeadsFranceToolStripMenuItem
+            // 
+            this.deGaulleLeadsFranceToolStripMenuItem.CheckOnClick = true;
+            this.deGaulleLeadsFranceToolStripMenuItem.Name = "deGaulleLeadsFranceToolStripMenuItem";
+            this.deGaulleLeadsFranceToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
+            this.deGaulleLeadsFranceToolStripMenuItem.Text = "DeGaulle Leads France";
+            this.deGaulleLeadsFranceToolStripMenuItem.Click += new System.EventHandler(this.deGaulleLeadsFranceToolStripMenuItem_Click);
+            // 
+            // warsawPactFormedToolStripMenuItem
+            // 
+            this.warsawPactFormedToolStripMenuItem.CheckOnClick = true;
+            this.warsawPactFormedToolStripMenuItem.Name = "warsawPactFormedToolStripMenuItem";
+            this.warsawPactFormedToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
+            this.warsawPactFormedToolStripMenuItem.Text = "Warsaw Pact Formed";
+            this.warsawPactFormedToolStripMenuItem.Click += new System.EventHandler(this.warsawPactFormedToolStripMenuItem_Click);
+            // 
+            // uSJapanMutualDefensePactToolStripMenuItem
+            // 
+            this.uSJapanMutualDefensePactToolStripMenuItem.CheckOnClick = true;
+            this.uSJapanMutualDefensePactToolStripMenuItem.Name = "uSJapanMutualDefensePactToolStripMenuItem";
+            this.uSJapanMutualDefensePactToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
+            this.uSJapanMutualDefensePactToolStripMenuItem.Text = "US/Japan Mutual Defense Pact";
+            this.uSJapanMutualDefensePactToolStripMenuItem.Click += new System.EventHandler(this.uSJapanMutualDefensePactToolStripMenuItem_Click);
+            // 
+            // noradToolStripMenuItem
+            // 
+            this.noradToolStripMenuItem.CheckOnClick = true;
+            this.noradToolStripMenuItem.Name = "noradToolStripMenuItem";
+            this.noradToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
+            this.noradToolStripMenuItem.Text = "NORAD";
+            this.noradToolStripMenuItem.Click += new System.EventHandler(this.noradToolStripMenuItem_Click);
+            // 
+            // formosanResolutionToolStripMenuItem
+            // 
+            this.formosanResolutionToolStripMenuItem.CheckOnClick = true;
+            this.formosanResolutionToolStripMenuItem.Name = "formosanResolutionToolStripMenuItem";
+            this.formosanResolutionToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
+            this.formosanResolutionToolStripMenuItem.Text = "Formosan Resolution";
+            this.formosanResolutionToolStripMenuItem.Click += new System.EventHandler(this.formosanResolutionToolStripMenuItem_Click);
+            // 
+            // marshallPlanToolStripMenuItem
+            // 
+            this.marshallPlanToolStripMenuItem.CheckOnClick = true;
+            this.marshallPlanToolStripMenuItem.Name = "marshallPlanToolStripMenuItem";
+            this.marshallPlanToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
+            this.marshallPlanToolStripMenuItem.Text = "Marshall Plan";
+            this.marshallPlanToolStripMenuItem.Click += new System.EventHandler(this.marshallPlanToolStripMenuItem_Click);
+            // 
+            // nATOToolStripMenuItem
+            // 
+            this.nATOToolStripMenuItem.CheckOnClick = true;
+            this.nATOToolStripMenuItem.Name = "nATOToolStripMenuItem";
+            this.nATOToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
+            this.nATOToolStripMenuItem.Text = "NATO";
+            this.nATOToolStripMenuItem.Click += new System.EventHandler(this.nATOToolStripMenuItem_Click);
+            // 
             // resetToolStripMenuItem
             // 
             this.resetToolStripMenuItem.Name = "resetToolStripMenuItem";
-            this.resetToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.resetToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
             this.resetToolStripMenuItem.Text = "Reset";
             this.resetToolStripMenuItem.Click += new System.EventHandler(this.resetToolStripMenuItem_Click);
             // 
@@ -7288,22 +7394,43 @@
             this.discardToolStripMenuItem,
             this.removedToolStripMenuItem});
             this.handsToolStripMenuItem.Name = "handsToolStripMenuItem";
-            this.handsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.handsToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
             this.handsToolStripMenuItem.Text = "Cards";
             // 
             // uSAToolStripMenuItem1
             // 
             this.uSAToolStripMenuItem1.Name = "uSAToolStripMenuItem1";
-            this.uSAToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
+            this.uSAToolStripMenuItem1.Size = new System.Drawing.Size(147, 26);
             this.uSAToolStripMenuItem1.Text = "USA";
             this.uSAToolStripMenuItem1.Click += new System.EventHandler(this.uSAToolStripMenuItem1_Click);
             // 
             // uSSRToolStripMenuItem1
             // 
             this.uSSRToolStripMenuItem1.Name = "uSSRToolStripMenuItem1";
-            this.uSSRToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
+            this.uSSRToolStripMenuItem1.Size = new System.Drawing.Size(147, 26);
             this.uSSRToolStripMenuItem1.Text = "USSR";
             this.uSSRToolStripMenuItem1.Click += new System.EventHandler(this.uSSRToolStripMenuItem1_Click);
+            // 
+            // deckToolStripMenuItem
+            // 
+            this.deckToolStripMenuItem.Name = "deckToolStripMenuItem";
+            this.deckToolStripMenuItem.Size = new System.Drawing.Size(147, 26);
+            this.deckToolStripMenuItem.Text = "Deck";
+            this.deckToolStripMenuItem.Click += new System.EventHandler(this.deckToolStripMenuItem_Click);
+            // 
+            // discardToolStripMenuItem
+            // 
+            this.discardToolStripMenuItem.Name = "discardToolStripMenuItem";
+            this.discardToolStripMenuItem.Size = new System.Drawing.Size(147, 26);
+            this.discardToolStripMenuItem.Text = "Discard";
+            this.discardToolStripMenuItem.Click += new System.EventHandler(this.discardToolStripMenuItem_Click);
+            // 
+            // removedToolStripMenuItem
+            // 
+            this.removedToolStripMenuItem.Name = "removedToolStripMenuItem";
+            this.removedToolStripMenuItem.Size = new System.Drawing.Size(147, 26);
+            this.removedToolStripMenuItem.Text = "Removed";
+            this.removedToolStripMenuItem.Click += new System.EventHandler(this.removedToolStripMenuItem_Click);
             // 
             // Play_cardButton
             // 
@@ -7418,7 +7545,7 @@
             this.PlayerHand_group.Margin = new System.Windows.Forms.Padding(4);
             this.PlayerHand_group.Name = "PlayerHand_group";
             this.PlayerHand_group.Padding = new System.Windows.Forms.Padding(4);
-            this.PlayerHand_group.Size = new System.Drawing.Size(193, 321);
+            this.PlayerHand_group.Size = new System.Drawing.Size(203, 321);
             this.PlayerHand_group.TabIndex = 21;
             this.PlayerHand_group.TabStop = false;
             this.PlayerHand_group.Text = "Player Hand";
@@ -7470,142 +7597,38 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(285, 485);
+            this.button2.Location = new System.Drawing.Point(967, 514);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 26);
+            this.button2.Size = new System.Drawing.Size(75, 30);
             this.button2.TabIndex = 23;
             this.button2.Text = "Advance";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // playedToolStripMenuItem
+            // groupBox8
             // 
-            this.playedToolStripMenuItem.CheckOnClick = true;
-            this.playedToolStripMenuItem.Name = "playedToolStripMenuItem";
-            this.playedToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.playedToolStripMenuItem.Text = "Played";
-            this.playedToolStripMenuItem.Click += new System.EventHandler(this.playedToolStripMenuItem_Click);
+            this.groupBox8.Controls.Add(this.TS_Output);
+            this.groupBox8.Location = new System.Drawing.Point(205, 426);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(200, 125);
+            this.groupBox8.TabIndex = 24;
+            this.groupBox8.TabStop = false;
             // 
-            // playedSecondToolStripMenuItem
+            // TS_Output
             // 
-            this.playedSecondToolStripMenuItem.CheckOnClick = true;
-            this.playedSecondToolStripMenuItem.Name = "playedSecondToolStripMenuItem";
-            this.playedSecondToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.playedSecondToolStripMenuItem.Text = "Played Second";
-            this.playedSecondToolStripMenuItem.Click += new System.EventHandler(this.playedSecondToolStripMenuItem_Click);
-            // 
-            // playedToolStripMenuItem1
-            // 
-            this.playedToolStripMenuItem1.CheckOnClick = true;
-            this.playedToolStripMenuItem1.Name = "playedToolStripMenuItem1";
-            this.playedToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
-            this.playedToolStripMenuItem1.Text = "Played";
-            this.playedToolStripMenuItem1.Click += new System.EventHandler(this.playedToolStripMenuItem1_Click);
-            // 
-            // playedSecondToolStripMenuItem1
-            // 
-            this.playedSecondToolStripMenuItem1.CheckOnClick = true;
-            this.playedSecondToolStripMenuItem1.Name = "playedSecondToolStripMenuItem1";
-            this.playedSecondToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
-            this.playedSecondToolStripMenuItem1.Text = "Played Second";
-            this.playedSecondToolStripMenuItem1.Click += new System.EventHandler(this.playedSecondToolStripMenuItem1_Click);
-            // 
-            // eventToolStripMenuItem1
-            // 
-            this.eventToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.deGaulleLeadsFranceToolStripMenuItem,
-            this.warsawPactFormedToolStripMenuItem,
-            this.uSJapanMutualDefensePactToolStripMenuItem,
-            this.noradToolStripMenuItem,
-            this.formosanResolutionToolStripMenuItem,
-            this.marshallPlanToolStripMenuItem,
-            this.nATOToolStripMenuItem});
-            this.eventToolStripMenuItem1.Name = "eventToolStripMenuItem1";
-            this.eventToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
-            this.eventToolStripMenuItem1.Text = "Event";
-            // 
-            // deGaulleLeadsFranceToolStripMenuItem
-            // 
-            this.deGaulleLeadsFranceToolStripMenuItem.CheckOnClick = true;
-            this.deGaulleLeadsFranceToolStripMenuItem.Name = "deGaulleLeadsFranceToolStripMenuItem";
-            this.deGaulleLeadsFranceToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
-            this.deGaulleLeadsFranceToolStripMenuItem.Text = "DeGaulle Leads France";
-            this.deGaulleLeadsFranceToolStripMenuItem.Click += new System.EventHandler(this.deGaulleLeadsFranceToolStripMenuItem_Click);
-            // 
-            // warsawPactFormedToolStripMenuItem
-            // 
-            this.warsawPactFormedToolStripMenuItem.CheckOnClick = true;
-            this.warsawPactFormedToolStripMenuItem.Name = "warsawPactFormedToolStripMenuItem";
-            this.warsawPactFormedToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
-            this.warsawPactFormedToolStripMenuItem.Text = "Warsaw Pact Formed";
-            this.warsawPactFormedToolStripMenuItem.Click += new System.EventHandler(this.warsawPactFormedToolStripMenuItem_Click);
-            // 
-            // uSJapanMutualDefensePactToolStripMenuItem
-            // 
-            this.uSJapanMutualDefensePactToolStripMenuItem.CheckOnClick = true;
-            this.uSJapanMutualDefensePactToolStripMenuItem.Name = "uSJapanMutualDefensePactToolStripMenuItem";
-            this.uSJapanMutualDefensePactToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
-            this.uSJapanMutualDefensePactToolStripMenuItem.Text = "US/Japan Mutual Defense Pact";
-            this.uSJapanMutualDefensePactToolStripMenuItem.Click += new System.EventHandler(this.uSJapanMutualDefensePactToolStripMenuItem_Click);
-            // 
-            // noradToolStripMenuItem
-            // 
-            this.noradToolStripMenuItem.CheckOnClick = true;
-            this.noradToolStripMenuItem.Name = "noradToolStripMenuItem";
-            this.noradToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
-            this.noradToolStripMenuItem.Text = "NORAD";
-            this.noradToolStripMenuItem.Click += new System.EventHandler(this.noradToolStripMenuItem_Click);
-            // 
-            // formosanResolutionToolStripMenuItem
-            // 
-            this.formosanResolutionToolStripMenuItem.CheckOnClick = true;
-            this.formosanResolutionToolStripMenuItem.Name = "formosanResolutionToolStripMenuItem";
-            this.formosanResolutionToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
-            this.formosanResolutionToolStripMenuItem.Text = "Formosan Resolution";
-            this.formosanResolutionToolStripMenuItem.Click += new System.EventHandler(this.formosanResolutionToolStripMenuItem_Click);
-            // 
-            // marshallPlanToolStripMenuItem
-            // 
-            this.marshallPlanToolStripMenuItem.CheckOnClick = true;
-            this.marshallPlanToolStripMenuItem.Name = "marshallPlanToolStripMenuItem";
-            this.marshallPlanToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
-            this.marshallPlanToolStripMenuItem.Text = "Marshall Plan";
-            this.marshallPlanToolStripMenuItem.Click += new System.EventHandler(this.marshallPlanToolStripMenuItem_Click);
-            // 
-            // nATOToolStripMenuItem
-            // 
-            this.nATOToolStripMenuItem.CheckOnClick = true;
-            this.nATOToolStripMenuItem.Name = "nATOToolStripMenuItem";
-            this.nATOToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
-            this.nATOToolStripMenuItem.Text = "NATO";
-            this.nATOToolStripMenuItem.Click += new System.EventHandler(this.nATOToolStripMenuItem_Click);
-            // 
-            // deckToolStripMenuItem
-            // 
-            this.deckToolStripMenuItem.Name = "deckToolStripMenuItem";
-            this.deckToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.deckToolStripMenuItem.Text = "Deck";
-            this.deckToolStripMenuItem.Click += new System.EventHandler(this.deckToolStripMenuItem_Click);
-            // 
-            // discardToolStripMenuItem
-            // 
-            this.discardToolStripMenuItem.Name = "discardToolStripMenuItem";
-            this.discardToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.discardToolStripMenuItem.Text = "Discard";
-            this.discardToolStripMenuItem.Click += new System.EventHandler(this.discardToolStripMenuItem_Click);
-            // 
-            // removedToolStripMenuItem
-            // 
-            this.removedToolStripMenuItem.Name = "removedToolStripMenuItem";
-            this.removedToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.removedToolStripMenuItem.Text = "Removed";
-            this.removedToolStripMenuItem.Click += new System.EventHandler(this.removedToolStripMenuItem_Click);
+            this.TS_Output.AutoSize = true;
+            this.TS_Output.Location = new System.Drawing.Point(6, 18);
+            this.TS_Output.Name = "TS_Output";
+            this.TS_Output.Size = new System.Drawing.Size(51, 17);
+            this.TS_Output.TabIndex = 0;
+            this.TS_Output.Text = "Output";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1282, 552);
+            this.ClientSize = new System.Drawing.Size(1275, 564);
+            this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.AI_Output);
             this.Controls.Add(this.PlayerHand_group);
@@ -7620,7 +7643,10 @@
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "Form1";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Project Oppenheimer";
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
@@ -7812,6 +7838,8 @@
             this.menuStrip1.PerformLayout();
             this.PlayerHand_group.ResumeLayout(false);
             this.PlayerHand_group.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -8430,6 +8458,8 @@
         private System.Windows.Forms.ToolStripMenuItem deckToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem discardToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem removedToolStripMenuItem;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.Label TS_Output;
     }
 }
 

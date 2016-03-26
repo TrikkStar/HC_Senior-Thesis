@@ -9,10 +9,11 @@ namespace Project_Oppenheimer.Properties
     public class Supervisor
     {
         public Gamestate game;
-        public Random rng;
+        private Random rng;
         public int player;
         public int AI;
         public string AiOuput;
+        public string GameOutput;
 
         public Supervisor()
         {
@@ -21,6 +22,7 @@ namespace Project_Oppenheimer.Properties
             player = 0;
             AI = 0;
             AiOuput = "";
+            GameOutput = "";
         }
 
         public void newGame()
@@ -70,50 +72,64 @@ namespace Project_Oppenheimer.Properties
                 }
                 AiOuput = AiOuput + "Something didn't quite go right \r\n";
             }
-            //Switch statement to cause appropriate event to happen
-            switch (rob.actionType)
+            applyAIAction(rob);
+        }
+
+        private void applyAIAction(Robert agent)
+        {
+            switch (agent.actionType)
             {
                 case "Desperation":
                 case "Super Desperation":
-                    if ((rob.cardToPlay != 2) && (rob.cardToPlay != 1) && (rob.cardToPlay != 3) && (rob.cardToPlay != 38) && (rob.cardToPlay != 81) && (rob.cardToPlay != 37) && (rob.cardToPlay != 79))
+                    if ((agent.cardToPlay != 2) && (agent.cardToPlay != 1) && (agent.cardToPlay != 3) && (agent.cardToPlay != 38) && (agent.cardToPlay != 81) && (agent.cardToPlay != 37) && (agent.cardToPlay != 79))
                     {
-                        applyEvent(rob.cardToPlay);
+                        applyEvent(agent.cardToPlay);
                     }
                     else
                     {
-                        game.scoreRegion(rob.cardToPlay);
+                        game.scoreRegion(agent.cardToPlay);
                     }
-                    playCard(AI, rob.cardToPlay, true, false);
+                    playCard(AI, agent.cardToPlay, true, false);
                     break;
                 case "No Cards in Hand":
                     //not sure if I even need this case
                     break;
                 case "Scoring":
-                    game.scoreRegion(rob.cardToPlay);
-                    playCard(AI, rob.cardToPlay, true, false);
+                    game.scoreRegion(agent.cardToPlay);
+                    playCard(AI, agent.cardToPlay, true, false);
                     break;
                 case "Event":
-                    applyEvent(rob.cardToPlay);
-                    playCard(AI, rob.cardToPlay, true, false);
+                    applyEvent(agent.cardToPlay);
+                    playCard(AI, agent.cardToPlay, true, false);
                     break;
                 case "SpaceRace":
                     attemptSpaceRace(AI);
-                    playCard(AI, rob.cardToPlay, false, true);
+                    playCard(AI, agent.cardToPlay, false, true);
                     break;
                 case "Realingment":
-                    foreach(int target in rob.targets)
+                    //need to make sure apropriate number of realingments are made
+                    foreach (int target in agent.targets)
                     {
                         attempRealign(AI, target);
                     }
-                    playCard(AI, rob.cardToPlay, false, false);
+                    playCard(AI, agent.cardToPlay, false, false);
                     break;
                 case "Coup":
-                    attemptCoup(AI, rob.targets[0], rob.targetAmounts[0]);
-                    playCard(AI, rob.cardToPlay, false, false);
+                    attemptCoup(AI, agent.targets[0], agent.targetAmounts[0]);
+                    playCard(AI, agent.cardToPlay, false, false);
                     break;
                 case "Inital Placement":
+                    for (int i = 0; i < agent.targets.Count; i++)
+                    {
+                        placeInfluence(AI, agent.targets[i], agent.targetAmounts[i]);
+                    }
                     break;
                 case "Place Influence":
+                    for (int i = 0; i < agent.targets.Count; i++)
+                    {
+                        placeInfluence(AI, agent.targets[i], agent.targetAmounts[i]);
+                    }
+                    playCard(AI, agent.cardToPlay, false, false);
                     break;
             }
         }
@@ -181,6 +197,18 @@ namespace Project_Oppenheimer.Properties
         public void attemptCoup(int player, int target, int ops)
         {
 
+        }
+
+        public void placeInfluence(int player, int target, int amount)
+        {
+            if (player == 1)
+            {
+                game.countryLst.countries[target].set_infUSA(amount);
+            }
+            else
+            {
+                game.countryLst.countries[target].set_infUSSR(amount);
+            }
         }
     }
 }
