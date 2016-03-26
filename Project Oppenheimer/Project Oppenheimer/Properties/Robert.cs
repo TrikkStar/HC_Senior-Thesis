@@ -16,12 +16,12 @@ namespace Project_Oppenheimer.Properties
         private int side;
         private Random rng;
 
-        public Robert(Gamestate gme, int sde)
+        public Robert(Gamestate _game, int _side)
         {
             //need to implement something that tracks bonus modifiers to ops points
             //needs off turn event trigger
-            game = gme;
-            side = sde;
+            game = _game;
+            side = _side;
             targetAmounts = new List<int> {};
             targets = new List<int> {};
             if (game.turn == 0)

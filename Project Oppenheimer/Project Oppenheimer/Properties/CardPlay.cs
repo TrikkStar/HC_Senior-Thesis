@@ -12,11 +12,11 @@ namespace Project_Oppenheimer.Properties
 {
     public partial class CardPlay : Form
     {
-        private Card target;
+        private Card card;
         private Supervisor TS;
-        public CardPlay(Card card, Supervisor supervisor)
+        public CardPlay(Card _card, Supervisor supervisor)
         {
-            target = card;
+            card = _card;
             TS = supervisor;
             InitializeComponent();
         }
@@ -36,11 +36,11 @@ namespace Project_Oppenheimer.Properties
             }
             if (TS.player == 1)
             {
-                TS.playCard(1, target.id, isEvent, isDiscarded);
+                TS.playCard(1, card.id, isEvent, isDiscarded);
             }
             else
             {
-                TS.playCard(-1, target.id, isEvent, isDiscarded);
+                TS.playCard(-1, card.id, isEvent, isDiscarded);
             }
             this.Close();
         }

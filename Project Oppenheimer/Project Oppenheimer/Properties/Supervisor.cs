@@ -83,16 +83,13 @@ namespace Project_Oppenheimer.Properties
                 case "Super Desperation":
                     if ((agent.cardToPlay != 2) && (agent.cardToPlay != 1) && (agent.cardToPlay != 3) && (agent.cardToPlay != 38) && (agent.cardToPlay != 81) && (agent.cardToPlay != 37) && (agent.cardToPlay != 79))
                     {
-                        applyEvent(agent.cardToPlay);
+                        applyEvent(agent.cardToPlay, agent.targets, agent.targetAmounts);
                     }
                     else
                     {
                         game.scoreRegion(agent.cardToPlay);
                     }
                     playCard(AI, agent.cardToPlay, true, false);
-                    break;
-                case "No Cards in Hand":
-                    //not sure if I even need this case
                     break;
                 case "Scoring":
                     game.scoreRegion(agent.cardToPlay);
@@ -179,7 +176,7 @@ namespace Project_Oppenheimer.Properties
             }
         }
 
-        public void applyEvent(int id)
+        public void applyEvent(int id, List<int> target, List<int> amount)
         {
             //figure out how this will target stuff
         }
@@ -196,7 +193,47 @@ namespace Project_Oppenheimer.Properties
 
         public void attemptCoup(int player, int target, int ops)
         {
-
+            GameOutput = "";
+            int rand = rng.Next(1, 7);
+            int attempt = rand + ops;
+            int dificulty = game.countryLst.countries[target].stability * 2;
+            GameOutput = "Coup Attempt: rolled " + rand.ToString() + "\r\n Target: " + game.countryLst.countries[target].name + "\r\n Strength: " + attempt.ToString() + "\r\n";
+            if (attempt > dificulty)
+            {
+                GameOutput = GameOutput + "Outcome: Success!";
+                var country = game.countryLst.countries[target];
+                var success = attempt - dificulty;
+                if (player == 1)
+                {
+                    if (country.influenceUSSR >= success)
+                    {
+                        country.set_infUSSR(-success);
+                    }
+                    else
+                    {
+                        success = success - country.influenceUSSR;
+                        country.influenceUSSR = 0;
+                        country.set_infUSA(success);
+                    }
+                }
+                else
+                {
+                    if (country.influenceUSA >= success)
+                    {
+                        country.set_infUSA(-success);
+                    }
+                    else
+                    {
+                        success = success - country.influenceUSA;
+                        country.influenceUSA = 0;
+                        country.set_infUSSR(success);
+                    }
+                }
+            }
+            else
+            {
+                GameOutput = GameOutput + "Outcome: Failure!";
+            }
         }
 
         public void placeInfluence(int player, int target, int amount)
