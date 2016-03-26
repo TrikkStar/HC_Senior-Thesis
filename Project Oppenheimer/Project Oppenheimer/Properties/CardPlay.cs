@@ -26,6 +26,8 @@ namespace Project_Oppenheimer.Properties
         {
             if (Event_Radio.Checked)
             {
+                var popup = new SingleEventTarget();
+                popup.ShowDialog();
                 TS.playCard(TS.player, card.id, true, false);
                 this.Close();
             }
