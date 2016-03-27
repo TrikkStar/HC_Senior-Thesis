@@ -44,7 +44,11 @@ namespace Project_Oppenheimer.Properties
                 }
                 else if (isMultiTarget(card.id))
                 {
-                    //make multi targeter
+                    using (var form = new MultiEventTargeting())
+                    {
+                        form.ShowDialog();
+                        //TS.applyEvent(TS.player, card.id, new List<int> { form.target }, new List<int> { 0 });
+                    }
                 }
 
                 TS.playCard(TS.player, card.id, true, false);
@@ -69,7 +73,11 @@ namespace Project_Oppenheimer.Properties
                 }
                 else
                 {
-                    //multitarget
+                    using (var form = new MultiEventTargeting())
+                    {
+                        form.ShowDialog();
+                        //TS.applyEvent(TS.player, card.id, new List<int> { form.target }, new List<int> { 0 });
+                    }
                 }
                 TS.playCard(TS.player, card.id, false, false);
                 this.Close();

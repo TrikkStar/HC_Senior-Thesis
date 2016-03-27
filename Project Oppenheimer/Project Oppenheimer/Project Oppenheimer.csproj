@@ -89,6 +89,12 @@
     <Compile Include="Properties\Hand View.Designer.cs">
       <DependentUpon>Hand View.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\MultiEventTargeting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\MultiEventTargeting.Designer.cs">
+      <DependentUpon>MultiEventTargeting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Robert.cs" />
     <Compile Include="Properties\SingleEventTarget.cs">
       <SubType>Form</SubType>
@@ -108,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Hand View.resx">
       <DependentUpon>Hand View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\MultiEventTargeting.resx">
+      <DependentUpon>MultiEventTargeting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
