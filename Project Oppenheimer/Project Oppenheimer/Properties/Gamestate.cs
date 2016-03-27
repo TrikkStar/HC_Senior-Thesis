@@ -381,11 +381,11 @@
             }
         }
 
-        public void checkDefcon(int x)
+        public void checkDefcon(int side)
         {
             if (defcon == 1)
             {
-                Victory(-x);
+                Victory(-side);
             }
         }
 
