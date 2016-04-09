@@ -13,13 +13,13 @@
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
-[Rr]elease/
+#[Rr]elease/
 [Rr]eleases/
 x64/
 x86/
 build/
 bld/
-[Bb]in/
+#[Bb]in/
 [Oo]bj/
 
 # Visual Studio 2015 cache/options directory
@@ -213,3 +213,7 @@ ModelManifest.xml
 Project Oppenheimer/Project Oppenheimer.VC.opendb
 refrences/debugging_project/Foo/Foo.VC.opendb
 *.opendb
+*.manifest
+Project Oppenheimer/Project Oppenheimer/bin/Release/Project Oppenheimer.vshost.exe.config
+Project Oppenheimer/Project Oppenheimer/bin/Release/Project Oppenheimer.exe.config
+Project Oppenheimer/Project Oppenheimer/bin/Release/Project Oppenheimer.vshost.exe
