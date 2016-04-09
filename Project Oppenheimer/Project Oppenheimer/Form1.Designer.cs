@@ -746,7 +746,7 @@
             // 
             this.button1.Enabled = false;
             this.button1.Location = new System.Drawing.Point(861, 507);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 44);
             this.button1.TabIndex = 20;
@@ -7544,9 +7544,9 @@
             this.PlayerHand_group.Controls.Add(this.radioButton1);
             this.PlayerHand_group.Controls.Add(this.radioButton2);
             this.PlayerHand_group.Location = new System.Drawing.Point(1059, 32);
-            this.PlayerHand_group.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PlayerHand_group.Margin = new System.Windows.Forms.Padding(4);
             this.PlayerHand_group.Name = "PlayerHand_group";
-            this.PlayerHand_group.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PlayerHand_group.Padding = new System.Windows.Forms.Padding(4);
             this.PlayerHand_group.Size = new System.Drawing.Size(244, 321);
             this.PlayerHand_group.TabIndex = 21;
             this.PlayerHand_group.TabStop = false;
@@ -7660,7 +7660,7 @@
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
