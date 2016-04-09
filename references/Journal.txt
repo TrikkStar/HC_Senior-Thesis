@@ -274,3 +274,7 @@ specific information about changes, I recommend looking through the commit histo
 
 3/23/2016:
 	Find-and-Replace is a thing I need to remember exists. Very, very useful.
+
+4/9/2016:
+	Well propsals and defenses have been don and now I just have to demo on Monday. While I can't say that I've gotten done everything I would have
+	wanted, the project has been good.

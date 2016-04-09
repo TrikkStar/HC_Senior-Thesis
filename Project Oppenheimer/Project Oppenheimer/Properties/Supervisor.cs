@@ -158,6 +158,10 @@ namespace Project_Oppenheimer.Properties
             Card toPlay = new Card();
             if (player == 1)
             {
+                if (card == 6)
+                {
+                    game.FormosanResolution = false;
+                }
                 foreach (var crd in game.cards.usHand)
                 {
                     if (crd.id == card)
@@ -368,7 +372,7 @@ namespace Project_Oppenheimer.Properties
                     break;
                 case 106:
                     game.NORAD = true;
-                    //figure out how to make NOrad Work;
+                    //figure out how to make Norad Work;
                     break;
             }
         }
