@@ -40,6 +40,7 @@ namespace Project_Oppenheimer.Properties
                 {
                     using (var form = new MultiEventTargeting())
                     {
+                        //need to figure out how to determine influence used in each target
                         form.ShowDialog();
                         TS.applyEvent(TS.player, card.id, form.targets, new List<int> { 0 });
                     }

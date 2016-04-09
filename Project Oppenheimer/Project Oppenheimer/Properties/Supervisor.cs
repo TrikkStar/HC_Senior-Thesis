@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Project_Oppenheimer.Properties
 {
@@ -204,6 +201,63 @@ namespace Project_Oppenheimer.Properties
             switch (id)
             {
                 case 4:
+                    game.defcon--;
+                    game.scoreUSA(5 - game.defcon);
+                    break;
+                case 5:
+                    //discard random soviet hand card, apply event if USA affiliation
+                    break;
+                case 7:
+                    for (int i = 0; i < target.Count; i++)
+                    {
+                        game.countryLst.countries[target[i]].set_infUSA(-amount[1]);
+                    }
+                    break;
+                case 8:
+                    game.countryLst.countries[17].influenceUSSR = 3;
+                    game.countryLst.countries[17].set_infUSA(-game.countryLst.countries[17].influenceUSA);
+                    break;
+                case 9:
+                    game.countryLst.countries[78].set_infUSSR(2);
+                    //add bonus to all soviet ops in SE Asia for rest of turn
+                    break;
+                case 10:
+                    //eleminate us influence in W germany if us player doesn't discard
+                    break;
+                case 11:
+                    game.ussrMillOp(2);
+                    int roll = rng.Next(1, 7);
+                    int result = roll;
+                    if (game.countryLst.countries[52].controller == 1)
+                    {
+                        result--;
+                    }
+                    if (game.countryLst.countries[41].controller == 1)
+                    {
+                        result--;
+                    }
+                    if (game.countryLst.countries[71].controller == 1)
+                    {
+                        result--;
+                    }
+                    GameOutput = "Korean War: \r\n Roll: " + roll.ToString() + "\r\n";
+                    if (result >= 4)
+                    {
+                        GameOutput = GameOutput + "Reesult: Success!";
+                        game.countryLst.countries[66].set_infUSSR(game.countryLst.countries[66].influenceUSA);
+                        game.countryLst.countries[66].set_infUSA(-game.countryLst.countries[66].influenceUSA);
+                        game.scoreUSSR(2);
+                    }
+                    else
+                    {
+                        GameOutput = GameOutput + "Reesult: Failure!";
+                    }
+                    break;
+                case 12:
+                    game.countryLst.countries[66].influenceUSSR = 3;
+                    game.countryLst.countries[66].set_infUSA(-game.countryLst.countries[66].influenceUSA);
+                    break;
+                case 13:
                     break;
             }
         }
