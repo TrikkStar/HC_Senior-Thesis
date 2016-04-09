@@ -225,39 +225,69 @@ namespace Project_Oppenheimer.Properties
                     //eleminate us influence in W germany if us player doesn't discard
                     break;
                 case 11:
-                    game.ussrMillOp(2);
-                    int roll = rng.Next(1, 7);
-                    int result = roll;
-                    if (game.countryLst.countries[52].controller == 1)
-                    {
-                        result--;
-                    }
-                    if (game.countryLst.countries[41].controller == 1)
-                    {
-                        result--;
-                    }
-                    if (game.countryLst.countries[71].controller == 1)
-                    {
-                        result--;
-                    }
-                    GameOutput = "Korean War: \r\n Roll: " + roll.ToString() + "\r\n";
-                    if (result >= 4)
-                    {
-                        GameOutput = GameOutput + "Reesult: Success!";
-                        game.countryLst.countries[66].set_infUSSR(game.countryLst.countries[66].influenceUSA);
-                        game.countryLst.countries[66].set_infUSA(-game.countryLst.countries[66].influenceUSA);
-                        game.scoreUSSR(2);
-                    }
-                    else
-                    {
-                        GameOutput = GameOutput + "Reesult: Failure!";
-                    }
+                    KoreanWar();
                     break;
                 case 12:
                     game.countryLst.countries[66].influenceUSSR = 3;
                     game.countryLst.countries[66].set_infUSA(-game.countryLst.countries[66].influenceUSA);
                     break;
                 case 13:
+                    ArabIsraliWar();
+                    break;
+                case 14:
+                    foreach (var country in target)
+                    {
+                        game.countryLst.countries[country].set_infUSSR(1);
+                    }
+                    break;
+                case 15:
+                    game.countryLst.countries[23].set_infUSSR(2);
+                    int egptInfUS = game.countryLst.countries[23].influenceUSA;
+                    if (egptInfUS % 2 == 0)
+                    {
+                        game.countryLst.countries[23].set_infUSA(-(egptInfUS / 2));
+                    }
+                    else
+                    {
+                        game.countryLst.countries[23].set_infUSA(-(egptInfUS / 2 + 1));
+                    }
+                    break;
+                case 16:
+                    //figure out if removal or addition is happening
+                    game.WarsawPactFormed = true;
+                    break;
+                case 17:
+                    game.countryLst.countries[27].set_infUSA(-2);
+                    game.countryLst.countries[27].set_infUSSR(1);
+                    game.DeGualleLeadsFrance = true;
+                    break;
+                case 18:
+                    attemptSpaceRace(player);
+                    break;
+                case 19:
+                    game.countryLst.countries[target[0]].set_infUSSR(-game.countryLst.countries[target[0]].influenceUSSR);
+                    break;
+                case 20:
+                    //olympics
+                    break;
+                case 21:
+                    game.NATO = true;
+                    break;
+                case 22:
+                    game.countryLst.countries[target[0]].set_infUSA(game.countryLst.countries[target[0]].influenceUSSR);
+                    break;
+                case 23:
+                    foreach (var country in target)
+                    {
+                        game.countryLst.countries[country].set_infUSA(1);
+                    }
+                    game.MarshallPlan = true;
+                    break;
+                case 24:
+                    IndoPakistaniWar(target[0], player);
+                    break;
+                case 25:
+                    //us bonus to ops values (to max val of 4)
                     break;
             }
         }
@@ -662,6 +692,100 @@ namespace Project_Oppenheimer.Properties
             else
             {
                 game.countryLst.countries[target].set_infUSSR(amount);
+            }
+        }
+
+        private void KoreanWar()
+        {
+            game.ussrMillOp(2);
+            int roll = rng.Next(1, 7);
+            int result = roll;
+            foreach (var country in game.countryLst.countries[66].adjacent)
+            {
+                if (game.countryLst.countries[country].controller == 1)
+                {
+                    result--;
+                }
+            }
+            GameOutput = "Korean War: \r\n Roll: " + roll.ToString() + "\r\n";
+            if (result >= 4)
+            {
+                GameOutput = GameOutput + "Result: Success!";
+                game.countryLst.countries[66].set_infUSSR(game.countryLst.countries[66].influenceUSA);
+                game.countryLst.countries[66].set_infUSA(-game.countryLst.countries[66].influenceUSA);
+                game.scoreUSSR(2);
+            }
+            else
+            {
+                GameOutput = GameOutput + "Result: Failure!";
+            }
+        }
+
+        private void ArabIsraliWar()
+        {
+            game.ussrMillOp(2);
+            int roll = rng.Next(1, 7);
+            int result = roll;
+            foreach (var country in game.countryLst.countries[38].adjacent)
+            {
+                if (game.countryLst.countries[country].controller == 1)
+                {
+                    result--;
+                }
+            }
+            GameOutput = "Arab-Israeli War: \r\n Roll: " + roll.ToString() + "\r\n";
+            if (result >= 4)
+            {
+                GameOutput = GameOutput + "Result: Success!";
+                game.countryLst.countries[38].set_infUSSR(game.countryLst.countries[38].influenceUSA);
+                game.countryLst.countries[38].set_infUSA(-game.countryLst.countries[38].influenceUSA);
+                game.scoreUSSR(2);
+            }
+            else
+            {
+                GameOutput = GameOutput + "Result: Failure!";
+            }
+        }
+
+        private void IndoPakistaniWar(int target, int player)
+        {
+            int roll = rng.Next(1, 7);
+            int result = roll;
+            foreach (var country in game.countryLst.countries[target].adjacent)
+            {
+                if (game.countryLst.countries[country].controller == -player)
+                {
+                    result--;
+                }
+            }
+            if (player == 1)
+            {
+                game.usMillOp(2);
+            }
+            else
+            {
+                game.ussrMillOp(2);
+            }
+            GameOutput = "Indo-Pakistani War: \r\n Roll: " + roll.ToString() + "\r\n";
+            if (result >= 4)
+            {
+                GameOutput = GameOutput + "Result: Success!";
+                if (player == 1)
+                {
+                    game.countryLst.countries[target].set_infUSA(game.countryLst.countries[target].influenceUSSR);
+                    game.countryLst.countries[target].set_infUSSR(-game.countryLst.countries[target].influenceUSSR);
+                    game.scoreUSA(2);
+                }
+                else
+                {
+                    game.countryLst.countries[target].set_infUSSR(game.countryLst.countries[target].influenceUSA);
+                    game.countryLst.countries[target].set_infUSA(-game.countryLst.countries[target].influenceUSA);
+                    game.scoreUSSR(2);
+                }
+            }
+            else
+            {
+                GameOutput = GameOutput + "Result: Failure!";
             }
         }
     }
