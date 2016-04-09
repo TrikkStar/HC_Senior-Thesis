@@ -1140,6 +1140,7 @@
             this.Controls.Add(this.radio3);
             this.Controls.Add(this.radio2);
             this.Controls.Add(this.radio1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SingleEventTarget";

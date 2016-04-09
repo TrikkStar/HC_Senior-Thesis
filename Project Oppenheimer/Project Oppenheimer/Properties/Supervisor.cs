@@ -201,7 +201,6 @@ namespace Project_Oppenheimer.Properties
 
         public void applyEvent(int player, int id, List<int> target, List<int> amount)
         {
-            //figure out how this will target stuff
             switch (id)
             {
                 case 4:

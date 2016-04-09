@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Project_Oppenheimer.Properties
@@ -47,10 +41,9 @@ namespace Project_Oppenheimer.Properties
                     using (var form = new MultiEventTargeting())
                     {
                         form.ShowDialog();
-                        //TS.applyEvent(TS.player, card.id, new List<int> { form.target }, new List<int> { 0 });
+                        TS.applyEvent(TS.player, card.id, form.targets, new List<int> { 0 });
                     }
                 }
-
                 TS.playCard(TS.player, card.id, true, false);
                 this.Close();
             }
@@ -67,7 +60,6 @@ namespace Project_Oppenheimer.Properties
                     using (var form = new SingleEventTarget())
                     {
                         form.ShowDialog();
-                        System.Diagnostics.Debug.WriteLine(form.target);
                         TS.attemptCoup(TS.player, form.target, card.opsValue);
                     }
                 }
@@ -76,7 +68,36 @@ namespace Project_Oppenheimer.Properties
                     using (var form = new MultiEventTargeting())
                     {
                         form.ShowDialog();
-                        //TS.applyEvent(TS.player, card.id, new List<int> { form.target }, new List<int> { 0 });
+                        var targets = form.targets;
+                        if (targets.Count < card.opsValue)
+                        {
+                            while(targets.Count < card.opsValue)
+                            {
+                                using (var newForm = new SingleEventTarget())
+                                {
+                                    newForm.ShowDialog();
+                                    targets.Add(newForm.target);
+                                }
+                            }
+                        }
+                        if (Realignment_Radio.Checked)
+                        {
+                            //need to change this to single event targeting, so all results are displayed to the user
+                            foreach (int target in targets)
+                            {
+                                System.Diagnostics.Debug.WriteLine(target);
+                                //TS.attempRealignment(TS.player, target);
+                            }
+                        }
+                        else
+                        {
+                            //need to figure out way to factor in multiple points being spent because of control
+                            foreach (int target in targets)
+                            {
+                                System.Diagnostics.Debug.WriteLine(target);
+                                //TS.placeInfluence(TS.player, target, 1);
+                            }
+                        }
                     }
                 }
                 TS.playCard(TS.player, card.id, false, false);

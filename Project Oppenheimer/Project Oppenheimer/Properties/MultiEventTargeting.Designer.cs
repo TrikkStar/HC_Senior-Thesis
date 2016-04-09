@@ -97,9 +97,9 @@
             "Philippines",
             "Poland",
             "Romania",
-            "SE African States",
             "Saharan States",
             "Saudi Arabia",
+            "SE African States",
             "Somalia",
             "South Africa",
             "South Korea",
@@ -115,8 +115,8 @@
             "Uruguay",
             "Venezuela",
             "Vietnam",
-            "W. Germany",
             "W. African States",
+            "W. Germany",
             "Yugoslavia",
             "Zaire",
             "Zimbabwe"});
@@ -136,6 +136,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MultiEventTargeting
             // 
@@ -145,6 +146,7 @@
             this.ClientSize = new System.Drawing.Size(169, 230);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkedListBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MultiEventTargeting";
