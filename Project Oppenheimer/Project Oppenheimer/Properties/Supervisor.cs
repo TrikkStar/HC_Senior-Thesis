@@ -499,13 +499,19 @@ namespace Project_Oppenheimer.Properties
             }
             foreach (var adj in country.adjacent)
             {
-                if ((adj == -5) && (player == 1))
+                if (adj == -5)
                 {
-                    usBonus++;
+                    if (player == 1)
+                    {
+                        usBonus++;
+                    }
                 }
-                else if ((adj == -10) && (player == -1))
+                else if (adj == -10) 
                 {
-                    ussrBonus++;
+                    if (player == -1)
+                    {
+                        ussrBonus++;
+                    }
                 }
                 else if (game.countryLst.countries[adj].controller == 1)
                 {

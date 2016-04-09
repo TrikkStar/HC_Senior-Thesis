@@ -82,11 +82,11 @@ namespace Project_Oppenheimer.Properties
                         }
                         if (Realignment_Radio.Checked)
                         {
-                            //need to change this to single event targeting, so all results are displayed to the user
+                            //need to change this so all results are displayed to the user
                             foreach (int target in targets)
                             {
                                 System.Diagnostics.Debug.WriteLine(target);
-                                //TS.attempRealignment(TS.player, target);
+                                TS.attempRealignment(TS.player, target);
                             }
                         }
                         else
@@ -95,7 +95,7 @@ namespace Project_Oppenheimer.Properties
                             foreach (int target in targets)
                             {
                                 System.Diagnostics.Debug.WriteLine(target);
-                                //TS.placeInfluence(TS.player, target, 1);
+                                TS.placeInfluence(TS.player, target, 1);
                             }
                         }
                     }
