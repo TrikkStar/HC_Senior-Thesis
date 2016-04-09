@@ -289,6 +289,87 @@ namespace Project_Oppenheimer.Properties
                 case 25:
                     //us bonus to ops values (to max val of 4)
                     break;
+                case 26:
+                    //ussr reveals hand, us gets to conduct a 1 pt op
+                    break;
+                case 27:
+                    int goal = game.countryLst.countries[41].stability + game.countryLst.countries[41].influenceUSSR;
+                    game.countryLst.countries[41].set_infUSA(goal - game.countryLst.countries[41].influenceUSA);
+                    game.USJapanMutualDefensePact = true;
+                    break;
+                case 28:
+                    for (int i = 0; i < target.Count; i++)
+                    {
+                        game.countryLst.countries[target[i]].set_infUSA(-amount[i]);
+                    }
+                    break;
+                case 29:
+                    foreach (var country in target)
+                    {
+                        if (game.turn < 8)
+                        {
+                            game.countryLst.countries[country].set_infUSSR(-1);
+                        }
+                        else
+                        {
+                            game.countryLst.countries[country].set_infUSSR(-2);
+                        }
+                    }
+                    break;
+                case 30:
+                    foreach (var country in target)
+                    {
+                        game.countryLst.countries[country].set_infUSSR(1);
+                    }
+                    break;
+                case 31:
+                    //enemy player gets ops penalty of 1, to min of 1 till end of turn 
+                    break;
+                case 32:
+                    //UN Intervention
+                    break;
+                case 33:
+                    //De-stalinization
+                    break;
+                case 34:
+                    if (player == 1)
+                    {
+                        game.scoreUSA(game.defcon - 2);
+                    }
+                    else
+                    {
+                        game.scoreUSSR(game.defcon - 2);
+                    }
+                    game.defcon = game.defcon + 2;
+                    if (game.defcon > 5)
+                    {
+                        game.defcon = 5;
+                    }
+                    break;
+                case 35:
+                    game.FormosanResolution = true;
+                    break;
+                case 103:
+                    //defectors
+                    break;
+                case 104:
+                    game.countryLst.countries[target[0]].set_infUSSR(1);
+                    break;
+                case 105:
+                    if (game.NATO)
+                    {
+                        game.countryLst.countries[target[0]].set_infUSA(2);
+                        game.scoreUSA(2);
+                    }
+                    else
+                    {
+                        game.countryLst.countries[target[0]].set_infUSA(1);
+                    }
+                    break;
+                case 106:
+                    game.NORAD = true;
+                    //figure out how to make NOrad Work;
+                    break;
             }
         }
 
