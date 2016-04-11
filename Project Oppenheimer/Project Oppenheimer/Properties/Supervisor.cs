@@ -57,7 +57,7 @@ namespace Project_Oppenheimer.Properties
                         break;
                     }
                 }
-                AiOuput = AiOuput + "Card to Play: " + card.name + "\r\n OPS Value: " + card.opsValue.ToString() + "\r\n";
+                AiOuput = AiOuput + "Card to Play: " + card.name + "\r\nOPS Value: " + card.opsValue.ToString() + "\r\n";
             }
             else
             {
@@ -70,7 +70,7 @@ namespace Project_Oppenheimer.Properties
                         break;
                     }
                 }
-                AiOuput = AiOuput + "Card to Play: " + card.name + "\r\n OPS Value: " + card.opsValue.ToString() + "\r\n";
+                AiOuput = AiOuput + "Card to Play: " + card.name + "\r\nOPS Value: " + card.opsValue.ToString() + "\r\n";
             }
             if (rob.targets.Count == rob.targetAmounts.Count)
             {
@@ -90,7 +90,7 @@ namespace Project_Oppenheimer.Properties
                 {
                     AiOuput = AiOuput + "Amount: " + y.ToString() + "\r\n";
                 }
-                AiOuput = AiOuput + "Something didn't quite go right \r\n";
+                AiOuput = AiOuput + "Something didn't quite go right\r\n";
             }
             applyAIAction(rob);
         }
@@ -726,6 +726,14 @@ namespace Project_Oppenheimer.Properties
             if (game.countryLst.countries[target].battleground)
             {
                 game.defcon--;
+            }
+            if(player == 1)
+            {
+                game.usMillOp(ops);
+            }
+            else
+            {
+                game.ussrMillOp(ops);
             }
             GameOutput = "Coup Attempt: rolled " + rand.ToString() + "\r\n Target: " + game.countryLst.countries[target].name + "\r\n Strength: " + attempt.ToString() + "\r\n";
             if (attempt > dificulty)

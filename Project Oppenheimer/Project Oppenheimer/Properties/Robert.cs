@@ -1079,6 +1079,91 @@ namespace Project_Oppenheimer.Properties
                 foreach (var country in area)
                 {
                     var temp = game.countryLst.countries[country];
+                    if (temp.battleground)
+                    {
+                        if (side == 1)
+                        {
+                            if ((temp.influenceUSA >= temp.stability) && (temp.influenceUSSR >= 1))
+                            {
+                                int usBonus = 0;
+                                int ussrBonus = 0;
+                                if (temp.influenceUSA > temp.influenceUSSR)
+                                {
+                                    usBonus++;
+                                }
+                                foreach (var adjacent in temp.adjacent)
+                                {
+                                    if (adjacent == -5)
+                                    {
+                                        usBonus++;
+                                    }
+                                    else if (adjacent == -10)
+                                    {
+                                        ussrBonus++;
+                                    }
+                                    else
+                                    {
+                                        if (game.countryLst.countries[adjacent].controller == 1)
+                                        {
+                                            usBonus++;
+                                        }
+                                        else if (game.countryLst.countries[adjacent].controller == -1)
+                                        {
+                                            ussrBonus++;
+                                        }
+                                    }
+                                }
+                                if (usBonus > ussrBonus)
+                                {
+                                    targets.Add(country);
+                                    return true;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            if ((temp.influenceUSSR >= temp.stability) && (temp.influenceUSA >= 1))
+                            {
+                                int usBonus = 0;
+                                int ussrBonus = 0;
+                                if (temp.influenceUSSR > temp.influenceUSA)
+                                {
+                                    ussrBonus++;
+                                }
+                                foreach (var adjacent in temp.adjacent)
+                                {
+                                    if (adjacent == -5)
+                                    {
+                                        usBonus++;
+                                    }
+                                    else if (adjacent == -10)
+                                    {
+                                        ussrBonus++;
+                                    }
+                                    else
+                                    {
+                                        if (game.countryLst.countries[adjacent].controller == 1)
+                                        {
+                                            usBonus++;
+                                        }
+                                        else if (game.countryLst.countries[adjacent].controller == -1)
+                                        {
+                                            ussrBonus++;
+                                        }
+                                    }
+                                }
+                                if (usBonus < ussrBonus)
+                                {
+                                    targets.Add(country);
+                                    return true;
+                                }
+                            }
+                        }
+                    }
+                }
+                foreach (var country in area)
+                {
+                    var temp = game.countryLst.countries[country];
                     if (side == 1)
                     {
                         if ((temp.influenceUSA >= temp.stability) && (temp.influenceUSSR >= 1))
@@ -1101,7 +1186,7 @@ namespace Project_Oppenheimer.Properties
                                 }
                                 else
                                 {
-                                    if(game.countryLst.countries[adjacent].controller == 1)
+                                    if (game.countryLst.countries[adjacent].controller == 1)
                                     {
                                         usBonus++;
                                     }
@@ -1196,7 +1281,36 @@ namespace Project_Oppenheimer.Properties
                 foreach (var country in area)
                 {
                     var temp = game.countryLst.countries[country];
-                    if (!((game.defcon == 2) && (!temp.battleground)))
+                    if ((!((game.defcon == 2) && (temp.battleground))) && (temp.battleground))
+                    {
+                        if (side == 1)
+                        {
+                            if (game.usMilOps < 4)
+                            {
+                                if ((temp.influenceUSSR > temp.influenceUSA) && (Math.Abs(temp.influenceUSSR - temp.stability) <= 2))
+                                {
+                                    targets.Add(country);
+                                    return true;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            if (game.ussrMilOps < 4)
+                            {
+                                if ((temp.influenceUSSR < temp.influenceUSA) && (Math.Abs(temp.influenceUSA - temp.stability) <= 2) && (temp.stability < 5))
+                                {
+                                    targets.Add(country);
+                                    return true;
+                                }
+                            }
+                        }
+                    }
+                }
+                foreach (var country in area)
+                {
+                    var temp = game.countryLst.countries[country];
+                    if (!((game.defcon == 2) && (temp.battleground)))
                     {
                         if (side == 1)
                         {
@@ -1402,6 +1516,11 @@ namespace Project_Oppenheimer.Properties
                             }
                         }
                     }
+                }
+                if (amount > 0)
+                {
+                    targetCountryAdd(region, 1);
+                    amount--;
                 }
             }
         }
