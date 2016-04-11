@@ -85,10 +85,10 @@
             TheReformer = false;
         }
 
-        public void advanceSpaceRace(int x)
+        public void advanceSpaceRace(int player)
         {
             //special space race functions taken care of by supervisor
-            if (x == -1)
+            if (player == -1)
             {
                 advanceUssrSR();
             }

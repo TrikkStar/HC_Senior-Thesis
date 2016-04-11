@@ -266,7 +266,7 @@ namespace Project_Oppenheimer.Properties
                     game.DeGualleLeadsFrance = true;
                     break;
                 case 18:
-                    attemptSpaceRace(player);
+                    game.advanceSpaceRace(player);
                     break;
                 case 19:
                     game.countryLst.countries[target[0]].set_infUSSR(-game.countryLst.countries[target[0]].influenceUSSR);
@@ -379,6 +379,7 @@ namespace Project_Oppenheimer.Properties
 
         public void attemptSpaceRace(int player)
         {
+            //most of this stuff can be outsourced to the gamestate functions for advancing Space Race
             var rand = rng.Next(1, 7);
             GameOutput = "Space Race Attempt \r\n Roll: " + rand.ToString() + "\r\n";
             if (player == 1)

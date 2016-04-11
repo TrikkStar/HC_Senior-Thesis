@@ -141,7 +141,7 @@ namespace Project_Oppenheimer.Properties
                         targetAmounts.Add(1);
                         targets.Add(59);
                         targetAmounts.Add(4);
-                        PlaceInfluenceInRegion(2, -2);
+                        PlaceInfluenceInRegion(1, -2);
                         break;
                     case 2:
                         PlaceInfluenceInRegion(6, -2);
